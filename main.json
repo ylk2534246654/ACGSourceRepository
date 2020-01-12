@@ -1,10 +1,12 @@
 {
   "name":"雨夏",
   "summary": "这是我目前所使用的一些搜索源。",
-  "list": {
+  "list": [
+		{
 		  "name":"百年漫画",
 		  "url":"https://m.bnmanhua.com/index.php?&m=vod-search",
 		  "category":1,
 		  "version":1
 		}
+     ]
 }
