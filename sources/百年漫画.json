@@ -1,0 +1,29 @@
+{
+  "name": "百年漫画",
+  "charset": "UTF-8",
+  "metadata": {
+    "name": ["h4[class=h4] > a@attr->title"],
+    "author": [],
+    "img": ["a[class=vbox_t] > mip-img@attr->src"]
+  },
+  "detail": {
+    "summary": [],
+    "upDate": [],
+  },
+  "catalog": {
+    "list": "div.tabs_block > ul > li",
+    "chapter": {
+      "name": "a",
+      "link": "a@attr->href"
+	  "category":1
+    }
+  },
+  "content": {
+    "text": "#nr1"
+  },
+  "search": {
+    "requestURL": "https://m.bnmanhua.com/index.php?&m=vod-search",
+	"requestMethod": "POST",
+    "requestData": "wd=${key}"
+  }
+}
