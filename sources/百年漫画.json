@@ -8,7 +8,7 @@
   },
   "detail": {
     "summary": [],
-    "upDate": [],
+    "upDate": []
   },
   "catalog": {
     "list": "div.tabs_block > ul > li",
