@@ -14,7 +14,7 @@
     "list": "div.tabs_block > ul > li",
     "chapter": {
       "name": "a",
-      "link": "a@attr->href"
+      "link": "a@attr->href",
 	  "category":1
     }
   },
