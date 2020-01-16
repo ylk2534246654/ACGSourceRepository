@@ -2,21 +2,21 @@
   "name": "百年漫画",
   "charset": "UTF-8",
   "metadata": {
-    "name": ["h4[class=h4] > a@attr->title"],
-    "author": [],
-    "img": ["a[class=vbox_t] > mip-img@attr->src"]
+    "list": "ul[class=tbox_m] > li",
+    "name": "h4[class=h4] > a@attr->title",
+    "author": "未知",
+    "img": "a[class=vbox_t] > mip-img@attr->src",
+	"link": "h4[class=h4] > a@attr->href"
   },
   "detail": {
-    "summary": [],
-    "upDate": []
+    "summary": "未知",
+    "upDate": "未知"
   },
-  "catalog": {
+  "chapter": {
     "list": "div.tabs_block > ul > li",
-    "chapter": {
-      "name": "a",
-      "link": "a@attr->href",
-	  "category":1
-    }
+	"name": "a",
+    "link": "a@attr->href",
+	"category":1
   },
   "content": {
     "text": "#nr1"
