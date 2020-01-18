@@ -1,7 +1,7 @@
 {
   "name":"雨夏",
   "summary": "这是我目前所使用的一些搜索源。",
-  "sources":"https://raw.githubusercontent.com/ylk2534246654/ACGSourceRepository/master/sources/",
+  "sources":"https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/",
   "list": [
 		{
 		  "name":"百年漫画",
