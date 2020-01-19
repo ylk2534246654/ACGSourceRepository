@@ -1,0 +1,34 @@
+{
+  "name": "动漫之家2.0",
+  "charset": "UTF-8",
+  "search": {
+    "requestURL": "https://www.dmzj.com/dynamic/o_search/index",
+	"requestMethod": "POST",
+    "requestData": "keywords=[$key]"
+  },
+  "metadata": {
+    "list": "{selector:div > ul.update_con > li}",
+    "name": "{selector:a@attr->title}",
+    "author": "{selector:p.auth}",
+    "img": "{selector:a > img@attr->src}",
+	"link": "{selector:a@attr->href}{re:manhua.dmzj.com/,m.dmzj.com/info/}.html"
+  },
+  "detail": {
+    "author": "{selector:p.dir}end{sub:[$this],：,end,1}",
+    "summary": "{selector:div.tbox_js}",
+    "upDate": "[#此处暂时未开发]",
+    "catalog":"[#如果目录在其他页面,则添加跳转链接的获取]",
+	"chapter": [{
+		"list": "{selector:div.tabs_block > ul > li}",
+		"name": "{selector:a}",
+		"link": "{selector:a@attr->href}",
+		"orderBy": 1,
+		"category":2
+	  }]
+  },
+  "content": {
+    "list":"{sub:[$html],z_img=',',0}{selector:}",
+	"link":"{sub:[$html],z_yurl=',',0}",
+	"endid":""
+  }
+}
