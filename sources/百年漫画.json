@@ -9,12 +9,13 @@
   "metadata": {
     "list": "{selector:ul[class=tbox_m] > li}",
     "name": "{selector:h4[class=h4] > a@attr->title}",
-    "author": "未知",
+    "author": "",
     "img": "{selector:a[class=vbox_t] > mip-img@attr->src}",
 	"link": "{selector:h4[class=h4] > a@attr->href}"
 
   },
   "detail": {
+    "author": "{selector:p.dir}",
     "summary": "未知",
     "upDate": "未知",
     "catalog":"[#如果目录在其他页面,则添加跳转链接的获取]",
