@@ -1,0 +1,35 @@
+{
+  "name": "布卡漫画",
+  "charset": "UTF-8",
+  "search": {
+    "requestURL": "http://m.buka.cn/search/ajax_search",
+	"requestMethod": "POST",
+    "requestData": "count=15&key=[$key]&start=[$page]"
+  },
+  "metadata": {
+    "list": "{selector:datas > items}",
+    "name": "{selector:name}",
+    "author": "{selector:author}",
+    "img": "{selector:logo}",
+	"link": "http://www.buka.cn/detail/{selector:mid}"
+
+  },
+  "detail": {
+    "author": "{selector:div.manga-author > a}",
+    "summary": "{selector:div.manga-desc > p}",
+    "upDate": "[#此处暂时未开发]",
+    "catalog":"[#如果目录在其他页面,则添加跳转链接的获取]",
+	"chapter": [{
+		"list": "{selector:div.epsbox > a}",
+		"name": "{selector:a}",
+		"link": "{selector:a@attr->href}",
+		"orderBy": 1,
+		"category":2
+	  }]
+  },
+  "content": {
+    "list":"{selector:#manga-imgs > div.manga-c}",
+	"link":"{selector:img@attr->data-original}",
+	"endid":""
+  }
+}
