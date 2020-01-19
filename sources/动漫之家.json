@@ -7,7 +7,7 @@
     "requestData": ""
   },
   "metadata": {
-    "list": "{sub:[$html],serchArry=,<,0}",
+    "list": "{sub:[$html],serchArry=,</script>,0}",
     "name": "{selector:name}",
     "author": "{selector:authors}",
     "img": "https://images.dmzj.com/{selector:cover}",
