@@ -4,7 +4,7 @@
   "search": {
     "requestURL": "https://m.bnmanhua.com/index.php?&m=vod-search",
 	"requestMethod": "POST",
-    "requestData": "wd=${key}"
+    "requestData": "wd=@key"
   },
   "metadata": {
     "list": "{selector:ul[class=tbox_m] > li}",
@@ -25,8 +25,8 @@
 	  }]
   },
   "content": {
-    "list":"{sub:${html},z_img=',',0}{selector:}",
-	"link":"{sub:${html},z_yurl=',',0}",
+    "list":"{sub:@html,z_img=',',0}{selector:}",
+	"link":"{sub:@html,z_yurl=',',0}",
 	"endid":""
   }
 }
