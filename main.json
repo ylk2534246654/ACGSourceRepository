@@ -9,19 +9,18 @@
 		  "category":1,
 		  "version":1
 		},{
-		  "name":"动漫之家2.0",
-		  "url":"https://m.dmzj.com",
-		  "category":1,
-		  "version":1
-		},{
 		  "name":"动漫之家",
 		  "url":"https://www.dmzj.com",
 		  "category":1,
 		  "version":1
-		}
-        ,{
+		},{
 		  "name":"布卡漫画",
 		  "url":"http://m.buka.cn",
+		  "category":1,
+		  "version":1
+		},{
+		  "name":"土豪漫画",
+		  "url":"https://m.tohomh123.com",
 		  "category":1,
 		  "version":1
 		}
