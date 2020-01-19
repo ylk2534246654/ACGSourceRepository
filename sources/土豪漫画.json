@@ -1,0 +1,35 @@
+{
+  "name": "土豪漫画",
+  "charset": "UTF-8",
+  "search": {
+    "requestURL": "https://m.tohomh123.com/action/Search?keyword=[$key]",
+	"requestMethod": "GET",
+    "requestData": ""
+  },
+  "metadata": {
+    "list": "{selector:div > ul > li}",
+    "name": "{selector:a@attr->title}",
+    "author": "",
+    "img": "{selector:img@attr->src}",
+	"link": "{selector:a@attr->href}"
+
+  },
+  "detail": {
+    "author": "{selector:div.info > p:nth-child(3)}{re:作者：, }",
+    "summary": "{selector:div.detailContent > p}",
+    "upDate": "[#此处暂时未开发]",
+    "catalog":"[#如果目录在其他页面,则添加跳转链接的获取]",
+	"chapter": [{
+		"list": "{selector:#chapterList_1 > ul > li}",
+		"name": "{selector:a}",
+		"link": "{selector:a@attr->href}",
+		"orderBy": 1,
+		"category":2
+	  }]
+  },
+  "content": {
+    "list":"{sub:[$html],pl = ',/000,0}/{num:0000}.jpg",
+	"link":"",
+	"endid":"{allsub:pcount=,;}"
+  }
+}
