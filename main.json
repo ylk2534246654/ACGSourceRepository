@@ -4,21 +4,6 @@
   "sources":"https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/",
   "list": [
 		{
-		  "name":"百年漫画",
-		  "url":"https://m.bnmanhua.com",
-		  "category":1,
-		  "version":1
-		},{
-		  "name":"动漫之家",
-		  "url":"https://www.dmzj.com",
-		  "category":1,
-		  "version":1
-		},{
-		  "name":"布卡漫画",
-		  "url":"http://m.buka.cn",
-		  "category":1,
-		  "version":1
-		},{
 		  "name":"土豪漫画",
 		  "url":"https://m.tohomh123.com",
 		  "category":1,
