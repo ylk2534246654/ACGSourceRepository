@@ -9,14 +9,14 @@
   "metadata": {
     "list": "{sub:[$html],serchArry=,</script>,0}",
     "name": "{selector:name}",
-    "author": "{selector:authors}{re:介绍:, }",
+    "author": "{selector:authors}",
     "img": "https://images.dmzj.com/{selector:cover}",
 	"link": "https://m.dmzj.com/info/{selector:comic_py}.html"
 
   },
   "detail": {
     "author": "{selector:p.txtItme:nth-child(1)}",
-    "summary": "{selector:p.txtDesc.autoHeight}",
+    "summary": "{selector:p.txtDesc.autoHeight}{re:介绍:, }",
     "upDate": "[#此处暂时未开发]",
     "catalog":"[#如果目录在其他页面,则添加跳转链接的获取]",
 	"chapter": [{
