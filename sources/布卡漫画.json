@@ -29,7 +29,7 @@
   },
   "content": {
     "list":"{selector:#manga-imgs > div.manga-c}",
-	"link":"{selector:img@attr->data-original}",
+	"link":"{selector:img@attr->src}",
 	"endid":""
   }
 }
