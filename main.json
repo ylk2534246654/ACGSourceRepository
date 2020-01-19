@@ -19,5 +19,11 @@
 		  "category":1,
 		  "version":1
 		}
+        ,{
+		  "name":"布卡漫画",
+		  "url":"http://m.buka.cn",
+		  "category":1,
+		  "version":1
+		}
      ]
 }
