@@ -9,7 +9,7 @@
   "metadata": {
     "list": "{sub:[$html],serchArry=,</script>,0}",
     "name": "{selector:name}",
-    "author": "{selector:authors}",
+    "author": "{selector:authors}{re:介绍:, }",
     "img": "https://images.dmzj.com/{selector:cover}",
 	"link": "https://m.dmzj.com/info/{selector:comic_py}.html"
 
