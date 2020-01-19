@@ -1,5 +1,5 @@
 {
-  "name": "漫画之家",
+  "name": "动漫之家",
   "charset": "UTF-8",
   "search": {
     "requestURL": "https://m.dmzj.com/search/[$key].html",
