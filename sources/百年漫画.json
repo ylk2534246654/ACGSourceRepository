@@ -12,10 +12,12 @@
     "author": "未知",
     "img": "{selector:a[class=vbox_t] > mip-img@attr->src}",
 	"link": "{selector:h4[class=h4] > a@attr->href}"
+
   },
   "detail": {
     "summary": "未知",
     "upDate": "未知",
+    "catalog":"[#如果为跳转页面则添加跳转后的链接]",
 	"chapter": [{
 		"list": "{selector:div.tabs_block > ul > li}",
 		"name": "{selector:a}",
