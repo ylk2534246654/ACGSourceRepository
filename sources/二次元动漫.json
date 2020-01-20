@@ -30,6 +30,6 @@
   "content": {
     "list":"[$url]-p-[$id]",
 	"link":"{selector:img@attr->src}",
-	"endid":"{selector:#total>>value}"
+	"endid":"{selector:#total@attr->value}"
   }
 }
