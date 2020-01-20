@@ -29,7 +29,7 @@
   },
   "content": {
     "list":"[$url]-p-[$id]",
-	"link":"{selector:img@attr->src}",
+	"link":"{selector:img[id = ComicPic]@attr->src}",
 	"endid":"{selector:#total@attr->value}"
   }
 }
