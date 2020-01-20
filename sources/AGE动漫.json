@@ -15,7 +15,7 @@
   },
   "detail": {
     "author": "{selector:li:nth-child(5) > span.detail_imform_value}",
-    "summary": "{selector:li:div.detail_imform_desc_pre > p}",
+    "summary": "{selector:div.detail_imform_desc_pre > p}",
     "upDate": "[#此处暂时未开发]",
     "catalog":"[#如果目录在其他页面,则添加跳转链接的获取]",
 	"chapter": [{
