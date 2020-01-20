@@ -1,34 +1,29 @@
 {
-  "name": "动漫之家2.0",
-  "charset": "UTF-8",
+  "name": "迅雷哥",
+  "charset": "gb2312",
   "search": {
-    "requestURL": "https://www.dmzj.com/dynamic/o_search/index",
+    "requestURL": "https://m.4142.cc/search.asp",
 	"requestMethod": "POST",
-    "requestData": "keywords=[$key]"
+    "requestData": "searchword=[$key]"
   },
   "metadata": {
-    "list": "{selector:div > ul.update_con > li}",
+    "list": "{selector:div > ul > li}",
     "name": "{selector:a@attr->title}",
-    "author": "{selector:p.auth}",
+    "author": "",
     "img": "{selector:a > img@attr->src}",
-	"link": "{selector:a@attr->href}{re:manhua.dmzj.com/,m.dmzj.com/info/}.html"
+	"link": "{selector:a@attr->href}"
   },
   "detail": {
-    "author": "{selector:p.txtItme:nth-child(1)}",
-    "summary": "{selector:p.txtDesc.autoHeight}{re:介绍:, }",
+    "author": "",
+    "summary": "",
     "upDate": "[#此处暂时未开发]",
     "catalog":"[#如果目录在其他页面,则添加跳转链接的获取]",
 	"chapter": [{
-		"list": "{sub:[$html],initIntroData([,]),0}{selector:data}",
-		"name": "{selector:chapter_name}",
-		"link": "https://m.dmzj.com/view/{selector:comic_id}/{selector:id}.html",
+		"list": "{selector:div.playlist > ul > li}",
+		"name": "{selector:a@attr->title}",
+		"link": "{selector:a@attr->href}",
 		"orderBy": 1,
-		"category":2
+		"category":3
 	  }]
-  },
-  "content": {
-    "list":"{sub:[$html],initData(,);,0}{selector:page_url}",
-	"link":"",
-	"endid":""
   }
 }
