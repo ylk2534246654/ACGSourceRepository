@@ -30,6 +30,6 @@
   "content": {
     "list":"{sub:[$html],pl = ',/000,0}/{num:0000}.jpg",
 	"link":"",
-	"endid":"{allsub:pcount=,;}"
+	"endid":"{sub:[$html],pcount=,;,0}"
   }
 }
