@@ -28,6 +28,11 @@
 		  "url":"http://www.2animx.com",
 		  "category":1,
 		  "version":1
+		},{
+		  "name":"MangaNel",
+		  "url":"https://manganelo.com",
+		  "category":1,
+		  "version":1
 		}
      ]
 }
