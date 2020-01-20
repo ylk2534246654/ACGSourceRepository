@@ -8,13 +8,13 @@
   },"metadata": {
     "list": "{selector:#mobile-index > ul > li}",
     "name": "{selector:div > a > img@attr->alt}",
-    "author": "",
+    "author": "{selector:div.am-gallery-desc}",
     "img": "{selector:div > a > img@attr->data-original}",
 	"link": "{selector:div > a@attr->href}"
   },
   "detail": {
-    "author": "",
-    "summary": "",
+    "author": "{selector:#p-info > p:nth-child(6)}",
+    "summary": "{selector:p.txtDesc.autoHeight}",
     "upDate": "[#此处暂时未开发]",
     "catalog":"[#如果目录在其他页面,则添加跳转链接的获取]",
 	"chapter": [{
