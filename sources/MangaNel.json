@@ -15,14 +15,14 @@
 
   },
   "detail": {
-    "author": "{selector:tr:nth-child(2) > td.table-value > a > font > font}",
-    "summary": "{selector:#panel-story-info-description > font}",
+    "author": "{selector:tr:nth-child(2) > td.table-value > a}",
+    "summary": "{selector:#panel-story-info-description}",
     "upDate": "[#此处暂时未开发]",
     "catalog":"[#如果目录在其他页面,则添加跳转链接的获取]",
 	"chapter": [{
-		"list": "{selector:#chapter > div > div.chapter-list > div}",
-		"name": "{selector:span > a}",
-		"link": "{selector:span > a@attr->href}",
+		"list": "{selector:ul.row-content-chapter > li}",
+		"name": "{selector:a}",
+		"link": "{selector:a@attr->href}",
 		"orderBy": 1,
 		"category":2
 	  }]
