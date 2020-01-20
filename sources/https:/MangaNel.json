@@ -1,0 +1,35 @@
+{
+  "name": "MangaNel",
+  "charset": "UTF-8",
+  "search": {
+    "requestURL": "https://manganelo.com/search/[$key]",
+	"requestMethod": "GET",
+    "requestData": ""
+  },
+  "metadata": {
+    "list": "{selector:div[class=panel_story_list] > div[class=story_item]}",
+    "name": "{selector:a > img@attr->alt}",
+    "author": "",
+    "img": "{selector:a > img@attr->src}",
+	"link": "{selector:a@attr->href}"
+
+  },
+  "detail": {
+    "author": "",
+    "summary": "",
+    "upDate": "[#此处暂时未开发]",
+    "catalog":"[#如果目录在其他页面,则添加跳转链接的获取]",
+	"chapter": [{
+		"list": "{selector:#chapter > div > div.chapter-list > div}",
+		"name": "{selector:span > a}",
+		"link": "{selector:span > a@attr->href}",
+		"orderBy": 1,
+		"category":2
+	  }]
+  },
+  "content": {
+    "list":"{selector:#vungdoc > img}",
+	"link":"{selector:img@attr->src}",
+	"endid":""
+  }
+}
