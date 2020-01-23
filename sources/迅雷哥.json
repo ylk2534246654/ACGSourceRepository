@@ -16,7 +16,7 @@
   "detail": {
     "author": "{selector:div.intro > div:nth-child(4) > p:nth-child(2) > a}",
     "summary": "{selector:div.description}",
-    "upDate": "[#此处暂时未开发]",
+    "upDate": "{selector:p:nth-child(1) > font}}",
     "catalog":"[#如果目录在其他页面,则添加跳转链接的获取]",
 	"chapter": [{
 		"list": "{selector:div.playlist > ul > li}",
