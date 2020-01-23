@@ -23,7 +23,7 @@
 		"list": "{sub:[$html],initIntroData([,]),0}{selector:data}",
 		"name": "{selector:chapter_name}",
 		"link": "https://m.dmzj.com/view/{selector:comic_id}/{selector:id}.html",
-		"orderBy": 1,
+		"orderBy": 0,
 		"category":2
 	  }]
   },
