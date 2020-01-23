@@ -13,7 +13,7 @@
 	"link": "{selector:div > div > a@attr->href}{re:dilidili.name,dilidili.one}{re:www.dilidili,m.dilidili}"
   },
   "detail": {
-    "author": "",
+    "author": "作者无法获取",
     "summary": "{selector:#app > div:nth-child(3) > p}",
     "upDate": "{selector:#app > div.episode > div}{sub:[$this],剧集（,）,1}",
     "catalog":"[#如果目录在其他页面,则添加跳转链接的获取]",
