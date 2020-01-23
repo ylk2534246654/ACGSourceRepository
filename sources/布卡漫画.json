@@ -23,7 +23,7 @@
 		"list": "{selector:div.epsbox > a}",
 		"name": "{selector:a}",
 		"link": "{selector:a@attr->href}",
-		"orderBy": 1,
+		"orderBy": 0,
 		"category":2
 	  }]
   },
