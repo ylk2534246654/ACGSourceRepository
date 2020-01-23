@@ -16,7 +16,7 @@
   "detail": {
     "author": "{selector:li:nth-child(5) > span.detail_imform_value}",
     "summary": "{selector:div.detail_imform_desc_pre > p}",
-    "upDate": "[#此处暂时未开发]",
+    "upDate": "{selector:li:nth-child(8) > span.detail_imform_value} · {selector:li:nth-child(7) > span.detail_imform_value}",
     "catalog":"[#如果目录在其他页面,则添加跳转链接的获取]",
 	"chapter": [{
 		"list": "{selector:div.movurl > ul > li > a}",
