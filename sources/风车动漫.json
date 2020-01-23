@@ -21,7 +21,7 @@
 		"list": "{selector:ul.mvlist > li}",
 		"name": "{selector:a@attr->title}",
 		"link": "{selector:a@attr->href}",
-		"orderBy": 1,
+		"orderBy": 0,
 		"category":3
 	  }]
   }
