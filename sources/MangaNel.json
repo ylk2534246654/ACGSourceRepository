@@ -17,7 +17,7 @@
   "detail": {
     "author": "{selector:tr:nth-child(2) > td.table-value > a}",
     "summary": "{selector:#panel-story-info-description}",
-    "upDate": "{selector:tr:nth-child(3) > td.table-value}",
+    "upDate": "{selector:tr:nth-child(3) > td.table-value} · {selector:span.stre-value}",
     "catalog":"[#如果目录在其他页面,则添加跳转链接的获取]",
 	"chapter": [{
 		"list": "{selector:ul.row-content-chapter > li}",
