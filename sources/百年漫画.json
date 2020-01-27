@@ -29,7 +29,7 @@
   },
   "content": {
     "list":"{sub:[$html],z_img=',',0}{selector:}",
-	"link":"{sub:[$html],z_yurl=',',0}",
+	"link":"{sub:[$html],z_yurl=',',0}{selector:}",
 	"endid":""
   }
 }
