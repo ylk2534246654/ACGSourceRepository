@@ -24,7 +24,6 @@
 		"list": "{selector:#chapterList_1 > ul > li}",
 		"name": "{selector:a}",
 		"link": "{selector:a@attr->href}",
-		
 		"category":2
 	  }]
   },
