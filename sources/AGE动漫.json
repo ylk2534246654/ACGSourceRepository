@@ -17,16 +17,17 @@
     "author": "{selector:li:nth-child(5) > span.detail_imform_value}",
     "summary": "{selector:div.detail_imform_desc_pre > p}",
     "upDate": "{selector:li:nth-child(8) > span.detail_imform_value}",
-    "catalog":{
-        "link": [],
-        "tab":{
+    "link": [],
+    "tab":{
             "list":"{selector:#menu0 > li}",
             "name":"{selector:li}"
         },
+    "catalog":{
+        "list":"{selector:#main0 > div}",
         "chapter": {
-                "list": "{selector:#main0 > div}",
-                "name": "{selector:div.movurl > ul > li > a}",
-                "link": "{selector:div.movurl > ul > li > a@attr->href}",
+                "list": "{selector:div.movurl > ul > li}",
+                "name": "{selector:a}",
+                "link": "{selector:a@attr->href}",
                 "orderBy": 1,
                 "category":3
         }
