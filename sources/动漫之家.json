@@ -16,7 +16,7 @@
   "detail": {
     "author": "{selector:p.txtItme:nth-child(1)}",
     "summary": "{selector:p.txtDesc.autoHeight}{re:介绍:, }",
-    "upDate": "{selector:p:nth-child(3) > a:nth-child(4)}·{p:selector:nth-child(4) > span.date}",
+    "upDate": "{selector:p:nth-child(3) > a:nth-child(4)}·{selector:nth-child(4) > span.date}",
     "catalog_link": [],
     "tab":{
             "list":"{selector:#list > div}",
