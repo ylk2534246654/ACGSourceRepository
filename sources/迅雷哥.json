@@ -1,35 +1,36 @@
 {
-  "name": "迅雷哥",
-  "charset": "gb2312",
-  "search": {
-    "requestURL": "https://m.4142.cc/search.asp",
-	"requestMethod": "POST",
-    "requestData": "searchword=[$key]"
-  },
-  "metadata": {
-    "list": "{selector:div > ul > li}",
-    "name": "{selector:a@attr->title}",
-    "author": "",
-    "img": "{selector:a > img@attr->src}",
-	"link": "{selector:a@attr->href}"
-  },
-  "detail": {
-    "author": "{selector:div.intro > div:nth-child(4) > p:nth-child(2) > a}",
-    "summary": "{selector:div.description}",
-    "upDate": "{selector:p:nth-child(1) > font}",
-    "catalog_link": [],
-    "tab":{
-            "list":"{selector:body > div > h5}",
-            "name":"{selector:span.manga-episodes_text}"
-        },
-    "catalog":{
-        "list":"{selector:body > div > div.playlist}",
-        "chapter": {
-                "list": "{selector:div.playlist > ul > li}",
-		        "name": "{selector:a@attr->title}",
-		        "link": "{selector:a@attr->href}",
-                "orderBy": 1,
-                "category":3
-        }
-  }
+	"name": "迅雷哥",
+	"charset": "gb2312",
+	"search": {
+		"requestURL": "https://m.4142.cc/search.asp",
+		"requestMethod": "POST",
+		"requestData": "searchword=[$key]"
+	},
+	"metadata": {
+		"list": "{selector:div > ul > li}",
+		"name": "{selector:a@attr->title}",
+		"author": "",
+		"img": "{selector:a > img@attr->src}",
+		"link": "{selector:a@attr->href}"
+	},
+	"detail": {
+		"author": "{selector:div.intro > div:nth-child(4) > p:nth-child(2) > a}",
+		"summary": "{selector:div.description}",
+		"upDate": "{selector:p:nth-child(1) > font}",
+		"catalog_link": [],
+		"tab": {
+			"list": "{selector:body > div > h5}",
+			"name": "{selector:span.manga-episodes_text}"
+		},
+		"catalog": {
+			"list": "{selector:body > div > div.playlist}",
+			"chapter": {
+				"list": "{selector:div.playlist > ul > li}",
+				"name": "{selector:a@attr->title}",
+				"link": "{selector:a@attr->href}",
+				"orderBy": 1,
+				"category": 3
+			}
+		}
+	}
 }
