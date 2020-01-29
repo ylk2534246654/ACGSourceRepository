@@ -20,7 +20,7 @@
 		"catalog_link": [],
 		"tab": {
 			"list": "{selector:body > div > h5}",
-			"name": "{selector:span.manga-episodes_text}"
+			"name": "{selector:h5}"
 		},
 		"catalog": {
 			"list": "{selector:body > div > div.playlist}",
