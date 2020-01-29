@@ -18,14 +18,21 @@
     "author": "{selector:tr:nth-child(2) > td.table-value > a}",
     "summary": "{selector:#panel-story-info-description}",
     "upDate": "{selector:tr:nth-child(3) > td.table-value} · {selector:span.stre-value}",
-    "catalog":"[#如果目录在其他页面,则添加跳转链接的获取]",
-    "orderBy": 0,
-	"chapter": [{
-		"list": "{selector:ul.row-content-chapter > li}",
-		"name": "{selector:a}",
-		"link": "{selector:a@attr->href}",
-		"category":2
-	  }]
+    "catalog_link": [],
+    "tab":{
+            "list":"{selector:div.panel-story-chapter-list > p}",
+            "name":"{selector:span.row-title-chapter-name}"
+        },
+    "catalog":{
+        "list":"{selector:div.panel-story-chapter-list > ul}",
+        "chapter": {
+                "list": "{selector:ul.row-content-chapter > li}",
+		        "name": "{selector:a}",
+		        "link": "{selector:a@attr->href}",
+                "orderBy": 0,
+		        "category":2
+        }
+    }
   },
   "content": {
     "list":"{selector:#vungdoc > img}",
