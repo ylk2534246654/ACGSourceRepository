@@ -17,7 +17,6 @@
     "author": "{selector:li:nth-child(5) > span.detail_imform_value}",
     "summary": "{selector:div.detail_imform_desc_pre > p}",
     "upDate": "{selector:li:nth-child(8) > span.detail_imform_value}",
-    "orderBy": 1,
     "catalog":{
         "link": [],
         "tab":{
@@ -28,6 +27,7 @@
                 "list": "{selector:#main0 > div}",
                 "name": "{selector:div.movurl > ul > li > a}",
                 "link": "{selector:div.movurl > ul > li > a@attr->href}",
+                "orderBy": 1,
                 "category":3
         }
     }
