@@ -12,20 +12,26 @@
     "author": "{selector:authors}",
     "img": "https://images.dmzj.com/{selector:cover}",
 	"link": "https://m.dmzj.com/info/{selector:comic_py}.html"
-
   },
   "detail": {
     "author": "{selector:p.txtItme:nth-child(1)}",
     "summary": "{selector:p.txtDesc.autoHeight}{re:介绍:, }",
     "upDate": "{selector:p:nth-child(3) > a:nth-child(4)}",
-    "catalog":"[#如果目录在其他页面,则添加跳转链接的获取]",
-    "orderBy": 0,
-	"chapter": [{
-		"list": "{sub:[$html],initIntroData([,]),0}{selector:data}",
-		"name": "{selector:chapter_name}",
-		"link": "https://m.dmzj.com/view/{selector:comic_id}/{selector:id}.html",
-		"category":2
-	  }]
+    "catalog_link": [],
+    "tab":{
+            "list":"{selector:#list > div}",
+            "name":"{selector:span}"
+        },
+    "catalog":{
+        "list":[],
+        "chapter": {
+                "list": "{sub:[$html],initIntroData([,]),0}{selector:data}",
+		        "name": "{selector:chapter_name}",
+		        "link": "https://m.dmzj.com/view/{selector:comic_id}/{selector:id}.html",
+                "orderBy": 0,
+                "category":2
+        }
+    }
   },
   "content": {
     "list":"{sub:[$html],initData(,);,0}{selector:page_url}",
