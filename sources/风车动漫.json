@@ -19,7 +19,7 @@
 		"upDate": "{selector:#p-info > p:nth-child(6)}",
 		"catalog_link": [],
 		"tab": {
-			"list": "{selector:ul.am-tabsa-nav.am-cf > li}",
+			"list": "{selector:ul.am-cf > li}",
 			"name": "{selector:a}"
 		},
 		"catalog": {
