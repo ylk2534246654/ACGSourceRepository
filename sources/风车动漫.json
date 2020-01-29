@@ -1,34 +1,36 @@
 {
-  "name": "风车动漫",
-  "charset": "gb2312",
-  "search": {
-    "requestURL": "http://dm.dm530.net/search.asp",
-	"requestMethod": "POST",
-    "requestData": "searchword=[$key]"
-  },"metadata": {
-    "list": "{selector:#mobile-index > ul > li}",
-    "name": "{selector:div > a > img@attr->alt}",
-    "author": "{selector:div.am-gallery-desc}",
-    "img": "{selector:div > a > img@attr->data-original}",
-	"link": "{selector:div > a@attr->href}"
-  },
-  "detail": {
-    "author": "作者无法获取",
-    "summary": "{selector:p.txtDesc.autoHeight}",
-    "upDate": "{selector:#p-info > p:nth-child(6)}",
-    "catalog_link": [],
-    "tab":{
-            "list":"{selector:ul.am-tabsa-nav.am-cf > li}",
-            "name":"{selector:a}"
-        },
-    "catalog":{
-        "list":"{selector:div.am-tab-panel}",
-        "chapter": {
-                "list": "{selector:ul.mvlist > li}",
-		        "name": "{selector:a@attr->title}",
-		        "link": "{selector:a@attr->href}",
-                "orderBy": 0,
-                "category":3
-        }
-  }
+	"name": "风车动漫",
+	"charset": "gb2312",
+	"search": {
+		"requestURL": "http://dm.dm530.net/search.asp",
+		"requestMethod": "POST",
+		"requestData": "searchword=[$key]"
+	},
+	"metadata": {
+		"list": "{selector:#mobile-index > ul > li}",
+		"name": "{selector:div > a > img@attr->alt}",
+		"author": "{selector:div.am-gallery-desc}",
+		"img": "{selector:div > a > img@attr->data-original}",
+		"link": "{selector:div > a@attr->href}"
+	},
+	"detail": {
+		"author": "作者无法获取",
+		"summary": "{selector:p.txtDesc.autoHeight}",
+		"upDate": "{selector:#p-info > p:nth-child(6)}",
+		"catalog_link": [],
+		"tab": {
+			"list": "{selector:ul.am-tabsa-nav.am-cf > li}",
+			"name": "{selector:a}"
+		},
+		"catalog": {
+			"list": "{selector:div.am-tab-panel}",
+			"chapter": {
+				"list": "{selector:ul.mvlist > li}",
+				"name": "{selector:a@attr->title}",
+				"link": "{selector:a@attr->href}",
+				"orderBy": 0,
+				"category": 3
+			}
+		}
+	}
 }
