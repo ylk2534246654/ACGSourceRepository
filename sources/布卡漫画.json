@@ -20,11 +20,11 @@
     "upDate": "{selector:span.manga-episodes_text}{re::, }",
     "catalog_link": [],
     "tab":{
-            "list":[],
-            "name":"目录"
+            "list":"{selector:div.manga-episodes_title}",
+            "name":"{selector:span.manga-episodes_text}"
         },
     "catalog":{
-        "list":[],
+        "list":"{selector:div.manga-episodes}",
         "chapter": {
                 "list": "{selector:div.epsbox > a}",
 		        "name": "{selector:a}",
