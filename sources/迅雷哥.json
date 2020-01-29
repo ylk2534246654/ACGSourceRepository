@@ -19,7 +19,7 @@
 		"upDate": "{selector:p:nth-child(1) > font}",
 		"catalog_link": [],
 		"tab": {
-			"list": "{selector:body > div > h5}{re:影片介绍,}",
+			"list": "{selector:body > div > h5}{re:影片介绍, }",
 			"name": "{selector:h5}"
 		},
 		"catalog": {
