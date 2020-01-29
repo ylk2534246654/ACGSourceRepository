@@ -20,7 +20,7 @@
 		"catalog_link": [],
 		"tab": {
 			"list": "{selector:body > div > h5}",
-			"name": "{selector:h5}{re:影片介绍,}"
+			"name": "{selector:h5}{re:影片介绍, }"
 		},
 		"catalog": {
 			"list": "{selector:body > div > div.playlist}",
