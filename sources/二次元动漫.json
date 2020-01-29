@@ -20,13 +20,13 @@
     "upDate": "{selector:p:nth-child(2) > a}",
     "catalog_link": [],
     "tab":{
-            "list":"{selector:#menu0 > li}",
-            "name":"{selector:li}"
+            "list":"{selector:div.box-hd > h2}",
+            "name":"{selector:h2}"
         },
     "catalog":{
-        "list":"{selector:#main0 > div}",
+        "list":"{selector:#oneCon1 > ul}",
         "chapter": {
-                "list": "{selector:div[id=oneCon1] > ul[class=b1] > li}",
+                "list": "{selector:ul > li}",
 		        "name": "{selector:a}",
 		        "link": "{selector:a@attr->href}",
                 "orderBy": 1,
