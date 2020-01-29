@@ -21,8 +21,8 @@
     "catalog":{
         "link": [],
         "tab":{
-            "list":"#menu0 > li",
-            "name":"li"
+            "list":"{selector:#menu0 > li}",
+            "name":"{selector:li}"
         },
         "chapter": {
                 "list": "{selector:#main0 > div}",
