@@ -1,6 +1,6 @@
 {
   "name": "动漫狂",
-  "charset": "BIG5",
+  "charset": "big5",
   "search": {
     "requestURL": "https://www.cartoonmad.com/search.html",
 	"requestMethod": "POST",
@@ -17,15 +17,22 @@
   "detail": {
     "author": "{selector:table > tbody > tr:nth-child(2) > td[align = center] > table:nth-child(1) > tbody > tr:nth-child(5) > td}{re:原創作者：, }",
     "summary": "{selector:#info > table > tbody > tr > td}",
-    "upDate": "[#此处暂时未开发]",
-    "catalog":"[#如果目录在其他页面,则添加跳转链接的获取]",
-    "orderBy": 1,
-	"chapter": [{
-		"list": "{selector:fieldset[id=info] > table > tbody > tr > td}",
-		"name": "{selector:a}",
-		"link": "{selector:a@attr->href}",
-		"category":2
-	  }]
+    "upDate": "{selector:tbody > tr:nth-child(4) > td > table > tbody > tr:nth-child(1) > td:nth-child(2) > b > font}}",
+    "catalog_link": [],
+    "tab":{
+            "list":"{selector:tbody > tr:nth-child(2) > td:nth-child(2) > table:nth-child(3) > tbody > tr > td}",
+            "name":"{selector:#info > legend}"
+        },
+    "catalog":{
+        "list":"{selector:tbody > tr:nth-child(2) > td:nth-child(2) > table:nth-child(3) > tbody > tr > td}",
+        "chapter": {
+                "list": "{selector:fieldset[id=info] > table > tbody > tr > td}",
+		        "name": "{selector:a}",
+		        "link": "{selector:a@attr->href}",
+                "orderBy": 1,
+                "category":2
+        }
+    }
   },
   "content": {
     "list":"https://web.cartoonmad.com/home75458{sub:[$html],file=,001&,0}{num:000}.jpg",
