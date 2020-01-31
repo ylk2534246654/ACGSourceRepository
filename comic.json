@@ -8,43 +8,36 @@
 		{
 		  "name":"百年漫画",
 		  "url":"https://m.bnmanhua.com",
-          "version":1579492775,
           "checked":true,
 		  "category":1
 		},{
 		  "name":"动漫之家",
 		  "url":"https://www.dmzj.com",
-          "version":1579492775,
           "checked":true,
 		  "category":1
 		},{
 		  "name":"布卡漫画",
 		  "url":"http://m.buka.cn",
-          "version":1579492775,
           "checked":true,
 		  "category":1
 		},{
 		  "name":"土豪漫画",
 		  "url":"https://m.tohomh123.com",
-          "version":1579492775,
           "checked":true,
 		  "category":1
 		},{
 		  "name":"二次元动漫",
 		  "url":"http://www.2animx.com",
-          "version":1579492775,
           "checked":true,
 		  "category":1
 		},{
 		  "name":"MangaNel",
 		  "url":"https://manganelo.com",
-          "version":1579492775,
           "checked":true,
 		  "category":1
 		},{
 		  "name":"动漫狂",
 		  "url":"https://www.cartoonmad.com",
-          "version":1579492775,
           "checked":true,
 		  "category":1
 		}
