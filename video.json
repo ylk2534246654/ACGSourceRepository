@@ -8,21 +8,25 @@
 		{
 		  "name":"AGE动漫",
 		  "url":"https://www.agefans.tv",
+          "checked":true,
 		  "category":1,
 		  "version":1579492775
 		},{
 		  "name":"风车动漫",
 		  "url":"http://dm.dm530.net",
+          "checked":true,
 		  "category":1,
 		  "version":1579492775
 		},{
 		  "name":"迅雷哥",
 		  "url":"https://m.4142.cc",
+          "checked":true,
 		  "category":1,
 		  "version":1579492775
 		},{
 		  "name":"嘀哩嘀哩",
 		  "url":"http://www.dilidili.one",
+          "checked":true,
 		  "category":1,
 		  "version":1579492775
 		}
