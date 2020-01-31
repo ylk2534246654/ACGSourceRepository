@@ -3,7 +3,7 @@
   "charset": "UTF-8",
   "search": {
     "requestURL": "http://www.2animx.com/search-index?&searchType=1&q=[$key]",
-	"requestMethod": "GET"
+	"requestMethod": "GET",
     "requestData": ""
   },
   "metadata": {
