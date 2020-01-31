@@ -19,7 +19,7 @@
     "upDate": "{selector:li:nth-child(8) > span.detail_imform_value}",
     "catalog_link": [],
     "tab":{
-            "list":"{selector:#menu0 > li}",
+            "list":"{selector:#menu0 > li.on}",
             "name":"{selector:li}"
         },
     "catalog":{
