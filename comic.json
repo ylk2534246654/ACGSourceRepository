@@ -3,7 +3,7 @@
   "summary": "一些漫画搜索源。",
   "sources":"https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/",
   "versionName":"1.0",
-  "versionCode":1579492775,
+  "versionCode":1,
   "list": [
 		{
 		  "name":"百年漫画",
