@@ -1,7 +1,9 @@
 {
-  "name":"雨夏-动漫类",
+  "name":"动漫类",
   "summary": "一些动漫搜索源,部分电影也能搜到。",
   "sources":"https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/",
+  "versionName":"1.0",
+  "versionCode":1,
   "list": [
 		{
 		  "name":"AGE动漫",
