@@ -2,35 +2,34 @@
   "name": "幽冰小说",
   "charset": "UTF-8",
   "search": {
-    "requestURL": "https://m.bnmanhua.com/index.php?&m=vod-search",
-	"requestMethod": "POST",
-    "requestData": "wd=[$key]"
+    "requestURL": "https://www.97ub.cc/modules/article/search.php?searchkey=[$key]",
+	"requestMethod": "GET",
+    "requestData": ""
   },
   "metadata": {
-    "list": "{selector:ul[class=tbox_m] > li}",
-    "name": "{selector:h4[class=h4] > a@attr->title}",
-    "author": "",
-    "img": "{selector:a[class=vbox_t] > mip-img@attr->src}",
-	"link": "{selector:h4[class=h4] > a@attr->href}"
-
+    "list": "{selector:tbody>tr}",
+    "name": "{selector:td.odd}",
+    "author": "{selector:td.odd:nth-child(3)}",
+    "img": "",
+	"link": "{selector:td.odd@attr->href}"
   },
   "detail": {
     "author": "{selector:p.dir}end{sub:[$this],：,end,1}",
-    "summary": "{selector:div.tbox_js}",
-    "upDate": "{selector:span.list_item }",
+    "summary": "{selector:#intro}",
+    "upDate": "{selector:#info > p:nth-child(4)}",
     "catalog_link": [],
     "tab":{
-            "list":"{selector:body > div.tbox.tabs > div.tbox_t}",
-            "name":"{selector:div.tbox_t}"
+            "list":"{selector:#list > dl > dt:nth-child(12)}",
+            "name":"{selector:dt}"
         },
     "catalog":{
-        "list":"{selector:body > div.tbox.tabs > div.tabs_block}",
+        "list":"{selector:#list > dl}",
         "chapter": {
-                "list": "{selector:div.tabs_block > ul > li}",
+                "list": "{selector:dd}",
 		        "name": "{selector:a}",
 		        "link": "{selector:a@attr->href}",
                 "orderBy": 1,
-                "category":2
+                "category":3
         }
     }
   },
