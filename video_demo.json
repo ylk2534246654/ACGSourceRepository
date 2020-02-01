@@ -1,0 +1,15 @@
+{
+  "name":"营养快线",
+  "summary": "闲着随便搞的一些视频搜索源",
+"sources":"https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/",
+  "versionName":"1.0",
+  "versionCode":1,
+  "list": [
+		{
+		  "name":"百胜钻石社区",
+		  "url":"注意身体",
+          "checked":true,
+		  "category":1
+		}
+     ]
+}
