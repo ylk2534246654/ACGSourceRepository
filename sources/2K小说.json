@@ -29,8 +29,11 @@
                 "name": "{selector:a}",
                 "link": "{selector:a@attr->href}",
                 "orderBy": 0,
-                "category": 1
+                "category": 4
             }
         }
-    }
+    },
+  "content": {
+    "text": "#nr1"
+  }
 }
