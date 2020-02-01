@@ -1,0 +1,36 @@
+{
+	"name": "百胜钻石社区",
+	"charset": "utf-8",
+	"search": {
+		"requestURL": "https://bszs14.cn/index.php/vod/search/?wd=[$key]&submit=",
+		"requestMethod": "GET",
+		"requestData": ""
+	},
+	"metadata": {
+		"list": "{selector:ul > li.active}",
+		"name": "{selector:div.thumb > a@attr->title}",
+		"author": "",
+		"img": "{selector:div.thumb > a@attr->data-original}",
+		"link": "{selector:div.thumb > a@attr->href}"
+	},
+	"detail": {
+		"author": "{selector:div.intro > div:nth-child(4) > p:nth-child(2) > a}",
+		"summary": "",
+		"upDate": "{selector:p.data.hidden-sm}",
+		"catalog_link": [],
+		"tab": {
+			"list": "{selector:div > div.stui-pannel-box.b.playlist.mb > div.stui-pannel_hd}",
+			"name": "{selector:div > h3}"
+		},
+		"catalog": {
+			"list": "{selector:div > div.stui-pannel-box.b.playlist.mb > div.stui-pannel_bd}",
+			"chapter": {
+				"list": "{selector:ul}",
+				"name": "{selector:ul > li > a}",
+				"link": "{selector:ul > li > a@attr->href}",
+				"orderBy": 1,
+				"category": 3
+			}
+		}
+	}
+}
