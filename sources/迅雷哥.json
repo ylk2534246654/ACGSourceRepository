@@ -19,8 +19,8 @@
 		"upDate": "{selector:p:nth-child(1) > font}",
 		"catalog_link": [],
 		"tab": {
-			"list": "{selector:body > div > h5}",
-			"name": "{selector:h5:gt(0)}"
+			"list": "{selector:body > div > h5:gt(0)}",
+			"name": "{selector:h5}"
 		},
 		"catalog": {
 			"list": "{selector:body > div > div.playlist}",
