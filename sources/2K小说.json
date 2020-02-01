@@ -20,7 +20,7 @@
         "catalog_link": [],
         "tab": {
             "list": "{selector:#dibu1}",
-            "name": "{selector:#dibu1}"
+            "name": "{selector:#dibu1}{re:↓直达底部, }"
         },
         "catalog": {
             "list": "{selector:div.chapter}",
