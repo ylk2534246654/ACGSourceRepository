@@ -1,0 +1,36 @@
+{
+    "name": "2K小说",
+    "charset": "gbk",
+    "search": {
+        "requestURL": "https://m.fpzw.com/modules/article/search.php?searchtype=keywords&searchkey=[$key]",
+        "requestMethod": "GET",
+        "requestData": ""
+    },
+    "metadata": {
+        "list": "{selector:div.hot_sale}",
+        "name": "{selector:a>p.title}",
+        "author": "{selector:a>p.author}",
+        "img": "{selector:a>img@attr->src}",
+        "link": "{selector:a@attr->href}"
+    },
+    "detail": {
+        "author": "{selector:td:nth-child(2) > div:nth-child(2)}",
+        "summary": "{selector:div.lb_jj > div:nth-child(5)}",
+        "upDate": "{selector:td:nth-child(2) > div:nth-child(5)}",
+        "catalog_link": [],
+        "tab": {
+            "list": "{selector:#dibu1}",
+            "name": "{selector:#dibu1}"
+        },
+        "catalog": {
+            "list": "{selector:div.chapter}",
+            "chapter": {
+                "list": "{selector:li}",
+                "name": "{selector:a}",
+                "link": "{selector:a@attr->href}",
+                "orderBy": 1,
+                "category": 0
+            }
+        }
+    }
+}
