@@ -8,10 +8,10 @@
   },
   "metadata": {
     "list": "{selector:tbody > tr}",
-    "name": "{selector:td.odd}",
+    "name": "{selector:td:nth-child(1)}",
     "author": "{selector:td.odd:nth-child(3)}",
     "img": "",
-	"link": "{selector:td.odd@attr->href}"
+	"link": "{selector:td:nth-child(1)@attr->href}"
   },
   "detail": {
     "author": "{selector:p.dir}end{sub:[$this],：,end,1}",
