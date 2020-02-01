@@ -7,7 +7,7 @@
     "requestData": ""
   },
   "metadata": {
-    "list": "{selector:tbody>tr}",
+    "list": "{selector:tbody > tr}",
     "name": "{selector:td.odd}",
     "author": "{selector:td.odd:nth-child(3)}",
     "img": "",
