@@ -2,7 +2,7 @@
 	"name": "百胜钻石社区",
 	"charset": "utf-8",
 	"search": {
-		"requestURL": "https://bszs14.cn/index.php/vod/search/?wd=[$key]&submit=",
+		"requestURL": "https://bszs14.cn/index.php/vod/search/?wd=[$key]",
 		"requestMethod": "GET",
 		"requestData": ""
 	},
