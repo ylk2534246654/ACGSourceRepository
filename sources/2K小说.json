@@ -28,7 +28,7 @@
                 "list": "{selector:li}",
                 "name": "{selector:a}",
                 "link": "{selector:a@attr->href}",
-                "orderBy": 1,
+                "orderBy": 0,
                 "category": 1
             }
         }
