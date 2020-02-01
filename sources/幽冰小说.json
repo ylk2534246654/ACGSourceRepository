@@ -10,7 +10,7 @@
     "list": "{selector:tbody > tr}",
     "name": "{selector:td:nth-child(1)}",
     "author": "{selector:td.odd:nth-child(3)}",
-    "img": "",
+    "img": "{selector:}",
 	"link": "{selector:td:nth-child(1)@attr->href}"
   },
   "detail": {
