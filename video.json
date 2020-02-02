@@ -35,6 +35,11 @@
 		  "url":"http://www.nicotv.me",
           "checked":true,
 		  "category":1
+		},{
+		  "name":"乐天动漫",
+		  "url":"http://www.tldm.net",
+          "checked":true,
+		  "category":1
 		}
      ]
 }
