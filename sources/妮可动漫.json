@@ -14,16 +14,16 @@
 	"link": "{selector:h2 > a@attr->href}"
   },
   "detail": {
-    "author": "{selector:li:nth-child(5) > span.detail_imform_value}",
-    "summary": "{selector:div.detail_imform_desc_pre > p}",
-    "upDate": "{selector:li:nth-child(8) > span.detail_imform_value}",
+    "author": "",
+    "summary": "{selector:div > div.media-body > dl}",
+    "upDate": "{selector:div.media-body > h2 > small}",
     "catalog_link": [],
     "tab":{
-            "list":"{selector:#menu0 > li}",
-            "name":"{selector:li}"
+            "list":"{selector:ul.nav.nav-tabs > li}",
+            "name":"{selector:a > span}"
         },
     "catalog":{
-        "list":"{selector:#main0 > div.movurl}",
+        "list":"{selector:div.tab-content > ul}",
         "chapter": {
                 "list": "{selector:ul > li}",
                 "name": "{selector:a}",
