@@ -25,17 +25,12 @@
     "catalog":{
         "list":"{selector:#list > dl}",
         "chapter": {
-                "list": "{selector:dd}",
+                "list": "{selector:dd@start->2@end->2}",
 		        "name": "{selector:a}",
 		        "link": "{selector:a@attr->href}",
                 "orderBy": 1,
-                "category":1
+                "category":4
         }
     }
-  },
-  "content": {
-    "list":"{sub:[$html],z_img=',',0}{selector:}",
-	"link":"{sub:[$html],z_yurl=',',0}{selector:}",
-	"endid":""
   }
 }
