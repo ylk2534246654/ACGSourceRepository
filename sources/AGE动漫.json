@@ -3,7 +3,7 @@
   "charset": "UTF-8",
   "search": {
     "requestURL": "https://www.agefans.tv/search?&query=[$key]&page=[$page]",
-	  "requestMethod": "GET"
+	  "requestMethod": "GET",
     "requestData": ""
   },
   "metadata": {
