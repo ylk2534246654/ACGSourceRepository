@@ -26,7 +26,7 @@
         "list":"{selector:#playList > div}",
         "chapter": {
                 "list": "{selector:div.tb.fix > a}",
-                "name": "{selector:a@attr->title}",
+                "name": "{selector:a}{re:{selector:a > span}, }",
                 "link": "{selector:a@attr->href}",
                 "orderBy": 1,
                 "category":3
