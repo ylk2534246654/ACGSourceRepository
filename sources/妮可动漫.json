@@ -1,0 +1,37 @@
+{
+  "name": "妮可动漫",
+  "charset": "UTF-8",
+  "search": {
+    "requestURL": "http://www.nicotv.club/video/search/[$key].html",
+	  "requestMethod": "GET",
+    "requestData": ""
+  },
+  "metadata": {
+    "list": "{selector:div.container > ul > li}",
+    "name": "{selector:h2 > a}",
+    "author": "{selector:h4}",
+    "img": "{selector:p.image > a > img@attr->data-original}",
+	"link": "{selector:h2 > a@attr->href}"
+  },
+  "detail": {
+    "author": "{selector:li:nth-child(5) > span.detail_imform_value}",
+    "summary": "{selector:div.detail_imform_desc_pre > p}",
+    "upDate": "{selector:li:nth-child(8) > span.detail_imform_value}",
+    "catalog_link": [],
+    "tab":{
+            "list":"{selector:#menu0 > li}",
+            "name":"{selector:li}"
+        },
+    "catalog":{
+        "list":"{selector:#main0 > div.movurl}",
+        "chapter": {
+                "list": "{selector:ul > li}",
+                "name": "{selector:a}",
+                "link": "{selector:a@attr->href}",
+                "orderBy": 1,
+                "category":3
+        }
+        
+    }
+  }
+}
