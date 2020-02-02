@@ -25,6 +25,11 @@
 		  "url":"http://www.dilidili.one",
           "checked":true,
 		  "category":1
+		},{
+		  "name":"奇奇动漫",
+		  "url":"http://m.qiqidongman.com/",
+          "checked":true,
+		  "category":1
 		}
      ]
 }
