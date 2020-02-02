@@ -1,0 +1,37 @@
+{
+  "name": "奇奇动漫",
+  "charset": "UTF-8",
+  "search": {
+    "requestURL": "http://m.qiqidongman.com/vod-search-wd-[$key].html",
+	  "requestMethod": "GET",
+    "requestData": ""
+  },
+  "metadata": {
+    "list": "{selector:div.list > div}",
+    "name": "{selector:div.tit > div > a}",
+    "author": "",
+    "img": "{selector:div.con > a@attr->datapic}",
+	"link": "{selector:div.con > a@attr->href}"
+  },
+  "detail": {
+    "author": "",
+    "summary": "{selector:#descCont}",
+    "upDate": "{selector:div.contWrap > p:nth-child(2)}",
+    "catalog_link": [],
+    "tab":{
+            "list":"{selector:#playList > div.caption.captionUrlList}",
+            "name":"{selector:div}"
+        },
+    "catalog":{
+        "list":"{selector:#playList > div.tv-list}",
+        "chapter": {
+                "list": "{selector:ul > li}",
+                "name": "{selector:a@attr->title}",
+                "link": "{selector:a@attr->href}",
+                "orderBy": 1,
+                "category":3
+        }
+        
+    }
+  }
+}
