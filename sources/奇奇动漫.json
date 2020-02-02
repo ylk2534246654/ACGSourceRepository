@@ -9,23 +9,23 @@
   "metadata": {
     "list": "{selector:#LIST > li}",
     "name": "{selector:i.tit}",
-    "author": "无法获取",
+    "author": "",
     "img": "{selector:img@attr->data-src}",
 	"link": "{selector:a@attr->href}"
   },
   "detail": {
     "author": "",
-    "summary": "{selector:#descCont}",
-    "upDate": "{selector:div.contWrap > p:nth-child(2)}",
+    "summary": "{selector:#descCont > p}",
+    "upDate": "{selector:#DESC-info > p:nth-child(2)}",
     "catalog_link": [],
     "tab":{
-            "list":"{selector:#playList > div.caption.captionUrlList}",
-            "name":"{selector:div}"
+            "list":"{selector:#playList > div}",
+            "name":"{selector:div.th.fix > a}"
         },
     "catalog":{
-        "list":"{selector:#playList > div.tv-list}",
+        "list":"{selector:#playList > div}",
         "chapter": {
-                "list": "{selector:ul > li}",
+                "list": "{selector:div.tb.fix > a}",
                 "name": "{selector:a@attr->title}",
                 "link": "{selector:a@attr->href}",
                 "orderBy": 1,
