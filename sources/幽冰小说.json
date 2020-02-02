@@ -14,7 +14,7 @@
 	"link": "{selector:td:nth-child(1) > a@attr->href}"
   },
   "detail": {
-    "author": "{selector#info > p:nth-child(2)}",
+    "author": "{selector:#info > p:nth-child(2)}",
     "summary": "{selector:#intro}",
     "upDate": "{selector:#info > p:nth-child(4)}",
     "catalog_link": [],
