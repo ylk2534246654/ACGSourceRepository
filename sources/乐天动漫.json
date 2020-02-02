@@ -7,11 +7,11 @@
     "requestData": "searchword=[$key]&submit=%CB%D1%CB%F7"
   },
   "metadata": {
-    "list": "{selector:div.container > ul > li}",
-    "name": "{selector:h2 > a}",
-    "author": "{selector:h4}",
-    "img": "{selector:p.image > a > img@attr->data-original}",
-	"link": "{selector:h2 > a@attr->href}"
+    "list": "{selector:div.movie-chrList > ul > li}",
+    "name": "{selector:div.cover > a > img@attr->alt}",
+    "author": "{selector:div.intro > em:nth-child(3)}",
+    "img": "{selector:div.cover > a > img@attr->data-original}",
+	"link": "{selector:div.cover > a@attr->href}"
   },
   "detail": {
     "author": "",
