@@ -27,7 +27,12 @@
 		  "category":1
 		},{
 		  "name":"奇奇动漫",
-		  "url":"http://m.qiqidongman.com/",
+		  "url":"http://m.qiqidongman.com",
+          "checked":true,
+		  "category":1
+		},{
+		  "name":"妮可动漫",
+		  "url":"http://www.nicotv.me",
           "checked":true,
 		  "category":1
 		}
