@@ -1,38 +1,37 @@
 {
-  "name": "奇奇动漫",
-  "charset": "UTF-8",
-  "search": {
-    "requestURL": "http://m.qiqidongman.com/vod-search-wd-[$key].html",
-	  "requestMethod": "GET",
-      "requestHeaders":"User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36",
-    "requestData": ""
-  },
-  "metadata": {
-    "list": "{selector:#LIST > li}",
-    "name": "{selector:i.tit}",
-    "author": "",
-    "img": "{selector:img@attr->data-src}",
-	"link": "{selector:a@attr->href}"
-  },
-  "detail": {
-    "author": "",
-    "summary": "{selector:#descCont > p}",
-    "upDate": "{selector:#DESC-info > p:nth-child(2)}",
-    "catalog_link": [],
-    "tab":{
-            "list":"{selector:#playList > div}",
-            "name":"{selector:div.th.fix > a}"
+    "name": "奇奇动漫",
+    "charset": "UTF-8",
+    "search": {
+        "requestURL": "http://m.qiqidongman.com/vod-search-wd-[$key].html",
+        "requestMethod": "GET",
+        "requestHeaders": "User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36",
+        "requestData": ""
+    },
+    "metadata": {
+        "list": "{selector:#LIST > li}",
+        "name": "{selector:i.tit}",
+        "author": "",
+        "img": "{selector:img@attr->data-src}",
+        "link": "{selector:a@attr->href}"
+    },
+    "detail": {
+        "author": "",
+        "summary": "{selector:#descCont > p}",
+        "upDate": "{selector:#DESC-info > p:nth-child(2)}",
+        "catalog_link": [],
+        "tab": {
+            "list": "{selector:#playList > div}",
+            "name": "{selector:div.th.fix > a}"
         },
-    "catalog":{
-        "list":"{selector:#playList > div}",
-        "chapter": {
+        "catalog": {
+            "list": "{selector:#playList > div}",
+            "chapter": {
                 "list": "{selector:div.tb.fix > a}",
                 "name": "{selector:a}{re:{selector:a > span}, }",
                 "link": "{selector:a@attr->href}",
                 "orderBy": 1,
-                "category":3
+                "category": 3
+            }
         }
-        
     }
-  }
 }
