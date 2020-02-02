@@ -8,8 +8,8 @@
   },
   "metadata": {
     "list": "{selector:div.list > div}",
-    "name": "{selector:div.tit > div > a}",
-    "author": "",
+    "name": "{selector:div.tit}",
+    "author": "无法获取",
     "img": "{selector:div.con > a@attr->datapic}",
 	"link": "{selector:div.con > a@attr->href}"
   },
