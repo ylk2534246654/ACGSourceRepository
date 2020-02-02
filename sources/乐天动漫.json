@@ -1,0 +1,37 @@
+{
+  "name": "乐天动漫",
+  "charset": "gb2312",
+  "search": {
+    "requestURL": "http://www.tldm.net/search.asp",
+	  "requestMethod": "POST",
+    "requestData": "searchword=[$key]&submit=%CB%D1%CB%F7"
+  },
+  "metadata": {
+    "list": "{selector:div.container > ul > li}",
+    "name": "{selector:h2 > a}",
+    "author": "{selector:h4}",
+    "img": "{selector:p.image > a > img@attr->data-original}",
+	"link": "{selector:h2 > a@attr->href}"
+  },
+  "detail": {
+    "author": "",
+    "summary": "{selector:div > div.media-body > dl}",
+    "upDate": "{selector:div.media-body > h2 > small}",
+    "catalog_link": [],
+    "tab":{
+            "list":"{selector:ul.nav.nav-tabs > li}",
+            "name":"{selector:li}"
+        },
+    "catalog":{
+        "list":"{selector:div.tab-content > ul}",
+        "chapter": {
+                "list": "{selector:ul > li}",
+                "name": "{selector:a}",
+                "link": "{selector:a@attr->href}",
+                "orderBy": 1,
+                "category":3
+        }
+        
+    }
+  }
+}
