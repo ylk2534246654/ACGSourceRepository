@@ -10,7 +10,7 @@
     "list": "{selector:div.movie-chrList > ul > li}",
     "name": "{selector:div.cover > a > img@attr->alt}",
     "author": "{selector:div.intro > em:nth-child(3)}",
-    "img": "{selector:div.cover > a > img@attr->data-original}",
+    "img": "{selector:div.cover > a > img@attr->src}",
 	"link": "{selector:div.cover > a@attr->href}"
   },
   "detail": {
