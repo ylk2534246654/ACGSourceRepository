@@ -20,7 +20,7 @@
     "catalog_link": [],
     "tab":{
             "list":"{selector:ul.nav.nav-tabs > li}",
-            "name":"{selector:a > span}"
+            "name":"{selector:li}"
         },
     "catalog":{
         "list":"{selector:div.tab-content > ul}",
