@@ -7,11 +7,11 @@
     "requestData": ""
   },
   "metadata": {
-    "list": "{selector:div.list > div}",
-    "name": "{selector:div.tit}",
+    "list": "{selector:#LIST > li}",
+    "name": "{selector:i.tit}",
     "author": "无法获取",
-    "img": "{selector:div.con > a@attr->datapic}",
-	"link": "{selector:div.con > a@attr->href}"
+    "img": "{selector:img@attr->data-src}",
+	"link": "{selector:a@attr->href}"
   },
   "detail": {
     "author": "",
