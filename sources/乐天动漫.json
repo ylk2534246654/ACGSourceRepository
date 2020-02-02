@@ -15,17 +15,17 @@
   },
   "detail": {
     "author": "",
-    "summary": "{selector:div > div.media-body > dl}",
-    "upDate": "{selector:div.media-body > h2 > small}",
+    "summary": "{selector:div.mtext > ul > li:nth-child(3)}",
+    "upDate": "{selector:div.mtext > ul > li:nth-child(1) > em}",
     "catalog_link": [],
     "tab":{
-            "list":"{selector:ul.nav.nav-tabs > li}",
-            "name":"{selector:li}"
+            "list":"{selector:div.playurl}",
+            "name":"{selector:div.title > span:nth-child(2)}{re:选自已喜欢的播放线路 进行播放 24小时更新 新番动漫 BD版资原 日 美剧, }"
         },
     "catalog":{
-        "list":"{selector:div.tab-content > ul}",
+        "list":"{selector:div.playurl > div.bfdz}",
         "chapter": {
-                "list": "{selector:ul > li}",
+                "list": "{selector:ul > ul > li > ul > li}",
                 "name": "{selector:a}",
                 "link": "{selector:a@attr->href}",
                 "orderBy": 1,
