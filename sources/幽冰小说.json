@@ -25,7 +25,7 @@
     "catalog":{
         "list":"{selector:#list > dl}",
         "chapter": {
-                "list": "{selector:dd@attr->href@start->10}",
+                "list": "{selector:dd@start->10}",
 		        "name": "{selector:a}",
 		        "link": "{selector:a@attr->href}",
                 "orderBy": 1,
