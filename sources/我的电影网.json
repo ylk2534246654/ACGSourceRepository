@@ -3,7 +3,7 @@
   "charset": "UTF-8",
   "search": {
     "requestURL": "http://www.wodedy.net/search.php",
-	  "requestMethod": "GET",
+	  "requestMethod": "POST",
     "requestData": "searchword=[$key]"
   },
   "metadata": {
