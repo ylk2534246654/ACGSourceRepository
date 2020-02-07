@@ -41,6 +41,11 @@
           "checked":true,
 		  "category":1
 		},{
+		  "name":"哔咪哔咪",
+		  "url":"http://www.bimibimi.tv",
+          "checked":true,
+		  "category":1
+		},{
 		  "name":"我的电影网",
 		  "url":"http://www.wodedy.net",
           "checked":true,
