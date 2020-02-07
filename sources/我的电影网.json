@@ -19,13 +19,13 @@
     "upDate": "{selector:li:nth-child(8) > span.detail_imform_value}",
     "catalog_link": [],
     "tab":{
-            "list":"{selector:#menu0 > li}",
+            "list":"{selector:div.playfrom > ul >li}",
             "name":"{selector:li}"
         },
     "catalog":{
-        "list":"{selector:#main0 > div.movurl}",
+        "list":"{selector:#vlink_1}",
         "chapter": {
-                "list": "{selector:ul > li}",
+                "list": "{selector:#vlink_1 > ul > li}",
                 "name": "{selector:a}",
                 "link": "{selector:a@attr->href}",
                 "orderBy": 1,
