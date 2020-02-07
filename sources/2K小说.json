@@ -34,6 +34,6 @@
         }
     },
   "content": {
-    "text": "#nr1"
+    "text": "{selector:#nr1}"
   }
 }
