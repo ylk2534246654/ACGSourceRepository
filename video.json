@@ -40,6 +40,11 @@
 		  "url":"http://www.tldm.net",
           "checked":true,
 		  "category":1
+		},{
+		  "name":"我的电影网",
+		  "url":"http://www.wodedy.net",
+          "checked":true,
+		  "category":1
 		}
      ]
 }
