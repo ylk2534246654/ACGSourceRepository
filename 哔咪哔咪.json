@@ -1,0 +1,37 @@
+{
+  "name": "哔咪哔咪",
+  "charset": "UTF-8",
+  "search": {
+    "requestURL": "http://www.bimibimi.tv/vod/search/",
+	  "requestMethod": "GET",
+    "requestData": "wd=[$key]"
+  },
+  "metadata": {
+    "list": "{selector:ul.tab-cont > li}",
+    "name": "{selector:a@attr->title}",
+    "author": "{selector:span.mask}",
+    "img": "{selector:a > img@attr->data-original}",
+	"link": "{selector:a@attr->href}"
+  },
+  "detail": {
+    "author": "{selector:li:nth-child(5) > span.detail_imform_value}",
+    "summary": "{selector:div.detail_imform_desc_pre > p}",
+    "upDate": "{selector:li:nth-child(8) > span.detail_imform_value}",
+    "catalog_link": [],
+    "tab":{
+            "list":"{selector:#menu0 > li}",
+            "name":"{selector:li}"
+        },
+    "catalog":{
+        "list":"{selector:#main0 > div.movurl}",
+        "chapter": {
+                "list": "{selector:ul > li}",
+                "name": "{selector:a}",
+                "link": "{selector:a@attr->href}",
+                "orderBy": 1,
+                "category":3
+        }
+        
+    }
+  }
+}
