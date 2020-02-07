@@ -31,9 +31,9 @@
                 "orderBy": 1,
                 "category": 4
             }
-        },
-        "content": {
-            "text": "{selector:#content}"
         }
+    },
+    "content": {
+        "text": "{selector:#content}"
     }
 }
