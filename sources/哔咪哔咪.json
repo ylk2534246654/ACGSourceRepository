@@ -3,7 +3,7 @@
     "charset": "UTF-8",
     "search": {
         "requestURL": "http://www.bimibimi.tv/vod/search/",
-        "requestMethod": "GET",
+        "requestMethod": "POST",
         "requestData": "wd=[$key]"
     },
     "metadata": {
