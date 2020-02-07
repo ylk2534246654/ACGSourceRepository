@@ -14,9 +14,9 @@
         "link": "{selector:a@attr->href}"
     },
     "detail": {
-        "author": "{selector:li:nth-child(5) > span.detail_imform_value}",
-        "summary": "{selector:div.detail_imform_desc_pre > p}",
-        "upDate": "{selector:li:nth-child(8) > span.detail_imform_value}",
+        "author": "",
+        "summary": "{selector:div.vod-jianjie}",
+        "upDate": "{selector:em.em_num}",
         "catalog_link": [],
         "tab": {
             "list": "{selector:div.js_bt}",
