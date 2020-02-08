@@ -37,6 +37,7 @@
   "content": {
     "list":"{sub:[$html],pl = ',/000,0}/{num:0000}.jpg",
 	"link":"",
-	"endid":"{sub:[$html],pcount=,;,0}"
+	"endid":"{sub:[$html],pcount=,;,0}",
+    "mode":2
   }
 }
