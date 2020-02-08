@@ -36,6 +36,7 @@
   "content": {
     "list":"{sub:[$html],initData(,);,0}{selector:page_url}",
 	"link":"",
-	"endid":""
+	"endid":"",
+    "mode":2
   }
 }
