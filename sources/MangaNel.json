@@ -37,6 +37,7 @@
   "content": {
     "list":"{selector:#vungdoc > img}",
 	"link":"{selector:img@attr->src}",
-	"endid":""
+	"endid":"",
+    "mode":1
   }
 }
