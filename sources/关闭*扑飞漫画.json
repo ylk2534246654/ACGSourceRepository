@@ -30,6 +30,7 @@
   "content": {
     "list":"[$url]-p-[$id]",
 	"link":"{sub:[$html],z_yurl=',',0}",
-	"endid":""
+	"endid":"",
+    "mode":1
   }
 }
