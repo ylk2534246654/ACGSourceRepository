@@ -1,22 +1,10 @@
 {
-    "name": "动漫类",
-    "summary": "一些动漫搜索源,部分电影也能搜到。",
+    "name": "视频类",
+    "summary": "一些视频(电视剧,电影，动漫等)搜索源",
     "sources": "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/",
     "versionName": "1.0",
     "versionCode": 1,
     "list": [
-        {
-            "name": "AGE动漫",
-            "url": "https://www.agefans.tv",
-            "checked": true,
-            "category": 1
-        },
-        {
-            "name": "风车动漫",
-            "url": "http://dm.dm530.net",
-            "checked": true,
-            "category": 1
-        },
         {
             "name": "迅雷哥",
             "url": "https://m.4142.cc",
@@ -24,38 +12,8 @@
             "category": 1
         },
         {
-            "name": "嘀哩嘀哩",
-            "url": "http://www.dilidili.one",
-            "checked": true,
-            "category": 1
-        },
-        {
-            "name": "奇奇动漫",
-            "url": "http://m.qiqidongman.com",
-            "checked": true,
-            "category": 1
-        },
-        {
-            "name": "妮可动漫",
-            "url": "http://www.nicotv.me",
-            "checked": true,
-            "category": 1
-        },
-        {
-            "name": "乐天动漫",
-            "url": "http://www.tldm.net",
-            "checked": true,
-            "category": 1
-        },
-        {
             "name": "我的电影网",
             "url": "http://www.wodedy.net",
-            "checked": true,
-            "category": 1
-        },
-        {
-            "name": "哔咪哔咪",
-            "url": "http://www.bimibimi.tv",
             "checked": true,
             "category": 1
         }
