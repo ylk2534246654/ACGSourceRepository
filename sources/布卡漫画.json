@@ -37,6 +37,7 @@
   "content": {
     "list":"{selector:#manga-imgs > div.manga-c}",
 	"link":"{selector:img@attr->data-original}",
+    "startid":"0",
 	"endid":"",
     "mode":1
   }
