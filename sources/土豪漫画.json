@@ -15,7 +15,7 @@
 
   },
   "detail": {
-    "author": "{selector:div.info > p:nth-child(3)}{re:作者：, }",
+    "author": "{selector:div.info > p:nth-child(3)}{re:作者：,}",
     "summary": "{selector:div.detailContent > p}",
     "upDate": "{selector:p.bottom.d-nowrap}",
     "catalog_link": [],
