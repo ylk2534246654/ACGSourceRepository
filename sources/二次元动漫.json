@@ -37,7 +37,7 @@
   "content": {
     "list":"[$url]-p-[$id]",
 	"link":"{selector:img[id = ComicPic]@attr->src}",
-    "startid":"0",
+    "startid":"1",
 	"endid":"{selector:#total@attr->value}",
     "mode":2
   }
