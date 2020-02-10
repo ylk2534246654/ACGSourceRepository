@@ -36,7 +36,7 @@
   },
   "content": {
     "list":"https://web.cartoonmad.com/home75458{sub:[$html],file=,001&,0}{num:000}.jpg",
-	"link":"",
+	"link":"去除",
     "startid":"1",
 	"endid":"{selector:select > option:last-child}{sub:[$this],第,頁,1}",
     "mode":2
