@@ -35,7 +35,7 @@
   },
   "content": {
     "list":"{sub:[$html],initData(,);,0}{selector:page_url}",
-	"link":"{selector:）",
+	"link":"{selector:}",
 	"endid":"去除",
     "mode":2
   }
