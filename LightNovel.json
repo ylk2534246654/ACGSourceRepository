@@ -1,0 +1,8 @@
+{
+    "name": "轻小说类",
+    "summary": "一些轻小说搜索源",
+    "sources": "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/",
+    "versionName": "1.0",
+    "versionCode": 1,
+    "list": []
+}
