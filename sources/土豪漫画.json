@@ -36,7 +36,7 @@
   },
   "content": {
     "list":"{sub:[$html],pl = ',/000,0}/{num:0000}.jpg",
-    "startid":"1",
+    "startid":"0",
 	"endid":"{sub:[$html],pcount=,;,0}{count:[$this]-1,1}",
     "mode":2
   }
