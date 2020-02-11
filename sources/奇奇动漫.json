@@ -21,7 +21,7 @@
         "catalog_link": [],
         "tab": {
             "list": "{selector:#playList > div}",
-            "name": "{selector:div.th.fix > a}"
+            "name": "{selector:div.th.fix > i:nth-child(2)}"
         },
         "catalog": {
             "list": "{selector:#playList > div}",
