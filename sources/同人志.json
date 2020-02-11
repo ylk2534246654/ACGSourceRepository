@@ -7,11 +7,11 @@
         "requestData": "show=title%2Ctitleen%2Ctags&keyboard=[$key]"
     },
     "metadata": {
-        "list": "{sub:[$html],serchArry=,</script>,0}",
-        "name": "{selector:name}",
-        "author": "{selector:authors}",
-        "img": "https://images.dmzj.com/{selector:cover}",
-        "link": "https://m.dmzj.com/info/{selector:comic_py}.html"
+        "list": "{selector:div.ui-content > ul}",
+        "name": "{selector:h3}",
+        "author": "{selector:p}",
+        "img": "{selector:img@attr->src}",
+        "link": "{selector:a}"
     },
     "detail": {
         "author": "{selector:p.txtItme:nth-child(1)}",
