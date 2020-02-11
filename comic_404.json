@@ -1,15 +1,15 @@
 {
-  "name":"漫x画",
+  "name": "漫x画",
   "summary": "闲着随便搞的一些搜索源",
-"sources":"https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/",
-  "versionName":"1.0",
-  "versionCode":1,
+  "sources": "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/",
+  "versionName": "1.0",
+  "versionCode": 1,
   "list": [
-		{
-		  "name":"同人志",
-		  "url":"注意身体",
-          "checked":true,
-		  "category":1
-		}
-     ]
+    {
+      "name": "同人志",
+      "url": "注意身体",
+      "checked": true,
+      "category": 1
+    }
+  ]
 }
