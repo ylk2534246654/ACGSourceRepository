@@ -37,7 +37,6 @@
   "content": {
     "list":"{sub:[$html],z_img=',',0}{selector:}",
 	"link":"{sub:[$html],z_yurl=',',0}{selector:}",
-	"endid":"去除",
     "mode":2
   }
 }
