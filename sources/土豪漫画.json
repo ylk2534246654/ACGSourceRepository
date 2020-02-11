@@ -35,6 +35,7 @@
     }
   },
   "content": {
+      "备注":"此处爬取数据中的指定位置id,数量",
     "list":"{sub:[$html],pl = ',/000,0}/{num:0000}.jpg",
     "startid":"{sub:[$html],/000,.jpg,0}",
 	"endid":"{sub:[$html],pcount=,;,0}{count:[$this]-1,1}",
