@@ -11,7 +11,7 @@
         "name": "{selector:h3}",
         "author": "{selector:a > p}",
         "img": "{selector:img@attr->src}",
-        "link": "{selector:a}"
+        "link": "{selector:a@attr->href}"
     },
     "detail": {
         "author": "{selector:}",
