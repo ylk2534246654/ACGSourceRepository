@@ -19,11 +19,11 @@
     "upDate": "{selector:@attr->}{sub:[$this][$html],左边字符串,右边字符串,0}{re:谁替换,替换为}",
     "catalog_link": [],
     "tab": {
-      "list": "{selector:@start->@end->}{sub:[$this][$html],左边字符串,右边字符串,0}{re:谁替换,替换为}",
+      "list": "{selector:@start->@end->}{sub:[$this][$html],左边字符串,右边字符串,0}{re:[$this][$html],替换为}",
       "name": "{selector:@attr->}{sub:[$this][$html],左边字符串,右边字符串,0}{re:谁替换,替换为}"
     },
     "catalog": {
-      "list": "{selector:@start->@end->}{sub:[$this][$html],左边字符串,右边字符串,0}{re:谁替换,替换为}",
+      "list": "{selector:@start->@end->}{sub:[$this][$html],左边字符串,右边字符串,0}{re:[$this][$html],替换为}",
       "chapter": {
         "list": "{selector:@start->@end->}{sub:[$this][$html],左边字符串,右边字符串,0}{re:谁替换,替换为}",
         "name": "{selector:@attr->}{sub:[$this][$html],左边字符串,右边字符串,0}{re:谁替换,替换为}",
@@ -43,8 +43,16 @@
 
 [$this]:当前方法
 [$html]:当前网页源码
+[$key]:关键词
+[$page]:页数(暂未使用到)
 
-re,sub内可使用[$this][$html]
+requestURL,requestData内只用到[$key][$page]
+
+metadata内可使用[$this][$html][$key][$page]
+
+sub内可使用[$this][$html]
+re只能替换当前内容
+
 selector数组内可使用@start->@end->
 selector单个获取可以使用@attr->
 
@@ -52,4 +60,4 @@ selector的不同情况:
 在jsoup情况下selector视为jsoup选择器
 在json情况下selector视为json选择器
 
-{}外可添加额外字符串
+{}外可添加额外字符串包括[$this][$html]
