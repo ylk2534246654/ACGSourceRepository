@@ -40,3 +40,14 @@
     "mode": 2
   }
 }
+
+[$this]:当前方法
+[$html]:当前网页源码
+
+re,sub内可使用[$this][$html]
+selector数组内可使用@start->@end->
+selector单个获取可以使用@attr->
+
+selector的不同情况:
+在jsoup情况下selector视为jsoup选择器
+在json情况下selector视为json选择器
