@@ -1,0 +1,42 @@
+{
+  "name": "AGE动漫",
+  "charset": "UTF-8",
+  "search": {
+    "requestURL": "[$key][$page]",
+    "requestMethod": "GET,POST",
+    "requestData": "请求数据"
+  },
+  "metadata": {
+    "list": "{selector:@start->@end->}{sub:[$this][$html],左边字符串,右边字符串,0}{re:谁替换,替换为}",
+    "name": "{selector:@attr->}{sub:[$this][$html],左边字符串,右边字符串,0}{re:谁替换,替换为}",
+    "author": "{selector:@attr->}{sub:[$this][$html],左边字符串,右边字符串,0}{re:谁替换,替换为}",
+    "img": "{selector:@attr->}{sub:[$this][$html],左边字符串,右边字符串,0}{re:谁替换,替换为}",
+    "link": "{selector:@attr->}{sub:[$this][$html],左边字符串,右边字符串,0}{re:谁替换,替换为}"
+  },
+  "detail": {
+    "author": "{selector:@attr->}{sub:[$this][$html],左边字符串,右边字符串,0}{re:谁替换,替换为}",
+    "summary": "{selector:@attr->}{sub:[$this][$html],左边字符串,右边字符串,0}{re:谁替换,替换为}",
+    "upDate": "{selector:@attr->}{sub:[$this][$html],左边字符串,右边字符串,0}{re:谁替换,替换为}",
+    "catalog_link": [],
+    "tab": {
+      "list": "{selector:@start->@end->}{sub:[$this][$html],左边字符串,右边字符串,0}{re:谁替换,替换为}",
+      "name": "{selector:@attr->}{sub:[$this][$html],左边字符串,右边字符串,0}{re:谁替换,替换为}"
+    },
+    "catalog": {
+      "list": "{selector:@start->@end->}{sub:[$this][$html],左边字符串,右边字符串,0}{re:谁替换,替换为}",
+      "chapter": {
+        "list": "{selector:@start->@end->}{sub:[$this][$html],左边字符串,右边字符串,0}{re:谁替换,替换为}",
+        "name": "{selector:@attr->}{sub:[$this][$html],左边字符串,右边字符串,0}{re:谁替换,替换为}",
+        "link": "{selector:@attr->}{sub:[$this][$html],左边字符串,右边字符串,0}{re:谁替换,替换为}",
+        "orderBy": 1,
+        "category": 3
+      }
+    }
+  },
+  "content": {
+    "备注": "此处爬取数据中的指定json数据,再json解析出link",
+    "list": "{selector:@start->@end->}{sub:[$this][$html],左边字符串,右边字符串,0}{re:谁替换,替换为}",
+    "link": "{selector:@attr->}{sub:[$this][$html],左边字符串,右边字符串,0}{re:谁替换,替换为}",
+    "mode": 2
+  }
+}
