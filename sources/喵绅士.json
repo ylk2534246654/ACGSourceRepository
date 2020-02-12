@@ -2,6 +2,7 @@
     "name": "喵绅士",
     "charset": "UTF-8",
     "search": {
+        "获取最新节点":"https://hcomicurl.xyz/",
         "requestURL": "https://m.c-upp.com/search/",
         "requestMethod": "POST",
         "requestData": "show=title%2Ctitleen%2Ctags&keyboard=[$key]"
