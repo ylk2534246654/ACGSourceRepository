@@ -24,13 +24,14 @@
                 "name": "{selector:a}",
                 "link": "{selector:a@attr->href}",
                 "orderBy": 0,
-                "category": 1
+                "category": 2
             }
         }
     },
     "content": {
-        "list": "{sub:[$html],initData(,);,0}{selector:page_url}",
-        "link": "{selector:}",
-        "mode": 2
+        "备注": "直接jsoup",
+        "list": "{selector:div > img}",
+        "link": "{selector:img@attr->data-original}",
+        "mode": 1
     }
 }

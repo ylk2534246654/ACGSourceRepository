@@ -3,7 +3,7 @@
   "charset": "UTF-8",
   "search": {
     "requestURL": "http://m.buka.cn/search/ajax_search",
-	"requestMethod": "POST",
+    "requestMethod": "POST",
     "requestData": "count=15&key=[$key]&start=[$page]"
   },
   "metadata": {
@@ -11,33 +11,32 @@
     "name": "{selector:name}",
     "author": "{selector:author}",
     "img": "{selector:logo}",
-	"link": "http://www.buka.cn/detail/{selector:mid}"
-
+    "link": "http://www.buka.cn/detail/{selector:mid}"
   },
   "detail": {
     "author": "{selector:div.manga-author > a}",
     "summary": "{selector:div.manga-desc > p}",
     "upDate": "{selector:span.manga-episodes_text}{re::, }",
     "catalog_link": [],
-    "tab":{
-            "list":"{selector:div.manga-episodes_title}",
-            "name":"{selector:span.manga-episodes_text}"
-        },
-    "catalog":{
-        "list":"{selector:div.manga-episodes}",
-        "chapter": {
-                "list": "{selector:div.epsbox > a}",
-		        "name": "{selector:a}",
-		        "link": "{selector:a@attr->href}",
-                "orderBy": 0,
-                "category":2
-        }
+    "tab": {
+      "list": "{selector:div.manga-episodes_title}",
+      "name": "{selector:span.manga-episodes_text}"
+    },
+    "catalog": {
+      "list": "{selector:div.manga-episodes}",
+      "chapter": {
+        "list": "{selector:div.epsbox > a}",
+        "name": "{selector:a}",
+        "link": "{selector:a@attr->href}",
+        "orderBy": 0,
+        "category": 2
+      }
     }
   },
   "content": {
-    "备注":"直接jsoup",
-    "list":"{selector:#manga-imgs > div.manga-c}",
-	"link":"{selector:img@attr->data-original}",
-    "mode":1
+    "备注": "直接jsoup",
+    "list": "{selector:#manga-imgs > div.manga-c}",
+    "link": "{selector:img@attr->data-original}",
+    "mode": 1
   }
 }
