@@ -14,9 +14,9 @@
         "link": "{selector:a@attr->href}"
     },
     "detail": {
-        "author": "{selector:}",
-        "summary": "{selector:}",
-        "upDate": "{selector:}",
+        "author": "",
+        "summary": "",
+        "upDate": "",
         "catalog_link": [],
         "catalog": {
             "chapter": {
