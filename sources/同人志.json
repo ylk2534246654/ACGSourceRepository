@@ -31,7 +31,7 @@
     "content": {
         "备注": "直接jsoup",
         "list": "{selector:div > img}",
-        "link": "{selector:img@attr->data-original}{re:https://c.mipcdn.com/i/s/,}",
+        "link": "{selector:img@attr->data-original}{re:https://c.mipcdn.com/i/s/, }",
         "mode": 1
     }
 }
