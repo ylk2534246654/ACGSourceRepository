@@ -20,7 +20,7 @@
         "catalog_link": [],
         "catalog": {
             "chapter": {
-                "list": "{selector:div > a}",
+                "list": "{selector:div > a:nth-child(7)}",
                 "name": "{selector:a}",
                 "link": "{selector:a@attr->href}",
                 "orderBy": 0,
