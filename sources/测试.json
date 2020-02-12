@@ -51,3 +51,5 @@ selector单个获取可以使用@attr->
 selector的不同情况:
 在jsoup情况下selector视为jsoup选择器
 在json情况下selector视为json选择器
+
+{}外可添加额外字符串
