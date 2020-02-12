@@ -14,22 +14,17 @@
         "link": "{selector:a}"
     },
     "detail": {
-        "author": "{selector:p.txtItme:nth-child(1)}",
-        "summary": "{selector:p.txtDesc.autoHeight}{re:介绍:, }",
-        "upDate": "{selector:p:nth-child(3) > a:nth-child(4)}·{selector:p:nth-child(4) > span.date}",
+        "author": "{selector:}",
+        "summary": "{selector:}",
+        "upDate": "{selector:}",
         "catalog_link": [],
-        "tab": {
-            "list": "{selector:#list > div}",
-            "name": "{selector:span}"
-        },
         "catalog": {
-            "list": [],
             "chapter": {
-                "list": "{sub:[$html],initIntroData([,]),0}{selector:data}",
-                "name": "{selector:chapter_name}",
-                "link": "https://m.dmzj.com/view/{selector:comic_id}/{selector:id}.html",
+                "list": "{selector:div > a@start->1}",
+                "name": "{selector:a}",
+                "link": "{selector:a@attr->href}",
                 "orderBy": 0,
-                "category": 2
+                "category": 1
             }
         }
     },
