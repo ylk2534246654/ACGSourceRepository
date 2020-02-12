@@ -7,9 +7,9 @@
         "requestData": "show=title%2Ctitleen%2Ctags&keyboard=[$key]"
     },
     "metadata": {
-        "list": "{selector:div.ui-content > ul}",
+        "list": "{selector:div > ul@start->1}",
         "name": "{selector:h3}",
-        "author": "{selector:p}",
+        "author": "{selector:a > p}",
         "img": "{selector:img@attr->src}",
         "link": "{selector:a}"
     },
