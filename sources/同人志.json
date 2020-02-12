@@ -7,7 +7,7 @@
         "requestData": "show=title%2Ctitleen%2Ctags&keyboard=[$key]"
     },
     "metadata": {
-        "list": "{selector:div > ul@start->1}",
+        "list": "{selector:div > ul}",
         "name": "{selector:h3}",
         "author": "{selector:a > p}",
         "img": "{selector:img@attr->src}",
