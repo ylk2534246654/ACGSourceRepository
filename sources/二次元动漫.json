@@ -1,45 +1,44 @@
 {
-  "name": "二次元动漫",
-  "charset": "UTF-8",
-  "search": {
-    "requestURL": "http://www.2animx.com/search-index?&searchType=1&q=[$key]",
-	"requestMethod": "GET",
-    "requestData": ""
-  },
-  "metadata": {
-    "list": "{selector:ul.liemh.htmls.indliemh > li}",
-    "name": "{selector:div[class=tit]}",
-    "author": "",
-    "img": "{selector:img@attr->src}",
-	"link": "{selector:a@attr->href}"
-
-  },
-  "detail": {
-    "author": "{selector:dl.mh-detail > dd > p:nth-child(1) > a}",
-    "summary": "{selector:div.mh-introduce > p:nth-child(3)}",
-    "upDate": "{selector:p:nth-child(2) > a}",
-    "catalog_link": [],
-    "tab":{
-            "list":"{selector:div.box-hd > h2}",
-            "name":"{selector:h2}"
+    "name": "二次元动漫",
+    "charset": "UTF-8",
+    "search": {
+        "requestURL": "http://www.2animx.com/search-index?&searchType=1&q=[$key]",
+        "requestMethod": "GET",
+        "requestData": ""
+    },
+    "metadata": {
+        "list": "{selector:ul.liemh.htmls.indliemh > li}",
+        "name": "{selector:div[class=tit]}",
+        "author": "",
+        "img": "{selector:img@attr->src}",
+        "link": "{selector:a@attr->href}"
+    },
+    "detail": {
+        "author": "{selector:dl.mh-detail > dd > p:nth-child(1) > a}",
+        "summary": "{selector:div.mh-introduce > p:nth-child(3)}",
+        "upDate": "{selector:p:nth-child(2) > a}",
+        "catalog_link": [],
+        "tab": {
+            "list": "{selector:div.box-hd > h2}",
+            "name": "{selector:h2}"
         },
-    "catalog":{
-        "list":"{selector:#oneCon1 > ul}",
-        "chapter": {
+        "catalog": {
+            "list": "{selector:#oneCon1 > ul}",
+            "chapter": {
                 "list": "{selector:ul > li}",
-		        "name": "{selector:a}",
-		        "link": "{selector:a@attr->href}",
+                "name": "{selector:a}",
+                "link": "{selector:a@attr->href}",
                 "orderBy": 1,
-                "category":2
+                "category": 2
+            }
         }
+    },
+    "content": {
+        "备注": "单页面解析",
+        "list": "[$url]-p-[$id]",
+        "link": "{selector:img[id = ComicPic]@attr->src}",
+        "startid": "1",
+        "endid": "{selector:#total@attr->value}",
+        "mode": 2
     }
-  },
-  "content": {
-    "备注":"单页面解析",
-    "list":"[$url]-p-[$id]",
-	"link":"{selector:img[id = ComicPic]@attr->src}",
-    "startid":"1",
-	"endid":"{selector:#total@attr->value}",
-    "mode":2
-  }
 }

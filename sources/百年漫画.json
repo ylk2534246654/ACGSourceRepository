@@ -3,7 +3,7 @@
   "charset": "UTF-8",
   "search": {
     "requestURL": "https://m.bnmanhua.com/index.php?&m=vod-search",
-	"requestMethod": "POST",
+    "requestMethod": "POST",
     "requestData": "wd=[$key]"
   },
   "metadata": {
@@ -11,33 +11,32 @@
     "name": "{selector:h4[class=h4] > a@attr->title}",
     "author": "",
     "img": "{selector:a[class=vbox_t] > mip-img@attr->src}",
-	"link": "{selector:h4[class=h4] > a@attr->href}"
-
+    "link": "{selector:h4[class=h4] > a@attr->href}"
   },
   "detail": {
     "author": "{selector:p.dir}end{sub:[$this],：,end,1}",
     "summary": "{selector:div.tbox_js}",
     "upDate": "{selector:span.list_item }",
     "catalog_link": [],
-    "tab":{
-            "list":"{selector:body > div.tbox.tabs > div.tbox_t}",
-            "name":"{selector:div.tbox_t}"
-        },
-    "catalog":{
-        "list":"{selector:body > div.tbox.tabs > div.tabs_block}",
-        "chapter": {
-                "list": "{selector:div.tabs_block > ul > li}",
-		        "name": "{selector:a}",
-		        "link": "{selector:a@attr->href}",
-                "orderBy": 1,
-                "category":2
-        }
+    "tab": {
+      "list": "{selector:body > div.tbox.tabs > div.tbox_t}",
+      "name": "{selector:div.tbox_t}"
+    },
+    "catalog": {
+      "list": "{selector:body > div.tbox.tabs > div.tabs_block}",
+      "chapter": {
+        "list": "{selector:div.tabs_block > ul > li}",
+        "name": "{selector:a}",
+        "link": "{selector:a@attr->href}",
+        "orderBy": 1,
+        "category": 2
+      }
     }
   },
   "content": {
-    "备注":"此处爬取数据中的指定json数据,再json解析出link",
-    "list":"{sub:[$html],z_img=',',0}{selector:}",
-	"link":"{sub:[$html],z_yurl=',',0}{selector:}",
-    "mode":2
+    "备注": "此处爬取数据中的指定json数据,再json解析出link",
+    "list": "{sub:[$html],z_img=',',0}{selector:}",
+    "link": "{sub:[$html],z_yurl=',',0}{selector:}",
+    "mode": 2
   }
 }

@@ -3,7 +3,7 @@
   "charset": "gb2312",
   "search": {
     "requestURL": "http://www.tldm.net/search.asp",
-	  "requestMethod": "POST",
+    "requestMethod": "POST",
     "requestData": "searchword=[$key]&submit=%CB%D1%CB%F7"
   },
   "metadata": {
@@ -11,27 +11,26 @@
     "name": "{selector:div.cover > a > img@attr->alt}",
     "author": "{selector:div.intro > em:nth-child(3)}",
     "img": "{selector:div.cover > a > img@attr->src}",
-	"link": "{selector:div.cover > a@attr->href}"
+    "link": "{selector:div.cover > a@attr->href}"
   },
   "detail": {
     "author": "",
     "summary": "{selector:div.mtext > ul > li:nth-child(3)}",
     "upDate": "{selector:div.mtext > ul > li:nth-child(1) > em}",
     "catalog_link": [],
-    "tab":{
-            "list":"{selector:div.playurl}",
-            "name":"{selector:div.title > span:nth-child(2)}{re:选自已喜欢的播放线路 进行播放 24小时更新 新番动漫 BD版资原 日 美剧, }"
-        },
-    "catalog":{
-        "list":"{selector:div.playurl > div.bfdz}",
-        "chapter": {
-                "list": "{selector:ul > ul > li > ul > li}",
-                "name": "{selector:a}",
-                "link": "{selector:a@attr->href}",
-                "orderBy": 1,
-                "category":3
-        }
-        
+    "tab": {
+      "list": "{selector:div.playurl}",
+      "name": "{selector:div.title > span:nth-child(2)}{re:选自已喜欢的播放线路 进行播放 24小时更新 新番动漫 BD版资原 日 美剧, }"
+    },
+    "catalog": {
+      "list": "{selector:div.playurl > div.bfdz}",
+      "chapter": {
+        "list": "{selector:ul > ul > li > ul > li}",
+        "name": "{selector:a}",
+        "link": "{selector:a@attr->href}",
+        "orderBy": 1,
+        "category": 3
+      }
     }
   }
 }

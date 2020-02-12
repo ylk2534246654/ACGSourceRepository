@@ -3,7 +3,7 @@
   "charset": "gb2312",
   "search": {
     "requestURL": "http://www.pufei.net/e/search/index.php",
-	"requestMethod": "POST",
+    "requestMethod": "POST",
     "requestData": "orderby=1&myorder=1&tbname=mh&tempid=3&show=title,player,playadmin,bieming,pinyin&keyboard=[$key]&Submit=搜索漫画"
   },
   "metadata": {
@@ -11,26 +11,27 @@
     "name": "{selector:p > a > img@attr->alt}",
     "author": "",
     "img": "{selector:p > a > img@attr->_src}",
-	"link": "{selector:p > a > img@attr->href}"
-
+    "link": "{selector:p > a > img@attr->href}"
   },
   "detail": {
     "author": "{selector:p.dir}end{sub:[$this],：,end,1}",
     "summary": "{selector:div.tbox_js}",
     "upDate": "[#此处暂时未开发]",
-    "catalog":"[#如果目录在其他页面,则添加跳转链接的获取]",
+    "catalog": "[#如果目录在其他页面,则添加跳转链接的获取]",
     "orderBy": 1,
-	"chapter": [{
-		"list": "{selector:div.plistBox > div > ul > li}",
-		"name": "{selector:a}",
-		"link": "http://m.pufei.net/{selector:a@attr->href}",
-		"category":1
-	  }]
+    "chapter": [
+      {
+        "list": "{selector:div.plistBox > div > ul > li}",
+        "name": "{selector:a}",
+        "link": "http://m.pufei.net/{selector:a@attr->href}",
+        "category": 1
+      }
+    ]
   },
   "content": {
-    "list":"[$url]-p-[$id]",
-	"link":"{sub:[$html],z_yurl=',',0}",
-	"endid":"",
-    "mode":1
+    "list": "[$url]-p-[$id]",
+    "link": "{sub:[$html],z_yurl=',',0}",
+    "endid": "",
+    "mode": 1
   }
 }

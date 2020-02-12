@@ -3,7 +3,7 @@
   "charset": "UTF-8",
   "search": {
     "requestURL": "https://manganelo.com/search/[$key]",
-	"requestMethod": "GET",
+    "requestMethod": "GET",
     "requestData": ""
   },
   "metadata": {
@@ -11,33 +11,32 @@
     "name": "{selector:a > img@attr->alt}",
     "author": "{selector:span.item-author@attr->title}",
     "img": "{selector:a > img@attr->src}",
-	"link": "{selector:a@attr->href}"
-
+    "link": "{selector:a@attr->href}"
   },
   "detail": {
     "author": "{selector:tr:nth-child(2) > td.table-value > a}",
     "summary": "{selector:#panel-story-info-description}",
     "upDate": "{selector:tr:nth-child(3) > td.table-value} · {selector:span.stre-value}",
     "catalog_link": [],
-    "tab":{
-            "list":"{selector:div.panel-story-chapter-list > p}",
-            "name":"{selector:span.row-title-chapter-name}"
-        },
-    "catalog":{
-        "list":"{selector:div.panel-story-chapter-list > ul}",
-        "chapter": {
-                "list": "{selector:ul.row-content-chapter > li}",
-		        "name": "{selector:a}",
-		        "link": "{selector:a@attr->href}",
-                "orderBy": 0,
-		        "category":2
-        }
+    "tab": {
+      "list": "{selector:div.panel-story-chapter-list > p}",
+      "name": "{selector:span.row-title-chapter-name}"
+    },
+    "catalog": {
+      "list": "{selector:div.panel-story-chapter-list > ul}",
+      "chapter": {
+        "list": "{selector:ul.row-content-chapter > li}",
+        "name": "{selector:a}",
+        "link": "{selector:a@attr->href}",
+        "orderBy": 0,
+        "category": 2
+      }
     }
   },
   "content": {
-    "备注":"直接jsoup",
-    "list":"{selector:#vungdoc > img}",
-	"link":"{selector:img@attr->src}",
-    "mode":1
+    "备注": "直接jsoup",
+    "list": "{selector:#vungdoc > img}",
+    "link": "{selector:img@attr->src}",
+    "mode": 1
   }
 }

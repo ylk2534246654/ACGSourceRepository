@@ -3,7 +3,7 @@
   "charset": "UTF-8",
   "search": {
     "requestURL": "https://m.tohomh123.com/action/Search?keyword=[$key]",
-	"requestMethod": "GET",
+    "requestMethod": "GET",
     "requestData": ""
   },
   "metadata": {
@@ -11,34 +11,33 @@
     "name": "{selector:a@attr->title}",
     "author": "",
     "img": "{selector:img@attr->src}",
-	"link": "{selector:a@attr->href}"
-
+    "link": "{selector:a@attr->href}"
   },
   "detail": {
     "author": "{selector:div.info > p:nth-child(3)}{re:作者：, }",
     "summary": "{selector:div.detailContent > p}",
     "upDate": "{selector:p.bottom.d-nowrap}",
     "catalog_link": [],
-    "tab":{
-            "list":"{selector:body > div.chapterList.d-border}",
-            "name":"{selector:li.ib.active}"
-        },
-    "catalog":{
-        "list":"{selector:body > div.chapterList.d-border}",
-        "chapter": {
-                "list": "{selector:#chapterList_1 > ul > li}",
-		        "name": "{selector:a}",
-		        "link": "{selector:a@attr->href}",
-                "orderBy": 0,
-                "category":2
-        }
+    "tab": {
+      "list": "{selector:body > div.chapterList.d-border}",
+      "name": "{selector:li.ib.active}"
+    },
+    "catalog": {
+      "list": "{selector:body > div.chapterList.d-border}",
+      "chapter": {
+        "list": "{selector:#chapterList_1 > ul > li}",
+        "name": "{selector:a}",
+        "link": "{selector:a@attr->href}",
+        "orderBy": 0,
+        "category": 2
+      }
     }
   },
   "content": {
-    "备注":"此处爬取数据中的指定位置id,数量",
-    "list":"{sub:[$html],pl = ',/000,0}/{num:0000}.jpg",
-    "startid":"{sub:[$html],/000,.jpg,0}",
-	"endid":"{sub:[$html],pcount=,;,0}{count:[$this]-1,1}",
-    "mode":2
+    "备注": "此处爬取数据中的指定位置id,数量",
+    "list": "{sub:[$html],pl = ',/000,0}/{num:0000}.jpg",
+    "startid": "{sub:[$html],/000,.jpg,0}",
+    "endid": "{sub:[$html],pcount=,;,0}{count:[$this]-1,1}",
+    "mode": 2
   }
 }

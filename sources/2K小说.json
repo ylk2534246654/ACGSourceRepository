@@ -33,7 +33,7 @@
             }
         }
     },
-  "content": {
-    "text": "{selector:#nr1}"
-  }
+    "content": {
+        "text": "{selector:#nr1}"
+    }
 }
