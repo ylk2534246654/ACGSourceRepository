@@ -17,14 +17,10 @@
     "summary": "{selector:div.tbox_js}",
     "upDate": "{selector:span.list_item }",
     "catalog_link": [],
-    "tab": {
-      "list": "{selector:body > div.tbox.tabs > div.tbox_t}",
-      "name": "{selector:div.tbox_t}"
-    },
     "catalog": {
-      "list": "{selector:body > div.tbox.tabs > div.tabs_block}",
+      "list": [],
       "chapter": {
-        "list": "{selector:div.tabs_block > ul > li}",
+        "list": "{selector:div#list > ul > li}",
         "name": "{selector:a}",
         "link": "{selector:a@attr->href}",
         "orderBy": 1,
