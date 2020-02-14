@@ -13,9 +13,9 @@
     "link": "{selector:a.ImgA@attr->href}"
   },
   "detail": {
-    "author": "{selector:p.dir}end{sub:[$this],：,end,1}",
-    "summary": "{selector:div.tbox_js}",
-    "upDate": "{selector:span.list_item }",
+    "author": "{selector:div.sub_r > p:nth-child(2)}",
+    "summary": "{selector:p.txtDesc}{re:介绍:,}",
+    "upDate": "{selector:span.date}",
     "catalog_link": [],
     "catalog": {
       "list": [],
