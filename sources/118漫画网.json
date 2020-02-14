@@ -24,7 +24,7 @@
                 "name": "{selector:a}",
                 "link": "{selector:a@attr->href}",
                 "orderBy": 1,
-                "category": 2
+                "category": 1
             }
         }
     },
