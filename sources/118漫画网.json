@@ -30,7 +30,7 @@
   },
   "content": {
     "备注": "此处爬取数据中的指定json数据,再json解析出link",
-    "list": "{sub:[$html],z_img=',',0}{selector:}",
+    "list": "{sub:[$html],m_murl_e=\",\",0}{selector:}",
     "link": "{sub:[$html],z_yurl=',',0}{selector:}",
     "mode": 2
   }
