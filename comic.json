@@ -1,45 +1,57 @@
 {
-  "name":"漫画类",
-  "summary": "一些漫画搜索源。",
-  "sources":"https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/",
-  "versionName":"1.0",
-  "versionCode":1,
-  "list": [
+	"name": "漫画类",
+	"summary": "一些漫画搜索源。",
+	"sources": "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/",
+	"versionName": "1.0",
+	"versionCode": 1,
+	"list": [
 		{
-		  "name":"百年漫画",
-		  "url":"https://m.bnmanhua.com",
-          "checked":true,
-		  "category":1
-		},{
-		  "name":"动漫之家",
-		  "url":"https://www.dmzj.com",
-          "checked":true,
-		  "category":1
-		},{
-		  "name":"布卡漫画",
-		  "url":"http://m.buka.cn",
-          "checked":true,
-		  "category":1
-		},{
-		  "name":"土豪漫画",
-		  "url":"https://m.tohomh123.com",
-          "checked":true,
-		  "category":1
-		},{
-		  "name":"二次元动漫",
-		  "url":"http://www.2animx.com",
-          "checked":true,
-		  "category":1
-		},{
-		  "name":"MangaNel",
-		  "url":"https://manganelo.com",
-          "checked":true,
-		  "category":1
-		},{
-		  "name":"动漫狂",
-		  "url":"https://www.cartoonmad.com",
-          "checked":true,
-		  "category":1
+			"name": "百年漫画",
+			"url": "https://m.bnmanhua.com",
+			"checked": true,
+			"category": 1
+		},
+		{
+			"name": "动漫之家",
+			"url": "https://www.dmzj.com",
+			"checked": true,
+			"category": 1
+		},
+		{
+			"name": "布卡漫画",
+			"url": "http://m.buka.cn",
+			"checked": true,
+			"category": 1
+		},
+		{
+			"name": "土豪漫画",
+			"url": "https://m.tohomh123.com",
+			"checked": true,
+			"category": 1
+		},
+		{
+			"name": "二次元动漫",
+			"url": "http://www.2animx.com",
+			"checked": true,
+			"category": 1
+		},
+		{
+			"name": "MangaNel",
+			"url": "https://manganelo.com",
+			"checked": true,
+			"category": 1
+		},
+		{
+			"name": "动漫狂",
+			"url": "https://www.cartoonmad.com",
+			"checked": true,
+			"category": 1
+		},
+		{
+			"name": "118漫画网",
+			"url": "http://m.ccshwy.com/",
+			"checked": true,
+			"category": 1
 		}
-     ]
+	]
 }

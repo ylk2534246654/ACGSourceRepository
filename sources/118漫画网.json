@@ -1,0 +1,41 @@
+{
+  "name": "118漫画网",
+  "charset": "UTF-8",
+  "search": {
+    "requestURL": "http://m.ccshwy.com/statics/search.aspx?key=[$key]",
+    "requestMethod": "GET"
+  },
+  "metadata": {
+    "list": "{selector:#listbody > li}",
+    "name": "{selector:a.txtA}",
+    "author": "{selector:span.info}",
+    "img": "{selector:a.ImgA > img@attr->src}",
+    "link": "{selector:a.ImgA@attr->href}"
+  },
+  "detail": {
+    "author": "{selector:p.dir}end{sub:[$this],：,end,1}",
+    "summary": "{selector:div.tbox_js}",
+    "upDate": "{selector:span.list_item }",
+    "catalog_link": [],
+    "tab": {
+      "list": "{selector:body > div.tbox.tabs > div.tbox_t}",
+      "name": "{selector:div.tbox_t}"
+    },
+    "catalog": {
+      "list": "{selector:body > div.tbox.tabs > div.tabs_block}",
+      "chapter": {
+        "list": "{selector:div.tabs_block > ul > li}",
+        "name": "{selector:a}",
+        "link": "{selector:a@attr->href}",
+        "orderBy": 1,
+        "category": 2
+      }
+    }
+  },
+  "content": {
+    "备注": "此处爬取数据中的指定json数据,再json解析出link",
+    "list": "{sub:[$html],z_img=',',0}{selector:}",
+    "link": "{sub:[$html],z_yurl=',',0}{selector:}",
+    "mode": 2
+  }
+}
