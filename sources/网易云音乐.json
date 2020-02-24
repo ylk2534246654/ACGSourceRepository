@@ -13,25 +13,5 @@
     "author": "{selector:author}",
     "img": "{selector:pic}",
     "link": "{selector:url}"
-  },
-  "detail": {
-    "author": "作者无法获取",
-    "summary": "{selector:#app > div:nth-child(3) > p}",
-    "upDate": "{selector:#app > div.episode > div}{sub:[$this],剧集（,）,1}",
-    "catalog_link": [],
-    "tab": {
-      "list": "{selector:#app > div.episode}",
-      "name": "{selector:div.title}"
-    },
-    "catalog": {
-      "list": "{selector:#app > div.episode}",
-      "chapter": {
-        "list": "{selector:div.episode > ul > li}",
-        "name": "{selector:a}",
-        "link": "{selector:a@attr->href}",
-        "orderBy": 1,
-        "category": 3
-      }
-    }
   }
 }
