@@ -1,4 +1,5 @@
 {
+    "type": "MyACG搜索源",
     "name": "视频类",
     "summary": "一些视频(电视剧,电影，动漫等)搜索源",
     "sources": "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/",
@@ -9,13 +10,13 @@
             "name": "迅雷哥",
             "url": "https://m.4142.cc",
             "checked": true,
-            "category": 1
+            "category": 3
         },
         {
             "name": "我的电影网",
             "url": "http://www.wodedy.net",
             "checked": true,
-            "category": 1
+            "category": 3
         }
     ]
 }

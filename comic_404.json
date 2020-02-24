@@ -1,4 +1,5 @@
 {
+  "type": "MyACG搜索源",
   "name": "漫x画",
   "summary": "闲着随便搞的一些搜索源",
   "sources": "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/",
@@ -9,7 +10,7 @@
       "name": "喵绅士",
       "url": "注意身体",
       "checked": true,
-      "category": 1
+      "category": 2
     }
   ]
 }

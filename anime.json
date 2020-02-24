@@ -1,4 +1,5 @@
 {
+    "type": "MyACG搜索源",
     "name": "动漫类",
     "summary": "一些动漫搜索源",
     "sources": "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/",
@@ -9,43 +10,43 @@
             "name": "AGE动漫",
             "url": "https://www.agefans.tv",
             "checked": true,
-            "category": 1
+            "category": 3
         },
         {
             "name": "风车动漫",
             "url": "http://dm.dm530.net",
             "checked": true,
-            "category": 1
+            "category": 3
         },
         {
             "name": "嘀哩嘀哩",
             "url": "http://www.dilidili.one",
             "checked": true,
-            "category": 1
+            "category": 3
         },
         {
             "name": "奇奇动漫",
             "url": "http://m.qiqidongman.com",
             "checked": true,
-            "category": 1
+            "category": 3
         },
         {
             "name": "妮可动漫",
             "url": "http://www.nicotv.me",
             "checked": true,
-            "category": 1
+            "category": 3
         },
         {
             "name": "乐天动漫",
             "url": "http://www.tldm.net",
             "checked": true,
-            "category": 1
+            "category": 3
         },
         {
             "name": "哔咪哔咪",
             "url": "http://www.bimibimi.tv",
             "checked": true,
-            "category": 1
+            "category": 3
         }
     ]
 }

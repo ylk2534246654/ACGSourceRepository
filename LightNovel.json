@@ -1,4 +1,5 @@
 {
+    "type": "MyACG搜索源",
     "name": "轻小说类",
     "summary": "一些轻小说搜索源",
     "sources": "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/",
