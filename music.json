@@ -7,25 +7,25 @@
 	"list": [
 		{
 			"name": "网易云音乐",
-			"url": "https://m.bnmanhua.com",
+			"url": "https://music.liuzhijin.cn/",
 			"checked": true,
 			"category": 1
 		},
 		{
 			"name": "QQ音乐",
-			"url": "https://m.bnmanhua.com",
+			"url": "https://music.liuzhijin.cn/",
 			"checked": true,
 			"category": 1
 		},
 		{
 			"name": "酷狗",
-			"url": "http://m.buka.cn",
+			"url": "https://music.liuzhijin.cn/",
 			"checked": true,
 			"category": 1
 		},
 		{
 			"name": "酷我",
-			"url": "https://m.tohomh123.com",
+			"url": "https://music.liuzhijin.cn/",
 			"checked": true,
 			"category": 1
 		}
