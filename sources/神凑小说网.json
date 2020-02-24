@@ -1,0 +1,39 @@
+{
+    "name": "神凑小说网",
+    "charset": "UTF-8",
+    "search": {
+        "requestURL": "http://www.shencou.com/modules/article/search.php",
+        "requestMethod": "POST",
+        "requestData": "searchtype=articlename selected&searchkey=[$key]&t_btnsearch=搜索"
+    },
+    "metadata": {
+        "list": "{selector:tbody > tr}",
+        "name": "{selector:td:nth-child(1) > a}",
+        "author": "{selector:td.odd:nth-child(3)}",
+        "img": "http://r.m.97ub.cc/cover/aHR0cDovL2ltZzEuY2h1YW5nc2hpLnFxLmNvbS9jaHVhbmdzaGkvcDEvZGVmYXVsdC1jb3Zlci1sYXJnZS5wbmc=",
+        "link": "{selector:td:nth-child(1) > a@attr->href}"
+    },
+    "detail": {
+        "author": "{selector:#info > p:nth-child(2)}",
+        "summary": "{selector:#intro}",
+        "upDate": "{selector:#info > p:nth-child(4)}",
+        "catalog_link": [],
+        "tab": {
+            "list": "{selector:#list > dl > dt:nth-child(12)}",
+            "name": "{selector:dt}"
+        },
+        "catalog": {
+            "list": "{selector:#list > dl}",
+            "chapter": {
+                "list": "{selector:dd@start->9}",
+                "name": "{selector:a}",
+                "link": "{selector:a@attr->href}",
+                "orderBy": 1,
+                "category": 4
+            }
+        }
+    },
+    "content": {
+        "text": "{selector:#content}"
+    }
+}
