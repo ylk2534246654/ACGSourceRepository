@@ -3,7 +3,7 @@
   "charset": "utf-8",
   "search": {
     "requestURL": "https://music.liuzhijin.cn/",
-    "requestMethod": "GET",
+    "requestMethod": "POST",
     "requestData": "input=[$key]&filter=name&type=netease&page=[$page]"
   },
   "metadata": {
