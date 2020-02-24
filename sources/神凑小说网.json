@@ -1,6 +1,6 @@
 {
     "name": "神凑小说网",
-    "charset": "UTF-8",
+    "charset": "GBK",
     "search": {
         "requestURL": "http://www.shencou.com/modules/article/search.php",
         "requestMethod": "POST",
