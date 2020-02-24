@@ -8,7 +8,7 @@
     "requestData": "input=[$key]&filter=name&type=netease&page=[$page]"
   },
   "metadata": {
-    "list": "{selector:data}",
+    "list": "{selector: > data}",
     "name": "{selector:title}",
     "author": "{selector:author}",
     "img": "{selector:pic}",
