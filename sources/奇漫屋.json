@@ -8,7 +8,7 @@
     "metadata": {
         "list": "{selector:div.search-result > div}",
         "name": "{selector:p.comic-name > a}",
-        "author": "{selector:p.comic-tags}{selector:p.comic-update-at}",
+        "author": "{selector:p.comic-tags}\n{selector:p.comic-update-at}",
         "img": "{selector:a.cover > img@attr->src}",
         "link": "{selector:p.comic-name > a@attr->href}"
     },
