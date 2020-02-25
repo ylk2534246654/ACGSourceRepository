@@ -20,7 +20,7 @@
         "catalog": {
             "list": [],
             "chapter": {
-                "list": "{selector:div#list > ul > li}",
+                "list": "{selector:div.catalog-list > ul > li}",
                 "name": "{selector:a}",
                 "link": "{selector:a@attr->href}",
                 "orderBy": 0,
