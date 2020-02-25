@@ -50,7 +50,13 @@
 		},
 		{
 			"name": "118漫画网",
-			"url": "http://m.ccshwy.com/",
+			"url": "http://m.ccshwy.com",
+			"checked": true,
+			"category": 2
+		},
+		{
+			"name": "奇漫屋",
+			"url": "http://qiman5.com",
 			"checked": true,
 			"category": 2
 		}
