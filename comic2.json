@@ -1,6 +1,6 @@
 {
-	"type": "MyACG搜索源",
-	"name": "漫画类",
+	"type": "MyACG搜索源2.0测试",
+	"name": "漫画类2.0测试",
 	"summary": "一些漫画搜索源。",
 	"sources": "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/",
 	"versionName": "1.0",
