@@ -10,8 +10,8 @@
     "list": "function Main(html){return jsonPaths(strmiddle(html,'serchArry=','</script>'),'$.*');}",
     "name": "function Main(this){return jsonPath(this,'$.name');}",
     "author": "function Main(this){return jsonPath(this,'$.authors');}",
-    "img": "function Main(this){return 'https://images.dmzj.com/'+jsonPath(html,'$.cover');}",
-    "link": "function Main(this){return 'https://m.dmzj.com/info/'+jsonPath(html,'$.comic_py')+'.html';}"
+    "img": "function Main(this){return 'https://images.dmzj.com/'+jsonPath(this,'$.cover');}",
+    "link": "function Main(this){return 'https://m.dmzj.com/info/'+jsonPath(this,'$.comic_py')+'.html';}"
   },
   "detail": {
     "author": "{selector:p.txtItme:nth-child(1)}",
