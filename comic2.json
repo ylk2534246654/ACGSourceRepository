@@ -11,6 +11,12 @@
 			"url": "http://m.ccshwy.com",
 			"checked": true,
 			"category": 2
+		},
+        {
+			"name": "动漫之家2",
+			"url": "http://m.ccshwy.com",
+			"checked": true,
+			"category": 2
 		}
 	]
 }
