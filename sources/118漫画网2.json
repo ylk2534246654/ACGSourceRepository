@@ -6,11 +6,11 @@
         "requestMethod": "GET"
     },
     "metadata": {
-        "list": "{selector:#listbody > li}",
-        "name": "{selector:a.txtA}",
-        "author": "{selector:span.info}",
-        "img": "{selector:a.ImgA > img@attr->src}",
-        "link": "{selector:a.ImgA@attr->href}"
+        "list": "function Main(){return jsoup('#listbody > li');}",
+        "name": "function Main(){return jsoup('a.txtA');}",
+        "author": "function Main(){return jsoup('span.info');}",
+        "img": "function Main(){return jsoup('a.ImgA > img@attr->src');}",
+        "link": "function Main(){return jsoup('a.ImgA@attr->href');}"
     },
     "detail": {
         "author": "{selector:div.sub_r > p:nth-child(2)}",
