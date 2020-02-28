@@ -25,7 +25,7 @@
         "catalog": {
             "list": [],
             "chapter": {
-                "list": "function Main(html){return jsonPaths(strmiddle(html,'initIntroData(',');'),'$.data');}",
+                "list": "function Main(html){return jsonPaths(strmiddle(html,'initIntroData(',');'),'$..data');}",
                 "name": "function Main(html){return jsonPath(html,'$.chapter_name');}",
                 "link": "function Main(html){return 'https://m.dmzj.com/view/'+jsonPath(html,'$.comic_id')+'/'+jsonPath(html,'$.id');}+'.html'",
                 "orderBy": 0,
