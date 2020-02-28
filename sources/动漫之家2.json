@@ -11,7 +11,7 @@
         "name": "function Main(html){return jsonPath(html,'$.name');}",
         "author": "function Main(html){return jsonPath(html,'$.authors');}",
         "img": "function Main(html){return 'https://images.dmzj.com/'+jsonPath(html,'$.cover');}",
-        "link": "function Main(html){return 'https://m.dmzj.com/info/'+jsonPath(html,'$.comic_py')+'.html@post->data';}"
+        "link": "function Main(html){return 'https://m.dmzj.com/info/'+jsonPath(html,'$.comic_py')+'.html';}"
     },
     "detail": {
         "author": "function Main(html){return jsoup(html,'p.txtItme:nth-child(1)');}",
