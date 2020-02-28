@@ -11,23 +11,23 @@
         "name": "function Main(html){return jsonPath(html,'$.name');}",
         "author": "function Main(html){return jsonPath(html,'$.authors');}",
         "img": "function Main(html){return 'https://images.dmzj.com/'+jsonPath(html,'$.cover');}",
-        "link": "function Main(html){return 'https://m.dmzj.com/info/'+jsonPath(html,'$.comic_py')+'.html';}"
+        "link": "function Main(html){return 'https://m.dmzj.com/info/'+jsonPath(html,'$.comic_py')+'.html@post->data';}"
     },
     "detail": {
-        "author": "{selector:p.txtItme:nth-child(1)}",
-        "summary": "{selector:p.txtDesc.autoHeight}{re:介绍:, }",
-        "upDate": "{selector:p:nth-child(3) > a:nth-child(4)}·{selector:p:nth-child(4) > span.date}",
+        "author": "function Main(html){return jsoup(html,'p.txtItme:nth-child(1)');}",
+        "summary": "function Main(html){return jsoup(html,'p.txtDesc.autoHeight').replace('介绍:','');}",
+        "upDate": "function Main(html){return jsoup(html,'p:nth-child(3) > a:nth-child(4)')+'-'+jsoup(html,'p:nth-child(4) > span.date');}",
         "catalog_link": [],
         "tab": {
-            "list": "{selector:#list > div}",
-            "name": "{selector:span}"
+            "list": "function Main(html){return jsoups(html,'#list > div');}",
+            "name": "function Main(html){return jsoups(html,'span');}"
         },
         "catalog": {
             "list": [],
             "chapter": {
-                "list": "{sub:[$html],initIntroData([,]),0}{selector:data}",
-                "name": "{selector:chapter_name}",
-                "link": "https://m.dmzj.com/view/{selector:comic_id}/{selector:id}.html",
+                "list": "function Main(html){return jsonPaths(strmiddle(html,'initIntroData([',']'),'$.data');}",
+                "name": "function Main(html){return jsonPath(html,'$.chapter_name');}",
+                "link": "function Main(html){return 'https://m.dmzj.com/view/'+jsonPath(html,'$.comic_id')+'/'+jsonPath(html,'$.id');}+'.html'",
                 "orderBy": 0,
                 "category": 2
             }
