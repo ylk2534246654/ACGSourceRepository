@@ -14,7 +14,7 @@
     },
     "detail": {
         "author": "function Main(html){return jsoup(html,'div.sub_r > p:nth-child(2)');}",
-        "summary": "function Main(html){return jsoup(html,'div.sub_r > p:nth-child(2).replace('介绍:','')');}",
+        "summary": "function Main(html){return jsoup(html,'p.txtDesc').replace('介绍:','');}",
         "upDate": "function Main(html){return jsoup(html,'span.date');}",
         "catalog_link": [],
         "catalog": {
