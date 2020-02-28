@@ -17,6 +17,10 @@
         "summary": "function Main(html){return jsoup(html,'p.txtDesc').replace('介绍:','');}",
         "upDate": "function Main(html){return jsoup(html,'span.date');}",
         "catalog_link": [],
+        "tab": {
+            "list": [],
+            "name": []
+        },
         "catalog": {
             "list": [],
             "chapter": {
@@ -27,13 +31,6 @@
                 "category": 2
             }
         }
-    },
-    "content2": {
-        "list": "[$url]?p=[$id]",
-        "link": "{selector:#qTcms_pic@attr->src}",
-        "startid": "1",
-        "endid": "{selector:#k_total}",
-        "mode": 1
     },
     "content": {
         "备注": "此处爬取数据中的指定key,再解密",

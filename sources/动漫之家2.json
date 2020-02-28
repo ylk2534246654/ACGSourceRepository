@@ -7,7 +7,7 @@
         "requestData": ""
     },
     "metadata": {
-        "list": "function Main(html){return jsonPaths(strmiddle(html,'serchArry=','</script>'),'$.*');}",
+        "list": "function Main(this){return jsonPaths(strmiddle(this,'serchArry=','</script>'),'$.*');}",
         "name": "function Main(html){return jsonPath(html,'$.name');}",
         "author": "function Main(html){return jsonPath(html,'$.authors');}",
         "img": "function Main(html){return 'https://images.dmzj.com/'+jsonPath(html,'$.cover');}",
@@ -35,8 +35,8 @@
     },
     "content": {
         "备注": "此处爬取数据中的指定json数据,再json解析出link",
-        "list": "{sub:[$html],initData(,);,0}{selector:page_url}",
-        "link": "{selector:}",
+        "list": "function Main(html){return jsonPaths(strmiddle(html,'initData(',');'),'$..page_url');}",
+        "link": "function Main(html){return html;}",
         "mode": 2
     }
 }
