@@ -13,16 +13,16 @@
         "link": "function Main(html){return jsoup(html,'a.ImgA@attr->href');}"
     },
     "detail": {
-        "author": "{selector:div.sub_r > p:nth-child(2)}",
-        "summary": "{selector:p.txtDesc}{re:介绍:,}",
-        "upDate": "{selector:span.date}",
+        "author": "function Main(html){return jsoup(html,'div.sub_r > p:nth-child(2)');}",
+        "summary": "function Main(html){return jsoup(html,'div.sub_r > p:nth-child(2).replace('介绍:','')');}",
+        "upDate": "function Main(html){return jsoup(html,'span.date');}",
         "catalog_link": [],
         "catalog": {
             "list": [],
             "chapter": {
-                "list": "{selector:div#list > ul > li}",
-                "name": "{selector:a}",
-                "link": "{selector:a@attr->href}",
+                "list": "function Main(html){return jsoups(html,'div#list > ul > li');}",
+                "name": "function Main(html){return jsoup(html,'a');}",
+                "link": "function Main(html){return jsoup(html,'a@attr->href');}",
                 "orderBy": 0,
                 "category": 2
             }
