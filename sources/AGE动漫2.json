@@ -1,5 +1,5 @@
 {
-  "name": "AGE动漫",
+  "name": "AGE动漫2",
   "charset": "UTF-8",
   "search": {
     "requestURL": "https://www.agefans.tv/search?&query=[$key]&page=[$page]",

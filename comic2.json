@@ -17,6 +17,12 @@
 			"url": "http://m.ccshwy.com",
 			"checked": true,
 			"category": 2
+		},
+        {
+			"name": "AGE动漫2",
+			"url": "http://m.ccshwy.com",
+			"checked": true,
+			"category": 2
 		}
 	]
 }
