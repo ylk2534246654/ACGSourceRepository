@@ -7,10 +7,10 @@
     },
     "metadata": {
         "list": "function Main(html){return jsoups(html,'#listbody > li');}",
-        "name": "function Main(html){return jsoup(html,'a.txtA');}",
-        "author": "function Main(html){return jsoup(html,'span.info');}",
-        "img": "function Main(html){return jsoup(html,'a.ImgA > img@attr->src');}",
-        "link": "function Main(html){return jsoup(html,'a.ImgA@attr->href');}"
+        "name": "function Main(text){return jsoup(text,'a.txtA');}",
+        "author": "function Main(text){return jsoup(text,'span.info');}",
+        "img": "function Main(text){return jsoup(text,'a.ImgA > img@attr->src');}",
+        "link": "function Main(text){return jsoup(text,'a.ImgA@attr->href');}"
     },
     "detail": {
         "author": "function Main(html){return jsoup(html,'div.sub_r > p:nth-child(2)');}",
@@ -25,8 +25,8 @@
             "list": [],
             "chapter": {
                 "list": "function Main(html){return jsoups(html,'div#list > ul > li');}",
-                "name": "function Main(html){return jsoup(html,'a');}",
-                "link": "function Main(html){return jsoup(html,'a@attr->href');}",
+                "name": "function Main(text){return jsoup(text,'a');}",
+                "link": "function Main(text){return jsoup(text,'a@attr->href');}",
                 "orderBy": 0,
                 "category": 2
             }
