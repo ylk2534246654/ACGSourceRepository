@@ -1,6 +1,8 @@
 {
+    "init":"",
     "name": "动漫之家2",
     "charset": "UTF-8",
+    "search2": "https://m.dmzj.com/search/[$key].html@post->data@header->data",
     "search": {
         "requestURL": "https://m.dmzj.com/search/[$key].html",
         "requestMethod": "GET",
