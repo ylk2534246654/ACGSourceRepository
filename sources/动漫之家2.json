@@ -7,7 +7,7 @@
         "requestData": ""
     },
     "metadata": {
-        "list": "function Main(text){return jsonPaths(strmiddle(text,'serchArry=','</script>'),'$.*');}",
+        "list": "function Main(this){return jsonPaths(strmiddle(this,'serchArry=','</script>'),'$.*');}",
         "name": "function Main(html){return jsonPath(html,'$.name');}",
         "author": "function Main(html){return jsonPath(html,'$.authors');}",
         "img": "function Main(html){return 'https://images.dmzj.com/'+jsonPath(html,'$.cover');}",
