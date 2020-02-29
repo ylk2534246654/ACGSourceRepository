@@ -27,7 +27,7 @@
             "chapter": {
                 "list": "function Main(html){return jsonPaths(strmiddle(html,'initIntroData([',']);'),'$..data[*]');}",
                 "name": "function Main(text){return jsonPath(text,'$.chapter_name');}",
-                "link": "function Main(text){return 'https://m.dmzj.com/view/'+jsonPath(text,'$.comic_id')+'/'+jsonPath(html,'$.id')+'.html';}",
+                "link": "function Main(text){return 'https://m.dmzj.com/view/'+jsonPath(text,'$.comic_id')+'/'+jsonPath(text,'$.id')+'.html';}",
                 "orderBy": 0,
                 "category": 2
             }
