@@ -1,0 +1,36 @@
+{
+  "name": "AGE动漫",
+  "charset": "UTF-8",
+  "search": {
+    "requestURL": "https://www.agefans.tv/search?&query=[$key]&page=[$page]",
+    "requestMethod": "GET",
+    "requestData": ""
+  },
+  "metadata": {
+    "list": "function Main(html){return jsoups(html,'div[class=blockcontent1] > div');}",
+    "name": "function Main(text){return jsoup(text,'a[class=cell_poster] > img@attr->alt');}",
+    "author": "function Main(text){return jsoup(text,'div:nth-child(7) > span.cell_imform_value');}",
+    "img": "function Main(text){return jsoup(text,'a[class=cell_poster] > img@attr->src');}",
+    "link": "function Main(text){return jsoup(text,'a[class=cell_poster]@attr->href');}"
+  },
+  "detail": {
+    "author": "function Main(html){return jsoup(html,'li:nth-child(5) > span.detail_imform_value');}",
+    "summary": "function Main(html){return jsoup(html,'div.detail_imform_desc_pre > p');}",
+    "upDate": "function Main(html){return jsoup(html,'li:nth-child(8) > span.detail_imform_value');}",
+    "catalog_link": [],
+    "tab": {
+      "list": "function Main(html){return jsoups(html,'#menu0 > li');}",
+      "name": "function Main(text){return jsoup(text,'li');}"
+    },
+    "catalog": {
+      "list": "function Main(html){return jsoups(html,'#main0 > div.movurl');}",
+      "chapter": {
+        "list": "function Main(html){return jsoups(html,'ul > li');}",
+        "name": "function Main(text){return jsoup(text,'a');}",
+        "link": "function Main(text){return jsoup(text,'a@attr->href');}",
+        "orderBy": 1,
+        "category": 3
+      }
+    }
+  }
+}
