@@ -19,7 +19,7 @@
     "upDate": "function Main(html){return jsoup(html,'li:nth-child(8) > span.detail_imform_value');}",
     "catalog_link": [],
     "tab": {
-      "list": "function Main(html){return jsoups(html,'#menu0 > li');}",
+      "list": "function Main(html){return jsoups(html,'#menu0');}",
       "name": "function Main(text){return jsoup(text,'li');}"
     },
     "catalog": {
