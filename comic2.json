@@ -29,6 +29,12 @@
 			"url": "http://m.ccshwy.com",
 			"checked": true,
 			"category": 2
+		},
+        {
+			"name": "二次元动漫2",
+			"url": "http://m.ccshwy.com",
+			"checked": true,
+			"category": 2
 		}
 	]
 }
