@@ -23,6 +23,12 @@
 			"url": "http://m.ccshwy.com",
 			"checked": true,
 			"category": 2
+		},
+        {
+			"name": "动漫狂2",
+			"url": "http://m.ccshwy.com",
+			"checked": true,
+			"category": 2
 		}
 	]
 }

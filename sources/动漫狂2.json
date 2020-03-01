@@ -1,5 +1,5 @@
 {
-  "name": "动漫狂",
+  "name": "动漫狂2",
   "charset": "big5",
   "request": "https://www.cartoonmad.com/search.html@post->keyword=[$key]&searchtype=all",
   "metadata": {
