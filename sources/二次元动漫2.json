@@ -1,0 +1,39 @@
+{
+    "name": "二次元动漫2",
+    "charset": "UTF-8",
+    "request": "http://www.2animx.com/search-index?&searchType=1&q=[$key]",
+    "metadata": {
+        "list": "function Main(html){return jsoups(html,'ul.liemh.htmls.indliemh > li');}",
+        "name": "function Main(text){return jsoup(text,'div[class=tit]');}",
+        "author": "",
+        "img": "function Main(text){return jsoup(text,'img@attr->src');}",
+        "link": "function Main(text){return jsoup(text,'a@attr->href');}"
+    },
+    "detail": {
+        "author": "function Main(html){return jsoup(html,'dl.mh-detail > dd > p:nth-child(1) > a');}",
+        "summary": "function Main(html){return jsoup(html,'div.mh-introduce > p:nth-child(3)');}",
+        "upDate": "function Main(html){return jsoup(html,'p:nth-child(2) > a');}",
+        "catalog_link": [],
+        "tab": {
+            "list": [],
+            "name": []
+        },
+        "catalog": {
+            "list": [],
+            "chapter": {
+                "list": "function Main(html){return jsoups(html,'#oneCon1 > ul > li');}",
+                "name": "function Main(text){return jsoup(text,'a');}",
+                "link": "function Main(text){return jsoup(text,'a@attr->href');}",
+                "orderBy": 1,
+                "category": 2
+            }
+        }
+    },
+    "content": {
+        "备注": "单页面解析",
+        "list": "function Main(html){var endid=jsoup(html,'#total@attr->value');var obj= [];for(var i =1;i<=endid;i++){ var num = i;var n=3;var a = (Array(n).join(0) + num).slice(-n);obj.push(getURL()+'-p-'+a);};return obj;}",
+        "link": "function Main(text){return text;}",
+        "link2": "function Main(text){return jsoup(text,'img[id = ComicPic]@attr->src');}",
+        "mode": 2
+    }
+}
