@@ -10,9 +10,9 @@
     "link": "function Main(text){return jsoup(text,'div.info > h2 > a@attr->href').replace('www.dilidili','m.dilidili');}"
   },
   "detail": {
-    "author": "作者无法获取",
-    "summary": "function Main(html){return jsoup(html,'#app > div:nth-child(3) > p');}",
-    "upDate": "function Main(html){return strmiddle(jsoup(html,'#app > div.episode > div'),'剧集（','）');}",
+    "author": [],
+    "summary": "function Main(html){return jsoup(html,'div.column_introduction');}",
+    "upDate": "function Main(html){return jsoup(html,'div.fr.detail_info > p:nth-child(3)');}",
     "catalog_link": [],
     "tab": {
       "list": [],
