@@ -1,39 +1,35 @@
 {
     "name": "幽冰小说",
     "charset": "UTF-8",
-    "search": {
-        "requestURL": "https://www.97ub.cc/modules/article/search.php?searchkey=[$key]",
-        "requestMethod": "GET",
-        "requestData": ""
-    },
+    "request": "https://www.97ub.cc/modules/article/search.php?searchkey=[$key]",
     "metadata": {
-        "list": "{selector:tbody > tr}",
-        "name": "{selector:td:nth-child(1) > a}",
-        "author": "{selector:td.odd:nth-child(3)}",
-        "img": "http://r.m.97ub.cc/cover/aHR0cDovL2ltZzEuY2h1YW5nc2hpLnFxLmNvbS9jaHVhbmdzaGkvcDEvZGVmYXVsdC1jb3Zlci1sYXJnZS5wbmc=",
-        "link": "{selector:td:nth-child(1) > a@attr->href}"
+        "list": "function Main(html){return jsoups(html,'tbody > tr');}",
+        "name": "function Main(text){return jsoup(text,'td:nth-child(1) > a');}",
+        "author": "function Main(text){return jsoup(text,'td.odd:nth-child(3)');}",
+        "img": "function Main(text){return 'http://r.m.97ub.cc/cover/aHR0cDovL2ltZzEuY2h1YW5nc2hpLnFxLmNvbS9jaHVhbmdzaGkvcDEvZGVmYXVsdC1jb3Zlci1sYXJnZS5wbmc=';}",
+        "link": "function Main(text){return jsoup(text,'td:nth-child(1) > a@attr->href');}"
     },
     "detail": {
-        "author": "{selector:#info > p:nth-child(2)}",
-        "summary": "{selector:#intro}",
-        "upDate": "{selector:#info > p:nth-child(4)}",
+        "author": "function Main(html){return jsoup(html,'#info > p:nth-child(2)');}",
+        "summary": "function Main(html){return jsoup(html,'#intro');}",
+        "upDate": "function Main(html){return jsoup(html,'#info > p:nth-child(4)');}",
         "catalog_link": [],
         "tab": {
-            "list": "{selector:#list > dl > dt:nth-child(12)}",
-            "name": "{selector:dt}"
+            "list": [],
+            "name": []
         },
         "catalog": {
-            "list": "{selector:#list > dl}",
+            "list": [],
             "chapter": {
-                "list": "{selector:dd@start->9}",
-                "name": "{selector:a}",
-                "link": "{selector:a@attr->href}",
+                "list": "function Main(html){return jsoups(html,'#list > dl > dd@start->9');}",
+                "name": "function Main(text){return jsoup(text,'a');}",
+                "link": "function Main(text){return jsoup(text,'a@attr->href');}",
                 "orderBy": 1,
                 "category": 4
             }
         }
     },
     "content": {
-        "text": "{selector:#content}"
+        "text": "function Main(html){return jsoup(html,'#content');}"
     }
 }
