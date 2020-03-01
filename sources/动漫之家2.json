@@ -31,7 +31,7 @@
     },
     "content": {
         "备注": "此处爬取数据中的指定json数据,再json解析出link",
-        "list": "function Main(html){return jsonPaths(strmiddle(html,'initData(',');'),'$..page_url');}",
+        "list": "function Main(html){return jsonPaths(strmiddle(html,'initData(',', \"'),'$..page_url');}",
         "link": "function Main(text){return text;}",
         "mode": 2
     }
