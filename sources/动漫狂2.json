@@ -4,26 +4,26 @@
   "request": "https://www.cartoonmad.com/search.html@post->keyword=[$key]&searchtype=all",
   "metadata": {
     "list": "function Main(html){return jsoups(html,'tr > td[align=center]');}",
-    "name": "function Main(html){return jsoup(html,'a[class=a1]');}",
+    "name": "function Main(text){return jsoup(text,'a[class=a1]');}",
     "author": "",
-    "img": "function Main(html){return jsoup(html,'td > a > img@attr->src');}",
-    "link": "function Main(html){return jsoup(html,'a[class=a1]@attr->href');}"
+    "img": "function Main(text){return jsoup(text,'td > a > img@attr->src');}",
+    "link": "function Main(text){return jsoup(text,'a[class=a1]@attr->href');}"
   },
   "detail": {
-    "author": "{selector:table > tbody > tr:nth-child(2) > td[align = center] > table:nth-child(1) > tbody > tr:nth-child(5) > td}{re:原創作者：, }",
-    "summary": "{selector:#info > table > tbody > tr > td}",
-    "upDate": "{selector:tbody > tr:nth-child(4) > td > table > tbody > tr:nth-child(1) > td:nth-child(2) > b > font}}",
+    "author": "function Main(html){return jsoup(html,'table > tbody > tr:nth-child(2) > td[align = center] > table:nth-child(1) > tbody > tr:nth-child(5) > td').replace('原創作者：','');}",
+    "summary": "function Main(html){return jsoup(html,'#info > table > tbody > tr > td');}",
+    "upDate": "function Main(html){return jsoup(html,'tbody > tr:nth-child(4) > td > table > tbody > tr:nth-child(1) > td:nth-child(2) > b > font');}",
     "catalog_link": [],
     "tab": {
-      "list": "{selector:tbody > tr:nth-child(2) > td:nth-child(2) > table:nth-child(3) > tbody > tr > td}",
-      "name": "{selector:#info > legend}"
+      "list": "function Main(html){return jsoups(html,'tbody > tr:nth-child(2) > td:nth-child(2) > table:nth-child(3) > tbody > tr > td');}",
+      "name": "function Main(text){return jsoup(text,'#info > legend');}"
     },
     "catalog": {
-      "list": "{selector:tbody > tr:nth-child(2) > td:nth-child(2) > table:nth-child(3) > tbody > tr > td}",
+      "list": "function Main(html){return jsoups(html,'tbody > tr:nth-child(2) > td:nth-child(2) > table:nth-child(3) > tbody > tr > td');}",
       "chapter": {
-        "list": "{selector:fieldset[id=info] > table > tbody > tr > td}",
-        "name": "{selector:a}",
-        "link": "{selector:a@attr->href}",
+        "list": "function Main(text){return jsoup(text,'fieldset[id=info] > table > tbody > tr > td');}",
+        "name": "function Main(text){return jsoup(text,'a');}",
+        "link": "function Main(text){return jsoup(text,'a@attr->href');}",
         "orderBy": 1,
         "category": 2
       }
