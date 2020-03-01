@@ -10,16 +10,16 @@
         "link": "function Main(text){return jsoup(text,'a.cover@attr->href');}"
     },
     "detail": {
-        "author": "function Main(html){return jsoup(html,'div.sub_r > p:nth-child(2)');}",
-        "summary": "function Main(html){return jsoup(html,'p.txtDesc').replace('介绍:','');}",
-        "upDate": "function Main(html){return jsoup(html,'span.date');}",
+        "author": "function Main(html){return jsoup(html,'div.box-back2 > p:nth-child(2)');}",
+        "summary": "function Main(html){return jsoup(html,'span.comic-intro');}",
+        "upDate": "function Main(html){return jsoup(html,'div.box-back2 > p:nth-child(4)');}",
         "catalog_link": [],
         "catalog": {
             "list": [],
             "chapter": {
                 "list": "function Main(html){return jsoups(html,'div.catalog-list > ul > li');}",
-                "name": "function Main(text){return jsoups(text,'a');}",
-                "link": "function Main(text){return jsoups(text,'a@attr->href');}",
+                "name": "function Main(text){return jsoup(text,'a');}",
+                "link": "function Main(text){return jsoup(text,'a@attr->href');}",
                 "orderBy": 0,
                 "category": 2
             }
