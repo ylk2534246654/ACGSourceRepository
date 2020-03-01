@@ -1,44 +1,34 @@
 {
     "name": "奇漫屋",
     "charset": "UTF-8",
-    "search": {
-        "requestURL": "http://qiman5.com/spotlight/?keyword=[$key]",
-        "requestMethod": "GET"
-    },
+    "request": "http://qiman5.com/spotlight/?keyword=[$key]",
     "metadata": {
-        "list": "{selector:div.search-result > div}",
-        "name": "{selector:p.comic-name > a}",
-        "author": "{selector:p.comic-tags}\n{selector:p.comic-update-at}",
-        "img": "{selector:a.cover > img@attr->src}",
-        "link": "{selector:p.comic-name > a@attr->href}"
+        "list": "function Main(html){return jsoups(html,'div.search-result > div');}",
+        "name": "function Main(text){return jsoup(text,'p.comic-name > a');}",
+        "author": "function Main(text){return jsoup(text,'p.comic-tags')+'\n'+jsoup(text,'p.comic-update-at');}",
+        "img": "function Main(text){return jsoup(text,'a.cover > img@attr->src');}",
+        "link": "function Main(text){return jsoup(text,'p.comic-name > a@attr->href');}"
     },
     "detail": {
-        "author": "{selector:div.sub_r > p:nth-child(2)}",
-        "summary": "{selector:p.txtDesc}{re:介绍:,}",
-        "upDate": "{selector:span.date}",
+        "author": "function Main(html){return jsoup(html,'div.sub_r > p:nth-child(2)');}",
+        "summary": "function Main(html){return jsoup(html,'p.txtDesc').replace('介绍:','');}",
+        "upDate": "function Main(html){return jsoup(html,'span.date');}",
         "catalog_link": [],
         "catalog": {
             "list": [],
             "chapter": {
-                "list": "{selector:div.catalog-list > ul > li}",
-                "name": "{selector:a}",
-                "link": "{selector:a@attr->href}",
+                "list": "function Main(html){return jsoups(html,'div.catalog-list > ul > li');}",
+                "name": "function Main(text){return jsoups(text,'a');}",
+                "link": "function Main(text){return jsoups(text,'a@attr->href');}",
                 "orderBy": 0,
                 "category": 2
             }
         }
     },
-    "content2": {
-        "list": "[$url]?p=[$id]",
-        "link": "{selector:#qTcms_pic@attr->src}",
-        "startid": "1",
-        "endid": "{selector:#k_total}",
-        "mode": 1
-    },
     "content": {
         "备注": "此处爬取数据中的指定key,再解密",
-        "list": "{sub:[$html],m_murl_e=\",\",0}{decode:[$this],Base64}{split:\\$qingtiandy\\$}",
-        "link": "{selector:}{re:m.ccshwy.com,www.ccshwy.com}",
+        "list": "function Main(html){javaScript('eval'+strmiddle(html,'eval','</script>'));return newImgs;}",
+        "link": "function Main(text){return text;}",
         "mode": 1
     }
 }
