@@ -1,7 +1,7 @@
 {
   "name": "嘀哩嘀哩",
   "charset": "utf-8",
-  "request": "http://www.dilidili.co/index.php/vod/search.html?wd=[$key]@header->Mozilla/5.0 (Linux; Android 4.4.2; Nexus 4 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Mobile Safari/537.36",
+  "request": "http://www.dilidili.co/index.php/vod/search.html?wd=[$key]@header->User-Agent:Mozilla/5.0 (Linux; Android 4.4.2; Nexus 4 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Mobile Safari/537.36",
   "metadata": {
     "list": "function Main(html){return jsoups(html,'#contents > ul');}",
     "name": "function Main(text){return jsoup(text,'div.info > h2 > a');}",
@@ -11,7 +11,7 @@
   },
   "detail": {
     "author": [],
-    "summary": "function Main(html){return jsoup(html,'div:nth-child(20)');}",
+    "summary": "function Main(html){return jsoup(html,'div.column_introduction');}",
     "upDate": "function Main(html){return jsoup(html,'div.fr.detail_info > p:nth-child(3)');}",
     "catalog_link": [],
     "tab": {
