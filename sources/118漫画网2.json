@@ -1,6 +1,7 @@
 {
     "name": "118漫画网2",
     "charset": "UTF-8",
+    "dependencies":"https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/js/base64.js",
     "search": {
         "requestURL": "http://m.ccshwy.com/statics/search.aspx?key=[$key]",
         "requestMethod": "GET"
