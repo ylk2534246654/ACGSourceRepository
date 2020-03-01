@@ -1,7 +1,7 @@
 {
     "name": "幽冰小说",
     "charset": "UTF-8",
-    "request": "https://www.97ub.cc/modules/article/search.php?searchkey=[$key]",
+    "request": "https://www.97ub.cc/modules/article/search.php?searchkey=[$key]@header->https://www.97ub.cc/modules/article/search.php",
     "metadata": {
         "list": "function Main(html){return jsoups(html,'tbody > tr');}",
         "name": "function Main(text){return jsoup(text,'td:nth-child(1) > a');}",
