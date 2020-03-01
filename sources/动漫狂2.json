@@ -15,11 +15,11 @@
     "upDate": "function Main(html){return jsoup(html,'tbody > tr:nth-child(4) > td > table > tbody > tr:nth-child(1) > td:nth-child(2) > b > font');}",
     "catalog_link": [],
     "tab": {
-      "list": "function Main(html){return jsoups(html,'tbody > tr:nth-child(2) > td:nth-child(2) > table:nth-child(3) > tbody > tr > td');}",
-      "name": "function Main(text){return jsoup(text,'#info > legend');}"
+      "list": [],
+      "name": []
     },
     "catalog": {
-      "list": "function Main(html){return jsoups(html,'tbody > tr:nth-child(2) > td:nth-child(2) > table:nth-child(3) > tbody > tr > td');}",
+      "list": [],
       "chapter": {
         "list": "function Main(html){return jsoups(html,'fieldset[id=info] > table > tbody > tr > td');}",
         "name": "function Main(text){return jsoup(text,'a');}",
