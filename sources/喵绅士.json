@@ -1,18 +1,13 @@
 {
     "name": "喵绅士",
     "charset": "UTF-8",
-    "search": {
-        "获取最新节点":"https://hcomicurl.xyz/",
-        "requestURL": "https://m.c-upp.com/search/",
-        "requestMethod": "POST",
-        "requestData": "show=title%2Ctitleen%2Ctags&keyboard=[$key]"
-    },
+    "request": "https://m.c-upp.com/search/@post->show=title%2Ctitleen%2Ctags&keyboard=[$key]",
     "metadata": {
-        "list": "{selector:div > ul}",
-        "name": "{selector:h3}",
-        "author": "{selector:a > p}",
-        "img": "{selector:img@attr->src}",
-        "link": "{selector:a@attr->href}"
+        "list": "function Main(html){return jsoups(html,'div > ul');}",
+        "name": "function Main(text){return jsoup(text,'h3');}",
+        "author": "function Main(text){return jsoup(text,'a > p');}",
+        "img": "function Main(text){return jsoup(text,'img@attr->src');}",
+        "link": "function Main(text){return jsoup(text,'a@attr->href');}"
     },
     "detail": {
         "author": "",
@@ -21,9 +16,9 @@
         "catalog_link": [],
         "catalog": {
             "chapter": {
-                "list": "{selector:div > a:nth-child(7)}",
-                "name": "{selector:a}",
-                "link": "{selector:a@attr->href}",
+                "list": "function Main(html){return jsoups(html,'div > a:nth-child(7)');}",
+                "name": "function Main(text){return jsoup(text,'a');}",
+                "link": "function Main(text){return jsoup(text,'a@attr->href');}",
                 "orderBy": 0,
                 "category": 2
             }
@@ -31,8 +26,8 @@
     },
     "content": {
         "备注": "直接jsoup",
-        "list": "{selector:div > img}",
-        "link": "{selector:img@attr->data-original}",
+        "list": "function Main(html){return jsoups(html,'div > img');}",
+        "link": "function Main(text){return jsoup(text,'img@attr->data-original');}",
         "mode": 1
     }
 }

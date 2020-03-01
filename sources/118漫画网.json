@@ -1,44 +1,39 @@
 {
     "name": "118漫画网",
     "charset": "UTF-8",
-    "search": {
-        "requestURL": "http://m.ccshwy.com/statics/search.aspx?key=[$key]",
-        "requestMethod": "GET"
-    },
+    "dependencies":"https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/js/base64.js",
+    "request": "http://m.ccshwy.com/statics/search.aspx?key=[$key]",
     "metadata": {
-        "list": "{selector:#listbody > li}",
-        "name": "{selector:a.txtA}",
-        "author": "{selector:span.info}",
-        "img": "{selector:a.ImgA > img@attr->src}",
-        "link": "{selector:a.ImgA@attr->href}"
+        "list": "function Main(html){return jsoups(html,'#listbody > li');}",
+        "name": "function Main(text){return jsoup(text,'a.txtA');}",
+        "author": "function Main(text){return jsoup(text,'span.info');}",
+        "img": "function Main(text){return jsoup(text,'a.ImgA > img@attr->src');}",
+        "link": "function Main(text){return jsoup(text,'a.ImgA@attr->href');}"
     },
     "detail": {
-        "author": "{selector:div.sub_r > p:nth-child(2)}",
-        "summary": "{selector:p.txtDesc}{re:介绍:,}",
-        "upDate": "{selector:span.date}",
+        "author": "function Main(html){return jsoup(html,'div.sub_r > p:nth-child(2)');}",
+        "summary": "function Main(html){return jsoup(html,'p.txtDesc').replace('介绍:','');}",
+        "upDate": "function Main(html){return jsoup(html,'span.date');}",
         "catalog_link": [],
+        "tab": {
+            "list": [],
+            "name": []
+        },
         "catalog": {
             "list": [],
             "chapter": {
-                "list": "{selector:div#list > ul > li}",
-                "name": "{selector:a}",
-                "link": "{selector:a@attr->href}",
+                "list": "function Main(html){return jsoups(html,'div#list > ul > li');}",
+                "name": "function Main(text){return jsoup(text,'a');}",
+                "link": "function Main(text){return jsoup(text,'a@attr->href');}",
                 "orderBy": 0,
                 "category": 2
             }
         }
     },
-    "content2": {
-        "list": "[$url]?p=[$id]",
-        "link": "{selector:#qTcms_pic@attr->src}",
-        "startid": "1",
-        "endid": "{selector:#k_total}",
-        "mode": 1
-    },
     "content": {
         "备注": "此处爬取数据中的指定key,再解密",
-        "list": "{sub:[$html],m_murl_e=\",\",0}{decode:[$this],Base64}{split:\\$qingtiandy\\$}",
-        "link": "{selector:}{re:m.ccshwy.com,www.ccshwy.com}",
+        "list": "function Main(html){return Base64.decode(strmiddle(html,'m_murl_e=\"','\"')).split('$qingtiandy$');}",
+        "link": "function Main(text){return pathURL(text).replace('m.ccshwy.com','www.ccshwy.com');}",
         "mode": 1
     }
 }

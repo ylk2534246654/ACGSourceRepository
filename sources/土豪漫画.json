@@ -1,33 +1,29 @@
 {
   "name": "土豪漫画",
   "charset": "UTF-8",
-  "search": {
-    "requestURL": "https://m.tohomh123.com/action/Search?keyword=[$key]",
-    "requestMethod": "GET",
-    "requestData": ""
-  },
+  "request": "https://m.tohomh123.com/action/Search?keyword=[$key]",
   "metadata": {
-    "list": "{selector:div > ul > li}",
-    "name": "{selector:a@attr->title}",
+    "list": "function Main(html){return jsoups(html,'div > ul > li');}",
+    "name": "function Main(text){return jsoup(text,'a@attr->title');}",
     "author": "",
-    "img": "{selector:img@attr->src}",
-    "link": "{selector:a@attr->href}"
+    "img": "function Main(text){return jsoup(text,'img@attr->src');}",
+    "link": "function Main(text){return jsoup(text,'a@attr->href');}"
   },
   "detail": {
-    "author": "{selector:div.info > p:nth-child(3)}{re:作者：, }",
-    "summary": "{selector:div.detailContent > p}",
-    "upDate": "{selector:p.bottom.d-nowrap}",
+    "author": "function Main(html){return jsoup(html,'div.info > p:nth-child(3)').replace('作者：','');}",
+    "summary": "function Main(html){return jsoup(html,'div.detailContent > p');}",
+    "upDate": "function Main(html){return jsoup(html,'p.bottom.d-nowrap');}",
     "catalog_link": [],
     "tab": {
-      "list": "{selector:body > div.chapterList.d-border}",
-      "name": "{selector:li.ib.active}"
+      "list": "function Main(html){return jsoups(html,'body > div.chapterList.d-border');}",
+      "name": "function Main(text){return jsoup(text,'li.ib.active');}"
     },
     "catalog": {
-      "list": "{selector:body > div.chapterList.d-border}",
+      "list": "function Main(html){return jsoups(html,'body > div.chapterList.d-border');}",
       "chapter": {
-        "list": "{selector:#chapterList_1 > ul > li}",
-        "name": "{selector:a}",
-        "link": "{selector:a@attr->href}",
+        "list": "function Main(html){return jsoups(html,'#chapterList_1 > ul > li');}",
+        "name": "function Main(text){return jsoup(text,'a');}",
+        "link": "function Main(text){return jsoup(text,'a@attr->href');}",
         "orderBy": 0,
         "category": 2
       }
@@ -35,9 +31,8 @@
   },
   "content": {
     "备注": "此处爬取数据中的指定位置id,数量",
-    "list": "{sub:[$html],pl = ',/000,0}/{num:0000}.jpg",
-    "startid": "{sub:[$html],/000,.jpg,0}",
-    "endid": "{sub:[$html],pcount=,;,0}{count:[$this]-1,1}",
+    "list": "function Main(html){var file=strmiddle(html,'pl = \\'','/000');var startid=strmiddle(html,'/000','.jpg');var endid=strmiddle(html,'pcount=,',';');jsoup(html,'#total@attr->value');var obj= [];for(var i =1;i<=endid;i++){var num = i;var n=4;var a = (Array(n).join(0) + num).slice(-n);obj.push(file+'/'+a);};return obj;}",
+    "link": "function Main(text){return text;}",
     "mode": 2
   }
 }

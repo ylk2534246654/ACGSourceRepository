@@ -1,33 +1,29 @@
 {
   "name": "MangaNel",
   "charset": "UTF-8",
-  "search": {
-    "requestURL": "https://manganelo.com/search/[$key]",
-    "requestMethod": "GET",
-    "requestData": ""
-  },
+  "request": "https://manganelo.com/search/[$key]",
   "metadata": {
-    "list": "{selector:div.panel-search-story > div}",
-    "name": "{selector:a > img@attr->alt}",
-    "author": "{selector:span.item-author@attr->title}",
-    "img": "{selector:a > img@attr->src}",
-    "link": "{selector:a@attr->href}"
+    "list": "function Main(html){return jsoups(html,'div.panel-search-story > div');}",
+    "name": "function Main(text){return jsoup(text,'a > img@attr->alt');}",
+    "author": "function Main(text){return jsoup(text,'span.item-author@attr->title');}",
+    "img": "function Main(text){return jsoup(text,'a > img@attr->src');}",
+    "link": "function Main(text){return jsoup(text,'a@attr->href');}"
   },
   "detail": {
-    "author": "{selector:tr:nth-child(2) > td.table-value > a}",
-    "summary": "{selector:#panel-story-info-description}",
-    "upDate": "{selector:tr:nth-child(3) > td.table-value} · {selector:span.stre-value}",
+    "author": "function Main(html){return jsoup(html,'tr:nth-child(2) > td.table-value > a');}",
+    "summary": "function Main(html){return jsoup(html,'#panel-story-info-description');}",
+    "upDate": "function Main(html){return jsoup(html,'tr:nth-child(3) > td.table-value')+' · '+jsoup(html,'span.stre-value');}",
     "catalog_link": [],
     "tab": {
-      "list": "{selector:div.panel-story-chapter-list > p}",
-      "name": "{selector:span.row-title-chapter-name}"
+      "list": [],
+      "name": []
     },
     "catalog": {
-      "list": "{selector:div.panel-story-chapter-list > ul}",
+      "list": [],
       "chapter": {
-        "list": "{selector:ul.row-content-chapter > li}",
-        "name": "{selector:a}",
-        "link": "{selector:a@attr->href}",
+        "list": "function Main(html){return jsoups(html,'div.panel-story-chapter-list > ul.row-content-chapter > li');}",
+        "name": "function Main(text){return jsoup(text,'a');}",
+        "link": "function Main(text){return jsoup(text,'a@attr->href');}",
         "orderBy": 0,
         "category": 2
       }
@@ -35,8 +31,8 @@
   },
   "content": {
     "备注": "直接jsoup",
-    "list": "{selector:#vungdoc > img}",
-    "link": "{selector:img@attr->src}",
+    "list": "function Main(html){return jsoup(html,'#vungdoc > img');}",
+    "link": "function Main(text){return jsoup(text,'img@attr->src');}",
     "mode": 1
   }
 }

@@ -1,33 +1,29 @@
 {
   "name": "嘀哩嘀哩",
   "charset": "utf-8",
-  "search": {
-    "requestURL": "http://www.dilidili.one/search.php?&keyword=[$key]&PageNo=[$page]",
-    "requestMethod": "GET",
-    "requestData": ""
-  },
+  "request": "http://www.dilidili.one/search.php?&keyword=[$key]&PageNo=[$page]",
   "metadata": {
-    "list": "{selector:div > div > div:nth-child(3) > div}",
-    "name": "{selector:div > div > a > h2[class=post-title]}",
-    "author": "{selector:p.slr}",
-    "img": "{selector:div > div > a > img@attr->src}",
-    "link": "{selector:div > div > a@attr->href}{re:dilidili.name,dilidili.one}{re:www.dilidili,m.dilidili}"
+    "list": "function Main(html){return jsoups(html,'div > div > div:nth-child(3) > div');}",
+    "name": "function Main(text){return jsoup(text,'div > div > a > h2[class=post-title]');}",
+    "author": "function Main(text){return jsoup(text,'p.slr');}",
+    "img": "function Main(text){return jsoup(text,'div > div > a > img@attr->src');}",
+    "link": "function Main(text){return jsoup(text,'div > div > a@attr->href').replace('dilidili.name','dilidili.one').replace('www.dilidili','m.dilidili');}"
   },
   "detail": {
     "author": "作者无法获取",
-    "summary": "{selector:#app > div:nth-child(3) > p}",
-    "upDate": "{selector:#app > div.episode > div}{sub:[$this],剧集（,）,1}",
+    "summary": "function Main(html){return jsoup(html,'#app > div:nth-child(3) > p');}",
+    "upDate": "function Main(html){return strmiddle(jsoup(html,'#app > div.episode > div'),'剧集（','）');}",
     "catalog_link": [],
     "tab": {
-      "list": "{selector:#app > div.episode}",
-      "name": "{selector:div.title}"
+      "list": "function Main(html){return jsoups(html,'#app > div.episode');}",
+      "name": "function Main(text){return jsoup(text,'div.title');}"
     },
     "catalog": {
-      "list": "{selector:#app > div.episode}",
+      "list": "function Main(html){return jsoups(html,'#app > div.episode');}",
       "chapter": {
-        "list": "{selector:div.episode > ul > li}",
-        "name": "{selector:a}",
-        "link": "{selector:a@attr->href}",
+        "list": "function Main(html){return jsoups(html,'div.episode > ul > li');}",
+        "name": "function Main(text){return jsoup(text,'a');}",
+        "link": "function Main(text){return jsoup(text,'a@attr->href');}",
         "orderBy": 1,
         "category": 3
       }

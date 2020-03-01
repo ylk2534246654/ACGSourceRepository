@@ -1,33 +1,29 @@
 {
   "name": "妮可动漫",
   "charset": "UTF-8",
-  "search": {
-    "requestURL": "http://www.nicotv.club/video/search/[$key].html",
-    "requestMethod": "GET",
-    "requestData": ""
-  },
+  "request": "http://www.nicotv.club/video/search/[$key].html",
   "metadata": {
-    "list": "{selector:div.container > ul > li}",
-    "name": "{selector:h2 > a}",
-    "author": "{selector:h4}",
-    "img": "{selector:p.image > a > img@attr->data-original}",
-    "link": "{selector:h2 > a@attr->href}"
+    "list": "function Main(html){return jsoups(html,'div.container > ul > li');}",
+    "name": "function Main(text){return jsoup(text,'h2 > a');}",
+    "author": "function Main(text){return jsoup(text,'h4');}",
+    "img": "function Main(text){return jsoup(text,'p.image > a > img@attr->data-original');}",
+    "link": "function Main(text){return jsoup(text,'h2 > a@attr->href');}"
   },
   "detail": {
     "author": "",
-    "summary": "{selector:div > div.media-body > dl}",
-    "upDate": "{selector:div.media-body > h2 > small}",
+    "summary": "function Main(html){return jsoup(html,'div > div.media-body > dl');}",
+    "upDate": "function Main(html){return jsoup(html,'div.media-body > h2 > small');}",
     "catalog_link": [],
     "tab": {
-      "list": "{selector:ul.nav.nav-tabs > li}",
-      "name": "{selector:li}"
+      "list": "function Main(html){return jsoups(html,'ul.nav.nav-tabs > li');}",
+      "name": "function Main(text){return jsoup(text,'li');}"
     },
     "catalog": {
-      "list": "{selector:div.tab-content > ul}",
+      "list": "function Main(html){return jsoups(html,'div.tab-content > ul');}",
       "chapter": {
-        "list": "{selector:ul > li}",
-        "name": "{selector:a}",
-        "link": "{selector:a@attr->href}",
+        "list": "function Main(html){return jsoups(html,'ul > li');}",
+        "name": "function Main(text){return jsoup(text,'a');}",
+        "link": "function Main(text){return jsoup(text,'a@attr->href');}",
         "orderBy": 1,
         "category": 3
       }

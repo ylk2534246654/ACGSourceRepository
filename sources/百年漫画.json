@@ -1,33 +1,29 @@
 {
   "name": "百年漫画",
   "charset": "UTF-8",
-  "search": {
-    "requestURL": "https://m.bnmanhua.com/index.php?&m=vod-search",
-    "requestMethod": "POST",
-    "requestData": "wd=[$key]"
-  },
+  "request": "https://m.bnmanhua.com/index.php?&m=vod-search@post->wd=[$key]",
   "metadata": {
-    "list": "{selector:ul[class=tbox_m] > li}",
-    "name": "{selector:h4[class=h4] > a@attr->title}",
+    "list": "function Main(html){return jsoups(html,'ul[class=tbox_m] > li');}",
+    "name": "function Main(text){return jsoup(text,'h4[class=h4] > a@attr->title');}",
     "author": "",
-    "img": "{selector:a[class=vbox_t] > mip-img@attr->src}",
-    "link": "{selector:h4[class=h4] > a@attr->href}"
+    "img": "function Main(text){return jsoup(text,'a[class=vbox_t] > mip-img@attr->src');}",
+    "link": "function Main(text){return jsoup(text,'h4[class=h4] > a@attr->href');}"
   },
   "detail": {
-    "author": "{selector:p.dir}end{sub:[$this],：,end,1}",
-    "summary": "{selector:div.tbox_js}",
-    "upDate": "{selector:span.list_item }",
+    "author": "function Main(html){return jsoup(html,'p.dir');}",
+    "summary": "function Main(html){return jsoup(html,'div.tbox_js');}",
+    "upDate": "function Main(html){return jsoup(html,'span.list_item');}",
     "catalog_link": [],
     "tab": {
-      "list": "{selector:body > div.tbox.tabs > div.tbox_t}",
-      "name": "{selector:div.tbox_t}"
+      "list": "function Main(html){return jsoups(html,'body > div.tbox.tabs > div.tbox_t');}",
+      "name": "function Main(text){return jsoup(text,'div.tbox_t');}"
     },
     "catalog": {
-      "list": "{selector:body > div.tbox.tabs > div.tabs_block}",
+      "list": "function Main(html){return jsoups(html,'body > div.tbox.tabs > div.tabs_block');}",
       "chapter": {
-        "list": "{selector:div.tabs_block > ul > li}",
-        "name": "{selector:a}",
-        "link": "{selector:a@attr->href}",
+        "list": "function Main(html){return jsoups(html,'div.tabs_block > ul > li');}",
+        "name": "function Main(text){return jsoup(text,'a');}",
+        "link": "function Main(text){return jsoup(text,'a@attr->href');}",
         "orderBy": 1,
         "category": 2
       }
@@ -35,8 +31,8 @@
   },
   "content": {
     "备注": "此处爬取数据中的指定json数据,再json解析出link",
-    "list": "{sub:[$html],z_img=',',0}{selector:}",
-    "link": "{sub:[$html],z_yurl=',',0}{selector:}",
+    "list": "function Main(text){var z_yurl = strmiddle(html,'z_yurl=\\'','\\'');var z_img = strmiddle(html,'z_img=\\'','\\'');return var arr = [];for (var i =0 ; i<z_img.length; i ++){arr.push(z_yurl+z_img[i])}}",
+    "link": "function Main(text){return text;}",
     "mode": 2
   }
 }

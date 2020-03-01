@@ -1,33 +1,29 @@
 {
     "name": "哔咪哔咪",
     "charset": "UTF-8",
-    "search": {
-        "requestURL": "http://www.bimibimi.tv/vod/search/",
-        "requestMethod": "POST",
-        "requestData": "wd=[$key]"
-    },
+    "request": "http://www.bimibimi.tv/vod/search/@post->wd=[$key]",
     "metadata": {
-        "list": "{selector:ul.tab-cont > li}",
-        "name": "{selector:a@attr->title}",
-        "author": "{selector:span.mask}",
-        "img": "{selector:a > img@attr->data-original}",
-        "link": "{selector:a@attr->href}"
+        "list": "function Main(html){return jsoups(html,'ul.tab-cont > li');}",
+        "name": "function Main(text){return jsoup(text,'a@attr->title');}",
+        "author": "function Main(text){return jsoup(text,'span.mask');}",
+        "img": "function Main(text){return jsoup(text,'a > img@attr->data-original');}",
+        "link": "function Main(text){return jsoup(text,'a@attr->href');}"
     },
     "detail": {
         "author": "",
-        "summary": "{selector:div.vod-jianjie}",
-        "upDate": "{selector:em.em_num}",
+        "summary": "function Main(html){return jsoup(html,'div.vod-jianjie');}",
+        "upDate": "function Main(html){return jsoup(html,'em.em_num');}",
         "catalog_link": [],
         "tab": {
-            "list": "{selector:div.js_bt}",
-            "name": "{selector:span.p_smart}"
+            "list": "function Main(html){return jsoups(html,'div.js_bt');}",
+            "name": "function Main(text){return jsoup(text,'span.p_smart');}"
         },
         "catalog": {
-            "list": "{selector:div.play_box}",
+            "list": "function Main(html){return jsoups(html,'div.play_box');}",
             "chapter": {
-                "list": "{selector:ul > a}",
-                "name": "{selector:a}",
-                "link": "{selector:a@attr->href}",
+                "list": "function Main(html){return jsoups(html,'ul > a');}",
+                "name": "function Main(text){return jsoup(text,'a');}",
+                "link": "function Main(text){return jsoup(text,'a@attr->href');}",
                 "orderBy": 1,
                 "category": 3
             }

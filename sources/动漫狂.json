@@ -1,33 +1,29 @@
 {
   "name": "动漫狂",
   "charset": "big5",
-  "search": {
-    "requestURL": "https://www.cartoonmad.com/search.html",
-    "requestMethod": "POST",
-    "requestData": "keyword=[$key]&searchtype=all"
-  },
+  "request": "https://www.cartoonmad.com/search.html@post->keyword=[$key]&searchtype=all",
   "metadata": {
-    "list": "{selector:tr > td[align=center]}",
-    "name": "{selector:a[class=a1]}",
+    "list": "function Main(html){return jsoups(html,'tr > td[align=center]');}",
+    "name": "function Main(text){return jsoup(text,'a[class=a1]');}",
     "author": "",
-    "img": "{selector:td > a > img@attr->src}",
-    "link": "{selector:a[class=a1]@attr->href}"
+    "img": "function Main(text){return jsoup(text,'td > a > img@attr->src');}",
+    "link": "function Main(text){return jsoup(text,'a[class=a1]@attr->href');}"
   },
   "detail": {
-    "author": "{selector:table > tbody > tr:nth-child(2) > td[align = center] > table:nth-child(1) > tbody > tr:nth-child(5) > td}{re:原創作者：, }",
-    "summary": "{selector:#info > table > tbody > tr > td}",
-    "upDate": "{selector:tbody > tr:nth-child(4) > td > table > tbody > tr:nth-child(1) > td:nth-child(2) > b > font}}",
+    "author": "function Main(html){return jsoup(html,'table > tbody > tr:nth-child(2) > td[align = center] > table:nth-child(1) > tbody > tr:nth-child(5) > td').replace('原創作者：','');}",
+    "summary": "function Main(html){return jsoup(html,'#info > table > tbody > tr > td');}",
+    "upDate": "function Main(html){return jsoup(html,'tbody > tr:nth-child(4) > td > table > tbody > tr:nth-child(1) > td:nth-child(2) > b > font');}",
     "catalog_link": [],
     "tab": {
-      "list": "{selector:tbody > tr:nth-child(2) > td:nth-child(2) > table:nth-child(3) > tbody > tr > td}",
-      "name": "{selector:#info > legend}"
+      "list": [],
+      "name": []
     },
     "catalog": {
-      "list": "{selector:tbody > tr:nth-child(2) > td:nth-child(2) > table:nth-child(3) > tbody > tr > td}",
+      "list": [],
       "chapter": {
-        "list": "{selector:fieldset[id=info] > table > tbody > tr > td}",
-        "name": "{selector:a}",
-        "link": "{selector:a@attr->href}",
+        "list": "function Main(html){return jsoups(html,'fieldset[id=info] > table > tbody > tr > td');}",
+        "name": "function Main(text){return jsoup(text,'a');}",
+        "link": "function Main(text){return jsoup(text,'a@attr->href');}",
         "orderBy": 1,
         "category": 2
       }
@@ -35,9 +31,8 @@
   },
   "content": {
     "备注": "此处爬取数据中的指定位置id,数量",
-    "list": "https://web.cartoonmad.com/home75458{sub:[$html],file=,001&,0}{num:000}.jpg",
-    "startid": "1",
-    "endid": "{selector:select > option:last-child}{sub:[$this],第,頁,1}",
+    "list": "function Main(html){var file=strmiddle(html,'file=','001&');var endid=strmiddle(jsoup(html,'select > option:last-child'),'第','頁');var obj= [];for(var i =1;i<=endid;i++){ var num = i;var n=3;var a = (Array(n).join(0) + num).slice(-n);obj.push('https://web.cartoonmad.com/home75458'+file+a+'.jpg');};return obj;}",
+    "link": "function Main(text){return text;}",
     "mode": 2
   }
 }

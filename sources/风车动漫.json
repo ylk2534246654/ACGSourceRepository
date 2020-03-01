@@ -1,33 +1,29 @@
 {
 	"name": "风车动漫",
 	"charset": "gb2312",
-	"search": {
-		"requestURL": "http://dm.dm530.net/search.asp",
-		"requestMethod": "POST",
-		"requestData": "searchword=[$key]"
-	},
+	"request": "http://dm.dm530.net/search.asp@post->searchword=[$key]",
 	"metadata": {
-		"list": "{selector:#mobile-index > ul > li}",
-		"name": "{selector:div > a > img@attr->alt}",
-		"author": "{selector:div.am-gallery-desc}",
-		"img": "{selector:div > a > img@attr->data-original}",
-		"link": "{selector:div > a@attr->href}"
+		"list": "function Main(html){return jsoups(html,'#mobile-index > ul > li');}",
+		"name": "function Main(text){return jsoup(text,'div > a > img@attr->alt');}",
+		"author": "function Main(text){return jsoup(text,'div.am-gallery-desc');}",
+		"img": "function Main(text){return jsoup(text,'div > a > img@attr->data-original');}",
+		"link": "function Main(text){return jsoup(text,'div > a@attr->href');}"
 	},
 	"detail": {
 		"author": "作者无法获取",
-		"summary": "{selector:p.txtDesc.autoHeight}",
-		"upDate": "{selector:#p-info > p:nth-child(6)}",
+		"summary": "function Main(html){return jsoup(html,'p.txtDesc.autoHeight');}",
+		"upDate": "function Main(html){return jsoup(html,'#p-info > p:nth-child(6)');}",
 		"catalog_link": [],
 		"tab": {
-			"list": "{selector:ul.am-cf > li}",
-			"name": "{selector:a}"
+			"list": "function Main(html){return jsoups(html,'ul.am-cf > li');}",
+			"name": "function Main(text){return jsoup(text,'a');}"
 		},
 		"catalog": {
-			"list": "{selector:div.am-tab-panel}",
+			"list": "function Main(html){return jsoups(html,'div.am-tab-panel');}",
 			"chapter": {
-				"list": "{selector:ul.mvlist > li}",
-				"name": "{selector:a@attr->title}",
-				"link": "{selector:a@attr->href}",
+				"list": "function Main(text){return jsoups(text,'ul.mvlist > li');}",
+				"name": "function Main(text){return jsoup(text,'a@attr->title');}",
+				"link": "function Main(text){return jsoup(text,'a@attr->href');}",
 				"orderBy": 0,
 				"category": 3
 			}

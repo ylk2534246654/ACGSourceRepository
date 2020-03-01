@@ -1,33 +1,29 @@
 {
   "name": "布卡漫画",
   "charset": "UTF-8",
-  "search": {
-    "requestURL": "http://m.buka.cn/search/ajax_search",
-    "requestMethod": "POST",
-    "requestData": "count=15&key=[$key]&start=[$page]"
-  },
+  "request": "http://m.buka.cn/search/ajax_search@post->count=15&key=[$key]&start=[$page]",
   "metadata": {
-    "list": "{selector:datas > items}",
-    "name": "{selector:name}",
-    "author": "{selector:author}",
-    "img": "{selector:logo}",
-    "link": "http://www.buka.cn/detail/{selector:mid}"
+    "list": "function Main(html){return jsonPaths(html,'$.datas.items[*]');}",
+    "name": "function Main(text){return jsonPath(text,'$.name');}",
+    "author": "function Main(text){return jsonPath(text,'$.author');}",
+    "img": "function Main(text){return jsonPath(text,'$.logo');}",
+    "link": "function Main(text){return 'http://www.buka.cn/detail/'+jsonPath(text,'$.mid');}"
   },
   "detail": {
-    "author": "{selector:div.manga-author > a}",
-    "summary": "{selector:div.manga-desc > p}",
-    "upDate": "{selector:span.manga-episodes_text}{re::, }",
+    "author": "function Main(html){return jsoup(html,'div.manga-author > a');}",
+    "summary": "function Main(html){return jsoup(html,'div.manga-desc > p');}",
+    "upDate": "function Main(html){return jsoup(html,'span.manga-episodes_text').replace(':','');}",
     "catalog_link": [],
     "tab": {
-      "list": "{selector:div.manga-episodes_title}",
-      "name": "{selector:span.manga-episodes_text}"
+      "list": "function Main(html){return jsoups(html,'div.manga-episodes_title');}",
+      "name": "function Main(text){return jsoup(text,'span.manga-episodes_text');}"
     },
     "catalog": {
-      "list": "{selector:div.manga-episodes}",
+      "list": "function Main(html){return jsoups(html,'div.manga-episodes');}",
       "chapter": {
-        "list": "{selector:div.epsbox > a}",
-        "name": "{selector:a}",
-        "link": "{selector:a@attr->href}",
+        "list": "function Main(html){return jsoups(html,'div.epsbox > a');}",
+        "name": "function Main(text){return jsoup(text,'a');}",
+        "link": "function Main(text){return jsoup(text,'a@attr->href');}",
         "orderBy": 0,
         "category": 2
       }
@@ -35,8 +31,8 @@
   },
   "content": {
     "备注": "直接jsoup",
-    "list": "{selector:#manga-imgs > div.manga-c}",
-    "link": "{selector:img@attr->data-original}",
+    "list": "function Main(html){return jsoups(html,'#manga-imgs > div.manga-c');}",
+    "link": "function Main(text){return jsoup(text,'img@attr->data-original');}",
     "mode": 1
   }
 }
