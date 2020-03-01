@@ -6,9 +6,38 @@
 	"versionName": "1.0",
 	"versionCode": 1,
 	"list": [
-		
+		{
+			"name": "118漫画网2",
+			"url": "http://m.ccshwy.com",
+			"checked": true,
+			"category": 2
+		},
         {
-			"name": "漫画屋",
+			"name": "动漫之家2",
+			"url": "http://m.ccshwy.com",
+			"checked": true,
+			"category": 2
+		},
+        {
+			"name": "AGE动漫2",
+			"url": "http://m.ccshwy.com",
+			"checked": true,
+			"category": 2
+		},
+        {
+			"name": "动漫狂2",
+			"url": "http://m.ccshwy.com",
+			"checked": true,
+			"category": 2
+		},
+        {
+			"name": "二次元动漫2",
+			"url": "http://m.ccshwy.com",
+			"checked": true,
+			"category": 2
+		},
+        {
+			"name": "奇妙屋",
 			"url": "http://m.ccshwy.com",
 			"checked": true,
 			"category": 2
