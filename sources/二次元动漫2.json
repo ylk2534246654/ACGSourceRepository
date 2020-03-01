@@ -31,7 +31,7 @@
     },
     "content": {
         "备注": "单页面解析",
-        "list": "function Main(html){var endid=jsoup(html,'#total@attr->value');var obj= [];for(var i =1;i<=endid;i++){ var num = i;var n=3;var a = (Array(n).join(0) + num).slice(-n);obj.push(getURL()+'-p-'+a);};return obj;}",
+        "list": "function Main(html){var endid=jsoup(html,'#total@attr->value');var obj= [];for(var i =1;i<=endid;i++){obj.push(getURL()+'-p-'+i);};return obj;}",
         "link": "function Main(text){return text;}",
         "link2": "function Main(text){return jsoup(text,'img[id = ComicPic]@attr->src');}",
         "mode": 2
