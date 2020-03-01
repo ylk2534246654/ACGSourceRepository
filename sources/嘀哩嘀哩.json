@@ -15,11 +15,11 @@
     "upDate": "function Main(html){return strmiddle(jsoup(html,'#app > div.episode > div'),'剧集（','）');}",
     "catalog_link": [],
     "tab": {
-      "list": "function Main(html){return jsoups(html,'#app > div.episode');}",
-      "name": "function Main(text){return jsoup(text,'div.title');}"
+      "list": [],
+      "name": []
     },
     "catalog": {
-      "list": "function Main(html){return jsoups(html,'#app > div.episode');}",
+      "list": [],
       "chapter": {
         "list": "function Main(html){return jsoups(html,'div.episode > ul > li');}",
         "name": "function Main(text){return jsoup(text,'a');}",
