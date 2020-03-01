@@ -1,13 +1,13 @@
 {
   "name": "嘀哩嘀哩",
   "charset": "utf-8",
-  "request": "http://www.dilidili.co/index.php/vod/search.html?wd=[$key]",
+  "request": "http://www.dilidili.co/index.php/vod/search.html?wd=[$key]@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36",
   "metadata": {
     "list": "function Main(html){return jsoups(html,'#contents > ul');}",
     "name": "function Main(text){return jsoup(text,'div.info > h2 > a');}",
     "author": "function Main(text){return jsoup(text,'p.actor');}",
     "img": "function Main(text){return jsoup(text,'li > a > img@attr->data-original');}",
-    "link": "function Main(text){return jsoup(text,'div.info > h2 > a@attr->href').replace('www.dilidili','m.dilidili');}"
+    "link": "function Main(text){return jsoup(text,'div.info > h2 > a@attr->href')}"
   },
   "detail": {
     "author": [],
