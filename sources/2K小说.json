@@ -1,39 +1,35 @@
 {
     "name": "2K小说",
     "charset": "gbk",
-    "search": {
-        "requestURL": "https://m.fpzw.com/modules/article/search.php?searchtype=keywords&searchkey=[$key]",
-        "requestMethod": "GET",
-        "requestData": ""
-    },
+    "request": "https://m.fpzw.com/modules/article/search.php?searchtype=keywords&searchkey=[$key]",
     "metadata": {
-        "list": "{selector:div.hot_sale}",
-        "name": "{selector:a>p.title}",
-        "author": "{selector:a>p.author}",
-        "img": "{selector:a>img@attr->src}",
-        "link": "{selector:a@attr->href}"
+        "list": "function Main(html){return jsoups(html,'div.hot_sale');}",
+        "name": "function Main(text){return jsoup(text,'a>p.title');}",
+        "author": "function Main(text){return jsoup(text,'a>p.author');}",
+        "img": "function Main(text){return jsoup(text,'a>img@attr->src');}",
+        "link": "function Main(text){return jsoup(text,'a@attr->href');}"
     },
     "detail": {
-        "author": "{selector:td:nth-child(2) > div:nth-child(2)}",
-        "summary": "{selector:div.lb_jj > div:nth-child(5)}",
-        "upDate": "{selector:td:nth-child(2) > div:nth-child(5)}",
+        "author": "function Main(html){return jsoup(html,'td:nth-child(2) > div:nth-child(2)');}",
+        "summary": "function Main(html){return jsoup(html,'div.lb_jj > div:nth-child(5)');}",
+        "upDate": "function Main(html){return jsoup(html,'td:nth-child(2) > div:nth-child(5)');}",
         "catalog_link": [],
         "tab": {
-            "list": "{selector:#dibu1}",
-            "name": "{selector:#dibu1}{re:↓直达底部, }"
+            "list": [],
+            "name": []
         },
         "catalog": {
-            "list": "{selector:div.chapter}",
+            "list": [],
             "chapter": {
-                "list": "{selector:li}",
-                "name": "{selector:a}",
-                "link": "{selector:a@attr->href}",
+                "list": "function Main(html){return jsoups(html,'div.chapter > li');}",
+                "name": "function Main(text){return jsoup(text,'a');}",
+                "link": "function Main(text){return jsoup(text,'a@attr->href');}",
                 "orderBy": 0,
                 "category": 4
             }
         }
     },
     "content": {
-        "text": "{selector:#nr1}"
+        "text": "function Main(html){return jsoup(html,'#nr1');}"
     }
 }
