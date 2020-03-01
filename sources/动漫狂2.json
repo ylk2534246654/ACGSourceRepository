@@ -31,7 +31,7 @@
   },
   "content": {
     "备注": "此处爬取数据中的指定位置id,数量",
-    "list": "function Main(html){var file=strmiddle(html,'file=','001&');var endid=strmiddle(jsoup(html,'select > option:last-child'),'第','頁');var obj= [];for(var i =1;i<endid;i++){ var num = i;var n=3;var a = (Array(n).join(0) + num).slice(-n);obj.push('https://web.cartoonmad.com/home75458'+file+a+'.jpg');};return obj;}",
+    "list": "function Main(html){var file=strmiddle(html,'file=','001&');var endid=strmiddle(jsoup(html,'select > option:last-child'),'第','頁');var obj= [];for(var i =1;i<endid+1;i++){ var num = i;var n=3;var a = (Array(n).join(0) + num).slice(-n);obj.push('https://web.cartoonmad.com/home75458'+file+a+'.jpg');};return obj;}",
     "link": "function Main(text){return text}",
     "mode": 2
   }
