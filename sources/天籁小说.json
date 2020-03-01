@@ -21,7 +21,7 @@
         "catalog": {
             "list": [],
             "chapter": {
-                "list": "function Main(html){return jsoups(html,'#list > dl > dd@start->9');}",
+                "list": "function Main(html){return jsoups(html,'#list > dl > dd');}",
                 "name": "function Main(text){return jsoup(text,'a');}",
                 "link": "function Main(text){return jsoup(text,'a@attr->href');}",
                 "orderBy": 1,
