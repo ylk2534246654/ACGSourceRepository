@@ -35,6 +35,12 @@
 			"url": "http://m.ccshwy.com",
 			"checked": true,
 			"category": 2
+		},
+        {
+			"name": "漫画屋",
+			"url": "http://m.ccshwy.com",
+			"checked": true,
+			"category": 2
 		}
 	]
 }
