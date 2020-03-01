@@ -1,13 +1,13 @@
 {
   "name": "嘀哩嘀哩",
   "charset": "utf-8",
-  "request": "http://www.dilidili.one/search.php?&keyword=[$key]&PageNo=[$page]",
+  "request": "http://www.dilidili.co/index.php/vod/search.html?wd=[$key]",
   "metadata": {
-    "list": "function Main(html){return jsoups(html,'div > div > div:nth-child(3) > div');}",
-    "name": "function Main(text){return jsoup(text,'div > div > a > h2[class=post-title]');}",
-    "author": "function Main(text){return jsoup(text,'p.slr');}",
-    "img": "function Main(text){return jsoup(text,'div > div > a > img@attr->src');}",
-    "link": "function Main(text){return jsoup(text,'div > div > a@attr->href').replace('dilidili.name','dilidili.one').replace('www.dilidili','m.dilidili');}"
+    "list": "function Main(html){return jsoups(html,'#contents > ul');}",
+    "name": "function Main(text){return jsoup(text,'div.info > h2 > a');}",
+    "author": "function Main(text){return jsoup(text,'p.actor');}",
+    "img": "function Main(text){return jsoup(text,'li > a > img@attr->data-original');}",
+    "link": "function Main(text){return jsoup(text,'div.info > h2 > a@attr->href').replace('www.dilidili','m.dilidili');}"
   },
   "detail": {
     "author": "作者无法获取",
