@@ -1,4 +1,5 @@
 ```json
+
 {
     "type": "MyACG搜索源",
     "name": "搜索源名称",
@@ -15,8 +16,10 @@
         }
     ]
 }
+
 ```
 ```json
+
 {
     "name": "搜索源名称",
     "charset": "字符编码",
@@ -55,6 +58,7 @@
         "mode": 1//翻页模式 1:普通模式(左滑) 2:日漫模式(右滑)
     }
 }
+
 ```
 
 jsoup语法:
@@ -68,7 +72,9 @@ jsoup调试网站https://try.jsoup.org/
 jsonPath调试工具https://github.com/zykzml7788/JsonPathUtil
 
 js语言调用类
+
 ```js
+
 jsoups(data,jsoup语句)//返回为数组
 
 jsoup(data,jsoup语句)
@@ -89,5 +95,7 @@ pathURL(data)//链接补充路径
 pathURL2(data,url)//链接补充路径2
 
 strmiddle(data,左边文本,右边文本)//取文本中间
+
 ```
+
 快用这些去抓取你心怡的网站吧,再也不见广告!再也不翻找链接找资源!
