@@ -20,7 +20,7 @@
 {
     "name": "搜索源名称",
     "charset": "字符编码",
-    "dependencies":"js依赖库地址(初始化加载js)",
+    "dependencies":"js依赖库地址(初始化加载js,建议在搜索源根目录创建)",
     "request": "请求链接@post->请求数据@header->请求头",
     "metadata": {
         "list": "使用js语言(默认Main为主函数名,函数参数html为网页源码,返回为数组)",
@@ -56,6 +56,7 @@
     }
 }
 ```
+
 jsoup语法:
 https://github.com/json-path/JsonPath/blob/master/README.md
 
@@ -63,14 +64,17 @@ jsonPath语法:
 https://github.com/json-path/JsonPath/blob/master/README.md
 
 jsoup调试网站https://try.jsoup.org/
+
 jsonPath调试工具https://github.com/zykzml7788/JsonPathUtil
 
 js语言调用类
 
 jsoups(data,jsoup语句)//返回为数组
+
 jsoup(data,jsoup语句)
 
 jsonPaths(data,jsonPath语句)//返回为数组
+
 jsonPath(data,jsonPath语句)
 
 javaScript(data)//执行javaScript(常用执行网页内的javaScript)
@@ -78,6 +82,7 @@ javaScript(data)//执行javaScript(常用执行网页内的javaScript)
 getURL(data)//获取当前解析页面链接
 
 pathURL(data)//链接补充路径
+
 pathURL2(data,url)//链接补充路径2
 
 strmiddle(data,左边文本,右边文本)//取文本中间
