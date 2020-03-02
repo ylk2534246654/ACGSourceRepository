@@ -3,11 +3,11 @@
     "charset": "gbk",
     "request": "http://m.shencou.com/waps.php@post->searchtype=articlename selected&searchkey=[$key]&t_btnsearch=搜索",
     "metadata": {
-        "list": "function Main(html){return jsoups(html,'div.article');}",
-        "name": "function Main(text){return jsoup(text,'div.block_txt > h2 > a');}",
-        "author": "function Main(text){return jsoup(text,'div.block_txt > p:nth-child(4) > a');}",
-        "img": "function Main(text){return jsoup(text,'div.block_img > a > img');}",
-        "link": "function Main(text){return jsoup(text,'div.block_txt > h2 > a@attr->href');}"
+        "list": "function Main(html){return jsoups(html,'div.cover > p');}",
+        "name": "function Main(text){return jsoup(text,'a.blue');}",
+        "author": "function Main(text){return jsoup(text,'a:nth-child(3)');}",
+        "img": "http://r.m.97ub.cc/cover/aHR0cDovL2ltZzEuY2h1YW5nc2hpLnFxLmNvbS9jaHVhbmdzaGkvcDEvZGVmYXVsdC1jb3Zlci1sYXJnZS5wbmc=",
+        "link": "function Main(text){return jsoup(text,'a.blue@attr->href');}"
     },
     "detail": {
         "author": "function Main(html){return jsoup(html,'#info > p:nth-child(2)');}",
