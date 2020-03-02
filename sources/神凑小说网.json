@@ -22,7 +22,7 @@
             "list": [],
             "chapter": {
                 "list": "function Main(html){return jsoups(html,'ul.chapter > li');}",
-                "name": "function Main(text){return jsoup(text,'a@start->9');}",
+                "name": "function Main(text){return jsoup(text,'a');}",
                 "link": "function Main(text){return jsoup(text,'a@attr->href');}",
                 "orderBy": 1,
                 "category": 4
