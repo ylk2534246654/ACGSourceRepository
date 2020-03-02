@@ -32,7 +32,7 @@
   "content": {
     "备注": "直接jsoup",
     "list": "function Main(html){var imgs = jsoups(html,'#manga-imgs > div.manga-c');return imgs;}",
-    "link": "function Main(text){var img = jsoup(text,'img@attr->data-original');if(img.length<1){img=jsoup(html,'#manga-imgs > div:nth-child(2) > img@attr->src')};return img}",
+    "link": "function Main(text){var img = jsoup(text,'img@attr->data-original');if(img.indexOf('.jpg')==-1){img=jsoup(html,'#manga-imgs > div:nth-child(2) > img@attr->src')};return img}",
     "mode": 1
   }
 }
