@@ -5,7 +5,7 @@
     "metadata": {
         "list": "function Main(html){return jsoups(html,'ul.liemh.htmls.indliemh > li');}",
         "name": "function Main(text){return jsoup(text,'div[class=tit]');}",
-        "author": "",
+        "author": [],
         "img": "function Main(text){return jsoup(text,'img@attr->src');}",
         "link": "function Main(text){return jsoup(text,'a@attr->href');}"
     },
