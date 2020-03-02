@@ -60,6 +60,8 @@
 jsoup语法:
 https://github.com/json-path/JsonPath/blob/master/README.md
 
+
+```js
 jsonPath语法:
 https://github.com/json-path/JsonPath/blob/master/README.md
 
@@ -72,6 +74,9 @@ js语言调用类
 jsoups(data,jsoup语句)//返回为数组
 
 jsoup(data,jsoup语句)
+
+jsoup附加语句
+@attr->
 
 jsonPaths(data,jsonPath语句)//返回为数组
 
@@ -86,5 +91,5 @@ pathURL(data)//链接补充路径
 pathURL2(data,url)//链接补充路径2
 
 strmiddle(data,左边文本,右边文本)//取文本中间
-
+```
 快用这些去抓取你心怡的网站吧,再也不见广告!再也不翻找链接找资源!
