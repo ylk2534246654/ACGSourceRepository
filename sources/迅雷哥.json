@@ -15,7 +15,7 @@
 		"upDate": "function Main(html){return jsoup(html,'p:nth-child(1) > font');}",
 		"catalog_link": [],
 		"tab": {
-			"list": "function Main(html){var tabs = jsoups(html,'body > div > h5');return tabs.filter(item => item != '影片介绍');}",
+			"list": "function Main(html){var tabs = jsoups(html,'body > div > h5');tabs = tabs.splice(1);return tabs;}",
 			"name": "function Main(text){return jsoup(text,'h5');}"
 		},
 		"catalog": {
