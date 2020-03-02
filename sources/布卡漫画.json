@@ -31,7 +31,7 @@
   },
   "content": {
     "备注": "直接jsoup",
-    "list": "function Main(html){var imgs = jsoups(html,'#manga-imgs > div.manga-c');if(imgs[0].length<1){imgs[0]=jsoup(text,'#manga-imgs > div:nth-child(2) > img@attr->src');};return imgs;}",
+    "list": "function Main(html){var imgs = jsoups(html,'#manga-imgs > div.manga-c');if(imgs[0].length<5){imgs[0]=jsoup(text,'#manga-imgs > div:nth-child(2) > img@attr->src');};return imgs;}",
     "link": "function Main(text){return jsoup(text,'img@attr->data-original');}",
     "mode": 1
   }
