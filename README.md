@@ -62,7 +62,7 @@
 ```
 
 jsoup语法:
-https://github.com/json-path/JsonPath/blob/master/README.md
+https://jsoup.org/apidocs/org/jsoup/select/Selector.html
 
 jsonPath语法:
 https://github.com/json-path/JsonPath/blob/master/README.md
