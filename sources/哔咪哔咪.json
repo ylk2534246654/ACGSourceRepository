@@ -10,7 +10,7 @@
         "link": "function Main(text){return jsoup(text,'a@attr->href');}"
     },
     "detail": {
-        "author": "",
+        "author": [],
         "summary": "function Main(html){return jsoup(html,'div.vod-jianjie');}",
         "upDate": "function Main(html){return jsoup(html,'em.em_num');}",
         "catalog_link": [],
