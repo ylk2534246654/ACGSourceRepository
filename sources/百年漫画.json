@@ -31,7 +31,7 @@
   },
   "content": {
     "备注": "此处爬取数据中的指定json数据,再json解析出link",
-    "list": "function Main(html){var z_yurl = strmiddle(html,'z_yurl=\\'','\\'');var z_img = strmiddle(html,'z_img=\\'','\\'');var arr = [];for (var i = 0 ; i<z_img.length; i++){arr.push(z_yurl+z_img[i]);}return arr;};",
+    "list": "function Main(html){var z_yurl = jsonPaths(strmiddle(html,'z_yurl=\\'','\\''),'$.*');var z_img = strmiddle(html,'z_img=\\'','\\'');var arr = [];for (var i = 0 ; i<z_img.length; i++){arr.push(z_yurl+z_img[i]);}return arr;};",
     "link": "function Main(text){return text;}",
     "mode": 2
   }
