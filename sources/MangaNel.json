@@ -31,7 +31,7 @@
   },
   "content": {
     "备注": "直接jsoup",
-    "list": "function Main(html){return jsoup(html,'#vungdoc > img');}",
+    "list": "function Main(html){return jsoup(html,'div.container-chapter-reader > img');}",
     "link": "function Main(text){return jsoup(text,'img@attr->src');}",
     "mode": 1
   }
