@@ -1,17 +1,12 @@
 {
   "name": "酷我",
   "charset": "utf-8",
-  "search": {
-    "requestURL": "https://music.liuzhijin.cn/",
-    "requestMethod": "POST",
-    "requestHeaders": "X-Requested-With=XMLHttpRequest&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36",
-    "requestData": "input=[$key]&filter=name&type=kuwo&page=[$page]"
-  },
+  "request": "https://music.liuzhijin.cn/@post->input=[$key]&filter=name&type=kuwo&page=[$page]@header->x-requested-with:XMLHttpRequest",
   "metadata": {
-    "list": "{selector:data}",
-    "name": "{selector:title}",
-    "author": "{selector:author}",
-    "img": "{selector:pic}",
-    "link": "{selector:url}"
+    "list": "function Main(html){return jsonPaths(html,'$..data[*]');}",
+    "name": "function Main(text){return jsonPath(text,'$.title');}",
+    "author": "function Main(text){return jsonPath(text,'$.author');}",
+    "img": "function Main(text){return jsonPath(text,'$.pic');}",
+    "link": "function Main(text){return jsonPath(text,'$.url');}"
   }
 }
