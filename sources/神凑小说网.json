@@ -15,13 +15,13 @@
         "upDate": "function Main(html){return jsoup(html,'div.block_txt2 > p:nth-child(6)')+jsoup(html,'div.block_txt2 > p:nth-child(7)');}",
         "catalog_link": "function Main(html){return jsoup(html,'span.margin_right > a@attr->href');}",
         "tab": {
-            "list": "function Main(html){return jsoups(html,'#list > dl > dt:nth-child(12)');}",
-            "name": "function Main(text){return jsoup(text,'dt');}"
+            "list": [],
+            "name": []
         },
         "catalog": {
-            "list": "function Main(html){return jsoups(html,'#list > dl');}",
+            "list": [],
             "chapter": {
-                "list": "function Main(html){return jsoups(html,'dd@start->9');}",
+                "list": "function Main(html){return jsoups(html,'ul.chapter > li');}",
                 "name": "function Main(text){return jsoup(text,'a@start->9');}",
                 "link": "function Main(text){return jsoup(text,'a@attr->href');}",
                 "orderBy": 1,
