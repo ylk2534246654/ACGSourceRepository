@@ -1,6 +1,6 @@
 {
     "name": "神凑小说网",
-    "charset": "GBK",
+    "charset": "gb2312",
     "request": "http://www.shencou.com/modules/article/search.php@post->searchtype=articlename selected&searchkey=[$key]&t_btnsearch=搜索",
     "metadata": {
         "list": "function Main(html){return jsoups(html,'tbody > tr');}",
