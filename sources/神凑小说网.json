@@ -30,6 +30,6 @@
         }
     },
     "content": {
-        "text": "function Main(html){return jsoup(html,'#content');}"
+        "text": "function Main(html){return jsoup(html,'#nr1');}"
     }
 }
