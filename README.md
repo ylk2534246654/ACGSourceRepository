@@ -56,7 +56,6 @@
     }
 }
 ```
-```js
 
 jsoup语法:
 https://github.com/json-path/JsonPath/blob/master/README.md
@@ -69,7 +68,7 @@ jsoup调试网站https://try.jsoup.org/
 jsonPath调试工具https://github.com/zykzml7788/JsonPathUtil
 
 js语言调用类
-
+```js
 jsoups(data,jsoup语句)//返回为数组
 
 jsoup(data,jsoup语句)
