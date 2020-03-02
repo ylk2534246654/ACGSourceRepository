@@ -15,7 +15,7 @@
 		"upDate": "function Main(html){return jsoup(html,'p:nth-child(1) > font');}",
 		"catalog_link": [],
 		"tab": {
-			"list": "function Main(html){var tabs = jsoups(html,'body > div > h5');tabs = tabs;return tabs;}",
+			"list": "function Main(html){var tabs = jsoups(html,'body > div > h5');for(var i=1;i<tabs.length;i++){tabs2.push(tabs[i])};return tabs2;}",
 			"name": "function Main(text){return jsoup(text,'h5');}"
 		},
 		"catalog": {
