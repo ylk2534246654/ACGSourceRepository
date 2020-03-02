@@ -31,7 +31,7 @@
   },
   "content": {
     "备注": "此处爬取数据中的指定位置id,数量",
-    "list": "function Main(html){var file=strmiddle(html,'pl = \\'','/000');var startid=strmiddle(html,'/000','.jpg');var endid=strmiddle(html,'pcount=',';');var obj= [];for(var i =startid;i<=endid;i++){var num = i;var n=4;var a = (Array(n).join(0) + num).slice(-n);obj.push(file+'/'+a);};return obj;}",
+    "list": "function Main(html){var file=strmiddle(html,'pl = \\'','/000');var startid=strmiddle(html,'/000','.jpg');var endid=strmiddle(html,'pcount=',';');var obj= [];for(var i =startid;i<=endid;i++){var num = i;var n=4;var a = (Array(n).join(0) + num).slice(-n);obj.push(file+'/'+a+'.jpg');};return obj;}",
     "link": "function Main(text){return text;}",
     "mode": 2
   }
