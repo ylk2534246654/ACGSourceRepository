@@ -23,7 +23,7 @@
       "chapter": {
         "list": "function Main(html){var url = 'https://manga.bilibili.com/m/'+jsonPath(text,'$..data.id');return jsonPaths(html,'$..ep_list[*]');}",
         "name": "function Main(text){return jsonPath(text,'$..title');}",
-        "link": "function Main(text){return url+jsonPath(text,'$..id');}",
+        "link": "function Main(text){return jsonPath(text,'$..id');}",
         "orderBy": 1,
         "category": 1
       }
