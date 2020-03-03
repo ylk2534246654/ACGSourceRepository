@@ -1,7 +1,7 @@
 {
   "name": "哔哩哔哩漫画",
   "charset": "utf-8",
-  "request": "https://manga.bilibili.com/twirp/comic.v1.Comic/Search?device=pc&platform=web@post->{\"key_word\":\"[$key]\",\"page_num\":1,\"page_size\":9}",
+  "request": "https://manga.bilibili.com/twirp/comic.v1.Comic/Search?device=pc&platform=web@post->{\"key_word\":\"[$key]\",\"page_num\":1,\"page_size\":9}@header->Content-Type:application/json;charset=UTF-8",
   "metadata": {
     "list": "function Main(html){return jsonPaths(html,'$..list[*]');}",
     "name": "function Main(text){return jsonPath(text,'$.org_title');}",
