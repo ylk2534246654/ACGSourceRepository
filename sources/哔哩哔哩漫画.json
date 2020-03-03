@@ -23,7 +23,7 @@
       "chapter": {
         "list": "function Main(html){return jsonPaths(html,'$..ep_list[*]');}",
         "name": "function Main(text){return jsonPath(text,'$..title');}",
-        "link": "function Main(text){return jsonPath(text,'$..id');}",
+        "link": "function Main(text){var url = getURL()+jsonPath(text,'$..id');return url.replace('detail/','');}",
         "orderBy": 1,
         "category": 2
       }
