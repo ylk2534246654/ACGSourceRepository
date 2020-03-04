@@ -8,32 +8,5 @@
     "author": "function Main(text){return jsonPath(text,'$.author');}",
     "img": "function Main(text){return jsonPath(text,'$.pic');}",
     "link": "function Main(text){return jsonPath(text,'$.url');}"
-  },
-  "detail": {
-    "author": "",
-    "summary": "",
-    "upDate": "",
-    "catalog_link": "",
-    "tab": {
-      "list": "",
-      "name": ""
-    },
-    "catalog": {
-      "list": "",
-      "chapter": {
-        "list": "",
-        "name": "",
-        "link": "",
-        "orderBy": 1,
-        "category": 1
-      }
-    }
-  },
-  "content": {
-    "list": "",
-    "link": "",
-    "link2": "",
-    "text": "",
-    "mode": 1
   }
 }
