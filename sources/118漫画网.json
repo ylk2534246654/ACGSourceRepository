@@ -31,7 +31,6 @@
         }
     },
     "content": {
-        "备注": "此处爬取数据中的指定key,再解密",
         "list": "function Main(html){return Base64.decode(strmiddle(html,'m_murl_e=\"','\"')).split('$qingtiandy$');}",
         "link": "function Main(text){return pathURL(text).replace('m.ccshwy.com','www.ccshwy.com');}",
         "mode": 1
