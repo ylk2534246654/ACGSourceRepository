@@ -97,6 +97,17 @@ https://www.baidu.cn/@post->data
 https://www.baidu.cn/@header->x-requested-with:XMLHttpRequest@header->Referer:https://www.baidu.cn/
 ```
 
+## 准备工作
+
+给开发者提供的空白搜索源仓库
+推荐使用gitee对于国内来说速度要快
+
+https://gitee.com/yx_myacg/MyACGSourceRepository
+
+https://github.com/ylk2534246654/MyACGSourceRepository
+
+在仓库根目录创建 xxx.json文件为仓库入口(名称自定义)
+
 ```json
 
 {
@@ -219,42 +230,5 @@ https://www.baidu.cn/@header->x-requested-with:XMLHttpRequest@header->Referer:ht
 | text        | javaScript代码,返回为文本  | 否   | (小说使用)文章内容      |
 | mode        | int(整数型)               | 是   | 1:横向阅读-左滑 2：横向阅读-右滑       |
 
-
-jsoup语法:
-https://jsoup.org/apidocs/org/jsoup/select/Selector.html
-
-jsonPath语法:
-https://github.com/json-path/JsonPath/blob/master/README.md
-
-jsoup调试网站https://try.jsoup.org/
-
-jsonPath调试工具https://github.com/zykzml7788/JsonPathUtil
-
-js语言调用类
-
-```js
-
-jsoups(data,jsoup语句)//返回为数组
-
-jsoup(data,jsoup语句)
-
-jsoup附加语句
-@attr->
-
-jsonPaths(data,jsonPath语句)//返回为数组
-
-jsonPath(data,jsonPath语句)
-
-javaScript(data)//执行javaScript(常用执行网页内的javaScript)
-
-getURL(data)//获取当前解析页面链接
-
-pathURL(data)//链接补充路径
-
-pathURL2(data,url)//链接补充路径2
-
-strmiddle(data,左边文本,右边文本)//取文本中间
-
-```
 
 快用这些去抓取你心怡的网站吧,再也不见广告!再也不翻找链接找资源!
