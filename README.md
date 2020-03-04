@@ -120,6 +120,8 @@
 | link2        | javaScript代码,返回为文本  | 否   | (漫画使用)图片链接[一般不使用]如果link为跳转页面则使用这条获取跳转页面的图链接|
 | text        | javaScript代码,返回为文本  | 否   | (小说使用)文章内容      |
 | mode        | int(整数型)               | 是   | 1:横向阅读-左滑 2：横向阅读-右滑       |
+
+
 jsoup语法:
 https://jsoup.org/apidocs/org/jsoup/select/Selector.html
 
