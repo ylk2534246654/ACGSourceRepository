@@ -4,15 +4,15 @@
     "type": "MyACG搜索源",
     "name": "搜索源名称",
     "summary": "搜索源介绍",
-    "sources": "搜索源根目录",//搜索源根目录+搜索源名称+.json
-    "versionName": "1.0",//搜索源版本名称
-    "versionCode": 1,//搜索源版本(int范围内)
+    "sources": "搜索源根目录",
+    "versionName": "1.0",
+    "versionCode": 1,
     "list": [
         {
             "name": "搜索源名称",
             "url": "域名(并未规范)",
-            "checked": true,//默认开启
-            "category": 1//解析方式 1:链接 2:漫画解析 3:视频解析 4:小说解析
+            "checked": true,
+            "category": 1
         }
     ]
 }
