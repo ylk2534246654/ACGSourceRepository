@@ -1,4 +1,102 @@
+## 准备工作
+
+### 0.例子
+
+
+https://gitee.com/yx_myacg/ACGSourceRepository
+
+1.javaScript的部分语法
+
+!不能换行,可用;进行分段
+
+### 2.Jsoup Selector语法
+
+
+了解Jsoup Selector用法:https://jsoup.org/apidocs/org/jsoup/select/Selector.html
+
+Jsoup Selector调试:https://try.jsoup.org/
+
+javaScript内调用方法
+
+```javaScript
+jsoups(html,'JsoupSelector语法');
+jsoup(html,'JsoupSelector语法');
+```
+
+例子:
+
+```javaScript
+//默认Main为主函数名,函数参数html为网页源码,返回为数组
+function Main(html){return jsoups(html,'JsoupSelector语法');}
+//默认Main为主函数名,函数参数html为网页源码,返回为文本
+function Main(html){return jsoup(html,'JsoupSelector语法');}
+```
+快捷获取JsoupSelector语法的方法
+
+在源网站(F12) > Elements页面 > 鼠标放到选中的元素上方 > 右键 > Copy >  Copy selector
+即可得到JsoupSelector
+
 在仓库根目录创建 xxx.json文件为仓库入口(名称自定义)
+
+### 3.Json Path语法
+
+了解Json Path用法:https://goessner.net/articles/JsonPath/index.html
+
+Json Path调试:https://jsonpath.com/
+
+javaScript内调用方法
+
+```javaScript
+//返回数据
+jsonPaths(html,'JsonPath语法');
+jsonPath(html,'JsonPath语法');
+```
+
+例子:
+
+```javaScript
+//默认Main为主函数名,函数参数html为网页源码,返回为数组
+function Main(html){return jsonPaths(html,'JsonPath语法');}
+//默认Main为主函数名,函数参数html为网页源码,返回为文本
+function Main(html){return jsonPath(html,'JsonPath语法');}
+```
+
+### 4.附加调用
+
+```javaScript
+javaScript(data)//执行javaScript(常用执行网页内的javaScript)
+getURL(data)//获取当前解析页面链接
+pathURL(data)//链接补充路径
+pathURL2(data,url)//链接补充路径2
+strmiddle(data,左边文本,右边文本)//取文本中间
+```
+
+### 5.操作符
+
+#### @attr->(不可重复)
+
+使用情况：仅在jsoup内使用
+
+```javaScript
+function Main(text){return jsoup(text,'a.ImgA > img@attr->src');}
+```
+
+#### @post->(不可重复)
+
+使用情况：仅在request&link内使用
+
+```css
+https://www.baidu.cn/@post->data
+```
+
+#### @header->(可重复使用)
+
+使用情况：仅在request&link内使用
+
+```css
+https://www.baidu.cn/@header->x-requested-with:XMLHttpRequest@header->Referer:https://www.baidu.cn/
+```
+
 ```json
 
 {
