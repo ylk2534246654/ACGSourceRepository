@@ -31,7 +31,7 @@
 | name        | String(文本型) | 是     | 搜索源名称                                  |
 | url         | String(文本型) | 是     | 搜索源介绍                                   |
 | checked     | bool(逻辑型)   | 是     | 搜索源默认开关                                   |
-| category    | int(整数型)    | 是     | 搜索源类型1:链接2:漫画解析3:视频解析4:小说解析                 |
+| category    | int(整数型)    | 是     | 搜索源类型1:链接2:漫画解析3:视频解析4:小说解析 |
 
 ```json
 
@@ -84,10 +84,25 @@
 |              |                           |      |                              |
 | metadata     | null                      | 是   | 搜索结果处理                 |
 | list         | javaScript代码,返回为数组 | 是   | 搜索结果列表                 |
-| name         | javaScript代码,返回为数组 | 是   | 搜索结果名称                 |
-| author       | javaScript代码,返回为数组 | 是   | 搜索结果作者                 |
-
-
+| name         | javaScript代码,返回为文本 | 是   | 搜索结果名称                 |
+| author       | javaScript代码,返回为文本 | 是   | 搜索结果作者                 |
+| img          | javaScript代码,返回为文本 | 是   | 搜索结果缩略图               |
+| link         | javaScript代码,返回为文本 | 是   | 搜索结果跳转链接             |
+|              |                          |     |                            |
+| detail       | null                     | 否   | 进入详细界面(不填则进入结果网页) |
+| author       | javaScript代码,返回为文本 | 是   | 详细界面的作者信息               |
+| summary      |                           |      |                              |
+| upDate       | null                      | 是   | 搜索结果处理                 |
+| catalog_link | javaScript代码,返回为文本 | 否   | 目录跳转链接[一般不使用]         |
+|              |                           |      |                              |
+| tab         | null                       | 否   | 详细界面tab[一般不使用]        |
+| list       | javaScript代码,返回为数组    | 是   | tab列表                       |
+| name       | javaScript代码,返回为文本    | 是   | tab名称                       |
+|              |                           |      |                              |
+| catalog      | null                      | 是   | 目录信息                     |
+| list         | javaScript代码,返回为数组  | 否   | tab对应目录[一般不使用]       |
+|              |                           |      |                              |
+| chapter      | null                      | 是   | 集数信息                     |
 
 jsoup语法:
 https://jsoup.org/apidocs/org/jsoup/select/Selector.html
