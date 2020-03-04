@@ -91,7 +91,7 @@
 |              |                          |     |                            |
 | detail       | null                     | 否   | 进入详细界面(不填则进入结果网页) |
 | author       | javaScript代码,返回为文本 | 是   | 详细界面的作者信息               |
-| summary      |                           |      |                              |
+| summary      | javaScript代码,返回为文本 | 是   | 详细界面的介绍                |
 | upDate       | null                      | 是   | 搜索结果处理                 |
 | catalog_link | javaScript代码,返回为文本 | 否   | 目录跳转链接[一般不使用]         |
 |              |                           |      |                              |
@@ -103,6 +103,18 @@
 | list         | javaScript代码,返回为数组  | 否   | tab对应目录[一般不使用]       |
 |              |                           |      |                              |
 | chapter      | null                      | 是   | 集数信息                     |
+| list         | javaScript代码,返回为数组  | 否   | 章节(集数)列表                |
+| name         | javaScript代码,返回为文本  | 是   | 章节(集数)名称               |
+| link         | javaScript代码,返回为文本  | 是   | 章节(集数)跳转链接          |
+| orderBy      | javaScript代码,返回为文本  | 是   | 章节(集数)跳转链接          |
+| category     | int(整数型)               | 是   | 排列方式 0:顺序1:倒序          |
+| category     | int(整数型)               | 是   | 解析方式 1:链接2:漫画解析3:视频解析4:小说解析          |
+|              |                           |      |                              |
+| content      | null                      |否    |内容 链接:不用填 漫画解析:必填 视频解析:不用填  小说解析:必填 |
+| list         | javaScript代码,返回为数组  | 否   | (漫画使用)页数           |
+| link         | javaScript代码,返回为文本  | 否   | (漫画使用)图片链接或跳转页面链接       |
+| link2        | javaScript代码,返回为文本  | 否   | (漫画使用)图片链接[一般不使用]如果link为跳转页面则使用这条获取跳转页面的图链接|
+| text        | javaScript代码,返回为文本  | 否   | (小说使用)文章内容      |
 
 jsoup语法:
 https://jsoup.org/apidocs/org/jsoup/select/Selector.html
