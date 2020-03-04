@@ -33,45 +33,49 @@
 | checked     | bool(逻辑型)   | 是     | 搜索源默认开关                                   |
 | category    | int(整数型)    | 是     | 搜索源类型1:链接2:漫画解析3:视频解析4:小说解析 |
 
+
+在仓库的搜索源目录创建 xxx.json文件(名称建议以网站名称为题)
 ```json
 
 {
-    "name": "搜索源名称",
-    "charset": "字符编码",
-    "dependencies":"js依赖库地址(初始化加载js,建议在搜索源根目录创建)",
-    "request": "请求链接@post->请求数据@header->请求头",
-    "metadata": {
-        "list": "使用js语言(默认Main为主函数名,函数参数html为网页源码,返回为数组)",
-        "name": "使用js语言(默认Main为主函数名,函数参数text为每列源码)",
-        "author": "使用js语言(默认Main为主函数名,函数参数text为每列源码)",
-        "img": "使用js语言(默认Main为主函数名,函数参数text为每列源码)",
-        "link": "使用js语言(默认Main为主函数名,函数参数text为每列源码)"
+  "name": "",
+  "charset": "",
+  "dependencies":"",
+  "request": "",
+  "metadata": {
+    "list": "",
+    "name": "",
+    "author": "",
+    "img": "",
+    "link": ""
+  },
+  "detail": {
+    "author": "",
+    "summary": "",
+    "upDate": "",
+    "catalog_link": "",
+    "tab": {
+      "list": "",
+      "name": ""
     },
-    "detail": {
-        "author": "使用js语言(默认Main为主函数名,函数参数html为网页源码)",
-        "summary": "使用js语言(默认Main为主函数名,函数参数html为网页源码)",
-        "upDate": "使用js语言(默认Main为主函数名,函数参数html为网页源码)",
-        "catalog_link": "使用js语言(默认Main为主函数名,函数参数html为网页源码)",
-        "tab": {
-            "list": "使用js语言(默认Main为主函数名,函数参数html为网页源码,返回为数组)",
-            "name": "使用js语言(默认Main为主函数名,函数参数text为每列源码)"
-        },
-        "catalog": {
-            "list": "使用js语言(默认Main为主函数名,函数参数html为网页源码,返回为数组)",
-            "chapter": {
-                "list": "使用js语言(默认Main为主函数名,函数参数html为网页源码,返回为数组)",
-                "name": "使用js语言(默认Main为主函数名,函数参数text为每列源码)",
-                "link": "使用js语言(默认Main为主函数名,函数参数text为每列源码)",
-                "orderBy": 0,//排列方式 0:顺序 1:倒序
-                "category": 2//解析方式 1:链接 2:漫画解析 3:视频解析 4:小说解析
-            }
-        }
-    },
-    "content": {
-        "list": "使用js语言(默认Main为主函数名,函数参数html为网页源码,返回为数组)",
-        "link": "使用js语言(默认Main为主函数名,函数参数text为每列源码)",
-        "mode": 1//翻页模式 1:普通模式(左滑) 2:日漫模式(右滑)
+    "catalog": {
+      "list": "",
+      "chapter": {
+        "list": "",
+        "name": "",
+        "link": "",
+        "orderBy": 1,
+        "category": 1
+      }
     }
+  },
+  "content": {
+    "list": "",
+    "link": "",
+    "link2": "",
+    "text": "",
+    "mode": 1
+  }
 }
 
 ```
@@ -111,11 +115,11 @@
 | category     | int(整数型)               | 是   | 解析方式 1:链接2:漫画解析3:视频解析4:小说解析          |
 |              |                           |      |                              |
 | content      | null                      |否    |内容 链接:不用填 漫画解析:必填 视频解析:不用填  小说解析:必填 |
-| list         | javaScript代码,返回为数组  | 否   | (漫画使用)页数           |
+| list         | javaScript代码,返回为数组  | 是   | (漫画使用)页数           |
 | link         | javaScript代码,返回为文本  | 否   | (漫画使用)图片链接或跳转页面链接       |
 | link2        | javaScript代码,返回为文本  | 否   | (漫画使用)图片链接[一般不使用]如果link为跳转页面则使用这条获取跳转页面的图链接|
 | text        | javaScript代码,返回为文本  | 否   | (小说使用)文章内容      |
-
+| mode        | int(整数型)               | 是   | 1:横向阅读-左滑 2：横向阅读-右滑       |
 jsoup语法:
 https://jsoup.org/apidocs/org/jsoup/select/Selector.html
 
