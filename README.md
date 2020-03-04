@@ -1,16 +1,17 @@
+在仓库根目录创建 xxx.json文件为仓库入口(名称自定义)
 ```json
 
 {
     "type": "MyACG搜索源",
-    "name": "搜索源名称",
-    "summary": "搜索源介绍",
-    "sources": "搜索源根目录",
-    "versionName": "1.0",
+    "name": "",
+    "summary": "",
+    "sources": "",
+    "versionName": "",
     "versionCode": 1,
     "list": [
         {
-            "name": "搜索源名称",
-            "url": "域名(并未规范)",
+            "name": "",
+            "url": "",
             "checked": true,
             "category": 1
         }
