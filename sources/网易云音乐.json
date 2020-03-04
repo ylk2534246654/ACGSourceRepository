@@ -4,7 +4,7 @@
   "request": "https://music.liuzhijin.cn/@post->input=[$key]&filter=name&type=netease&page=[$page]@header->x-requested-with:XMLHttpRequest",
   "metadata": {
     "list": "function Main(html){return jsonPaths(html,'$..data[*]');}",
-    "name": "function Main(text){return jsonPath(text,'$.title');}",
+    "title": "function Main(text){return jsonPath(text,'$.title');}",
     "author": "function Main(text){return jsonPath(text,'$.author');}",
     "img": "function Main(text){return jsonPath(text,'$.pic');}",
     "link": "function Main(text){return jsonPath(text,'$.url');}"

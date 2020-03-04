@@ -4,7 +4,7 @@
   "request": "https://manganelo.com/search/[$key]",
   "metadata": {
     "list": "function Main(html){return jsoups(html,'div.panel-search-story > div');}",
-    "name": "function Main(text){return jsoup(text,'a > img@attr->alt');}",
+    "title": "function Main(text){return jsoup(text,'a > img@attr->alt');}",
     "author": "function Main(text){return jsoup(text,'span.item-author@attr->title');}",
     "img": "function Main(text){return jsoup(text,'a > img@attr->src');}",
     "link": "function Main(text){return jsoup(text,'a@attr->href');}"
@@ -14,7 +14,7 @@
     "summary": "function Main(html){return jsoup(html,'#panel-story-info-description');}",
     "upDate": "function Main(html){return jsoup(html,'tr:nth-child(3) > td.table-value')+' · '+jsoup(html,'span.stre-value');}",
     "catalog_link": [],
-    "tab": {
+    "tabs": {
       "list": [],
       "name": []
     },

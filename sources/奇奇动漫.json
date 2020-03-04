@@ -4,7 +4,7 @@
     "request": "http://m.qiqidongman.com/vod-search-wd-[$key].html@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36",
     "metadata": {
         "list": "function Main(html){return jsoups(html,'#LIST > li');}",
-        "name": "function Main(text){return jsoup(text,'i.tit');}",
+        "title": "function Main(text){return jsoup(text,'i.tit');}",
         "author": [],
         "img": "function Main(text){return jsoup(text,'img@attr->data-src');}",
         "link": "function Main(text){return jsoup(text,'a@attr->href');}"
@@ -14,7 +14,7 @@
         "summary": "function Main(html){return jsoup(html,'#descCont > p');}",
         "upDate": "function Main(html){return jsoup(html,'#DESC-info > p:nth-child(2)');}",
         "catalog_link": [],
-        "tab": {
+        "tabs": {
             "list": "function Main(html){return jsoups(html,'#playList > div');}",
             "name": "function Main(text){return jsoup(text,'div.th.fix > i:nth-child(2)');}"
         },

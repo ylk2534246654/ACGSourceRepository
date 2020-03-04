@@ -5,7 +5,7 @@
     "request": "http://m.ccshwy.com/statics/search.aspx?key=[$key]",
     "metadata": {
         "list": "function Main(html){return jsoups(html,'#listbody > li');}",
-        "name": "function Main(text){return jsoup(text,'a.txtA');}",
+        "title": "function Main(text){return jsoup(text,'a.txtA');}",
         "author": "function Main(text){return jsoup(text,'span.info');}",
         "img": "function Main(text){return jsoup(text,'a.ImgA > img@attr->src');}",
         "link": "function Main(text){return jsoup(text,'a.ImgA@attr->href');}"
@@ -15,7 +15,7 @@
         "summary": "function Main(html){return jsoup(html,'p.txtDesc').replace('介绍:','');}",
         "upDate": "function Main(html){return jsoup(html,'span.date');}",
         "catalog_link": [],
-        "tab": {
+        "tabs": {
             "list": [],
             "name": []
         },

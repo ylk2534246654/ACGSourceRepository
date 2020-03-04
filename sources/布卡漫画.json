@@ -4,7 +4,7 @@
   "request": "http://m.buka.cn/search/ajax_search@post->count=15&key=[$key]&start=[$page]",
   "metadata": {
     "list": "function Main(html){return jsonPaths(html,'$.datas.items[*]');}",
-    "name": "function Main(text){return jsonPath(text,'$.name');}",
+    "title": "function Main(text){return jsonPath(text,'$.name');}",
     "author": "function Main(text){return jsonPath(text,'$.author');}",
     "img": "function Main(text){return jsonPath(text,'$.logo');}",
     "link": "function Main(text){return 'http://www.buka.cn/detail/'+jsonPath(text,'$.mid');}"
@@ -14,7 +14,7 @@
     "summary": "function Main(html){return jsoup(html,'div.manga-desc > p');}",
     "upDate": "function Main(html){return jsoup(html,'span.manga-episodes_text').replace(':','');}",
     "catalog_link": [],
-    "tab": {
+    "tabs": {
       "list": "function Main(html){return jsoups(html,'div.manga-episodes_title');}",
       "name": "function Main(text){return jsoup(text,'span.manga-episodes_text');}"
     },

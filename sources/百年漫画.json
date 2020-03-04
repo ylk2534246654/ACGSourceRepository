@@ -4,7 +4,7 @@
   "request": "https://m.bnmanhua.com/index.php?&m=vod-search@post->wd=[$key]",
   "metadata": {
     "list": "function Main(html){return jsoups(html,'ul[class=tbox_m] > li');}",
-    "name": "function Main(text){return jsoup(text,'h4[class=h4] > a@attr->title');}",
+    "title": "function Main(text){return jsoup(text,'h4[class=h4] > a@attr->title');}",
     "author": "",
     "img": "function Main(text){return jsoup(text,'a[class=vbox_t] > mip-img@attr->src');}",
     "link": "function Main(text){return jsoup(text,'h4[class=h4] > a@attr->href');}"
@@ -14,7 +14,7 @@
     "summary": "function Main(html){return jsoup(html,'div.tbox_js');}",
     "upDate": "function Main(html){return jsoup(html,'span.list_item');}",
     "catalog_link": [],
-    "tab": {
+    "tabs": {
       "list": "function Main(html){return jsoups(html,'body > div.tbox.tabs > div.tbox_t');}",
       "name": "function Main(text){return jsoup(text,'div.tbox_t');}"
     },

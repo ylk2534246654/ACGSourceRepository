@@ -4,7 +4,7 @@
   "request": "https://www.agefans.tv/search?&query=[$key]&page=[$page]",
   "metadata": {
     "list": "function Main(html){return jsoups(html,'div[class=blockcontent1] > div');}",
-    "name": "function Main(text){return jsoup(text,'a[class=cell_poster] > img@attr->alt');}",
+    "title": "function Main(text){return jsoup(text,'a[class=cell_poster] > img@attr->alt');}",
     "author": "function Main(text){return jsoup(text,'div:nth-child(7) > span.cell_imform_value');}",
     "img": "function Main(text){return jsoup(text,'a[class=cell_poster] > img@attr->src');}",
     "link": "function Main(text){return jsoup(text,'a[class=cell_poster]@attr->href');}"
@@ -14,7 +14,7 @@
     "summary": "function Main(html){return jsoup(html,'div.detail_imform_desc_pre > p');}",
     "upDate": "function Main(html){return jsoup(html,'li:nth-child(8) > span.detail_imform_value');}",
     "catalog_link": [],
-    "tab": {
+    "tabs": {
       "list": "function Main(html){return jsoups(html,'#menu0 > li');}",
       "name": "function Main(text){return jsoup(text,'li');}"
     },

@@ -4,7 +4,7 @@
   "request": "http://www.dilidili.co/index.php/vod/search.html?wd=[$key]@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36",
   "metadata": {
     "list": "function Main(html){return jsoups(html,'#contents > ul');}",
-    "name": "function Main(text){return jsoup(text,'div.info > h2 > a');}",
+    "title": "function Main(text){return jsoup(text,'div.info > h2 > a');}",
     "author": "function Main(text){return jsoup(text,'p.actor');}",
     "img": "function Main(text){return jsoup(text,'li > a > img@attr->data-original');}",
     "link": "function Main(text){return jsoup(text,'div.info > h2 > a@attr->href')}"
@@ -14,7 +14,7 @@
     "summary": "function Main(html){return jsoup(html,'div.column_introduction');}",
     "upDate": "function Main(html){return jsoup(html,'div.fr.detail_info > p:nth-child(3)');}",
     "catalog_link": [],
-    "tab": {
+    "tabs": {
       "list": [],
       "name": []
     },

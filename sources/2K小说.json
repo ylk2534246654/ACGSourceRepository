@@ -4,7 +4,7 @@
     "request": "https://m.fpzw.com/modules/article/search.php?searchtype=keywords&searchkey=[$key]",
     "metadata": {
         "list": "function Main(html){return jsoups(html,'div.hot_sale');}",
-        "name": "function Main(text){return jsoup(text,'a>p.title');}",
+        "title": "function Main(text){return jsoup(text,'a>p.title');}",
         "author": "function Main(text){return jsoup(text,'a>p.author');}",
         "img": "function Main(text){return jsoup(text,'a>img@attr->src');}",
         "link": "function Main(text){return jsoup(text,'a@attr->href');}"
@@ -14,7 +14,7 @@
         "summary": "function Main(html){return jsoup(html,'div.lb_jj > div:nth-child(5)');}",
         "upDate": "function Main(html){return jsoup(html,'td:nth-child(2) > div:nth-child(5)');}",
         "catalog_link": [],
-        "tab": {
+        "tabs": {
             "list": [],
             "name": []
         },

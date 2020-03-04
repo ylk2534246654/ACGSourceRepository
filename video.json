@@ -8,13 +8,13 @@
     "list": [
         {
             "name": "迅雷哥",
-            "url": "https://m.4142.cc",
+            "summary": "https://m.4142.cc",
             "checked": true,
             "category": 3
         },
         {
             "name": "我的电影网",
-            "url": "http://www.wodedy.net",
+            "summary": "http://www.wodedy.net",
             "checked": true,
             "category": 3
         }

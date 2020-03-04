@@ -8,55 +8,55 @@
 	"list": [
 		{
 			"name": "百年漫画",
-			"url": "https://m.bnmanhua.com",
+			"summary": "https://m.bnmanhua.com",
 			"checked": true,
 			"category": 2
 		},
 		{
 			"name": "动漫之家",
-			"url": "https://www.dmzj.com",
+			"summary": "https://www.dmzj.com",
 			"checked": true,
 			"category": 2
 		},
 		{
 			"name": "布卡漫画",
-			"url": "http://m.buka.cn",
+			"summary": "http://m.buka.cn",
 			"checked": true,
 			"category": 2
 		},
 		{
 			"name": "土豪漫画",
-			"url": "https://m.tohomh123.com",
+			"summary": "https://m.tohomh123.com",
 			"checked": true,
 			"category": 2
 		},
 		{
 			"name": "二次元动漫",
-			"url": "http://www.2animx.com",
+			"summary": "http://www.2animx.com",
 			"checked": true,
 			"category": 2
 		},
 		{
 			"name": "MangaNel",
-			"url": "https://manganelo.com",
+			"summary": "https://manganelo.com",
 			"checked": true,
 			"category": 2
 		},
 		{
 			"name": "动漫狂",
-			"url": "https://www.cartoonmad.com",
+			"summary": "https://www.cartoonmad.com",
 			"checked": true,
 			"category": 2
 		},
 		{
 			"name": "118漫画网",
-			"url": "http://m.ccshwy.com",
+			"summary": "http://m.ccshwy.com",
 			"checked": true,
 			"category": 2
 		},
 		{
 			"name": "哔哩哔哩漫画",
-			"url": "http://m.ccshwy.com",
+			"summary": "http://m.ccshwy.com",
 			"checked": true,
 			"category": 2
 		}

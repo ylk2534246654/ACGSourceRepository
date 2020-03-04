@@ -8,25 +8,25 @@
     "list": [
         {
             "name": "网易云音乐",
-            "url": "https://music.liuzhijin.cn/",
+            "summary": "https://music.liuzhijin.cn/",
             "checked": true,
             "category": 1
         },
         {
             "name": "QQ音乐",
-            "url": "https://music.liuzhijin.cn/",
+            "summary": "https://music.liuzhijin.cn/",
             "checked": true,
             "category": 1
         },
         {
             "name": "酷狗",
-            "url": "https://music.liuzhijin.cn/",
+            "summary": "https://music.liuzhijin.cn/",
             "checked": true,
             "category": 1
         },
         {
             "name": "酷我",
-            "url": "https://music.liuzhijin.cn/",
+            "summary": "https://music.liuzhijin.cn/",
             "checked": true,
             "category": 1
         }

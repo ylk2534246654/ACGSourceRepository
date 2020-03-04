@@ -4,7 +4,7 @@
   "request": "https://www.cartoonmad.com/search.html@post->keyword=[$key]&searchtype=all",
   "metadata": {
     "list": "function Main(html){return jsoups(html,'tr > td[align=center]');}",
-    "name": "function Main(text){return jsoup(text,'a[class=a1]');}",
+    "title": "function Main(text){return jsoup(text,'a[class=a1]');}",
     "author": "",
     "img": "function Main(text){return jsoup(text,'td > a > img@attr->src');}",
     "link": "function Main(text){return jsoup(text,'a[class=a1]@attr->href');}"
@@ -14,7 +14,7 @@
     "summary": "function Main(html){return jsoup(html,'#info > table > tbody > tr > td');}",
     "upDate": "function Main(html){return jsoup(html,'tbody > tr:nth-child(4) > td > table > tbody > tr:nth-child(1) > td:nth-child(2) > b > font');}",
     "catalog_link": [],
-    "tab": {
+    "tabs": {
       "list": [],
       "name": []
     },

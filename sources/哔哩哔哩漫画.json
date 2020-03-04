@@ -4,7 +4,7 @@
   "request": "https://manga.bilibili.com/twirp/comic.v1.Comic/Search?device=pc&platform=web@post->{\"key_word\":\"[$key]\",\"page_num\":1,\"page_size\":9}@header->Content-Type:application/json;charset=UTF-8",
   "metadata": {
     "list": "function Main(html){return jsonPaths(html,'$..list[*]');}",
-    "name": "function Main(text){return jsonPath(text,'$.org_title');}",
+    "title": "function Main(text){return jsonPath(text,'$.org_title');}",
     "author": "function Main(text){return jsonPath(text,'$.author_name');}",
     "img": "function Main(text){return jsonPath(text,'$.vertical_cover');}",
     "link": "function Main(text){return 'https://manga.bilibili.com/twirp/comic.v2.Comic/ComicDetail?device=pc&platform=web@post->'+'{\"comic_id\":'+jsonPath(text,'$.id')+'}@header->Content-Type:application/json;charset=UTF-8';}"
@@ -14,7 +14,7 @@
     "summary": "function Main(html){return jsonPath(html,'$..evaluate');}",
     "upDate": [],
     "catalog_link": [],
-    "tab": {
+    "tabs": {
       "list": [],
       "name": []
     },

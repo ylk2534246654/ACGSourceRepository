@@ -4,7 +4,7 @@
     "request": "https://m.c-upp.com/search/@post->show=title%2Ctitleen%2Ctags&keyboard=[$key]",
     "metadata": {
         "list": "function Main(html){return jsoups(html,'div > ul');}",
-        "name": "function Main(text){return jsoup(text,'h3');}",
+        "title": "function Main(text){return jsoup(text,'h3');}",
         "author": "function Main(text){return jsoup(text,'a > p');}",
         "img": "function Main(text){return jsoup(text,'img@attr->src');}",
         "link": "function Main(text){return jsoup(text,'a@attr->href');}"

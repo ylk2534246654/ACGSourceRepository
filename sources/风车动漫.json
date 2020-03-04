@@ -4,7 +4,7 @@
 	"request": "http://dm.dm530.net/search.asp@post->searchword=[$key]",
 	"metadata": {
 		"list": "function Main(html){return jsoups(html,'#mobile-index > ul > li');}",
-		"name": "function Main(text){return jsoup(text,'div > a > img@attr->alt');}",
+		"title": "function Main(text){return jsoup(text,'div > a > img@attr->alt');}",
 		"author": "function Main(text){return jsoup(text,'div.am-gallery-desc');}",
 		"img": "function Main(text){return jsoup(text,'div > a > img@attr->data-original');}",
 		"link": "function Main(text){return jsoup(text,'div > a@attr->href');}"
@@ -14,7 +14,7 @@
 		"summary": "function Main(html){return jsoup(html,'p.txtDesc.autoHeight');}",
 		"upDate": "function Main(html){return jsoup(html,'#p-info > p:nth-child(6)');}",
 		"catalog_link": [],
-		"tab": {
+		"tabs": {
 			"list": "function Main(html){return jsoups(html,'ul.am-cf > li');}",
 			"name": "function Main(text){return jsoup(text,'a');}"
 		},

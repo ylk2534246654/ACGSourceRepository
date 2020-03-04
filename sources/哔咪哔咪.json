@@ -4,7 +4,7 @@
     "request": "http://www.bimibimi.tv/vod/search/@post->wd=[$key]",
     "metadata": {
         "list": "function Main(html){return jsoups(html,'ul.tab-cont > li');}",
-        "name": "function Main(text){return jsoup(text,'a@attr->title');}",
+        "title": "function Main(text){return jsoup(text,'a@attr->title');}",
         "author": "function Main(text){return jsoup(text,'span.mask');}",
         "img": "function Main(text){return jsoup(text,'a > img@attr->data-original');}",
         "link": "function Main(text){return jsoup(text,'a@attr->href');}"
@@ -14,7 +14,7 @@
         "summary": "function Main(html){return jsoup(html,'div.vod-jianjie');}",
         "upDate": "function Main(html){return jsoup(html,'em.em_num');}",
         "catalog_link": [],
-        "tab": {
+        "tabs": {
             "list": "function Main(html){return jsoups(html,'div.js_bt');}",
             "name": "function Main(text){return jsoup(text,'span.p_smart');}"
         },

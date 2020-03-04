@@ -4,7 +4,7 @@
     "request": "https://www.23txt.com/search.php?keyword=[$key]",
     "metadata": {
         "list": "function Main(html){return jsoups(html,'div.result-list > div');}",
-        "name": "function Main(text){return jsoup(text,'a[cpos=title]');}",
+        "title": "function Main(text){return jsoup(text,'a[cpos=title]');}",
         "author": "function Main(text){return jsoup(text,'p.result-game-item-info-tag');}",
         "img": "function Main(text){return jsoup(text,'div.result-game-item-pic > a > img@attr->src');;}",
         "link": "function Main(text){return jsoup(text,'a[cpos=title]@attr->href');}"
@@ -14,7 +14,7 @@
         "summary": "function Main(html){return jsoup(html,'#intro');}",
         "upDate": "function Main(html){return jsoup(html,'#info > p:nth-child(4)');}",
         "catalog_link": [],
-        "tab": {
+        "tabs": {
             "list": [],
             "name": []
         },

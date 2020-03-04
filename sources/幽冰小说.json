@@ -4,7 +4,7 @@
     "request": "https://www.97ub.cc/modules/article/search.php?searchkey=[$key]@header->Referer=https://www.97ub.cc/modules/article/search.php",
     "metadata": {
         "list": "function Main(html){return jsoups(html,'tbody > tr');}",
-        "name": "function Main(text){return jsoup(text,'td:nth-child(1) > a');}",
+        "title": "function Main(text){return jsoup(text,'td:nth-child(1) > a');}",
         "author": "function Main(text){return jsoup(text,'td.odd:nth-child(3)');}",
         "img": "function Main(text){return 'http://r.m.97ub.cc/cover/aHR0cDovL2ltZzEuY2h1YW5nc2hpLnFxLmNvbS9jaHVhbmdzaGkvcDEvZGVmYXVsdC1jb3Zlci1sYXJnZS5wbmc=';}",
         "link": "function Main(text){return jsoup(text,'td:nth-child(1) > a@attr->href');}"
@@ -14,7 +14,7 @@
         "summary": "function Main(html){return jsoup(html,'#intro');}",
         "upDate": "function Main(html){return jsoup(html,'#info > p:nth-child(4)');}",
         "catalog_link": [],
-        "tab": {
+        "tabs": {
             "list": [],
             "name": []
         },
