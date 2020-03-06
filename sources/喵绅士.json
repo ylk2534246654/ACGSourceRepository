@@ -16,7 +16,7 @@
         "catalog_link": [],
         "catalog": {
             "chapter": {
-                "list": "function Main(html){return jsoups(html,'div > a:nth-child(7)');}",
+                "list": "function Main(html){return jsoups(html,'div > a:nth-child(9)');}",
                 "name": "function Main(text){return jsoup(text,'a');}",
                 "link": "function Main(text){return jsoup(text,'a@attr->href');}",
                 "orderBy": 0,
