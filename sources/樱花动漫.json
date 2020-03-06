@@ -8,25 +8,5 @@
     "author": "function Main(text){return jsoup(text,'span:nth-child(4)');}",
     "img": "function Main(text){return jsoup(text,'a > img@attr->src');}",
     "link": "function Main(text){return jsoup(text,'a@attr->href');}"
-  },
-  "detail": {
-    "author": "",
-    "summary": "function Main(html){return jsoup(html,'div.mtext > ul > li:nth-child(3)');}",
-    "upDate": "function Main(html){return jsoup(html,'div.mtext > ul > li:nth-child(1) > em');}",
-    "catalog_link": [],
-    "tabs": {
-      "list": "function Main(html){return jsoups(html,'div.playurl');}",
-      "name": "function Main(text){return jsoup(text,'div.title > span:nth-child(2)').replace('选自已喜欢的播放线路 进行播放 24小时更新 新番动漫 BD版资原 日 美剧','');}"
-    },
-    "catalog": {
-      "list": "function Main(html){return jsoups(html,'div.playurl > div.bfdz');}",
-      "chapter": {
-        "list": "function Main(html){return jsoups(html,'ul > ul > li > ul > li');}",
-        "name": "function Main(text){return jsoup(text,'a');}",
-        "link": "function Main(text){return jsoup(text,'a@attr->href');}",
-        "orderBy": 1,
-        "category": 3
-      }
-    }
   }
 }
