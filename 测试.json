@@ -1,0 +1,16 @@
+{
+    "type": "MyACG搜索源",
+    "name": "测试",
+    "summary": "测试",
+    "sources": "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/",
+    "versionName": "1.0",
+    "versionCode": 1,
+    "list": [
+        {
+            "name": "樱花动漫",
+            "summary": "https://music.liuzhijin.cn/",
+            "checked": true,
+            "category": 1
+        }
+    ]
+}
