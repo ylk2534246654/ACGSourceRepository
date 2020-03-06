@@ -18,7 +18,7 @@
             "chapter": {
                 "list": "function Main(html){return jsoups(html,'div > a:nth-child(9)');}",
                 "name": "function Main(text){return jsoup(text,'a');}",
-                "link": "function Main(text){return jsoup(text,'a@attr->href');}",
+                "link": "function Main(text){return jsoup(text,'a@attr->href').replace('https://c.mipcdn.com/i/s/','');}",
                 "orderBy": 0,
                 "category": 2
             }
