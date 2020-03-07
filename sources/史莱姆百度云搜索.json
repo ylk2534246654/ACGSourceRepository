@@ -1,0 +1,18 @@
+{
+    "name": "樱花动漫",
+    "charset": "utf-8",
+    "request": "http://www.slimego.cn/search.html?q=[$key]",
+    "metadata": {
+        "list": "function Main(html){return jsoups(html,'div.container > div > div');}",
+        "title": "function Main(text){return jsoup(text,'span.link > a');}",
+        "author": "function Main(text){return jsoup(text,'span.upload');}",
+        "img": "",
+        "link": "function Main(text){return jsoup(text,'span.link > a@attr->href');}"
+    },
+    "content": {
+        "备注": "直接jsoup",
+        "list": "function Main(html){return jsoups(html,'div > img');}",
+        "link": "function Main(text){return jsoup(text,'img@attr->data-original');}",
+        "mode": 1
+    }
+}
