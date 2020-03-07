@@ -1,5 +1,5 @@
 {
-    "name": "史莱姆百度云搜索",
+    "name": "如风搜",
     "charset": "utf-8",
     "request": "http://www.rufengso.net/s/name/[$key]",
     "metadata": {
