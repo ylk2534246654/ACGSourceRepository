@@ -8,9 +8,5 @@
         "author": "function Main(text){return jsoup(text,'span.upload');}",
         "img": "",
         "link": "function Main(text){return jsoup(text,'span.link > a@attr->href');}"
-    },
-    "content": {
-        "link": "",
-        "mode": 1
     }
 }
