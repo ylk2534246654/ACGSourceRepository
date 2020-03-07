@@ -10,9 +10,7 @@
         "link": "function Main(text){return jsoup(text,'span.link > a@attr->href');}"
     },
     "content": {
-        "备注": "直接jsoup",
-        "list": "function Main(html){return jsoups(html,'div > img');}",
-        "link": "function Main(text){return jsoup(text,'img@attr->data-original');}",
+        "link": "",
         "mode": 1
     }
 }
