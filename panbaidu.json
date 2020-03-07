@@ -1,6 +1,6 @@
 {
     "type": "MyACG搜索源",
-    "name": "百度云搜索源",
+    "name": "百度云搜索",
     "summary": "能搜索百度云资源",
     "sources": "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/",
     "versionName": "1.0",
