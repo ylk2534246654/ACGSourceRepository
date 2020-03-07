@@ -1,5 +1,5 @@
 {
-    "name": "樱花动漫",
+    "name": "史莱姆百度云搜索",
     "charset": "utf-8",
     "request": "http://www.slimego.cn/search.html?q=[$key]",
     "metadata": {
