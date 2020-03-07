@@ -10,7 +10,8 @@
         "link": "function Main(text){return jsoup(text,'h3 > a@attr->href');}"
     },
     "content": {
-        "link": "",
+        "link": "function Main(html){return jsoup(html,'a.dbutton2@attr->href');}",
+        "link2": "function Main(html){return jsoup(html,'div > a@attr->href');}",
         "mode": 1
     }
 }
