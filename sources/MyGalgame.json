@@ -1,0 +1,12 @@
+{
+    "name": "MyGalgame",
+    "charset": "utf-8",
+    "request": "https://www.mmgal.com/?s=[$key]",
+    "metadata": {
+        "list": "function Main(html){return jsoups(html,'#article-list > div');}",
+        "title": "function Main(text){return jsoup(text,'div.title-article > h1 > a');}",
+        "author": "function Main(text){return jsoup(text,'section > center');}",
+        "img": "function Main(text){return jsoup(text,'a > img');}",
+        "link": "function Main(text){return jsoup(text,'div.title-article > h1 > a@attr->href');}"
+    }
+}
