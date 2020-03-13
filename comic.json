@@ -3,6 +3,7 @@
 	"name": "漫画类",
 	"summary": "一些漫画搜索源。",
 	"sources": "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/",
+	"author": "雨夏",
 	"versionName": "1.0",
 	"versionCode": 1,
 	"list": [
