@@ -6,7 +6,7 @@
         "list": "function Main(html){return jsoups(html,'#sitebox > dl');}",
         "title": "function Main(text){return jsoup(text,'dd > h3 > a');}",
         "author": "function Main(text){return jsoup(text,'#nr > dd.book_des');}",
-        "img": "function Main(text){return jsoup(text,'dt > a > img');}",
+        "img": "function Main(text){return jsoup(text,'dt > a > img@attr->_src');}",
         "link": "function Main(text){return jsoup(text,'dd > h3 > a@attr->href');}"
     },
     "detail": {
