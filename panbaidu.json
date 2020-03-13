@@ -3,7 +3,7 @@
     "name": "百度云搜索",
     "summary": "能搜索百度云资源",
     "sources": "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/",
-    "author": "雨夏",
+    "developer": "雨夏",
     "versionName": "1.0",
     "versionCode": 1,
     "list": [
