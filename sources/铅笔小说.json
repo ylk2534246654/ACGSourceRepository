@@ -10,18 +10,12 @@
         "link": "function Main(text){return jsoup(text,'dd > h3 > a@attr->href');}"
     },
     "detail": {
-        "author": "function Main(html){return jsoup(html,'div.block_txt2 > p:nth-child(4) > a');}",
-        "summary": "function Main(html){return jsoup(html,'div.intro_info:nth-child(9)');}",
-        "upDate": "function Main(html){return jsoup(html,'div.block_txt2 > p:nth-child(6)')+jsoup(html,'div.block_txt2 > p:nth-child(7)');}",
-        "catalog_link": "function Main(html){return jsoup(html,'span.margin_right > a@attr->href');}",
-        "tabs": {
-            "list": [],
-            "name": []
-        },
+        "author": "function Main(html){return jsoup(html,'div.d_title > span');}",
+        "summary": "function Main(html){return jsoup(html,'#bookintro');}",
+        "upDate": "function Main(html){return jsoup(html,'#count > ul > li:nth-child(3) > span')+jsoup(html,'#uptime > span');}",
         "catalog": {
-            "list": [],
             "chapter": {
-                "list": "function Main(html){return jsoups(html,'ul.chapter > li');}",
+                "list": "function Main(html){return jsoups(html,'#chapterList > li');}",
                 "name": "function Main(text){return jsoup(text,'a');}",
                 "link": "function Main(text){return jsoup(text,'a@attr->href');}",
                 "orderBy": 1,
@@ -30,6 +24,6 @@
         }
     },
     "content": {
-        "text": "function Main(html){return jsoup(html,'#nr1');}"
+        "text": "function Main(html){return jsoup(html,'#TextContent');}"
     }
 }
