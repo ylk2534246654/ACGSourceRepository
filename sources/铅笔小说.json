@@ -1,0 +1,35 @@
+{
+    "name": "铅笔小说",
+    "charset": "gbk",
+    "request": "https://www.x23qb.com/search.php@post->searchkey=[$key]&searchtype=all",
+    "metadata": {
+        "list": "function Main(html){return jsoups(html,'#sitebox > dl');}",
+        "title": "function Main(text){return jsoup(text,'dd > h3 > a');}",
+        "author": "function Main(text){return jsoup(text,'#nr > dd.book_des');}",
+        "img": "function Main(text){return jsoup(text,'dt > a > img');}",
+        "link": "function Main(text){return jsoup(text,'dd > h3 > a@attr->href');}"
+    },
+    "detail": {
+        "author": "function Main(html){return jsoup(html,'div.block_txt2 > p:nth-child(4) > a');}",
+        "summary": "function Main(html){return jsoup(html,'div.intro_info:nth-child(9)');}",
+        "upDate": "function Main(html){return jsoup(html,'div.block_txt2 > p:nth-child(6)')+jsoup(html,'div.block_txt2 > p:nth-child(7)');}",
+        "catalog_link": "function Main(html){return jsoup(html,'span.margin_right > a@attr->href');}",
+        "tabs": {
+            "list": [],
+            "name": []
+        },
+        "catalog": {
+            "list": [],
+            "chapter": {
+                "list": "function Main(html){return jsoups(html,'ul.chapter > li');}",
+                "name": "function Main(text){return jsoup(text,'a');}",
+                "link": "function Main(text){return jsoup(text,'a@attr->href');}",
+                "orderBy": 1,
+                "category": 4
+            }
+        }
+    },
+    "content": {
+        "text": "function Main(html){return jsoup(html,'#nr1');}"
+    }
+}
