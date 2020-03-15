@@ -1,0 +1,17 @@
+{
+	"type": "MyACG搜索源",
+	"name": "调试类",
+	"introduce": "新的搜索源调试",
+	"sources": "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/",
+	"developer": "雨夏",
+	"versionName": "1.0",
+	"versionCode": 1,
+	"list": [
+		{
+			"name": "百年漫画",
+			"introduce": "https://m.bnmanhua.com",
+			"checked": true,
+			"category": 2
+		}
+	]
+}

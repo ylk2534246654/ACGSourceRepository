@@ -2,23 +2,22 @@
   "name": "布卡漫画",
   "charset": "UTF-8",
   "request": "http://m.buka.cn/search/ajax_search@post->count=15&key=[$key]&start=[$page]",
-  "metadata": {
+  "search": {
     "list": "function Main(html){return jsonPaths(html,'$.datas.items[*]');}",
     "title": "function Main(text){return jsonPath(text,'$.name');}",
-    "author": "function Main(text){return jsonPath(text,'$.author');}",
+    "introduce": "function Main(text){return jsonPath(text,'$.author');}",
     "img": "function Main(text){return jsonPath(text,'$.logo');}",
     "link": "function Main(text){return 'http://www.buka.cn/detail/'+jsonPath(text,'$.mid');}"
   },
   "detail": {
     "author": "function Main(html){return jsoup(html,'div.manga-author > a');}",
-    "summary": "function Main(html){return jsoup(html,'div.manga-desc > p');}",
+    "introduce": "function Main(html){return jsoup(html,'div.manga-desc > p');}",
     "upDate": "function Main(html){return jsoup(html,'span.manga-episodes_text').replace(':','');}",
-    "catalog_link": [],
     "tabs": {
       "list": "function Main(html){return jsoups(html,'div.manga-episodes_title');}",
       "name": "function Main(text){return jsoup(text,'span.manga-episodes_text');}"
     },
-    "catalog": {
+    "catalogs": {
       "list": "function Main(html){return jsoups(html,'div.manga-episodes');}",
       "chapter": {
         "list": "function Main(html){return jsoups(html,'div.epsbox > a');}",
@@ -29,8 +28,7 @@
       }
     }
   },
-  "content": {
-    "备注": "直接jsoup",
+  "comic": {
     "list": "function Main(html){var imgs = jsoups(html,'#manga-imgs > div.manga-c');return imgs;}",
     "link": "function Main(text){var img = jsoup(text,'img@attr->data-original');if(img.indexOf('.jpg')==-1){img=jsoup(text,'img@attr->src')};return img}",
     "mode": 1

@@ -5,7 +5,7 @@
   "search": {
     "list": "function Main(html){return jsoups(html,'div > ul > li');}",
     "title": "function Main(text){return jsoup(text,'a@attr->title');}",
-    "introduce": [],
+    "introduce": "",
     "img": "function Main(text){return jsoup(text,'img@attr->src');}",
     "link": "function Main(text){return jsoup(text,'a@attr->href');}"
   },
@@ -28,11 +28,9 @@
       }
     }
   },
-  "pages": {
+  "comic": {
     "list": "function Main(html){var file=strmiddle(html,'pl = \\'','/000');var startid=strmiddle(html,'/000','.jpg');var endid=strmiddle(html,'pcount=',';');var obj= [];for(var i =startid;i<=endid;i++){var num = i;var n=4;var a = (Array(n).join(0) + num).slice(-n);obj.push(file+'/'+a+'.jpg');};return obj;}",
     "link": "function Main(text){return text;}",
-    "content": {
-      "mode": 2
-    }
+    "mode": 2
   }
 }

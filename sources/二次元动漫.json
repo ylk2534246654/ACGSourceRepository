@@ -23,12 +23,10 @@
             }
         }
     },
-    "pages": {
+    "comic":{
         "list": "function Main(html){var endid=jsoup(html,'#total@attr->value');var obj= [];for(var i =1;i<=endid;i++){obj.push(getURL()+'-p-'+i);};return obj;}",
         "link": "function Main(text){return text;}",
-        "content": {
-            "link": "function Main(text){return jsoup(text,'img[id = ComicPic]@attr->src');}",
-            "mode": 2
-        }
+        "link2": "function Main(text){return jsoup(text,'img[id = ComicPic]@attr->src');}",
+        "mode": 2
     }
 }

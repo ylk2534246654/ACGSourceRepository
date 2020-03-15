@@ -13,8 +13,7 @@
         "author": "",
         "introduce": "",
         "upDate": "",
-        "catalog_link": [],
-        "catalog": {
+        "catalogs": {
             "chapter": {
                 "list": "function Main(html){return jsoups(html,'div > a:nth-child(9)');}",
                 "name": "function Main(text){return jsoup(text,'a');}",
@@ -24,9 +23,9 @@
             }
         }
     },
-    "content": {
+    "comic":{
         "list": "function Main(html){return jsoups(html,'div > img');}",
         "link": "function Main(text){return jsoup(text,'img@attr->data-original');}",
-        "mode": 1
+        "mode": 2
     }
 }
