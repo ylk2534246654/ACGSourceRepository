@@ -18,7 +18,7 @@
       "list": "function Main(html){return jsoups(html,'div.tabs');}",
       "name": "function Main(text){return jsoup(text,'ul > li:nth-child(1)');}",
     },
-    "pager":{
+    "pages":{
       "list": "function Main(html){return jsoups(html,'div.movurl');}",
       "catalog": {
         "list": "function Main(html){return jsoups(html,'ul > li');}",
