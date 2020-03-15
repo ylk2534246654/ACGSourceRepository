@@ -2,23 +2,23 @@
   "name": "妮可动漫",
   "charset": "UTF-8",
   "request": "http://www.nicotv.club/video/search/[$key].html",
-  "metadata": {
+  "search": {
     "list": "function Main(html){return jsoups(html,'div.container > ul > li');}",
     "title": "function Main(text){return jsoup(text,'h2 > a');}",
-    "author": "function Main(text){return jsoup(text,'h4');}",
+    "introduce": "function Main(text){return jsoup(text,'h4');}",
     "img": "function Main(text){return jsoup(text,'p.image > a > img@attr->data-original');}",
     "link": "function Main(text){return jsoup(text,'h2 > a@attr->href');}"
   },
   "detail": {
     "author": "",
-    "summary": "function Main(html){return jsoup(html,'div > div.media-body > dl');}",
+    "introduce": "function Main(html){return jsoup(html,'div > div.media-body > dl');}",
     "upDate": "function Main(html){return jsoup(html,'div.media-body > h2 > small');}",
     "catalog_link": [],
     "tabs": {
       "list": "function Main(html){return jsoups(html,'ul.nav.nav-tabs > li');}",
       "name": "function Main(text){return jsoup(text,'li');}"
     },
-    "catalog": {
+    "catalogs": {
       "list": "function Main(html){return jsoups(html,'div.tab-content > ul');}",
       "chapter": {
         "list": "function Main(html){return jsoups(html,'ul > li');}",
