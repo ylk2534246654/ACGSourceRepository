@@ -27,37 +27,37 @@
 		},
 		{
 			"name": "土豪漫画",
-			"summary": "https://m.tohomh123.com",
+			"introduce": "https://m.tohomh123.com",
 			"checked": true,
 			"category": 2
 		},
 		{
 			"name": "二次元动漫",
-			"summary": "http://www.2animx.com",
+			"introduce": "http://www.2animx.com",
 			"checked": true,
 			"category": 2
 		},
 		{
 			"name": "MangaNel",
-			"summary": "https://manganelo.com",
+			"introduce": "https://manganelo.com",
 			"checked": true,
 			"category": 2
 		},
 		{
 			"name": "动漫狂",
-			"summary": "https://www.cartoonmad.com",
+			"introduce": "https://www.cartoonmad.com",
 			"checked": true,
 			"category": 2
 		},
 		{
 			"name": "118漫画网",
-			"summary": "http://m.ccshwy.com",
+			"introduce": "http://m.ccshwy.com",
 			"checked": true,
 			"category": 2
 		},
 		{
 			"name": "哔哩哔哩漫画",
-			"summary": "http://m.ccshwy.com",
+			"introduce": "http://m.ccshwy.com",
 			"checked": true,
 			"category": 2
 		}
