@@ -2,24 +2,18 @@
   "name": "MangaNel",
   "charset": "UTF-8",
   "request": "https://manganelo.com/search/[$key]",
-  "metadata": {
+  "search": {
     "list": "function Main(html){return jsoups(html,'div.panel-search-story > div');}",
     "title": "function Main(text){return jsoup(text,'a > img@attr->alt');}",
-    "author": "function Main(text){return jsoup(text,'span.item-author@attr->title');}",
+    "introduce": "function Main(text){return jsoup(text,'span.item-author@attr->title');}",
     "img": "function Main(text){return jsoup(text,'a > img@attr->src');}",
     "link": "function Main(text){return jsoup(text,'a@attr->href');}"
   },
   "detail": {
     "author": "function Main(html){return jsoup(html,'tr:nth-child(2) > td.table-value > a');}",
-    "summary": "function Main(html){return jsoup(html,'#panel-story-info-description');}",
+    "introduce": "function Main(html){return jsoup(html,'#panel-story-info-description');}",
     "upDate": "function Main(html){return jsoup(html,'tr:nth-child(3) > td.table-value')+' · '+jsoup(html,'span.stre-value');}",
-    "catalog_link": [],
-    "tabs": {
-      "list": [],
-      "name": []
-    },
-    "catalog": {
-      "list": [],
+    "catalogs": {
       "chapter": {
         "list": "function Main(html){return jsoups(html,'div.panel-story-chapter-list > ul.row-content-chapter > li');}",
         "name": "function Main(text){return jsoup(text,'a');}",
@@ -29,8 +23,7 @@
       }
     }
   },
-  "content": {
-    "备注": "直接jsoup",
+  "comic": {
     "list": "function Main(html){return jsoups(html,'div > img');}",
     "link": "function Main(text){return jsoup(text,'img@attr->src');}",
     "mode": 1
