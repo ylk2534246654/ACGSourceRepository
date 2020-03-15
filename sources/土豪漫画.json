@@ -2,23 +2,22 @@
   "name": "土豪漫画",
   "charset": "UTF-8",
   "request": "https://m.tohomh123.com/action/Search?keyword=[$key]",
-  "metadata": {
+  "search": {
     "list": "function Main(html){return jsoups(html,'div > ul > li');}",
     "title": "function Main(text){return jsoup(text,'a@attr->title');}",
-    "author": [],
+    "introduce": [],
     "img": "function Main(text){return jsoup(text,'img@attr->src');}",
     "link": "function Main(text){return jsoup(text,'a@attr->href');}"
   },
   "detail": {
     "author": "function Main(html){return jsoup(html,'div.info > p:nth-child(3)').replace('作者：','');}",
-    "summary": "function Main(html){return jsoup(html,'div.detailContent > p');}",
+    "introduce": "function Main(html){return jsoup(html,'div.detailContent > p');}",
     "upDate": "function Main(html){return jsoup(html,'p.bottom.d-nowrap');}",
-    "catalog_link": [],
     "tabs": {
       "list": "function Main(html){return jsoups(html,'body > div.chapterList.d-border');}",
       "name": "function Main(text){return jsoup(text,'li.ib.active');}"
     },
-    "catalog": {
+    "catalogs": {
       "list": "function Main(html){return jsoups(html,'body > div.chapterList.d-border');}",
       "chapter": {
         "list": "function Main(html){return jsoups(html,'#chapterList_1 > ul > li');}",
@@ -29,10 +28,11 @@
       }
     }
   },
-  "content": {
-    "备注": "此处爬取数据中的指定位置id,数量",
+  "pages": {
     "list": "function Main(html){var file=strmiddle(html,'pl = \\'','/000');var startid=strmiddle(html,'/000','.jpg');var endid=strmiddle(html,'pcount=',';');var obj= [];for(var i =startid;i<=endid;i++){var num = i;var n=4;var a = (Array(n).join(0) + num).slice(-n);obj.push(file+'/'+a+'.jpg');};return obj;}",
     "link": "function Main(text){return text;}",
-    "mode": 2
+    "content": {
+      "mode": 2
+    }
   }
 }
