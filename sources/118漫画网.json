@@ -1,26 +1,20 @@
 {
     "name": "118漫画网",
     "charset": "UTF-8",
-    "dependencies":"https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/js/base64.js",
+    "dependencies": "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/js/base64.js",
     "request": "http://m.ccshwy.com/statics/search.aspx?key=[$key]",
-    "metadata": {
+    "search": {
         "list": "function Main(html){return jsoups(html,'#listbody > li');}",
         "title": "function Main(text){return jsoup(text,'a.txtA');}",
-        "author": "function Main(text){return jsoup(text,'span.info');}",
+        "introduce": "function Main(text){return jsoup(text,'span.info');}",
         "img": "function Main(text){return jsoup(text,'a.ImgA > img@attr->src');}",
         "link": "function Main(text){return jsoup(text,'a.ImgA@attr->href');}"
     },
     "detail": {
         "author": "function Main(html){return jsoup(html,'div.sub_r > p:nth-child(2)');}",
-        "summary": "function Main(html){return jsoup(html,'p.txtDesc').replace('介绍:','');}",
+        "introduce": "function Main(html){return jsoup(html,'p.txtDesc').replace('介绍:','');}",
         "upDate": "function Main(html){return jsoup(html,'span.date');}",
-        "catalog_link": [],
-        "tabs": {
-            "list": [],
-            "name": []
-        },
-        "catalog": {
-            "list": [],
+        "catalogs": {
             "chapter": {
                 "list": "function Main(html){return jsoups(html,'div#list > ul > li');}",
                 "name": "function Main(text){return jsoup(text,'a');}",

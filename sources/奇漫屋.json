@@ -2,20 +2,18 @@
     "name": "奇漫屋",
     "charset": "UTF-8",
     "request": "http://qiman5.com/spotlight/?keyword=[$key]",
-    "metadata": {
+    "search": {
         "list": "function Main(html){return jsoups(html,'div.search-result > div');}",
         "title": "function Main(text){return jsoup(text,'p.comic-name > a');}",
-        "author": "function Main(text){return jsoup(text,'p.comic-tags')+'.'+jsoup(text,'p.comic-update-at');}",
+        "introduce": "function Main(text){return jsoup(text,'p.comic-tags')+'.'+jsoup(text,'p.comic-update-at');}",
         "img": "function Main(text){return jsoup(text,'a.cover > img@attr->src');}",
         "link": "function Main(text){return jsoup(text,'a.cover@attr->href');}"
     },
     "detail": {
         "author": "function Main(html){return jsoup(html,'div.box-back2 > p:nth-child(2)');}",
-        "summary": "function Main(html){return jsoup(html,'span.comic-intro');}",
+        "introduce": "function Main(html){return jsoup(html,'span.comic-intro');}",
         "upDate": "function Main(html){return jsoup(html,'div.box-back2 > p:nth-child(4)');}",
-        "catalog_link": [],
-        "catalog": {
-            "list": [],
+        "catalogs": {
             "chapter": {
                 "list": "function Main(html){return jsoups(html,'div.catalog-list > ul > li');}",
                 "name": "function Main(text){return jsoup(text,'a');}",
@@ -26,7 +24,6 @@
         }
     },
     "content": {
-        "备注": "此处爬取数据中的指定key,再解密",
         "list": "function Main(html){javaScript('eval'+strmiddle(html,'eval','</script>'));return newImgs;}",
         "link": "function Main(text){return text;}",
         "mode": 1

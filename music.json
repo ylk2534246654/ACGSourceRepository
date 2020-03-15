@@ -1,7 +1,7 @@
 {
     "type": "MyACG搜索源",
     "name": "音乐类",
-    "summary": "一些音乐搜索源,直链获取。",
+    "introduce": "一些音乐搜索源,直链获取。",
     "sources": "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/",
     "developer": "雨夏",
     "versionName": "1.0",
@@ -9,25 +9,25 @@
     "list": [
         {
             "name": "网易云音乐",
-            "summary": "https://music.liuzhijin.cn/",
+            "introduce": "https://music.liuzhijin.cn/",
             "checked": true,
             "category": 1
         },
         {
             "name": "QQ音乐",
-            "summary": "https://music.liuzhijin.cn/",
+            "introduce": "https://music.liuzhijin.cn/",
             "checked": true,
             "category": 1
         },
         {
             "name": "酷狗",
-            "summary": "https://music.liuzhijin.cn/",
+            "introduce": "https://music.liuzhijin.cn/",
             "checked": true,
             "category": 1
         },
         {
             "name": "酷我",
-            "summary": "https://music.liuzhijin.cn/",
+            "introduce": "https://music.liuzhijin.cn/",
             "checked": true,
             "category": 1
         }

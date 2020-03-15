@@ -1,7 +1,7 @@
 {
     "type": "MyACG搜索源",
     "name": "百度云搜索",
-    "summary": "能搜索百度云资源",
+    "introduce": "能搜索百度云资源",
     "sources": "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/",
     "developer": "雨夏",
     "versionName": "1.0",
@@ -9,12 +9,12 @@
     "list": [
         {
             "name": "史莱姆百度云搜索",
-            "summary": "http://www.slimego.cn",
+            "introduce": "http://www.slimego.cn",
             "checked": true,
             "category": 1
         },{
             "name": "如风搜",
-            "summary": "http://www.rufengso.net",
+            "introduce": "http://www.rufengso.net",
             "checked": true,
             "category": 1
         }

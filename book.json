@@ -1,7 +1,7 @@
 {
   "type": "MyACG搜索源",
   "name": "书籍类",
-  "summary": "一些书籍搜索源。",
+  "introduce": "一些书籍搜索源。",
   "sources": "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/",
   "developer": "雨夏",
   "versionName": "1.0",
@@ -9,19 +9,19 @@
   "list": [
     {
       "name": "幽冰小说",
-      "summary": "https://www.97ub.cc",
+      "introduce": "https://www.97ub.cc",
       "checked": true,
       "category": 4
     },
     {
       "name": "2K小说",
-      "summary": "https://m.fpzw.com",
+      "introduce": "https://m.fpzw.com",
       "checked": true,
       "category": 4
     },
     {
       "name": "天籁小说",
-      "summary": "https://m.fpzw.com",
+      "introduce": "https://m.fpzw.com",
       "checked": true,
       "category": 4
     }

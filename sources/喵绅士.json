@@ -2,16 +2,16 @@
     "name": "喵绅士",
     "charset": "UTF-8",
     "request": "https://m.c-upp.com/search/@post->show=title%2Ctitleen%2Ctags&keyboard=[$key]",
-    "metadata": {
+    "search": {
         "list": "function Main(html){return jsoups(html,'div > ul');}",
         "title": "function Main(text){return jsoup(text,'h3');}",
-        "author": "function Main(text){return jsoup(text,'a > p');}",
+        "introduce": "function Main(text){return jsoup(text,'a > p');}",
         "img": "function Main(text){return jsoup(text,'img@attr->src');}",
         "link": "function Main(text){return jsoup(text,'a@attr->href');}"
     },
     "detail": {
         "author": "",
-        "summary": "",
+        "introduce": "",
         "upDate": "",
         "catalog_link": [],
         "catalog": {
@@ -25,7 +25,6 @@
         }
     },
     "content": {
-        "备注": "直接jsoup",
         "list": "function Main(html){return jsoups(html,'div > img');}",
         "link": "function Main(text){return jsoup(text,'img@attr->data-original');}",
         "mode": 1

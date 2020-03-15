@@ -2,23 +2,22 @@
   "name": "百年漫画",
   "charset": "UTF-8",
   "request": "https://m.bnmanhua.com/index.php?&m=vod-search@post->wd=[$key]",
-  "metadata": {
+  "search": {
     "list": "function Main(html){return jsoups(html,'ul[class=tbox_m] > li');}",
     "title": "function Main(text){return jsoup(text,'h4[class=h4] > a@attr->title');}",
-    "author": "",
+    "introduce": "",
     "img": "function Main(text){return jsoup(text,'a[class=vbox_t] > mip-img@attr->src');}",
     "link": "function Main(text){return jsoup(text,'h4[class=h4] > a@attr->href');}"
   },
   "detail": {
     "author": "function Main(html){return jsoup(html,'p.dir');}",
-    "summary": "function Main(html){return jsoup(html,'div.tbox_js');}",
+    "introduce": "function Main(html){return jsoup(html,'div.tbox_js');}",
     "upDate": "function Main(html){return jsoup(html,'span.list_item');}",
-    "catalog_link": [],
     "tabs": {
       "list": "function Main(html){return jsoups(html,'body > div.tbox.tabs > div.tbox_t');}",
       "name": "function Main(text){return jsoup(text,'div.tbox_t');}"
     },
-    "catalog": {
+    "catalogs": {
       "list": "function Main(html){return jsoups(html,'body > div.tbox.tabs > div.tabs_block');}",
       "chapter": {
         "list": "function Main(html){return jsoups(html,'div.tabs_block > ul > li');}",
@@ -30,7 +29,6 @@
     }
   },
   "content": {
-    "备注": "此处爬取数据中的指定json数据,再json解析出link",
     "list": "function Main(html){var z_yurl = strmiddle(html,'z_yurl=\\'','\\'');var z_img = jsonPaths(strmiddle(html,'z_img=\\'','\\''),'$.*');var arr = [];for (var i = 0 ; i<z_img.length; i++){arr.push(pathURL2(z_img[i],z_yurl));}return arr;};",
     "link": "function Main(text){return text;}",
     "mode": 2
