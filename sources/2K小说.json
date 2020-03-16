@@ -2,24 +2,18 @@
     "name": "2K小说",
     "charset": "gbk",
     "request": "https://m.fpzw.com/modules/article/search.php?searchtype=keywords&searchkey=[$key]",
-    "metadata": {
+    "search": {
         "list": "function Main(html){return jsoups(html,'div.hot_sale');}",
         "title": "function Main(text){return jsoup(text,'a>p.title');}",
-        "author": "function Main(text){return jsoup(text,'a>p.author');}",
+        "introduce": "function Main(text){return jsoup(text,'a>p.author');}",
         "img": "function Main(text){return jsoup(text,'a>img@attr->src');}",
         "link": "function Main(text){return jsoup(text,'a@attr->href');}"
     },
     "detail": {
         "author": "function Main(html){return jsoup(html,'td:nth-child(2) > div:nth-child(2)');}",
-        "summary": "function Main(html){return jsoup(html,'div.lb_jj > div:nth-child(5)');}",
+        "introduce": "function Main(html){return jsoup(html,'div.lb_jj > div:nth-child(5)');}",
         "upDate": "function Main(html){return jsoup(html,'td:nth-child(2) > div:nth-child(5)');}",
-        "catalog_link": [],
-        "tabs": {
-            "list": [],
-            "name": []
-        },
-        "catalog": {
-            "list": [],
+        "catalogs": {
             "chapter": {
                 "list": "function Main(html){return jsoups(html,'div.chapter > li');}",
                 "name": "function Main(text){return jsoup(text,'a');}",
@@ -29,7 +23,8 @@
             }
         }
     },
-    "content": {
-        "text": "function Main(html){return jsoup(html,'#nr1');}"
+    "novel": {
+        "content": "function Main(html){return jsoup(html,'#nr1');}",
+        "mode": 1
     }
 }

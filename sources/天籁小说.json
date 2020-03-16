@@ -2,24 +2,18 @@
     "name": "天籁小说",
     "charset": "utf-8",
     "request": "https://www.23txt.com/search.php?keyword=[$key]",
-    "metadata": {
+    "search": {
         "list": "function Main(html){return jsoups(html,'div.result-list > div');}",
         "title": "function Main(text){return jsoup(text,'a[cpos=title]');}",
-        "author": "function Main(text){return jsoup(text,'p.result-game-item-info-tag');}",
+        "introduce": "function Main(text){return jsoup(text,'p.result-game-item-info-tag');}",
         "img": "function Main(text){return jsoup(text,'div.result-game-item-pic > a > img@attr->src');;}",
         "link": "function Main(text){return jsoup(text,'a[cpos=title]@attr->href');}"
     },
     "detail": {
         "author": "function Main(html){return jsoup(html,'#info > p:nth-child(2)');}",
-        "summary": "function Main(html){return jsoup(html,'#intro');}",
+        "introduce": "function Main(html){return jsoup(html,'#intro');}",
         "upDate": "function Main(html){return jsoup(html,'#info > p:nth-child(4)');}",
-        "catalog_link": [],
-        "tabs": {
-            "list": [],
-            "name": []
-        },
-        "catalog": {
-            "list": [],
+        "catalogs": {
             "chapter": {
                 "list": "function Main(html){return jsoups(html,'#list > dl > dd');}",
                 "name": "function Main(text){return jsoup(text,'a');}",
@@ -29,7 +23,8 @@
             }
         }
     },
-    "content": {
-        "text": "function Main(html){return jsoup(html,'#content');}"
+    "novel": {
+        "content": "function Main(html){return jsoup(html,'#content');}",
+        "mode": 1
     }
 }
