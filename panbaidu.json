@@ -17,6 +17,12 @@
             "introduce": "http://www.rufengso.net",
             "checked": true,
             "category": 1
+        },
+        {
+            "name": "动漫西西",
+            "introduce": "http://www.dmxixi.com/",
+            "checked": true,
+            "category": 3
         }
     ]
 }
