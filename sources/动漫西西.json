@@ -1,0 +1,31 @@
+{
+  "name": "动漫西西",
+  "charset": "UTF-8",
+  "request": "http://www.dmxixi.com/plus/search.php?kwtype=0&q=[$key]",
+  "search": {
+    "list": "function Main(html){return jsoups(html,'#listvod > ul > li');}",
+    "title": "function Main(text){return jsoup(text,'div > h2 > a');}",
+    "introduce": "function Main(text){return jsoup(text,'div:nth-child(7) > span.cell_imform_value');}",
+    "img": "function Main(text){return jsoup(text,'a > img@attr->data-original');}",
+    "link": "function Main(text){return jsoup(text,'div > h2 > a@attr->href');}"
+  },
+  "detail": {
+    "author": "function Main(html){return jsoup(html,'li:nth-child(5) > span.detail_imform_value');}",
+    "introduce": "function Main(html){return jsoup(html,'div.detail_imform_desc_pre > p');}",
+    "upDate": "function Main(html){return jsoup(html,'li:nth-child(8) > span.detail_imform_value');}",
+    "tabs": {
+      "list": "function Main(html){return jsoups(html,'#menu0 > li');}",
+      "name": "function Main(text){return jsoup(text,'li');}"
+    },
+    "catalogs": {
+      "list": "function Main(html){return jsoups(html,'#main0 > div.movurl');}",
+      "chapter": {
+        "list": "function Main(html){return jsoups(html,'ul > li');}",
+        "name": "function Main(text){return jsoup(text,'a');}",
+        "link": "function Main(text){return jsoup(text,'a@attr->href');}",
+        "orderBy": 1,
+        "category": 3
+      }
+    }
+  }
+}
