@@ -2,23 +2,22 @@
     "name": "我的电影网",
     "charset": "UTF-8",
     "request": "http://www.wodedy.net/search.php@post->searchword=[$key]",
-    "metadata": {
+    "search": {
         "list": "function Main(html){return jsoups(html,'div.index-area > ul > li');}",
         "title": "function Main(text){return jsoup(text,'a@attr->title');}",
-        "author": "function Main(text){return jsoup(text,'p.other');}",
+        "introduce": "function Main(text){return jsoup(text,'p.other');}",
         "img": "function Main(text){return jsoup(text,'a > img@attr->data-original');}",
         "link": "function Main(text){return jsoup(text,'a@attr->href');}"
     },
     "detail": {
         "author": "function Main(html){return jsoup(html,'dl > dt:nth-child(3) > a');}",
-        "summary": "function Main(html){return jsoup(html,'div.mb > div > div');}",
+        "introduce": "function Main(html){return jsoup(html,'div.mb > div > div');}",
         "upDate": "function Main(html){return jsoup(html,'dl > dd:nth-child(6) > a');}",
-        "catalog_link": [],
         "tabs": {
             "list": "function Main(html){return jsoups(html,'div.playfrom > ul >li');}",
             "name": "function Main(text){return jsoup(text,'li');}"
         },
-        "catalog": {
+        "catalogs": {
             "list": "function Main(html){return jsoups(html,'#vlink_1');}",
             "chapter": {
                 "list": "function Main(html){return jsoups(html,'#vlink_1 > ul > li');}",

@@ -2,10 +2,10 @@
     "name": "史莱姆百度云搜索",
     "charset": "utf-8",
     "request": "http://www.slimego.cn/search.html?q=[$key]",
-    "metadata": {
+    "search": {
         "list": "function Main(html){return jsoups(html,'div.container > div > div');}",
         "title": "function Main(text){return jsoup(text,'span.link > a');}",
-        "author": "function Main(text){return jsoup(text,'span.upload');}",
+        "introduce": "function Main(text){return jsoup(text,'span.upload');}",
         "img": "",
         "link": "function Main(text){return jsoup(text,'span.link > a@attr->href');}"
     }

@@ -2,23 +2,22 @@
 	"name": "迅雷哥",
 	"charset": "gb2312",
 	"request": "https://m.4142.cc/search.asp@post->searchword=[$key]",
-	"metadata": {
+	"search": {
 		"list": "function Main(html){return jsoups(html,'div > ul > li');}",
 		"title": "function Main(text){return jsoup(text,'a@attr->title');}",
-		"author": "",
+		"introduce": "",
 		"img": "function Main(text){return jsoup(text,'a > img@attr->src');}",
 		"link": "function Main(text){return jsoup(text,'a@attr->href');}"
 	},
 	"detail": {
 		"author": "function Main(html){return jsoup(html,'div.intro > div:nth-child(4) > p:nth-child(2) > a');}",
-		"summary": "function Main(html){return jsoup(html,'div.description');}",
+		"introduce": "function Main(html){return jsoup(html,'div.description');}",
 		"upDate": "function Main(html){return jsoup(html,'p:nth-child(1) > font');}",
-		"catalog_link": [],
 		"tabs": {
 			"list": "function Main(html){var tabs = jsoups(html,'body > div > h5');var tabs2 = [];for(var i=1;i<tabs.length;i++){tabs2.push(tabs[i])};return tabs2;}",
 			"name": "function Main(text){return jsoup(text,'h5');}"
 		},
-		"catalog": {
+		"catalogs": {
 			"list": "function Main(html){return jsoups(html,'body > div > div.playlist');}",
 			"chapter": {
 				"list": "function Main(html){return jsoups(html,'div.playlist > ul > li');}",
