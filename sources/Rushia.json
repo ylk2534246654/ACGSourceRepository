@@ -6,7 +6,7 @@
     "list": "function Main(html){return jsoups(html,'div.archive > div');}",
     "title": "function Main(text){return jsoup(text,'span.title');}",
     "introduce": "function Main(text){return jsoup(text,'div.card-img-bili > div:nth-child(3)');}",
-    "img": "function Main(text){return jsoup(text,' div > a > img@attr->data-original');}",
+    "img": "function Main(text){return jsoup(text,' div > a > img@attr->data-url');}",
     "link": "function Main(text){return jsoup(text,'div.over > a@attr->href')}"
   },
   "detail": {
