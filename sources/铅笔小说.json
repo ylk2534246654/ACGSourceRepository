@@ -17,14 +17,14 @@
             "chapter": {
                 "list": "function Main(html){return jsoups(html,'#chapterList > li');}",
                 "name": "function Main(text){return jsoup(text,'a');}",
-                "link": "function Main(text){return jsoup(text,'a@attr->href')+'_2';}",
+                "link": "function Main(text){return jsoup(text,'a@attr->href').replace('.html','')+'_2.html';}",
                 "orderBy": 1,
                 "category": 4
             }
         }
     },
     "novel": {
-        "list": "function Main(html){var endid=strmiddle(html,'(2/',')');var obj= [];for(var i =1;i<=endid;i++){obj.push(getURL().replace('_2','')+'_'+i);};return obj;}",
+        "list": "function Main(html){var endid=strmiddle(html,'(2/',')');var obj= [];for(var i =1;i<=endid;i++){obj.push(getURL().replace('_2.html','')+'_'+i+'.html');};return obj;}",
         "link": "function Main(text){return text;}",
         "content": "function Main(html){return jsoup(html,'#TextContent');}",
         "mode": 1
