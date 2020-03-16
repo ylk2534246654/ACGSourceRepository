@@ -13,7 +13,6 @@
     "author": "",
     "introduce": "function Main(html){return jsoup(html,'div > div.media-body > dl');}",
     "upDate": "function Main(html){return jsoup(html,'div.media-body > h2 > small');}",
-    "catalog_link": [],
     "tabs": {
       "list": "function Main(html){return jsoups(html,'ul.nav.nav-tabs > li');}",
       "name": "function Main(text){return jsoup(text,'li');}"
