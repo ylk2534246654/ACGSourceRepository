@@ -5,7 +5,7 @@
   "search": {
     "list": "function Main(html){return jsoups(html,'#listvod > ul > li');}",
     "title": "function Main(text){return jsoup(text,'div > h2 > a');}",
-    "introduce": "function Main(text){return jsoup(text,'div:nth-child(7) > span.cell_imform_value');}",
+    "introduce": "function Main(text){return jsoup(text,'div > p');}",
     "img": "function Main(text){return jsoup(text,'a > img@attr->data-original');}",
     "link": "function Main(text){return jsoup(text,'div > h2 > a@attr->href');}"
   },
