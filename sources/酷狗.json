@@ -2,10 +2,10 @@
   "name": "酷狗",
   "charset": "utf-8",
   "request": "https://music.liuzhijin.cn/@post->input=[$key]&filter=name&type=kugou&page=[$page]@header->x-requested-with:XMLHttpRequest",
-  "metadata": {
+  "search": {
     "list": "function Main(html){return jsonPaths(html,'$..data[*]');}",
     "title": "function Main(text){return jsonPath(text,'$.title');}",
-    "author": "function Main(text){return jsonPath(text,'$.author');}",
+    "introduce": "function Main(text){return jsonPath(text,'$.author');}",
     "img": "function Main(text){return jsonPath(text,'$.pic');}",
     "link": "function Main(text){return jsonPath(text,'$.url');}"
   }
