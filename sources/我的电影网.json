@@ -18,9 +18,9 @@
             "name": "function Main(text){return jsoup(text,'li');}"
         },
         "catalogs": {
-            "list": "function Main(html){return jsoups(html,'#vlink_1');}",
+            "list": "function Main(html){return jsoups(html,'div.playlist');}",
             "chapter": {
-                "list": "function Main(html){return jsoups(html,'#vlink_1 > ul > li');}",
+                "list": "function Main(html){return jsoups(html,'div > ul > li');}",
                 "name": "function Main(text){return jsoup(text,'a');}",
                 "link": "function Main(text){return jsoup(text,'a@attr->href');}",
                 "orderBy": 1,
