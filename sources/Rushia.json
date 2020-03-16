@@ -1,0 +1,26 @@
+{
+  "name": "Rushia",
+  "charset": "utf-8",
+  "request": "https://rushia.info/search/[$key]",
+  "search": {
+    "list": "function Main(html){return jsoups(html,'div.archive > div');}",
+    "title": "function Main(text){return jsoup(text,'span.title');}",
+    "introduce": "function Main(text){return jsoup(text,'div.card-img-bili > div:nth-child(3)');}",
+    "img": "function Main(text){return jsoup(text,' div > a > img@attr->data-original');}",
+    "link": "function Main(text){return jsoup(text,'div.over > a@attr->href')}"
+  },
+  "detail": {
+    "author": "",
+    "introduce": "function Main(html){return jsoup(html,'div.column_introduction');}",
+    "upDate": "function Main(html){return jsoup(html,'div.fr.detail_info > p:nth-child(3)');}",
+    "catalogs": {
+      "chapter": {
+        "list": "function Main(html){return jsoups(html,'ul.clear > li');}",
+        "name": "function Main(text){return jsoup(text,'a');}",
+        "link": "function Main(text){return jsoup(text,'a@attr->href');}",
+        "orderBy": 1,
+        "category": 3
+      }
+    }
+  }
+}

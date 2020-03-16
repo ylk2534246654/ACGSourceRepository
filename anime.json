@@ -42,6 +42,12 @@
             "introduce": "http://www.bimibimi.tv",
             "checked": true,
             "category": 3
+        },
+        {
+            "name": "Rushia",
+            "introduce": "https://rushia.info/",
+            "checked": true,
+            "category": 3
         }
     ]
 }
