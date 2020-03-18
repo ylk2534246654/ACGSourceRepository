@@ -1,0 +1,31 @@
+{
+    "name": "jpm1234",
+    "charset": "UTF-8",
+    "request": "http://www.jpm1234.com/Search/Keyword/[$key]",
+    "search": {
+        "list": "function Main(html){return jsoups(html,'#contList > li');}",
+        "title": "function Main(text){return jsoup(text,'p.ell > a');}",
+        "introduce": "function Main(text){return jsoup(text,'span.tt');}",
+        "img": "function Main(text){return jsoup(text,'a > img@attr->src');}",
+        "link": "function Main(text){return jsoup(text,'p.ell > a@attr->href');}"
+    },
+    "detail": {
+        "author": "function Main(html){return jsoup(html,'div.sub_r > p:nth-child(2)');}",
+        "introduce": "function Main(html){return jsoup(html,'p.txtDesc').replace('介绍:','');}",
+        "upDate": "function Main(html){return jsoup(html,'span.date');}",
+        "catalogs": {
+            "chapter": {
+                "list": "function Main(html){return jsoups(html,'div#list > ul > li');}",
+                "name": "function Main(text){return jsoup(text,'a');}",
+                "link": "function Main(text){return jsoup(text,'a@attr->href');}",
+                "orderBy": 0,
+                "category": 2
+            }
+        }
+    },
+    "comic": {
+        "list": "function Main(html){return Base64.decode(strmiddle(html,'m_murl_e=\"','\"')).split('$qingtiandy$');}",
+        "link": "function Main(text){return pathURL(text).replace('m.ccshwy.com','www.ccshwy.com');}",
+        "mode": 1
+    }
+}
