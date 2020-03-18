@@ -24,8 +24,8 @@
         }
     },
     "comic": {
-        "list": "function Main(html){return Base64.decode(strmiddle(html,'m_murl_e=\"','\"')).split('$qingtiandy$');}",
-        "link": "function Main(text){return pathURL(text).replace('m.ccshwy.com','www.ccshwy.com');}",
+        "list": "function Main(html){return javaScript(strmiddle(html,'<script type=\"text/javascript\">','</script>'));}",
+        "link": "function Main(text){return pathURL2(text,'http://img4.jpm1234.com/uploads');}",
         "mode": 1
     }
 }
