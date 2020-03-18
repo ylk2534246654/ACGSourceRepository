@@ -10,12 +10,12 @@
         "link": "function Main(text){return jsoup(text,'p.ell > a@attr->href');}"
     },
     "detail": {
-        "author": "function Main(html){return jsoup(html,'div.sub_r > p:nth-child(2)');}",
-        "introduce": "function Main(html){return jsoup(html,'p.txtDesc').replace('介绍:','');}",
-        "upDate": "function Main(html){return jsoup(html,'span.date');}",
+        "author": "function Main(html){return jsoup(html,'ul.detail-list > li:nth-child(2) > span > a:nth-child(2)');}",
+        "introduce": "function Main(html){return jsoup(html,'#intro-all')",
+        "upDate": "function Main(html){return jsoup(html,'li:nth-child(1) > span:nth-child(3) > span');}",
         "catalogs": {
             "chapter": {
-                "list": "function Main(html){return jsoups(html,'div#list > ul > li');}",
+                "list": "function Main(html){return jsoups(html,'div.chapter-list > ul > li');}",
                 "name": "function Main(text){return jsoup(text,'a');}",
                 "link": "function Main(text){return jsoup(text,'a@attr->href');}",
                 "orderBy": 0,
