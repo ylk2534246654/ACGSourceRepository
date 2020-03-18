@@ -6,7 +6,7 @@
         "list": "function Main(html){return jsoups(html,'#contList > li');}",
         "title": "function Main(text){return jsoup(text,'p.ell > a');}",
         "introduce": "function Main(text){return jsoup(text,'span.tt');}",
-        "img": "function Main(text){return jsoup(text,'a > img@attr->src');}",
+        "img": "function Main(text){return jsoup(text,'a > img@attr->data-src');}",
         "link": "function Main(text){return jsoup(text,'p.ell > a@attr->href');}"
     },
     "detail": {
