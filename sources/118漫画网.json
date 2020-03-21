@@ -1,28 +1,28 @@
 {
+    "host": "m.ccshwy.com",
     "name": "118漫画网",
-    "introduce": "可以搜索一些国漫",
+    "introduction": "可以搜索一些国漫",
     "developer": "雨夏",
     "versionName": "1.0",
     "versionCode": 1,
-    "charset": "UTF-8",
     "dependencies": "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/js/base64.js",
-    "request": "http://m.ccshwy.com/statics/search.aspx?key=[$key]",
+    "request": "http://m.ccshwy.com/statics/search.aspx?key=[$key]@charset->UTF-8",
     "search": {
         "list": "function Main(html){return jsoups(html,'#listbody > li');}",
         "title": "function Main(text){return jsoup(text,'a.txtA');}",
-        "introduce": "function Main(text){return jsoup(text,'span.info');}",
-        "img": "function Main(text){return jsoup(text,'a.ImgA > img@attr->src');}",
-        "link": "function Main(text){return jsoup(text,'a.ImgA@attr->href');}"
+        "introduction": "function Main(text){return jsoup(text,'span.info');}",
+        "cover": "function Main(text){return jsoup(text,'a.ImgA > img@attr->src');}",
+        "url": "function Main(text){return jsoup(text,'a.ImgA@attr->href');}"
     },
     "detail": {
         "author": "function Main(html){return jsoup(html,'div.sub_r > p:nth-child(2)');}",
-        "introduce": "function Main(html){return jsoup(html,'p.txtDesc').replace('介绍:','');}",
+        "introduction": "function Main(html){return jsoup(html,'p.txtDesc').replace('介绍:','');}",
         "upDate": "function Main(html){return jsoup(html,'span.date');}",
         "catalogs": {
             "chapter": {
                 "list": "function Main(html){return jsoups(html,'div#list > ul > li');}",
                 "name": "function Main(text){return jsoup(text,'a');}",
-                "link": "function Main(text){return jsoup(text,'a@attr->href');}",
+                "url": "function Main(text){return jsoup(text,'a@attr->href');}",
                 "orderBy": 0,
                 "category": 2
             }
@@ -30,7 +30,7 @@
     },
     "comic": {
         "list": "function Main(html){return Base64.decode(strmiddle(html,'m_murl_e=\"','\"')).split('$qingtiandy$');}",
-        "link": "function Main(text){return pathURL(text).replace('m.ccshwy.com','www.ccshwy.com');}",
+        "url": "function Main(text){return pathURL(text).replace('m.ccshwy.com','www.ccshwy.com');}",
         "mode": 1
     }
 }
