@@ -1,7 +1,7 @@
 {
 	"name": "风车动漫",
 	"introduction": "可以搜索一些动漫",
-	"developer": "",
+	"developer": "雨夏",
 	"versionName": "1.0",
 	"versionCode": 1,
 	"request": "http://dm.dm530.net/search.asp@post->searchword=[$key]@charset->gb2312",
