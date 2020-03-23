@@ -1,23 +1,27 @@
 {
+    "host": "www.jpm1234.com",
     "name": "jpm1234",
-    "charset": "UTF-8",
-    "request": "http://www.jpm1234.com/Search/Keyword/[$key]",
+    "introduction": "可以搜索一些国漫",
+    "developer": "雨夏",
+    "versionName": "1.0",
+    "versionCode": 1,
+    "request": "http://www.jpm1234.com/Search/Keyword/[$key]@charset->UTF-8",
     "search": {
         "list": "function Main(html){return jsoups(html,'#contList > li');}",
         "title": "function Main(text){return jsoup(text,'p.ell > a');}",
-        "introduce": "function Main(text){return jsoup(text,'span.tt');}",
-        "img": "function Main(text){return jsoup(text,'a > img@attr->data-src');}",
-        "link": "function Main(text){return jsoup(text,'p.ell > a@attr->href');}"
+        "introduction": "function Main(text){return jsoup(text,'span.tt');}",
+        "cover": "function Main(text){return jsoup(text,'a > img@attr->data-src');}",
+        "url": "function Main(text){return jsoup(text,'p.ell > a@attr->href');}"
     },
     "detail": {
         "author": "function Main(html){return jsoup(html,'ul.detail-list > li:nth-child(2) > span > a:nth-child(2)');}",
-        "introduce": "function Main(html){return jsoup(html,'#intro-all');}",
+        "introduction": "function Main(html){return jsoup(html,'#intro-all');}",
         "upDate": "function Main(html){return jsoup(html,'li:nth-child(1) > span:nth-child(3) > span');}",
         "catalogs": {
             "chapter": {
                 "list": "function Main(html){return jsoups(html,'div.chapter-list > ul > li');}",
                 "name": "function Main(text){return jsoup(text,'a');}",
-                "link": "function Main(text){return jsoup(text,'a@attr->href');}",
+                "url": "function Main(text){return jsoup(text,'a@attr->href');}",
                 "orderBy": 0,
                 "category": 2
             }
@@ -25,7 +29,7 @@
     },
     "comic": {
         "list": "function Main(html){javaScript('var cInfo'+strmiddle(html,'var cInfo','</script>'));return cInfo.fs;}",
-        "link": "function Main(text){return 'http://img4.jpm1234.com/uploads/' + text;}",
+        "url": "function Main(text){return 'http://img4.jpm1234.com/uploads/' + text;}",
         "mode": 1
     }
 }
