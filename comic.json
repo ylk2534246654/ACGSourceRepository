@@ -1,59 +1,12 @@
-{
-	"type": "MyACG搜索源",
-	"name": "漫画类",
-	"introduce": "一些漫画搜索源。",
-	"sources": "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/",
-	"developer": "雨夏",
-	"versionName": "1.0",
-	"versionCode": 1,
-	"list": [
-		{
-			"name": "百年漫画",
-			"introduce": "https://m.bnmanhua.com",
-			"checked": true,
-			"category": 2
-		},
-		{
-			"name": "动漫之家",
-			"introduce": "https://www.dmzj.com",
-			"checked": true,
-			"category": 2
-		},
-		{
-			"name": "布卡漫画",
-			"introduce": "http://m.buka.cn",
-			"checked": true,
-			"category": 2
-		},
-		{
-			"name": "土豪漫画",
-			"introduce": "https://m.tohomh123.com",
-			"checked": true,
-			"category": 2
-		},
-		{
-			"name": "二次元动漫",
-			"introduce": "http://www.2animx.com",
-			"checked": true,
-			"category": 2
-		},
-		{
-			"name": "MangaNel",
-			"introduce": "https://manganelo.com",
-			"checked": true,
-			"category": 2
-		},
-		{
-			"name": "动漫狂",
-			"introduce": "https://www.cartoonmad.com",
-			"checked": true,
-			"category": 2
-		},
-		{
-			"name": "哔哩哔哩漫画",
-			"introduce": "http://m.ccshwy.com",
-			"checked": true,
-			"category": 2
-		}
-	]
-}
+[
+  "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/百年漫画.json",
+  "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/动漫之家.json",
+  "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/布卡漫画.json",
+  "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/土豪漫画.json",
+  "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/二次元动漫.json",
+  "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/MangaNel.json",
+  "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/动漫狂.json",
+  "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/哔哩哔哩漫画.json",
+  "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/jpm1234.json",
+  "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/118漫画网.json"
+]

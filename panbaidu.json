@@ -1,28 +1,5 @@
-{
-    "type": "MyACG搜索源",
-    "name": "百度云搜索",
-    "introduce": "能搜索百度云资源",
-    "sources": "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/",
-    "developer": "雨夏",
-    "versionName": "1.0",
-    "versionCode": 1,
-    "list": [
-        {
-            "name": "史莱姆百度云搜索",
-            "introduce": "http://www.slimego.cn",
-            "checked": true,
-            "category": 1
-        },{
-            "name": "如风搜",
-            "introduce": "http://www.rufengso.net",
-            "checked": true,
-            "category": 1
-        },
-        {
-            "name": "动漫西西",
-            "introduce": "http://www.dmxixi.com/",
-            "checked": true,
-            "category": 3
-        }
-    ]
-}
+[
+  "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/史莱姆百度云搜索.json",
+  "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/如风搜.json",
+  "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/动漫西西.json"
+]

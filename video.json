@@ -1,23 +1,4 @@
-{
-    "type": "MyACG搜索源",
-    "name": "视频类",
-    "introduce": "一些视频(电视剧,电影，动漫等)搜索源",
-    "sources": "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/",
-    "developer": "雨夏",
-    "versionName": "1.0",
-    "versionCode": 1,
-    "list": [
-        {
-            "name": "迅雷哥",
-            "introduce": "https://m.4142.cc",
-            "checked": true,
-            "category": 3
-        },
-        {
-            "name": "我的电影网",
-            "introduce": "http://www.wodedy.net",
-            "checked": true,
-            "category": 3
-        }
-    ]
-}
+[
+  "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/迅雷哥.json",
+  "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/我的电影网.json"
+]
