@@ -1,31 +1,34 @@
 {
     "name": "喵绅士",
-    "charset": "UTF-8",
-    "request": "https://m.c-upp.com/search/@post->show=title%2Ctitleen%2Ctags&keyboard=[$key]",
+    "introduction": "可以搜索一些漫画(警告:18x)",
+    "developer": "雨夏",
+    "versionName": "1.0",
+    "versionCode": 1,
+    "request": "https://m.c-upp.com/search/@post->show=title%2Ctitleen%2Ctags&keyboard=[$key]@charset->UTF-8",
     "search": {
         "list": "function Main(html){return jsoups(html,'div > ul');}",
         "title": "function Main(text){return jsoup(text,'h3');}",
-        "introduce": "function Main(text){return jsoup(text,'a > p');}",
-        "img": "function Main(text){return jsoup(text,'img@attr->src');}",
-        "link": "function Main(text){return jsoup(text,'a@attr->href');}"
+        "introduction": "function Main(text){return jsoup(text,'a > p');}",
+        "cover": "function Main(text){return jsoup(text,'img@attr->src');}",
+        "url": "function Main(text){return jsoup(text,'a@attr->href');}"
     },
     "detail": {
         "author": "",
-        "introduce": "",
+        "introduction": "",
         "upDate": "",
         "catalogs": {
             "chapter": {
                 "list": "function Main(html){return jsoups(html,'div > a:nth-child(9)');}",
                 "name": "function Main(text){return jsoup(text,'a');}",
-                "link": "function Main(text){return jsoup(text,'a@attr->href');}",
+                "url": "function Main(text){return jsoup(text,'a@attr->href');}",
                 "orderBy": 0,
                 "category": 2
             }
         }
     },
-    "comic":{
+    "comic": {
         "list": "function Main(html){return jsoups(html,'div > img');}",
-        "link": "function Main(text){return jsoup(text,'img@attr->data-original');}",
+        "url": "function Main(text){return jsoup(text,'img@attr->data-original');}",
         "mode": 2
     }
 }

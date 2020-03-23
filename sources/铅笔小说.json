@@ -1,23 +1,26 @@
 {
     "name": "铅笔小说",
-    "charset": "gbk",
-    "request": "https://www.x23qb.com/search.php@post->searchkey=[$key]&searchtype=all",
+    "introduction": "可以搜索一些轻小说",
+	"developer": "",
+	"versionName": "1.0",
+	"versionCode": 1,
+    "request": "https://www.x23qb.com/search.php@post->searchkey=[$key]&searchtype=all@charset->gbk",
     "search": {
         "list": "function Main(html){return jsoups(html,'#sitebox > dl');}",
         "title": "function Main(text){return jsoup(text,'dd > h3 > a');}",
-        "introduce": "function Main(text){return jsoup(text,'#nr > dd.book_des');}",
-        "img": "function Main(text){return jsoup(text,'dt > a > img@attr->_src');}",
-        "link": "function Main(text){return jsoup(text,'dd > h3 > a@attr->href');}"
+        "introduction": "function Main(text){return jsoup(text,'#nr > dd.book_des');}",
+        "cover": "function Main(text){return jsoup(text,'dt > a > img@attr->_src');}",
+        "url": "function Main(text){return jsoup(text,'dd > h3 > a@attr->href');}"
     },
     "detail": {
         "author": "function Main(html){return jsoup(html,'div.d_title > span');}",
-        "introduce": "function Main(html){return jsoup(html,'#bookintro');}",
+        "introduction": "function Main(html){return jsoup(html,'#bookintro');}",
         "upDate": "function Main(html){return jsoup(html,'#count > ul > li:nth-child(3) > span')+jsoup(html,'#uptime > span');}",
         "catalogs": {
             "chapter": {
                 "list": "function Main(html){return jsoups(html,'#chapterList > li');}",
                 "name": "function Main(text){return jsoup(text,'a');}",
-                "link": "function Main(text){return jsoup(text,'a@attr->href').replace('.html','')+'_2.html';}",
+                "url": "function Main(text){return jsoup(text,'a@attr->href').replace('.html','')+'_2.html';}",
                 "orderBy": 1,
                 "category": 4
             }
@@ -25,7 +28,7 @@
     },
     "novel": {
         "list": "function Main(html){var endid=strmiddle(html,'(2/',')');var obj= [];for(var i =1;i<=endid;i++){obj.push(getURL().replace('_2.html','')+'_'+i+'.html');};return obj;}",
-        "link": "function Main(text){return text;}",
+        "url": "function Main(text){return text;}",
         "content": "function Main(html){return jsoup(html,'#TextContent');}",
         "mode": 1
     }

@@ -1,19 +1,21 @@
 {
     "name": "哔咪哔咪",
-    "charset": "UTF-8",
-    "request": "http://www.bimibimi.tv/vod/search/@post->wd=[$key]",
+    "introduction": "可以搜索一些网盘资源",
+    "developer": "雨夏",
+    "versionName": "1.0",
+    "versionCode": 1,
+    "request": "http://www.bimibimi.tv/vod/search/@post->wd=[$key]@charset->UTF-8",
     "search": {
         "list": "function Main(html){return jsoups(html,'ul.tab-cont > li');}",
         "title": "function Main(text){return jsoup(text,'a@attr->title');}",
-        "introduce": "function Main(text){return jsoup(text,'span.mask');}",
-        "img": "function Main(text){return jsoup(text,'a > img@attr->data-original');}",
-        "link": "function Main(text){return jsoup(text,'a@attr->href');}"
+        "introduction": "function Main(text){return jsoup(text,'span.mask');}",
+        "cover": "function Main(text){return jsoup(text,'a > img@attr->data-original');}",
+        "url": "function Main(text){return jsoup(text,'a@attr->href');}"
     },
     "detail": {
         "author": "",
-        "introduce": "function Main(html){return jsoup(html,'div.vod-jianjie');}",
+        "introduction": "function Main(html){return jsoup(html,'div.vod-jianjie');}",
         "upDate": "function Main(html){return jsoup(html,'em.em_num');}",
-        "catalog_link": [],
         "tabs": {
             "list": "function Main(html){return jsoups(html,'div.js_bt');}",
             "name": "function Main(text){return jsoup(text,'span.p_smart');}"
@@ -23,7 +25,7 @@
             "chapter": {
                 "list": "function Main(html){return jsoups(html,'ul > a');}",
                 "name": "function Main(text){return jsoup(text,'a');}",
-                "link": "function Main(text){return jsoup(text,'a@attr->href');}",
+                "url": "function Main(text){return jsoup(text,'a@attr->href');}",
                 "orderBy": 1,
                 "category": 3
             }

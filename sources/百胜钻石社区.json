@@ -1,17 +1,20 @@
 {
 	"name": "百胜钻石社区",
-	"charset": "utf-8",
-	"request": "https://bszs14.cn/vodsearch/-------------/?wd=[$key]",
+	"introduction": "可以搜索一些视频(警告：18x)",
+	"developer": "",
+	"versionName": "1.0",
+	"versionCode": 1,
+	"request": "https://bszs14.cn/vodsearch/-------------/?wd=[$key]@charset->UTF-8",
 	"search": {
 		"list": "function Main(html){return jsoups(html,'ul > li.active');}",
 		"title": "function Main(text){return jsoup(text,'div.thumb > a@attr->title');}",
-		"introduce": "",
-		"img": "function Main(text){return jsoup(text,'div.thumb > a@attr->data-original');}",
-		"link": "function Main(text){return jsoup(text,'div.thumb > a@attr->href');}"
+		"introduction": "",
+		"cover": "function Main(text){return jsoup(text,'div.thumb > a@attr->data-original');}",
+		"url": "function Main(text){return jsoup(text,'div.thumb > a@attr->href');}"
 	},
 	"detail": {
 		"author": "function Main(html){return jsoup(html,'div.intro > div:nth-child(4) > p:nth-child(2) > a');}",
-		"introduce": "",
+		"introduction": "",
 		"upDate": "function Main(html){return jsoup(html,'p.data.hidden-sm');}",
 		"tabs": {
 			"list": "function Main(html){return jsoups(html,'div > div.stui-pannel-box.b.playlist.mb > div.stui-pannel_hd');}",
@@ -22,7 +25,7 @@
 			"chapter": {
 				"list": "function Main(html){return jsoups(html,'ul');}",
 				"name": "function Main(text){return jsoup(text,'ul > li > a');}",
-				"link": "function Main(text){return jsoup(text,'ul > li > a@attr->href');}",
+				"url": "function Main(text){return jsoup(text,'ul > li > a@attr->href');}",
 				"orderBy": 1,
 				"category": 3
 			}

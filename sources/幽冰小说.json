@@ -1,23 +1,26 @@
 {
     "name": "幽冰小说",
-    "charset": "gbk",
-    "request": "https://www.97ub.cc/modules/article/search.php?searchkey=[$key]@header->Referer=https://www.97ub.cc/modules/article/search.php",
+    "introduction": "可以搜索一些小说",
+    "developer": "雨夏",
+    "versionName": "1.0",
+    "versionCode": 1,
+    "request": "https://www.97ub.cc/modules/article/search.php?searchkey=[$key]@charset->gbk@header->Referer=https://www.97ub.cc/modules/article/search.php",
     "search": {
         "list": "function Main(html){return jsoups(html,'tbody > tr');}",
         "title": "function Main(text){return jsoup(text,'td:nth-child(1) > a');}",
-        "introduce": "function Main(text){return jsoup(text,'td.odd:nth-child(3)');}",
-        "img": "function Main(text){return 'http://r.m.97ub.cc/cover/aHR0cDovL2ltZzEuY2h1YW5nc2hpLnFxLmNvbS9jaHVhbmdzaGkvcDEvZGVmYXVsdC1jb3Zlci1sYXJnZS5wbmc=';}",
-        "link": "function Main(text){return jsoup(text,'td:nth-child(1) > a@attr->href');}"
+        "introduction": "function Main(text){return jsoup(text,'td.odd:nth-child(3)');}",
+        "cover": "function Main(text){return 'http://r.m.97ub.cc/cover/aHR0cDovL2ltZzEuY2h1YW5nc2hpLnFxLmNvbS9jaHVhbmdzaGkvcDEvZGVmYXVsdC1jb3Zlci1sYXJnZS5wbmc=';}",
+        "url": "function Main(text){return jsoup(text,'td:nth-child(1) > a@attr->href');}"
     },
     "detail": {
         "author": "function Main(html){return jsoup(html,'#info > p:nth-child(2)');}",
-        "introduce": "function Main(html){return jsoup(html,'#intro');}",
+        "introduction": "function Main(html){return jsoup(html,'#intro');}",
         "upDate": "function Main(html){return jsoup(html,'#info > p:nth-child(4)');}",
         "catalogs": {
             "chapter": {
                 "list": "function Main(html){return jsoups(html,'#list > dl > dd@start->9');}",
                 "name": "function Main(text){return jsoup(text,'a');}",
-                "link": "function Main(text){return jsoup(text,'a@attr->href');}",
+                "url": "function Main(text){return jsoup(text,'a@attr->href');}",
                 "orderBy": 1,
                 "category": 4
             }

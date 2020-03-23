@@ -1,17 +1,20 @@
 {
   "name": "土豪漫画",
-  "charset": "UTF-8",
-  "request": "https://m.tohomh123.com/action/Search?keyword=[$key]",
+  "introduction": "可以搜索一些漫画",
+  "developer": "雨夏",
+  "versionName": "1.0",
+  "versionCode": 1,
+  "request": "https://m.tohomh123.com/action/Search?keyword=[$key]@charset->UTF-8",
   "search": {
     "list": "function Main(html){return jsoups(html,'div > ul > li');}",
     "title": "function Main(text){return jsoup(text,'a@attr->title');}",
-    "introduce": "",
-    "img": "function Main(text){return jsoup(text,'img@attr->src');}",
-    "link": "function Main(text){return jsoup(text,'a@attr->href');}"
+    "introduction": "",
+    "cover": "function Main(text){return jsoup(text,'img@attr->src');}",
+    "url": "function Main(text){return jsoup(text,'a@attr->href');}"
   },
   "detail": {
     "author": "function Main(html){return jsoup(html,'div.info > p:nth-child(3)').replace('作者：','');}",
-    "introduce": "function Main(html){return jsoup(html,'div.detailContent > p');}",
+    "introduction": "function Main(html){return jsoup(html,'div.detailContent > p');}",
     "upDate": "function Main(html){return jsoup(html,'p.bottom.d-nowrap');}",
     "tabs": {
       "list": "function Main(html){return jsoups(html,'body > div.chapterList.d-border');}",
@@ -22,7 +25,7 @@
       "chapter": {
         "list": "function Main(html){return jsoups(html,'#chapterList_1 > ul > li');}",
         "name": "function Main(text){return jsoup(text,'a');}",
-        "link": "function Main(text){return jsoup(text,'a@attr->href');}",
+        "url": "function Main(text){return jsoup(text,'a@attr->href');}",
         "orderBy": 0,
         "category": 2
       }
@@ -30,7 +33,7 @@
   },
   "comic": {
     "list": "function Main(html){var file=strmiddle(html,'pl = \\'','/000');var startid=strmiddle(html,'/000','.jpg');var endid=strmiddle(html,'pcount=',';');var obj= [];for(var i =startid;i<=endid;i++){var num = i;var n=4;var a = (Array(n).join(0) + num).slice(-n);obj.push(file+'/'+a+'.jpg');};return obj;}",
-    "link": "function Main(text){return text;}",
+    "url": "function Main(text){return text;}",
     "mode": 2
   }
 }

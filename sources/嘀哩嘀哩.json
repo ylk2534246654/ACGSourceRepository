@@ -1,23 +1,26 @@
 {
   "name": "嘀哩嘀哩",
-  "charset": "utf-8",
-  "request": "http://www.dilidili.co/index.php/vod/search.html?wd=[$key]@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36",
+  "introduction": "可以搜索一些动漫",
+  "developer": "雨夏",
+  "versionName": "1.0",
+  "versionCode": 1,
+  "request": "http://www.dilidili.co/index.php/vod/search.html?wd=[$key]@charset->UTF-8@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36",
   "search": {
     "list": "function Main(html){return jsoups(html,'#contents > ul');}",
     "title": "function Main(text){return jsoup(text,'div.info > h2 > a');}",
-    "introduce": "function Main(text){return jsoup(text,'p.actor');}",
-    "img": "function Main(text){return jsoup(text,'li > a > img@attr->data-original');}",
-    "link": "function Main(text){return jsoup(text,'div.info > h2 > a@attr->href')}"
+    "introduction": "function Main(text){return jsoup(text,'p.actor');}",
+    "cover": "function Main(text){return jsoup(text,'li > a > img@attr->data-original');}",
+    "url": "function Main(text){return jsoup(text,'div.info > h2 > a@attr->href')}"
   },
   "detail": {
     "author": "",
-    "introduce": "function Main(html){return jsoup(html,'div.column_introduction');}",
+    "introduction": "function Main(html){return jsoup(html,'div.column_introduction');}",
     "upDate": "function Main(html){return jsoup(html,'div.fr.detail_info > p:nth-child(3)');}",
     "catalogs": {
       "chapter": {
         "list": "function Main(html){return jsoups(html,'ul.clear > li');}",
         "name": "function Main(text){return jsoup(text,'a');}",
-        "link": "function Main(text){return jsoup(text,'a@attr->href');}",
+        "url": "function Main(text){return jsoup(text,'a@attr->href');}",
         "orderBy": 1,
         "category": 3
       }

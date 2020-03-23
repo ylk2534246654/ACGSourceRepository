@@ -1,23 +1,26 @@
 {
   "name": "哔哩哔哩漫画",
-  "charset": "utf-8",
-  "request": "https://manga.bilibili.com/twirp/comic.v1.Comic/Search?device=pc&platform=web@post->{\"key_word\":\"[$key]\",\"page_num\":1,\"page_size\":9}@header->Content-Type:application/json;charset=UTF-8",
+  "introduction": "可以搜索一些漫画(不支持解析)",
+  "developer": "雨夏",
+  "versionName": "1.0",
+  "versionCode": 1,
+  "request": "https://manga.bilibili.com/twirp/comic.v1.Comic/Search?device=pc&platform=web@post->{\"key_word\":\"[$key]\",\"page_num\":1,\"page_size\":9}@charset->UTF-8@header->Content-Type:application/json;charset=UTF-8",
   "search": {
     "list": "function Main(html){return jsonPaths(html,'$..list[*]');}",
     "title": "function Main(text){return jsonPath(text,'$.org_title');}",
-    "introduce": "function Main(text){return jsonPath(text,'$.author_name');}",
-    "img": "function Main(text){return jsonPath(text,'$.vertical_cover');}",
-    "link": "function Main(text){return 'https://manga.bilibili.com/twirp/comic.v2.Comic/ComicDetail?device=pc&platform=web@post->'+'{\"comic_id\":'+jsonPath(text,'$.id')+'}@header->Content-Type:application/json;charset=UTF-8';}"
+    "introduction": "function Main(text){return jsonPath(text,'$.author_name');}",
+    "cover": "function Main(text){return jsonPath(text,'$.vertical_cover');}",
+    "url": "function Main(text){return 'https://manga.bilibili.com/twirp/comic.v2.Comic/ComicDetail?device=pc&platform=web@post->'+'{\"comic_id\":'+jsonPath(text,'$.id')+'}@header->Content-Type:application/json;charset=UTF-8';}"
   },
   "detail": {
     "author": "function Main(html){return jsonPath(html,'$..author_name');}",
-    "introduce": "function Main(html){return jsonPath(html,'$..evaluate');}",
+    "introduction": "function Main(html){return jsonPath(html,'$..evaluate');}",
     "upDate": "",
     "catalogs": {
       "chapter": {
         "list": "var url;function Main(html){url = 'https://manga.bilibili.com/m/mc'+jsonPath(html,'$..data.id');return jsonPaths(html,'$..ep_list[*]');}",
         "name": "function Main(text){return jsonPath(text,'$..short_title')+jsonPath(text,'$..title');}",
-        "link": "function Main(text){return url+'/'+jsonPath(text,'$..id');}",
+        "url": "function Main(text){return url+'/'+jsonPath(text,'$..id');}",
         "orderBy": 0,
         "category": 1
       }
@@ -25,7 +28,7 @@
   },
   "comic": {
     "list": "function Main(html){var file=strmiddle(html,'file=','001&');var endid=strmiddle(jsoup(html,'select > option:last-child'),'第','頁');var obj= [];for(var i =1;i<=endid;i++){ var num = i;var n=3;var a = (Array(n).join(0) + num).slice(-n);obj.push('https://web.cartoonmad.com/home75458'+file+a+'.jpg');};return obj;}",
-    "link": "function Main(text){return text;}",
+    "url": "function Main(text){return text;}",
     "mode": 2
   }
 }

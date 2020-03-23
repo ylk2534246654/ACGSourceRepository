@@ -1,17 +1,20 @@
 {
     "name": "奇奇动漫",
-    "charset": "UTF-8",
-    "request": "http://m.qiqidongman.com/vod-search-wd-[$key].html@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36",
+    "introduction": "可以搜索一些动漫",
+    "developer": "雨夏",
+    "versionName": "1.0",
+    "versionCode": 1,
+    "request": "http://m.qiqidongman.com/vod-search-wd-[$key].html@charset->UTF-8@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36",
     "search": {
         "list": "function Main(html){return jsoups(html,'#LIST > li');}",
         "title": "function Main(text){return jsoup(text,'i.tit');}",
-        "introduce": "",
-        "img": "function Main(text){return jsoup(text,'img@attr->data-src');}",
-        "link": "function Main(text){return jsoup(text,'a@attr->href');}"
+        "introduction": "",
+        "cover": "function Main(text){return jsoup(text,'img@attr->data-src');}",
+        "url": "function Main(text){return jsoup(text,'a@attr->href');}"
     },
     "detail": {
         "author": "",
-        "introduce": "function Main(html){return jsoup(html,'#descCont > p');}",
+        "introduction": "function Main(html){return jsoup(html,'#descCont > p');}",
         "upDate": "function Main(html){return jsoup(html,'#DESC-info > p:nth-child(2)');}",
         "tabs": {
             "list": "function Main(html){return jsoups(html,'#playList > div');}",
@@ -22,7 +25,7 @@
             "chapter": {
                 "list": "function Main(html){return jsoups(html,'div.tb.fix > a');}",
                 "name": "function Main(text){return jsoup(text,'a').replace(jsoup(text,'a > span'),'');}",
-                "link": "function Main(text){return jsoup(text,'a@attr->href');}",
+                "url": "function Main(text){return jsoup(text,'a@attr->href');}",
                 "orderBy": 1,
                 "category": 3
             }

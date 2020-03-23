@@ -1,23 +1,26 @@
 {
     "name": "奇漫屋",
-    "charset": "UTF-8",
-    "request": "http://qiman5.com/spotlight/?keyword=[$key]",
+    "introduction": "可以搜索一些动漫",
+    "developer": "雨夏",
+    "versionName": "1.0",
+    "versionCode": 1,
+    "request": "http://qiman5.com/spotlight/?keyword=[$key]@charset->UTF-8",
     "search": {
         "list": "function Main(html){return jsoups(html,'div.search-result > div');}",
         "title": "function Main(text){return jsoup(text,'p.comic-name > a');}",
-        "introduce": "function Main(text){return jsoup(text,'p.comic-tags')+'.'+jsoup(text,'p.comic-update-at');}",
-        "img": "function Main(text){return jsoup(text,'a.cover > img@attr->src');}",
-        "link": "function Main(text){return jsoup(text,'a.cover@attr->href');}"
+        "introduction": "function Main(text){return jsoup(text,'p.comic-tags')+'.'+jsoup(text,'p.comic-update-at');}",
+        "cover": "function Main(text){return jsoup(text,'a.cover > img@attr->src');}",
+        "url": "function Main(text){return jsoup(text,'a.cover@attr->href');}"
     },
     "detail": {
         "author": "function Main(html){return jsoup(html,'div.box-back2 > p:nth-child(2)');}",
-        "introduce": "function Main(html){return jsoup(html,'span.comic-intro');}",
+        "introduction": "function Main(html){return jsoup(html,'span.comic-intro');}",
         "upDate": "function Main(html){return jsoup(html,'div.box-back2 > p:nth-child(4)');}",
         "catalogs": {
             "chapter": {
                 "list": "function Main(html){return jsoups(html,'div.catalog-list > ul > li');}",
                 "name": "function Main(text){return jsoup(text,'a');}",
-                "link": "function Main(text){return jsoup(text,'a@attr->href');}",
+                "url": "function Main(text){return jsoup(text,'a@attr->href');}",
                 "orderBy": 0,
                 "category": 2
             }
@@ -25,7 +28,7 @@
     },
     "content": {
         "list": "function Main(html){javaScript('eval'+strmiddle(html,'eval','</script>'));return newImgs;}",
-        "link": "function Main(text){return text;}",
+        "url": "function Main(text){return text;}",
         "mode": 1
     }
 }

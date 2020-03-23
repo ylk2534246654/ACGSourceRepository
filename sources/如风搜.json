@@ -1,17 +1,20 @@
 {
     "name": "如风搜",
-    "charset": "utf-8",
-    "request": "http://www.rufengso.net/s/name/[$key]",
+    "introduction": "可以搜索一些网盘资源",
+    "developer": "雨夏",
+    "versionName": "1.0",
+    "versionCode": 1,
+    "request": "http://www.rufengso.net/s/name/[$key]@charset->UTF-8",
     "search": {
         "list": "function Main(html){return jsoups(html,'div.search-page > div.row');}",
         "title": "function Main(text){return jsoup(text,'h3 > a@attr->title');}",
-        "introduce": "function Main(text){return jsoup(text,'p > span.small');}",
-        "img": "function Main(text){return jsoup(text,'p > img@attr->src');}",
-        "link": "function Main(text){return jsoup(text,'h3 > a@attr->href');}"
+        "introduction": "function Main(text){return jsoup(text,'p > span.small');}",
+        "cover": "function Main(text){return jsoup(text,'p > img@attr->src');}",
+        "url": "function Main(text){return jsoup(text,'h3 > a@attr->href');}"
     },
-    "link": {
-        "link": "function Main(html){return jsoup(html,'a.dbutton2@attr->href');}",
-        "link2": "function Main(html){return jsoup(html,'div > a@attr->href');}",
+    "url": {
+        "url": "function Main(html){return jsoup(html,'a.dbutton2@attr->href');}",
+        "url2": "function Main(html){return jsoup(html,'div > a@attr->href');}",
         "mode": 1
     }
 }

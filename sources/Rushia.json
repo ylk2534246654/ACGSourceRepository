@@ -1,23 +1,26 @@
 {
   "name": "Rushia",
-  "charset": "utf-8",
-  "request": "https://rushia.info/search/[$key]",
+  "introduction": "可以搜索一些动漫",
+  "developer": "雨夏",
+  "versionName": "1.0",
+  "versionCode": 1,
+  "request": "https://rushia.info/search/[$key]@charset->UTF-8",
   "search": {
     "list": "function Main(html){return jsoups(html,'div.archive > div');}",
     "title": "function Main(text){return jsoup(text,'span.title');}",
-    "introduce": "function Main(text){return jsoup(text,'div.card-img-bili > div:nth-child(3)');}",
-    "img": "function Main(text){return jsoup(text,' div > a > img@attr->data-url');}",
-    "link": "function Main(text){return jsoup(text,'div.over > a@attr->href')}"
+    "introduction": "function Main(text){return jsoup(text,'div.card-img-bili > div:nth-child(3)');}",
+    "cover": "function Main(text){return jsoup(text,' div > a > img@attr->data-url');}",
+    "url": "function Main(text){return jsoup(text,'div.over > a@attr->href')}"
   },
   "detail": {
     "author": "",
-    "introduce": "function Main(html){return jsoup(html,'div.card-body > p');}",
+    "introduction": "function Main(html){return jsoup(html,'div.card-body > p');}",
     "upDate": "",
     "catalogs": {
       "chapter": {
         "list": "function Main(html){return jsoups(html,'div.button-list > a');}",
         "name": "function Main(text){return jsoup(text,'a');}",
-        "link": "function Main(text){return jsoup(text,'a@attr->href');}",
+        "url": "function Main(text){return jsoup(text,'a@attr->href');}",
         "orderBy": 1,
         "category": 3
       }

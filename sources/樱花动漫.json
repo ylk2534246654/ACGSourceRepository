@@ -1,17 +1,20 @@
 {
   "name": "樱花动漫",
-  "charset": "gb2312",
-  "request": "http://www.imomoe.in/search.asp@post->searchword=[$key]@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36",
+  "introduction": "可以搜索一些动漫",
+  "developer": "雨夏",
+  "versionName": "1.0",
+  "versionCode": 1,
+  "request": "http://www.imomoe.in/search.asp@post->searchword=[$key]@charset->gb2312@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36",
   "search": {
     "list": "function Main(html){return jsoups(html,'div.pics > ul > li');}",
     "title": "function Main(text){return jsoup(text,'a > img@attr->alt');}",
-    "introduce": "function Main(text){return jsoup(text,'span:nth-child(4)');}",
-    "img": "function Main(text){return jsoup(text,'a > img@attr->src');}",
-    "link": "function Main(text){return jsoup(text,'a@attr->href');}"
+    "introduction": "function Main(text){return jsoup(text,'span:nth-child(4)');}",
+    "cover": "function Main(text){return jsoup(text,'a > img@attr->src');}",
+    "url": "function Main(text){return jsoup(text,'a@attr->href');}"
   },
   "detail": {
     "author": "",
-    "introduce": "function Main(html){return jsoup(html,'div.alex > p:nth-child(1)');}",
+    "introduction": "function Main(html){return jsoup(html,'div.alex > p:nth-child(1)');}",
     "upDate": "function Main(html){return jsoup(html,'div.alex > span:nth-child(4)');}",
     "tabs": {
       "list": "function Main(html){return jsoups(html,'div.tabs');}",
@@ -22,7 +25,7 @@
       "chapter": {
         "list": "function Main(html){return jsoups(html,'ul > li');}",
         "name": "function Main(text){return jsoup(text,'a');}",
-        "link": "function Main(text){return jsoup(text,'a@attr->href');}",
+        "url": "function Main(text){return jsoup(text,'a@attr->href');}",
         "orderBy": 1,
         "category": 3
       }

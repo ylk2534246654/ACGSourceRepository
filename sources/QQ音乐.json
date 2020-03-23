@@ -1,12 +1,15 @@
 {
   "name": "QQ音乐",
-  "charset": "utf-8",
-  "request": "https://music.liuzhijin.cn/@post->input=[$key]&filter=name&type=qq&page=[$page]@header->x-requested-with:XMLHttpRequest",
+  "introduction": "可以搜索一些音乐",
+  "developer": "雨夏",
+  "versionName": "1.0",
+  "versionCode": 1,
+  "request": "https://music.liuzhijin.cn/@post->input=[$key]&filter=name&type=qq&page=[$page]@charset->UTF-8@header->x-requested-with:XMLHttpRequest",
   "search": {
     "list": "function Main(html){return jsonPaths(html,'$..data[*]');}",
     "title": "function Main(text){return jsonPath(text,'$.title');}",
-    "introduce": "function Main(text){return jsonPath(text,'$.author');}",
-    "img": "function Main(text){return jsonPath(text,'$.pic');}",
-    "link": "function Main(text){return jsonPath(text,'$.url');}"
+    "introduction": "function Main(text){return jsonPath(text,'$.author');}",
+    "cover": "function Main(text){return jsonPath(text,'$.pic');}",
+    "url": "function Main(text){return jsonPath(text,'$.url');}"
   }
 }

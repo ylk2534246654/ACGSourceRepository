@@ -1,23 +1,26 @@
 {
     "name": "动漫之家",
-    "charset": "UTF-8",
-    "request": "https://m.dmzj.com/search/[$key].html",
+    "introduction": "可以搜索一些漫画",
+    "developer": "雨夏",
+    "versionName": "1.0",
+    "versionCode": 1,
+    "request": "https://m.dmzj.com/search/[$key].html@charset->UTF-8",
     "search": {
         "list": "function Main(html){return jsonPaths(strmiddle(html,'serchArry=','</script>'),'$.*');}",
         "title": "function Main(text){return jsonPath(text,'$.name');}",
-        "introduce": "function Main(text){return jsonPath(text,'$.authors');}",
-        "img": "function Main(text){return 'https://images.dmzj.com/'+jsonPath(text,'$.cover');}",
-        "link": "function Main(text){return 'https://m.dmzj.com/info/'+jsonPath(text,'$.comic_py')+'.html';}"
+        "introduction": "function Main(text){return jsonPath(text,'$.authors');}",
+        "cover": "function Main(text){return 'https://images.dmzj.com/'+jsonPath(text,'$.cover');}",
+        "url": "function Main(text){return 'https://m.dmzj.com/info/'+jsonPath(text,'$.comic_py')+'.html';}"
     },
     "detail": {
         "author": "function Main(html){return jsoup(html,'p.txtItme:nth-child(1)');}",
-        "introduce": "function Main(html){return jsoup(html,'p.txtDesc.autoHeight').replace('介绍:','');}",
+        "introduction": "function Main(html){return jsoup(html,'p.txtDesc.autoHeight').replace('介绍:','');}",
         "upDate": "function Main(html){return jsoup(html,'p:nth-child(3) > a:nth-child(4)')+'-'+jsoup(html,'p:nth-child(4) > span.date');}",
         "catalogs": {
             "chapter": {
                 "list": "function Main(html){return jsonPaths(strmiddle(html,'initIntroData([',']);'),'$..data[*]');}",
                 "name": "function Main(text){return jsonPath(text,'$.chapter_name');}",
-                "link": "function Main(text){return 'https://m.dmzj.com/view/'+jsonPath(text,'$.comic_id')+'/'+jsonPath(text,'$.id')+'.html';}",
+                "url": "function Main(text){return 'https://m.dmzj.com/view/'+jsonPath(text,'$.comic_id')+'/'+jsonPath(text,'$.id')+'.html';}",
                 "orderBy": 0,
                 "category": 2
             }

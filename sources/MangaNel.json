@@ -1,23 +1,26 @@
 {
   "name": "MangaNel",
-  "charset": "UTF-8",
-  "request": "https://manganelo.com/search/[$key]",
+  "introduction": "可以搜索一些外国漫画",
+  "developer": "雨夏",
+  "versionName": "1.0",
+  "versionCode": 1,
+  "request": "https://manganelo.com/search/[$key]@charset->UTF-8",
   "search": {
     "list": "function Main(html){return jsoups(html,'div.panel-search-story > div');}",
     "title": "function Main(text){return jsoup(text,'a > img@attr->alt');}",
-    "introduce": "function Main(text){return jsoup(text,'span.item-author@attr->title');}",
-    "img": "function Main(text){return jsoup(text,'a > img@attr->src');}",
-    "link": "function Main(text){return jsoup(text,'a@attr->href');}"
+    "introduction": "function Main(text){return jsoup(text,'span.item-author@attr->title');}",
+    "cover": "function Main(text){return jsoup(text,'a > img@attr->src');}",
+    "url": "function Main(text){return jsoup(text,'a@attr->href');}"
   },
   "detail": {
     "author": "function Main(html){return jsoup(html,'tr:nth-child(2) > td.table-value > a');}",
-    "introduce": "function Main(html){return jsoup(html,'#panel-story-info-description');}",
+    "introduction": "function Main(html){return jsoup(html,'#panel-story-info-description');}",
     "upDate": "function Main(html){return jsoup(html,'tr:nth-child(3) > td.table-value')+' · '+jsoup(html,'span.stre-value');}",
     "catalogs": {
       "chapter": {
         "list": "function Main(html){return jsoups(html,'div.panel-story-chapter-list > ul.row-content-chapter > li');}",
         "name": "function Main(text){return jsoup(text,'a');}",
-        "link": "function Main(text){return jsoup(text,'a@attr->href');}",
+        "url": "function Main(text){return jsoup(text,'a@attr->href');}",
         "orderBy": 0,
         "category": 2
       }
@@ -25,7 +28,7 @@
   },
   "comic": {
     "list": "function Main(html){return jsoups(html,'div > img');}",
-    "link": "function Main(text){return jsoup(text,'img@attr->src');}",
+    "url": "function Main(text){return jsoup(text,'img@attr->src');}",
     "mode": 1
   }
 }

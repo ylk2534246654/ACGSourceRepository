@@ -1,17 +1,20 @@
 {
   "name": "妮可动漫",
-  "charset": "UTF-8",
-  "request": "http://www.nicotv.club/video/search/[$key].html",
+  "introduction": "可以搜索一些动漫",
+  "developer": "雨夏",
+  "versionName": "1.0",
+  "versionCode": 1,
+  "request": "http://www.nicotv.club/video/search/[$key].html@charset->UTF-8",
   "search": {
     "list": "function Main(html){return jsoups(html,'div.container > ul > li');}",
     "title": "function Main(text){return jsoup(text,'h2 > a');}",
-    "introduce": "function Main(text){return jsoup(text,'h4');}",
-    "img": "function Main(text){return jsoup(text,'p.image > a > img@attr->data-original');}",
-    "link": "function Main(text){return jsoup(text,'h2 > a@attr->href');}"
+    "introduction": "function Main(text){return jsoup(text,'h4');}",
+    "cover": "function Main(text){return jsoup(text,'p.image > a > img@attr->data-original');}",
+    "url": "function Main(text){return jsoup(text,'h2 > a@attr->href');}"
   },
   "detail": {
     "author": "",
-    "introduce": "function Main(html){return jsoup(html,'div > div.media-body > dl');}",
+    "introduction": "function Main(html){return jsoup(html,'div > div.media-body > dl');}",
     "upDate": "function Main(html){return jsoup(html,'div.media-body > h2 > small');}",
     "tabs": {
       "list": "function Main(html){return jsoups(html,'ul.nav.nav-tabs > li');}",
@@ -22,7 +25,7 @@
       "chapter": {
         "list": "function Main(html){return jsoups(html,'ul > li');}",
         "name": "function Main(text){return jsoup(text,'a');}",
-        "link": "function Main(text){return jsoup(text,'a@attr->href');}",
+        "url": "function Main(text){return jsoup(text,'a@attr->href');}",
         "orderBy": 1,
         "category": 3
       }

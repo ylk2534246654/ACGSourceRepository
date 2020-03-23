@@ -1,12 +1,15 @@
 {
   "name": "动漫西西",
-  "charset": "UTF-8",
-  "request": "http://www.dmxixi.com/plus/search.php?kwtype=0&q=[$key]",
+  "introduction": "可以搜索一些网盘资源",
+  "developer": "雨夏",
+  "versionName": "1.0",
+  "versionCode": 1,
+  "request": "http://www.dmxixi.com/plus/search.php?kwtype=0&q=[$key]@charset->UTF-8",
   "search": {
     "list": "function Main(html){return jsoups(html,'#listvod > ul > li');}",
     "title": "function Main(text){return jsoup(text,'div > h2 > a');}",
-    "introduce": "function Main(text){return jsoup(text,'div > p');}",
-    "img": "function Main(text){return jsoup(text,'a > img@attr->data-original');}",
-    "link": "function Main(text){return jsoup(text,'div > h2 > a@attr->href');}"
+    "introduction": "function Main(text){return jsoup(text,'div > p');}",
+    "cover": "function Main(text){return jsoup(text,'a > img@attr->data-original');}",
+    "url": "function Main(text){return jsoup(text,'div > h2 > a@attr->href');}"
   }
 }

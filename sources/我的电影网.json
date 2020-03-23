@@ -1,17 +1,20 @@
 {
     "name": "我的电影网",
-    "charset": "UTF-8",
-    "request": "http://www.wodedy.net/search.php@post->searchword=[$key]",
+    "introduction": "可以搜索一些电影，动漫剧场版",
+    "developer": "雨夏",
+    "versionName": "1.0",
+    "versionCode": 1,
+    "request": "http://www.wodedy.net/search.php@post->searchword=[$key]@charset->UTF-8",
     "search": {
         "list": "function Main(html){return jsoups(html,'div.index-area > ul > li');}",
         "title": "function Main(text){return jsoup(text,'a@attr->title');}",
-        "introduce": "function Main(text){return jsoup(text,'p.other');}",
-        "img": "function Main(text){return jsoup(text,'a > img@attr->data-original');}",
-        "link": "function Main(text){return jsoup(text,'a@attr->href');}"
+        "introduction": "function Main(text){return jsoup(text,'p.other');}",
+        "cover": "function Main(text){return jsoup(text,'a > img@attr->data-original');}",
+        "url": "function Main(text){return jsoup(text,'a@attr->href');}"
     },
     "detail": {
         "author": "function Main(html){return jsoup(html,'dl > dt:nth-child(3) > a');}",
-        "introduce": "function Main(html){return jsoup(html,'div.mb > div > div');}",
+        "introduction": "function Main(html){return jsoup(html,'div.mb > div > div');}",
         "upDate": "function Main(html){return jsoup(html,'dl > dd:nth-child(6) > a');}",
         "tabs": {
             "list": "function Main(html){return jsoups(html,'div.playfrom > ul >li');}",
@@ -22,7 +25,7 @@
             "chapter": {
                 "list": "function Main(html){return jsoups(html,'div > ul > li');}",
                 "name": "function Main(text){return jsoup(text,'a');}",
-                "link": "function Main(text){return jsoup(text,'a@attr->href');}",
+                "url": "function Main(text){return jsoup(text,'a@attr->href');}",
                 "orderBy": 1,
                 "category": 3
             }

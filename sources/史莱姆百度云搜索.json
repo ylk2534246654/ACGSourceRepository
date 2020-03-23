@@ -1,12 +1,15 @@
 {
     "name": "史莱姆百度云搜索",
-    "charset": "utf-8",
-    "request": "http://www.slimego.cn/search.html?q=[$key]",
+    "introduction": "可以搜索一些网盘资源",
+    "developer": "雨夏",
+    "versionName": "1.0",
+    "versionCode": 1,
+    "request": "http://www.slimego.cn/search.html?q=[$key]@charset->UTF-8",
     "search": {
         "list": "function Main(html){return jsoups(html,'div.container > div > div');}",
         "title": "function Main(text){return jsoup(text,'span.link > a');}",
-        "introduce": "function Main(text){return jsoup(text,'span.upload');}",
-        "img": "",
-        "link": "function Main(text){return jsoup(text,'span.link > a@attr->href');}"
+        "introduction": "function Main(text){return jsoup(text,'span.upload');}",
+        "cover": "",
+        "url": "function Main(text){return jsoup(text,'span.link > a@attr->href');}"
     }
 }
