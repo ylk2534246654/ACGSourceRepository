@@ -1,17 +1,21 @@
 {
+  "host": "www.agefans.tv",
   "name": "AGE动漫",
-  "charset": "UTF-8",
+  "introduction": "可以搜索一些动漫",
+  "developer": "雨夏",
+  "versionName": "1.0",
+  "versionCode": 1,
   "request": "https://www.agefans.tv/search?&query=[$key]&page=[$page]",
   "search": {
     "list": "function Main(html){return jsoups(html,'div[class=blockcontent1] > div');}",
     "title": "function Main(text){return jsoup(text,'a[class=cell_poster] > img@attr->alt');}",
-    "introduce": "function Main(text){return jsoup(text,'div:nth-child(7) > span.cell_imform_value');}",
-    "img": "function Main(text){return jsoup(text,'a[class=cell_poster] > img@attr->src');}",
-    "link": "function Main(text){return jsoup(text,'a[class=cell_poster]@attr->href');}"
+    "introduction": "function Main(text){return jsoup(text,'div:nth-child(7) > span.cell_imform_value');}",
+    "cover": "function Main(text){return jsoup(text,'a[class=cell_poster] > img@attr->src');}",
+    "url": "function Main(text){return jsoup(text,'a[class=cell_poster]@attr->href');}"
   },
   "detail": {
     "author": "function Main(html){return jsoup(html,'li:nth-child(5) > span.detail_imform_value');}",
-    "introduce": "function Main(html){return jsoup(html,'div.detail_imform_desc_pre > p');}",
+    "introduction": "function Main(html){return jsoup(html,'div.detail_imform_desc_pre > p');}",
     "upDate": "function Main(html){return jsoup(html,'li:nth-child(8) > span.detail_imform_value');}",
     "tabs": {
       "list": "function Main(html){return jsoups(html,'#menu0 > li');}",
@@ -22,7 +26,7 @@
       "chapter": {
         "list": "function Main(html){return jsoups(html,'ul > li');}",
         "name": "function Main(text){return jsoup(text,'a');}",
-        "link": "function Main(text){return jsoup(text,'a@attr->href');}",
+        "url": "function Main(text){return jsoup(text,'a@attr->href');}",
         "orderBy": 1,
         "category": 3
       }

@@ -8,12 +8,6 @@
     "versionCode": 1,
     "list": [
         {
-            "name": "AGE动漫",
-            "introduce": "https://www.agefans.tv",
-            "checked": true,
-            "category": 3
-        },
-        {
             "name": "风车动漫",
             "introduce": "http://dm.dm530.net",
             "checked": true,
