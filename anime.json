@@ -1,41 +1,9 @@
-{
-    "type": "MyACG搜索源",
-    "name": "动漫类",
-    "introduce": "一些动漫搜索源",
-    "sources": "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/",
-    "developer": "雨夏",
-    "versionName": "1.0",
-    "versionCode": 1,
-    "list": [
-        {
-            "name": "风车动漫",
-            "introduce": "http://dm.dm530.net",
-            "checked": true,
-            "category": 3
-        },
-        {
-            "name": "奇奇动漫",
-            "introduce": "http://m.qiqidongman.com",
-            "checked": true,
-            "category": 3
-        },
-        {
-            "name": "妮可动漫",
-            "introduce": "http://www.nicotv.me",
-            "checked": true,
-            "category": 3
-        },
-        {
-            "name": "哔咪哔咪",
-            "introduce": "http://www.bimibimi.tv",
-            "checked": true,
-            "category": 3
-        },
-        {
-            "name": "Rushia",
-            "introduce": "https://rushia.info/",
-            "checked": true,
-            "category": 3
-        }
-    ]
-}
+[
+    "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/AGE动漫.json",
+    "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/奇奇动漫.json",
+    "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/乐天动漫.json",
+    "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/妮可动漫.json",
+    "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/风车动漫.json",
+    "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/哔咪哔咪.json",
+    "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/Rushia.json"
+]
