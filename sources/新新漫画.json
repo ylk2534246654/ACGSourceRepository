@@ -14,7 +14,7 @@
   },
   "detail": {
     "author": "function Main(html){return jsoup(html,'div.ar_list_coc > dl > dd > ul > li:nth-child(2) > a');}",
-    "introduction": "function Main(html){return jsoup(html,'div.tbox_js');}",
+    "introduction": "function Main(html){return jsoup(html,'#det');}",
     "upDate": "function Main(html){return jsoup(html,'div.ar_list_coc > dl > dd > ul > li:nth-child(3) > a')+'·'+jsoup(html,'div.ar_list_coc > dl > dd > ul > li:nth-child(5)');}",
     "catalogs": {
       "chapter": {
