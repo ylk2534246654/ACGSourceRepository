@@ -18,7 +18,7 @@
     "upDate": "function Main(html){return jsoup(html,'div.ar_list_coc > dl > dd > ul > li:nth-child(3) > a')+'·'+jsoup(html,'div.ar_list_coc > dl > dd > ul > li:nth-child(5)');}",
     "catalogs": {
       "chapter": {
-        "list": "function Main(html){return jsoups(html,'#coclist1 > li');}",
+        "list": "function Main(html){return jsoups(html,'div.ar_list_coc > ul > li');}",
         "name": "function Main(text){return jsoup(text,'a');}",
         "url": "function Main(text){return jsoup(text,'a@attr->href');}",
         "orderBy": 1,
