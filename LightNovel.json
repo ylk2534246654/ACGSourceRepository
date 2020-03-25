@@ -1,22 +1,4 @@
-{
-    "type": "MyACG搜索源",
-    "name": "轻小说类",
-    "introduce": "一些轻小说搜索源",
-    "sources": "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/",
-    "developer": "雨夏",
-    "versionName": "1.0",
-    "versionCode": 1,
-    "list": [
-        {
-            "name": "神凑小说网",
-            "introduce": "http://www.shencou.com",
-            "checked": true,
-            "category": 2
-        },{
-            "name": "铅笔小说",
-            "introduce": "https://www.x23qb.com/",
-            "checked": true,
-            "category": 2
-        }
-    ]
-}
+[
+  "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/神凑小说网.json",
+  "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/sources/铅笔小说.json"
+]
