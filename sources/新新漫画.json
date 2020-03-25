@@ -27,7 +27,7 @@
     }
   },
   "comic": {
-    "list": "function Main(html){javaScript(strmiddle(html,'<script type=\"text/javascript\">','</script>'));var msg2 = msg.split('|');var arr = [];for (var i = 0 ; i<msg2.length; i++){arr.push('https://picsh.77dm.top/h'+img_s+'/'+msg2[i]+'.webp');};return arr;};",
+    "list": "function Main(html){javaScript(strmiddle(html,'<script type=\"text/javascript\">','</script>'));var msg2 = msg.split('|');var arr = [];for (var i = 0 ; i<msg2.length; i++){arr.push('https://a16c.gdbyhtl.net:64443/h'+img_s+'/'+msg2[i]+'.webp');};return arr;};",
     "url": "function Main(text){return text;}",
     "mode": 2
   }
