@@ -1,7 +1,7 @@
 {
     "name": "神凑小说网",
     "introduction": "可以搜索一些轻小说",
-	"developer": "",
+	"developer": "雨夏",
 	"versionName": "1.0",
 	"versionCode": 1,
     "request": "http://m.shencou.com/waps.php@post->searchtype=articlename selected&searchkey=[$key]&t_btnsearch=搜索@charset->gbk",

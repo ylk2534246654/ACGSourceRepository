@@ -1,7 +1,7 @@
 {
     "name": "铅笔小说",
     "introduction": "可以搜索一些轻小说",
-	"developer": "",
+	"developer": "雨夏",
 	"versionName": "1.0",
 	"versionCode": 1,
     "request": "https://www.x23qb.com/search.php@post->searchkey=[$key]&searchtype=all@charset->gbk",
