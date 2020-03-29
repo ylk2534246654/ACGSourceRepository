@@ -28,7 +28,7 @@
     },
     "comic": {
         "list": "function Main(html){javaScript('var cInfo'+strmiddle(html,'var cInfo','</script>'));return cInfo.fs;}",
-        "url": "function Main(text){return 'http://img4.jpm1234.com/uploads/' + text;}",
+        "url": "function Main(text){return 'http://img3.jpm1234.com/uploads/' + text;}",
         "mode": 1
     }
 }
