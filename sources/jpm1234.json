@@ -27,7 +27,7 @@
         }
     },
     "comic": {
-        "list": "function Main(html){javaScript('var cInfo'+strmiddle(html,'var cInfo','</script>'));var host = 'img4.jpm1234.com/uploads';if(html.indexOf('configsa')!=-1){host = 'img2.jpm1234.com/uploads';};if(html.indexOf('configsb')!=-1){host = 'img3.jpm1234.com/uploads';};return host+cInfo.fs;}",
+        "list": "function Main(html){javaScript('var cInfo'+strmiddle(html,'var cInfo','</script>'));var host = 'img4.jpm1234.com/uploads';if(html.indexOf('configsa')!=-1){host = 'img2.jpm1234.com/uploads';};if(html.indexOf('configsb')!=-1){host = 'img3.jpm1234.com/uploads';};return cInfo.fs;}",
         "url": "function Main(text){return text;}",
         "mode": 1
     }
