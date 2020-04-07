@@ -13,6 +13,32 @@
         "cover": "function Main(text){return jsoup(text,'a.ImgA > img@attr->src');}",
         "url": "function Main(text){return jsoup(text,'a.ImgA@attr->href');}"
     },
+    "find": {
+        "request": [
+            {
+                "name": "更新",
+                "url": "http://m.ccshwy.com/new/",
+            },
+            {
+                "name": "排行",
+                "url": "http://m.ccshwy.com/paihang/"
+            }
+        ],
+        "list": "function Main(html){return jsoups(html,'div.UpdateList > div');}",
+        "title": "function Main(text){return jsoup(text,'div.itemTxt > a');}",
+        "introduction": "function Main(text){return jsoup(text,'span.date');}",
+        "cover": "function Main(text){return jsoup(text,'div.itemImg > a > img@attr->src');}",
+        "url": "function Main(text){return jsoup(text,'div.itemTxt > a@attr->href');}"
+    },
+    "schedule":{
+        "request": "http://m.ccshwy.com/statics/search.aspx?key=[$key]@charset->UTF-8",
+        "tabs": "function Main(html){return jsoups(html,'result');}",
+        "list": "function Main(html){return jsoups(html,'result');}",
+        "title": "function Main(text){return jsoup(text,'a.txtA');}",
+        "introduction": "function Main(text){return jsoup(text,'span.info');}",
+        "cover": "function Main(text){return jsoup(text,'a.ImgA > img@attr->src');}",
+        "url": "function Main(text){return jsoup(text,'a.ImgA@attr->href');}"
+    },
     "detail": {
         "author": "function Main(html){return jsoup(html,'div.sub_r > p:nth-child(2)');}",
         "introduction": "function Main(html){return jsoup(html,'p.txtDesc').replace('介绍:','');}",
@@ -31,5 +57,5 @@
         "list": "function Main(html){return Base64.decode(strmiddle(html,'m_murl_e=\"','\"')).split('$qingtiandy$');}",
         "url": "function Main(text){return pathURL(text).replace('m.ccshwy.com','www.ccshwy.com');}",
         "mode": 1
-    }
+    },
 }

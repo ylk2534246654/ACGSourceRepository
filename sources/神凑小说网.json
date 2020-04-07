@@ -16,7 +16,7 @@
         "author": "function Main(html){return jsoup(html,'div.block_txt2 > p:nth-child(4) > a');}",
         "introduction": "function Main(html){return jsoup(html,'div.intro_info:nth-child(9)');}",
         "upDate": "function Main(html){return jsoup(html,'div.block_txt2 > p:nth-child(6)')+jsoup(html,'div.block_txt2 > p:nth-child(7)');}",
-        "catalog_link": "function Main(html){return jsoup(html,'span.margin_right > a@attr->href');}",
+        "catalog_url": "function Main(html){return jsoup(html,'span.margin_right > a@attr->href');}",
         "catalogs": {
             "chapter": {
                 "list": "function Main(html){return jsoups(html,'ul.chapter > li');}",
