@@ -32,7 +32,7 @@
     }
   },
   "comic": {
-    "list": "function Main(html){var file=strmiddle(html,'pl = \\'','/000');var startid=strmiddle(html,'/000','.jpg');var endid=strmiddle(html,'pcount=',';');var obj= [];for(var i =startid;i<=endid+startid-1.0;i++){var num = i;var n=4;var a = (Array(n).join(0) + num).slice(-n);obj.push(file+'/'+a+'.jpg');};return obj;}",
+    "list": "function Main(html){var file=strmiddle(html,'pl = \\'','/000');var startid=strmiddle(html,'/000','.jpg');var endid=strmiddle(html,'pcount=',';');var i2 = 1;var obj= [];for(var i =startid;i<=endid+startid-i2;i++){var num = i;var n=4;var a = (Array(n).join(0) + num).slice(-n);obj.push(file+'/'+a+'.jpg');};return obj;}",
     "url": "function Main(text){return text;}",
     "mode": 2
   }
