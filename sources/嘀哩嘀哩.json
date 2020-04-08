@@ -25,7 +25,7 @@
       "chapter": {
         "list": "function Main(html){return jsoups(html,'li.xx-episode');}",
         "name": "function Main(text){return jsoup(text,'a');}",
-        "url": "function Main(text){return jsoup(text,'a@attr->href');}",
+        "url": "function Main(text){return jsoup(text,getURL() + 'a@attr->href');}",
         "orderBy": 1,
         "category": 3
       }
