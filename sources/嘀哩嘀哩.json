@@ -17,7 +17,7 @@
     "introduction": "function Main(html){return jsoup(html,'div.column_introduction');}",
     "upDate": "function Main(html){return jsoup(html,'div.fr.detail_info > p:nth-child(3)');}",
     "tabs": {
-      "list": "function Main(html){return jsoups(html,'ul.nav > li > a:gt(0)');}",
+      "list": "function Main(html){return jsoups(html,'ul.nav > li > a:gt(1)');}",
       "name": "function Main(text){return jsoup(text,'a');}"
     },
     "catalogs": {
