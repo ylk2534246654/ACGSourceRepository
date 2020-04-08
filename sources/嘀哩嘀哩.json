@@ -4,13 +4,13 @@
   "developer": "雨夏",
   "versionName": "1.0",
   "versionCode": 1,
-  "request": "http://www.dilidili.co/index.php/vod/search.html?wd=[$key]@charset->UTF-8@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36",
+  "request": "http://dilidili.online/search?q=[$key]@charset->UTF-8",
   "search": {
-    "list": "function Main(html){return jsoups(html,'#contents > ul');}",
-    "title": "function Main(text){return jsoup(text,'div.info > h2 > a');}",
-    "introduction": "function Main(text){return jsoup(text,'p.actor');}",
-    "cover": "function Main(text){return jsoup(text,'li > a > img@attr->data-original');}",
-    "url": "function Main(text){return jsoup(text,'div.info > h2 > a@attr->href')}"
+    "list": "function Main(html){return jsoups(html,'#search_list > li');}",
+    "title": "function Main(text){return jsoup(text,'div > div > a');}",
+    "introduction": "function Main(text){return jsoup(text,'div > div > div');}",
+    "cover": "function Main(text){return jsoup(text,'div > img@attr->data-original');}",
+    "url": "function Main(text){return jsoup(text,'div > div > a@attr->href')}"
   },
   "detail": {
     "author": "",
