@@ -9,16 +9,21 @@
     "list": "function Main(html){return jsoups(html,'#search_list > li');}",
     "title": "function Main(text){return jsoup(text,'div > div > a');}",
     "introduction": "function Main(text){return jsoup(text,'div > div > div');}",
-    "cover": "function Main(text){return jsoup(text,'div > img@attr->data-original');}",
+    "cover": "function Main(text){return jsoup(text,'div > img@attr->data-src');}",
     "url": "function Main(text){return jsoup(text,'div > div > a@attr->href')}"
   },
   "detail": {
     "author": "",
     "introduction": "function Main(html){return jsoup(html,'div.column_introduction');}",
     "upDate": "function Main(html){return jsoup(html,'div.fr.detail_info > p:nth-child(3)');}",
+    "tabs": {
+      "list": "function Main(html){return jsoups(html,'#plays_list');}",
+      "name": "function Main(text){return jsoup(text,'div > div.card-header');}"
+    },
     "catalogs": {
+      "list": "function Main(html){return jsoups(html,'#plays_list');}",
       "chapter": {
-        "list": "function Main(html){return jsoups(html,'ul.clear > li');}",
+        "list": "function Main(html){return jsoups(html,'li.xx-episode');}",
         "name": "function Main(text){return jsoup(text,'a');}",
         "url": "function Main(text){return jsoup(text,'a@attr->href');}",
         "orderBy": 1,
