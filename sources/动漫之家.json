@@ -28,7 +28,7 @@
     },
     "comic": {
         "list": "function Main(html){return jsonPaths(strmiddle(html,'initData(',', \"'),'$..page_url');}",
-        "link": "function Main(text){return text;}",
+        "url": "function Main(text){return text;}",
         "mode": 2
     }
 }
