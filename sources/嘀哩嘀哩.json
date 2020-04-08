@@ -17,11 +17,11 @@
     "introduction": "function Main(html){return jsoup(html,'div.column_introduction');}",
     "upDate": "function Main(html){return jsoup(html,'div.fr.detail_info > p:nth-child(3)');}",
     "tabs": {
-      "list": "function Main(html){return jsoups(html,'ul.nav > li > a.nav-link');}",
+      "list": "function Main(html){return jsoups(html,'ul.nav > li > a.nav-link:gt(0)');}",
       "name": "function Main(text){return jsoup(text,'a');}"
     },
     "catalogs": {
-      "list": "function Main(html){return jsoups(html,'div.tab-pane');}",
+      "list": "function Main(html){return jsoups(html,'div.play-panel >div > div');}",
       "chapter": {
         "list": "function Main(html){return jsoups(html,'li.xx-episode');}",
         "name": "function Main(text){return jsoup(text,'a');}",
