@@ -1,7 +1,7 @@
 {
   "name": "酷狗",
   "introduction": "可以搜索一些音乐",
-	"developer": "",
+	"developer": "雨夏",
 	"versionName": "1.0",
 	"versionCode": 1,
   "request": "https://music.liuzhijin.cn/@post->input=[$key]&filter=name&type=kugou&page=[$page]@charset->UTF-8@header->x-requested-with:XMLHttpRequest",
