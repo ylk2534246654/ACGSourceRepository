@@ -26,8 +26,8 @@
                 "list": "function Main(text){return jsoups(text,'div > ul > li');}",
                 "name": "function Main(text){return jsoup(text,'a');}",
                 "url": "function Main(text){return jsoup(text,'a@attr->href');}",
-                "orderBy": 0,
-                "category": 1
+                "orderBy": 1,
+                "category": 3
             }
         }
     }
