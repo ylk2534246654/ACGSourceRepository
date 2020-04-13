@@ -23,7 +23,7 @@
         "catalogs": {
             "list": "function Main(html){return jsoups(html,'div.column-lft > div.playlist');}",
             "chapter": {
-                "list": "function Main(text){return jsoups(text,'ul > li');}",
+                "list": "function Main(text){return jsoups(text,'div > ul > li');}",
                 "name": "function Main(text){return jsoups(text,'a');}",
                 "url": "function Main(text){return jsoups(text,'a@attr->href');}",
                 "orderBy": 0,
