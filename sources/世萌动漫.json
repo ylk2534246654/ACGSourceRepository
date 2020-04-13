@@ -9,7 +9,7 @@
         "list": "function Main(html){return jsoups(html,'#content > div.searchbox.board.clearfix > ul > li');}",
         "title": "function Main(text){return jsoup(text,'div > div.headline.clearfix > a');}",
         "introduction": "function Main(text){return jsoup(text,'div > div.des.hide');}",
-        "cover": "function Main(text){return jsoup(text,'a > div > div.lazy-img > img@attr->src');}",
+        "cover": "function Main(text){return jsoup(text,'a > div > div.lazy-img > img@attr->data-src');}",
         "url": "function Main(text){return jsoup(text,'div > div.headline.clearfix > a@attr->href');}"
     },
     "detail": {
