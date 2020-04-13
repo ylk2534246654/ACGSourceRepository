@@ -1,0 +1,34 @@
+{
+    "name": "世萌动漫",
+    "introduction": "可以搜索一些动漫",
+    "developer": "雨夏",
+    "versionName": "1.0",
+    "versionCode": 1,
+    "request": "https://isldm.com/vodsearch/-------------/@post->wd=[$key]@charset->utf-8",
+    "search": {
+        "list": "function Main(html){return jsoups(html,'#content > div.searchbox.board.clearfix > ul > li');}",
+        "title": "function Main(text){return jsoup(text,'div > div.headline.clearfix > a');}",
+        "introduction": "function Main(text){return jsoup(text,'div > div.des.hide');}",
+        "cover": "function Main(text){return jsoup(text,'a > div > div.lazy-img > img@attr->src');}",
+        "url": "function Main(text){return jsoup(text,'div > div.headline.clearfix > a@attr->href');}"
+    },
+    "detail": {
+        "author": "function Main(html){return jsoup(html,'div.drama-data > div:nth-child(1) > label');}",
+        "introduction": "function Main(html){return jsoup(html,'div.drama-data > div:nth-child(5) > label');}",
+        "upDate": "function Main(html){return jsoup(html,'div.drama-data > div:nth-child(4) > label:nth-child(2)');}",
+        "tabs": {
+          "list": "function Main(html){return jsoups(html,'div.column-lft > div.playlist');}",
+          "name": "function Main(text){return jsoup(text,'h3 > strong');}"
+        },
+        "catalogs": {
+            "list": "function Main(html){return jsoups(html,'div.column-lft > div.playlist');}",
+            "chapter": {
+                "list": "function Main(text){return jsoups(text,'ul > li');}",
+                "name": "function Main(text){return jsoups(text,'a');}",
+                "url": "function Main(text){return jsoups(text,'a@attr->href');}",
+                "orderBy": 0,
+                "category": 1
+            }
+        }
+    }
+}
