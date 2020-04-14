@@ -28,7 +28,7 @@
         }
     },
     "comic": {
-        "list": "function Main(html){var array = jsonPaths(Base64.decode(strmiddle(html,'var img_data = \\'','\\'')),'$..img');var url1 = jsoup(html,'div.d-none@attr->data-host')+jsoup(html,'div.d-none@attr->data-img_pre');var obj= [];for(var i =0;i<array.length;i++){obj.push('https://i1.manhuadb.com/static/13944/195236/'+array[i]);};return obj;}",
+        "list": "function Main(html){var array = jsonPaths(Base64.decode(strmiddle(html,'var img_data = \\'','\\'')),'$..img');var img_pre = jsoup(html,'div.d-none@attr->data-host')+jsoup(html,'div.d-none@attr->data-img_pre');var obj= [];for(var i =0;i<array.length;i++){obj.push(img_pre+array[i]);};return obj;}",
         "url": "function Main(text){return text;}",
         "mode": 1
     }
