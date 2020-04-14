@@ -28,7 +28,7 @@
         }
     },
     "comic": {
-        "list": "function Main(html){var array = jsonPaths(Base64.decode(strmiddle(html,'var img_data = '',''')),'$..img');var url = jsoup(html,'div > div.d-none@attr->data-host')+jsoup(html,'div > div.d-none@attr->data-img_pre');var obj= [];for(var i =0;i<array.length;i++){obj.push(url+array[i]);};return obj;}",
+        "list": "function Main(html){var array = jsonPaths(Base64.decode(strmiddle(html,'var img_data = \\'','\\'')),'$..img');var url = jsoup(html,'div > div.d-none@attr->data-host')+jsoup(html,'div > div.d-none@attr->data-img_pre');var obj= [];for(var i =0;i<array.length;i++){obj.push(url+array[i]);};return obj;}",
         "url": "function Main(text){return text;}",
         "mode": 1
     }
