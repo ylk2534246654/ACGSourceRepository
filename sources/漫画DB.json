@@ -11,5 +11,19 @@
         "introduction": "function Main(text){return jsoup(text,'div > div');}",
         "cover": "function Main(text){return jsoup(text,'div > a > img@attr->data-original');}",
         "url": "function Main(text){return jsoup(text,'div > h2 > a@attr->href');}"
+    },
+    "detail": {
+        "author": "function Main(html){return jsoup(html,'body > div > div.row.m-0.mt-lg-3 > div.col-lg-9.px-0 > div.comic-main-section.bg-white.p-0.p-sm-3.d-sm-flex > div > ul.creators > li > a');}",
+        "introduction": "function Main(html){return jsoup(html,'body > div > div.row.m-0.mt-lg-3 > div.col-lg-9.px-0 > div.comic-main-section.bg-white.p-0.p-sm-3.d-sm-flex > div > p');}",
+        "upDate": "function Main(html){return jsoup(html,'body > div > div.row.m-0.mt-lg-3 > div.col-sm-12.col-lg-3.px-0 > div.default-wrapper.mt-3.mt-md-0.ml-md-3 > table > tbody > tr:nth-child(6) > td > a');}",
+        "catalogs": {
+            "chapter": {
+                "list": "function Main(html){return jsoups(html,'ol.links-of-books > li');}",
+                "name": "function Main(text){return jsoups(text,'a');}",
+                "url": "function Main(text){return jsoups(text,'a@attr->href');}",
+                "orderBy": 0,
+                "category": 1
+            }
+        }
     }
 }
