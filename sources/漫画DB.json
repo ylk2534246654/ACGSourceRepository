@@ -1,0 +1,49 @@
+{
+    "name": "漫画DB",
+    "introduction": "可以搜索一些漫画",
+    "developer": "雨夏",
+    "versionName": "1.0",
+    "versionCode": 1,
+    "request": "https://www.manhuadb.com/search?q=[$key]@charset->utf-8",
+    "search": {
+        "list": "function Main(html){return jsoups(html,'div.comic-main-section > div.row > div');}",
+        "title": "function Main(text){return jsoup(text,'div > h2 > a');}",
+        "introduction": "function Main(text){return jsoup(text,'div > div');}",
+        "cover": "function Main(text){return jsoup(text,'div > a > img@attr->data-original');}",
+        "url": "function Main(text){return jsoup(text,'div > h2 > a@attr->href');}"
+    },
+    "detail": {
+        "author": "",
+        "introduction": "",
+        "upDate": "",
+        "tabs": {
+          "list": "",
+          "name": ""
+        },
+        "catalogs": {
+            "list": "",
+            "chapter": {
+                "list": "",
+                "name": "",
+                "url": "",
+                "orderBy": 0,
+                "category": 1
+            }
+        }
+    },
+    "url": {
+        "url": "",
+        "url2": "",
+    },
+    "comic": {
+        "list": "",
+        "url": "",
+        "mode": 1
+    },
+    "novel": {
+        "list": "",
+        "url": "",
+        "content": "",
+        "mode": 1
+    }
+}
