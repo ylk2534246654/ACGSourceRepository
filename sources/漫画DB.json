@@ -19,8 +19,8 @@
         "catalogs": {
             "chapter": {
                 "list": "function Main(html){return jsoups(html,'ol.links-of-books > li');}",
-                "name": "function Main(text){return jsoups(text,'a');}",
-                "url": "function Main(text){return jsoups(text,'a@attr->href');}",
+                "name": "function Main(text){return jsoup(text,'a');}",
+                "url": "function Main(text){return jsoup(text,'a@attr->href');}",
                 "orderBy": 0,
                 "category": 1
             }
