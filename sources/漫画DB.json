@@ -4,6 +4,7 @@
     "developer": "雨夏",
     "versionName": "1.0",
     "versionCode": 1,
+    "dependencies": "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/js/base64.js",
     "request": "https://www.manhuadb.com/search?q=[$key]@charset->utf-8",
     "search": {
         "list": "function Main(html){return jsoups(html,'div.comic-main-section > div.row > div');}",
@@ -21,9 +22,14 @@
                 "list": "function Main(html){return jsoups(html,'ol.links-of-books > li');}",
                 "name": "function Main(text){return jsoup(text,'a');}",
                 "url": "function Main(text){return jsoup(text,'a@attr->href');}",
-                "orderBy": 0,
-                "category": 1
+                "orderBy": 1,
+                "category": 2
             }
         }
+    },
+    "comic": {
+        "list": "function Main(html){var array = jsonPath(Base64.decode(strmiddle(html,'var img_data = '',''')),'$..img');var url = jsoup(html,'div > div.d-none@attr->data-host')+jsoup(html,'div > div.d-none@attr->data-img_pre');var obj= [];for(var i =0;i<array.length;i++){obj.push(url+array[i]);};return obj;}",
+        "url": "function Main(text){return text;}",
+        "mode": 1
     }
 }
