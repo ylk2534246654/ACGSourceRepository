@@ -9,7 +9,7 @@
         "list": "function Main(html){return jsoups(html,'div.search-page > div.row');}",
         "title": "function Main(text){return jsoup(text,'h3 > a@attr->title');}",
         "introduction": "function Main(text){return jsoup(text,'p > span.small');}",
-        "cover": "function Main(text){return jsoup(text,'p > img@attr->src');}",
+        "cover": "https://dss1.bdstatic.com/6OF1bjeh1BF3odCf/it/u=634730535,1479987612&fm=74&app=80&f=PNG",
         "url": "function Main(text){return jsoup(text,'h3 > a@attr->href');}"
     },
     "url": {
