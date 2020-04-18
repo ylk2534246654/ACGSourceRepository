@@ -1,0 +1,15 @@
+{
+    "name": "一行代码",
+    "introduction": "精准搜索 可针对类名、方法名进行搜索。 众多语言 支持java、C#、Python等数十种常用开发语言搜索。",
+    "developer": "雨夏",
+    "versionName": "1.0",
+    "versionCode": 1,
+    "request": "https://www.alinecode.com/search?sort=_score&q=[$key]@charset->utf-8",
+    "search": {
+        "list": "function Main(html){return jsoups(html,'#alinecode-result-region > div.alinecode-box');}",
+        "title": "function Main(text){return jsoup(text,'div.alinecode-box-title');}",
+        "introduction": "function Main(text){return jsoup(text,'pre > a');}",
+        "cover": "",
+        "url": "function Main(text){return jsoup(text,'pre > a@attr->href');}"
+    }
+}
