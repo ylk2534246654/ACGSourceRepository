@@ -9,7 +9,7 @@
         "list": "function Main(html){return jsoups(html,'div.s_post_list > div.s_post');}",
         "title": "function Main(text){return jsoup(text,'span.p_title').replace('回复:','');}",
         "introduction": "function Main(text){return jsoup(text,'div.p_content');}",
-        "cover": "http://img04.sogoucdn.com/app/a/100520146/5f3055d8349a4712e0ed6240f5635566",
+        "cover": "http://img04.sogoucdn.com/app/a/100520146/cf54a3b62f1771af6602ae5c99dfac86",
         "url": "function Main(text){return jsoup(text,'span.p_title > a@attr->href').replace('回复','');}"
     }
 }
