@@ -8,7 +8,7 @@
     "search": {
         "list": "function Main(html){return jsoups(html,'div.s_post_list > div.s_post');}",
         "title": "function Main(text){return jsoup(text,'span.p_title').replace('回复:','');;}",
-        "introduction": "function Main(text){var str = jsoup(text,'div.p_content').replace('回复','').replace('点','.').replace('删','').replace('掉','').replace('度','').replace('娘','').replace('去','').replace('除','').replace('。','.').replace('..','.').replace('(','').replace(')','').replace('（','').replace('）','').replace(' ','').replace('\\n','');return 'http://pan.baidu.com'+strmiddle(str,'com','\\.\\.');}",
+        "introduction": "function Main(text){var str = jsoup(text,'div.p_content').replace('回复','').replace('点','.').replace('删','').replace('掉','').replace('度','').replace('娘','').replace('去','').replace('除','').replace('。','.').replace('..','.').replace('(','').replace(')','').replace('（','').replace('）','').replace(' ','');return 'http://pan.baidu.com'+strmiddle(str,'/1','\\.\\.');}",
         "cover": "https://dss1.bdstatic.com/6OF1bjeh1BF3odCf/it/u=634730535,1479987612&fm=74&app=80&f=PNG",
         "url": "function Main(text){var str = jsoup(text,'div.p_content').replace('回复','').replace('点','.').replace('删','').replace('掉','').replace('度','').replace('娘','').replace('去','').replace('除','').replace('。','.').replace('..','.').replace('(','').replace(')','').replace('（','').replace('）','').replace(' ','');return 'http://pan.baidu.com'+strmiddle(str,'com','\\.\\.');}"
     }
