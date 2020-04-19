@@ -7,9 +7,9 @@
     "request": "http://tieba.baidu.com/f/search/res?ie=utf-8&qw=[$key]%20pan%20baidu%20com%20s&pn=1@charset->GBK",
     "search": {
         "list": "function Main(html){return jsoups(html,'div.s_post_list > div.s_post');}",
-        "title": "function Main(text){return jsoup(text,'span.p_title').replace('回复:','');;}",
+        "title": "function Main(text){return jsoup(text,'span.p_title').replace('回复:','');}",
         "introduction": "function Main(text){return jsoup(text,'div.p_content');}",
         "cover": "https://dss1.bdstatic.com/6OF1bjeh1BF3odCf/it/u=634730535,1479987612&fm=74&app=80&f=PNG",
-        "url": "function Main(text){return jsoup(text,'span.p_title > a@attr->href').replace('回复','');;}"
+        "url": "function Main(text){var url = jsoup(text,'span.p_title > a@attr->href').replace('回复','').replace('点','.').replace('删','').replace('掉','').replace('去','').replace('除','').replace('。','.').replace('..','.').replace('（','').replace('）','');return 'http://pan.baidu.com/'+strmiddle(url,'s/','...');}"
     }
 }
