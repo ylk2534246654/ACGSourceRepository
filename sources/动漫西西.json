@@ -8,7 +8,7 @@
   "search": {
     "list": "function Main(html){return jsoups(html,'#listvod > ul > li');}",
     "title": "function Main(text){return jsoup(text,'div > h2 > a');}",
-    "introduction": "function Main(text){return getURL()+jsoup(text,'div > p');}",
+    "introduction": "function Main(text){return jsoup(text,'div > p');}",
     "cover": "function Main(text){return jsoup(text,'a > img@attr->data-original');}",
     "url": "function Main(text){return jsoup(text,'div > h2 > a@attr->href');}"
   }
