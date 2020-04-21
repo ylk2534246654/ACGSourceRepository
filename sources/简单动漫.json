@@ -9,7 +9,7 @@
         "list": "function Main(html){return jsoups(html,'#data_list > tr');}",
         "title": "function Main(text){return jsoup(text,'a:nth-child(2)');}",
         "introduction": "function Main(text){return jsoup(text,'a:nth-child(1)');}",
-        "cover": "",
+        "cover": "https://www.36dm.club/favicon.ico",
         "url": "function Main(text){return jsoup(text,'a:nth-child(2)@attr->href');}"
     }
 }
