@@ -1,0 +1,50 @@
+{
+    "name": "",
+    "introduction": "",
+    "developer": "",
+    "versionName": "1.0",
+    "versionCode": 1,
+    "dependencies": "",
+    "request": "",
+    "search": {
+        "list": "",
+        "title": "",
+        "introduction": "",
+        "cover": "",
+        "url": ""
+    },
+    "detail": {
+        "author": "",
+        "introduction": "",
+        "upDate": "",
+        "tabs": {
+          "list": "",
+          "name": ""
+        },
+        "catalogs": {
+            "list": "",
+            "chapter": {
+                "list": "",
+                "name": "",
+                "url": "",
+                "orderBy": 0,
+                "category": 1
+            }
+        }
+    },
+    "url": {
+        "url": "",
+        "url2": "",
+    },
+    "comic": {
+        "list": "",
+        "url": "",
+        "mode": 1
+    },
+    "novel": {
+        "list": "",
+        "url": "",
+        "content": "",
+        "mode": 1
+    }
+}
