@@ -8,7 +8,7 @@
     "search": {
         "list": "function Main(html){return jsoups(html,'#data_list > tr');}",
         "title": "function Main(text){return jsoup(text,'a:nth-child(2)');}",
-        "introduction": "",
+        "introduction": "ces",
         "cover": "",
         "url": "function Main(text){return jsoup(text,'a:nth-child(2)@attr->href');}"
     }
