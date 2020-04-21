@@ -1,50 +1,15 @@
 {
-    "name": "",
-    "introduction": "",
-    "developer": "",
+    "name": "ACG.RIP",
+    "introduction": "可以搜一些动漫磁力资源",
+    "developer": "雨夏",
     "versionName": "1.0",
     "versionCode": 1,
-    "dependencies": "",
-    "request": "",
+    "request": "https://acg.rip/?term=[$key]@charset->UTF-8",
     "search": {
-        "list": "",
-        "title": "",
-        "introduction": "",
+        "list": "function Main(html){return jsoups(html,'body > div.container > table > tbody > tr');}",
+        "title": "function Main(text){return jsoup(text,'td.title > span > a');}",
+        "introduction": "function Main(text){return jsoup(text,'td.size');}",
         "cover": "",
-        "url": ""
-    },
-    "detail": {
-        "author": "",
-        "introduction": "",
-        "upDate": "",
-        "tabs": {
-          "list": "",
-          "name": ""
-        },
-        "catalogs": {
-            "list": "",
-            "chapter": {
-                "list": "",
-                "name": "",
-                "url": "",
-                "orderBy": 0,
-                "category": 1
-            }
-        }
-    },
-    "url": {
-        "url": "",
-        "url2": "",
-    },
-    "comic": {
-        "list": "",
-        "url": "",
-        "mode": 1
-    },
-    "novel": {
-        "list": "",
-        "url": "",
-        "content": "",
-        "mode": 1
+        "url": "function Main(text){return jsoup(text,'td.title > span > a@attr->href');}"
     }
 }
