@@ -11,5 +11,8 @@
         "introduction": "function Main(text){return jsoup(text,'td.size');}",
         "cover": "",
         "url": "function Main(text){return jsoup(text,'span.title > a@attr->href');}"
+    },
+    "url": {
+        "url": "function Main(html){return jsoup(html,'a.btn@attr->href');}"
     }
 }
