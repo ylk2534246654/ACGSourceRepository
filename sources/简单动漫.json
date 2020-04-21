@@ -10,6 +10,6 @@
         "title": "function Main(text){return jsoup(text,'a:nth-child(2)');}",
         "introduction": "function Main(text){return jsoup(text,'a:nth-child(1)');}",
         "cover": "https://www.36dm.club/favicon.ico",
-        "url": "function Main(text){return jsoup(text,'a:nth-child(2)@attr->href');}"
+        "url": "function Main(text){return 'down.php?date=1587403927&hash='+strmiddle(jsoup(text,'a:nth-child(2)@attr->href'),'show-','.');}"
     }
 }
