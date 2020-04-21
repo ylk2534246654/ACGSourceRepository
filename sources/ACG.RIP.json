@@ -7,9 +7,9 @@
     "request": "https://acg.rip/?term=[$key]@charset->UTF-8",
     "search": {
         "list": "function Main(html){return jsoups(html,'tbody > tr');}",
-        "title": "function Main(text){return jsoup(text,'td.title > span.title');}",
+        "title": "function Main(text){return jsoup(text,'td.title > span.title > a');}",
         "introduction": "function Main(text){return jsoup(text,'td.size');}",
         "cover": "",
-        "url": "function Main(text){return jsoup(text,'td.title > span.title > a');}"
+        "url": "function Main(text){return jsoup(text,'td.title > span.title > a@attr->href');}"
     }
 }
