@@ -1,0 +1,15 @@
+{
+    "name": "简单动漫.json",
+    "introduction": "可以搜一些动漫种子资源",
+    "developer": "雨夏",
+    "versionName": "1.0",
+    "versionCode": 1,
+    "request": "https://www.36dm.club/search.php?keyword=[$key]@charset->UTF-8",
+    "search": {
+        "list": "function Main(html){return jsoups(html,'#data_list > tr');}",
+        "title": "function Main(text){return jsoup(text,'td:nth-child(3)');}",
+        "introduction": "",
+        "cover": "",
+        "url": "function Main(text){return jsoup(text,'td:nth-child(3) > a@attr->href');}"
+    }
+}
