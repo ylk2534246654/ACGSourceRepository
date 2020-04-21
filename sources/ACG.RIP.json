@@ -9,7 +9,7 @@
         "list": "function Main(html){return jsoups(html,'tbody > tr');}",
         "title": "function Main(text){return jsoup(text,'span.title > a');}",
         "introduction": "function Main(text){return jsoup(text,'td.size');}",
-        "cover": "",
+        "cover": "https://acg.rip/favicon.ico",
         "url": "function Main(text){return jsoup(text,'span.title > a@attr->href')+'.torrent';}"
     }
 }
