@@ -10,6 +10,6 @@
         "title": "function Main(text){return jsoup(text,'td.title > span.title');}",
         "introduction": "function Main(text){return jsoup(text,'td.size');}",
         "cover": "",
-        "url": "function Main(text){return jsoup(text,'td.title > span.title > a@attr->href');}"
+        "url": "function Main(text){return jsoup(text,'td.title > span.title > a');}"
     }
 }
