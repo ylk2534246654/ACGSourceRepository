@@ -7,9 +7,9 @@
     "request": "https://www.36dm.club/search.php?keyword=[$key]@charset->UTF-8",
     "search": {
         "list": "function Main(html){return jsoups(html,'#data_list > tr');}",
-        "title": "function Main(text){return jsoup(text,'td:nth-child(3)');}",
+        "title": "function Main(text){return jsoup(text,'a:nth-child(2)');}",
         "introduction": "",
         "cover": "",
-        "url": "function Main(text){return jsoup(text,'td:nth-child(3) > a@attr->href');}"
+        "url": "function Main(text){return jsoup(text,'a:nth-child(2)@attr->href');}"
     }
 }
