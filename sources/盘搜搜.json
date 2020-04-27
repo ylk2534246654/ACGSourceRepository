@@ -4,7 +4,7 @@
     "developer": "雨夏",
     "versionName": "1.0",
     "versionCode": 1,
-    "request": "https://m.pansoso.com/zh/[$key]@charset->UTF-8",
+    "request": "https://m.pansoso.com/?q=[$key]&re=1@charset->UTF-8",
     "search": {
         "list": "function Main(html){return jsoups(html,'#con > a');}",
         "title": "function Main(text){return jsoup(text,'div > h2');}",
