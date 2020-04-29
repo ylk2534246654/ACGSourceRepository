@@ -1,0 +1,49 @@
+{
+    "name": "ONE漫画",
+    "introduction": "可以搜一些漫画",
+    "developer": "雨夏",
+    "versionName": "1.0",
+    "versionCode": 1,
+    "request": "https://www.onemanhua.com/search?searchString=[$key]@charset->UTF-8",
+    "search": {
+        "list": "function Main(html){return jsoups(html,'div.fed-part-layout > dl');}",
+        "title": "function Main(text){return jsoup(text,'dd > h1');}",
+        "introduction": "function Main(text){return jsoup(text,'dd > ul');}",
+        "cover": "function Main(text){return jsoup(text,'dt > a@attr->data-original');}",
+        "url": "function Main(text){return jsoup(text,'dt > a@attr->href');}"
+    },
+    "detail": {
+        "author": "",
+        "introduction": "",
+        "upDate": "",
+        "tabs": {
+          "list": "",
+          "name": ""
+        },
+        "catalogs": {
+            "list": "",
+            "chapter": {
+                "list": "",
+                "name": "",
+                "url": "",
+                "orderBy": 0,
+                "category": 1
+            }
+        }
+    },
+    "url": {
+        "url": "",
+        "url2": "",
+    },
+    "comic": {
+        "list": "",
+        "url": "",
+        "mode": 1
+    },
+    "novel": {
+        "list": "",
+        "url": "",
+        "content": "",
+        "mode": 1
+    }
+}
