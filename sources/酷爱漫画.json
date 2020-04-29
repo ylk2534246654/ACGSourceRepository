@@ -1,0 +1,39 @@
+{
+    "name": "酷爱漫画",
+    "introduction": "可以搜索一些漫画",
+    "developer": "雨夏",
+    "versionName": "1.0",
+    "versionCode": 1,
+    "request": "https://www.kuimh.com/search?keyword=[$key]@charset->UTF-8",
+    "search": {
+        "list": "function Main(html){return jsoups(html,'ul.mh-list > li');}",
+        "title": "function Main(text){return jsoup(text,'h2.title');}",
+        "introduction": "function Main(text){return jsoup(text,'p.chapter');}",
+        "cover": "function Main(text){return strmiddle(jsoup(text,'p.mh-cover'),'background-image: url(',')');}",
+        "url": "function Main(text){return jsoup(text,'h2.title > a@attr->href');}"
+    },
+    "detail": {
+        "author": "",
+        "introduction": "",
+        "upDate": "",
+        "tabs": {
+          "list": "",
+          "name": ""
+        },
+        "catalogs": {
+            "list": "",
+            "chapter": {
+                "list": "",
+                "name": "",
+                "url": "",
+                "orderBy": 0,
+                "category": 1
+            }
+        }
+    },
+    "comic": {
+        "list": "",
+        "url": "",
+        "mode": 1
+    }
+}
