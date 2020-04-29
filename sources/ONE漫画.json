@@ -11,5 +11,29 @@
         "introduction": "function Main(text){return jsoup(text,'dd > ul');}",
         "cover": "function Main(text){return jsoup(text,'dt > a@attr->data-original');}",
         "url": "function Main(text){return jsoup(text,'dt > a@attr->href');}"
+    },
+    "detail": {
+        "author": "function Main(html){return jsoup(html,'dd > ul > li:nth-child(2) > a');}",
+        "introduction": "function Main(html){return jsoup(html,'p.fed-part-both');}",
+        "upDate": "function Main(html){return jsoup(html,'dd > ul > li:nth-child(3) > a');}",
+        "tabs": {
+          "list": "function Main(html){return jsoups(html,'div.fed-tabs-info > div > div > div > ul');}",
+          "name": "function Main(text){return jsoup(text,'li');}"
+        },
+        "catalogs": {
+            "list": "function Main(html){return jsoups(html,'div.fed-tabs-item > div > div > div > ul');}",
+            "chapter": {
+                "list": "function Main(text){return jsoups(text,'li');}",
+                "name": "function Main(text){return jsoup(text,'a');}",
+                "url": "function Main(text){return jsoup(text,'a@attr->href');}",
+                "orderBy": 0,
+                "category": 1
+            }
+        }
+    },
+    "comic": {
+        "list": "",
+        "url": "",
+        "mode": 1
     }
 }
