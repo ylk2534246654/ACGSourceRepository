@@ -4,6 +4,7 @@
   "developer": "雨夏",
   "versionName": "1.0",
   "versionCode": 1,
+  "tab":"国漫",
   "request": "http://m.buka.cn/search/ajax_search@post->count=15&key=[$key]&start=[$page]@charset->UTF-8",
   "search": {
     "list": "function Main(html){return jsonPaths(html,'$.datas.items[*]');}",

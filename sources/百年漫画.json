@@ -1,9 +1,10 @@
 {
   "name": "百年漫画",
-  "introduction": "可以搜索一些动漫",
+  "introduction": "可以搜索一些漫画",
   "developer": "雨夏",
   "versionName": "1.0",
   "versionCode": 1,
+  "tab":"国漫",
   "request": "https://m.bnmanhua.com/index.php?&m=vod-search@post->wd=[$key]@charset->UTF-8",
   "search": {
     "list": "function Main(html){return jsoups(html,'ul[class=tbox_m] > li');}",

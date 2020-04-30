@@ -4,6 +4,7 @@
     "developer": "雨夏",
     "versionName": "1.0",
     "versionCode": 1,
+    "tab":"漫画",
     "dependencies": "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/js/base64.js",
     "request": "https://www.manhuadb.com/search?q=[$key]@charset->utf-8",
     "search": {

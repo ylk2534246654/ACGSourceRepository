@@ -4,6 +4,7 @@
   "developer": "雨夏",
   "versionName": "1.0",
   "versionCode": 1,
+  "tab":"国漫",
   "request": "https://m.tohomh123.com/action/Search?keyword=[$key]@charset->UTF-8",
   "search": {
     "list": "function Main(html){return jsoups(html,'div > ul > li');}",
