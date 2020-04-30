@@ -4,6 +4,7 @@
   "developer": "雨夏",
   "versionName": "1.0",
   "versionCode": 1,
+  "tab":"动漫",
   "request": "https://rushia.info/search/[$key]@charset->UTF-8",
   "search": {
     "list": "function Main(html){return jsoups(html,'div.archive > div');}",

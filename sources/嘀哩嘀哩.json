@@ -4,6 +4,7 @@
   "developer": "雨夏",
   "versionName": "1.0",
   "versionCode": 1,
+  "tab":"动漫",
   "request": "http://dilidili.online/search?q=[$key]@charset->UTF-8",
   "search": {
     "list": "function Main(html){return jsoups(html,'#search_list > li');}",

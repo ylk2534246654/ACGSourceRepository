@@ -4,6 +4,7 @@
   "developer": "雨夏",
   "versionName": "1.0",
   "versionCode": 1,
+  "tab":"动漫",
   "request": "http://www.nicotv.club/video/search/[$key].html@charset->UTF-8",
   "search": {
     "list": "function Main(html){return jsoups(html,'div.container > ul > li');}",

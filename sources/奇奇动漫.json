@@ -4,6 +4,7 @@
     "developer": "雨夏",
     "versionName": "1.0",
     "versionCode": 1,
+    "tab":"动漫",
     "request": "http://m.qiqidongman.com/vod-search-wd-[$key].html@charset->UTF-8@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36",
     "search": {
         "list": "function Main(html){return jsoups(html,'#LIST > li');}",
