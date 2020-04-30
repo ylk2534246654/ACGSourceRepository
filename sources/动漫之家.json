@@ -4,6 +4,7 @@
     "developer": "雨夏",
     "versionName": "1.0",
     "versionCode": 1,
+    "tab":"漫画",
     "request": "https://m.dmzj.com/search/[$key].html@charset->UTF-8",
     "search": {
         "list": "function Main(html){return jsonPaths(strmiddle(html,'serchArry=','</script>'),'$.*');}",

@@ -1,9 +1,10 @@
 {
     "name": "哔咪哔咪",
-    "introduction": "可以搜索一些网盘资源",
+    "introduction": "可以搜索一些动漫资源",
     "developer": "雨夏",
     "versionName": "1.0",
     "versionCode": 1,
+    "tab":"动漫",
     "request": "http://www.bimibimi.me/vod/search/@post->wd=[$key]@charset->UTF-8",
     "search": {
         "list": "function Main(html){return jsoups(html,'ul.tab-cont > li');}",

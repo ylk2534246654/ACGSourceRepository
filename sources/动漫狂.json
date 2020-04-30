@@ -4,6 +4,7 @@
   "developer": "雨夏",
   "versionName": "1.0",
   "versionCode": 1,
+  "tab":"漫画",
   "request": "https://www.cartoonmad.com/search.html@post->keyword=[$key]&searchtype=all@charset->big5",
   "search": {
     "list": "function Main(html){return jsoups(html,'tr > td[align=center]');}",
