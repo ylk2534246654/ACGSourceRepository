@@ -4,6 +4,7 @@
     "developer": "雨夏",
     "versionName": "1.0",
     "versionCode": 1,
+    "tab":"百度云",
     "request": "http://www.rufengso.net/s/name/[$key]@charset->UTF-8",
     "search": {
         "list": "function Main(html){return jsoups(html,'div.search-page > div.row');}",
