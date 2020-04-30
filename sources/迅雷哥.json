@@ -4,6 +4,7 @@
 	"developer": "雨夏",
 	"versionName": "1.0",
 	"versionCode": 1,
+	"tab":"动漫",
 	"request": "https://m.4142.cc/search.asp@post->searchword=[$key]@charset->gb2312",
 	"search": {
 		"list": "function Main(html){return jsoups(html,'div > ul > li');}",

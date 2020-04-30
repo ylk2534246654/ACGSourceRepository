@@ -4,6 +4,7 @@
     "developer": "雨夏",
     "versionName": "1.0",
     "versionCode": 1,
+    "tab":"漫画18x",
     "request": "https://m.c-upp.com/search/@post->show=title%2Ctitleen%2Ctags&keyboard=[$key]@charset->UTF-8",
     "search": {
         "list": "function Main(html){return jsoups(html,'div > ul');}",

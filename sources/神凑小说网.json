@@ -4,6 +4,7 @@
 	"developer": "雨夏",
 	"versionName": "1.0",
 	"versionCode": 1,
+    "tab":"轻小说",
     "request": "http://m.shencou.com/waps.php@post->searchtype=articlename selected&searchkey=[$key]&t_btnsearch=搜索@charset->gbk",
     "search": {
         "list": "function Main(html){return jsoups(html,'div.cover > p');}",

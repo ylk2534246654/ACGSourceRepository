@@ -4,6 +4,7 @@
 	"developer": "雨夏",
 	"versionName": "1.0",
 	"versionCode": 1,
+    "tab":"轻小说",
     "request": "https://www.x23qb.com/search.php@post->searchkey=[$key]&searchtype=all@charset->gbk",
     "search": {
         "list": "function Main(html){return jsoups(html,'#sitebox > dl');}",

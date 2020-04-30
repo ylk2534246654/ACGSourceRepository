@@ -4,6 +4,7 @@
 	"developer": "雨夏",
 	"versionName": "1.0",
 	"versionCode": 1,
+  "tab":"音乐",
   "request": "https://music.liuzhijin.cn/@post->input=[$key]&filter=name&type=kugou&page=[$page]@charset->UTF-8@header->x-requested-with:XMLHttpRequest",
   "search": {
     "list": "function Main(html){return jsonPaths(html,'$..data[*]');}",
