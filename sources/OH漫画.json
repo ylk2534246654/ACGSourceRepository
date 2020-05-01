@@ -4,6 +4,7 @@
     "developer": "雨夏",
     "versionName": "1.0",
     "versionCode": 1,
+    "dependencies": "https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js",
     "tab":"国漫",
     "request": "https://www.ohmanhua.com/search?searchString=[$key]@charset->UTF-8",
     "search": {
