@@ -28,7 +28,7 @@
                 "name": "function Main(text){return jsoup(text,'a');}",
                 "url": "function Main(text){return jsoup(text,'a@attr->href');}",
                 "orderBy": 0,
-                "category": 1
+                "category": 2
             }
         }
     },
