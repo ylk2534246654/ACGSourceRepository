@@ -18,4 +18,4 @@
         "url2": "function Main(html){return jsoup(html,'div > a@attr->href');}",
         "mode": 1
     }
-}
+} 

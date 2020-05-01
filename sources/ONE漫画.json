@@ -33,8 +33,8 @@
         }
     },
     "comic": {
-        "list": "",
-        "url": "",
+        "list": "function Main(html){var endid = strmiddle(html,'第1/','页');var murl = 'http://img.mljzmm.com/comic/'+strmiddle(getURL(),'www.onemanhua.com/','/')+'/'+jsoup(text,'div.mh_readtitle > h1 > strong')+'/';var obj= [];for(var i =1;i<endid;i++){var num = i;var n=4;var a = (Array(n).join(0) + num).slice(-n);obj.push(murl+'/'+a+'.jpg');};return obj;}",
+        "url": "function Main(text){return text;}",
         "mode": 1
     }
 }
