@@ -1,11 +1,11 @@
 {
-    "name": "ONE漫画",
+    "name": "OH漫画",
     "introduction": "可以搜一些漫画",
     "developer": "雨夏",
     "versionName": "1.0",
     "versionCode": 1,
     "tab":"国漫",
-    "request": "https://www.onemanhua.com/search?searchString=[$key]@charset->UTF-8",
+    "request": "https://www.ohmanhua.com/search?searchString=[$key]@charset->UTF-8",
     "search": {
         "list": "function Main(html){return jsoups(html,'div.fed-part-layout > dl');}",
         "title": "function Main(text){return jsoup(text,'dd > h1');}",
