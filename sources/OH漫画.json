@@ -20,7 +20,7 @@
         "upDate": "function Main(html){return jsoup(html,'dd > ul > li:nth-child(3) > a');}",
         "tabs": {
           "list": "function Main(html){return jsoups(html,'div.fed-tabs-info > div > div > div > ul > li');}",
-          "name": "function Main(text){var key = CryptoJS.enc.Utf8.parse('JRUIFMVJDIWE569j');return key+jsoup(text,'a');}"
+          "name": "function Main(text){return jsoup(text,'a');}"
         },
         "catalogs": {
             "list": "function Main(html){return jsoups(html,'div.fed-tabs-item > div > div > div > ul');}",
