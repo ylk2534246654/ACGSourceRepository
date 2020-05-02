@@ -5,7 +5,7 @@
     "versionName": "1.0",
     "versionCode": 1,
     "tab":"GalGame",
-    "request": "https://www.mmgal.com/?s=[$key]@charset->UTF-8",
+    "request": "https://www.hhgal.com/?s=[$key]@charset->UTF-8",
     "metadata": {
         "list": "function Main(html){return jsoups(html,'#article-list > div');}",
         "title": "function Main(text){return jsoup(text,'div.title-article > h1 > a');}",
