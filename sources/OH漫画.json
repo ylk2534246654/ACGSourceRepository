@@ -5,7 +5,7 @@
     "versionName": "1.0",
     "versionCode": 1,
     "dependencies": "https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js",
-    "tab":"国漫",
+    "tab":"漫画",
     "request": "https://www.ohmanhua.com/search?searchString=[$key]@charset->UTF-8",
     "search": {
         "list": "function Main(html){return jsoups(html,'div.fed-part-layout > dl');}",
