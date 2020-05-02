@@ -5,7 +5,7 @@
     "versionName": "1.0",
     "versionCode": 1,
     "tab":"百度云",
-    "request": "https://m.pansoso.com/?q=[$key]&re=1@charset->UTF-8@header->Content-Type:application/x-www-form-urlencoded;charset=UTF-8@header->Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36",
+    "request": "https://m.pansoso.com/?q=[$key]&re=1@charset->UTF-8@header->Content-Type:application/x-www-form-urlencoded;charset=UTF-8@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36",
     "search": {
         "list": "function Main(html){return jsoups(html,'#con > a');}",
         "title": "function Main(text){return jsoup(text,'div > h2');}",
