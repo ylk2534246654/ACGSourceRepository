@@ -34,7 +34,7 @@
         }
     },
     "comic": {
-        "list": "function cdecrypt(key, word) { var key = CryptoJS.enc.Utf8.parse(key); var decrypt = CryptoJS.AES.decrypt(word, key, { mode: CryptoJS.mode.ECB, padding: CryptoJS.pad.Pkcs7 }); return CryptoJS.enc.Utf8.stringify(decrypt).toString() };function Main(html){cdecrypt('JRUIFMVJDIWE569j', strmiddle(html,'C_DATA=\\'','\\''));var endid = 20;var murl = 'http://'+mh_info.domain+'/comic/'+mh_info.imgpath;var obj= [];for(var i =1;i<endid;i++){var num = i;var n=4;var a = (Array(n).join(0) + num).slice(-n);obj.push(murl+'/'+a+'.jpg');};return obj;}",
+        "list": "function cdecrypt(key, word) { var key = CryptoJS.enc.Utf8.parse(key); var decrypt = CryptoJS.AES.decrypt(word, key, { mode: CryptoJS.mode.ECB, padding: CryptoJS.pad.Pkcs7 }); return CryptoJS.enc.Utf8.stringify(decrypt).toString() };function Main(html){log(strmiddle(html,'C_DATA=\\'','\\''));cdecrypt('JRUIFMVJDIWE569j', strmiddle(html,'C_DATA=\\'','\\''));var endid = 20;var murl = 'http://'+mh_info.domain+'/comic/'+mh_info.imgpath;var obj= [];for(var i =1;i<endid;i++){var num = i;var n=4;var a = (Array(n).join(0) + num).slice(-n);obj.push(murl+'/'+a+'.jpg');};return obj;}",
         "url": "function Main(text){return text;}",
         "mode": 1
     }
