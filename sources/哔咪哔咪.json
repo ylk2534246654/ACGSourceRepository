@@ -24,7 +24,7 @@
         "catalogs": {
             "list": "function Main(html){return jsoups(html,'div.play_box');}",
             "chapter": {
-                "list": "function Main(html){return jsoups(html,'ul > a');}",
+                "list": "function Main(html){return jsoups(html,'ul > li');}",
                 "name": "function Main(text){return jsoup(text,'a');}",
                 "url": "function Main(text){return jsoup(text,'a@attr->href');}",
                 "orderBy": 1,
