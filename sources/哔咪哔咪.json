@@ -18,11 +18,11 @@
         "introduction": "function Main(html){return jsoup(html,'div.vod-jianjie');}",
         "upDate": "function Main(html){return jsoup(html,'em.em_num');}",
         "tabs": {
-            "list": "function Main(html){return jsoups(html,'div.js_bt');}",
-            "name": "function Main(text){return jsoup(text,'span.p_smart');}"
+            "list": "function Main(html){return jsoups(html,'#leo-source-cho li.swiper-slide');}",
+            "name": "function Main(text){return jsoup(text,'li');}"
         },
         "catalogs": {
-            "list": "function Main(html){return jsoups(html,'div.leo-show');}",
+            "list": "function Main(html){return jsoups(html,'div.leo-show ');}",
             "chapter": {
                 "list": "function Main(html){return jsoups(html,'ul > li > a');}",
                 "name": "function Main(text){return jsoup(text,'a');}",
