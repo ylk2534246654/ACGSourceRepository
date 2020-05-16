@@ -24,7 +24,7 @@
         "catalogs": {
             "list": "function Main(html){return jsoups(html,'div.leo-show');}",
             "chapter": {
-                "list": "function Main(html){return jsoups(html,'ul > li');}",
+                "list": "function Main(html){return jsoups(html,'ul > li > a');}",
                 "name": "function Main(text){return jsoup(text,'a');}",
                 "url": "function Main(text){return jsoup(text,'a@attr->href');}",
                 "orderBy": 1,
