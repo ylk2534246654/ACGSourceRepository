@@ -30,6 +30,9 @@
         "orderBy": 1,
         "category": 3
       }
+    },
+    "video": {
+      "filter": "^((?!data.video.iqiyi.com/v.mp4).)*$"
     }
   }
 }
