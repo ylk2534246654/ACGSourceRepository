@@ -11,7 +11,7 @@
     "title": "function Main(text){return jsonPath(text,'$.name');}",
     "introduction": "function Main(text){return jsonPath(text,'$.summary');}",
     "cover": "function Main(text){return jsonPath(text,'$.poster_s');}",
-    "url": "function Main(text){return jsonPath(text,'$.slug');}"
+    "url": "function Main(text){return 'anime/'+jsonPath(text,'$.slug')+'/';}"
   },
   "detail": {
     "author": "",
