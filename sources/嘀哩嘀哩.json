@@ -22,7 +22,7 @@
         "list": "function Main(html){return jsoups(html,'#app > div.episode > ul > li');}",
         "name": "function Main(text){return jsoup(text,'a');}",
         "url": "function Main(text){return jsoup(text,'a@attr->href');}",
-        "orderBy": 1,
+        "orderBy": 0,
         "category": 3
       }
     }
