@@ -14,17 +14,12 @@
     "url": "function Main(text){return 'anime/'+jsonPath(text,'$.slug')+'/';}"
   },
   "detail": {
-    "author": "",
-    "introduction": "function Main(html){return jsoup(html,'div.container > section > div > span:nth-child(2)');}",
-    "upDate": "function Main(html){return jsoup(html,'body > div.container.mb-3 > section.mb-3.cc-f.p-2 > div.d-flex.mx-n1 > div:nth-child(2) > table > tbody > tr:nth-child(5)');}",
-    "tabs": {
-      "list": "function Main(html){return jsoups(html,'section:nth-child(4) > div > div >  div > ul.nav > li > a:nth-child(1)');}",
-      "name": "function Main(text){return jsoup(text,'a');}"
-    },
+    "author": "function Main(html){return jsoup(html,'div.fr.detail_info > p:nth-child(3)');}",
+    "introduction": "function Main(html){return jsoup(html,'#app > div:nth-child(3) > p');}",
+    "upDate": "function Main(html){return jsoup(html,'div.fr.detail_info > p:nth-child(4)');}",
     "catalogs": {
-      "list": "function Main(html){return jsoups(html,'div.play-panel >div > div');}",
       "chapter": {
-        "list": "function Main(html){return jsoups(html,'li.xx-episode');}",
+        "list": "function Main(html){return jsoups(html,'#app > div.episode > ul > li');}",
         "name": "function Main(text){return jsoup(text,'a');}",
         "url": "function Main(text){return jsoup(text,'a@attr->href');}",
         "orderBy": 1,
