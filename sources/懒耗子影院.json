@@ -1,0 +1,49 @@
+{
+    "name": "懒耗子影院",
+    "introduction": "可以搜索一下VIP影视",
+    "developer": "雨夏",
+    "versionName": "1.0",
+    "versionCode": 1,
+    "request": "http://v.looklookb.com.cn/#/search/[$key]@charset->UTF-8",
+    "search": {
+        "list": "function Main(html){return jsoups(html,'div.layui-table-main > table > tbody > tr');}",
+        "title": "function Main(html){return jsoups(html,'div.layui-table-main > table > tbody > tr');}",
+        "introduction": "",
+        "cover": "",
+        "url": ""
+    },
+    "detail": {
+        "author": "",
+        "introduction": "",
+        "upDate": "",
+        "tabs": {
+          "list": "",
+          "name": ""
+        },
+        "catalogs": {
+            "list": "",
+            "chapter": {
+                "list": "",
+                "name": "",
+                "url": "",
+                "orderBy": 0,
+                "category": 1
+            }
+        }
+    },
+    "url": {
+        "url": "",
+        "url2": "",
+    },
+    "comic": {
+        "list": "",
+        "url": "",
+        "mode": 1
+    },
+    "novel": {
+        "list": "",
+        "url": "",
+        "content": "",
+        "mode": 1
+    }
+}
