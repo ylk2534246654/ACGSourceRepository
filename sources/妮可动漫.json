@@ -33,6 +33,6 @@
     }
   },
   "video": {
-    "filter": "^((?!nicotv.club/player.php).)*$"
+    "filter": "^((?!\\.php).)*$"
   }
 }
