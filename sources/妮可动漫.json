@@ -33,6 +33,6 @@
     }
   },
   "video": {
-    "filter": "^((?!nicotv.club).)*$"
+    "filter": "^((?!(nicotv.club|kingsnug.cn)).)*$"
   }
 }
