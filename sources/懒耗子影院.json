@@ -13,7 +13,7 @@
         "url": "function Main(text){return 'http://v.looklookb.com.cn/info@charset->UTF-8@header->X-Requested-With:XMLHttpRequest@post->id='+jsonPath(text,'$.videoUrl');}"
     },
     "detail": {
-        "author": "",
+        "author": "无内容",
         "introduction": "",
         "upDate": "",
         "catalogs": {
