@@ -6,8 +6,7 @@
   "versionCode": 1,
   "tab":"链接",
   "auth":{
-    "login":"https://passport.bilibili.com/login",
-    "cookie": "passport.bilibili.com"
+    "login":"https://passport.bilibili.com/login"
   },
   "request": "https://manga.bilibili.com/twirp/comic.v1.Comic/Search?device=pc&platform=web@post->{\"key_word\":\"[$key]\",\"page_num\":1,\"page_size\":9}@charset->UTF-8@header->Content-Type:application/json;charset=UTF-8",
   "search": {
