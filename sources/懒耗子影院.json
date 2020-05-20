@@ -22,7 +22,7 @@
                 "name": "function Main(text){return jsonPath(text,'$.playName');}",
                 "url": "function Main(text){return jsonPath(text,'$.play');}",
                 "orderBy": 1,
-                "category": 1
+                "category": 3
             }
         }
     }
