@@ -42,7 +42,8 @@
         "url": "function Main(text){return jsoup(text,'a.ImgA@attr->href');}"
     },
     "auth":{
-        "login":"https://m.jjwxc.net/my/login?login_mode=jjwxc"
+        "login":"https://m.jjwxc.net/my/login?login_mode=jjwxc",
+        "cookie": "m.jjwxc.net"
     },
     "detail": {
         "author": "function Main(html){return jsoup(html,'div.sub_r > p:nth-child(2)');}",
