@@ -16,16 +16,11 @@
         "author": "",
         "introduction": "",
         "upDate": "",
-        "tabs": {
-          "list": "",
-          "name": ""
-        },
         "catalogs": {
-            "list": "",
             "chapter": {
-                "list": "",
-                "name": "",
-                "url": "",
+                "list": "function Main(html){return jsonPaths(html,'$.msg.url[*]');}",
+                "name": "function Main(text){return jsonPath(text,'$.playName');}",
+                "url": "function Main(text){return jsonPath(text,'$.play');}",
                 "orderBy": 0,
                 "category": 1
             }
