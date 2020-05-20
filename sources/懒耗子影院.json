@@ -21,8 +21,8 @@
         "catalogs": {
             "chapter": {
                 "list": "var mhtml;function Main(html){mhtml = html;var urls = jsonPaths(html,'$.msg.url[*]');if(urls.length>0){return urls;}else{return [jsonPath(html,'$.msg.url')];}}",
-                "name": "function Main(text){if(text.indexOf('{')==-1){return '在线播放';}var name = jsonPath(text,'$.playName');if(name.length<3){return '';}else{return name;}}",
-                "url": "function Main(text){if(text.indexOf('{')==-1){return text;}var murl = jsonPath(text,'$.play');if(murl.length<3){return jsonPath(mhtml,'$.msg.url');}else{return murl;}}",
+                "name": "function Main(text){if(text.indexOf('{')==-1){return '在线播放';}var name = jsonPath(text,'$.playName');return name;}",
+                "url": "function Main(text){if(text.indexOf('{')==-1){return text;}var murl = jsonPath(text,'$.play');return murl;}",
                 "orderBy": 1,
                 "category": 3
             }
