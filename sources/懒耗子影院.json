@@ -21,7 +21,7 @@
                 "list": "function Main(html){return jsonPaths(html,'$.msg.url[*]');}",
                 "name": "function Main(text){return jsonPath(text,'$.playName');}",
                 "url": "function Main(text){return jsonPath(text,'$.play');}",
-                "orderBy": 0,
+                "orderBy": 1,
                 "category": 1
             }
         }
