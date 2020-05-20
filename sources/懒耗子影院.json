@@ -21,8 +21,8 @@
         "catalogs": {
             "chapter": {
                 "list": "function Main(html){return jsonPaths(html,'$.msg.url[*]');}",
-                "name": "function Main(text){return jsonPath(text,'$.playName');}",
-                "url": "function Main(text){return jsonPath(text,'$.play');}",
+                "name": "function Main(text){var name = jsonPath(text,'$.playName');if(name.length<1){return '在线播放';}return name;}",
+                "url": "function Main(text){var murl = jsonPath(text,'$.play');if(murl.length<1){return jsonPath(text,'$.msg.url');}return murl;}",
                 "orderBy": 1,
                 "category": 3
             }
