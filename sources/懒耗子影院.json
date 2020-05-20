@@ -13,9 +13,11 @@
         "url": "function Main(text){return 'http://v.looklookb.com.cn/info@charset->UTF-8@header->X-Requested-With:XMLHttpRequest@post->id='+jsonPath(text,'$.videoUrl');}"
     },
     "detail": {
+        "title": "",
         "author": "无作者及其他信息",
         "introduction": "",
         "upDate": "",
+        "cover": "function Main(html){return jsonPath(html,'$.msg.pic');}",
         "catalogs": {
             "chapter": {
                 "list": "function Main(html){return jsonPaths(html,'$.msg.url[*]');}",
