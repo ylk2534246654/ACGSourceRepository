@@ -19,7 +19,7 @@
         "request": [
             {
                 "name": "更新",
-                "url": "http://m.ccshwy.com/new/",
+                "url": "http://m.ccshwy.com/new/"
             },
             {
                 "name": "排行",
@@ -41,7 +41,7 @@
         "cover": "function Main(text){return jsoup(text,'a.ImgA > img@attr->src');}",
         "url": "function Main(text){return jsoup(text,'a.ImgA@attr->href');}"
     },
-    "Signin":{
+    "signin":{
         "url":""
     },
     "detail": {
