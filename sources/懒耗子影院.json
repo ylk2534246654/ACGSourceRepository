@@ -4,13 +4,13 @@
     "developer": "雨夏",
     "versionName": "1.0",
     "versionCode": 1,
-    "request": "http://v.looklookb.com.cn/action/search?keyword=[$key]&page=1&limit=10@charset->UTF-8",
+    "request": "http://v.looklookb.com.cn/action/search?keyword=[$key]&page=1&limit=10@charset->UTF-8@header->X-Requested-With:XMLHttpRequest",
     "search": {
         "list": "function Main(html){return jsonPaths(html,'$..data[*]');}",
         "title": "function Main(text){return jsonPath(text,'$.videoNames');}",
         "introduction": "function Main(text){return jsonPath(text,'$.categorys')+'/'+jsonPath(text,'$.time');}",
         "cover": "",
-        "url": "function Main(text){return 'http://v.looklookb.com.cn/info@charset->UTF-8@header->X-Requested-With:XMLHttpRequest@post->id='jsonPath(text,'$.videoUrl');}"
+        "url": "function Main(text){return 'http://v.looklookb.com.cn/info@charset->UTF-8@post->id='jsonPath(text,'$.videoUrl');}"
     },
     "detail": {
         "author": "",
