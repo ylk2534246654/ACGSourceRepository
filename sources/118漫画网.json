@@ -41,6 +41,9 @@
         "cover": "function Main(text){return jsoup(text,'a.ImgA > img@attr->src');}",
         "url": "function Main(text){return jsoup(text,'a.ImgA@attr->href');}"
     },
+    "Signin":{
+        "url":""
+    },
     "detail": {
         "author": "function Main(html){return jsoup(html,'div.sub_r > p:nth-child(2)');}",
         "introduction": "function Main(html){return jsoup(html,'p.txtDesc').replace('介绍:','');}",
