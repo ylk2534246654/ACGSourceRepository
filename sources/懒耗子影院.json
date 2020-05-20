@@ -20,9 +20,9 @@
         "cover": "function Main(html){return jsonPath(html,'$.msg.pic');}",
         "catalogs": {
             "chapter": {
-                "list": "function Main(html){return jsonPaths(html,'$.msg.url[*]');}",
+                "list": "var mhtml;function Main(html){mhtml = html;return jsonPaths(html,'$.msg.url[*]');}",
                 "name": "function Main(text){var name = jsonPath(text,'$.playName');if(name.length<3){return '在线播放';}else{return name;}}",
-                "url": "function Main(text){var murl = jsonPath(text,'$.play');if(murl.length<3){return jsonPath(html,'$.msg.url');}else{return murl;}}",
+                "url": "function Main(text){var murl = jsonPath(text,'$.play');if(murl.length<3){return jsonPath(mhtml,'$.msg.url');}else{return murl;}}",
                 "orderBy": 1,
                 "category": 3
             }
