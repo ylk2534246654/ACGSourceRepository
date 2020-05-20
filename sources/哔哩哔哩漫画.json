@@ -5,6 +5,10 @@
   "versionName": "1.0",
   "versionCode": 1,
   "tab":"链接",
+  "auth":{
+    "login":"https://passport.bilibili.com/login",
+    "cookie": "passport.bilibili.com"
+  },
   "request": "https://manga.bilibili.com/twirp/comic.v1.Comic/Search?device=pc&platform=web@post->{\"key_word\":\"[$key]\",\"page_num\":1,\"page_size\":9}@charset->UTF-8@header->Content-Type:application/json;charset=UTF-8",
   "search": {
     "list": "function Main(html){return jsonPaths(html,'$..list[*]');}",
