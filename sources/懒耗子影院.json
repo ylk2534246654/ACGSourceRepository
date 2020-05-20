@@ -9,7 +9,7 @@
         "list": "function Main(html){return jsonPaths(html,'$..data[*]');}",
         "title": "function Main(text){return jsonPath(text,'$.videoNames');}",
         "introduction": "function Main(text){return jsonPath(text,'$.categorys')+'/'+jsonPath(text,'$.time');}",
-        "cover": "",
+        "cover": "http://v.looklookb.com.cn/favicon.ico",
         "url": "function Main(text){return 'http://v.looklookb.com.cn/info@charset->UTF-8@header->X-Requested-With:XMLHttpRequest@post->id='+jsonPath(text,'$.videoUrl');}"
     },
     "detail": {
