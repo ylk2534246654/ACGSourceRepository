@@ -30,20 +30,5 @@
                 "category": 1
             }
         }
-    },
-    "url": {
-        "url": "",
-        "url2": "",
-    },
-    "comic": {
-        "list": "",
-        "url": "",
-        "mode": 1
-    },
-    "novel": {
-        "list": "",
-        "url": "",
-        "content": "",
-        "mode": 1
     }
 }
