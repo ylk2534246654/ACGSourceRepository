@@ -5,7 +5,7 @@
   "versionName": "1.0",
   "versionCode": 1,
   "tab":"国漫",
-  "request": "https://m.bnmanhua.com/index.php?&m=vod-search@post->wd=[$key]@charset->UTF-8",
+  "request": "https://m.bnmanhua.com/search/[$key]/[$page].html@charset->UTF-8",
   "search": {
     "list": "function Main(html){return jsoups(html,'ul[class=tbox_m] > li');}",
     "title": "function Main(text){return jsoup(text,'h4[class=h4] > a@attr->title');}",
