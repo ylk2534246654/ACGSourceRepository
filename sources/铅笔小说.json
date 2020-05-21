@@ -5,7 +5,7 @@
 	"versionName": "1.0",
 	"versionCode": 1,
     "tab":"轻小说",
-    "request": "https://www.x23qb.com/search.php@post->searchkey=[$key]&searchtype=all@charset->gbk",
+    "request": "https://www.x23qb.com/search.php@post->searchkey=[$key]&searchtype=all&page=[$page]@charset->gbk",
     "search": {
         "list": "function Main(html){return jsoups(html,'#sitebox > dl');}",
         "title": "function Main(text){return jsoup(text,'dd > h3 > a');}",

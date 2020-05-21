@@ -5,7 +5,7 @@
     "versionName": "1.0",
     "versionCode": 1,
     "tab":"种子",
-    "request": "https://www.36dm.club/search.php?keyword=[$key]@charset->UTF-8",
+    "request": "https://www.36dm.club/search.php?keyword=[$key]&page=[$page]@charset->UTF-8",
     "search": {
         "list": "function Main(html){return jsoups(html,'#data_list > tr');}",
         "title": "function Main(text){return jsoup(text,'a:nth-child(2)');}",
