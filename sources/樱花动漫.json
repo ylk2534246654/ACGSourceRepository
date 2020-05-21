@@ -5,9 +5,9 @@
   "versionName": "1.0",
   "versionCode": 1,
   "tab":"动漫",
-  "request": "http://m.imomoe.in/search.asp?page=[$page]&searchword=[$key]&searchtype=-1@charset->gb2312@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36",
+  "request": "http://www.imomoe.in/search.asp@post->searchword=[$key]&page=[$page]@charset->gb2312@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36",
   "search": {
-    "list": "function Main(html){return jsoups(html,'div.pics > ul > li');}",
+    "list": "function Main(html){return jsoups(html,'div.fire > div.pics > ul > li');}",
     "title": "function Main(text){return jsoup(text,'a > img@attr->alt');}",
     "introduction": "function Main(text){return jsoup(text,'span:nth-child(4)');}",
     "cover": "function Main(text){return jsoup(text,'a > img@attr->src');}",
