@@ -8,10 +8,10 @@
   "request": "https://m.bnmanhua.com/search/[$key]/[$page].html@charset->UTF-8",
   "search": {
     "list": "function Main(html){return jsoups(html,'ul[class=tbox_m] > li');}",
-    "title": "function Main(text){return jsoup(text,'h4[class=h4] > a@attr->title');}",
+    "title": "function Main(text){return jsoup(text,'a@attr->title');}",
     "introduction": "",
     "cover": "function Main(text){return jsoup(text,'a[class=vbox_t] > mip-img@attr->src');}",
-    "url": "function Main(text){return jsoup(text,'h4[class=h4] > a@attr->href');}"
+    "url": "function Main(text){return jsoup(text,'a@attr->href');}"
   },
   "detail": {
     "author": "function Main(html){return jsoup(html,'p.dir');}",
