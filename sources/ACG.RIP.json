@@ -5,7 +5,7 @@
     "versionName": "1.0",
     "versionCode": 1,
     "tab":"种子",
-    "request": "https://acg.rip/?term=[$key]@charset->UTF-8",
+    "request": "https://acg.rip/page/[$page]?term=[$key]@charset->UTF-8",
     "search": {
         "list": "function Main(html){return jsoups(html,'tbody > tr');}",
         "title": "function Main(text){return jsoup(text,'span.title > a');}",
