@@ -5,7 +5,7 @@
     "versionName": "1.0",
     "versionCode": 1,
     "tab":"动漫",
-    "request": "https://isldm.com/vodsearch/-------------/@post->wd=[$key]@charset->utf-8",
+    "request": "https://isldm.com/vodsearch/[$key]----------[$page]---/@charset->utf-8",
     "search": {
         "list": "function Main(html){return jsoups(html,'#content > div.searchbox.board.clearfix > ul > li');}",
         "title": "function Main(text){return jsoup(text,'div > div.headline.clearfix > a');}",
