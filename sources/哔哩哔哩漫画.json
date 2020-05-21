@@ -7,7 +7,8 @@
   "tab":"链接",
   "auth":{
     "login":"https://passport.bilibili.com/login",
-    "verify":"https://m.bilibili.com/space"
+    "verify":"https://m.bilibili.com/space",
+    "logged":"的个人空间"
   },
   "request": "https://manga.bilibili.com/twirp/comic.v1.Comic/Search?device=pc&platform=web@post->{\"key_word\":\"[$key]\",\"page_num\":[$page],\"page_size\":9}@charset->UTF-8@header->Content-Type:application/json;charset=UTF-8",
   "search": {
