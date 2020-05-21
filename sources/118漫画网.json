@@ -7,7 +7,7 @@
     "versionCode": 1,
     "tab":"国漫",
     "dependencies": "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/js/base64.js",
-    "request": "http://m.ccshwy.com/statics/search.aspx?key=[$key]@charset->UTF-8",
+    "request": "http://m.ccshwy.com/statics/search.aspx?key=[$key]&page=[$page]@charset->UTF-8",
     "search": {
         "list": "function Main(html){return jsoups(html,'#listbody > li');}",
         "title": "function Main(text){return jsoup(text,'a.txtA');}",
