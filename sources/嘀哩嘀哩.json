@@ -5,7 +5,8 @@
   "versionName": "1.0",
   "versionCode": 1,
   "tab":"动漫",
-  "request": "http://m.dilidili.io/_search@post->keywords=[$key]&pagesize=10&page=0&csrfmiddlewaretoken=yaITdYIyUQf8A0jkeA7CV5d4RV5x1hW7W7WK7v92YwJUsu46VDdg2Q0qV7WuzuZn@charset->UTF-8@header->User-Agent:Mozilla/5.0 (Linux; Android 4.4.2; Nexus 4 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36@header->Cookie:csrftoken=rheYhz00HvLyp7kmhfMBjCECwpXPSFu5PesPb6ruLbfkhB58YiSfqnrYABOMqSxl",
+  "startpage":0,
+  "request": "http://m.dilidili.io/_search@post->keywords=[$key]&pagesize=10&page=[$page]&csrfmiddlewaretoken=yaITdYIyUQf8A0jkeA7CV5d4RV5x1hW7W7WK7v92YwJUsu46VDdg2Q0qV7WuzuZn@charset->UTF-8@header->User-Agent:Mozilla/5.0 (Linux; Android 4.4.2; Nexus 4 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36@header->Cookie:csrftoken=rheYhz00HvLyp7kmhfMBjCECwpXPSFu5PesPb6ruLbfkhB58YiSfqnrYABOMqSxl",
   "search": {
     "list": "function Main(html){return jsonPaths(html,'$..result[*]');}",
     "title": "function Main(text){return jsonPath(text,'$.name');}",
