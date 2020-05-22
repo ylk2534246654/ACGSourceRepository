@@ -4,6 +4,7 @@
     "developer": "雨夏",
     "versionName": "1.0",
     "versionCode": 1,
+    "tab":"小说",
     "request": "https://m.fpzw.com/modules/article/search.php?searchtype=keywords&searchkey=[$key]@charset->gbk",
     "search": {
         "list": "function Main(html){return jsoups(html,'div.hot_sale');}",
