@@ -5,12 +5,12 @@
 	"versionName": "1.0",
 	"versionCode": 1,
   "tab":"音乐",
-  "request": "https://music.liuzhijin.cn/@post->input=[$key]&filter=name&type=netease&page=[$page]@charset->UTF-8@header->x-requested-with:XMLHttpRequest",
+  "request": "https://api.zhuolin.wang/api.php?callback=jQuery111306560037598650175_1590078348849&types=search&count=20&source=netease&pages=[$page]&name=[$key]&_=1590078348854@charset->UTF-8",
   "search": {
-    "list": "function Main(html){return jsonPaths(html,'$..data[*]');}",
-    "title": "function Main(text){return jsonPath(text,'$.title');}",
-    "introduction": "function Main(text){return jsonPath(text,'$.author');}",
-    "cover": "function Main(text){return jsonPath(text,'$.pic');}",
-    "url": "function Main(text){return jsonPath(text,'$.url');}"
+    "list": "function Main(html){html = '['+strmiddle(html,'([','])')+']';return jsonPaths(html,'$.[*]');}",
+    "title": "function Main(text){return jsonPath(text,'$.name');}",
+    "introduction": "function Main(text){return jsonPath(text,'$.artist');}",
+    "cover": "function Main(text){return jsonPath(text,'$.pic_id');}",
+    "url": "function Main(text){return 'https://api.zhuolin.wang/api.php?callback=jQuery111306560037598650175_1590078348849&types=url&id='+jsonPath(text,'$.url_id')+'&source=netease&_=1590078348857';}"
   }
 }
