@@ -10,7 +10,7 @@
     "list": "function Main(html){html = '['+strmiddle(html,'([','])')+']';return jsonPaths(html,'$.[*]');}",
     "title": "function Main(text){return jsonPath(text,'$.name');}",
     "introduction": "function Main(text){return jsonPath(text,'$.artist');}",
-    "cover": "function Main(text){return jsonPath(text,'$.pic_id');}",
+    "cover": "http://pic.rmb.bdstatic.com/911423bee2bef937975b29b265d737b3.png",
     "url": "function Main(text){return 'https://api.zhuolin.wang/api.php?callback=jQuery111306560037598650175_1590078348849&types=url&id='+jsonPath(text,'$.url_id')+'&source=netease&_=1590078348857';}"
   },
   "url": {
