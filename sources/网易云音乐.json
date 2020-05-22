@@ -12,5 +12,8 @@
     "introduction": "function Main(text){return jsonPath(text,'$.artist');}",
     "cover": "function Main(text){return jsonPath(text,'$.pic_id');}",
     "url": "function Main(text){return 'https://api.zhuolin.wang/api.php?callback=jQuery111306560037598650175_1590078348849&types=url&id='+jsonPath(text,'$.url_id')+'&source=netease&_=1590078348857';}"
+  },
+  "url": {
+    "url": "function Main(html){html = strmiddle(html,'(',')');return jsonPath(html,'$.url');}"
   }
 }
