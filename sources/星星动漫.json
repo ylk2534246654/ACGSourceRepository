@@ -1,0 +1,34 @@
+{
+    "name": "星星动漫",
+    "introduction": "可以搜索一些动漫",
+    "developer": "雨夏",
+    "versionName": "1.0",
+    "versionCode": 1,
+    "request": "https://www.xinxindm.com/index.php?s=search-index-wd-[$key]-sid-1-p-[$page]@charset->utf-8@header->x-requested-with:XMLHttpRequest",
+    "search": {
+        "list": "function Main(html){return jsoups(html,'#content > div');}",
+        "title": "function Main(text){return jsoup(text,'div.details-info > ul > li:nth-child(1) > a');}",
+        "introduction": "function Main(text){return jsoup(text,'div.details-info > ul > li:nth-child(13) > span.details-content-default');}",
+        "cover": "function Main(text){return jsoup(text,'div.details-info-min > div > a@attr->data-original');}",
+        "url": "function Main(text){return jsoup(text,'div.details-info-min > div > a@attr->href');}"
+    },
+    "detail": {
+        "author": "",
+        "introduction": "",
+        "upDate": "",
+        "tabs": {
+          "list": "",
+          "name": ""
+        },
+        "catalogs": {
+            "list": "",
+            "chapter": {
+                "list": "",
+                "name": "",
+                "url": "",
+                "orderBy": 0,
+                "category": 1
+            }
+        }
+    }
+}
