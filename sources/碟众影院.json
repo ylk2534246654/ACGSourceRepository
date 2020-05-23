@@ -26,7 +26,7 @@
                 "list": "function Main(html){return jsoups(html,'div.playlist_full > ul > li');}",
                 "name": "function Main(text){return jsoup(text,'a');}",
                 "url": "function Main(text){return jsoup(text,'a@attr->href');}",
-                "orderBy": 0,
+                "orderBy": 1,
                 "category": 3
             }
         }
