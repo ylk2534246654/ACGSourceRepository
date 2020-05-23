@@ -1,0 +1,34 @@
+{
+    "name": "小嘀咕影院",
+    "introduction": "可以搜一些电视电影",
+    "developer": "雨夏",
+    "versionName": "1.0",
+    "versionCode": 1,
+    "request": "http://www.xdg234.com/index.php?m=vod-search-pg-[$page]-wd-[$key].html@charset->utf-8",
+    "search": {
+        "list": "function Main(html){return jsoups(html,'#data_list > li');}",
+        "title": "function Main(text){return jsoup(text,'p.sTit > a');}",
+        "introduction": "function Main(text){return jsoup(text,'div.pic > a > span');}",
+        "cover": "function Main(text){return jsoup(text,'div.pic > a > img@attr->src');}",
+        "url": "function Main(text){return jsoup(text,'p.sTit > a@attr->href');}"
+    },
+    "detail": {
+        "author": "",
+        "introduction": "",
+        "upDate": "",
+        "tabs": {
+          "list": "",
+          "name": ""
+        },
+        "catalogs": {
+            "list": "",
+            "chapter": {
+                "list": "",
+                "name": "",
+                "url": "",
+                "orderBy": 0,
+                "category": 1
+            }
+        }
+    }
+}
