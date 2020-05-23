@@ -4,6 +4,7 @@
     "developer": "雨夏",
     "versionName": "1.0",
     "versionCode": 1,
+    "tab":"动漫",
     "request": "https://www.xinxindm.com/index.php?s=search-index-wd-[$key]-sid-1-p-[$page]@charset->utf-8@header->x-requested-with:XMLHttpRequest",
     "search": {
         "list": "function Main(html){return jsoups(html,'#content > div');}",
