@@ -1,0 +1,34 @@
+{
+    "name": "溜溜影院",
+    "introduction": "可以搜一些电视电影",
+    "developer": "雨夏",
+    "versionName": "1.0",
+    "versionCode": 1,
+    "request": "http://liuliuyy.com/vodsearch/nid/1/page/[$page]/sid/1/wd/[$key].html@charset->utf-8",
+    "search": {
+        "list": "function Main(html){return jsoups(html,'div.col-xs-1 > div > div > div.stui-pannel_bd > ul.stui-vodlist__media > li');}",
+        "title": "function Main(text){return jsoup(text,'div.detail > h3.title > a');}",
+        "introduction": "function Main(text){return jsoup(text,'div.detail > p.hidden-mi');}",
+        "cover": "function Main(text){return jsoup(text,'div.thumb > a@attr->data-original');}",
+        "url": "function Main(text){return jsoup(text,'div.detail > h3.title > a@attr->href');}"
+    },
+    "detail": {
+        "author": "",
+        "introduction": "",
+        "upDate": "",
+        "tabs": {
+          "list": "",
+          "name": ""
+        },
+        "catalogs": {
+            "list": "",
+            "chapter": {
+                "list": "",
+                "name": "",
+                "url": "",
+                "orderBy": 0,
+                "category": 1
+            }
+        }
+    }
+}
