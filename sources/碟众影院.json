@@ -18,7 +18,7 @@
         "upDate": "function Main(html){return jsoup(html,'div.detail_list_box > div > div > div:nth-child(3) > ul > li:nth-child(2)');}",
         "tabs": {
           "list": "function Main(html){return jsoups(html,'#NumTab > a');}",
-          "name": "function Main(text){return jsoup(text,'i');}"
+          "name": "function Main(text){return jsoup(text,'a');}"
         },
         "catalogs": {
             "list": "function Main(html){return jsoups(html,'div.play_source > div.play_list_box');}",
