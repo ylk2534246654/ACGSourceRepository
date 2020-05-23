@@ -13,21 +13,21 @@
         "url": "function Main(text){return jsoup(text,'div.searchlist_titbox > h4.vodlist_title > a@attr->href');}"
     },
     "detail": {
-        "author": "",
-        "introduction": "",
-        "upDate": "",
+        "author": "function Main(html){return jsoup(html,'div.detail_list_box > div > div > div:nth-child(3) > ul > li:nth-child(4)');}",
+        "introduction": "function Main(html){return jsoup(html,'div.content_desc.context.clearfix > span');}",
+        "upDate": "function Main(html){return jsoup(html,'div.detail_list_box > div > div > div:nth-child(3) > ul > li:nth-child(2)');}",
         "tabs": {
-          "list": "",
-          "name": ""
+          "list": "function Main(html){return jsoups(html,'#NumTab > a');}",
+          "name": "function Main(html){return jsoups(html,'i');}"
         },
         "catalogs": {
-            "list": "",
+            "list": "function Main(html){return jsoups(html,'div.play_source > div.play_list_box');}",
             "chapter": {
-                "list": "",
-                "name": "",
-                "url": "",
+                "list": "function Main(html){return jsoups(html,'div.playlist_full > ul > li');}",
+                "name": "function Main(text){return jsoup(text,'a');}",
+                "url": "function Main(text){return jsoup(text,'a@attr->href');}",
                 "orderBy": 0,
-                "category": 1
+                "category": 3
             }
         }
     }
