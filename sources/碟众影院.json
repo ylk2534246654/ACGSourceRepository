@@ -1,0 +1,34 @@
+{
+    "name": "碟众影院",
+    "introduction": "可以搜一些电视电影",
+    "developer": "雨夏",
+    "versionName": "1.0",
+    "versionCode": 1,
+    "request": "http://www.diezz.net/vodsearch/[$key]----------[$page]---.html",
+    "search": {
+        "list": "function Main(html){return jsoups(html,'li.searchlist_item');}",
+        "title": "function Main(text){return jsoup(text,'div.searchlist_titbox > h4.vodlist_title');}",
+        "introduction": "function Main(text){return jsoup(text,'p.vodlist_sub.hidden_xs');}",
+        "cover": "function Main(text){return jsoup(text,'div.searchlist_img > a@attr->data-original');}",
+        "url": "function Main(text){return jsoup(text,'div.searchlist_titbox > h4.vodlist_title > a@attr->href');}"
+    },
+    "detail": {
+        "author": "",
+        "introduction": "",
+        "upDate": "",
+        "tabs": {
+          "list": "",
+          "name": ""
+        },
+        "catalogs": {
+            "list": "",
+            "chapter": {
+                "list": "",
+                "name": "",
+                "url": "",
+                "orderBy": 0,
+                "category": 1
+            }
+        }
+    }
+}
