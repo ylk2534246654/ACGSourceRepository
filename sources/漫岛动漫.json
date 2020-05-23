@@ -24,7 +24,7 @@
         "catalogs": {
             "list": "function Main(html){return jsoups(html,'div.taba-down > div.plist');}",
             "chapter": {
-                "list": "function Main(text){return jsoup(text,'div > ul > div >ul> li');}",
+                "list": "function Main(html){return jsoups(html,'div > ul > div >ul> li');}",
                 "name": "function Main(text){return jsoup(text,'a');}",
                 "url": "function Main(text){return jsoup(text,'a@attr->href');}",
                 "orderBy": 1,
