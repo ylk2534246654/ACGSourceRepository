@@ -1,0 +1,35 @@
+{
+    "name": "漫岛动漫",
+    "introduction": "可以搜索一些动漫",
+    "developer": "雨夏",
+    "versionName": "1.0",
+    "versionCode": 1,
+    "tab":"动漫",
+    "request": "https://www.mandao.tv/search.php?page=[$page]&searchword=[$key]@charset->utf-8",
+    "search": {
+        "list": "function Main(html){return jsoups(html,'div.index-tj > ul > li');}",
+        "title": "function Main(text){return jsoup(text,'div.text');}",
+        "introduction": "function Main(text){return jsoup(text,'div.img > p');}",
+        "cover": "function Main(text){return jsoup(text,'div.img > p > img@attr->data-original');}",
+        "url": "function Main(text){return jsoup(text,'li > a@attr->href');}"
+    },
+    "detail": {
+        "author": "",
+        "introduction": "",
+        "upDate": "",
+        "tabs": {
+          "list": "",
+          "name": ""
+        },
+        "catalogs": {
+            "list": "",
+            "chapter": {
+                "list": "",
+                "name": "",
+                "url": "",
+                "orderBy": 0,
+                "category": 1
+            }
+        }
+    }
+}
