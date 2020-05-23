@@ -13,21 +13,21 @@
         "url": "function Main(text){return jsoup(text,'p.sTit > a@attr->href');}"
     },
     "detail": {
-        "author": "",
-        "introduction": "",
-        "upDate": "",
+        "author": "function Main(html){return jsoup(html,'div.sub_r > p:nth-child(5) > span.date');}",
+        "introduction": "function Main(html){return jsoup(html,'p.txtDesc');}",
+        "upDate": "function Main(html){return jsoup(html,'div.sub_r > p:nth-child(1) > span.date');}",
         "tabs": {
-          "list": "",
-          "name": ""
+          "list": "function Main(html){return jsoups(html,'div.payl > div.lhmain');}",
+          "name": "function Main(html){return jsoup(html,'p.laiyuan > font');}"
         },
         "catalogs": {
-            "list": "",
+            "list": "function Main(html){return jsoups(html,'div.payl > div.lhmain');}",
             "chapter": {
-                "list": "",
-                "name": "",
-                "url": "",
-                "orderBy": 0,
-                "category": 1
+                "list": "function Main(html){return jsoups(html,'div > ul > li');}",
+                "name": "function Main(text){return jsoup(text,'a');}",
+                "url": "function Main(text){return jsoup(text,'a@attr->href');}",
+                "orderBy": 1,
+                "category": 3
             }
         }
     }
