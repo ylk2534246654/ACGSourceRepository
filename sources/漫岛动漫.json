@@ -14,21 +14,21 @@
         "url": "function Main(text){return jsoup(text,'li > a@attr->href');}"
     },
     "detail": {
-        "author": "",
-        "introduction": "",
-        "upDate": "",
+        "author": "function Main(html){return jsoup(html,'div.info > dl > dd:nth-child(5)');}",
+        "introduction": "function Main(html){return jsoup(html,'div.des2');}",
+        "upDate": "function Main(html){return jsoup(html,'div.info > dl > dd:nth-child(6)');}",
         "tabs": {
-          "list": "",
-          "name": ""
+          "list": "function Main(html){return jsoups(html,'div.taba-down > div > ul > li:not(.g)');}",
+          "name": "function Main(text){return jsoup(text,'li');}"
         },
         "catalogs": {
-            "list": "",
+            "list": "function Main(html){return jsoups(html,'div.taba-down > div.plist');}",
             "chapter": {
-                "list": "",
-                "name": "",
-                "url": "",
-                "orderBy": 0,
-                "category": 1
+                "list": "function Main(text){return jsoup(text,'div > ul > div >ul> li');}",
+                "name": "function Main(text){return jsoup(text,'a');}",
+                "url": "function Main(text){return jsoup(text,'a@attr->href');}",
+                "orderBy": 1,
+                "category": 3
             }
         }
     }
