@@ -5,7 +5,7 @@
     "versionName": "1.0",
     "versionCode": 1,
     "startpage":0,
-    "request": "https://cn.bing.com/search?q=site%3acosdao.com+%e5%88%80%e5%89%91%e7%a5%9e%e5%9f%9f&first=1&FORM=PERE",
+    "request": "https://cn.bing.com/search?q=site%3acosdao.com+[$key]&first=1&FORM=PERE",
     "search": {
         "list": "function Main(html){return jsoups(html,'#b_results > li');}",
         "title": "function Main(text){return jsoup(text,'h2 > a');}",
