@@ -1,0 +1,34 @@
+{
+    "name": "clicli",
+    "introduction": "可以搜索一些动漫",
+    "developer": "雨夏",
+    "versionName": "1.0",
+    "versionCode": 1,
+    "request": "https://api.clicli.us/search/posts?key=[$key]",
+    "search": {
+        "list": "function Main(html){return jsonPaths(html,'$..posts[*]');}",
+        "title": "function Main(text){return jsonPath(text,'$.title');}",
+        "introduction": "function Main(text){return jsonPath(text,'$.time');}",
+        "cover": "function Main(text){return strmiddle(jsonPath(text,'$.content'),'(',')');}",
+        "url": "function Main(text){return 'https://clicli.me/play/'+jsonPath(text,'$.id');}"
+    },
+    "detail": {
+        "author": "",
+        "introduction": "",
+        "upDate": "",
+        "tabs": {
+          "list": "",
+          "name": ""
+        },
+        "catalogs": {
+            "list": "",
+            "chapter": {
+                "list": "",
+                "name": "",
+                "url": "",
+                "orderBy": 0,
+                "category": 1
+            }
+        }
+    }
+}
