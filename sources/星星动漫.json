@@ -33,6 +33,6 @@
         }
     },
   "video": {
-    "url": "function Main(text){if(text.match('^((?!m3u8\\.html).)*$')!=null){return text.replace('~ck');};return '';}"
+    "url": "function Main(text){if(text.match('^((?!m3u8\\.html).)*$')!=null){return text.replace('~ck','');};return '';}"
   }
 }
