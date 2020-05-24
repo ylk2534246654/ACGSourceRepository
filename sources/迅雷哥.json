@@ -33,6 +33,7 @@
 		}
 	},
   	"video": {
-   	 "filter": "^((?!4142.cc).)*$"
+   	 "filter": "^((?!4142.cc).)*$",
+	 "url": "function Main(text){if(text.match('^((?!4142.cc).)*$')!=null){return text;};return '';}"
   	}
 }
