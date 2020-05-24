@@ -13,21 +13,16 @@
         "url": "function Main(text){return 'http://www.tucao.one/api_v2/view.php?apikey=25tids8f1ew1821ed&type=json&hid='+jsonPath(text,'$.hid');}"
     },
     "detail": {
-        "author": "",
-        "introduction": "",
-        "upDate": "",
-        "tabs": {
-          "list": "",
-          "name": ""
-        },
+        "author": "function Main(text){return jsonPath(text,'$.user');}",
+        "introduction": "function Main(text){return jsonPath(text,'$.description');}",
+        "upDate": "function Main(text){return jsonPath(text,'$.typename');}",
         "catalogs": {
-            "list": "",
             "chapter": {
-                "list": "",
-                "name": "",
-                "url": "",
+                "list": "function Main(html){return jsonPaths(html,'$..video[*]');}",
+                "name": "function Main(text){return jsonPath(text,'$.title');}",
+                "url": "function Main(text){return jsonPath(text,'$.file');}",
                 "orderBy": 0,
-                "category": 1
+                "category": 3
             }
         }
     }
