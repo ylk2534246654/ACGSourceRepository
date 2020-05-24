@@ -13,21 +13,16 @@
         "url": "function Main(text){return 'https://api.clicli.us/videos?pid='+jsonPath(text,'$.id')+'&page=1&pageSize=300';}"
     },
     "detail": {
-        "author": "",
-        "introduction": "",
-        "upDate": "",
-        "tabs": {
-          "list": "",
-          "name": ""
-        },
+        "author": "无作者信息",
+        "introduction": "无介绍信息",
+        "upDate": "无更新状态",
         "catalogs": {
-            "list": "",
             "chapter": {
-                "list": "",
-                "name": "",
-                "url": "",
+                "list": "function Main(html){return jsonPaths(html,'$..videos[*]');}",
+                "name": "function Main(text){return jsonPath(text,'$.title');}",
+                "url": "function Main(text){return jsonPath(text,'$.content');}",
                 "orderBy": 0,
-                "category": 1
+                "category": 3
             }
         }
     }
