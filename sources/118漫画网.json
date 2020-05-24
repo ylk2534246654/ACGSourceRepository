@@ -15,7 +15,7 @@
         "cover": "function Main(text){return jsoup(text,'a.ImgA > img@attr->src');}",
         "url": "function Main(text){return jsoup(text,'a.ImgA@attr->href');}"
     },
-    "find": [
+    "finds": [
         {
         "name": "更新",
         "request": "http://m.ccshwy.com/new/",
