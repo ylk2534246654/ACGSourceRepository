@@ -1,0 +1,35 @@
+{
+    "name": "陌陌动漫",
+    "introduction": "可以搜索一些动漫",
+    "developer": "雨夏",
+    "versionName": "1.0",
+    "versionCode": 1,
+    "startpage":0,
+    "request": "https://cn.bing.com/search?q=site%3acosdao.com+[$key]&first=[$page]1&FORM=PERE2",
+    "search": {
+        "list": "function Main(html){return jsoups(html,'#b_results > li');}",
+        "title": "function Main(text){return jsoup(text,'h2 > a');}",
+        "introduction": "function Main(text){return jsoup(text,' div > p');}",
+        "cover": "http://m.imomo.tv/favicon.ico",
+        "url": "function Main(text){return jsoup(text,'h2 > a@attr->href');}"
+    },
+    "detail": {
+        "author": "",
+        "introduction": "",
+        "upDate": "",
+        "tabs": {
+          "list": "",
+          "name": ""
+        },
+        "catalogs": {
+            "list": "",
+            "chapter": {
+                "list": "",
+                "name": "",
+                "url": "",
+                "orderBy": 0,
+                "category": 1
+            }
+        }
+    }
+}
