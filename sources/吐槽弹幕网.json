@@ -4,6 +4,7 @@
     "developer": "雨夏",
     "versionName": "1.0",
     "versionCode": 1,
+    "tab":"动漫",
     "request": "http://www.tucao.one/api_v2/search.php?pagesize=10&apikey=25tids8f1ew1821ed&type=json&q=[$key]&page=[$page]&order=date",
     "search": {
         "list": "function Main(html){return jsonPaths(html,'$..result[*]');}",

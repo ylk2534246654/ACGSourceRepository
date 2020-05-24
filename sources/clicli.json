@@ -4,6 +4,7 @@
     "developer": "雨夏",
     "versionName": "1.0",
     "versionCode": 1,
+    "tab":"动漫",
     "request": "https://api.clicli.us/search/posts?key=[$key]",
     "search": {
         "list": "function Main(html){return jsonPaths(html,'$..posts[*]');}",
