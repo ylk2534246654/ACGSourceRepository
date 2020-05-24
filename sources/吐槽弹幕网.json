@@ -13,9 +13,9 @@
         "url": "function Main(text){return 'http://www.tucao.one/api_v2/view.php?apikey=25tids8f1ew1821ed&type=json&hid='+jsonPath(text,'$.hid');}"
     },
     "detail": {
-        "author": "function Main(text){return jsonPath(text,'$.user');}",
-        "introduction": "function Main(text){return jsonPath(text,'$.description');}",
-        "upDate": "function Main(text){return jsonPath(text,'$.typename');}",
+        "author": "function Main(html){return jsonPath(html,'$..user');}",
+        "introduction": "function Main(html){return jsonPath(html,'$..description');}",
+        "upDate": "function Main(html){return jsonPath(html,'$..typename');}",
         "catalogs": {
             "chapter": {
                 "list": "function Main(html){return jsonPaths(html,'$..video[*]');}",
