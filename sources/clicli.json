@@ -13,9 +13,9 @@
         "url": "function Main(text){return 'https://api.clicli.us/videos?pid='+jsonPath(text,'$.id')+'&page=1&pageSize=300';}"
     },
     "detail": {
-        "author": "无作者信息",
-        "introduction": "无介绍信息",
-        "upDate": "无更新状态",
+        "author": "",
+        "introduction": "",
+        "upDate": "",
         "catalogs": {
             "chapter": {
                 "list": "function Main(html){return jsonPaths(html,'$..videos[*]');}",
