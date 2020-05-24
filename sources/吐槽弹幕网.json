@@ -1,0 +1,34 @@
+{
+    "name": "吐槽弹幕网",
+    "introduction": "可以搜索一些动漫",
+    "developer": "雨夏",
+    "versionName": "1.0",
+    "versionCode": 1,
+    "request": "http://www.tucao.one/api_v2/search.php?pagesize=10&apikey=25tids8f1ew1821ed&type=json&q=[$key]&page=[$page]&order=date",
+    "search": {
+        "list": "function Main(html){return jsonPaths(html,'$..result[*]');}",
+        "title": "function Main(text){return jsonPath(text,'$.title');}",
+        "introduction": "function Main(text){return jsonPath(text,'$.description');}",
+        "cover": "function Main(text){return jsonPath(text,'$.thumb');}",
+        "url": "function Main(text){return 'http://www.tucao.one/api_v2/view.php?apikey=25tids8f1ew1821ed&type=json&hid='+jsonPath(text,'$.hid');}"
+    },
+    "detail": {
+        "author": "",
+        "introduction": "",
+        "upDate": "",
+        "tabs": {
+          "list": "",
+          "name": ""
+        },
+        "catalogs": {
+            "list": "",
+            "chapter": {
+                "list": "",
+                "name": "",
+                "url": "",
+                "orderBy": 0,
+                "category": 1
+            }
+        }
+    }
+}
