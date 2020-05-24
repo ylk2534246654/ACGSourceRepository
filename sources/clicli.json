@@ -10,7 +10,7 @@
         "title": "function Main(text){return jsonPath(text,'$.title');}",
         "introduction": "function Main(text){return jsonPath(text,'$.time');}",
         "cover": "function Main(text){return strmiddle(jsonPath(text,'$.content'),'(',')');}",
-        "url": "function Main(text){return 'https://clicli.me/play/'+jsonPath(text,'$.id');}"
+        "url": "function Main(text){return 'https://clicli.me/play/gv'+jsonPath(text,'$.id');}"
     },
     "detail": {
         "author": "",
