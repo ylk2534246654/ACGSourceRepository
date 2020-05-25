@@ -40,7 +40,7 @@
     },
     "finds": [
         {
-            "tab": "最近更新",
+            "tab": "更新日",
             "request": "https://www.ohmanhua.com/show?orderBy=update",
             "list": "function Main(html){return jsoups(html,'ul.fed-list-info > li');}",
             "title": "function Main(text){return jsoup(text,'a.fed-list-title');}",
@@ -49,8 +49,35 @@
             "url": "function Main(text){return jsoup(text,'a.fed-list-title@attr->href');}"
         },
         {
-            "tab": "排行榜",
-            "request": "https://www.ohmanhua.com/show",
+            "tab": "收录日",
+            "request": "https://www.ohmanhua.com/show?orderBy=create",
+            "list": "function Main(html){return jsoups(html,'ul.fed-list-info > li');}",
+            "title": "function Main(text){return jsoup(text,'a.fed-list-title');}",
+            "introduction": "function Main(text){return jsoup(text,'span.fed-list-desc');}",
+            "cover": "function Main(text){return jsoup(text,'a.fed-list-pics@attr->data-original');}",
+            "url": "function Main(text){return jsoup(text,'a.fed-list-title@attr->href');}"
+        },
+        {
+            "tab": "日点击",
+            "request": "https://www.ohmanhua.com/show?orderBy=dailyCount",
+            "list": "function Main(html){return jsoups(html,'ul.fed-list-info > li');}",
+            "title": "function Main(text){return jsoup(text,'a.fed-list-title');}",
+            "introduction": "function Main(text){return jsoup(text,'span.fed-list-desc');}",
+            "cover": "function Main(text){return jsoup(text,'a.fed-list-pics@attr->data-original');}",
+            "url": "function Main(text){return jsoup(text,'a.fed-list-title@attr->href');}"
+        },
+        {
+            "tab": "周点击",
+            "request": "https://www.ohmanhua.com/show?orderBy=weeklyCount",
+            "list": "function Main(html){return jsoups(html,'ul.fed-list-info > li');}",
+            "title": "function Main(text){return jsoup(text,'a.fed-list-title');}",
+            "introduction": "function Main(text){return jsoup(text,'span.fed-list-desc');}",
+            "cover": "function Main(text){return jsoup(text,'a.fed-list-pics@attr->data-original');}",
+            "url": "function Main(text){return jsoup(text,'a.fed-list-title@attr->href');}"
+        },
+        {
+            "tab": "月点击",
+            "request": "https://www.ohmanhua.com/show?orderBy=monthlyCount",
             "list": "function Main(html){return jsoups(html,'ul.fed-list-info > li');}",
             "title": "function Main(text){return jsoup(text,'a.fed-list-title');}",
             "introduction": "function Main(text){return jsoup(text,'span.fed-list-desc');}",
