@@ -44,7 +44,25 @@
         },
         {
             "tab": "人气榜",
+            "request": "https://m.dmzj.com/rank/0-0-0-0.json",
+            "list": "function Main(html){return jsonPaths(html,'$.*');}",
+            "title": "function Main(text){return jsonPath(text,'$.name');}",
+            "introduction": "function Main(text){return jsonPath(text,'$.authors');}",
+            "cover": "function Main(text){return 'https://images.dmzj.com/'+jsonPath(text,'$.cover');}",
+            "url": "function Main(text){return 'https://m.dmzj.com/info/'+jsonPath(text,'$.comic_py')+'.html';}"
+        },
+        {
+            "tab": "吐槽榜",
             "request": "https://m.dmzj.com/rank/1-0-0-0.json",
+            "list": "function Main(html){return jsonPaths(html,'$.*');}",
+            "title": "function Main(text){return jsonPath(text,'$.name');}",
+            "introduction": "function Main(text){return jsonPath(text,'$.authors');}",
+            "cover": "function Main(text){return 'https://images.dmzj.com/'+jsonPath(text,'$.cover');}",
+            "url": "function Main(text){return 'https://m.dmzj.com/info/'+jsonPath(text,'$.comic_py')+'.html';}"
+        },
+        {
+            "tab": "订阅榜",
+            "request": "https://m.dmzj.com/rank/2-0-0-0.json",
             "list": "function Main(html){return jsonPaths(html,'$.*');}",
             "title": "function Main(text){return jsonPath(text,'$.name');}",
             "introduction": "function Main(text){return jsonPath(text,'$.authors');}",
