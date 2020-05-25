@@ -41,6 +41,15 @@
             "introduction": "function Main(text){return jsoup(text,'div.itemTxt > p:nth-child(4)');}",
             "cover": "function Main(text){return jsoup(text,'div.itemImg > a > img@attr->src');}",
             "url": "function Main(text){return jsoup(text,'div.itemTxt > a@attr->href');}"
+        },
+        {
+            "tab": "人气榜",
+            "request": "https://m.dmzj.com/rank/1-0-0-0.json",
+            "list": "function Main(html){return jsonPaths(html,'$.*');}",
+            "title": "function Main(text){return jsonPath(text,'$.name');}",
+            "introduction": "function Main(text){return jsonPath(text,'$.authors');}",
+            "cover": "function Main(text){return 'https://images.dmzj.com/'+jsonPath(text,'$.cover');}",
+            "url": "function Main(text){return 'https://m.dmzj.com/info/'+jsonPath(text,'$.comic_py')+'.html';}"
         }
     ]
 }
