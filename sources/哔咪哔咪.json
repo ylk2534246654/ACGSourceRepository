@@ -41,6 +41,33 @@
             "introduction": "function Main(text){return jsoup(text,'span.mask');}",
             "cover": "function Main(text){return jsoup(text,'a > img@attr->data-original');}",
             "url": "function Main(text){return jsoup(text,'a@attr->href');}"
+        },
+        {
+            "tab": "国漫",
+            "request": "http://www.bimibimi.me/type/guoman/",
+            "list": "function Main(html){return jsoups(html,'div.v_tb > ul > li');}",
+            "title": "function Main(text){return jsoup(text,'a@attr->title');}",
+            "introduction": "function Main(text){return jsoup(text,'span.mask');}",
+            "cover": "function Main(text){return jsoup(text,'a > img@attr->data-original');}",
+            "url": "function Main(text){return jsoup(text,'a@attr->href');}"
+        },
+        {
+            "tab": "剧场版",
+            "request": "http://www.bimibimi.me/type/juchang/",
+            "list": "function Main(html){return jsoups(html,'div.v_tb > ul > li');}",
+            "title": "function Main(text){return jsoup(text,'a@attr->title');}",
+            "introduction": "function Main(text){return jsoup(text,'span.mask');}",
+            "cover": "function Main(text){return jsoup(text,'a > img@attr->data-original');}",
+            "url": "function Main(text){return jsoup(text,'a@attr->href');}"
+        },
+        {
+            "tab": "影视",
+            "request": "http://www.bimibimi.me/type/move/",
+            "list": "function Main(html){return jsoups(html,'div.v_tb > ul > li');}",
+            "title": "function Main(text){return jsoup(text,'a@attr->title');}",
+            "introduction": "function Main(text){return jsoup(text,'span.mask');}",
+            "cover": "function Main(text){return jsoup(text,'a > img@attr->data-original');}",
+            "url": "function Main(text){return jsoup(text,'a@attr->href');}"
         }
     ]
 }
