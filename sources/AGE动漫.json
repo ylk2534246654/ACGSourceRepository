@@ -4,7 +4,7 @@
   "developer": "雨夏",
   "versionName": "1.0",
   "versionCode": 1,
-  "tab":"动漫",
+  "tab": "动漫",
   "request": "https://www.agefans.tv/search?&query=[$key]&page=[$page]",
   "search": {
     "list": "function Main(html){return jsoups(html,'div[class=blockcontent1] > div');}",
@@ -33,7 +33,7 @@
     }
   },
   "finds": [
-      {
+    {
       "tab": "每日推荐",
       "request": "https://www.agefans.tv/recommend",
       "list": "function Main(html){return jsoups(html,'div.baseblock > div > ul > li');}",
@@ -41,7 +41,8 @@
       "introduction": "function Main(text){return jsoup(text,'a > span');}",
       "cover": "function Main(text){return jsoup(text,'a > img@attr->src');}",
       "url": "function Main(text){return jsoup(text,'a@attr->href');}"
-      },{
+    },
+    {
       "tab": "最近更新",
       "request": "https://www.agefans.tv/update",
       "list": "function Main(html){return jsoups(html,'div.baseblock > div > ul > li');}",
@@ -49,6 +50,6 @@
       "introduction": "function Main(text){return jsoup(text,'a > span');}",
       "cover": "function Main(text){return jsoup(text,'a > img@attr->src');}",
       "url": "function Main(text){return jsoup(text,'a@attr->href');}"
-      }
-    ]
+    }
+  ]
 }

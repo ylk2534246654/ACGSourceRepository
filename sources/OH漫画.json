@@ -37,5 +37,16 @@
         "list": "var mh_info,image_info;function cdecrypt(key, word) { var key = CryptoJS.enc.Utf8.parse(key); var decrypt = CryptoJS.AES.decrypt(word, key, { mode: CryptoJS.mode.ECB, padding: CryptoJS.pad.Pkcs7 }); return CryptoJS.enc.Utf8.stringify(decrypt).toString() };function Main(html){javaScript(cdecrypt('JRUIFMVJDIWE569j', CryptoJS.enc.Base64.parse(strmiddle(html,'C_DATA=\\'','\\'')).toString(CryptoJS.enc.Utf8)));var endid = mh_info.totalimg;var murl = 'http://'+mh_info.domain+'/comic/'+mh_info.imgpath;var obj= [];for(var i =mh_info.startimg;i<=endid;i++){var num = i;var n=4;var a = (Array(n).join(0) + num).slice(-n);obj.push(murl+a+'.jpg');};return obj;}",
         "url": "function Main(text){return text;}",
         "mode": 1
+    },
+  "finds": [
+    {
+      "tab": "排行榜",
+      "request": "https://www.ohmanhua.com/show",
+      "list": "function Main(html){return jsoups(html,'div.fed-part-layout > dl');}",
+        "title": "function Main(text){return jsoup(text,'dd > h1');}",
+        "introduction": "function Main(text){return jsoup(text,'dd > ul');}",
+        "cover": "function Main(text){return jsoup(text,'dt > a@attr->data-original');}",
+        "url": "function Main(text){return jsoup(text,'dt > a@attr->href');}"
     }
+  ]
 }

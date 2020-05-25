@@ -1,11 +1,11 @@
 {
-    "MyACG搜索源":"https://diyyx.wang/app/MyACG.apk",
+    "MyACG搜索源": "https://diyyx.wang/app/MyACG.apk",
     "name": "118漫画网",
     "introduction": "可以搜索一些国漫",
     "developer": "雨夏",
     "versionName": "1.0",
     "versionCode": 1,
-    "tab":"国漫",
+    "tab": "国漫",
     "dependencies": "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/js/base64.js",
     "request": "http://m.ccshwy.com/statics/search.aspx?key=[$key]&page=[$page]@charset->UTF-8",
     "search": {
@@ -15,7 +15,7 @@
         "cover": "function Main(text){return jsoup(text,'a.ImgA > img@attr->src');}",
         "url": "function Main(text){return jsoup(text,'a.ImgA@attr->href');}"
     },
-    "schedule":{
+    "schedule": {
         "request": "http://m.ccshwy.com/statics/search.aspx?key=[$key]@charset->UTF-8",
         "tabs": "function Main(html){return jsoups(html,'result');}",
         "list": "function Main(html){return jsoups(html,'result');}",
@@ -45,37 +45,40 @@
     },
     "finds": [
         {
-        "tab": "更新",
-        "request": "http://m.ccshwy.com/new/",
-        "list": "function Main(html){return jsoups(html,'div.UpdateList > div');}",
-        "title": "function Main(text){return jsoup(text,'div.itemTxt > a');}",
-        "introduction": "function Main(text){return jsoup(text,'span.date');}",
-        "cover": "function Main(text){return jsoup(text,'div.itemImg > a > img@attr->src');}",
-        "url": "function Main(text){return jsoup(text,'div.itemTxt > a@attr->href');}"
-        },{
-        "tab": "排行",
-        "request": "http://m.ccshwy.com/paihang/",
-        "list": "function Main(html){return jsoups(html,'#topImgCon > div > div');}",
-        "title": "function Main(text){return jsoup(text,'div.itemTxt > a');}",
-        "introduction": "function Main(text){return jsoup(text,'span.date');}",
-        "cover": "function Main(text){return jsoup(text,'div.itemImg > a > img@attr->src');}",
-        "url": "function Main(text){return jsoup(text,'div.itemTxt > a@attr->href');}"
-        },{
-        "tab": "日韩",
-        "request": "http://m.ccshwy.com/rihan/",
-        "list": "function Main(html){return jsoups(html,'#listbody > li');}",
-        "title": "function Main(text){return jsoup(text,'a.txtA');}",
-        "introduction": "function Main(text){return jsoup(text,'span.info');}",
-        "cover": "function Main(text){return jsoup(text,'a.ImgA > img@attr->src');}",
-        "url": "function Main(text){return jsoup(text,'a.ImgA@attr->href');}"
-        },{
-        "tab": "内地",
-        "request": "http://m.ccshwy.com/neidi/",
-        "list": "function Main(html){return jsoups(html,'#listbody > li');}",
-        "title": "function Main(text){return jsoup(text,'a.txtA');}",
-        "introduction": "function Main(text){return jsoup(text,'span.info');}",
-        "cover": "function Main(text){return jsoup(text,'a.ImgA > img@attr->src');}",
-        "url": "function Main(text){return jsoup(text,'a.ImgA@attr->href');}"
+            "tab": "更新",
+            "request": "http://m.ccshwy.com/new/",
+            "list": "function Main(html){return jsoups(html,'div.UpdateList > div');}",
+            "title": "function Main(text){return jsoup(text,'div.itemTxt > a');}",
+            "introduction": "function Main(text){return jsoup(text,'span.date');}",
+            "cover": "function Main(text){return jsoup(text,'div.itemImg > a > img@attr->src');}",
+            "url": "function Main(text){return jsoup(text,'div.itemTxt > a@attr->href');}"
+        },
+        {
+            "tab": "排行",
+            "request": "http://m.ccshwy.com/paihang/",
+            "list": "function Main(html){return jsoups(html,'#topImgCon > div > div');}",
+            "title": "function Main(text){return jsoup(text,'div.itemTxt > a');}",
+            "introduction": "function Main(text){return jsoup(text,'span.date');}",
+            "cover": "function Main(text){return jsoup(text,'div.itemImg > a > img@attr->src');}",
+            "url": "function Main(text){return jsoup(text,'div.itemTxt > a@attr->href');}"
+        },
+        {
+            "tab": "日韩",
+            "request": "http://m.ccshwy.com/rihan/",
+            "list": "function Main(html){return jsoups(html,'#listbody > li');}",
+            "title": "function Main(text){return jsoup(text,'a.txtA');}",
+            "introduction": "function Main(text){return jsoup(text,'span.info');}",
+            "cover": "function Main(text){return jsoup(text,'a.ImgA > img@attr->src');}",
+            "url": "function Main(text){return jsoup(text,'a.ImgA@attr->href');}"
+        },
+        {
+            "tab": "内地",
+            "request": "http://m.ccshwy.com/neidi/",
+            "list": "function Main(html){return jsoups(html,'#listbody > li');}",
+            "title": "function Main(text){return jsoup(text,'a.txtA');}",
+            "introduction": "function Main(text){return jsoup(text,'span.info');}",
+            "cover": "function Main(text){return jsoup(text,'a.ImgA > img@attr->src');}",
+            "url": "function Main(text){return jsoup(text,'a.ImgA@attr->href');}"
         }
     ]
 }
