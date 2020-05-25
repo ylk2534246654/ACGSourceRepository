@@ -35,5 +35,16 @@
   "video": {
     "filter": "^((?!(data.video.iqiyi.com/v.mp4|z13.cnzz.com|\\.php)).)*$",
     "url": "function Main(text){if(text.match('^((?!(data.video.iqiyi.com/v.mp4|z13.cnzz.com|\\.php)).)*$')!=null){return text;};return '';}"
-  }
+  },
+	"finds": [
+		{
+			"tab": "新番放送",
+			"request": "http://m.imomoe.in/top/new.html",
+			"list": "function Main(html){return jsoups(html,'ul.am-list > li');}",
+			"title": "function Main(text){return jsoup(text,'li > a');}",
+			"introduction": "function Main(text){return jsoup(text,'li > b > a');}",
+			"cover": "",
+			"url": "function Main(text){return jsoup(text,'li > a@attr->href');}"
+		}
+	]
 }
