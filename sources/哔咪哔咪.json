@@ -43,7 +43,7 @@
             "url": "function Main(text){return jsoup(text,'a@attr->href');}"
         },
         {
-            "tab": "国漫",
+            "tab": "大陆动漫",
             "request": "http://www.bimibimi.me/type/guoman/",
             "list": "function Main(html){return jsoups(html,'div.v_tb > ul > li');}",
             "title": "function Main(text){return jsoup(text,'a@attr->title');}",
@@ -52,7 +52,16 @@
             "url": "function Main(text){return jsoup(text,'a@attr->href');}"
         },
         {
-            "tab": "剧场版",
+            "tab": "番组计划",
+            "request": "http://www.bimibimi.me/type/fanzu/",
+            "list": "function Main(html){return jsoups(html,'div.v_tb > ul > li');}",
+            "title": "function Main(text){return jsoup(text,'a@attr->title');}",
+            "introduction": "function Main(text){return jsoup(text,'span.mask');}",
+            "cover": "function Main(text){return jsoup(text,'a > img@attr->data-original');}",
+            "url": "function Main(text){return jsoup(text,'a@attr->href');}"
+        },
+        {
+            "tab": "剧场动画",
             "request": "http://www.bimibimi.me/type/juchang/",
             "list": "function Main(html){return jsoups(html,'div.v_tb > ul > li');}",
             "title": "function Main(text){return jsoup(text,'a@attr->title');}",
