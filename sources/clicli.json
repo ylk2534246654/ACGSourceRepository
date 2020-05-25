@@ -4,7 +4,7 @@
     "developer": "雨夏",
     "versionName": "1.0",
     "versionCode": 1,
-    "tab":"动漫",
+    "tab": "动漫",
     "request": "https://api.clicli.us/search/posts?key=[$key]",
     "search": {
         "list": "function Main(html){return jsonPaths(html,'$..posts[*]');}",
@@ -26,5 +26,16 @@
                 "category": 3
             }
         }
-    }
+    },
+    "finds": [
+        {
+            "tab": "最新更新",
+            "request": "https://api.clicli.us/posts?status=public&sort=bgm&tag=&uid=&page=1&pageSize=30",
+            "list": "function Main(html){return jsonPaths(html,'$..posts[*]');}",
+            "title": "function Main(text){return jsonPath(text,'$.title');}",
+            "introduction": "function Main(text){return jsonPath(text,'$.time');}",
+            "cover": "function Main(text){return strmiddle(jsonPath(text,'$.content'),'(',')');}",
+            "url": "function Main(text){return 'https://api.clicli.us/videos?pid='+jsonPath(text,'$.id')+'&page=1&pageSize=300';}"
+        }
+    ]
 }
