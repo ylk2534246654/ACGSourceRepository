@@ -37,28 +37,28 @@
             "tab": "最新动漫",
             "request": "https://isldm.com/vodshow/4--time---------/",
             "list": "function Main(html){return jsoups(html,'div.listbox > ul > li');}",
-            "title": "function Main(text){return jsoup(text,'div > div.headline.clearfix > a');}",
-            "introduction": "function Main(text){return jsoup(text,'div > div.des.hide');}",
-            "cover": "function Main(text){return jsoup(text,'a > div > div.lazy-img > img@attr->data-echo');}",
-            "url": "function Main(text){return jsoup(text,'div > div.headline.clearfix > a@attr->href');}"
+            "title": "function Main(text){return jsoup(text,'figcaption.list-title > h3 >a');}",
+            "introduction": "function Main(text){return jsoup(text,'a > span.listbox-remarks');}",
+            "cover": "function Main(text){return jsoup(text,'a > ul > img@attr->data-echo');}",
+            "url": "function Main(text){return jsoup(text,'figcaption.list-title > h3 >a@attr->href');}"
         },
         {
             "tab": "动漫排行",
             "request": "https://isldm.com/vodshow/4--hits---------/",
             "list": "function Main(html){return jsoups(html,'div.listbox > ul > li');}",
-            "title": "function Main(text){return jsoup(text,'div > div.headline.clearfix > a');}",
-            "introduction": "function Main(text){return jsoup(text,'div > div.des.hide');}",
-            "cover": "function Main(text){return jsoup(text,'a > div > div.lazy-img > img@attr->data-echo');}",
-            "url": "function Main(text){return jsoup(text,'div > div.headline.clearfix > a@attr->href');}"
+            "title": "function Main(text){return jsoup(text,'figcaption.list-title > h3 >a');}",
+            "introduction": "function Main(text){return jsoup(text,'a > span.listbox-remarks');}",
+            "cover": "function Main(text){return jsoup(text,'a > ul > img@attr->data-echo');}",
+            "url": "function Main(text){return jsoup(text,'figcaption.list-title > h3 >a@attr->href');}"
         },
         {
             "tab": "最新国漫",
             "request": "https://isldm.com/index.php/vodshow/3--time---------/",
             "list": "function Main(html){return jsoups(html,'div.listbox > ul > li');}",
-            "title": "function Main(text){return jsoup(text,'div > div.headline.clearfix > a');}",
-            "introduction": "function Main(text){return jsoup(text,'div > div.des.hide');}",
-            "cover": "function Main(text){return jsoup(text,'a > div > div.lazy-img > img@attr->data-echo');}",
-            "url": "function Main(text){return jsoup(text,'div > div.headline.clearfix > a@attr->href');}"
+            "title": "function Main(text){return jsoup(text,'figcaption.list-title > h3 >a');}",
+            "introduction": "function Main(text){return jsoup(text,'a > span.listbox-remarks');}",
+            "cover": "function Main(text){return jsoup(text,'a > ul > img@attr->data-echo');}",
+            "url": "function Main(text){return jsoup(text,'figcaption.list-title > h3 >a@attr->href');}"
         }
     ]
 }
