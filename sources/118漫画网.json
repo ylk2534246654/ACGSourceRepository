@@ -32,6 +32,22 @@
         "introduction": "function Main(text){return jsoup(text,'span.date');}",
         "cover": "function Main(text){return jsoup(text,'div.itemImg > a > img@attr->src');}",
         "url": "function Main(text){return jsoup(text,'div.itemTxt > a@attr->href');}"
+        },{
+        "name": "日韩",
+        "request": "http://m.ccshwy.com/rihan/",
+        "list": "function Main(html){return jsoups(html,'#listbody > li');}",
+        "title": "function Main(text){return jsoup(text,'div.itemTxt > a');}",
+        "introduction": "function Main(text){return jsoup(text,'span.date');}",
+        "cover": "function Main(text){return jsoup(text,'div.itemImg > a > img@attr->src');}",
+        "url": "function Main(text){return jsoup(text,'div.itemTxt > a@attr->href');}"
+        },{
+        "name": "日韩",
+        "request": "http://m.ccshwy.com/neidi/",
+        "list": "function Main(html){return jsoups(html,'#listbody > li');}",
+        "title": "function Main(text){return jsoup(text,'div.itemTxt > a');}",
+        "introduction": "function Main(text){return jsoup(text,'span.date');}",
+        "cover": "function Main(text){return jsoup(text,'div.itemImg > a > img@attr->src');}",
+        "url": "function Main(text){return jsoup(text,'div.itemTxt > a@attr->href');}"
         }
     ],
     "schedule":{
