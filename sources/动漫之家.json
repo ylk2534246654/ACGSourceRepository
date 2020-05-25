@@ -4,7 +4,7 @@
     "developer": "雨夏",
     "versionName": "1.0",
     "versionCode": 1,
-    "tab":"漫画",
+    "tab": "漫画",
     "request": "https://m.dmzj.com/search/[$key].html@charset->UTF-8",
     "search": {
         "list": "function Main(html){return jsonPaths(strmiddle(html,'serchArry=','</script>'),'$.*');}",
@@ -31,5 +31,16 @@
         "list": "function Main(html){return jsonPaths(strmiddle(html,'initData(',', \"'),'$..page_url');}",
         "url": "function Main(text){return text;}",
         "mode": 2
-    }
+    },
+    "finds": [
+        {
+            "tab": "最新更新",
+            "request": "https://m.dmzj.com/latest.html",
+            "list": "function Main(html){return jsonPaths(strmiddle(html,'serchArry=','</script>'),'$.*');}",
+            "title": "function Main(text){return jsonPath(text,'$.name');}",
+            "introduction": "function Main(text){return jsonPath(text,'$.authors');}",
+            "cover": "function Main(text){return 'https://images.dmzj.com/'+jsonPath(text,'$.cover');}",
+            "url": "function Main(text){return 'https://m.dmzj.com/info/'+jsonPath(text,'$.comic_py')+'.html';}"
+        }
+    ]
 }
