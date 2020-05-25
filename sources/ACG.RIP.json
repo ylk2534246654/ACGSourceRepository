@@ -15,8 +15,8 @@
     },
     "finds": [
         {
-            "tab": "最近更新",
-            "request": "https://acg.rip/",
+            "tab": "动画",
+            "request": "https://acg.rip/1",
             "list": "function Main(html){return jsoups(html,'tbody > tr');}",
             "title": "function Main(text){return jsoup(text,'span.title > a');}",
             "introduction": "function Main(text){return jsoup(text,'td.size');}",
@@ -24,8 +24,26 @@
             "url": "function Main(text){return jsoup(text,'span.title > a@attr->href')+'.torrent';}"
         },
         {
-            "tab": "动画",
-            "request": "https://acg.rip/1",
+            "tab": "日剧",
+            "request": "https://acg.rip/2",
+            "list": "function Main(html){return jsoups(html,'tbody > tr');}",
+            "title": "function Main(text){return jsoup(text,'span.title > a');}",
+            "introduction": "function Main(text){return jsoup(text,'td.size');}",
+            "cover": "https://acg.rip/favicon.ico",
+            "url": "function Main(text){return jsoup(text,'span.title > a@attr->href')+'.torrent';}"
+        },
+        {
+            "tab": "综艺",
+            "request": "https://acg.rip/3",
+            "list": "function Main(html){return jsoups(html,'tbody > tr');}",
+            "title": "function Main(text){return jsoup(text,'span.title > a');}",
+            "introduction": "function Main(text){return jsoup(text,'td.size');}",
+            "cover": "https://acg.rip/favicon.ico",
+            "url": "function Main(text){return jsoup(text,'span.title > a@attr->href')+'.torrent';}"
+        },
+        {
+            "tab": "音乐",
+            "request": "https://acg.rip/4",
             "list": "function Main(html){return jsoups(html,'tbody > tr');}",
             "title": "function Main(text){return jsoup(text,'span.title > a');}",
             "introduction": "function Main(text){return jsoup(text,'td.size');}",
