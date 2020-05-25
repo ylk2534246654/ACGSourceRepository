@@ -4,7 +4,7 @@
     "developer": "雨夏",
     "versionName": "1.0",
     "versionCode": 1,
-    "tab":"种子",
+    "tab": "种子",
     "request": "https://acg.rip/page/[$page]?term=[$key]@charset->UTF-8",
     "search": {
         "list": "function Main(html){return jsoups(html,'tbody > tr');}",
@@ -14,22 +14,23 @@
         "url": "function Main(text){return jsoup(text,'span.title > a@attr->href')+'.torrent';}"
     },
     "finds": [
-      {
-      "tab": "每日推荐",
-      "request": "https://www.agefans.tv/recommend",
-      "list": "function Main(html){return jsoups(html,'div.baseblock > div > ul > li');}",
-      "title": "function Main(text){return jsoup(text,'h4 > a');}",
-      "introduction": "function Main(text){return jsoup(text,'a > span');}",
-      "cover": "function Main(text){return jsoup(text,'a > img@attr->src');}",
-      "url": "function Main(text){return jsoup(text,'a@attr->href');}"
-      },{
-      "tab": "最近更新",
-      "request": "https://www.agefans.tv/update",
-      "list": "function Main(html){return jsoups(html,'div.baseblock > div > ul > li');}",
-      "title": "function Main(text){return jsoup(text,'h4 > a');}",
-      "introduction": "function Main(text){return jsoup(text,'a > span');}",
-      "cover": "function Main(text){return jsoup(text,'a > img@attr->src');}",
-      "url": "function Main(text){return jsoup(text,'a@attr->href');}"
-      }
+        {
+            "tab": "最近更新",
+            "request": "https://acg.rip/",
+            "list": "function Main(html){return jsoups(html,'tbody > tr');}",
+            "title": "function Main(text){return jsoup(text,'span.title > a');}",
+            "introduction": "function Main(text){return jsoup(text,'td.size');}",
+            "cover": "https://acg.rip/favicon.ico",
+            "url": "function Main(text){return jsoup(text,'span.title > a@attr->href')+'.torrent';}"
+        },
+        {
+            "tab": "动画",
+            "request": "https://acg.rip/1",
+            "list": "function Main(html){return jsoups(html,'tbody > tr');}",
+            "title": "function Main(text){return jsoup(text,'span.title > a');}",
+            "introduction": "function Main(text){return jsoup(text,'td.size');}",
+            "cover": "https://acg.rip/favicon.ico",
+            "url": "function Main(text){return jsoup(text,'span.title > a@attr->href')+'.torrent';}"
+        }
     ]
 }
