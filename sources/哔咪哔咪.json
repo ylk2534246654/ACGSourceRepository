@@ -4,7 +4,7 @@
     "developer": "雨夏",
     "versionName": "1.0",
     "versionCode": 1,
-    "tab":"动漫",
+    "tab": "动漫",
     "request": "http://www.bimibimi.me/vod/search/wd/[$key]/page/[$page]/@charset->UTF-8",
     "search": {
         "list": "function Main(html){return jsoups(html,'ul.tab-cont > li');}",
@@ -31,5 +31,16 @@
                 "category": 3
             }
         }
-    }
+    },
+    "finds": [
+        {
+            "tab": "新番放送",
+            "request": "http://www.bimibimi.me/type/riman/",
+            "list": "function Main(html){return jsoups(html,'div.v_tb > ul > li');}",
+            "title": "function Main(text){return jsoup(text,'a@attr->title');}",
+            "introduction": "function Main(text){return jsoup(text,'span.mask');}",
+            "cover": "function Main(text){return jsoup(text,'a > img@attr->data-original');}",
+            "url": "function Main(text){return jsoup(text,'a@attr->href');}"
+        }
+    ]
 }
