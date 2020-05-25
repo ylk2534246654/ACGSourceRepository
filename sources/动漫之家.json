@@ -36,11 +36,11 @@
         {
             "tab": "最新更新",
             "request": "https://m.dmzj.com/latest.html",
-            "list": "function Main(html){return jsonPaths(strmiddle(html,'serchArry=','</script>'),'$.*');}",
-            "title": "function Main(text){return jsonPath(text,'$.name');}",
-            "introduction": "function Main(text){return jsonPath(text,'$.authors');}",
-            "cover": "function Main(text){return 'https://images.dmzj.com/'+jsonPath(text,'$.cover');}",
-            "url": "function Main(text){return 'https://m.dmzj.com/info/'+jsonPath(text,'$.comic_py')+'.html';}"
+            "list": "function Main(html){return jsoups('div.UpdateList > div');}",
+            "title": "function Main(text){return jsoup(text,'div.itemTxt > a');}",
+            "introduction": "function Main(text){return jsoup(text,'div.itemTxt > p:nth-child(4)');}",
+            "cover": "function Main(text){return jsoup(text,'div.itemImg > a > img@attr->src');}",
+            "url": "function Main(text){return jsoup(text,'div.itemTxt > a@attr->href');}"
         }
     ]
 }
