@@ -4,7 +4,7 @@
 	"developer": "雨夏",
 	"versionName": "1.0",
 	"versionCode": 1,
-	"tab":"动漫",
+	"tab": "动漫",
 	"request": "http://dm.dm530.net/search.asp@post->searchword=[$key]@charset->gb2312",
 	"search": {
 		"list": "function Main(html){return jsoups(html,'#mobile-index > ul > li');}",
@@ -31,5 +31,16 @@
 				"category": 3
 			}
 		}
-	}
+	},
+	"finds": [
+		{
+			"tab": "新番放送",
+			"request": "http: //dm.dm530.net/top/new.html",
+			"list": "function Main(html){return jsoups(html,'ul.am-list > li');}",
+			"title": "function Main(text){return jsoup(text,'li > a');}",
+			"introduction": "function Main(text){return jsoup(text,'li > b > a');}",
+			"cover": "",
+			"url": "function Main(text){return jsoup(text,'li > a@attr->href');}"
+		}
+	]
 }
