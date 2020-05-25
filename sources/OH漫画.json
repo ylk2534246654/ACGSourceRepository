@@ -5,7 +5,7 @@
     "versionName": "1.0",
     "versionCode": 1,
     "dependencies": "https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js",
-    "tab":"漫画",
+    "tab": "漫画",
     "request": "https://www.ohmanhua.com/search?searchString=[$key]&page=[$page]@charset->UTF-8",
     "search": {
         "list": "function Main(html){return jsoups(html,'div.fed-part-layout > dl');}",
@@ -19,8 +19,8 @@
         "introduction": "function Main(html){return jsoup(html,'p.fed-part-both');}",
         "upDate": "function Main(html){return jsoup(html,'dd > ul > li:nth-child(3) > a');}",
         "tabs": {
-          "list": "function Main(html){return jsoups(html,'div.fed-tabs-info > div > div > div > ul > li');}",
-          "name": "function Main(text){return jsoup(text,'a');}"
+            "list": "function Main(html){return jsoups(html,'div.fed-tabs-info > div > div > div > ul > li');}",
+            "name": "function Main(text){return jsoup(text,'a');}"
         },
         "catalogs": {
             "list": "function Main(html){return jsoups(html,'div.fed-tabs-item > div > div > div > ul');}",
@@ -38,15 +38,24 @@
         "url": "function Main(text){return text;}",
         "mode": 1
     },
-  "finds": [
-    {
-      "tab": "排行榜",
-      "request": "https://www.ohmanhua.com/show",
-      "list": "function Main(html){return jsoups(html,'ul.fed-list-info > li');}",
-        "title": "function Main(text){return jsoup(text,'a.fed-list-title');}",
-        "introduction": "function Main(text){return jsoup(text,'span.fed-list-desc');}",
-        "cover": "function Main(text){return jsoup(text,'a.fed-list-pics@attr->data-original');}",
-        "url": "function Main(text){return jsoup(text,'a.fed-list-title@attr->href');}"
-    }
-  ]
+    "finds": [
+        {
+            "tab": "最近更新",
+            "request": "https://www.ohmanhua.com/show?orderBy=update",
+            "list": "function Main(html){return jsoups(html,'ul.fed-list-info > li');}",
+            "title": "function Main(text){return jsoup(text,'a.fed-list-title');}",
+            "introduction": "function Main(text){return jsoup(text,'span.fed-list-desc');}",
+            "cover": "function Main(text){return jsoup(text,'a.fed-list-pics@attr->data-original');}",
+            "url": "function Main(text){return jsoup(text,'a.fed-list-title@attr->href');}"
+        },
+        {
+            "tab": "排行榜",
+            "request": "https://www.ohmanhua.com/show",
+            "list": "function Main(html){return jsoups(html,'ul.fed-list-info > li');}",
+            "title": "function Main(text){return jsoup(text,'a.fed-list-title');}",
+            "introduction": "function Main(text){return jsoup(text,'span.fed-list-desc');}",
+            "cover": "function Main(text){return jsoup(text,'a.fed-list-pics@attr->data-original');}",
+            "url": "function Main(text){return jsoup(text,'a.fed-list-title@attr->href');}"
+        }
+    ]
 }
