@@ -15,6 +15,34 @@
         "cover": "function Main(text){return jsoup(text,'a.ImgA > img@attr->src');}",
         "url": "function Main(text){return jsoup(text,'a.ImgA@attr->href');}"
     },
+    "schedule":{
+        "request": "http://m.ccshwy.com/statics/search.aspx?key=[$key]@charset->UTF-8",
+        "tabs": "function Main(html){return jsoups(html,'result');}",
+        "list": "function Main(html){return jsoups(html,'result');}",
+        "title": "function Main(text){return jsoup(text,'a.txtA');}",
+        "introduction": "function Main(text){return jsoup(text,'span.info');}",
+        "cover": "function Main(text){return jsoup(text,'a.ImgA > img@attr->src');}",
+        "url": "function Main(text){return jsoup(text,'a.ImgA@attr->href');}"
+    },
+    "detail": {
+        "author": "function Main(html){return jsoup(html,'div.sub_r > p:nth-child(2)');}",
+        "introduction": "function Main(html){return jsoup(html,'p.txtDesc').replace('介绍:','');}",
+        "upDate": "function Main(html){return jsoup(html,'span.date');}",
+        "catalogs": {
+            "chapter": {
+                "list": "function Main(html){return jsoups(html,'div#list > ul > li');}",
+                "name": "function Main(text){return jsoup(text,'a');}",
+                "url": "function Main(text){return jsoup(text,'a@attr->href');}",
+                "orderBy": 0,
+                "category": 2
+            }
+        }
+    },
+    "comic": {
+        "list": "function Main(html){return Base64.decode(strmiddle(html,'m_murl_e=\"','\"')).split('$qingtiandy$');}",
+        "url": "function Main(text){return pathURL(text).replace('m.ccshwy.com','www.ccshwy.com');}",
+        "mode": 1
+    },
     "finds": [
         {
         "name": "更新",
@@ -49,34 +77,5 @@
         "cover": "function Main(text){return jsoup(text,'a.ImgA > img@attr->src');}",
         "url": "function Main(text){return jsoup(text,'a.ImgA@attr->href');}"
         }
-    ],
-    "schedule":{
-        "request": "http://m.ccshwy.com/statics/search.aspx?key=[$key]@charset->UTF-8",
-        "tabs": "function Main(html){return jsoups(html,'result');}",
-        "list": "function Main(html){return jsoups(html,'result');}",
-        "title": "function Main(text){return jsoup(text,'a.txtA');}",
-        "introduction": "function Main(text){return jsoup(text,'span.info');}",
-        "cover": "function Main(text){return jsoup(text,'a.ImgA > img@attr->src');}",
-        "url": "function Main(text){return jsoup(text,'a.ImgA@attr->href');}"
-    },
-    
-    "detail": {
-        "author": "function Main(html){return jsoup(html,'div.sub_r > p:nth-child(2)');}",
-        "introduction": "function Main(html){return jsoup(html,'p.txtDesc').replace('介绍:','');}",
-        "upDate": "function Main(html){return jsoup(html,'span.date');}",
-        "catalogs": {
-            "chapter": {
-                "list": "function Main(html){return jsoups(html,'div#list > ul > li');}",
-                "name": "function Main(text){return jsoup(text,'a');}",
-                "url": "function Main(text){return jsoup(text,'a@attr->href');}",
-                "orderBy": 0,
-                "category": 2
-            }
-        }
-    },
-    "comic": {
-        "list": "function Main(html){return Base64.decode(strmiddle(html,'m_murl_e=\"','\"')).split('$qingtiandy$');}",
-        "url": "function Main(text){return pathURL(text).replace('m.ccshwy.com','www.ccshwy.com');}",
-        "mode": 1
-    }
+    ]
 }
