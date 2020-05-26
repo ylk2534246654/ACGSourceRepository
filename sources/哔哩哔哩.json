@@ -32,6 +32,7 @@
         }
     },
     "video": {
+        "sniffing":true,
         "url": "function Main(text){return jsonPath(text,'$.long_title');}"
     }
 }
