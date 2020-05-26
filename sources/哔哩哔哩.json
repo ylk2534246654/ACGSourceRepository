@@ -22,37 +22,8 @@
                 "name": "function Main(text){return jsonPath(text,'$.long_title');}",
                 "url": "function Main(text){return 'https://api.bilibili.com/pgc/player/web/playurl/html5?ep_id='+jsonPath(text,'$.id');}",
                 "orderBy": 0,
-                "category": 1
+                "category": 3
             }
         }
-    },
-    "url": {
-        "url": "",
-        "url2": ""
-    },
-    "comic": {
-        "list": "",
-        "url": "",
-        "mode": 1
-    },
-    "video": {
-        "url": ""
-    },
-    "novel": {
-        "list": "",
-        "url": "",
-        "content": "",
-        "mode": 1
-    },
-    "finds": [
-		{
-			"tab": "",
-			"request": "",
-			"list": "",
-			"title": "",
-			"introduction": "",
-			"cover": "",
-			"url": ""
-		}
-	]
+    }
 }
