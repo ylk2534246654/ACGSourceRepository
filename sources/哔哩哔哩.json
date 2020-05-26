@@ -14,18 +14,13 @@
     },
     "detail": {
         "author": "",
-        "introduction": "",
+        "introduction": "function Main(html){return jsonPath(html,'$..main_section.title');}",
         "upDate": "",
-        "tabs": {
-          "list": "",
-          "name": ""
-        },
         "catalogs": {
-            "list": "",
             "chapter": {
-                "list": "",
-                "name": "",
-                "url": "",
+                "list": "function Main(html){return jsonPaths(html,'$..episodes');}",
+                "name": "function Main(text){return jsonPath(text,'$.long_title');}",
+                "url": "function Main(text){return 'https://api.bilibili.com/pgc/player/web/playurl/html5?ep_id='+jsonPath(text,'$.id');}",
                 "orderBy": 0,
                 "category": 1
             }
