@@ -4,7 +4,7 @@
     "developer": "雨夏",
     "versionName": "1.0",
     "versionCode": 1,
-    "request": "https://search.bilibili.com/bangumi?keyword=[$key]",
+    "request": "https://search.bilibili.com/bangumi?keyword=[$key]@header->referer:https://www.bilibili.com@header->user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36",
     "search": {
         "list": "function Main(html){var json = strmiddle(html,'__INITIAL_STATE__=',';(');return jsonPaths(json,'$..result[*]');}",
         "title": "function Main(text){return jsonPath(text,'$.title');}",
