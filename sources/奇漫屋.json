@@ -28,7 +28,7 @@
         }
     },
     "content": {
-        "list": "function Main(html){eval('eval'+strmiddle(html,'eval','</script>'));return newImgs;}",
+        "list": "function Main(html){javaScript('eval'+strmiddle(html,'eval','</script>'));return newImgs;}",
         "url": "function Main(text){return text;}",
         "mode": 1
     }
