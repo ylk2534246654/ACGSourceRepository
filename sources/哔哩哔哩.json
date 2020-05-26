@@ -25,9 +25,9 @@
             "chapter": {
                 "list": "function Main(html){return jsonPaths(html,'$..episodes');}",
                 "name": "function Main(text){return jsonPath(text,'$.long_title');}",
-                "url": "function Main(text){return 'https://api.bilibili.com/pgc/player/web/playurl/html5?ep_id='+jsonPath(text,'$.id');}",
+                "url": "function Main(text){return 'https://www.bilibili.com/bangumi/play/ep'+jsonPath(text,'$.id');}",
                 "orderBy": 0,
-                "category": 3
+                "category": 1
             }
         }
     },
