@@ -10,7 +10,7 @@
         "title": "function Main(text){return jsonPath(text,'$.title');}",
         "introduction": "function Main(text){return jsonPath(text,'$.desc');}",
         "cover": "function Main(text){return jsonPath(text,'$.cover');}",
-        "url": "function Main(text){return 'https://api.bilibili.com/pgc/web/season/section?season_id='+jsonPath(text,'$.media_id');}"
+        "url": "function Main(text){return 'https://api.bilibili.com/pgc/web/season/section?season_id='+jsonPath(text,'$.season_id');}"
     },
     "detail": {
         "author": "",
