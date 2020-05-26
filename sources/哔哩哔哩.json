@@ -1,0 +1,63 @@
+{
+    "name": "哔哩哔哩",
+    "introduction": "可以搜索一些动漫",
+    "developer": "雨夏",
+    "versionName": "1.0",
+    "versionCode": 1,
+    "request": "https://search.bilibili.com/bangumi?keyword=[$key]",
+    "search": {
+        "list": "function Main(html){var json = strmiddle(html,'__INITIAL_STATE__=',';(');return jsonPaths(json,'$..result[*]');}",
+        "title": "function Main(text){return jsonPath(text,'$.title');}",
+        "introduction": "function Main(text){return jsonPath(text,'$.desc');}",
+        "cover": "function Main(text){return jsonPath(text,'$.cover');}",
+        "url": "function Main(text){return jsonPath(text,'$.media_id');}"
+    },
+    "detail": {
+        "author": "",
+        "introduction": "",
+        "upDate": "",
+        "tabs": {
+          "list": "",
+          "name": ""
+        },
+        "catalogs": {
+            "list": "",
+            "chapter": {
+                "list": "",
+                "name": "",
+                "url": "",
+                "orderBy": 0,
+                "category": 1
+            }
+        }
+    },
+    "url": {
+        "url": "",
+        "url2": ""
+    },
+    "comic": {
+        "list": "",
+        "url": "",
+        "mode": 1
+    },
+    "video": {
+        "url": ""
+    },
+    "novel": {
+        "list": "",
+        "url": "",
+        "content": "",
+        "mode": 1
+    },
+    "finds": [
+		{
+			"tab": "",
+			"request": "",
+			"list": "",
+			"title": "",
+			"introduction": "",
+			"cover": "",
+			"url": ""
+		}
+	]
+}
