@@ -33,7 +33,7 @@
     }
   },
   "video": {
-    "filter": "^((?!(data.video.iqiyi.com/v.mp4|z13.cnzz.com|\\.php)).)*$",
+    "filter": "^((?!(data.video.iqiyi.com/v.mp4|z13.cnzz.com)).)*$",
     "url": "function Main(text){if(text.match('^((?!(data.video.iqiyi.com/v.mp4|z13.cnzz.com|\\.php)).)*$')!=null){return text;};return '';}"
   },
 	"finds": [
