@@ -40,7 +40,7 @@
     },
     "comic": {
         "list": "function Main(html){var total = strmiddle(html,'k_total\" class=\"curPage\">','<');var murl = getURL().replace('\\.html','');var obj= [];for(var i =1;i<total;i++){log(murl+'-'+i+'\\.html');obj.push(murl+'-'+i+'\\.html');};return obj;}",
-        "url": "function Main(text){return strmiddle(text,'/images/comic/','>');}",
+        "url": "function Main(text){return strmiddle(text,'/images/comic/','jpg');}",
         "mode": 1
     },
     "finds": [
