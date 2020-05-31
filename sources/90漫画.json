@@ -1,0 +1,84 @@
+{
+    "MyACG搜索源": "https://diyyx.wang/app/MyACG.apk",
+    "name": "90漫画",
+    "introduction": "可以搜索一些漫画",
+    "developer": "雨夏",
+    "versionName": "1.0",
+    "versionCode": 1,
+    "tab": "漫画",
+    "dependencies": "https://c.mipcdn.com/static/v2/mip.js",
+    "request": "http://m.90mh.com/search/?keywords=[$key]&page=[$page]@charset->UTF-8",
+    "search": {
+        "list": "function Main(html){return jsoups(html,'#update_list > .UpdateList > div');}",
+        "title": "function Main(text){return jsoup(text,'div.itemTxt > a.title');}",
+        "introduction": "function Main(text){return jsoup(text,'a.coll');}",
+        "cover": "function Main(text){return jsoup(text,'div.itemImg > a > mip-img@attr->src');}",
+        "url": "function Main(text){return jsoup(text,'div.itemImg > a@attr->href');}"
+    },
+    "schedule": {
+        "request": "http://m.90mh.com/search/?keywords=[$key]@charset->UTF-8",
+        "tabs": "function Main(html){return jsoups(html,'result');}",
+        "list": "function Main(html){return jsoups(html,'result');}",
+        "title": "function Main(text){return jsoup(text,'div.itemTxt > a.title');}",
+        "introduction": "function Main(text){return jsoup(text,'a.coll');}",
+        "cover": "function Main(text){return jsoup(text,'div.itemImg > a > mip-img@attr->src');}",
+        "url": "function Main(text){return jsoup(text,'div.itemImg > a@attr->href');}"
+    },
+    "detail": {
+        "author": "function Main(html){return jsoup(html,'div.pic > dl:nth-child(5)');}",
+        "introduction": "function Main(html){return jsoup(html,'p.txtDesc').replace('简介:','');}",
+        "upDate": "function Main(html){return jsoup(html,'div.pic > dl:nth-child(8) > dd');}",
+        "catalogs": {
+            "chapter": {
+                "list": "function Main(html){return jsoups(html,'div#list_block > div.comic-chapters > div.list > ul > li');}",
+                "name": "function Main(text){return jsoup(text,'a > span');}",
+                "url": "function Main(text){return jsoup(text,'a@attr->href');}",
+                "orderBy": 0,
+                "category": 2
+            }
+        }
+    },
+    "comic": {
+        "list": "function Main(html){return Base64.decode(strmiddle(html,'m_murl_e=\"','\"')).split('$qingtiandy$');}",
+        "url": "function Main(text){return pathURL(text).replace('m.ccshwy.com','www.ccshwy.com');}",
+        "mode": 1
+    },
+    "finds": [
+        {
+            "tab": "更新",
+            "request": "http://m.90mh.com/update/",
+            "list": "function Main(html){return jsoups(html,'div.UpdateList > div.itemBox');}",
+            "title": "function Main(text){return jsoup(text,'div.itemTxt > a.title');}",
+            "introduction": "function Main(text){return jsoup(text,'span.date');}",
+            "cover": "function Main(text){return jsoup(text,'div.itemImg > a > mip-img@attr->src');}",
+            "url": "function Main(text){return jsoup(text,'div.itemImg > a@attr->href');}"
+        },
+        {
+            "tab": "排行",
+            "request": "http://m.90mh.com/rank/",
+            "list": "function Main(html){return jsoups(html,'#topImgCon > div.UpdateList > div.itemBox');}",
+            "title": "function Main(text){return jsoup(text,'div.itemTxt > a.title');}",
+            "introduction": "function Main(text){return jsoup(text,'span.date');}",
+            "cover": "function Main(text){return jsoup(text,'div.itemImg > a > mip-img@attr->src');}",
+            "url": "function Main(text){return jsoup(text,'div.itemImg > a@attr->href');}"
+        },
+        {
+            "tab": "分类",
+            "request": "http://m.90mh.com/list/",
+            "list": "function Main(html){return jsoups(html,'#w0 > ul.col_3_1.clearfix > li:nth-child(1) > li');}",
+            "title": "function Main(text){return jsoup(text,'a.txtA');}",
+            "introduction": "function Main(text){return jsoup(text,'span.info');}",
+            "cover": "function Main(text){return jsoup(text,'a.ImgA > mip-img@attr->src');}",
+            "url": "function Main(text){return jsoup(text,'a.ImgA@attr->href');}"
+        },
+        {
+            "tab": "国产",
+            "request": "http://m.90mh.com/list/guochanmanhua/",
+            "list": "function Main(html){return jsoups(html,'#w0 > ul.col_3_1.clearfix > li:nth-child(1) > li');}",
+            "title": "function Main(text){return jsoup(text,'a.txtA');}",
+            "introduction": "function Main(text){return jsoup(text,'span.info');}",
+            "cover": "function Main(text){return jsoup(text,'a.ImgA > mip-img@attr->src');}",
+            "url": "function Main(text){return jsoup(text,'a.ImgA@attr->href');}"
+        }
+    ]
+}
