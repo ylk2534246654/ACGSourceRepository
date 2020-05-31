@@ -40,7 +40,7 @@
     },
     "comic": {
         "list": "function Main(html){var total = strmiddle(html,'k_total\" class=\"curPage\">','<');var murl = getURL().replace('\\.html','');var obj= [];for(var i =1;i<total;i++){log(murl+'-'+i+'\\.html');obj.push(murl+'-'+i+'\\.html');};return obj;}",
-        "url": "function Main(text){return jsoup(text,'body > div.UnderPage.mip-hide > div:nth-child(3) > mip-link > a > mip-img > img@src->href');}",
+        "url": "function Main(text){return jsoup(text,'mip-link > mip-img@src->href');}",
         "mode": 1
     },
     "finds": [
