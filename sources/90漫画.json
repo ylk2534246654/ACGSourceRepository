@@ -39,7 +39,7 @@
         }
     },
     "comic": {
-        "list": "function Main(html){var total = strmiddle(html,'k_total\" class=\"curPage\">','<');var murl = getURL().replace('\\.html','');log(murl);var obj= [];for(var i =1;i<total;i++){obj.push(murl+'-'+i+'.html');};return obj;}",
+        "list": "function Main(html){var total = strmiddle(html,'k_total\" class=\"curPage\">','<');var murl = getURL().replace('\\.html','');var obj= [];for(var i =1;i<total;i++){obj.push(murl+'-'+i+'\\.html');};return obj;}",
         "url": "function Main(text){return jsoup(text,'body > div.UnderPage.mip-hide > div:nth-child(3) > mip-link > a > mip-img > img@src->href');}",
         "mode": 1
     },
