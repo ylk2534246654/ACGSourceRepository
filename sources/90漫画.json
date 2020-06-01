@@ -6,7 +6,6 @@
     "versionName": "1.0",
     "versionCode": 1,
     "tab": "漫画",
-    "dependencies": "https://c.mipcdn.com/static/v2/mip.js",
     "request": "http://m.90mh.com/search/?keywords=[$key]&page=[$page]@charset->UTF-8",
     "search": {
         "list": "function Main(html){return jsoups(html,'#update_list > .UpdateList > div');}",
@@ -39,7 +38,7 @@
         }
     },
     "comic": {
-        "list": "function Main(html){var total = strmiddle(html,'k_total\" class=\"curPage\">','<');var murl = getURL().replace('\\.html','');var obj= [];for(var i =1;i<total;i++){log(murl+'-'+i+'\\.html');obj.push(murl+'-'+i+'\\.html');};return obj;}",
+        "list": "function Main(html){var total = strmiddle(html,'k_total\" class=\"curPage\">','<');var murl = getURL().replace('\\.html','');var obj= [];for(var i =1;i<total;i++){obj.push(murl+'-'+i+'\\.html');};return obj;}",
         "url": "function Main(text){return text}",
         "url2": "function Main(text){return jsoup(text,'mip-link > mip-img@attr->src');}",
         "mode": 1
