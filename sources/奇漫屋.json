@@ -4,7 +4,7 @@
     "developer": "雨夏",
     "versionName": "1.0",
     "versionCode": 1,
-    "tab":"动漫",
+    "tab":"漫画",
     "request": "http://qiman5.com/spotlight/?keyword=[$key]@charset->UTF-8",
     "search": {
         "list": "function Main(html){return jsoups(html,'div.search-result > div');}",
