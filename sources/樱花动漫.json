@@ -44,7 +44,7 @@
 			"title": "function Main(text){return jsoup(text,'li > a');}",
 			"introduction": "function Main(text){return jsoup(text,'span.am-list-date')+'('+jsoup(text,'li > b > a')+')';}",
 			"cover": "",
-			"url": "function Main(text){return 'http://changyan.sohu.com/api/oauth2/nobody/sohu-hack?to_url='+jsoup(text,'li > a@attr->href');}"
+			"url": "function Main(text){return jsoup(text,'li > a@attr->href');}"
 		}
 	]
 }
