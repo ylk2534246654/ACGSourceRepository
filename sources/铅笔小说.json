@@ -23,7 +23,7 @@
                 "name": "function Main(text){return jsoup(text,'a');}",
                 "url": "function Main(text){return jsoup(text,'a@attr->href').replace('.html','')+'_2.html';}",
                 "orderBy": 1,
-                "category": 4
+                "category": 1
             }
         }
     },
