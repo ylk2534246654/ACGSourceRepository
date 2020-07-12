@@ -5,7 +5,7 @@
   "versionName": "1.0",
   "versionCode": 1,
   "tab":"漫画",
-  "request": "https://m.tohomh456.com/action/Search?keyword=[$key]&page=[$page]@charset->UTF-8",
+  "request": "https://m.tohomh123.com/action/Search?keyword=[$key]&page=[$page]@charset->UTF-8",
   "search": {
     "list": "function Main(html){return jsoups(html,'div > ul > li');}",
     "title": "function Main(text){return jsoup(text,'a@attr->title');}",
