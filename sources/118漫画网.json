@@ -5,7 +5,7 @@
     "developer": "雨夏",
     "versionName": "1.0",
     "versionCode": 1,
-    "tab": "国漫",
+    "tab": "漫画",
     "dependencies": "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/js/base64.js",
     "request": "http://m.ccshwy.com/statics/search.aspx?key=[$key]&page=[$page]@charset->UTF-8",
     "search": {
