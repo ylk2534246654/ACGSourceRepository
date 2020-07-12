@@ -10,7 +10,7 @@
         "list": "function Main(html){return jsonPaths(strmiddle(html,'serchArry=','</script>'),'$.*');}",
         "title": "function Main(text){return jsonPath(text,'$.name');}",
         "introduction": "function Main(text){return jsonPath(text,'$.authors');}",
-        "cover": "function Main(text){return 'https://images.dmzj.com/'+jsonPath(text,'$.cover');}",
+        "cover": "function Main(text){return 'https://images.dmzj.com/'+jsonPath(text,'$.cover')+'@header->Referer:'+'https://m.dmzj.com/';}",
         "url": "function Main(text){return 'https://m.dmzj.com/info/'+jsonPath(text,'$.comic_py')+'.html';}"
     },
     "detail": {
@@ -29,7 +29,7 @@
     },
     "comic": {
         "list": "function Main(html){return jsonPaths(strmiddle(html,'initData(',', \"'),'$..page_url');}",
-        "url": "function Main(text){return text;}",
+        "url": "function Main(text){return text+'@header->Referer:'+'https://m.dmzj.com/';}",
         "mode": 2
     },
     "finds": [
