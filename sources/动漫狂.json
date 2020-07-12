@@ -21,7 +21,7 @@
       "chapter": {
         "list": "function Main(html){return jsoups(html,'fieldset[id=info] > table > tbody > tr > td');}",
         "name": "function Main(text){return jsoup(text,'a');}",
-        "url": "function Main(text){return jsoup(text,'a@attr->href');}",
+        "url": "function Main(text){return jsoup(text,'a@attr->href')+'@header->Referer:'+getURL();}",
         "orderBy": 1,
         "category": 2
       }
