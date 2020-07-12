@@ -10,7 +10,7 @@
     "list": "function Main(html){return jsoups(html,'div.ar_list_co > ul > dl');}",
     "title": "function Main(text){return jsoup(text,'dd > h1 > a');}",
     "introduction": "function Main(text){return jsoup(text,'i.info');}",
-    "cover": "function Main(text){return jsoup(text,'dt > a > img@attr->src')+'@header->Referer:so.177mh.net';}",
+    "cover": "function Main(text){return jsoup(text,'dt > a > img@attr->src')+'@header->Referer:https://www.77mh.net';}",
     "url": "function Main(text){return jsoup(text,'dd > h1 > a@attr->href');}"
   },
   "detail": {
