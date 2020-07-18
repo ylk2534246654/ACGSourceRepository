@@ -28,7 +28,7 @@
         }
     },
     "novel": {
-        "list": "function Main(html){var endid=strmiddle(html,'(2/',')');var obj= [];for(var i =1;i<=endid;i++){obj.push(getURL().replace('_2.html','')+'_'+i+'.html');};return obj;}",
+        "list": "function Main(html){var endid=strmiddle(html,'(2/',')');var obj= [];for(var i =1;i<=endid;i++){obj.push(getURL().replace('_1.html','')+'_'+i+'.html');};return obj;}",
         "url": "function Main(text){return text;}",
         "content": "function Main(html){return jsoup(html,'#TextContent');}",
         "mode": 1
