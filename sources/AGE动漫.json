@@ -5,7 +5,7 @@
   "versionName": "1.0",
   "versionCode": 1,
   "tab": "动漫",
-  "request": "https://www.agefans.tv/search?&query=[$key]&page=[$page]",
+  "request": "https://www.agefans.tv/search?&query=[$key]&page=[$page]@ip->156.231.43.91:443",
   "search": {
     "list": "function Main(html){return jsoups(html,'div[class=blockcontent1] > div');}",
     "title": "function Main(text){return jsoup(text,'a[class=cell_poster] > img@attr->alt');}",
