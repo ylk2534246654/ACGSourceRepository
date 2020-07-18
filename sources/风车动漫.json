@@ -35,7 +35,7 @@
 	"finds": [
 		{
 			"tab": "新番放送",
-			"request": "http://dm.dm530.net/top/new.html",
+			"request": "http://m.dm190.com/top/new.html",
 			"list": "function Main(html){return jsoups(html,'ul.am-list > li');}",
 			"title": "function Main(text){return jsoup(text,'li > a');}",
 			"introduction": "function Main(text){return jsoup(text,'span.am-list-date')+'('+jsoup(text,'li > b > a')+')';}",
