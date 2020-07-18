@@ -21,7 +21,7 @@
             "chapter": {
                 "list": "function Main(html){return jsoups(html,'#chapterList > li');}",
                 "name": "function Main(text){return jsoup(text,'a');}",
-                "url": "function Main(text){return jsoup(text,'a@attr->href').replace('.html','')+'_2.html';}",
+                "url": "function Main(text){return jsoup(text,'a@attr->href').replace('.html','')+'_1.html';}",
                 "orderBy": 1,
                 "category": 1
             }
