@@ -5,7 +5,7 @@
 	"versionName": "1.0",
 	"versionCode": 1,
 	"tab": "动漫",
-	"request": "http://34.92.188.67/search.asp@post->searchword=[$key]@charset->gb2312",
+	"request": "http://m.doubao.cc/search.asp@ip->34.92.188.67@post->searchword=[$key]@charset->gb2312",
 	"search": {
 		"list": "function Main(html){return jsoups(html,'#mobile-index > ul > li');}",
 		"title": "function Main(text){return jsoup(text,'div > a > img@attr->alt');}",
