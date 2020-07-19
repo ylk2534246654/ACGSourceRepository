@@ -29,7 +29,7 @@
     },
     "finds": [
         {
-            "tab": "推荐",
+            "tab": "每日推荐",
             "request": "https://api.clicli.us/posts?status=public&sort=&tag=%E6%8E%A8%E8%8D%90&uid=&page=1&pageSize=30",
             "list": "function Main(html){return jsonPaths(html,'$..posts[*]');}",
             "title": "function Main(text){return jsonPath(text,'$.title');}",
@@ -37,7 +37,7 @@
             "cover": "function Main(text){return strmiddle(jsonPath(text,'$.content'),'(',')');}",
             "url": "function Main(text){return 'https://api.clicli.us/videos?pid='+jsonPath(text,'$.id')+'&page=1&pageSize=300';}"
         },{
-            "tab": "新番",
+            "tab": "新番放送",
             "request": "https://api.clicli.us/posts?status=nowait&sort=%E6%96%B0%E7%95%AA&tag=&uid=&page=1&pageSize=100",
             "list": "function Main(html){return jsonPaths(html,'$..posts[*]');}",
             "title": "function Main(text){return jsonPath(text,'$.title');}",
@@ -45,7 +45,7 @@
             "cover": "function Main(text){return strmiddle(jsonPath(text,'$.content'),'(',')');}",
             "url": "function Main(text){return 'https://api.clicli.us/videos?pid='+jsonPath(text,'$.id')+'&page=1&pageSize=300';}"
         },{
-            "tab": "原创",
+            "tab": "原创视频",
             "request": "https://api.clicli.us/posts?status=public&sort=%E5%8E%9F%E5%88%9B&tag=&uid=&page=2&pageSize=30",
             "list": "function Main(html){return jsonPaths(html,'$..posts[*]');}",
             "title": "function Main(text){return jsonPath(text,'$.title');}",
@@ -53,7 +53,7 @@
             "cover": "function Main(text){return strmiddle(jsonPath(text,'$.content'),'(',')');}",
             "url": "function Main(text){return 'https://api.clicli.us/videos?pid='+jsonPath(text,'$.id')+'&page=1&pageSize=300';}"
         },{
-            "tab": "排行榜",
+            "tab": "动漫排行榜",
             "request": "https://api.clicli.us/rank",
             "list": "function Main(html){return jsonPaths(html,'$..posts[*]');}",
             "title": "function Main(text){return jsonPath(text,'$.title');}",
