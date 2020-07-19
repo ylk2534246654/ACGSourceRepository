@@ -40,7 +40,7 @@
     },
     "finds": [
         {
-            "tab": "更新日",
+            "tab": "最新更新",
             "request": "https://www.ohmanhua.com/show?orderBy=update",
             "list": "function Main(html){return jsoups(html,'ul.fed-list-info > li');}",
             "title": "function Main(text){return jsoup(text,'a.fed-list-title');}",
@@ -49,7 +49,7 @@
             "url": "function Main(text){return jsoup(text,'a.fed-list-title@attr->href');}"
         },
         {
-            "tab": "收录日",
+            "tab": "最新收录",
             "request": "https://www.ohmanhua.com/show?orderBy=create",
             "list": "function Main(html){return jsoups(html,'ul.fed-list-info > li');}",
             "title": "function Main(text){return jsoup(text,'a.fed-list-title');}",
