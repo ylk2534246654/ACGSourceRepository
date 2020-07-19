@@ -53,7 +53,7 @@
             "cover": "function Main(text){return strmiddle(jsonPath(text,'$.content'),'(',')');}",
             "url": "function Main(text){return 'https://api.clicli.us/videos?pid='+jsonPath(text,'$.id')+'&page=1&pageSize=300';}"
         },{
-            "tab": "动漫排行榜",
+            "tab": "排行榜",
             "request": "https://api.clicli.us/rank",
             "list": "function Main(html){return jsonPaths(html,'$..posts[*]');}",
             "title": "function Main(text){return jsonPath(text,'$.title');}",
