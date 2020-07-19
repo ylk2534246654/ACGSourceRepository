@@ -70,7 +70,7 @@
             "url": "function Main(text){return jsoup(text,'a@attr->href');}"
         },
         {
-            "tab": "影视",
+            "tab": "电视剧",
             "request": "http://www.bimibimi.me/type/move/",
             "list": "function Main(html){return jsoups(html,'div.v_tb > ul > li');}",
             "title": "function Main(text){return jsoup(text,'a@attr->title');}",
