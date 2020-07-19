@@ -43,7 +43,7 @@
       "url": "function Main(text){return jsoup(text,'a@attr->href');}"
     },
     {
-      "tab": "最近更新",
+      "tab": "新番放送",
       "request": "https://www.agefans.tv/update",
       "list": "function Main(html){return jsoups(html,'div.baseblock > div > ul > li');}",
       "title": "function Main(text){return jsoup(text,'h4 > a');}",
