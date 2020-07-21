@@ -32,5 +32,16 @@
     "list": "function Main(html){eval(strmiddle(html,'<script>;',';var')+';');eval('var chapterPath'+strmiddle(html,'var chapterPath',';')+';');log(chapterImages);var str_decrypt = CryptoJS['AES']['decrypt'](chapterImages,CryptoJS['enc']['Utf8']['parse']('1231994MHB123456'), {'iv': CryptoJS['enc']['Utf8']['parse']('ABCDEF1G34123412'),'mode': CryptoJS['mode']['CBC'],'padding': CryptoJS['pad']['Pkcs7']});var string1 = str_decrypt['toString'](CryptoJS['enc']['Utf8']);log(string1['toString']());eval('chapterImages = '+string1['toString']()+';');var arr = [];for (var i = 0 ; i<chapterImages.length; i++){arr.push('https://img01.eshanyao.com/'+chapterPath+chapterImages[i]);}return arr;};",
     "url": "function Main(text){return text;}",
     "mode": 2
-  }
+  },
+  "finds": [
+        {
+            "tab": "最新更新",
+            "request": "https://m.manhuabei.com/update/",
+            "list": "function Main(html){return jsoups(html,'#update_list > div > div');}",
+            "title": "function Main(text){return jsoup(text,'div.itemTxt > a');}",
+            "introduction": "function Main(text){return jsoup(text,'div.itemTxt');}",
+            "cover": "function Main(text){return jsoup(text,'div.itemImg > a > img@attr->src');}",
+            "url": "function Main(text){return jsoup(text,'div.itemTxt > a@attr->href');}"
+        }
+    ]
 }
