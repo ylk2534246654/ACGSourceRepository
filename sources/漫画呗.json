@@ -45,7 +45,7 @@
     },
     {
       "tab": "日韩漫画",
-      "request": "https://www.manhuabei.com/list/riben/",
+      "request": "https://m.manhuabei.com/list/riben/",
       "list": "function Main(html){return jsoups(html,'#update_list > div > div');}",
       "title": "function Main(text){return jsoup(text,'div.itemTxt > a');}",
       "introduction": "function Main(text){return jsoup(text,'div.itemTxt');}",
@@ -54,7 +54,7 @@
     },
     {
       "tab": "国漫推荐",
-      "request": "https://www.manhuabei.com/list/dalu/",
+      "request": "https://m.manhuabei.com/list/dalu/",
       "list": "function Main(html){return jsoups(html,'#update_list > div > div');}",
       "title": "function Main(text){return jsoup(text,'div.itemTxt > a');}",
       "introduction": "function Main(text){return jsoup(text,'div.itemTxt');}",
@@ -63,7 +63,7 @@
     },
     {
       "tab": "人气榜",
-      "request": "https://www.manhuabei.com/list/lianzai/",
+      "request": "https://m.manhuabei.com/list/lianzai/",
       "list": "function Main(html){return jsoups(html,'#update_list > div > div');}",
       "title": "function Main(text){return jsoup(text,'div.itemTxt > a');}",
       "introduction": "function Main(text){return jsoup(text,'div.itemTxt');}",
