@@ -60,6 +60,15 @@
       "introduction": "function Main(text){return jsoup(text,'div.itemTxt');}",
       "cover": "function Main(text){return jsoup(text,'div.itemImg > a > img@attr->src');}",
       "url": "function Main(text){return jsoup(text,'div.itemTxt > a@attr->href');}"
+    },
+    {
+      "tab": "人气榜",
+      "request": "https://www.manhuabei.com/list/lianzai/",
+      "list": "function Main(html){return jsoups(html,'#update_list > div > div');}",
+      "title": "function Main(text){return jsoup(text,'div.itemTxt > a');}",
+      "introduction": "function Main(text){return jsoup(text,'div.itemTxt');}",
+      "cover": "function Main(text){return jsoup(text,'div.itemImg > a > img@attr->src');}",
+      "url": "function Main(text){return jsoup(text,'div.itemTxt > a@attr->href');}"
     }
   ]
 }
