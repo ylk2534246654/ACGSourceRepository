@@ -5,7 +5,7 @@
   "versionName": "1.0",
   "versionCode": 1,
   "dependencies": "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/js/crypto.js",
-  "tab":"漫画",
+  "tab": "漫画",
   "request": "https://m.manhuabei.com/search/?keywords=[$key]&page=[$page]@charset->UTF-8",
   "search": {
     "list": "function Main(html){return jsoups(html,'#update_list > div > div');}",
@@ -34,14 +34,23 @@
     "mode": 2
   },
   "finds": [
-        {
-            "tab": "最新更新",
-            "request": "https://m.manhuabei.com/update/",
-            "list": "function Main(html){return jsoups(html,'#update_list > div > div');}",
-            "title": "function Main(text){return jsoup(text,'div.itemTxt > a');}",
-            "introduction": "function Main(text){return jsoup(text,'div.itemTxt');}",
-            "cover": "function Main(text){return jsoup(text,'div.itemImg > a > img@attr->src');}",
-            "url": "function Main(text){return jsoup(text,'div.itemTxt > a@attr->href');}"
-        }
-    ]
+    {
+      "tab": "最新更新",
+      "request": "https://m.manhuabei.com/update/",
+      "list": "function Main(html){return jsoups(html,'#update_list > div > div');}",
+      "title": "function Main(text){return jsoup(text,'div.itemTxt > a');}",
+      "introduction": "function Main(text){return jsoup(text,'div.itemTxt');}",
+      "cover": "function Main(text){return jsoup(text,'div.itemImg > a > img@attr->src');}",
+      "url": "function Main(text){return jsoup(text,'div.itemTxt > a@attr->href');}"
+    },
+    {
+      "tab": "日韩漫画",
+      "request": "https://www.manhuabei.com/list/riben/",
+      "list": "function Main(html){return jsoups(html,'#update_list > div > div');}",
+      "title": "function Main(text){return jsoup(text,'div.itemTxt > a');}",
+      "introduction": "function Main(text){return jsoup(text,'div.itemTxt');}",
+      "cover": "function Main(text){return jsoup(text,'div.itemImg > a > img@attr->src');}",
+      "url": "function Main(text){return jsoup(text,'div.itemTxt > a@attr->href');}"
+    }
+  ]
 }
