@@ -28,7 +28,7 @@
     }
   },
   "comic": {
-    "list": "function Main(html){var z_yurl = strmiddle(html,'z_yurl=\\'','\\'');if(z_yurl==null){z_yurl = 'https://img.yaoyaoliao.com/';}var z_img = jsonPaths(strmiddle(html,'z_img=\\'','\\''),'$.*');var arr = [];for (var i = 0 ; i<z_img.length; i++){arr.push(pathURL2(z_img[i],z_yurl));}return arr;};",
+    "list": "function Main(html){eval(strmiddle(html,'<script>;'','</script>''));var str_decrypt = CryptoJS['AES']['decrypt'](chapterImages,CryptoJS['enc']['Utf8']['parse']('1231994MHB123456'), {'iv': CryptoJS['enc']['Utf8']['parse']('ABCDEF1G34123412'),'mode': CryptoJS['mode']['CBC'],'padding': CryptoJS['pad']['Pkcs7']});var string1 = str_decrypt['toString'](CryptoJS['enc']['Utf8']);chapterImages = JSON['parse'](string1['toString']());var arr = [];for (var i = 0 ; i<chapterImages.length; i++){arr.push('https://img01.eshanyao.com/'+chapterPath+chapterImages[i]);}return arr;};",
     "url": "function Main(text){return text;}",
     "mode": 2
   }
