@@ -10,6 +10,6 @@
     "title": "function Main(text){return jsoup(text,'a:nth-child(1)');}",
     "introduction": "function Main(text){return jsoup(text,'a:nth-child(2)');}",
     "cover": "",
-    "url": "function Main(text){return jsoup(text,'a:nth-child(1)@attr->href').replace('biu.moe/s','web.biu.moe/Song/playSID/sid/');}"
+    "url": "function Main(text){return jsoup(text,'a:nth-child(1)@attr->href').replace('web.biu.moe/s','web.biu.moe/Song/playSID/sid/');}"
   }
 }
