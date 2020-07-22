@@ -39,19 +39,19 @@
     },{
       "tab": "后宫",
       "request": "https://rushia.me/tag/%E5%90%8E%E5%AE%AB/",
-      "list": "function Main(html){return jsoups(html,'div.archive > div');}",
-      "title": "function Main(text){return jsoup(text,'span.title');}",
-      "introduction": "function Main(text){return jsoup(text,'div.card-img-bili > div:nth-child(3)');}",
-      "cover": "function Main(text){return jsoup(text,' div > a > img@attr->data-url');}",
-      "url": "function Main(text){return jsoup(text,'div.over > a@attr->href')}"
+      "list": "function Main(html){return jsoups(html,'uk-first-column');}",
+      "title": "function Main(text){return jsoup(text,'div.video-post-content');}",
+      "introduction": "",
+      "cover": "function Main(text){return jsoup(text,' media-content@attr->data-xurl');}",
+      "url": "function Main(text){return jsoup(text,'div > a@attr->href')}"
     },{
       "tab": "百合",
       "request": "https://rushia.me/tag/%E7%99%BE%E5%90%88/",
-      "list": "function Main(html){return jsoups(html,'div.archive > div');}",
-      "title": "function Main(text){return jsoup(text,'span.title');}",
-      "introduction": "function Main(text){return jsoup(text,'div.card-img-bili > div:nth-child(3)');}",
-      "cover": "function Main(text){return jsoup(text,' div > a > img@attr->data-url');}",
-      "url": "function Main(text){return jsoup(text,'div.over > a@attr->href')}"
+      "list": "function Main(html){return jsoups(html,'uk-first-column');}",
+      "title": "function Main(text){return jsoup(text,'div.video-post-content');}",
+      "introduction": "",
+      "cover": "function Main(text){return jsoup(text,' media-content@attr->data-xurl');}",
+      "url": "function Main(text){return jsoup(text,'div > a@attr->href')}"
     }
   ]
 }
