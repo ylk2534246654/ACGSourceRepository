@@ -4,7 +4,7 @@
   "developer": "雨夏",
   "versionName": "1.0",
   "versionCode": 1,
-  "request": "https://biu.moe/#/index.php?m=&c=Song&a=search&data=[$key]&p=[$page]@charset->UTF-8",
+  "request": "https://web.biu.moe/index.php?m=&c=Song&a=search&data=[$key]&p=[$page]@charset->UTF-8",
   "search": {
     "list": "function Main(html){return jsoups(html,'table > tbody > tr');}",
     "title": "function Main(text){return jsoup(text,'td:nth-child(1) > a:nth-child(1)');}",
