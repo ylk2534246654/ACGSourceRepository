@@ -1,0 +1,15 @@
+{
+  "name": "Biu.Moe",
+  "introduction": "可以搜索一些音乐",
+  "developer": "雨夏",
+  "versionName": "1.0",
+  "versionCode": 1,
+  "request": "https://biu.moe/#/index.php?m=&c=Song&a=search&data=[$key]&p=[$page]@charset->UTF-8",
+  "search": {
+    "list": "function Main(html){return jsoups(html,'div.s_post_list > div.s_post');}",
+    "title": "function Main(text){return jsoup(text,'td:nth-child(1) > a:nth-child(1)');}",
+    "introduction": "function Main(text){return jsoup(text,'td:nth-child(2) > a');}",
+    "cover": "",
+    "url": "function Main(text){return jsoup(text,'td:nth-child(1) > a:nth-child(1)@attr->href');}"
+  }
+}
