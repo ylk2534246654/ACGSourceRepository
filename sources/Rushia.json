@@ -31,26 +31,26 @@
     {
       "tab": "恋爱",
       "request": "https://rushia.me/tag/%E6%81%8B%E7%88%B1/",
-      "list": "function Main(html){return jsoups(html,'uk-first-column');}",
+      "list": "function Main(html){return jsoups(html,'div.uk-animation-slide-bottom-small');}",
       "title": "function Main(text){return jsoup(text,'div.video-post-content');}",
       "introduction": "",
-      "cover": "function Main(text){return jsoup(text,' media-content@attr->data-xurl');}",
+      "cover": "function Main(text){return jsoup(text,'div.media-content@attr->data-xurl');}",
       "url": "function Main(text){return jsoup(text,'div > a@attr->href')}"
     },{
       "tab": "后宫",
       "request": "https://rushia.me/tag/%E5%90%8E%E5%AE%AB/",
-      "list": "function Main(html){return jsoups(html,'uk-first-column');}",
+      "list": "function Main(html){return jsoups(html,'div.uk-animation-slide-bottom-small');}",
       "title": "function Main(text){return jsoup(text,'div.video-post-content');}",
       "introduction": "",
-      "cover": "function Main(text){return jsoup(text,' media-content@attr->data-xurl');}",
+      "cover": "function Main(text){return jsoup(text,'div.media-content@attr->data-xurl');}",
       "url": "function Main(text){return jsoup(text,'div > a@attr->href')}"
     },{
       "tab": "百合",
       "request": "https://rushia.me/tag/%E7%99%BE%E5%90%88/",
-      "list": "function Main(html){return jsoups(html,'uk-first-column');}",
+      "list": "function Main(html){return jsoups(html,'div.uk-animation-slide-bottom-small');}",
       "title": "function Main(text){return jsoup(text,'div.video-post-content');}",
       "introduction": "",
-      "cover": "function Main(text){return jsoup(text,' media-content@attr->data-xurl');}",
+      "cover": "function Main(text){return jsoup(text,'div.media-content@attr->data-xurl');}",
       "url": "function Main(text){return jsoup(text,'div > a@attr->href')}"
     }
   ]
