@@ -9,7 +9,7 @@
     "list": "function Main(html){return jsoups(html,'tbody > tr');}",
     "title": "function Main(text){return jsoup(text,'td:nth-child(1) > a');}",
     "introduction": "function Main(text){return jsoup(text,'td:nth-child(2) > a');}",
-    "cover": "function Main(text){return jsonPath(text,'$.pic');}",
+    "cover": "",
     "url": "function Main(text){return jsoup(text,'td:nth-child(1) > a@attr->href');}"
   }
 }
