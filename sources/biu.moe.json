@@ -7,9 +7,9 @@
   "request": "https://web.biu.moe/index.php?m=&c=Song&a=search&data=[$key]&p=[$page]@charset->UTF-8",
   "search": {
     "list": "function Main(html){return jsoups(html,'tbody > tr');}",
-    "title": "function Main(text){return jsoup(text,'td:nth-child(1) > a');}",
+    "title": "function Main(text){return jsoup(text,'a');}",
     "introduction": "function Main(text){return jsoup(text,'td:nth-child(2) > a');}",
     "cover": "",
-    "url": "function Main(text){return jsoup(text,'td:nth-child(1) > a@attr->href');}"
+    "url": "function Main(text){return jsoup(text,'a@attr->href');}"
   }
 }
