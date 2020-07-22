@@ -15,7 +15,7 @@
   },
   "detail": {
     "author": "",
-    "introduction": "function Main(html){return jsoup(html,'div.uk-first-column > p:nth-child(3)');}",
+    "introduction": "function Main(html){return jsoup(html,'div.uk-first-column');}",
     "upDate": "",
     "catalogs": {
       "chapter": {
