@@ -8,7 +8,7 @@
   "auth":{
     "login":"https://www.rushia.me/?login",
     "verify":"https://www.rushia.me/",
-    "logged":"function Main(html){if(html.indexOf('登录')!=-1){return true;}else{return false;};}"
+    "logged":"function Main(html){if(html.indexOf('登录')==-1){return true;}else{return false;};}"
   },
   "request": "https://rushia.info/search/[$key]/[$page]@charset->UTF-8",
   "search": {
