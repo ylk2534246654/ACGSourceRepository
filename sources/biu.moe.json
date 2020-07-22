@@ -13,6 +13,6 @@
     "url": "function Main(text){return jsoup(text,'a:nth-child(1)@attr->href').replace('web.biu.moe/s','web.biu.moe/Song/playSID/sid/');}"
   },
   "url": {
-    "url": "function Main(html){return jsonPath(html,'$.。url');}"
+    "url": "function Main(html){return jsonPath(html,'$..url');}"
   }
 }
