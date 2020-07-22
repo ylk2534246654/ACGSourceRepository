@@ -15,11 +15,11 @@
   },
   "detail": {
     "author": "",
-    "introduction": "function Main(html){return jsoup(html,'div.card-body > p');}",
+    "introduction": "function Main(html){return jsoup(html,'div.uk-first-column > p:nth-child(3)');}",
     "upDate": "",
     "catalogs": {
       "chapter": {
-        "list": "function Main(html){return jsoups(html,'div.button-list > a');}",
+        "list": "function Main(html){return jsoups(html,'div.uk-margin > a');}",
         "name": "function Main(text){return jsoup(text,'a');}",
         "url": "function Main(text){return jsoup(text,'a@attr->href');}",
         "orderBy": 1,
