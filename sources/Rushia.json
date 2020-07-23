@@ -25,7 +25,7 @@
     "upDate": "",
     "catalogs": {
       "chapter": {
-        "list": "function Main(html){return jsoups(html,'div.uk-margin > a');}",
+        "list": "function Main(html){return jsoups(html,'div.uk-margin > a')+' 搜索源需登录';}",
         "name": "function Main(text){return jsoup(text,'a');}",
         "url": "function Main(text){return jsoup(text,'a@attr->href');}",
         "category": 3
