@@ -14,6 +14,7 @@
     "url": "function Main(text){return jsoup(text,'a@attr->href');}"
   },
   "detail": {
+    "cover": "function Main(html){return jsoup(html,'div.tpic > img@attr->src');}",
     "author": "",
     "introduction": "function Main(html){return jsoup(html,'div.alex > p:nth-child(1)');}",
     "upDate": "function Main(html){return jsoup(html,'div.alex > span:nth-child(4)');}",

@@ -14,7 +14,6 @@
         "url": "function Main(text){return 'https://api.clicli.us/videos?pid='+jsonPath(text,'$.id')+'&page=1&pageSize=300';}"
     },
     "detail": {
-        "cover": "",
         "author": "",
         "introduction": "",
         "upDate": "",
