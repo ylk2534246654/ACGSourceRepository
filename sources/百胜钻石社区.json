@@ -1,7 +1,7 @@
 {
 	"name": "百胜钻石社区",
 	"introduction": "可以搜索一些视频(警告：18x)",
-	"developer": "",
+	"developer": "网页",
 	"versionName": "1.0",
 	"versionCode": 1,
 	"request": "https://bszs14.cn/vodsearch/-------------/?wd=[$key]@charset->UTF-8",
@@ -26,7 +26,6 @@
 				"list": "function Main(html){return jsoups(html,'ul');}",
 				"name": "function Main(text){return jsoup(text,'ul > li > a');}",
 				"url": "function Main(text){return jsoup(text,'ul > li > a@attr->href');}",
-				"orderBy": 1,
 				"category": 3
 			}
 		}

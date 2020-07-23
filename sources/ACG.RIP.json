@@ -3,6 +3,7 @@
     "introduction": "可以搜一些动漫种子资源",
     "developer": "雨夏",
     "versionName": "1.0",
+    "mail":"2534246654@qq.com",
     "versionCode": 1,
     "tab": "种子",
     "request": "https://acg.rip/page/[$page]?term=[$key]@charset->UTF-8",

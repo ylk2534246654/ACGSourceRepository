@@ -3,6 +3,7 @@
     "name": "118漫画网",
     "introduction": "可以搜索一些国漫",
     "developer": "雨夏",
+    "mail":"2534246654@qq.com",
     "versionName": "1.0",
     "versionCode": 1,
     "tab": "漫画",
@@ -33,7 +34,6 @@
                 "list": "function Main(html){return jsoups(html,'div#list > ul > li');}",
                 "name": "function Main(text){return jsoup(text,'a');}",
                 "url": "function Main(text){return jsoup(text,'a@attr->href');}",
-                "orderBy": 0,
                 "category": 2
             }
         }

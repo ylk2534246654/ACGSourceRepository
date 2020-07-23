@@ -2,6 +2,7 @@
     "name": "酷爱漫画",
     "introduction": "可以搜索一些漫画",
     "developer": "雨夏",
+    "mail":"2534246654@qq.com",
     "versionName": "1.0",
     "versionCode": 1,
     "tab":"漫画",
@@ -27,7 +28,6 @@
                 "list": "",
                 "name": "",
                 "url": "",
-                "orderBy": 0,
                 "category": 1
             }
         }

@@ -2,6 +2,7 @@
     "name": "溜溜影院",
     "introduction": "可以搜一些电视电影",
     "developer": "雨夏",
+    "mail":"2534246654@qq.com",
     "versionName": "1.0",
     "versionCode": 1,
     "request": "http://liuliuyy.com/vodsearch/nid/1/page/[$page]/sid/1/wd/[$key].html@charset->utf-8",
@@ -26,7 +27,6 @@
                 "list": "function Main(html){return jsoups(html,'ul.episodes-list > li');}",
                 "name": "function Main(text){return jsoup(text,'a');}",
                 "url": "function Main(text){return jsoup(text,'a@attr->href');}",
-                "orderBy": 1,
                 "category": 3
             }
         }

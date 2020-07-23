@@ -2,6 +2,7 @@
   "name": "QQ音乐",
   "introduction": "可以搜索一些音乐",
   "developer": "雨夏",
+  "mail":"2534246654@qq.com",
   "versionName": "1.0",
   "versionCode": 1,
   "request": "https://music.liuzhijin.cn/@post->input=[$key]&filter=name&type=qq&page=[$page]@charset->UTF-8@header->x-requested-with:XMLHttpRequest",

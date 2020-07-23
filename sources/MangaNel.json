@@ -2,6 +2,7 @@
   "name": "MangaNel",
   "introduction": "可以搜索一些外国漫画",
   "developer": "雨夏",
+  "mail":"2534246654@qq.com",
   "versionName": "1.0",
   "versionCode": 1,
   "tab":"漫画",
@@ -22,7 +23,6 @@
         "list": "function Main(html){return jsoups(html,'div.panel-story-chapter-list > ul.row-content-chapter > li');}",
         "name": "function Main(text){return jsoup(text,'a');}",
         "url": "function Main(text){return jsoup(text,'a@attr->href');}",
-        "orderBy": 0,
         "category": 2
       }
     }

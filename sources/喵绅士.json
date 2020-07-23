@@ -1,7 +1,7 @@
 {
     "name": "喵绅士",
     "introduction": "可以搜索一些漫画(警告:18x)",
-    "developer": "雨夏",
+    "developer": "网页",
     "versionName": "1.0",
     "versionCode": 1,
     "tab":"漫画18x",
@@ -22,7 +22,6 @@
                 "list": "function Main(html){return jsoups(html,'div > a:nth-child(9)');}",
                 "name": "function Main(text){return jsoup(text,'a');}",
                 "url": "function Main(text){return jsoup(text,'a@attr->href');}",
-                "orderBy": 0,
                 "category": 2
             }
         }

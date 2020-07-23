@@ -2,6 +2,7 @@
     "name": "动漫之家",
     "introduction": "可以搜索一些漫画",
     "developer": "雨夏",
+    "mail":"2534246654@qq.com",
     "versionName": "1.0",
     "versionCode": 1,
     "tab": "漫画",
@@ -23,7 +24,6 @@
                 "list": "function Main(html){return jsonPaths(strmiddle(html,'initIntroData([',']);'),'$..data[*]');}",
                 "name": "function Main(text){return jsonPath(text,'$.chapter_name');}",
                 "url": "function Main(text){return 'https://m.dmzj.com/view/'+jsonPath(text,'$.comic_id')+'/'+jsonPath(text,'$.id')+'.html';}",
-                "orderBy": 0,
                 "category": 2
             }
         }

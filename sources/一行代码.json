@@ -2,6 +2,7 @@
     "name": "一行代码",
     "introduction": "精准搜索 可针对类名、方法名进行搜索。 众多语言 支持java、C#、Python等数十种常用开发语言搜索。",
     "developer": "雨夏",
+    "mail":"2534246654@qq.com",
     "versionName": "1.0",
     "versionCode": 1,
     "request": "https://www.alinecode.com/search?sort=_score&q=[$key]@charset->utf-8@header->Referer:https://www.alinecode.com/@header->Host:www.alinecode.com",

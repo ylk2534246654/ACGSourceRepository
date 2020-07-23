@@ -2,6 +2,7 @@
     "name": "奇奇动漫",
     "introduction": "可以搜索一些动漫",
     "developer": "雨夏",
+    "mail":"2534246654@qq.com",
     "versionName": "1.0",
     "versionCode": 1,
     "tab":"动漫",
@@ -27,7 +28,6 @@
                 "list": "function Main(html){return jsoups(html,'div.tb.fix > a');}",
                 "name": "function Main(text){return jsoup(text,'a').replace(jsoup(text,'a > span'),'');}",
                 "url": "function Main(text){return jsoup(text,'a@attr->href');}",
-                "orderBy": 1,
                 "category": 3
             }
         }

@@ -2,6 +2,7 @@
     "name": "哔哩哔哩",
     "introduction": "可以搜索一些动漫",
     "developer": "雨夏",
+    "mail":"2534246654@qq.com",
     "versionName": "1.0",
     "versionCode": 1,
     "auth": {
@@ -26,7 +27,6 @@
                 "list": "function Main(html){return jsonPaths(html,'$..episodes');}",
                 "name": "function Main(text){return jsonPath(text,'$.long_title');}",
                 "url": "function Main(text){return 'https://www.bilibili.com/bangumi/play/ep'+jsonPath(text,'$.id');}",
-                "orderBy": 0,
                 "category": 1
             }
         }

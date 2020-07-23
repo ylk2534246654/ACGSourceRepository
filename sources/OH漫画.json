@@ -2,6 +2,7 @@
     "name": "OH漫画",
     "introduction": "可以搜一些漫画,\nps:感谢2595***048提供的解密代码",
     "developer": "雨夏",
+    "mail":"2534246654@qq.com",
     "versionName": "1.0",
     "versionCode": 1,
     "dependencies": "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/js/crypto.js",
@@ -29,7 +30,6 @@
                 "list": "function Main(text){return jsoups(text,'li');}",
                 "name": "function Main(text){return jsoup(text,'a');}",
                 "url": "function Main(text){return jsoup(text,'a@attr->href');}",
-                "orderBy": 0,
                 "category": 2
             }
         }

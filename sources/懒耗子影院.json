@@ -2,6 +2,7 @@
     "name": "懒耗子影院",
     "introduction": "可以搜索一些VIP影视",
     "developer": "雨夏",
+    "mail":"2534246654@qq.com",
     "versionName": "1.0",
     "versionCode": 1,
     "request": "http://v.looklookb.com.cn/action/search?keyword=[$key]&page=[$page]&limit=10@charset->UTF-8@header->X-Requested-With:XMLHttpRequest",
@@ -23,7 +24,6 @@
                 "list": "var mhtml;function Main(html){mhtml = html;var urls = jsonPaths(html,'$.msg.url[*]');if(urls.length>0){return urls;}else{return [jsonPath(html,'$.msg.url')];}}",
                 "name": "function Main(text){if(text.indexOf('{')==-1){return '在线播放';}var name = jsonPath(text,'$.playName');return name;}",
                 "url": "function Main(text){if(text.indexOf('{')==-1){return text;}var murl = jsonPath(text,'$.play');return murl;}",
-                "orderBy": 1,
                 "category": 3
             }
         }
