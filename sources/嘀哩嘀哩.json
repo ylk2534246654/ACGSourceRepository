@@ -18,6 +18,7 @@
     "author": "function Main(html){return jsoup(html,'div.fr.detail_info > p:nth-child(3)');}",
     "introduction": "function Main(html){return jsoup(html,'#app > div:nth-child(3) > p');}",
     "upDate": "function Main(html){return jsoup(html,'div.fr.detail_info > p:nth-child(4)');}",
+    "reverseOrder": true,
     "catalogs": {
       "chapter": {
         "list": "function Main(html){return jsoups(html,'#app > div.episode > ul > li');}",
