@@ -4,6 +4,7 @@
   "developer": "雨夏",
   "versionName": "1.0",
   "versionCode": 1,
+  "tab":"音乐",
   "request": "https://web.biu.moe/index.php?m=&c=Song&a=search&data=[$key]&p=[$page]@charset->UTF-8",
   "search": {
     "list": "function Main(html){return jsoups(html,'tbody > tr');}",
