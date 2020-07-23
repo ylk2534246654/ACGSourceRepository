@@ -30,6 +30,6 @@
     "comic": {
         "list": "var host = 'http://img4.jpm1234.com/uploads';function Main(html){eval('var cInfo'+strmiddle(html,'var cInfo','</script>'));if(html.indexOf('configsa')!=-1){host = 'http://img2.jpm1234.com/uploads';};if(html.indexOf('configsb')!=-1){host = 'http://img3.jpm1234.com/uploads';};return cInfo.fs;}",
         "url": "function Main(text){return host+text;}",
-        "mode": 1
+        "mode": 3
     }
 }

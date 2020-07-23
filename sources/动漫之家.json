@@ -31,7 +31,7 @@
     "comic": {
         "list": "function Main(html){return jsonPaths(strmiddle(html,'initData(',', \"'),'$..page_url');}",
         "url": "function Main(text){return text+'@header->Referer:'+'https://m.dmzj.com/';}",
-        "mode": 2
+        "mode": 3
     },
     "finds": [
         {

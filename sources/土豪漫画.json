@@ -35,6 +35,6 @@
   "comic": {
     "list": "function Main(html){var file=strmiddle(html,'pl = \\'','/000');var startid=parseInt(strmiddle(html,'/000','.jpg'));var endid=parseInt(strmiddle(html,'pcount=',';'));var obj= [];for(var i =startid;i<(endid+startid);i++){var num = i;var n=4;var a = (Array(n).join(0) + num).slice(-n);obj.push(file+'/'+a+'.jpg');};return obj;}",
     "url": "function Main(text){return text;}",
-    "mode": 2
+    "mode": 3
   }
 }
