@@ -17,6 +17,7 @@
         "author": "function Main(html){return jsoup(html,'#zanpian-score > ul > li:nth-child(4)');}",
         "introduction": "function Main(html){return jsoup(html,'#zanpian-jj > div.box-comment');}",
         "upDate": "function Main(html){return jsoup(html,'#zanpian-score > ul > li.hidden-md');}",
+        "reverseOrder": true,
         "tabs": {
           "list": "function Main(html){return jsoups(html,'#playTab > li');}",
           "name": "function Main(text){return jsoup(text,'a');}"
