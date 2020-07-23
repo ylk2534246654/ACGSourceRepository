@@ -26,7 +26,7 @@
       "chapter": {
         "list": "var url;function Main(html){url = 'https://manga.bilibili.com/m/mc'+jsonPath(html,'$..data.id');return jsonPaths(html,'$..ep_list[*]');}",
         "name": "function Main(text){return jsonPath(text,'$..short_title')+jsonPath(text,'$..title');}",
-        "url": "function Main(text){return url+'/'+jsonPath(text,'$..id');}",
+        "url": "function Main(text){return url+'/'+jsonPath(text,'$..id')+'@header->user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36';}",
         "orderBy": 0,
         "category": 1
       }
