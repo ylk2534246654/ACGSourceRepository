@@ -17,6 +17,7 @@
 		"author": "",
 		"introduction": "function Main(html){return jsoup(html,'p.txtDesc.autoHeight');}",
 		"upDate": "function Main(html){return jsoup(html,'#p-info > p:nth-child(6)');}",
+		"reverseOrder": true,
 		"tabs": {
 			"list": "function Main(html){return jsoups(html,'ul.am-cf > li');}",
 			"name": "function Main(text){return jsoup(text,'a');}"

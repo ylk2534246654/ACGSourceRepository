@@ -17,6 +17,7 @@
         "author": "function Main(html){return jsoup(html,'div.box-back2 > p:nth-child(2)');}",
         "introduction": "function Main(html){return jsoup(html,'span.comic-intro');}",
         "upDate": "function Main(html){return jsoup(html,'div.box-back2 > p:nth-child(4)');}",
+        "reverseOrder": true,
         "catalogs": {
             "chapter": {
                 "list": "function Main(html){return jsoups(html,'div.catalog-list > ul > li');}",
