@@ -20,7 +20,7 @@
         "catalogs": {
             "chapter": {
                 "list": "function Main(html){return jsonPaths(html,'$..videos[*]');}",
-                "name": "function Main(text){return jsonPath(text,'$..title');}",
+                "name": "function Main(text){return jsonPath(text,'$..title')+' ';}",
                 "url": "function Main(text){return jsonPath(text,'$..content');}",
                 "orderBy": 0,
                 "category": 3
