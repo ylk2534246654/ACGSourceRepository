@@ -35,7 +35,7 @@
                 "list": "function Main(html){return jsoups(html,'div#list > ul > li');}",
                 "name": "function Main(text){return jsoup(text,'a');}",
                 "url": "function Main(text){return jsoup(text,'a@attr->href');}",
-                "category": 3
+                "category": 2
             }
         }
     },
