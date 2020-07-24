@@ -4,7 +4,7 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 2,
+    "versionCode": 1,
     "dependencies": "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/js/crypto.js",
     "tab": "漫画",
     "request": "https://www.ohmanhua.com/search?searchString=[$key]&page=[$page]@charset->UTF-8",
