@@ -41,7 +41,7 @@
         "list": "function Main(html){var total = strmiddle(html,'k_total\" class=\"curPage\">','<');var murl = getURL().replace('\\.html','');var obj= [];for(var i =1;i<total;i++){obj.push(murl+'-'+i+'\\.html');};return obj;}",
         "url": "function Main(text){return text}",
         "url2": "function Main(text){return jsoup(text,'mip-link > mip-img@attr->src');}",
-        "mode": 3
+        "mode": 1
     },
     "finds": [
         {

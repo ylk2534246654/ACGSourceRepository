@@ -30,6 +30,6 @@
   "comic": {
     "list": "function Main(html){return jsoups(html,'div > img');}",
     "url": "function Main(text){return jsoup(text,'img@attr->src');}",
-    "mode": 4
+    "mode": 1
   }
 }

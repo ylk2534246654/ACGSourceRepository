@@ -29,6 +29,6 @@
     "comic": {
         "list": "function Main(html){return jsoups(html,'div > img');}",
         "url": "function Main(text){return jsoup(text,'img@attr->data-original');}",
-        "mode": 3
+        "mode": 1
     }
 }
