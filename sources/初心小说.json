@@ -11,7 +11,7 @@
         "list": "function Main(html){return jsoups(html,'div.secd-rank-list');}",
         "title": "function Main(text){return jsoup(text,'dl > dd > a');}",
         "introduction": "function Main(text){return jsoup(text,'p.big-book-info');}",
-        "cover": "function Main(text){return jsoup(text,'dl > dt > a > img@attr->_src');}",
+        "cover": "function Main(text){return jsoup(text,'dl > dt > a > img@attr->data-original');}",
         "url": "function Main(text){return jsoup(text,'dl > dd > a@attr->href');}"
     },
     "detail": {
