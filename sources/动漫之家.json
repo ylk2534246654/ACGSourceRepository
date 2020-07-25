@@ -40,7 +40,7 @@
             "list": "function Main(html){return jsoups(html,'div.UpdateList > div');}",
             "title": "function Main(text){return jsoup(text,'div.itemTxt > a');}",
             "introduction": "function Main(text){return jsoup(text,'div.itemTxt > p:nth-child(4)');}",
-            "cover": "function Main(text){return jsoup(text,'div.itemImg > a > img@attr->src');}",
+            "cover": "function Main(text){return jsoup(text,'div.itemImg > a > img@attr->src')+'@header->Referer:'+'https://m.dmzj.com/';}",
             "url": "function Main(text){return jsoup(text,'div.itemTxt > a@attr->href');}"
         },
         {
@@ -49,7 +49,7 @@
             "list": "function Main(html){return jsonPaths(html,'$.*');}",
             "title": "function Main(text){return jsonPath(text,'$.name');}",
             "introduction": "function Main(text){return jsonPath(text,'$.authors');}",
-            "cover": "function Main(text){return 'https://images.dmzj.com/'+jsonPath(text,'$.cover');}",
+            "cover": "function Main(text){return 'https://images.dmzj.com/'+jsonPath(text,'$.cover')+'@header->Referer:'+'https://m.dmzj.com/';}",
             "url": "function Main(text){return 'https://m.dmzj.com/info/'+jsonPath(text,'$.comic_py')+'.html';}"
         },
         {
@@ -58,7 +58,7 @@
             "list": "function Main(html){return jsonPaths(html,'$.*');}",
             "title": "function Main(text){return jsonPath(text,'$.name');}",
             "introduction": "function Main(text){return jsonPath(text,'$.authors');}",
-            "cover": "function Main(text){return 'https://images.dmzj.com/'+jsonPath(text,'$.cover');}",
+            "cover": "function Main(text){return 'https://images.dmzj.com/'+jsonPath(text,'$.cover')+'@header->Referer:'+'https://m.dmzj.com/';}",
             "url": "function Main(text){return 'https://m.dmzj.com/info/'+jsonPath(text,'$.comic_py')+'.html';}"
         },
         {
@@ -67,7 +67,7 @@
             "list": "function Main(html){return jsonPaths(html,'$.*');}",
             "title": "function Main(text){return jsonPath(text,'$.name');}",
             "introduction": "function Main(text){return jsonPath(text,'$.authors');}",
-            "cover": "function Main(text){return 'https://images.dmzj.com/'+jsonPath(text,'$.cover');}",
+            "cover": "function Main(text){return 'https://images.dmzj.com/'+jsonPath(text,'$.cover')+'@header->Referer:'+'https://m.dmzj.com/';}",
             "url": "function Main(text){return 'https://m.dmzj.com/info/'+jsonPath(text,'$.comic_py')+'.html';}"
         }
     ]
