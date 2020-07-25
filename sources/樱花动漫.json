@@ -21,7 +21,7 @@
     "upDate": "function Main(html){return jsoup(html,'div.alex > span:nth-child(4)');}",
     "tabs": {
       "list": "function Main(html){return jsoups(html,'div.tabs');}",
-      "name": "function Main(text){return jsoup(text,'ul > li:nth-child(1)');}"
+      "name": "function Main(text){return jsoup(text,'ul > li:nth-child(1)').replace(jsoup(text,'span.names'),'');}"
     },
     "catalogs": {
       "list": "function Main(html){return jsoups(html,'div.movurl');}",
