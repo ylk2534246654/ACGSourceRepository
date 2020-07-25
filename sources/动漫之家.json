@@ -4,7 +4,7 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 2,
+    "versionCode": 1,
     "tab": "漫画",
     "request": "https://m.dmzj.com/search/[$key].html@charset->UTF-8",
     "search": {
