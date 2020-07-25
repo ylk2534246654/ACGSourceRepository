@@ -1,0 +1,30 @@
+{
+    "name": "初心小说",
+    "introduction": "可以搜索一些小说",
+	"developer": "雨夏",
+    "mail":"2534246654@qq.com",
+	"versionName": "1.0",
+	"versionCode": 1,
+    "tab":"小说",
+    "request": "https://yuedule.cn/search.html?keyword=[$key]&page=[$page]",
+    "search": {
+        "list": "function Main(html){return jsoups(html,'div.secd-rank-list');}",
+        "title": "function Main(text){return jsoup(text,'dl > dd > a');}",
+        "introduction": "function Main(text){return jsoup(text,'p.big-book-info');}",
+        "cover": "function Main(text){return jsoup(text,'dl > dt > a > img@attr->_src');}",
+        "url": "function Main(text){return jsoup(text,'dl > dd > a@attr->href');}"
+    },
+    "detail": {
+        "author": "function Main(html){return jsoup(html,'div.title.clearfixer > a');}",
+        "introduction": "function Main(html){return jsoup(html,'pre.summary1');}",
+        "upDate": "function Main(html){return jsoup(html,'span.updatetime.fr');}",
+        "catalogs": {
+            "chapter": {
+                "list": "function Main(html){return jsoups(html,'div.cate-list > ul > li > a');}",
+                "name": "function Main(text){return jsoup(text,'a');}",
+                "url": "function Main(text){return jsoup(text,'a@attr->href');}",
+                "category": 1
+            }
+        }
+    }
+}
