@@ -3,8 +3,8 @@
     "introduction": "可以搜索一些动漫",
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
-    "versionName": "1.0",
-    "versionCode": 1,
+    "versionName": "1.1",
+    "versionCode": 2,
     "tab":"漫画",
     "request": "http://qiman5.com/spotlight/?keyword=[$key]@charset->UTF-8",
     "search": {
@@ -31,6 +31,6 @@
     "comic": {
         "list": "function Main(html){eval('eval'+strmiddle(html,'eval','</script>'));return newImgs;}",
         "url": "function Main(text){return text;}",
-        "mode": 1
+        "mode": 3
     }
 }

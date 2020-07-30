@@ -3,8 +3,8 @@
     "introduction": "可以搜索一些漫画",
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
-    "versionName": "1.0",
-    "versionCode": 1,
+    "versionName": "1.1",
+    "versionCode": 2,
     "tab":"漫画",
     "dependencies": "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/js/base64.js",
     "request": "https://www.manhuadb.com/search?q=[$key]&p=[$page]@charset->utf-8",
@@ -31,6 +31,6 @@
     "comic": {
         "list": "function Main(html){var array = jsonPaths(Base64.decode(strmiddle(html,'var img_data = \\'','\\'')),'$..img');var img_pre = jsoup(html,'div.d-none@attr->data-host')+jsoup(html,'div.d-none@attr->data-img_pre');var obj= [];for(var i =0;i<array.length;i++){obj.push(img_pre+array[i]);};return obj;}",
         "url": "function Main(text){return text;}",
-        "mode": 1
+        "mode": 3
     }
 }
