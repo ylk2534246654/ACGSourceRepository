@@ -4,8 +4,8 @@
     "introduction": "可以搜索一些漫画,\nps:由963269175制作,雨夏负责后期修改",
     "developer": "雨夏&963269175",
     "mail":"2534246654@qq.com",
-    "versionName": "1.0",
-    "versionCode": 1,
+    "versionName": "1.1",
+    "versionCode": 2,
     "tab": "漫画",
     "request": "http://m.90mh.com/search/?keywords=[$key]&page=[$page]@charset->UTF-8",
     "search": {
@@ -41,7 +41,7 @@
         "list": "function Main(html){var total = strmiddle(html,'k_total\" class=\"curPage\">','<');var murl = getURL().replace('\\.html','');var obj= [];for(var i =1;i<total;i++){obj.push(murl+'-'+i+'\\.html');};return obj;}",
         "url": "function Main(text){return text}",
         "url2": "function Main(text){return jsoup(text,'mip-link > mip-img@attr->src');}",
-        "mode": 1
+        "mode": 3
     },
     "finds": [
         {

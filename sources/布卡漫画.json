@@ -3,8 +3,8 @@
   "introduction": "可以搜索一些漫画",
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
-  "versionName": "1.0",
-  "versionCode": 1,
+  "versionName": "1.1",
+  "versionCode": 2,
   "tab":"漫画",
   "request": "http://m.buka.cn/search/ajax_search@post->count=15&key=[$key]&start=[$page]@charset->UTF-8",
   "search": {
@@ -35,6 +35,6 @@
   "comic": {
     "list": "function Main(html){var imgs = jsoups(html,'#manga-imgs > div.manga-c');return imgs;}",
     "url": "function Main(text){var img = jsoup(text,'img@attr->data-original');if(img.indexOf('.jpg')==-1){img=jsoup(text,'img@attr->src')};return img}",
-    "mode": 1
+    "mode": 3
   }
 }
