@@ -53,7 +53,7 @@
       "url": "function Main(text){return jsoup(text,'a.txtA@attr->href');}"
     },
     {
-      "tab": "国漫推荐",
+      "tab": "内地漫画",
       "request": "https://m.manhuabei.com/list/dalu/",
       "list": "function Main(html){return jsoups(html,'.list-comic');}",
       "title": "function Main(text){return jsoup(text,'a.txtA');}",
