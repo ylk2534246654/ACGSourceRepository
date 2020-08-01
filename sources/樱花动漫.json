@@ -1,10 +1,10 @@
 {
   "name": "樱花动漫",
-  "introduction": "可以搜索一些动漫,\nps:由963269175制作,雨夏负责后期修改",
-  "developer": "雨夏&963269175",
+  "introduction": "可以搜索一些动漫,\nps:由963***175制作,雨夏负责后期修改",
+  "developer": "雨夏&963***175",
   "mail":"2534246654@qq.com",
-  "versionName": "1.0",
-  "versionCode": 1,
+  "versionName": "1.2",
+  "versionCode": 2,
   "tab":"动漫",
   "request": "http://www.imomoe.in/search.asp@post->searchword=[$key]&page=[$page]@charset->gb2312@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36",
   "search": {
