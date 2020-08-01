@@ -3,8 +3,8 @@
     "introduction": "可以搜索一些动漫",
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
-    "versionName": "1.4",
-    "versionCode": 5,
+    "versionName": "1.2",
+    "versionCode": 2,
     "tab":"动漫",
     "request": "https://www.xinxindm.com/index.php?s=search-index-wd-[$key]-sid-1-p-[$page]@charset->utf-8@header->x-requested-with:XMLHttpRequest",
     "search": {
@@ -34,7 +34,7 @@
         }
     },
   "video": {
-    "filter": "^((?!1yy0).)*$",
+    "filter": "^((?!(dm\\.1yy0\\.com)).)*$",
     "url": "function Main(text){if(text.match('^((?!m3u8\\.html).)*$')!=null){return text.replace('~ck','');};return '';}"
   }
 }
