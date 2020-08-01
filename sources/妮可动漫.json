@@ -33,7 +33,6 @@
     }
   },
   "video": {
-    "filter": "^((?!(nicotv.club|kingsnug.cn)).)*$",
     "url": "function Main(text){if(text.match('^((?!(nicotv.club|kingsnug.cn)).)*$')!=null){return text;};return '';}"
   }
 }
