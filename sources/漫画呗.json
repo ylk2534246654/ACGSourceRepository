@@ -29,7 +29,7 @@
     }
   },
   "comic": {
-    "list": "function Main(html){eval(strmiddle(html,'<script>;',';var')+';');eval('var chapterPath'+strmiddle(html,'var chapterPath',';')+';');var str_decrypt = CryptoJS['AES']['decrypt'](chapterImages,CryptoJS['enc']['Utf8']['parse']('1739ZAQ54321bbG1'), {'iv': CryptoJS['enc']['Utf8']['parse']('ABCDEF1G344321bb'),'mode': CryptoJS['mode']['CBC'],'padding': CryptoJS['pad']['Pkcs7']});var string1 = str_decrypt['toString'](CryptoJS['enc']['Utf8']);eval('chapterImages = '+string1['toString']()+';');var arr = [];for (var i = 0 ; i<chapterImages.length; i++){if(chapterImages[i].startsWith('http')){arr.push('https://img01.eshanyao.com/showImage.php?url='+chapterImages[i]);}else{arr.push('https://img01.eshanyao.com/'+chapterPath+chapterImages[i]);}}return arr;};",
+    "list": "function Main(html){eval(strmiddle(html,'<script>;',';var')+';');eval('var chapterPath'+strmiddle(html,'var chapterPath',';')+';');var str_decrypt = CryptoJS['AES']['decrypt'](chapterImages,CryptoJS['enc']['Utf8']['parse']('KA58ZAQ321oobbG8'), {'iv': CryptoJS['enc']['Utf8']['parse']('A1B2C3DEF1G321o8'),'mode': CryptoJS['mode']['CBC'],'padding': CryptoJS['pad']['Pkcs7']});var string1 = str_decrypt['toString'](CryptoJS['enc']['Utf8']);eval('chapterImages = '+string1['toString']()+';');var arr = [];for (var i = 0 ; i<chapterImages.length; i++){if(chapterImages[i].startsWith('http')){arr.push('https://img01.eshanyao.com/showImage.php?url='+chapterImages[i]);}else{arr.push('https://img01.eshanyao.com/'+chapterPath+chapterImages[i]);}}return arr;};",
     "url": "function Main(text){return text;}",
     "mode": 3
   },
