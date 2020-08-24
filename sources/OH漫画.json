@@ -1,6 +1,6 @@
 {
     "name": "OH漫画",
-    "introduction": "可以搜一些漫画,\nps:感谢2595***048提供的解密代码",
+    "introduction": "可以搜一些漫画",
     "日常维护心得":"custom.js搜索bbq关键词对应common.js内的解密方式进行解密,可以得到底层代码,再根据l.js内的解密方式__cdecrypt进行解密,最终得到C_DATA的密钥",
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
