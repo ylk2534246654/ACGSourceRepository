@@ -3,8 +3,8 @@
     "introduction": "可以搜索一些动漫资源",
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
-    "versionName": "1.2",
-    "versionCode": 3,
+    "versionName": "1.3",
+    "versionCode": 4,
     "tab": "动漫",
     "request": "http://www.bimibimi.me/vod/search/wd/[$key]/page/[$page]/@charset->UTF-8",
     "search": {
@@ -33,7 +33,7 @@
         }
     },
     "video": {
-        "url": "function Main(text){if(text.match('^((?!(\\.video)).)*$')!=null){return text;};return '';}"
+        "url": "function Main(text){if(text.match('^((?!(video:)).)*$')!=null){return text;};return '';}"
     },
     "finds": [
         {
