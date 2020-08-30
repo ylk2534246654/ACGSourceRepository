@@ -3,8 +3,8 @@
     "introduction": "可以搜索一些轻小说",
 	"developer": "雨夏",
     "mail":"2534246654@qq.com",
-	"versionName": "1.1",
-	"versionCode": 2,
+	"versionName": "1.0",
+	"versionCode": 1,
     "tab":"轻小说",
     "request": "https://www.x23qb.com/search.php@post->searchkey=[$key]&searchtype=all&page=[$page]@charset->gbk",
     "search": {
@@ -23,7 +23,7 @@
                 "list": "function Main(html){return jsoups(html,'#chapterList > li');}",
                 "name": "function Main(text){return jsoup(text,'a');}",
                 "url": "function Main(text){return jsoup(text,'a@attr->href').replace('.html','_2.html');}",
-                "category": 1
+                "category": 4
             }
         }
     },
