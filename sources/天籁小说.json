@@ -3,10 +3,10 @@
     "introduction": "可以搜索一些小说",
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
-    "versionName": "1.0",
-    "versionCode": 1,
+    "versionName": "1.1",
+    "versionCode": 2,
     "tab":"小说",
-    "request": "https://www.23txt.com/search.php?keyword=[$key]&page=[$page]@charset->UTF-8",
+    "request": "https://www.23txt.com/search.php?keyword=[$key]&page=[$page]@charset->UTF-8@header->user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36@header->cookie:lf_read_log=a%3A1%3A%7Bi%3A3658%3Bs%3A30%3A%2215862%7C2ca6364b9cd10%7C1595686595%22%3B%7D; reader_config_web=0%7C18%7C1%7C0%7C1; PHPSESSID=r90nr13kvn5gkl8lvicjfh1dq0; Hm_lvt_a0043d48c9ac5d557bb7b7c891db7d02=1599038834; lf___forward__=%2Fsearch.html%3Fkeyword%3D%25E7%25A9%25BA; Hm_lpvt_a0043d48c9ac5d557bb7b7c891db7d02=1599038848",
     "search": {
         "list": "function Main(html){return jsoups(html,'div.result-list > div');}",
         "title": "function Main(text){return jsoup(text,'a[cpos=title]');}",
