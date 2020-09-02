@@ -36,8 +36,8 @@
     {
       "tab": "Rushia",
       "request": "https://www.rushia.me/",
-      "list": "function Main(html){return jsoups(html,'div.wall');}",
-      "title": "function Main(text){return jsoup(text,'h2.entry-title');}",
+      "list": "function Main(html){return jsoups(html,'div.wall > article');}",
+      "title": "function Main(text){return jsoup(text,'h2.entry-title').replace('视频'，'');}",
       "introduction": "function Main(text){return jsoup(text,'div.entry-summary');}",
       "cover": "function Main(text){return jsoup(text,'img.scrollLoading@attr->data-url');}",
       "url": "function Main(text){return jsoup(text,'h2.entry-title > a@attr->href')}"
