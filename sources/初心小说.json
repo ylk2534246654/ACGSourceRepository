@@ -6,7 +6,7 @@
 	"versionName": "1.0",
 	"versionCode": 1,
     "tab":"小说",
-    "request": "https://yuedule.cn/search.html?keyword=[$key]&page=[$page]",
+    "request": "https://yuedule.cn/search.html?keyword=[$key]&page=[$page]@header->referer:https://yuedule.cn/search.html@header->user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36",
     "search": {
         "list": "function Main(html){return jsoups(html,'div.secd-rank-list');}",
         "title": "function Main(text){return jsoup(text,'dl > dd > a');}",
