@@ -34,7 +34,7 @@
   },
   "finds": [
     {
-      "tab": "Rushia",
+      "tab": "新番放送",
       "request": "https://www.rushia.me/",
       "list": "function Main(html){return jsoups(html,'div.wall > article');}",
       "title": "function Main(text){return jsoup(text,'h2.entry-title').replace('视频','');}",
