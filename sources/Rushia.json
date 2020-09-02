@@ -22,7 +22,7 @@
   "detail": {
     "author": "",
     "introduction": "function Main(html){return jsoup(html,'div.uk-first-column');}",
-    "upDate": "",
+    "upDate": "function Main(html){return jsoup(html,'div.v_sd_r > p:nth-child(4)');}",
     "catalogs": {
       "chapter": {
         "list": "function Main(html){return jsoups(html,' div.play-pannel-list > ul > li');}",
