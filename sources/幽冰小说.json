@@ -22,13 +22,13 @@
             "chapter": {
                 "list": "function Main(html){return jsoups(html,'#list > dl > dd@start->9');}",
                 "name": "function Main(text){return jsoup(text,'a');}",
-                "url": "function Main(text){return jsoup(text,'a@attr->href');}",
+                "url": "function Main(text){return jsoup(text,'a@attr->href')+'@header->Referer:https://www.97ub.cc/modules/article/search.php@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36';}",
                 "category": 4
             }
         }
     },
     "novel": {
-        "content": "function Main(html){return jsoup(html,'#content')+'@header->Referer:https://www.97ub.cc/modules/article/search.php@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36';}",
+        "content": "function Main(html){return jsoup(html,'#content');}",
         "mode": 1
     }
 }
