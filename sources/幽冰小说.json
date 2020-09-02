@@ -3,8 +3,8 @@
     "introduction": "可以搜索一些小说",
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
-    "versionName": "1.9",
-    "versionCode": 10,
+    "versionName": "2.0",
+    "versionCode": 11,
     "tab":"小说",
     "request": "https://www.97ub.cc/modules/article/search.php?searchkey=[$key]@charset->Content-Type:text/html;charset=gbk@charset->UTF-8@header->Referer:https://www.97ub.cc/modules/article/search.php@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36",
     "search": {
