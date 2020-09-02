@@ -3,8 +3,8 @@
   "introduction": "可以搜索一些动漫",
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
-  "versionName": "1.1",
-  "versionCode": 2,
+  "versionName": "1.2",
+  "versionCode": 3,
   "tab": "动漫",
   "auth":{
     "login":"https://www.rushia.me/?login",
@@ -16,7 +16,7 @@
     "list": "function Main(html){return jsoups(html,'article.post-list');}",
       "title": "function Main(text){return jsoup(text,'div.entry-title');}",
       "introduction": "function Main(text){return jsoup(text,'div.entry-summary');}",
-      "cover": "function Main(text){return jsoup(text,'div.media-content > a > img@attr->srcset');}",
+      "cover": "function Main(text){return jsoup(text,'div.search-image > a > img@attr->srcset');}",
       "url": "function Main(text){return jsoup(text,'div.entry-title > a@attr->href')}"
   },
   "detail": {
@@ -25,8 +25,8 @@
     "upDate": "",
     "catalogs": {
       "chapter": {
-        "list": "function Main(html){return jsoups(html,'div.uk-margin > a');}",
-        "name": "function Main(text){return jsoup(text,'a')+'-搜索源需登录';}",
+        "list": "function Main(html){return jsoups(html,' div.play-pannel-list > ul > li');}",
+        "name": "function Main(text){return jsoup(text,'a');}",
         "url": "function Main(text){return jsoup(text,'a@attr->href');}",
         "category": 3
       }
