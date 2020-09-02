@@ -34,7 +34,7 @@
   },
   "finds": [
     {
-      "tab": "新番放送",
+      "tab": "最新更新",
       "request": "https://www.rushia.me/",
       "list": "function Main(html){return jsoups(html,'div.wall-column > div');}",
       "title": "function Main(text){return jsoup(text,'h2.entry-title');}",
