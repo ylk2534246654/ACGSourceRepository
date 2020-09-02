@@ -26,5 +26,9 @@
                 "category": 1
             }
         }
+    },
+    "novel": {
+        "content": "function Main(html){return jsoup(html,'div.read-content');}",
+        "mode": 1
     }
 }
