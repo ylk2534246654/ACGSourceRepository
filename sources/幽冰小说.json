@@ -6,7 +6,7 @@
     "versionName": "1.0",
     "versionCode": 1,
     "tab":"小说",
-    "request": "https://www.97ub.cc/modules/article/search.php?searchkey=[$key]@charset->gbk@header->Referer=https://www.97ub.cc/modules/article/search.php",
+    "request": "https://www.97ub.cc/modules/article/search.php?searchkey=[$key]@charset->gbk@header->Referer:https://www.97ub.cc/modules/article/search.php",
     "search": {
         "list": "function Main(html){return jsoups(html,'tbody > tr');}",
         "title": "function Main(text){return jsoup(text,'td:nth-child(1) > a');}",
