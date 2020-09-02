@@ -28,7 +28,7 @@
         }
     },
     "novel": {
-        "content": "function Main(html){return jsoup(html,'#content');}",
+        "content": "function Main(html){return jsoup(html,'#content')+'@header->Referer:https://www.97ub.cc/modules/article/search.php@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36';}",
         "mode": 1
     }
 }
