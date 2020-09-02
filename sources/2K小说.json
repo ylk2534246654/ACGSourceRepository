@@ -3,10 +3,10 @@
     "introduction": "可以搜索一些国漫",
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
-    "versionName": "1.0",
-    "versionCode": 1,
+    "versionName": "1.1",
+    "versionCode": 2,
     "tab":"小说",
-    "request": "https://m.fpzw.com/modules/article/search.php?searchtype=keywords&searchkey=[$key]@charset->gbk",
+    "request": "https://m.fpzw.com/modules/article/so.php?searchtype=keywords&searchkey=[$key]@charset->gbk",
     "search": {
         "list": "function Main(html){return jsoups(html,'div.hot_sale');}",
         "title": "function Main(text){return jsoup(text,'a>p.title');}",
