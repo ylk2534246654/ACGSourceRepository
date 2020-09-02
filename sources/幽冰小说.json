@@ -6,7 +6,7 @@
     "versionName": "1.4",
     "versionCode": 5,
     "tab":"小说",
-    "request": "https://www.97ub.cc/modules/article/search.php?searchkey=[$key]@charset->GBK@header->Referer:https://www.97ub.cc/modules/article/search.php@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36",
+    "request": "https://www.97ub.cc/modules/article/search.php?searchkey=[$key]@charset->Content-Type:text/html;charset=gbk@charset->UTF-8@header->Referer:https://www.97ub.cc/modules/article/search.php@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36",
     "search": {
         "list": "function Main(html){return jsoups(html,'tbody > tr');}",
         "title": "function Main(text){return jsoup(text,'a');}",
