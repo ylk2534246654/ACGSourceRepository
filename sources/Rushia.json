@@ -3,8 +3,8 @@
   "introduction": "可以搜索一些动漫",
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
-  "versionName": "1.6",
-  "versionCode": 7,
+  "versionName": "1.7",
+  "versionCode": 8,
   "tab": "动漫",
   "auth":{
     "login":"https://www.rushia.me/?login",
