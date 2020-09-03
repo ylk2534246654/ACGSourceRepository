@@ -14,19 +14,19 @@
     "request": "https://www.wenku8.net/modules/article/search.php?searchtype=articlename&searchkey=[$key]&page=[$page]@charset->gbk@header->user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36",
     "search": {
         "list": "function Main(html){return jsoups(html,'#content > table > tbody > tr > td > div');}",
-        "title": "function Main(text){return jsoup(text,'div:nth-child(1) > a');}",
+        "title": "function Main(text){return jsoup(text,'div:nth-child(2) > b > a');}",
         "introduction": "function Main(text){return jsoup(text,'div:nth-child(2) > p:nth-child(3)');}",
         "cover": "function Main(text){return jsoup(text,':nth-child(1) > a >img@attr->src');;}",
-        "url": "function Main(text){return jsoup(text,'div:nth-child(1) > a@attr->href');}"
+        "url": "function Main(text){return jsoup(text,'div:nth-child(2) > b > a@attr->href');}"
     },
     "detail": {
-        "author": "function Main(html){return jsoup(html,'div.info-side > ul > li:nth-child(3)');}",
-        "introduction": "function Main(html){return jsoup(html,'div.info-side > blockquote');}",
-        "upDate": "function Main(html){return jsoup(html,'#info > p:nth-child(4)');}",
-        "catalog_url": "function Main(html){return jsoup(html,'a.read-btn@attr->href');}",
+        "author": "function Main(html){return jsoup(html,'#content > div:nth-child(1) > table:nth-child(1) > tbody > tr:nth-child(2) > td:nth-child(2)');}",
+        "introduction": "function Main(html){return jsoup(html,'#content > div:nth-child(1) > table:nth-child(4) > tbody > tr > td:nth-child(2) > span:nth-child(6)');}",
+        "upDate": "function Main(html){return jsoup(html,'#content > div:nth-child(1) > table:nth-child(1) > tbody > tr:nth-child(2) > td:nth-child(4)');}",
+        "catalog_url": "function Main(html){return jsoup(html,'#content > div:nth-child(1) > div:nth-child(6) > div > span:nth-child(1) > fieldset > div > a');}",
         "catalogs": {
             "chapter": {
-                "list": "function Main(html){return jsoups(html,'div.info-side > ul > li');}",
+                "list": "function Main(html){return jsoups(html,'td.ccss > a');}",
                 "name": "function Main(text){return jsoup(text,'a');}",
                 "url": "function Main(text){return jsoup(text,'a@attr->href');}",
                 "category": 4
@@ -34,7 +34,7 @@
         }
     },
     "novel": {
-        "content": "function Main(html){return jsoup(html,'div.wrapper > div > div > div > article');}",
+        "content": "function Main(html){return jsoup(html,'#content');}",
         "mode": 1
     }
 }
