@@ -31,7 +31,7 @@
   },
   "comic": {
     "list": "function Main(html){eval(Base64.decode(strmiddle(html,'cp=\"','\"')));return _cuRs;};",
-    "url": "function Main(text){return text;}",
+    "url": "function Main(text){return 'http://res.img.youzipi.net/'+text;}",
     "mode": 3
   }
 }
