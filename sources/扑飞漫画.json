@@ -3,8 +3,8 @@
   "introduction": "可以搜索一些国漫",
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
-  "versionName": "1.0",
-  "versionCode": 1,
+  "versionName": "1.1",
+  "versionCode": 2,
   "tab":"漫画",
   "request": "http://m.pufei8.com/e/search/?searchget=1&tbname=mh&show=title,player,playadmin,bieming,pinyin,playadmin&tempid=4&keyboard=[$key]@charset->gb2312",
   "search": {
@@ -15,13 +15,13 @@
     "url": "function Main(text){return jsoup(text,'li > a@attr->href');}"
   },
   "detail": {
-    "author": "function Main(html){return jsoup(html,'div.ar_list_coc > dl > dd > ul > li:nth-child(2) > a');}",
-    "introduction": "function Main(html){return jsoup(html,'#det');}",
-    "upDate": "function Main(html){return jsoup(html,'div.ar_list_coc > dl > dd > ul > li:nth-child(3) > a')+'·'+jsoup(html,'div.ar_list_coc > dl > dd > ul > li:nth-child(5)');}",
+    "author": "function Main(html){return jsoup(html,'div.cont-list > dl:nth-child(4)');}",
+    "introduction": "function Main(html){return jsoup(html,'#bookIntro > p');}",
+    "upDate": "function Main(html){return jsoup(html,'div.cont-list > dl:nth-child(3)');}",
     "reverseOrder": true,
     "catalogs": {
       "chapter": {
-        "list": "function Main(html){return jsoups(html,'div.ar_list_coc > ul > li');}",
+        "list": "function Main(html){return jsoups(html,'div.chapter-list > ul > li');}",
         "name": "function Main(text){return jsoup(text,'a');}",
         "url": "function Main(text){return jsoup(text,'a@attr->href');}",
         "category": 2
