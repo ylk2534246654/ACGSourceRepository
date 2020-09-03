@@ -16,7 +16,7 @@
         "list": "function Main(html){return jsoups(html,'#content > table > tbody > tr > td > div');}",
         "title": "function Main(text){return jsoup(text,'div:nth-child(2) > b > a');}",
         "introduction": "function Main(text){return jsoup(text,'div:nth-child(2) > p:nth-child(3)');}",
-        "cover": "function Main(text){return jsoup(text,'div.h_logo > a >img@attr->src');;}",
+        "cover": "function Main(text){return jsoup(text,':nth-child(1) > a >img@attr->src');;}",
         "url": "function Main(text){return jsoup(text,'div:nth-child(2) > b > a@attr->href');}"
     },
     "detail": {
