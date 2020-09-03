@@ -3,13 +3,13 @@
     "introduction": "可以搜索一些轻小说",
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
-    "versionName": "1.2",
-    "versionCode": 2,
+    "versionName": "1.3",
+    "versionCode": 3,
     "tab":"轻小说",
     "auth":{
     "login":"http://www.wenku8.net/index.php",
     "verify":"http://www.wenku8.net/index.php",
-    "logged":"function Main(html){if(html.indexOf('登录')==-1){return true;}else{return false;};}"
+    "logged":"function Main(html){if(html.indexOf('用户名')==-1){return true;}else{return false;};}"
     },
     "request": "https://www.wenku8.net/modules/article/search.php?searchtype=articlename&searchkey=[$key]&page=[$page]@charset->gbk@header->user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36",
     "search": {
