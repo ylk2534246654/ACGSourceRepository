@@ -10,7 +10,7 @@
   "search": {
     "list": "function Main(html){return jsoups(html,'#detail > li');}",
     "title": "function Main(text){return jsoup(text,'a > h3');}",
-    "introduction": "function Main(text){return jsoup(text,'a > dl')+'\n'+jsoup(text,'dl:nth-child(5)');}",
+    "introduction": "function Main(text){return jsoup(text,'a > dl')+jsoup(text,'dl:nth-child(5)');}",
     "cover": "function Main(text){return jsoup(text,'div.thumb > img@attr->data-src');}",
     "url": "function Main(text){return jsoup(text,'li > a@attr->href');}"
   },
