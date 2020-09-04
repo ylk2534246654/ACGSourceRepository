@@ -4,8 +4,8 @@
     "日常维护心得":"custom.js搜索bbq关键词对应common.js内的解密方式进行解密,可以得到底层代码,再根据l.js内的解密方式__cdecrypt进行解密,最终得到C_DATA的密钥",
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
-    "versionName": "1.5",
-    "versionCode": 6,
+    "versionName": "1.7",
+    "versionCode": 7,
     "dependencies": "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/js/crypto.js",
     "tab": "漫画",
     "request": "https://www.ohmanhua.com/search?searchString=[$key]&page=[$page]@charset->UTF-8",
@@ -36,7 +36,7 @@
         }
     },
     "comic": {
-        "list": "function cdecrypt(key, word) { var key = CryptoJS.enc.Utf8.parse(key); var decrypt = CryptoJS.AES.decrypt(word, key, { mode: CryptoJS.mode.ECB, padding: CryptoJS.pad.Pkcs7 }); return CryptoJS.enc.Utf8.stringify(decrypt).toString() };function Main(html){eval(cdecrypt('fw12558899ertyui', CryptoJS.enc.Base64.parse(strmiddle(html,'C_DATA=\\'','\\'')+'=').toString(CryptoJS.enc.Utf8)));var endid = mh_info.totalimg;var murl = 'http://'+mh_info.domain+'/comic/'+mh_info.imgpath;var obj= [];for(var i =mh_info.startimg;i<=endid;i++){var num = i;var n=4;var a = (Array(n).join(0) + num).slice(-n);obj.push(murl+a+'.jpg');};return obj;}",
+        "list": "function cdecrypt(key, word) { var key = CryptoJS.enc.Utf8.parse(key); var decrypt = CryptoJS.AES.decrypt(word, key, { mode: CryptoJS.mode.ECB, padding: CryptoJS.pad.Pkcs7 }); return CryptoJS.enc.Utf8.stringify(decrypt).toString() };function Main(html){eval(cdecrypt('JRUIFMVJDIWE569j', CryptoJS.enc.Base64.parse(strmiddle(html,'C_DATA=\\'','\\'')+'=').toString(CryptoJS.enc.Utf8)));var endid = mh_info.totalimg;var murl = 'http://'+mh_info.domain+'/comic/'+mh_info.imgpath;var obj= [];for(var i =mh_info.startimg;i<=endid;i++){var num = i;var n=4;var a = (Array(n).join(0) + num).slice(-n);obj.push(murl+a+'.jpg');};return obj;}",
         "url": "function Main(text){return text;}",
         "mode": 3
     },
