@@ -25,9 +25,13 @@
         "upDate": "function Main(html){return jsoup(html,'#content > div:nth-child(1) > table:nth-child(1) > tbody > tr:nth-child(2) > td:nth-child(4)');}",
         "catalog_url": "function Main(html){return jsoup(html,'#content > div:nth-child(1) > div:nth-child(6) > div > span:nth-child(1) > fieldset > div > a@attr->href');}",
         "catalogs": {
-            "groups": "function Main(html){return jsoups(html,'td.vcss');}",
+            "tabs": {
+                "list": "function Main(html){return jsoups(html,'td.vcss');}",
+                "name": "function Main(text){return jsoup(text,'td.vcss');}"
+            },
             "chapter": {
-                "list": "function Main(html){return jsoups(html,'td.ccss > a');}",
+                "list": "function Main(html){return jsoups(html,'td.vcss,td.ccss');}",
+                "group": "function Main(html){if(jsoup(text,'td.vcss')!=null){return true;};return false;}",
                 "name": "function Main(text){return jsoup(text,'a');}",
                 "url": "function Main(text){return jsoup(text,'a@attr->href');}",
                 "category": 4
