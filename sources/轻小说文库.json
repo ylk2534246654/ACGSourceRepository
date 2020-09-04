@@ -28,7 +28,7 @@
             "chapter": {
                 "list": "function Main(html){return jsoups(html,'td.vcss,td.ccss');}",
                 "group":{
-                    "isGroup": "function Main(html){log(jsoup(html,'td.vcss'));if(jsoup(html,'td.vcss')!=null){return true;};return false;}",
+                    "isGroup": "function Main(text){if(jsoup(text,'td.vcss').length>0){return true;};return false;}",
                     "name": "function Main(text){return jsoup(text,'td');}"
                 },
                 "name": "function Main(text){return jsoup(text,'a');}",
