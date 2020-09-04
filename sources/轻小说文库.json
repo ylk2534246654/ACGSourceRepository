@@ -3,8 +3,8 @@
     "introduction": "可以搜索一些轻小说",
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
-    "versionName": "2.2",
-    "versionCode": 12,
+    "versionName": "2.3",
+    "versionCode": 13,
     "tab":"轻小说",
     "auth":{
         "login":"http://www.wenku8.net/index.php",
@@ -28,7 +28,7 @@
             "chapter": {
                 "list": "function Main(html){return jsoups(html,'td.vcss,td.ccss');}",
                 "group":{
-                    "isGroup": "function Main(text){if(jsoup(text,'a').length>0){return false;};return true;}",
+                    "isGroup": "function Main(text){if(jsoup(text,'a').indexOf('http')!=-1){return false;};return true;}",
                     "name": "function Main(text){return jsoup(text,'*');}"
                 },
                 "name": "function Main(text){return jsoup(text,'a');}",
