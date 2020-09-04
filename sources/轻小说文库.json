@@ -29,7 +29,7 @@
                 "list": "function Main(html){return jsoups(html,'td.vcss,td.ccss');}",
                 "group":{
                     "isGroup": "function Main(html){if(jsoup(text,'td.vcss')!=null){return true;};return false;}",
-                    "name": "function Main(text){return jsoup(text,'td');}",
+                    "name": "function Main(text){return jsoup(text,'td');}"
                 },
                 "name": "function Main(text){return jsoup(text,'a');}",
                 "url": "function Main(text){return jsoup(text,'a@attr->href');}",
