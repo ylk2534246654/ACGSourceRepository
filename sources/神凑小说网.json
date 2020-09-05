@@ -21,7 +21,7 @@
         "catalog_url": "function Main(html){return jsoup(html,'td:nth-child(1) > ul > li:nth-child(1) > a');}",
         "catalogs": {
             "chapter": {
-                "list": "function Main(html){return jsoups(html,'ul > li:nth-child(1) > a.btnlink');}",
+                "list": "function Main(html){return jsoups(html,'a.btnlink[target=\"_blank\"]');}",
                 "group":{
                     "isGroup": "function Main(text){if(text.indexOf('href')!=-1){return false;};return true;}",
                     "name": "function Main(text){return jsoup(text,':matchText');}"
