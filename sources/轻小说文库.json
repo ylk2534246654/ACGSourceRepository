@@ -43,7 +43,7 @@
     },
     "finds": [
         {
-            "tab": "(调试中)电击文库",
+            "tab": "电击文库",
             "request": "https://www.wenku8.net/modules/article/articlelist.php?class=1@header->user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36",
             "list": "function Main(html){return jsoups(html,'#content > table > tbody > tr > td > div');}",
             "title": "function Main(text){return jsoup(text,'div:nth-child(2) > b > a');}",
