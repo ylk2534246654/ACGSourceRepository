@@ -3,16 +3,16 @@
     "introduction": "可以搜索一些轻小说",
 	"developer": "雨夏",
     "mail":"2534246654@qq.com",
-	"versionName": "1.4",
-	"versionCode": 4,
+	"versionName": "1.5",
+	"versionCode": 5,
     "tab":"轻小说",
     "request": "http://www.shencou.com/modules/article/search.php@post->searchtype=articlename selected&searchkey=[$key]&t_btnsearch=搜索@charset->gbk",
     "search": {
         "list": "function Main(html){return jsoups(html,'#content > table > tbody > tr:gt(0)');}",
-        "title": "function Main(text){return jsoup(text,'td:nth-child(1) > a');}",
-        "introduction": "function Main(text){return jsoup(text,'td:nth-child(5)');}",
+        "title": "function Main(text){return jsoup(text,'a');}",
+        "introduction": "function Main(text){return jsoup(text,':nth-child(5)');}",
         "cover": "http://r.m.97ub.cc/cover/aHR0cDovL2ltZzEuY2h1YW5nc2hpLnFxLmNvbS9jaHVhbmdzaGkvcDEvZGVmYXVsdC1jb3Zlci1sYXJnZS5wbmc=",
-        "url": "function Main(text){return jsoup(text,'td:nth-child(1) > a@attr->href');}"
+        "url": "function Main(text){return jsoup(text,'a@attr->href');}"
     },
     "detail": {
         "author": "function Main(html){return jsoup(html,'tbody > tr:nth-child(2) > td:nth-child(2)');}",
