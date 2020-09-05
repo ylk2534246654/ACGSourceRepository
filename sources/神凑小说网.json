@@ -22,6 +22,10 @@
         "catalogs": {
             "chapter": {
                 "list": "function Main(html){return jsoups(html,'div.zjbox > div > ol > li,div.tt.gtt > div > h2');}",
+                "group":{
+                    "isGroup": "function Main(text){if(text.indexOf('href')!=-1){return false;};return true;}",
+                    "name": "function Main(text){return jsoup(text,':matchText');}"
+                },
                 "name": "function Main(text){return jsoup(text,'a');}",
                 "url": "function Main(text){return jsoup(text,'a@attr->href');}",
                 "category": 4
