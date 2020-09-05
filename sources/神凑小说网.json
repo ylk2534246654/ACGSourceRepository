@@ -3,8 +3,8 @@
     "introduction": "可以搜索一些轻小说",
 	"developer": "雨夏",
     "mail":"2534246654@qq.com",
-	"versionName": "1.6",
-	"versionCode": 6,
+	"versionName": "1.7",
+	"versionCode": 7,
     "tab":"轻小说",
     "request": "http://www.shencou.com/modules/article/search.php@post->searchtype=articlename selected&searchkey=[$key]&t_btnsearch=搜索@charset->gbk",
     "search": {
