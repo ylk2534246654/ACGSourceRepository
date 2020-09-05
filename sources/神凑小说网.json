@@ -27,7 +27,7 @@
                     "name": "function Main(text){return jsoup(text,':matchText');}"
                 },
                 "name": "function Main(text){return jsoup(text,'a');}",
-                "url": "function Main(text){return jsoup(text,'a@attr->href');}",
+                "url": "function Main(text){return 'http://m.shencou.com/wapreader.php?aid='+strmiddle(pathURL(jsoup(text,'a@attr->href')),'/0/','.').replace('/','&cid=');}",
                 "category": 4
             }
         }
