@@ -3,22 +3,22 @@
     "introduction": "可以搜索一些轻小说",
 	"developer": "雨夏",
     "mail":"2534246654@qq.com",
-	"versionName": "1.4",
-	"versionCode": 5,
+	"versionName": "1.5",
+	"versionCode": 6,
     "tab":"轻小说",
-    "request": "http://m.shencou.com/waps.php@post->searchtype=articlename selected&searchkey=[$key]&t_btnsearch=搜索@charset->gbk",
+    "request": "http://www.shencou.com/modules/article/search.php@post->searchtype=articlename+selected&searchkey=[$key]&t_btnsearch=搜索@charset->gbk",
     "search": {
-        "list": "function Main(html){return jsoups(html,'div.cover > p');}",
-        "title": "function Main(text){return jsoup(text,'a.blue');}",
-        "introduction": "function Main(text){return jsoup(text,'a:nth-child(3)');}",
+        "list": "function Main(html){return jsoups(html,'#content > table > tbody > tr:gt(0)');}",
+        "title": "function Main(text){return jsoup(text,'td:nth-child(1) > a');}",
+        "introduction": "function Main(text){return jsoup(text,'td:nth-child(5)');}",
         "cover": "http://r.m.97ub.cc/cover/aHR0cDovL2ltZzEuY2h1YW5nc2hpLnFxLmNvbS9jaHVhbmdzaGkvcDEvZGVmYXVsdC1jb3Zlci1sYXJnZS5wbmc=",
-        "url": "function Main(text){return jsoup(text,'a.blue@attr->href');}"
+        "url": "function Main(text){return jsoup(text,'td:nth-child(1) > a@attr->href');}"
     },
     "detail": {
-        "author": "function Main(html){return jsoup(html,'div.block_txt2 > p:nth-child(4) > a');}",
-        "introduction": "function Main(html){return jsoup(html,'div.intro_info:nth-child(9)');}",
-        "upDate": "function Main(html){return jsoup(html,'div.block_txt2 > p:nth-child(6)')+jsoup(html,'div.block_txt2 > p:nth-child(7)');}",
-        "catalog_url": "function Main(html){return 'http://www.shencou.com/read/0/'+strmiddle(getURL()+'end','id=','end')+'/index.html';}",
+        "author": "function Main(html){return jsoup(html,'tbody > tr:nth-child(2) > td:nth-child(2)');}",
+        "introduction": "",
+        "upDate": "function Main(html){return jsoup(html,'tbody > tr:nth-child(3) > td:nth-child(1)');}",
+        "catalog_url": "function Main(html){return jsoup(html,'td:nth-child(1) > ul > li:nth-child(1) > a');}",
         "catalogs": {
             "chapter": {
                 "list": "function Main(html){return jsoups(html,'div.zjbox > div > ol > li,div.tt.gtt > div > h2');}",
