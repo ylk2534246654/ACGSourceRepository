@@ -3,8 +3,8 @@
     "introduction": "可以搜索一些轻小说",
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
-    "versionName": "1.2",
-    "versionCode": 2,
+    "versionName": "1.3",
+    "versionCode": 3,
     "tab":"轻小说",
     "request": "http://xs.kdays.net/search/all?page=[$page]&w=[$key]&type=all@charset->UTF-8@header->user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36",
     "search": {
@@ -21,7 +21,11 @@
         "catalog_url": "function Main(html){return jsoup(html,'a.read-btn@attr->href');}",
         "catalogs": {
             "chapter": {
-                "list": "function Main(html){return jsoups(html,'div.info-side > ul > li');}",
+                "list": "function Main(html){return jsoups(html,'div.info-side > ul > li,#vols > div.row > div > h2');}",
+                "group":{
+                    "isGroup": "function Main(text){if(text.indexOf('href')!=-1){return false;};return true;}",
+                    "name": "function Main(text){return jsoup(text,':matchText');}"
+                },
                 "name": "function Main(text){return jsoup(text,'a');}",
                 "url": "function Main(text){return jsoup(text,'a@attr->href');}",
                 "category": 4
