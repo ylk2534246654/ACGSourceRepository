@@ -3,8 +3,8 @@
   "introduction": "可以搜索一些动漫",
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
-  "versionName": "1.1",
-  "versionCode": 2,
+  "versionName": "1.0",
+  "versionCode": 1,
   "tab": "动漫",
   "request": "https://www.agefans.tv/search?&query=[$key]&page=[$page]",
   "search": {
@@ -43,7 +43,7 @@
       "url": "function Main(text){return jsoup(text,'a@attr->href');}"
     },
     {
-      "tab": "最新更新",
+      "tab": "新番放送",
       "request": "https://www.agefans.tv/update",
       "list": "function Main(html){return jsoups(html,'div.baseblock > div > ul > li');}",
       "title": "function Main(text){return jsoup(text,'h4 > a');}",
