@@ -37,5 +37,16 @@
         "url": [],
         "content": "function Main(html){return jsoup(html,'#nr1');}",
         "mode": 1
-    }
+    },
+    "finds": [
+        {
+            "tab": "排行榜",
+            "request": "http://www.shencou.com/top/",
+            "list": "function Main(html){return jsoups(html,'#content > table > tbody > tr > td > div');}",
+            "title": "function Main(text){return jsoup(text,'div > b > a');}",
+            "introduction": "function Main(text){return jsoup(text,'div:nth-child(2) > p:nth-child(5)');}",
+            "cover": "function Main(text){return jsoup(text,'div:nth-child(1) > a > img@attr->src');}",
+            "url": "function Main(text){return jsoup(text,'div > b > a@attr->href');}"
+        }
+    ]
 }
