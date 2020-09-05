@@ -35,5 +35,16 @@
     "novel": {
         "content": "function Main(html){return jsoup(html,'div.wrapper > div > div > div > article');}",
         "mode": 1
-    }
+    },
+    "finds": [
+        {
+            "tab": "排行榜",
+            "request": "http://xs.kdays.net/list/top",
+            "list": "function Main(html){return jsoups(html,'div.book-list > div');}",
+            "title": "function Main(text){return jsoup(text,'div.detail > h3 > a');}",
+            "introduction": "function Main(text){return jsoup(text,'div.detail > blockquote');}",
+            "cover": "function Main(text){return jsoup(text,'div.cover-side > img@attr->src');}",
+            "url": "function Main(text){return jsoup(text,'div.detail > h3 > a@attr->href');}"
+        }
+    ]
 }
