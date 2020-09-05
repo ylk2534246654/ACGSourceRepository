@@ -3,8 +3,8 @@
     "introduction": "可以搜索一些轻小说",
 	"developer": "雨夏",
     "mail":"2534246654@qq.com",
-	"versionName": "1.6",
-	"versionCode": 5,
+	"versionName": "1.7",
+	"versionCode": 7,
     "tab":"轻小说",
     "request": "http://www.shencou.com/modules/article/search.php@post->searchtype=articlename selected&searchkey=[$key]&t_btnsearch=搜索@charset->gbk",
     "search": {
@@ -18,7 +18,7 @@
         "author": "function Main(html){return jsoup(html,'tbody > tr:nth-child(2) > td:nth-child(2)');}",
         "introduction": "",
         "upDate": "function Main(html){return jsoup(html,'tbody > tr:nth-child(3) > td:nth-child(1)');}",
-        "catalog_url": "function Main(html){return jsoup(html,'td:nth-child(1) > ul > li:nth-child(1) > a');}",
+        "catalog_url": "function Main(html){return jsoup(html,'td:nth-child(1) > ul > li:nth-child(1) > a@attr->href');}",
         "catalogs": {
             "chapter": {
                 "list": "function Main(html){return jsoups(html,'ul > li:nth-child(1) > a.btnlink@attr->href');}",
