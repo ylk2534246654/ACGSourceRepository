@@ -24,7 +24,7 @@
                 "list": "function Main(html){return jsoups(html,'div.info-side > ul > li,#vols > div.row > div > h2');}",
                 "group":{
                     "isGroup": "function Main(text){if(text.indexOf('href')!=-1){return false;};return true;}",
-                    "name": "function Main(text){return jsoup(text,':matchText');}"
+                    "name": "function Main(text){return jsoup(text,':matchText').replace(jsoup(text,'a:matchText'),'');}"
                 },
                 "name": "function Main(text){return jsoup(text,'a');}",
                 "url": "function Main(text){return jsoup(text,'a@attr->href');}",
