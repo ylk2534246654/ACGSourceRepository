@@ -1,5 +1,5 @@
 {
-    "MyACG搜索源": "https://diyyx.wang/app/MyACG.apk",
+    "MyACG": "https://diyyx.wang/app/MyACG.apk",
     "name": "118漫画网",
     "introduction": "可以搜索一些国漫",
     "developer": "雨夏",
@@ -7,6 +7,7 @@
     "versionName": "1.1",
     "versionCode": 2,
     "tab": "漫画",
+    "host":"m.ccshwy.com",
     "dependencies": "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/js/base64.js",
     "request": "http://m.ccshwy.com/statics/search.aspx?key=[$key]&page=[$page]@charset->UTF-8",
     "search": {
