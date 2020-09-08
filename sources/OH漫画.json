@@ -8,6 +8,7 @@
     "versionCode": 10,
     "dependencies": "https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/js/crypto.js",
     "tab": "漫画",
+    "host":"www.ohmanhua.com",
     "request": "https://www.ohmanhua.com/search?searchString=[$key]&page=[$page]@charset->UTF-8",
     "search": {
         "list": "function Main(html){return jsoups(html,'div.fed-part-layout > dl');}",

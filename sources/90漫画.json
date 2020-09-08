@@ -7,6 +7,7 @@
     "versionName": "1.2",
     "versionCode": 3,
     "tab": "漫画",
+    "host":"m.90mh.com",
     "request": "http://m.90mh.com/search/?keywords=[$key]&page=[$page]@charset->UTF-8",
     "search": {
         "list": "function Main(html){return jsoups(html,'#update_list > .UpdateList > div');}",

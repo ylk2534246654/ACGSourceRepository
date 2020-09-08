@@ -6,6 +6,7 @@
   "versionName": "1.0",
   "versionCode": 1,
   "tab": "动漫",
+  "host":"www.agefans.tv",
   "request": "https://www.agefans.tv/search?&query=[$key]&page=[$page]",
   "search": {
     "list": "function Main(html){return jsoups(html,'div[class=blockcontent1] > div');}",

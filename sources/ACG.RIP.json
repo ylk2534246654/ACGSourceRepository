@@ -6,6 +6,7 @@
     "mail":"2534246654@qq.com",
     "versionCode": 1,
     "tab": "种子",
+    "host":"acg.rip",
     "request": "https://acg.rip/page/[$page]?term=[$key]@charset->UTF-8",
     "search": {
         "list": "function Main(html){return jsoups(html,'tbody > tr');}",
