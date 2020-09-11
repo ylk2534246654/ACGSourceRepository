@@ -3,8 +3,8 @@
   "introduction": "可以搜索一些漫画(不支持解析)",
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
-  "versionName": "1.1",
-  "versionCode": 2,
+  "versionName": "1.0",
+  "versionCode": 1,
   "tab":"链接",
   "auth":{
     "login":"https://passport.bilibili.com/login",
@@ -28,7 +28,7 @@
       "chapter": {
         "list": "var url;function Main(html){url = 'https://manga.bilibili.com/m/mc'+jsonPath(html,'$..data.id');return jsonPaths(html,'$..ep_list[*]');}",
         "name": "function Main(text){return jsonPath(text,'$..short_title')+jsonPath(text,'$..title');}",
-        "url": "function Main(text){return 'https://manga.bilibili.com/twirp/comic.v1.Comic/GetImageIndex?device=pc&platform=web@post->'+jsonPath(text,'$..id')",
+        "url": "function Main(text){return 'https://manga.bilibili.com/twirp/comic.v1.Comic/GetImageIndex?device=pc&platform=web@post->{\"ep_id\":'+jsonPath(text,'$..id')+'}'}",
         "category": 2
       }
     }
