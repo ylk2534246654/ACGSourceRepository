@@ -29,7 +29,7 @@
         "list": "var url;function Main(html){url = 'https://manga.bilibili.com/m/mc'+jsonPath(html,'$..data.id');return jsonPaths(html,'$..ep_list[*]');}",
         "name": "function Main(text){return jsonPath(text,'$..short_title')+jsonPath(text,'$..title');}",
         "url": "function Main(text){return 'https://manga.bilibili.com/twirp/comic.v1.Comic/GetImageIndex?device=pc&platform=web@post->{\"ep_id\":'+jsonPath(text,'$..id')+'}'",
-        "category": 3
+        "category": 2
       }
     }
   },
