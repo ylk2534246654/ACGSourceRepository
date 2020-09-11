@@ -1,11 +1,11 @@
 {
   "name": "哔哩哔哩漫画",
-  "introduction": "可以搜索一些漫画(不支持解析)",
+  "introduction": "可以搜索一些漫画\nVIP章节需本人已购买",
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
-  "versionName": "1.1",
-  "versionCode": 1,
-  "tab":"链接",
+  "versionName": "1.2",
+  "versionCode": 2,
+  "tab":"漫画",
   "auth":{
     "login":"https://passport.bilibili.com/login",
     "verify":"https://m.bilibili.com/space",
