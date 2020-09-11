@@ -3,8 +3,8 @@
   "introduction": "可以搜索一些漫画(不支持解析)",
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
-  "versionName": "1.3",
-  "versionCode": 4,
+  "versionName": "1.2",
+  "versionCode": 3,
   "tab":"链接",
   "auth":{
     "login":"https://passport.bilibili.com/login",
@@ -34,7 +34,7 @@
     }
   },
     "comic": {
-        "list": "function Main(html){var path = jsonPaths(html,'$..images..path');var obj= [];for(var i =0;i<path.length;i++){obj.push('https://manga.bilibili.com/twirp/comic.v1.Comic/ImageToken?device=pc&platform=web@post->{\"urls\":\\\"[\"'+path[i]+'\\\"]\"}@header->Content-Type:application/json;charset=UTF-8');};return obj;}",
+        "list": "function Main(html){var path = jsonPaths(html,'$..images..path');var obj= [];for(var i =0;i<path.length;i++){obj.push('https://manga.bilibili.com/twirp/comic.v1.Comic/ImageToken?device=pc&platform=web@post->{\"urls\":\"[\\\"'+path[i]+'\\\"]\"}@header->Content-Type:application/json;charset=UTF-8');};return obj;}",
         "url": "function Main(text){return text}",
         "url2": "function Main(text){return jsonPath(text,'$..url')+'?token='+jsonPath(text,'$..token');}",
         "mode": 3
