@@ -4,7 +4,7 @@
 	"developer": "雨夏",
     "mail":"2534246654@qq.com",
 	"versionName": "1.8",
-	"versionCode": 10,
+	"versionCode": 11,
     "tab":"轻小说",
     "request": "http://www.shencou.com/modules/article/search.php@post->searchtype=articlename selected&searchkey=[$key]&t_btnsearch=搜索@charset->gbk",
     "search": {
@@ -27,7 +27,7 @@
                     "name": "function Main(text){return jsoup(text,':matchText');}"
                 },
                 "name": "function Main(text){return jsoup(text,'a');}",
-                "url": "function Main(text){return 'http://m.shencou.com/wapreader.php?aid='+strmiddle(pathURL2(jsoup(text,'a@attr->href'),catalog),'/0/','.').replace('/','&cid=');}",
+                "url": "function Main(text){return 'http://m.shencou.com/wapreader.php?aid='+strmiddle(pathURL(jsoup(text,'a@attr->href')),'/0/','.').replace('/','&cid=');}",
                 "category": 4
             }
         }
