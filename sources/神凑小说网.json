@@ -20,13 +20,13 @@
         "upDate": "function Main(html){return jsoup(html,'tbody > tr:nth-child(3) > td:nth-child(1)');}",
         "catalogs": {
             "chapter": {
-                "list": "function Main(html){var html = httpRequest(jsoup(html,'td:nth-child(1) > ul > li:nth-child(1) > a@attr->href'));return jsoups(html,'div.zjbox > div > ol > li,div.tt.gtt > div > h2');}",
+                "list": "var catalog = jsoup(html,'td:nth-child(1) > ul > li:nth-child(1) > a@attr->href');function Main(html){var html = httpRequest(catalog);return jsoups(html,'div.zjbox > div > ol > li,div.tt.gtt > div > h2');}",
                 "group":{
                     "isGroup": "function Main(text){if(text.indexOf('href')!=-1){return false;};return true;}",
                     "name": "function Main(text){return jsoup(text,':matchText');}"
                 },
                 "name": "function Main(text){return jsoup(text,'a');}",
-                "url": "function Main(text){return 'http://m.shencou.com/wapreader.php?aid='+strmiddle(pathURL(jsoup(text,'a@attr->href'),'http://www.shencou.com/read/0/23/index.html'),'/0/','.').replace('/','&cid=');}",
+                "url": "function Main(text){return 'http://m.shencou.com/wapreader.php?aid='+strmiddle(pathURL(jsoup(text,'a@attr->href'),catalog),'/0/','.').replace('/','&cid=');}",
                 "category": 4
             }
         }
