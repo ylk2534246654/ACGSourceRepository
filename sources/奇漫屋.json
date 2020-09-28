@@ -1,5 +1,5 @@
 {
-    "name": "奇漫屋",
+    "name": "(调试中...)奇漫屋",
     "introduction": "可以搜索一些动漫",
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
@@ -21,7 +21,7 @@
         "reverseOrder": true,
         "catalogs": {
             "chapter": {
-                "list": "function Main(html){return jsoups(html,'li.chapter-item');}",
+                "list": "function Main(html){var data = httpRequest('http://m.qiman6.com/bookchapter/@post->id='+strmiddle(getUrl(),'/','/'));log(data);return jsoups(html,'li.chapter-item');}",
                 "name": "function Main(text){return jsoup(text,'a');}",
                 "url": "function Main(text){return jsoup(text,'a@attr->href');}",
                 "category": 2
