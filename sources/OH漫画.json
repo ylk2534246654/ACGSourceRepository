@@ -1,5 +1,5 @@
 {
-    "name": "(调试中...)OH漫画",
+    "name": "OH漫画",
     "introduction": "可以搜一些漫画",
     "日常维护心得":"custom内定位'eval(base64',common内定位base64,可以得到底层代码,再根据l.js内的解密方式__cdecrypt进行解密,最终得到C_DATA的密钥",
     "developer": "雨夏",
