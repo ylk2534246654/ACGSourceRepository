@@ -4,7 +4,7 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.1",
-    "versionCode": 6,
+    "versionCode": 7,
     "tab":"漫画",
     "request": "http://qiman5.com/spotlight/?keyword=[$key]@charset->UTF-8",
     "search": {
@@ -21,7 +21,7 @@
         "reverseOrder": true,
         "catalogs": {
             "chapter": {
-                "list": "function Main(html){var data1 = httpRequest('http://m.qiman6.com/bookchapter/@post->id='+strmiddle(getURL(),'com/','/')+'&id2=1');var data2 = jsoups(html,'li.chapter-item');var newArr = data1.push(...data2);return newArr;}",
+                "list": "function Main(html){var data1 = httpRequest('http://m.qiman6.com/bookchapter/@post->id='+strmiddle(getURL(),'com/','/')+'&id2=1');var data2 = jsoups(html,'li.chapter-item');for(var i=0; i<data2.length; i++){data1.push(data2[i])};return data1;}",
                 "name": "function Main(text){return jsoup(text,'a');}",
                 "url": "function Main(text){return jsoup(text,'a@attr->href');}",
                 "category": 2
