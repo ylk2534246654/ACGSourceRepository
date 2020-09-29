@@ -3,8 +3,8 @@
     "introduction": "可以搜一些动漫种子资源",
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
-    "versionName": "1.0",
-    "versionCode": 1,
+    "versionName": "1.1",
+    "versionCode": 2,
     "tab":"种子",
     "request": "https://www.36dm.club/search.php?keyword=[$key]&page=[$page]@charset->UTF-8",
     "search": {
@@ -12,6 +12,6 @@
         "title": "function Main(text){return jsoup(text,'a:nth-child(2)');}",
         "introduction": "function Main(text){return jsoup(text,'a:nth-child(1)');}",
         "cover": "https://www.36dm.club/favicon.ico",
-        "url": "function Main(text){return 'down.php?date=1587403927&hash='+strmiddle(jsoup(text,'a:nth-child(2)@attr->href'),'show-','.');}"
+        "url": "function Main(text){var timestamp = Date.parse(new Date());return 'down.php?date='+timestamp+'&hash='+strmiddle(jsoup(text,'a:nth-child(2)@attr->href'),'show-','.');}"
     }
 }
