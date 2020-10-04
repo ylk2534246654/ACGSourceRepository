@@ -27,8 +27,9 @@
     },
     "detail": {
         "author": "function Main(html){return jsoup(html,'div.sub_r > p:nth-child(2)');}",
-        "introduction": "function Main(html){return jsoup(html,'p.txtDesc').replace('介绍:','');}",
         "upDate": "function Main(html){return jsoup(html,'span.date');}",
+        "state": "function Main(html){return jsoup(html,'span.date');}",
+        "introduction": "function Main(html){return jsoup(html,'p.txtDesc').replace('介绍:','');}",
         "reverseOrder": true,
         "catalogs": {
             "chapter": {
