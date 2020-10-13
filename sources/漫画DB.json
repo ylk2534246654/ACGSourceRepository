@@ -3,8 +3,8 @@
     "introduction": "可以搜索一些漫画",
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
-    "versionName": "1.1",
-    "versionCode": 3,
+    "versionName": "1.5",
+    "versionCode": 4,
     "tab":"漫画",
     "request": "https://www.manhuadb.com/search?q=[$key]&p=[$page]@charset->utf-8",
     "search": {
