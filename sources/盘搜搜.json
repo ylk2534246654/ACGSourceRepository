@@ -17,6 +17,6 @@
     //链接解析
     "url": {
         //获取页面内链接
-        "url": "function Main(text){var data = httpRequest(jsoup(text,'#down_button_link@attr->href'));return jsoup(data,'div.file > p > a@attr->href');}"
+        "url": "function Main(text){var data = httpRequest(jsoup(text,'#down_button_link@attr->href')+'@header->Content-Type:application/x-www-form-urlencoded;charset=UTF-8@header->user-agent:Mozilla/5.0 (Linux; Android 4.4.2; Nexus 4 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36');return jsoup(data,'div.file > p > a@attr->href');}"
     }
 }
