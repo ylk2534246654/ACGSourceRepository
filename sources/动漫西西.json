@@ -1,10 +1,10 @@
 {
-  "name": "动漫西西",
+  "name": "动漫西西(网站已挂)",
   "introduction": "可以搜索一些网盘资源",
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.0",
-  "versionCode": 1,
+  "versionCode": 2,
   "tab":"百度云",
   "request": "http://www.dmxixi.com/plus/search.php?keyword=[$key]&PageNo=[$page]@charset->UTF-8",
   "search": {

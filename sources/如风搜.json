@@ -1,10 +1,10 @@
 {
-    "name": "如风搜(已挂)",
+    "name": "如风搜(网站已挂)",
     "introduction": "可以搜索一些网盘资源",
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.1",
-    "versionCode": 2,
+    "versionCode": 3,
     "tab":"百度云",
     "request": "http://www.rufengso.net/s/name/[$key]/[$page]@charset->UTF-8",
     "search": {
