@@ -4,7 +4,7 @@
 	"developer": "雨夏",
   "mail":"2534246654@qq.com",
 	"versionName": "1.0",
-	"versionCode": 1,
+	"versionCode": 2,
   "tab":"音乐",
   "request": "https://api.zhuolin.wang/api.php?callback=jQuery111306560037598650175_1590078348849&types=search&count=20&source=netease&pages=[$page]&name=[$key]&_=1590078348854@charset->UTF-8",
   "search": {
@@ -14,7 +14,7 @@
     "cover": "http://pic.rmb.bdstatic.com/911423bee2bef937975b29b265d737b3.png",
     "url": "function Main(text){return 'https://api.zhuolin.wang/api.php?callback=jQuery111306560037598650175_1590078348849&types=url&id='+jsonPath(text,'$.url_id')+'&source=netease&_=1590078348857';}"
   },
-  "url": {
+  "music": {
     "url": "function Main(html){html = strmiddle(html,'(',')');return jsonPath(html,'$.url');}"
   }
 }
