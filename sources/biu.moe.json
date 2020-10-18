@@ -1,10 +1,10 @@
 {
-  "name": "Biu.Moe",
+  "name": "Biu.Moe(仅支持1.1.6.1+)",
   "introduction": "可以搜索一些音乐直链",
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.0",
-  "versionCode": 2,
+  "versionCode": 3,
   "tab":"音乐",
   "request": "https://web.biu.moe/index.php?m=&c=Song&a=search&data=[$key]&p=[$page]@charset->UTF-8",
   "search": {

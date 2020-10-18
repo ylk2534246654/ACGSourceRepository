@@ -1,10 +1,10 @@
 {
-  "name": "网易云音乐",
+  "name": "网易云音乐(仅支持1.1.6.1+)",
   "introduction": "可以搜索一些音乐",
 	"developer": "雨夏",
   "mail":"2534246654@qq.com",
 	"versionName": "1.0",
-	"versionCode": 2,
+	"versionCode": 3,
   "tab":"音乐",
   "request": "https://api.zhuolin.wang/api.php?callback=jQuery111306560037598650175_1590078348849&types=search&count=20&source=netease&pages=[$page]&name=[$key]&_=1590078348854@charset->UTF-8",
   "search": {
