@@ -4,15 +4,15 @@
 	"developer": "雨夏",
   "mail":"2534246654@qq.com",
 	"versionName": "1.0",
-	"versionCode": 3,
+	"versionCode": 4,
   "tab":"音乐",
-  "request": "https://music.liuzhijin.cn/@post->input=[$key]&filter=name&type=kuwo&page=[$page]@charset->UTF-8@header->x-requested-with:XMLHttpRequest",
+  "request": "http://www.kuwo.cn/api/www/search/searchMusicBykeyWord?key=[$key]&pn=[$page]&rn=30@charset->UTF-8@header->csrf:1234567890@header->Referer:http://www.kuwo.cn@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36",
   "search": {
-    "list": "function Main(html){return jsonPaths(html,'$..data[*]');}",
-    "title": "function Main(text){return jsonPath(text,'$.title');}",
-    "introduction": "function Main(text){return jsonPath(text,'$.author');}",
-    "cover": "function Main(text){return jsonPath(text,'$.pic');}",
-    "url": "function Main(text){return jsonPath(text,'$.url');}"
+    "list": "function Main(html){return jsonPaths(html,'$..list[*]');}",
+    "title": "function Main(text){return jsonPath(text,'$.name');}",
+    "introduction": "function Main(text){return jsonPath(text,'$.artist')+'-'+jsonPath(text,'$.album');}",
+    "cover": "function Main(text){return jsonPath(text,'$.albumpic');}",
+    "url": "function Main(text){return 'http://antiserver.kuwo.cn/anti.s?type=convert_url&format=mp3&response=url&rid='+jsonPath(text,'$.rid');}"
   },
   "music": {}
 }
