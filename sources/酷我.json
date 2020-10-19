@@ -4,9 +4,9 @@
 	"developer": "雨夏",
   "mail":"2534246654@qq.com",
 	"versionName": "1.0",
-	"versionCode": 4,
+	"versionCode": 5,
   "tab":"音乐",
-  "request": "http://www.kuwo.cn/api/www/search/searchMusicBykeyWord?key=[$key]&pn=[$page]&rn=30@charset->UTF-8@header->csrf:1234567890@header->Referer:http://www.kuwo.cn@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36",
+  "request": "http://www.kuwo.cn/api/www/search/searchMusicBykeyWord?key=[$key]&pn=[$page]&rn=30@charset->UTF-8@header->csrf:1234567890@header->Referer:http://www.kuwo.cn@header->cookie:kw_token=1234567890@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36",
   "search": {
     "list": "function Main(html){return jsonPaths(html,'$..list[*]');}",
     "title": "function Main(text){return jsonPath(text,'$.name');}",
