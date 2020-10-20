@@ -16,3 +16,23 @@
   },
   "music": {}
 }
+/**原版
+{
+  "name": "酷狗(仅支持1.1.6.1+)",
+  "introduction": "可以搜索一些音乐",
+	"developer": "雨夏",
+  "mail":"2534246654@qq.com",
+	"versionName": "1.0",
+	"versionCode": 3,
+  "tab":"音乐",
+  "request": "http://songsearch.kugou.com/song_search_v2?keyword=[$key]&page=[$page]@charset->UTF-8",
+  "search": {
+    "list": "function Main(html){return jsonPaths(html,'$.data.lists[*]');}",
+    "title": "function Main(text){return jsonPath(text,'$.SongName');}",
+    "introduction": "function Main(text){return jsonPath(text,'$.SingerName')+'-'+jsonPath(text,'$.Auxiliary');}",
+    "cover": "function Main(text){return jsonPath(text,'$.pic');}",
+    "url": "function Main(text){return jsonPath(text,'$.url');}"
+  },
+  "music": {}
+}
+**/
