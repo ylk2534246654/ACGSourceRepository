@@ -4,13 +4,16 @@
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.0",
-  "versionCode": 1,
-  "request": "https://music.liuzhijin.cn/@post->input=[$key]&filter=name&type=qq&page=[$page]@charset->UTF-8@header->x-requested-with:XMLHttpRequest",
+  "versionCode": 2,
+  "request": "https://c.y.qq.com/soso/fcgi-bin/client_search_cp?ct=24&qqmusic_ver=1298&new_json=1&remoteplace=txt.yqq.center&searchid=40349044530097095&t=0&aggr=1&cr=1&catZhida=1&lossless=0&flag_qc=0&p=[$page]&n=30&w=[$key]&g_tk_new_20200303=336300209&g_tk=336300209&loginUin=0&hostUin=0&format=json&inCharset=utf8&outCharset=utf-8&notice=0&platform=yqq.json&needNewCode=0@charset->UTF-8@header->referer:https://y.qq.com/",
   "search": {
-    "list": "function Main(html){return jsonPaths(html,'$..data[*]');}",
-    "title": "function Main(text){return jsonPath(text,'$.title');}",
-    "introduction": "function Main(text){return jsonPath(text,'$.author');}",
-    "cover": "function Main(text){return jsonPath(text,'$.pic');}",
-    "url": "function Main(text){return jsonPath(text,'$.url');}"
+    "list": "function Main(html){return jsonPaths(html,'$..song..list[*]');}",
+    "title": "function Main(text){return jsonPath(text,'$.name');}",
+    "introduction": "function Main(text){return jsonPath(text,'$.singer..name');}",
+    "cover": "function Main(text){return 'https://y.gtimg.cn/music/photo_new/T002R300x300M000'+jsonPath(text,'$.album..pmid');}",
+    "url": "function Main(text){var filename = 'M500' + jsonPath(text,'$..media_mid') + '.mp3';var mid = jsonPath(text,'$.mid');return 'https://u.y.qq.com/cgi-bin/musicu.fcg?data={\"req_0\":{\"module\":\"vkey.GetVkeyServer\",\"method\":\"CgiGetVkey\",\"param\":{\"guid\":\"7332953645\",\"loginflag\":1,\"filename\":[\"' + filename + '\"],\"songmid\":[\"' + mId + '\"],\"songtype\":[0],\"uin\":\"0\",\"platform\":\"20\"}}}'}"
+  },
+  "music":{
+    "url": "function Main(text){var filename = strmiddle(getURL(),'M500','.');return 'http://dl.stream.qqmusic.qq.com/' + filename + '?vkey=' + jsonPath(text,'$..vkey') + '&uin=0&fromtag=8&guid=7332953645}"
   }
 }
