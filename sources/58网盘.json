@@ -4,19 +4,14 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 1,
+    "versionCode": 2,
     "tab":"百度云",
-    "request": "https://www.58wangpan.com/search/d30kw[$key]pg[$page]@charset->UTF-8",
+    "request": "https://www.58wangpan.com/search/o1kw[$key]pg[$page]@charset->UTF-8",
     "search": {
         "list": "function Main(html){return jsoups(html,'ul.sellListContent> li');}",
         "title": "function Main(text){return jsoup(text,'div.title > a');}",
         "introduction": "function Main(text){return jsoup(text,'div.feed_time');}",
         "cover": "https://dss1.bdstatic.com/6OF1bjeh1BF3odCf/it/u=634730535,1479987612&fm=74&app=80&f=PNG",
         "url": "function Main(text){return jsoup(text,'div.title > a@attr->href');}"
-    },
-    //链接解析
-    "url": {
-        //获取页面内链接
-        "url": "function Main(text){return jsoup(text,'#btn_r_file@attr->href');}"
     }
 }
