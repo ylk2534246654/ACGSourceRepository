@@ -4,7 +4,7 @@
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.0",
-  "versionCode": 11,
+  "versionCode": 12,
   "tab":"漫画",
   "request": "https://api.duoduomh.1a3.net/app2/comic/search?sort=click&page=[$page]&keywords=[$key]@charset->UTF-8",
   "search": {
@@ -17,7 +17,7 @@
   "detail": {
     "author": "function Main(html){return jsonPath(html,'$.data.author');}",
     "introduction": "function Main(html){return jsonPath(html,'$.data.description');}",
-    "upDate": "function Main(html){var timestamp = new Date(Number(jsonPath(html,'$.data.posted_at')));var timestampstr = timestamp.toLocaleDateString().replace(/\//g, '-') + ' ' + timestamp.toTimeString().substr(0, 8);return timestampstr;}",
+    "upDate": "function Main(html){var timestamp = new Date(Number(jsonPath(html,'$.data.posted_at')) * 1000).toLocaleString().replace(/:\\d{1,2}$/,' ');return timestamp;}",
     "catalogs": {
       "chapter": {
         "list": "function Main(html){return jsonPaths(html,'$.data.chapterGroup..chapters.*');}",
