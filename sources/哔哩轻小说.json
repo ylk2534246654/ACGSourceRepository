@@ -18,7 +18,7 @@
     "detail": {
         "author": "function Main(html){return jsoup(html,'#bookDetailWrapper > div > div.book-layout > div > div');}",
         "introduction": "function Main(html){return jsoup(html,'#bookSummary > content');}",
-        "upDate": "function Main(html){return jsoup(html,'div.book-meta-r > p');}",
+        "upDate": "function Main(html){return strmiddle('start'+jsoup(html,'div.book-meta-r > p'),'start','·');}",
         "catalog_url": "function Main(html){return jsoup(html,'a.book-meta@attr->href');}",
         "catalogs": {
             "chapter": {
