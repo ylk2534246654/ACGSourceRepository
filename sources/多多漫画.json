@@ -4,7 +4,7 @@
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.0",
-  "versionCode": 12,
+  "versionCode": 13,
   "tab":"漫画",
   "request": "https://api.duoduomh.1a3.net/app2/comic/search?sort=click&page=[$page]&keywords=[$key]@charset->UTF-8",
   "search": {
@@ -22,13 +22,13 @@
       "chapter": {
         "list": "function Main(html){return jsonPaths(html,'$.data.chapterGroup..chapters.*');}",
         "name": "function Main(text){return jsonPath(text,'$.name');}",
-        "url": "function Main(text){return jsonPath(text,'$.id');}",
+        "url": "function Main(text){return 'https://api.duoduomh.1a3.net/app2/chapter/view?id='+jsonPath(text,'$.id');}",
         "category": 2
       }
     }
   },
   "comic": {
-    "list": "function Main(html){var file=strmiddle(html,'pl = \\'','/000');var startid=parseInt(strmiddle(html,'/000','.jpg'));var endid=parseInt(strmiddle(html,'pcount=',';'));var obj= [];for(var i =startid;i<(endid+startid);i++){var num = i;var n=4;var a = (Array(n).join(0) + num).slice(-n);obj.push(file+'/'+a+'.jpg');};return obj;}",
+    "list": "function Main(html){return jsonPaths(html,'$.data.imageArray.*');}",
     "url": "function Main(text){return text;}",
     "mode": 3
   }
