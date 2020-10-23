@@ -4,7 +4,7 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 1,
+    "versionCode": 2,
     "tab":"轻小说",
     "host":"m.linovelib.com",
     "request": "https://m.linovelib.com/s/?searchkey=[$key]&searchtype=all@charset->UTF-8",
@@ -12,7 +12,7 @@
         "list": "function Main(html){return jsoups(html,'div.module > ol > li');}",
         "title": "function Main(text){return jsoup(text,'h4.book-title');}",
         "introduction": "function Main(text){return jsoup(text,'p.book-desc');}",
-        "cover": "function Main(text){return jsoup(text,'a > img@attr->src');}",
+        "cover": "function Main(text){return jsoup(text,'a > img@attr->data-original');}",
         "url": "function Main(text){return jsoup(text,'a@attr->href');}"
     },
     "detail": {
