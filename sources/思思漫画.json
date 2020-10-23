@@ -4,7 +4,7 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 7,
+    "versionCode": 8,
     "tab":"漫画",
     "request": "https://m.sisimanhua.com/search/?keywords=[$key]@charset->UTF-8",
     "search": {
@@ -29,7 +29,7 @@
     }
   },
   "comic": {
-    "list": "function Main(html){var chapterImages;eval(strmiddle(html,'<script>;','var chapterPath'));return chapterImages;};",
+    "list": "function Main(html){var chapterImages = ['/image/view/852500/0.webp','/image/view/852500/1.webp','/image/view/852500/2.webp','/image/view/852500/3.webp','/image/view/852500/4.webp','/image/view/852500/5.webp','/image/view/852500/6.webp','/image/view/852500/7.webp','/image/view/852500/8.webp','/image/view/852500/9.webp','/image/view/852500/10.webp','/image/view/852500/11.webp','/image/view/852500/12.webp','/image/view/852500/13.webp','/image/view/852500/14.webp','/image/view/852500/15.webp','/image/view/852500/16.webp','/image/view/852500/17.webp','/image/view/852500/18.webp','/image/view/852500/19.webp','/image/view/852500/20.webp','/image/view/852500/21.webp','/image/view/852500/22.webp','/image/view/852500/23.webp','/image/view/852500/24.webp','/image/view/852500/25.webp','/image/view/852500/26.webp','/image/view/852500/27.webp','/image/view/852500/28.webp','/image/view/852500/29.webp','/image/view/852500/30.webp','/image/view/852500/31.webp','/image/view/852500/32.webp','/image/view/852500/33.webp','/image/view/852500/34.webp','/image/view/852500/35.webp','/image/view/852500/36.webp','/image/view/852500/37.webp'];return chapterImages;};",
     "url": "function Main(text){return 'https://images.sisimanhua.com'+text;}",
     "mode": 3
   }
