@@ -30,7 +30,7 @@
   },
   "comic": {
     "list": "function Main(html){eval(strmiddle(html,'<script>','</script>'));return chapterImages;};",
-    "url": "function Main(text){return text;}",
+    "url": "function Main(text){return 'https://images.sisimanhua.com/'+text;}",
     "mode": 3
   }
 }
