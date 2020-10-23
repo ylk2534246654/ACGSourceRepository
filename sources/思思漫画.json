@@ -4,14 +4,14 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 3,
+    "versionCode": 4,
     "tab":"漫画",
     "request": "https://m.sisimanhua.com/search/?keywords=[$key]@charset->UTF-8",
     "search": {
         "list": "function Main(html){return jsoups(html,'#update_list > div > div');}",
         "title": "function Main(text){return jsoup(text,'div.itemTxt > a');}",
         "introduction": "function Main(text){return jsoup(text,'span.date');}",
-        "cover": "function Main(text){return jsoup(text,'#update_list > div.itemImg > a@attr->src');}",
+        "cover": "function Main(text){return jsoup(text,'div.itemBox > div.itemImg > a@attr->src');}",
         "url": "function Main(text){return jsoup(text,'div.itemTxt > a@attr->href');}"
     },
   "detail": {
