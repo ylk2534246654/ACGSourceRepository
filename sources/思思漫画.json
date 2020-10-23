@@ -1,0 +1,36 @@
+{
+    "name": "思思漫画",
+    "introduction": "可以搜索一些漫画",
+    "developer": "雨夏",
+    "mail":"2534246654@qq.com",
+    "versionName": "1.0",
+    "versionCode": 1,
+    "tab":"漫画",
+    "request": "https://m.sisimanhua.com/search/?keywords=[$key]@charset->UTF-8",
+    "search": {
+        "list": "function Main(html){return jsoups(html,'#update_list > div > div');}",
+        "title": "function Main(text){return jsoup(text,'div.itemTxt > a');}",
+        "introduction": "function Main(text){return jsoup(text,'span.date');}",
+        "cover": "function Main(text){return jsoup(text,'mip-img > img@attr->src');}",
+        "url": "function Main(text){return jsoup(text,'div.itemTxt > a@attr->href');}"
+    },
+  "detail": {
+    "author": "function Main(html){return jsoup(html,'div.ar_list_coc > dl > dd > ul > li:nth-child(2) > a');}",
+    "introduction": "function Main(html){return jsoup(html,'#det');}",
+    "upDate": "function Main(html){return jsoup(html,'div.ar_list_coc > dl > dd > ul > li:nth-child(3) > a')+'·'+jsoup(html,'div.ar_list_coc > dl > dd > ul > li:nth-child(5)');}",
+    "reverseOrder": true,
+    "catalogs": {
+      "chapter": {
+        "list": "function Main(html){return jsoups(html,'div.ar_list_coc > ul > li');}",
+        "name": "function Main(text){return jsoup(text,'a');}",
+        "url": "function Main(text){return jsoup(text,'a@attr->href');}",
+        "category": 2
+      }
+    }
+  },
+  "comic": {
+    "list": "function Main(html){javaScript(strmiddle(html,'<script type=\"text/javascript\">','</script>'));var msg2 = msg.split('|');var arr = [];for (var i = 0 ; i<msg2.length; i++){arr.push('https://picsh.77dm.top/h'+img_s+'/'+msg2[i]+'.webp');};return arr;};",
+    "url": "function Main(text){return text;}",
+    "mode": 3
+  }
+}
