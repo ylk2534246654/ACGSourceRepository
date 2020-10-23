@@ -29,7 +29,7 @@
     }
   },
   "comic": {
-    "list": "function Main(html){var str = strmiddle(html,'<script>;','var chapterPath').replaceAll('\"','\\'');log(str);eval(str+';');return chapterImages;};",
+    "list": "function Main(html){var str = strmiddle(html,'<script>;','var chapterPath').replaceAll('\"','\\'');eval(str+';');return chapterImages;};",
     "url": "function Main(text){return 'https://images.sisimanhua.com'+text;}",
     "mode": 3
   }
