@@ -10,7 +10,7 @@
   "search": {
     "list": "function Main(html){return jsonPaths(html,'$.items.*');}",
     "title": "function Main(text){return jsonPath(text,'$.name');}",
-    "introduction": "function Main(text){return jsonPath(text,'$.author')+'\n'+jsonPath(text,'$.last_chapter_name');}",
+    "introduction": "function Main(text){return jsonPath(text,'$.author')+jsonPath(text,'$.last_chapter_name');}",
     "cover": "function Main(text){return jsonPath(text,'$.coverUrl');}",
     "url": "function Main(text){return 'https://api.duoduomh.1a3.net/app2/comic/view?id='+jsonPath(text,'$.id');}"
   },
