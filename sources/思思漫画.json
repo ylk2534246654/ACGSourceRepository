@@ -4,7 +4,7 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 4,
+    "versionCode": 5,
     "tab":"漫画",
     "request": "https://m.sisimanhua.com/search/?keywords=[$key]@charset->UTF-8",
     "search": {
@@ -29,7 +29,7 @@
     }
   },
   "comic": {
-    "list": "function Main(html){javaScript(strmiddle(html,'<script type=\"text/javascript\">','</script>'));var msg2 = msg.split('|');var arr = [];for (var i = 0 ; i<msg2.length; i++){arr.push('https://picsh.77dm.top/h'+img_s+'/'+msg2[i]+'.webp');};return arr;};",
+    "list": "function Main(html){javaScript(strmiddle(html,'<script>;','</script>'));return chapterImages;};",
     "url": "function Main(text){return text;}",
     "mode": 3
   }
