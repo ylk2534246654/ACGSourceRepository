@@ -4,30 +4,25 @@
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.0",
-  "versionCode": 1,
+  "versionCode": 2,
   "tab":"漫画",
   "request": "https://api.duoduomh.1a3.net/app2/comic/search?sort=click&page=[$page]&keywords=[$key]@charset->UTF-8",
   "search": {
     "list": "function Main(html){return jsonPaths(html,'$.items.*');}",
     "title": "function Main(text){return jsonPath(text,'$.name');}",
-    "introduction": "function Main(text){return jsonPath(text,'$.author')+'\\n'+jsonPath(text,'$.last_chapter_name');}",
+    "introduction": "function Main(text){return jsonPath(text,'$.author')+'\n'+jsonPath(text,'$.last_chapter_name');}",
     "cover": "function Main(text){return jsonPath(text,'$.coverUrl');}",
     "url": "function Main(text){return 'https://api.duoduomh.1a3.net/app2/comic/view?id='+jsonPath(text,'$.id');}"
   },
   "detail": {
-    "author": "function Main(html){return jsoup(html,'div.info > p:nth-child(3)').replace('作者：','');}",
-    "introduction": "function Main(html){return jsoup(html,'div.detailContent > p');}",
-    "upDate": "function Main(html){return jsoup(html,'p.bottom.d-nowrap');}",
-    "tabs": {
-      "list": "function Main(html){return jsoups(html,'body > div.chapterList.d-border');}",
-      "name": "function Main(text){return jsoup(text,'li.ib.active');}"
-    },
+    "author": "function Main(html){return jsonPath(html,'$.data.author);}",
+    "introduction": "function Main(html){return jsonPath(html,'$.data.description');}",
+    "upDate": "function Main(html){var timestamp4 = new Date(jsonPath(html,'$.data.posted_at'));var timestamp4 = timestamp4.toLocaleDateString().replace(/\//g, '-') + ' ' + timestamp4.toTimeString().substr(0, 8);return timestamp4;}",
     "catalogs": {
-      "list": "function Main(html){return jsoups(html,'body > div.chapterList.d-border');}",
       "chapter": {
-        "list": "function Main(html){return jsoups(html,'#chapterList_1 > ul > li');}",
-        "name": "function Main(text){return jsoup(text,'a');}",
-        "url": "function Main(text){return jsoup(text,'a@attr->href');}",
+        "list": "function Main(html){return jsonPaths(html,'$.data.chapterGroup..chapters.*');}",
+        "name": "function Main(text){return jsonPath(text,'$.name');}",
+        "url": "function Main(text){return jsonPath(text,'$.id');}",
         "category": 2
       }
     }
