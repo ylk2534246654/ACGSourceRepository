@@ -4,9 +4,14 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 3,
+    "versionCode": 2,
     "tab":"轻小说",
     "request": "https://www.qinxiaoshuo.com/search/[$key]/[$page].html",
+    "auth":{
+        "login":"https://www.qinxiaoshuo.com/login/",
+        "verify":"https://www.qinxiaoshuo.com/user/",
+        "logged":"function Main(html){if(html.indexOf('个人空间')==-1){return true;}else{return false;};}"
+    },
     "search": {
         "list": "function Main(html){return jsoups(html,'div.box_content > div.book');}",
         "title": "function Main(text){return jsoup(text,'div.items > h3 > a');}",
@@ -32,7 +37,7 @@
         }
     },
     "novel": {
-        "content": "function Main(html){return jsoup(html,'#htmlContent');}",
+        "content": "function Main(html){return jsoup(html,'#chapter_content');}",
         "mode": 1
     }
 }
