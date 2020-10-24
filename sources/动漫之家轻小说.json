@@ -4,7 +4,7 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 2,
+    "versionCode": 3,
     "tab":"轻小说",
     "request": "https://v3api.dmzj.com/search/show/1/[$key]/0.json@charset->UTF-8",
     "search": {
