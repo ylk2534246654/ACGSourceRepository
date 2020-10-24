@@ -4,7 +4,7 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 10,
+    "versionCode": 11,
     "tab":"轻小说",
     "host":"m.linovelib.com",
     "request": "https://v3api.dmzj.com/search/show/1/[$key]/0.json@charset->UTF-8",
@@ -28,7 +28,7 @@
             "chapter": {
                 "list": "var mhtml2;function Main(html){var mhtml2 = html;return jsonPaths(html,'$..chapters[*]');}",
                 "name": "function Main(text){return jsonPath(text,'$.chapter_name');}",
-                "url": "function Main(text){return 'https://v3api.dmzj.com/novel/download/'+strmiddle(getURL(),'chapter/','.')+'_'+jsonPath(mhtml2,'$.id')+'_'+jsonPath(text,'$.chapter_id')+'.txt';}",
+                "url": "function Main(text){return 'https://v3api.dmzj.com/novel/download/'+strmiddle(getURL(),'chapter/','.')+'_'+jsonPath(mhtml2,'$..volume_id')+'_'+jsonPath(text,'$.chapter_id')+'.txt';}",
                 "category": 4
             }
         }
