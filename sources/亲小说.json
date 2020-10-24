@@ -4,7 +4,7 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 2,
+    "versionCode": 1,
     "tab":"轻小说",
     "request": "https://www.qinxiaoshuo.com/search/[$key]/[$page].html",
     "auth":{
