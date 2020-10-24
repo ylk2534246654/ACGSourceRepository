@@ -10,7 +10,7 @@
     "auth":{
         "login":"https://www.qinxiaoshuo.com/login/",
         "verify":"https://www.qinxiaoshuo.com/user/",
-        "logged":"function Main(html){if(html.indexOf('个人空间')==-1){return true;}else{return false;};}"
+        "logged":"function Main(html){if(html.indexOf('个人空间')!=-1){return true;}else{return false;};}"
     },
     "search": {
         "list": "function Main(html){return jsoups(html,'div.box_content > div.book');}",
