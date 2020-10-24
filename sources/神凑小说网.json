@@ -4,7 +4,7 @@
 	"developer": "雨夏",
     "mail":"2534246654@qq.com",
 	"versionName": "1.9",
-	"versionCode": 16,
+	"versionCode": 17,
     "tab":"轻小说",
     "request": "http://www.shencou.com/modules/article/search.php@post->searchtype=articlename selected&searchkey=[$key]&t_btnsearch=搜索@charset->gbk",
     "search": {
@@ -12,7 +12,7 @@
         "title": "function Main(text){if(text.indexOf('开始阅读')!=-1){return jsoup(text,'td[valign=middle] > span > a');};return jsoup(text,'a');}",
         "introduction": "function Main(text){if(text.indexOf('开始阅读')!=-1){return jsoup(text,'tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td:nth-child(2)');};return jsoup(text,':nth-child(5)');}",
         "cover": "http://r.m.97ub.cc/cover/aHR0cDovL2ltZzEuY2h1YW5nc2hpLnFxLmNvbS9jaHVhbmdzaGkvcDEvZGVmYXVsdC1jb3Zlci1sYXJnZS5wbmc=",
-        "url": "function Main(text){if(text.indexOf('开始阅读')!=-1){return jsoup(text,'#left > div:nth-child(3) > div.blockcontent > ul > li:nth-child(2) > a');};return jsoup(text,'a@attr->href');}"
+        "url": "function Main(text){if(text.indexOf('开始阅读')!=-1){return jsoup(text,'ul.ultop > li:nth-child(2) > a@attr->href');};return jsoup(text,'a@attr->href');}"
     },
     "detail": {
         "author": "function Main(html){return jsoup(html,'tbody > tr:nth-child(2) > td:nth-child(2)');}",
