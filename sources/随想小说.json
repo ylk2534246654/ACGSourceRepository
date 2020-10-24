@@ -4,15 +4,15 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 1,
+    "versionCode": 2,
     "tab":"轻小说",
     "request": "http://book.suixw.com/modules/article/search.php?searchtype=articlename&searchkey=[$key]&page=[$page]@charset->gbk@header->user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36",
     "search": {
-        "list": "function Main(html){if(html.indexOf('小说目录')!=-1){var myArray=new Array();myArray.push(html);return myArray;}return jsoups(html,'#content > table > tbody > tr > td > div');}",
-        "title": "function Main(text){if(text.indexOf('小说目录')!=-1){return jsoup(text,'#content > div > table > tbody > tr > td > table > tbody > tr > td > span > b');};return jsoup(text,'div:nth-child(2) > b > a');}",
-        "introduction": "function Main(text){if(text.indexOf('小说目录')!=-1){return jsoup(text,'#content > div:nth-child(1) > table:nth-child(1) > tbody > tr:nth-child(2) > td:nth-child(4)');};return jsoup(text,'div:nth-child(2) > p:nth-child(3)');}",
+        "list": "function Main(html){if(html.indexOf('小说目录')!=-1){var myArray=new Array();myArray.push(html);return myArray;}return jsoups(html,'#content > table > tbody > tr:gt(0)');}",
+        "title": "function Main(text){if(text.indexOf('小说目录')!=-1){return jsoup(text,'#content > div > table > tbody > tr > td > table > tbody > tr > td > span > b');};return jsoup(text,'td:nth-child(1) > a');}",
+        "introduction": "function Main(text){if(text.indexOf('小说目录')!=-1){return jsoup(text,'#content > div:nth-child(1) > table:nth-child(1) > tbody > tr:nth-child(2) > td:nth-child(4)');};return jsoup(text,'td:nth-child(5)');}",
         "cover": "function Main(text){if(text.indexOf('小说目录')!=-1){return jsoup(text,'#content > div > table > tbody > tr > td > img@attr->src');};return jsoup(text,':nth-child(1) > a >img@attr->src');;}",
-        "url": "function Main(text){if(text.indexOf('小说目录')!=-1){return 'https://www.wenku8.net/book/'+strmiddle(text,'bid=','\"')+'.htm';};return jsoup(text,'div:nth-child(2) > b > a@attr->href');}"
+        "url": "function Main(text){if(text.indexOf('小说目录')!=-1){return 'https://www.wenku8.net/book/'+strmiddle(text,'bid=','\"')+'.htm';};return jsoup(text,'td:nth-child(1) > a@attr->href');}"
     },
     "detail": {
         "author": "function Main(html){return jsoup(html,'#content > div:nth-child(1) > table:nth-child(1) > tbody > tr:nth-child(2) > td:nth-child(2)');}",
