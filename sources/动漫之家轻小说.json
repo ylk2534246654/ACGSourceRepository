@@ -24,9 +24,9 @@
             "name": "function Main(text){return jsonPath(text,'$.volume_name');}"
         },
         "catalogs": {
-            "list": "var mhtml2;function Main(html){var mhtml2 = html;return jsonPaths(data,'$.*');}",
+            "list": "function Main(html){return jsonPaths(data,'$.*');}",
             "chapter": {
-                "list": "function Main(html){return jsonPaths(html,'$..chapters[*]');}",
+                "list": "var mhtml2;function Main(html){var mhtml2 = html;return jsonPaths(html,'$..chapters[*]');}",
                 "name": "function Main(text){return jsonPath(text,'$.chapter_name');}",
                 "url": "function Main(text){return 'https://v3api.dmzj.com/novel/download/'+strmiddle(getURL(),'chapter/','.')+'_'+jsonPath(mhtml2,'$..volume_id')+'_'+jsonPath(text,'$.chapter_id')+'.txt';}",
                 "category": 4
