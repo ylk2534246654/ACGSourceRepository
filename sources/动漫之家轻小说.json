@@ -4,7 +4,7 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 4,
+    "versionCode": 1,
     "tab":"轻小说",
     "host":"m.linovelib.com",
     "request": "https://v3api.dmzj.com/search/show/1/[$key]/0.json@charset->UTF-8",
@@ -16,10 +16,10 @@
         "url": "function Main(text){return 'https://v3api.dmzj.com/novel/'+jsonPath(text,'$.id')+'.json';}"
     },
     "detail": {
-        "author": "function Main(html){return jsonPath(html,'$.authors');}",
+        "author": "var mhtml;function Main(html){var mhtml = html;return jsonPath(html,'$.authors');}",
         "introduction": "function Main(html){return jsonPath(html,'$.introduction');}",
         "upDate": "function Main(html){var timestamp = new Date(Number(jsonPath(html,'$.last_update_time')) * 1000).toLocaleString().replace(/:\\d{1,2}$/,' ');}",
-        "catalog_url": "var mhtml;function Main(html){var mhtml = html;return 'https://v3api.dmzj.com/novel/chapter/'+jsonPath(html,'$.id')+'.json';}",
+        "catalog_url": "function Main(html){return 'https://v3api.dmzj.com/novel/chapter/'+jsonPath(html,'$.id')+'.json';}",
         "catalogs": {
             "chapter": {
                 "list": "var mhtml2;function Main(html){var mhtml2 = html;return jsonPaths(html,'$..chapters[*]');}",
