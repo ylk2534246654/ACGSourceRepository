@@ -4,25 +4,24 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 1,
+    "versionCode": 2,
     "tab":"轻小说",
     "host":"m.linovelib.com",
     "request": "https://www.biquge1000.com/modules/article/search.php?searchkey=[$key]&page=[$page]@charset->gbk",
     "search": {
-        "list": "function Main(html){return jsoups(html,'div.mySearch > div+ul');}",
-        "title": "function Main(text){return jsoup(text,'li:nth-child(1) > a');}",
-        "introduction": "function Main(text){return jsoup(text,'li:nth-child(3)');}",
+        "list": "function Main(html){if(html.indexOf('加入书架')!=-1){var myArray=new Array();myArray.push(html);return jsoups(html,'div.mySearch > div+ul');}",
+        "title": "function Main(text){if(text.indexOf('加入书架')!=-1){return jsoup(text,'h1.bookTitle');};return jsoup(text,'li:nth-child(1) > a');}",
+        "introduction": "function Main(text){if(text.indexOf('加入书架')!=-1){return jsoup(text,'#bookIntro');};return jsoup(text,'li:nth-child(3)');}",
         "cover": "",
-        "url": "function Main(text){return jsoup(text,'li:nth-child(1) > a@attr->href');}"
+        "url": "function Main(text){if(text.indexOf('加入书架')!=-1){return jsoup(text,'head > link:nth-child(3)@attr->href');};return jsoup(text,'li:nth-child(1) > a@attr->href');}"
     },
     "detail": {
-        "author": "function Main(html){return jsoup(html,'#bookDetailWrapper > div > div.book-layout > div > div');}",
-        "introduction": "function Main(html){return jsoup(html,'#bookSummary > content');}",
-        "upDate": "function Main(html){return jsoup(html,'div.book-meta-r > p');}",
-        "catalog_url": "function Main(html){return jsoup(html,'a.book-meta@attr->href');}",
+        "author": "function Main(html){return jsoup(html,'p.booktag > a:nth-child(1)');}",
+        "introduction": "function Main(html){return jsoup(html,'#bookIntro');}",
+        "upDate": "function Main(html){return jsoup(html,'p.visible-xs');}",
         "catalogs": {
             "chapter": {
-                "list": "function Main(html){return jsoups(html,'ol.chapter-ol > li');}",
+                "list": "function Main(html){return jsoups(html,'#list-chapterAll > dl > dt,#list-chapterAll > dl > dd');}",
                 "group":{
                     "isGroup": "function Main(text){if(text.indexOf('href')!=-1){return false;};return true;}",
                     "name": "function Main(text){return jsoup(text,':matchText');}"
