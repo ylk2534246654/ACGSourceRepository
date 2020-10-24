@@ -1,0 +1,38 @@
+{
+    "name": "亲小说",
+    "introduction": "可以搜索一些轻小说",
+    "developer": "雨夏",
+    "mail":"2534246654@qq.com",
+    "versionName": "1.0",
+    "versionCode": 1,
+    "tab":"轻小说",
+    "request": "https://www.qinxiaoshuo.com/search/[$key]/[$page].html",
+    "search": {
+        "list": "function Main(html){return jsoups(html,'div.box_content > div.book');}",
+        "title": "function Main(text){return jsoup(text,'div.items > h3 > a');}",
+        "introduction": "function Main(text){return jsoup(text,'div.items > div:nth-child(3)');}",
+        "cover": "function Main(text){return jsoup(text,'a > img@attr->src');}",
+        "url": "function Main(text){return jsoup(text,'div.items > h3 > a@attr->href');}"
+    },
+    "detail": {
+        "author": "function Main(html){return jsoup(html,'p.booktag > a:nth-child(1)');}",
+        "introduction": "function Main(html){return jsoup(html,'#bookIntro');}",
+        "upDate": "function Main(html){return jsoup(html,'p.visible-xs');}",
+        "catalogs": {
+            "chapter": {
+                "list": "function Main(html){return jsoups(html,'#list-chapterAll > dl > dt,#list-chapterAll > dl > dd');}",
+                "group":{
+                    "isGroup": "function Main(text){if(text.indexOf('href')!=-1){return false;};return true;}",
+                    "name": "function Main(text){return jsoup(text,':matchText');}"
+                },
+                "name": "function Main(text){return jsoup(text,'a');}",
+                "url": "function Main(text){return jsoup(text,'a@attr->href');}",
+                "category": 4
+            }
+        }
+    },
+    "novel": {
+        "content": "function Main(html){return jsoup(html,'#htmlContent');}",
+        "mode": 1
+    }
+}
