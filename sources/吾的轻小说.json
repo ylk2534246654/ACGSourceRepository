@@ -1,0 +1,40 @@
+{
+    "name": "吾的轻小说",
+    "introduction": "可以搜索一些轻小说",
+    "developer": "雨夏",
+    "mail":"2534246654@qq.com",
+    "versionName": "1.0",
+    "versionCode": 1,
+    "tab":"轻小说",
+    "host":"m.linovelib.com",
+    "request": "https://www.biquge1000.com/modules/article/search.php?searchkey=[$key]&page=[$page]@charset->UTF-8",
+    "search": {
+        "list": "function Main(html){return jsoups(html,'div.mySearch > div+ul');}",
+        "title": "function Main(text){return jsoup(text,'li:nth-child(1) > a');}",
+        "introduction": "function Main(text){return jsoup(text,'li:nth-child(3)');}",
+        "cover": "",
+        "url": "function Main(text){return jsoup(text,'div.mySearch > div+ul@attr->href');}"
+    },
+    "detail": {
+        "author": "function Main(html){return jsoup(html,'#bookDetailWrapper > div > div.book-layout > div > div');}",
+        "introduction": "function Main(html){return jsoup(html,'#bookSummary > content');}",
+        "upDate": "function Main(html){return jsoup(html,'div.book-meta-r > p');}",
+        "catalog_url": "function Main(html){return jsoup(html,'a.book-meta@attr->href');}",
+        "catalogs": {
+            "chapter": {
+                "list": "function Main(html){return jsoups(html,'ol.chapter-ol > li');}",
+                "group":{
+                    "isGroup": "function Main(text){if(text.indexOf('href')!=-1){return false;};return true;}",
+                    "name": "function Main(text){return jsoup(text,':matchText');}"
+                },
+                "name": "function Main(text){return jsoup(text,'a');}",
+                "url": "function Main(text){return jsoup(text,'a@attr->href');}",
+                "category": 4
+            }
+        }
+    },
+    "novel": {
+        "content": "function Main(html){return jsoup(html,'#acontent');}",
+        "mode": 1
+    }
+}
