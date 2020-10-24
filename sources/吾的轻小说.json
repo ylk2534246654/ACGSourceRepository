@@ -4,7 +4,7 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 2,
+    "versionCode": 1,
     "tab":"轻小说",
     "host":"m.linovelib.com",
     "request": "https://www.biquge1000.com/modules/article/search.php?searchkey=[$key]&page=[$page]@charset->gbk",
@@ -13,7 +13,7 @@
         "title": "function Main(text){return jsoup(text,'li:nth-child(1) > a');}",
         "introduction": "function Main(text){return jsoup(text,'li:nth-child(3)');}",
         "cover": "",
-        "url": "function Main(text){return jsoup(text,'div.mySearch > div+ul@attr->href');}"
+        "url": "function Main(text){return jsoup(text,'li:nth-child(1) > a@attr->href');}"
     },
     "detail": {
         "author": "function Main(html){return jsoup(html,'#bookDetailWrapper > div > div.book-layout > div > div');}",
