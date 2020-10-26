@@ -4,7 +4,7 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 2,
+    "versionCode": 1,
     "tab": "动漫",
     "request": "https://api.clicli.us/search/posts?key=[$key]@ip->216.24.184.12",
     "search": {
@@ -12,7 +12,7 @@
         "title": "function Main(text){return jsonPath(text,'$.title');}",
         "introduction": "function Main(text){return jsonPath(text,'$.time');}",
         "cover": "function Main(text){return strmiddle(jsonPath(text,'$.content'),'(',')');}",
-        "url": "function Main(text){return 'https://api.clicli.us/videos?pid='+jsonPath(text,'$.id')+'&page=1&pageSize=300';}"
+        "url": "function Main(text){return 'https://api.clicli.us/videos?pid='+jsonPath(text,'$.id')+'&page=1&pageSize=300@ip->216.24.184.12';}"
     },
     "detail": {
         "author": "",
