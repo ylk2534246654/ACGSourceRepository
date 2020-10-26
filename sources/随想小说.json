@@ -4,7 +4,7 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 5,
+    "versionCode": 6,
     "tab":"轻小说",
     "request": "http://book.suixw.com/modules/article/search.php?searchtype=articlename&searchkey=[$key]&page=[$page]@charset->gbk@header->user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36",
     "search": {
@@ -15,6 +15,7 @@
         "url": "function Main(text){if(text.indexOf('TXT下载')!=-1){return jsoup(text,'div.main.m_top > div.fr > a:nth-child(1)@attr->href');};return jsoup(text,'a:nth-child(1)@attr->href');}"
     },
     "detail": {
+        "cover": "function Main(html){return jsoup(html,'tr > td:nth-child(1) > img@attr->src');}",
         "author": "function Main(html){return jsoup(html,'tr:nth-child(2) > td:nth-child(2)');}",
         "introduction": "function Main(html){return jsoup(html,'#content > table > tbody > tr:nth-child(4) > td > table > tbody > tr > td:nth-child(2)');}",
         "upDate": "function Main(html){return jsoup(html,'#content > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(3) > td:nth-child(1)');}",
