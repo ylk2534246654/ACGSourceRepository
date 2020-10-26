@@ -15,7 +15,7 @@
         "url": "function Main(text){if(text.indexOf('TXT下载')!=-1){return jsoup(text,'div.main.m_top > div.fr > a:nth-child(1)@attr->href');};return jsoup(text,'td:nth-child(1) > a@attr->href');}"
     },
     "detail": {
-        "author": "function Main(html){return jsoup(html,'#content > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td:nth-child(2)');}",
+        "author": "function Main(html){return jsoup(html,'tr:nth-child(2) > td:nth-child(2)');}",
         "introduction": "function Main(html){return jsoup(html,'#content > table > tbody > tr:nth-child(4) > td > table > tbody > tr > td:nth-child(2)');}",
         "upDate": "function Main(html){return jsoup(html,'#content > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(3) > td:nth-child(1)');}",
         "catalog_url": "function Main(html){return jsoup(html,'#content > div:nth-child(5) > div > span:nth-child(1) > fieldset > div > a@attr->href');}",
