@@ -4,15 +4,15 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 3,
+    "versionCode": 4,
     "tab":"轻小说",
     "request": "http://book.suixw.com/modules/article/search.php?searchtype=articlename&searchkey=[$key]&page=[$page]@charset->gbk@header->user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36",
     "search": {
         "list": "function Main(html){if(html.indexOf('TXT下载')!=-1){var myArray=new Array();myArray.push(html);return myArray;};return jsoups(html,'#content > tr:gt(0)');}",
-        "title": "function Main(text){if(text.indexOf('TXT下载')!=-1){return jsoup(text,'tr > td:nth-child(1) > span');};return jsoup(text,'td:nth-child(1) > a');}",
-        "introduction": "function Main(text){if(text.indexOf('TXT下载')!=-1){return jsoup(text,'#content > table > tbody > tr:nth-child(4) > td > table > tbody > tr > td:nth-child(2)');};return jsoup(text,'td:nth-child(5)');}",
+        "title": "function Main(text){if(text.indexOf('TXT下载')!=-1){return jsoup(text,'tr > td:nth-child(1) > span');};return jsoup(text,'a:nth-child(1)');}",
+        "introduction": "function Main(text){if(text.indexOf('TXT下载')!=-1){return jsoup(text,'#content > table > tbody > tr:nth-child(4) > td > table > tbody > tr > td:nth-child(2)');};return jsoup(text,'a:nth-child(2)');}",
         "cover": "function Main(text){if(text.indexOf('TXT下载')!=-1){return jsoup(text,'tr > td:nth-child(1) > img@attr->src');};return null;}",
-        "url": "function Main(text){if(text.indexOf('TXT下载')!=-1){return jsoup(text,'div.main.m_top > div.fr > a:nth-child(1)@attr->href');};return jsoup(text,'td:nth-child(1) > a@attr->href');}"
+        "url": "function Main(text){if(text.indexOf('TXT下载')!=-1){return jsoup(text,'div.main.m_top > div.fr > a:nth-child(1)@attr->href');};return jsoup(text,'a:nth-child(1)@attr->href');}"
     },
     "detail": {
         "author": "function Main(html){return jsoup(html,'tr:nth-child(2) > td:nth-child(2)');}",
