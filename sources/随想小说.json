@@ -4,7 +4,7 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 9,
+    "versionCode": 1,
     "tab":"轻小说",
     "request": "http://book.suixw.com/modules/article/search.php?searchtype=articlename&searchkey=[$key]&page=[$page]@charset->gbk@header->user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36",
     "search": {
@@ -15,10 +15,10 @@
         "url": "function Main(text){if(text.indexOf('TXT下载')!=-1){return jsoup(text,'div.main.m_top > div.fr > a:nth-child(1)@attr->href');};return jsoup(text,'td:nth-child(1) > a@attr->href');}"
     },
     "detail": {
-        "author": "function Main(html){return jsoup(html,'#content > div:nth-child(1) > table:nth-child(1) > tbody > tr:nth-child(2) > td:nth-child(2)');}",
-        "introduction": "function Main(html){return jsoup(html,'#content > div:nth-child(1) > table:nth-child(4) > tbody > tr > td:nth-child(2) > span:nth-child(6)');}",
-        "upDate": "function Main(html){return jsoup(html,'#content > div:nth-child(1) > table:nth-child(1) > tbody > tr:nth-child(2) > td:nth-child(4)');}",
-        "catalog_url": "function Main(html){return jsoup(html,'#content > div:nth-child(1) > div:nth-child(6) > div > span:nth-child(1) > fieldset > div > a@attr->href');}",
+        "author": "function Main(html){return jsoup(html,'#content > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(2) > td:nth-child(2)');}",
+        "introduction": "function Main(html){return jsoup(html,'#content > table > tbody > tr:nth-child(4) > td > table > tbody > tr > td:nth-child(2)');}",
+        "upDate": "function Main(html){return jsoup(html,'#content > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(3) > td:nth-child(1)');}",
+        "catalog_url": "function Main(html){return jsoup(html,'#content > div:nth-child(5) > div > span:nth-child(1) > fieldset > div > a@attr->href');}",
         "catalogs": {
             "chapter": {
                 "list": "function Main(html){return jsoups(html,'td.vcss,td.ccss');}",
