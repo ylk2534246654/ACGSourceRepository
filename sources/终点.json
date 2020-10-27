@@ -1,10 +1,10 @@
 {
     "name": "终点论坛",
-    "introduction": "Galgame资源搜索,可以搜索一些游戏资源",
+    "introduction": "Galgame资源搜索,可以搜索一些游戏资源\n*该搜索源需登录*",
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 7,
+    "versionCode": 1,
     "tab":"游戏",
     "auth":{
         "login":"https://bbs.zdfx.net/index.php",
