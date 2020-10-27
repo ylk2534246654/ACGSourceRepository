@@ -4,11 +4,11 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 2,
+    "versionCode": 1,
     "tab":"字幕",
     "request": "https://bbs.vcb-s.com/forum.php",
     "search": {
-        "list": "function Main(html){var formhash = jsoup(html,'[name=formhash]@attr->value');html = httpRequest('https://bbs.vcb-s.com/search.php?mod=forum@post->formhash='+formhash+'&srchtxt=[$key]&searchsubmit=yes@charset->UTF-8@header->content-type:application/x-www-form-urlencoded@header->user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36@header->cookie: 3RQm_2132_saltkey=N6KR6Qgi; 3RQm_2132_lastvisit=1603760281; Hm_lvt_0a5a84de2ac1a516082bd1b7fee1c911=1603763888; 3RQm_2132_lastact=1603780412%09search.php%09forum; 3RQm_2132_sid=DOgodM; Hm_lpvt_0a5a84de2ac1a516082bd1b7fee1c911=1603780415');return jsoups(html,'#threadlist > ul > li');}",
+        "list": "function Main(html){var formhash = jsoup(html,'[name=formhash]@attr->value');html = httpRequest('https://bbs.vcb-s.com/search.php?mod=forum@post->formhash='+formhash+'&srchtxt=[$key]&searchsubmit=yes@charset->UTF-8@header->content-type:application/x-www-form-urlencoded@header->user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36@header->referer:https://bbs.vcb-s.com');return jsoups(html,'#threadlist > ul > li');}",
         "title": "function Main(text){return jsoup(text,'h3.xs3 > a');}",
         "introduction": "function Main(text){return jsoup(text,'p:nth-child(3)');}",
         "cover": "",
