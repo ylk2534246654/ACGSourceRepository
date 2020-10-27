@@ -4,9 +4,9 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 1,
+    "versionCode": 2,
     "tab":"游戏",
-    "request": "https://bbs.zdfx.net/search.php?mod=forum@post->formhash=fd43ebe0&srchtxt=[$key]&searchsubmit=yes@charset->UTF-8@header->user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36",
+    "request": "https://bbs.zdfx.net/search.php?mod=forum@post->formhash=fd43ebe0&srchtxt=%E5%88%80%E5%89%91&searchsubmit=yes@charset->UTF-8@header->user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36",
     "search": {
         "list": "function Main(html){return jsoups(html,'#threadlist > ul > li');}",
         "title": "function Main(text){return jsoup(text,'h3.xs3 > a');}",
