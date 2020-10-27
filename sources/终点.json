@@ -1,18 +1,18 @@
 {
-    "name": "忧郁的loli",
+    "name": "终点",
     "introduction": "Galgame资源搜索,可以搜索一些游戏资源",
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 3,
+    "versionCode": 1,
     "tab":"游戏",
     "request": "https://bbs.zdfx.net/search.php?mod=forum@post->formhash=fd43ebe0&srchtxt=[$key]&searchsubmit=yes@charset->UTF-8@header->user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36",
     "search": {
-        "list": "function Main(html){return jsoups(html,'#article-list > div');}",
-        "title": "function Main(text){return jsoup(text,'div.title-article > h1 > a');}",
-        "introduction": "function Main(text){return jsoup(text,' section.visible-xs > div:nth-child(6)');}",
-        "cover": "function Main(text){return jsoup(text,'div.alert > p > a > img@attr->src');}",
-        "url": "function Main(text){return jsoup(text,'div.title-article > h1 > a@attr->href')+'@header->Content-Type:application/x-www-form-urlencoded;charset=UTF-8@header->user-agent:Mozilla/5.0 (Linux; Android 4.4.2; Nexus 4 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36';}"
+        "list": "function Main(html){return jsoups(html,'#threadlist > ul > li');}",
+        "title": "function Main(text){return jsoup(text,'h3.xs3 > a');}",
+        "introduction": "function Main(text){return jsoup(text,'p:nth-child(3)');}",
+        "cover": "",
+        "url": "function Main(text){return jsoup(text,'h3.xs3 > a@attr->href')+'@header->user-agent:Mozilla/5.0 (Linux; Android 4.4.2; Nexus 4 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36';}"
     },
     //链接解析
     "url": {
