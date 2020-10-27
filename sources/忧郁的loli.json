@@ -4,9 +4,9 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 2,
+    "versionCode": 3,
     "tab":"游戏",
-    "request": "https://www.kkgal.com/?s=[$key]&submit=@charset->UTF-8@header->Content-Type:application/x-www-form-urlencoded;charset=UTF-8@header->user-agent:Mozilla/5.0 (Linux; Android 4.4.2; Nexus 4 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36@header->Cookie:security_session_verify=bb978f1351e2bc74a7f4e14790937f9f; PHPSESSID=d32j0apr5giag5cuhsnqaublml",
+    "request": "https://www.kkgal.com/?s=[$key]&submit=@charset->UTF-8@header->Content-Type:application/x-www-form-urlencoded;charset=UTF-8@header->user-agent:Mozilla/5.0 (Linux; Android 4.4.2; Nexus 4 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36@header->Connection:keep-alive@header->Cookie:security_session_verify=bb978f1351e2bc74a7f4e14790937f9f; PHPSESSID=d32j0apr5giag5cuhsnqaublml",
     "search": {
         "list": "function Main(html){return jsoups(html,'#article-list > div');}",
         "title": "function Main(text){return jsoup(text,'div.title-article > h1 > a');}",
