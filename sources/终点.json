@@ -4,14 +4,14 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 3,
+    "versionCode": 4,
     "tab":"游戏",
     "auth":{
         "login":"https://bbs.zdfx.net/member.php?mod=logging&action=login&mobile=2",
         "verify":"https://bbs.zdfx.net/home.php?mod=space&do=profile&mycenter=1&mobile=2",
         "logged":"function Main(html){if(html.indexOf('个人中心')!=-1){return true;}else{return false;};}"
     },
-    "request": "https://bbs.zdfx.net/search.php?mod=forum@post->formhash=fd43ebe0&srchtxt=%E5%88%80%E5%89%91&searchsubmit=yes@charset->UTF-8@header->user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36",
+    "request": "https://bbs.zdfx.net/search.php?mod=forum@post->formhash=fd43ebe0&srchtxt=%E5%88%80%E5%89%91&searchsubmit=yes@charset->UTF-8@header->user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36@header->cookie:SourcePage=https%3A%2F%2Fwww.baidu.com%2Flink%3Furl%3DFJ5f79RDy7anv-6VEvnpTnPD5p5nEknNmyNNqYqVu95gnbD55_-RsAcAJN639elK%26wd%3D%26eqid%3Dc662953f0004d24a000000065f977ed6; FirstBrowsePage=https%3A%2F%2Fbbs.zdfx.net%2Findex.php; _ga=GA1.2.1205503245.1603763935; _gid=GA1.2.1160102564.1603763935; ThW9_934f_sid=nVL0MR; ThW9_934f_saltkey=J7Ko2VfS; ThW9_934f_lastvisit=1603761516; ThW9_934f_sendmail=1; ThW9_934f_seccodecSADQUnVL0MR=6294.ef575faf949f9843d9; ThW9_934f_ulastactivity=12b9XPY4I7WqIgkVCwClB0%2B%2FifeceJv7DooYC35cWDHCn9VYs1kG; ThW9_934f_auth=4b7djFBNk%2F05uYY7Z0qzQLK%2BuNmQeAAAi0bzYUerms8ojYnRqYHXKYmgSwQhvwVmYWGzaXdiDZ6ElsmrcWGfYM854Pc; ThW9_934f_lastcheckfeed=189983%7C1603765990; ThW9_934f_checkfollow=1; ThW9_934f_lip=36.17.161.105%2C1603765503; ThW9_934f_connect_is_bind=0; ThW9_934f_con_request_uri=https%3A%2F%2Fbbs.zdfx.net%2Fconnect.php%3Fmod%3Dlogin%26op%3Dcallback%26referer%3Dindex.php; ThW9_934f_nofavfid=1; _gat_gtag_UA_61019155_2=1; ThW9_934f_checkpm=1; ThW9_934f_lastact=1603766008%09plugin.php%09",
     "search": {
         "list": "function Main(html){return jsoups(html,'#threadlist > ul > li');}",
         "title": "function Main(text){return jsoup(text,'h3.xs3 > a');}",
