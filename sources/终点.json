@@ -4,14 +4,14 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 1,
+    "versionCode": 4,
     "tab":"游戏",
     "auth":{
-        "login":"https://bbs.zdfx.net/member.php?mod=logging&action=login&mobile=2",
-        "verify":"https://bbs.zdfx.net/home.php?mod=space&do=profile&mycenter=1&mobile=2",
+        "login":"https://bbs.zdfx.net/index.php",
+        "verify":"https://bbs.zdfx.net/index.php",
         "logged":"function Main(html){if(html.indexOf('个人中心')!=-1){return true;}else{return false;};}"
     },
-    "request": "https://bbs.zdfx.net/search.php?mod=forum&searchid=651&orderby=lastpost&ascdesc=desc&searchsubmit=yes&kw=%E5%88%80%E5%89%91@charset->UTF-8@header->user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36",
+    "request": "https://bbs.zdfx.net/search.php?mod=forum@post->formhash=fd43ebe0&srchtxt=%E5%88%80%E5%89%91&searchsubmit=yes@charset->UTF-8@header->user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36",
     "search": {
         "list": "function Main(html){return jsoups(html,'#threadlist > ul > li');}",
         "title": "function Main(text){return jsoup(text,'h3.xs3 > a');}",
