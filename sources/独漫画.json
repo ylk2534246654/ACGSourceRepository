@@ -1,0 +1,37 @@
+{
+    "MyACG搜索源": "https://diyyx.wang/app/MyACG.apk",
+    "name": "独漫画(仅支持1.1.6.6+)",
+    "introduction": "可以搜索一些漫画",
+    "developer": "雨夏",
+    "mail":"2534246654@qq.com",
+    "versionName": "1.0",
+    "versionCode":1,
+    "tab": "漫画",
+    "host":"m.dumanhhua.com",
+    "request": "https://m.dumanhhua.com/search/?keywords={key}&page={page}@charset->UTF-8",
+    "search": {
+        "list": "function Main(html){return jsoups(html,'#update_list > div > div');}",
+        "title": "function Main(text){return jsoup(text,'div.itemTxt > a');}",
+        "introduction": "function Main(text){return jsoup(text,'span.date');}",
+        "cover": "function Main(text){return jsoup(text,'div.itemImg > a > mip-img@attr->src');}",
+        "url": "function Main(text){return jsoup(text,'div.itemTxt > a@attr->href');}"
+    },
+    "detail": {
+        "author": "function Main(html){return jsoup(html,'div.comic-view.clearfix > div.view-sub.autoHeight > div > dl:nth-child(3) > dd');}",
+        "introduction": "function Main(html){return jsoup(html,'div.comic-view.clearfix > p');}",
+        "upDate": "function Main(html){return jsoup(html,'div.comic-view.clearfix > div.view-sub.autoHeight > div > dl:nth-child(5) > dd');}",
+        "reverseOrder": true,
+        "catalogs": {
+            "chapter": {
+                "list": "function Main(html){return jsoups(html,'#chapter-list-1 > li');}",
+                "name": "function Main(text){return jsoup(text,'a');}",
+                "url": "function Main(text){var url = jsoup(text,'a@attr->href');url = url.replace('.html','-{p}.html')+'@zero->2@start->1';return url;}",
+                "category": 2
+            }
+        }
+    },
+    "comic": {
+        "url": "function Main(text){var img = jsoup(text,'mip-link > mip-img:not([style])@attr->src');if(img.indexOf('cover')==-1){return img;}return null};",
+        "mode": 3
+    }
+}
