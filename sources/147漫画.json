@@ -5,7 +5,7 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode":4,
+    "versionCode":5,
     "tab": "漫画",
     "host":"m.i2356.com",
     "request": "https://m.i2356.com/search/?keywords={key}&page={page}@charset->UTF-8",
@@ -40,7 +40,7 @@
         }
     },
     "comic": {
-        "url": "function Main(text){return jsoup(text,'div.UnderPage > mip-link > mip-link > mip-img:not([width])@attr->src')}",
+        "url": "function Main(text){var img = jsoup(text,'div.UnderPage > mip-link > mip-link > mip-img:not([width])@attr->src');if(img.indexOf('cover')==-1){return img;}return null;",
         "mode": 3
     }
 }
