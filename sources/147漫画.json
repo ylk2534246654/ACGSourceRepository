@@ -5,7 +5,7 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode":3,
+    "versionCode":4,
     "tab": "漫画",
     "host":"m.i2356.com",
     "request": "https://m.i2356.com/search/?keywords={key}&page={page}@charset->UTF-8",
@@ -31,16 +31,16 @@
         "upDate": "function Main(html){return jsoup(html,'div.comic-view.clearfix > div.view-sub.autoHeight > div > dl:nth-child(5) > dd');}",
         "reverseOrder": true,
         "catalogs": {
-        "chapter": {
-            "list": "function Main(html){return jsoups(html,'#chapter-list-1 > li');}",
-            "name": "function Main(text){return jsoup(text,'a');}",
-            "url": "function Main(text){var url = jsoup(text,'a@attr->href');url = url.replace('.html','-{p}.html')+'@zero->1@start->1';return url;}",
-            "category": 2
-        }
+            "chapter": {
+                "list": "function Main(html){return jsoups(html,'#chapter-list-1 > li');}",
+                "name": "function Main(text){return jsoup(text,'a');}",
+                "url": "function Main(text){var url = jsoup(text,'a@attr->href');url = url.replace('.html','-{p}.html')+'@zero->1@start->1';return url;}",
+                "category": 2
+            }
         }
     },
     "comic": {
-        "url": "function Main(text){return jsoup(text,'div.UnderPage > mip-link > mip-link > mip-img:nth-child(1)@attr->src')}",
+        "url": "function Main(text){return jsoup(text,'div.UnderPage > mip-link > mip-link > mip-img:not([width])@attr->src')}",
         "mode": 3
     }
 }
