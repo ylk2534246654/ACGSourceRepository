@@ -40,7 +40,7 @@
         }
     },
     "comic": {
-        "url": "function Main(text){var img = jsoup(text,'mip-link > img@attr->src');if(img == null){img = jsoup(text,'mip-link > mip-img@attr->src');}if(img.indexOf('cover')==-1){return img;}return null};",
+        "url": "function Main(text){var img = jsoup(text,'mip-link > img@attr->src');if((img+'').length < 1){img = jsoup(text,'mip-link > mip-img:not([style])@attr->src');}if(img.indexOf('cover')==-1){return img;}return null};",
         "mode": 3
     }
 }
