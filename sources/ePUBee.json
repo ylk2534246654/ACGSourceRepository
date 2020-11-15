@@ -1,0 +1,38 @@
+{
+    "name": "ePUBee",
+    "introduction": "可以搜索一些小说",
+    "developer": "雨夏",
+    "mail":"2534246654@qq.com",
+    "versionName": "1.0",
+    "versionCode": 1,
+    "tab":"小说",
+    "request": "http://cn.epubee.com/books/?s={key}&input=1",
+    "search": {
+        "list": "function Main(html){return jsoups(html,'div.get_ebook_list > div');}",
+        "title": "function Main(text){return jsoup(text,'div.list_title > a');}",
+        "introduction": "function Main(text){return jsoup(text,'div.list_ext');}",
+        "cover": "function Main(text){return jsoup(text,'div.list_cover > img@attr->src');}",
+        "url": "function Main(text){return jsoup(text,'div.list_title > a@attr->href');}"
+    },
+    "detail": {
+        "author": "function Main(html){return jsoup(html,'div.info_item > div:nth-child(1) > a');}",
+        "introduction": "function Main(html){return jsoup(html,'textarea.intro');}",
+        "upDate": "function Main(html){return jsoup(html,'div.show_info > div > div:nth-child(4) > div:nth-child(1)');}",
+        "catalogs": {
+            "chapter": {
+                "list": "function Main(html){return jsoups(html,'div.volume_info,div.chapters > div');}",
+                "group":{
+                    "isGroup": "function Main(text){if(text.indexOf('href')!=-1){return false;};return true;}",
+                    "name": "function Main(text){return jsoup(text,':matchText');}"
+                },
+                "name": "function Main(text){return jsoup(text,'a');}",
+                "url": "function Main(text){return jsoup(text,'a@attr->href');}",
+                "category": 4
+            }
+        }
+    },
+    "novel": {
+        "content": "function Main(html){return jsoup(html,'#chapter_content');}",
+        "mode": 1
+    }
+}
