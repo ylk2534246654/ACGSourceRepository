@@ -1,0 +1,17 @@
+{
+    "name": "绯月论坛",
+    "introduction": "Galgame资源搜索,可以搜索一些游戏资源\n**注意:\n需要论坛货币KFB才能下载资源\n不建议使用\n******",
+    "developer": "雨夏",
+    "mail":"2534246654@qq.com",
+    "versionName": "1.0",
+    "versionCode": 1,
+    "tab":"游戏",
+    "request": "https://bbs.kforz.com/search.php@post->step=2&method=AND&sch_area=0&s_type=forum&f_fid=all&orderway=lastpost&asc=DESC&keyword={key}&pwuser=&submit=%C8%AB%D5%BE%CB%D1%CB%F7@charset->gbk@header->Content-Type:application/x-www-form-urlencoded;charset=UTF-8@header->user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36",
+    "search": {
+        "list": "function Main(html){return jsoups(html,'div > table > tbody > tr');}",
+        "title": "function Main(text){return jsoup(text,'td:nth-child(1) > a');}",
+        "introduction": "function Main(text){return jsoup(text,'td:nth-child(2),td:nth-child(3)');}",
+        "cover": "",
+        "url": "function Main(text){return jsoup(text,'td:nth-child(1) > a@attr->href')+'@header->Content-Type:application/x-www-form-urlencoded;charset=UTF-8@header->user-agent:Mozilla/5.0 (Linux; Android 4.4.2; Nexus 4 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36';}"
+    }
+}
