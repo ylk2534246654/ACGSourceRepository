@@ -1,0 +1,22 @@
+{
+    "name": "花火学园",
+    "introduction": "Galgame资源搜索,可以搜索一些游戏资源\n**注意:\n该搜索源需登录\n需要回复帖子才能下载资源\n******",
+    "developer": "雨夏",
+    "mail":"2534246654@qq.com",
+    "versionName": "1.0",
+    "versionCode": 1,
+    "tab":"游戏",
+    "auth":{
+        "login":"https://bbs.vcb-s.com/member.php?mod=logging&action=login&mobile=2",
+        "verify":"https://bbs.vcb-s.com/",
+        "logged":"function Main(html){if(html.indexOf('消息')!=-1){return true;}else{return false;};}"
+    },
+    "request": "https://www.sayhuahuo.com/",
+    "search": {
+        "list": "function Main(html){var formhash = jsoup(html,'[name=formhash]@attr->value');html = httpRequest('https://www.sayhuahuo.com/search.php?mod=forum@post->formhash='+formhash+'&srchtxt=[$key]&searchsubmit=yes@charset->UTF-8@header->content-type:application/x-www-form-urlencoded@header->user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36@header->referer:https://bbs.vcb-s.com@header->origin:https://bbs.vcb-s.com');return jsoups(html,'#threadlist > ul > li');}",
+        "title": "function Main(text){return jsoup(text,'h3.xs3 > a');}",
+        "introduction": "function Main(text){return jsoup(text,'p:nth-child(3)');}",
+        "cover": "",
+        "url": "function Main(text){return jsoup(text,'h3.xs3 > a@attr->href')+'@header->content-type:application/x-www-form-urlencoded@header->user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36';}"
+    }
+}
