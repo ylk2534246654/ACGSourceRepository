@@ -5,13 +5,13 @@
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
     "versionCode": 1,
-    "request": "http://www.diezz.net/vodsearch/[$key]----------[$page]---.html",
+    "request": "https://kan.yimmh.com/vodsearch/{key}----------{page}---.html",
     "search": {
         "list": "function Main(html){return jsoups(html,'li.searchlist_item');}",
-        "title": "function Main(text){return jsoup(text,'div.searchlist_titbox > h4.vodlist_title');}",
-        "introduction": "function Main(text){return jsoup(text,'p.vodlist_sub.hidden_xs');}",
+        "title": "function Main(text){var span = jsoup(text,'h4.vodlist_title > a > span');return jsoup(text,'h4.vodlist_title > a').replace(span,'');}",
+        "introduction": "function Main(text){var span = jsoup(text,'h4.vodlist_title > a > span');return span;}",
         "cover": "function Main(text){return jsoup(text,'div.searchlist_img > a@attr->data-original');}",
-        "url": "function Main(text){return jsoup(text,'div.searchlist_titbox > h4.vodlist_title > a@attr->href');}"
+        "url": "function Main(text){return jsoup(text,'h4.vodlist_title > a@attr->href');}"
     },
     "detail": {
         "author": "function Main(html){return jsoup(html,'div.detail_list_box > div > div > div:nth-child(3) > ul > li:nth-child(4)');}",
