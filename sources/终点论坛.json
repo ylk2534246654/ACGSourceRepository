@@ -8,8 +8,8 @@
     "tab":"游戏",
     "auth":{
         "login":"https://bbs.zdfx.net/member.php?mod=logging&action=login&mobile=2",
-        "verify":"https://bbs.zdfx.net/index.php",
-        "logged":"function Main(html){if(html.indexOf('空间')!=-1){return true;}else{return false;};}"
+        "verify":"https://bbs.zdfx.net/member.php?mod=logging&action=login&mobile=2",
+        "logged":"function Main(html){if(html.indexOf('点击此链接进行跳转')!=-1){return true;}else{return false;};}"
     },
     "request": "https://bbs.zdfx.net/forum.php",
     "search": {
