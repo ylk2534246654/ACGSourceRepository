@@ -1,15 +1,15 @@
 {
     "name": "终点论坛(仅支持1.1.6.5+)",
-    "introduction": "Galgame资源搜索,可以搜索一些游戏资源\n*该搜索源需登录*",
+    "introduction": "Galgame资源搜索,可以搜索一些游戏资源**注意:\n该搜索源需登录\n需要回复帖子才能获取资源链接\n******",
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 2,
+    "versionCode": 3,
     "tab":"游戏",
     "auth":{
         "login":"https://bbs.zdfx.net/member.php?mod=logging&action=login&mobile=2",
         "verify":"https://bbs.zdfx.net/index.php",
-        "logged":"function Main(html){if(html.indexOf('访问我的空间')!=-1){return true;}else{return false;};}"
+        "logged":"function Main(html){if(html.indexOf('空间')!=-1){return true;}else{return false;};}"
     },
     "request": "https://bbs.zdfx.net/forum.php",
     "search": {
