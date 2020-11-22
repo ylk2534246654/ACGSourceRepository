@@ -4,12 +4,12 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 1,
+    "versionCode": 3,
     "tab":"游戏",
     "auth":{
         "login":"https://bbs.zdfx.net/member.php?mod=logging&action=login&mobile=2",
         "verify":"https://bbs.zdfx.net/member.php?mod=logging&action=login&mobile=2",
-        "logged":"function Main(html){if(html.indexOf('信息提示-终点分享')!=-1){return true;}else{return false;};}"
+        "logged":"function Main(html){if(html.indexOf('提示信息-终点分享')!=-1){return true;}else{return false;};}"
     },
     "request": "https://bbs.zdfx.net/forum.php",
     "search": {
