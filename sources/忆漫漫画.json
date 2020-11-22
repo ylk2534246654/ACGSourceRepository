@@ -4,7 +4,7 @@
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.0",
-  "versionCode": 1,
+  "versionCode": 2,
   "tab":"漫画",
   "request": "https://m.yimmh.com/search?keyword=[$key]",
   "search": {
@@ -15,13 +15,13 @@
     "url": "function Main(text){return jsoup(text,'div.book-list-info > a@attr->href');}"
   },
   "detail": {
-    "author": "function Main(html){return jsoup(html,'div.cont-list > dl:nth-child(4)');}",
-    "introduction": "function Main(html){return jsoup(html,'#bookIntro > p');}",
-    "upDate": "function Main(html){return jsoup(html,'div.cont-list > dl:nth-child(3)');}",
+    "author": "function Main(html){return jsoup(html,'div.detail-main-info > p:nth-child(3)>a');}",
+    "introduction": "function Main(html){return jsoup(html,'p.detail-desc');}",
+    "upDate": "function Main(html){return jsoup(html,'#detail-list-title > span.detail-list-title-3');}",
     "reverseOrder": true,
     "catalogs": {
       "chapter": {
-        "list": "function Main(html){return jsoups(html,'div.chapter-list > ul > li');}",
+        "list": "function Main(html){return jsoups(html,'#detail-list-select > li');}",
         "name": "function Main(text){return jsoup(text,'a');}",
         "url": "function Main(text){return jsoup(text,'a@attr->href');}",
         "category": 2
@@ -29,46 +29,8 @@
     }
   },
   "comic": {
-    "list": "loadScript('https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/js/base64.js');function Main(html){eval(Base64.decode(strmiddle(html,'cp=\"','\"')));return _cuRs;};",
-    "url": "function Main(text){return 'http://res.img.youzipi.net/'+text;}",
+    "list": "function Main(html){return jsoups(html,'#cp_img > img@attr->data-original');};",
+    "url": "function Main(text){return text;}",
     "mode": 3
-  },
-  "finds": [
-        {
-            "tab": "最新更新",
-            "request": "http://m.pufei8.com/manhua/update.html",
-            "list": "function Main(html){return jsoups(html,'#detail > li');}",
-            "title": "function Main(text){return jsoup(text,'a > h3');}",
-            "introduction": "function Main(text){return jsoup(text,'a > dl')+jsoup(text,'dl:nth-child(5)');}",
-            "cover": "function Main(text){return jsoup(text,'div.thumb > img@attr->data-src');}",
-            "url": "function Main(text){return jsoup(text,'li > a@attr->href');}"
-        },
-        {
-            "tab": "排行榜",
-            "request": "http://m.pufei8.com/manhua/paihang.html",
-            "list": "function Main(html){return jsoups(html,'#detail > li');}",
-            "title": "function Main(text){return jsoup(text,'a > h3');}",
-            "introduction": "function Main(text){return jsoup(text,'a > dl')+jsoup(text,'dl:nth-child(5)');}",
-            "cover": "function Main(text){return jsoup(text,'div.thumb > img@attr->data-src');}",
-            "url": "function Main(text){return jsoup(text,'li > a@attr->href');}"
-        },
-        {
-            "tab": "少年热血",
-            "request": "http://m.pufei8.com/shaonianrexue/",
-            "list": "function Main(html){return jsoups(html,'#detail > li');}",
-            "title": "function Main(text){return jsoup(text,'a > h3');}",
-            "introduction": "function Main(text){return jsoup(text,'a > dl')+jsoup(text,'dl:nth-child(5)');}",
-            "cover": "function Main(text){return jsoup(text,'div.thumb > img@attr->data-src');}",
-            "url": "function Main(text){return jsoup(text,'li > a@attr->href');}"
-        },
-        {
-            "tab": "少女爱情",
-            "request": "http://m.pufei8.com/shaonvaiqing/",
-            "list": "function Main(html){return jsoups(html,'#detail > li');}",
-            "title": "function Main(text){return jsoup(text,'a > h3');}",
-            "introduction": "function Main(text){return jsoup(text,'a > dl')+jsoup(text,'dl:nth-child(5)');}",
-            "cover": "function Main(text){return jsoup(text,'div.thumb > img@attr->data-src');}",
-            "url": "function Main(text){return jsoup(text,'li > a@attr->href');}"
-        }
-    ]
+  }
 }
