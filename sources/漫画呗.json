@@ -1,12 +1,12 @@
 {
-  "name": "漫画呗(原:漫画堆)(仅支持1.1.5.4+)",
+  "name": "漫画呗(原:漫画堆)",
   "introduction": "可以搜索一些漫画,\nps:为了解密头都大了",
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.6",
-  "versionCode": 8,
+  "versionCode": 9,
   "tab": "漫画",
-  "request": "https://m.manhuabei.com/search/?keywords=[$key]&page=[$page]@charset->UTF-8",
+  "request": "https://m.manhuabei.com/search/?keywords={key}&page={page}@charset->UTF-8",
   "search": {
     "list": "function Main(html){return jsoups(html,'#update_list > div > div');}",
     "title": "function Main(text){return jsoup(text,'div.itemTxt > a');}",

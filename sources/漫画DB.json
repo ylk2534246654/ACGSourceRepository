@@ -1,12 +1,12 @@
 {
-    "name": "漫画DB(仅支持1.1.5.4+)",
+    "name": "漫画DB",
     "introduction": "可以搜索一些漫画",
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.5",
-    "versionCode": 4,
+    "versionCode": 5,
     "tab":"漫画",
-    "request": "https://www.manhuadb.com/search?q=[$key]&p=[$page]@charset->utf-8",
+    "request": "https://www.manhuadb.com/search?q={key}&p={page}@charset->utf-8",
     "search": {
         "list": "function Main(html){return jsoups(html,'div.comic-main-section > div.row > div');}",
         "title": "function Main(text){return jsoup(text,'div > h2 > a');}",

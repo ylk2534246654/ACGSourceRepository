@@ -4,9 +4,9 @@
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.0",
-  "versionCode": 3,
+  "versionCode": 4,
   "tab":"漫画",
-  "request": "https://m.yimmh.com/search?keyword=[$key]",
+  "request": "https://m.yimmh.com/search?keyword={key}",
   "search": {
     "list": "function Main(html){return jsoups(html,'ul.book-list> li');}",
     "title": "function Main(text){return jsoup(text,'p.book-list-info-title');}",

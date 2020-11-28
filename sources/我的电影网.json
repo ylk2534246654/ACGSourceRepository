@@ -4,8 +4,8 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 1,
-    "request": "http://www.wodedy.net/search.php@post->searchword=[$key]@charset->UTF-8",
+    "versionCode": 2,
+    "request": "http://www.wodedy.net/search.php@post->searchword={key}@charset->UTF-8",
     "search": {
         "list": "function Main(html){return jsoups(html,'div.index-area > ul > li');}",
         "title": "function Main(text){return jsoup(text,'a@attr->title');}",

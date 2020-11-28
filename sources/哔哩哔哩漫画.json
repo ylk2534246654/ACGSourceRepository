@@ -4,14 +4,14 @@
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.2",
-  "versionCode": 2,
+  "versionCode": 3,
   "tab":"漫画",
   "auth":{
     "login":"https://passport.bilibili.com/login",
     "verify":"https://m.bilibili.com/space",
     "logged":"function Main(html){if(html.indexOf('的个人空间')!=-1){return true;}else{return false;};}"
   },
-  "request": "https://manga.bilibili.com/twirp/comic.v1.Comic/Search?device=pc&platform=web@post->{\"key_word\":\"[$key]\",\"page_num\":[$page],\"page_size\":9}@charset->UTF-8@header->Content-Type:application/json;charset=UTF-8",
+  "request": "https://manga.bilibili.com/twirp/comic.v1.Comic/Search?device=pc&platform=web@post->{\"key_word\":\"{key}\",\"page_num\":{page},\"page_size\":9}@charset->UTF-8@header->Content-Type:application/json;charset=UTF-8",
   "search": {
     "list": "function Main(html){return jsonPaths(html,'$..list[*]');}",
     "title": "function Main(text){return jsonPath(text,'$.org_title');}",

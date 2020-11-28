@@ -1,12 +1,12 @@
 {
-    "name": "神凑小说网(仅支持1.1.5.5+)",
+    "name": "神凑小说网",
     "introduction": "可以搜索一些轻小说",
 	"developer": "雨夏",
     "mail":"2534246654@qq.com",
 	"versionName": "1.9",
-	"versionCode": 17,
+	"versionCode": 18,
     "tab":"轻小说",
-    "request": "http://www.shencou.com/modules/article/search.php@post->searchtype=articlename selected&searchkey=[$key]&t_btnsearch=搜索@charset->gbk",
+    "request": "http://www.shencou.com/modules/article/search.php@post->searchtype=articlename selected&searchkey={key}&t_btnsearch=搜索@charset->gbk",
     "search": {
         "list": "function Main(html){if(html.indexOf('开始阅读')!=-1){var myArray=new Array();myArray.push(html);return myArray;}return jsoups(html,'#content > table > tbody > tr:gt(0)');}",
         "title": "function Main(text){if(text.indexOf('开始阅读')!=-1){return jsoup(text,'td[valign=middle] > span > a');};return jsoup(text,'a');}",

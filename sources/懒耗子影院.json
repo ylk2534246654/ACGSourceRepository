@@ -4,8 +4,8 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 1,
-    "request": "http://v.looklookb.com.cn/action/search?keyword=[$key]&page=[$page]&limit=10@charset->UTF-8@header->X-Requested-With:XMLHttpRequest",
+    "versionCode": 2,
+    "request": "http://v.looklookb.com.cn/action/search?keyword={key}&page={page}&limit=10@charset->UTF-8@header->X-Requested-With:XMLHttpRequest",
     "search": {
         "list": "function Main(html){return jsonPaths(html,'$..data[*]');}",
         "title": "function Main(text){return jsonPath(text,'$.videoNames');}",

@@ -4,9 +4,9 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 1,
+    "versionCode": 2,
     "tab":"百度云",
-    "request": "http://tieba.baidu.com/f/search/res?ie=utf-8&qw=[$key]%20pan%20baidu%20com%20s&pn=[$page]@charset->GBK",
+    "request": "http://tieba.baidu.com/f/search/res?ie=utf-8&qw={key}%20pan%20baidu%20com%20s&pn={page}@charset->GBK",
     "search": {
         "list": "function Main(html){return jsoups(html,'div.s_post_list > div.s_post');}",
         "title": "function Main(text){return jsoup(text,'span.p_title').replace('回复:','');}",

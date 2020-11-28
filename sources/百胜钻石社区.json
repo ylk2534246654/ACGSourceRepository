@@ -3,8 +3,8 @@
 	"introduction": "可以搜索一些视频(警告：18x)",
 	"developer": "网页",
 	"versionName": "1.0",
-	"versionCode": 1,
-	"request": "https://bszs14.cn/vodsearch/-------------/?wd=[$key]@charset->UTF-8",
+	"versionCode": 2,
+	"request": "https://bszs14.cn/vodsearch/-------------/?wd={key}@charset->UTF-8",
 	"search": {
 		"list": "function Main(html){return jsoups(html,'ul > li.active');}",
 		"title": "function Main(text){return jsoup(text,'div.thumb > a@attr->title');}",

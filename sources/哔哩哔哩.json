@@ -4,13 +4,13 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 1,
+    "versionCode": 2,
     "auth": {
         "login": "https://passport.bilibili.com/login",
         "verify": "https://m.bilibili.com/space",
         "logged": "function Main(html){if(html.indexOf('的个人空间')!=-1){return true;}else{return false;};}"
     },
-    "request": "https://search.bilibili.com/bangumi?keyword=[$key]@header->referer:https://www.bilibili.com@header->user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36",
+    "request": "https://search.bilibili.com/bangumi?keyword={key}@header->referer:https://www.bilibili.com@header->user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36",
     "search": {
         "list": "function Main(html){var json = strmiddle(html,'__INITIAL_STATE__=',';(');return jsonPaths(json,'$..result[*]');}",
         "title": "function Main(text){return jsonPath(text,'$.title');}",

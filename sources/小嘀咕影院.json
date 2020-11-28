@@ -4,8 +4,8 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 1,
-    "request": "http://www.xdg234.com/index.php?m=vod-search-pg-[$page]-wd-[$key].html@charset->utf-8",
+    "versionCode": 2,
+    "request": "http://www.xdg234.com/index.php?m=vod-search-pg-{page}-wd-{key}.html@charset->utf-8",
     "search": {
         "list": "function Main(html){return jsoups(html,'#data_list > li');}",
         "title": "function Main(text){return jsoup(text,'p.sTit > a');}",
