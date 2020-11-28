@@ -4,9 +4,9 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.3",
-    "versionCode": 7,
+    "versionCode": 8,
     "tab": "动漫",
-    "request": "http://www.bimiacg.com/vod/search/wd/{key}/page/{page}/@charset->UTF-8",
+    "request": "http://www.bimiacg.com/vod/search/wd/{key}/page/{page}/@charset->UTF-8@header->User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
     "search": {
         "list": "function Main(html){return jsoups(html,'ul.tab-cont > li');}",
         "title": "function Main(text){return jsoup(text,'a@attr->title');}",
