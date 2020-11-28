@@ -4,7 +4,7 @@
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.0",
-  "versionCode": 4,
+  "versionCode": 3,
   "tab":"动漫",
   "request": "http://www.tldm.net/search.asp@post->searchword={key}&submit=%CB%D1%CB%F7@charset->gb2312@header->Connection: keep-alive",
   "search": {
