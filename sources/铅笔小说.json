@@ -4,9 +4,9 @@
 	"developer": "雨夏",
     "mail":"2534246654@qq.com",
 	"versionName": "1.2",
-	"versionCode": 3,
+	"versionCode": 4,
     "tab":"轻小说",
-    "request": "https://www.x23qb.com/search.php@post->searchkey=[$key]&searchtype=all&page=[$page]@charset->gbk",
+    "request": "https://www.x23qb.com/search.php@post->searchkey={key}&searchtype=all&page={page}@charset->gbk",
     "search": {
         "list": "function Main(html){return jsoups(html,'#sitebox > dl');}",
         "title": "function Main(text){return jsoup(text,'dd > h3 > a');}",

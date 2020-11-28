@@ -1,12 +1,12 @@
 {
-  "name": "酷狗(仅支持1.1.6.1+)",
+  "name": "酷狗[原版]",
   "introduction": "可以搜索一些音乐",
 	"developer": "雨夏",
   "mail":"2534246654@qq.com",
 	"versionName": "1.0",
-	"versionCode": 4,
+	"versionCode": 5,
   "tab":"音乐",
-  "request": "https://music.liuzhijin.cn/@post->input=[$key]&filter=name&type=kugou&page=[$page]@charset->UTF-8@header->x-requested-with:XMLHttpRequest",
+  "request": "https://music.liuzhijin.cn/@post->input={key}&filter=name&type=kugou&page={page}@charset->UTF-8@header->x-requested-with:XMLHttpRequest",
   "search": {
     "list": "function Main(html){return jsonPaths(html,'$..data[*]');}",
     "title": "function Main(text){return jsonPath(text,'$.title');}",
