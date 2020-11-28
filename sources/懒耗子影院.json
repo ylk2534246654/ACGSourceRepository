@@ -1,10 +1,10 @@
 {
-    "name": "懒耗子影院",
+    "name": "懒耗子影院(该网站已关闭)",
     "introduction": "可以搜索一些VIP影视",
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 2,
+    "versionCode": 3,
     "request": "http://v.looklookb.com.cn/action/search?keyword={key}&page={page}&limit=10@charset->UTF-8@header->X-Requested-With:XMLHttpRequest",
     "search": {
         "list": "function Main(html){return jsonPaths(html,'$..data[*]');}",
