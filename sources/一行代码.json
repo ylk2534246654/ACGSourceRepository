@@ -4,8 +4,8 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 1,
-    "request": "https://www.alinecode.com/search?sort=_score&q=[$key]@charset->utf-8@header->Referer:https://www.alinecode.com/@header->Host:www.alinecode.com",
+    "versionCode": 3,
+    "request": "https://www.alinecode.com/search?sort=_score&q={key}@charset->utf-8@header->Referer:https://www.alinecode.com/@header->Host:www.alinecode.com",
     "search": {
         "list": "function Main(html){return jsoups(html,'#alinecode-result-region > div.alinecode-box');}",
         "title": "function Main(text){return jsoup(text,'div.alinecode-box-title');}",

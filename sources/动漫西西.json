@@ -4,9 +4,9 @@
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.0",
-  "versionCode": 2,
+  "versionCode": 3,
   "tab":"百度云",
-  "request": "http://www.dmxixi.com/plus/search.php?keyword=[$key]&PageNo=[$page]@charset->UTF-8",
+  "request": "http://www.dmxixi.com/plus/search.php?keyword={key}&PageNo={page}@charset->UTF-8",
   "search": {
     "list": "function Main(html){return jsoups(html,'#listvod > ul > li');}",
     "title": "function Main(text){return jsoup(text,'div > h2 > a');}",

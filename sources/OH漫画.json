@@ -1,14 +1,14 @@
 {
-    "name": "OH漫画(仅支持1.1.5.4+)",
+    "name": "OH漫画",
     "introduction": "可以搜一些漫画",
     "日常维护心得":"custom内定位'eval(base64',common内定位base64,可以得到底层代码,再根据l.js内的解密方式__cdecrypt进行解密,最终得到C_DATA的密钥",
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "2.1",
-    "versionCode": 13,
+    "versionCode": 14,
     "tab": "漫画",
     "host":"www.ohmanhua.com",
-    "request": "https://www.ohmanhua.com/search?searchString=[$key]&page=[$page]@charset->UTF-8",
+    "request": "https://www.ohmanhua.com/search?searchString={key}&page={page}@charset->UTF-8",
     "search": {
         "list": "function Main(html){return jsoups(html,'div.fed-part-layout > dl');}",
         "title": "function Main(text){return jsoup(text,'dd > h1');}",

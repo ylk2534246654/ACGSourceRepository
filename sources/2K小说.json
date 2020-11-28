@@ -4,10 +4,10 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.2",
-    "versionCode": 3,
+    "versionCode": 4,
     "tab":"小说",
     "host":"m.fpzw.com",
-    "request": "https://m.fpzw.com/modules/article/so.php?searchtype=keywords&searchkey=[$key]@charset->gbk",
+    "request": "https://m.fpzw.com/modules/article/so.php?searchtype=keywords&searchkey={key}@charset->gbk",
     "search": {
         "list": "function Main(html){return jsoups(html,'div.hot_sale');}",
         "title": "function Main(text){return jsoup(text,'a>p.title');}",

@@ -4,9 +4,9 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 1,
+    "versionCode": 2,
     "tab":"百度云",
-    "request": "http://www.slimego.cn/search.html?q=[$key]@charset->UTF-8",
+    "request": "http://www.slimego.cn/search.html?q={key}@charset->UTF-8",
     "search": {
         "list": "function Main(html){return jsoups(html,'div.container > div > div');}",
         "title": "function Main(text){return jsoup(text,'span.link > a');}",

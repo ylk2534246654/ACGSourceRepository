@@ -1,12 +1,12 @@
 {
-  "name": "Biu.Moe(仅支持1.1.6.1+)",
+  "name": "Biu.Moe",
   "introduction": "可以搜索一些音乐直链",
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.0",
-  "versionCode": 3,
+  "versionCode": 4,
   "tab":"音乐",
-  "request": "https://web.biu.moe/index.php?m=&c=Song&a=search&data=[$key]&p=[$page]@charset->UTF-8",
+  "request": "https://web.biu.moe/index.php?m=&c=Song&a=search&data={key}&p={page}@charset->UTF-8",
   "search": {
     "list": "function Main(html){return jsoups(html,'tbody > tr');}",
     "title": "function Main(text){return jsoup(text,'a:nth-child(1)');}",

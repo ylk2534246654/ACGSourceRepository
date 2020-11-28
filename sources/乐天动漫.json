@@ -4,9 +4,9 @@
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.0",
-  "versionCode": 1,
+  "versionCode": 2,
   "tab":"动漫",
-  "request": "http://www.tldm.net/search.asp@post->searchword=[$key]&page=[$page]&submit=%CB%D1%CB%F7@charset->gb2312",
+  "request": "http://www.tldm.net/search.asp@post->searchword={key}&page={page}&submit=%CB%D1%CB%F7@charset->gb2312",
   "search": {
     "list": "function Main(html){return jsoups(html,'div.movie-chrList > ul > li');}",
     "title": "function Main(text){return jsoup(text,'div.cover > a > img@attr->alt');}",

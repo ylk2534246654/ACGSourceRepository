@@ -1,12 +1,12 @@
 {
-    "name": "clicli(仅支持1.1.6.4+)",
+    "name": "clicli",
     "introduction": "可以搜索一些动漫",
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 3,
+    "versionCode": 4,
     "tab": "动漫",
-    "request": "https://api.clicli.us/search/posts?key=[$key]@ip->216.24.184.12",
+    "request": "https://api.clicli.us/search/posts?key={key}@ip->216.24.184.12",
     "search": {
         "list": "function Main(html){return jsonPaths(html,'$..posts[*]');}",
         "title": "function Main(text){return jsonPath(text,'$.title');}",

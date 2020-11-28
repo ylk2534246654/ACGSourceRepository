@@ -5,21 +5,12 @@
     "developer": "雨夏&963***175",
     "mail":"2534246654@qq.com",
     "versionName": "1.2",
-    "versionCode": 3,
+    "versionCode": 4,
     "tab": "漫画",
     "host":"m.90mh.com",
-    "request": "http://m.90mh.com/search/?keywords=[$key]&page=[$page]@charset->UTF-8",
+    "request": "http://m.90mh.com/search/?keywords={key}&page={page}@charset->UTF-8",
     "search": {
         "list": "function Main(html){return jsoups(html,'#update_list > .UpdateList > div');}",
-        "title": "function Main(text){return jsoup(text,'div.itemTxt > a.title');}",
-        "introduction": "function Main(text){return jsoup(text,'a.coll');}",
-        "cover": "function Main(text){return jsoup(text,'div.itemImg > a > mip-img@attr->src');}",
-        "url": "function Main(text){return jsoup(text,'div.itemImg > a@attr->href');}"
-    },
-    "schedule": {
-        "request": "http://m.90mh.com/search/?keywords=[$key]@charset->UTF-8",
-        "tabs": "function Main(html){return jsoups(html,'result');}",
-        "list": "function Main(html){return jsoups(html,'result');}",
         "title": "function Main(text){return jsoup(text,'div.itemTxt > a.title');}",
         "introduction": "function Main(text){return jsoup(text,'a.coll');}",
         "cover": "function Main(text){return jsoup(text,'div.itemImg > a > mip-img@attr->src');}",

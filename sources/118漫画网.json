@@ -1,14 +1,14 @@
 {
     "MyACG": "https://diyyx.wang/app/MyACG.apk",
-    "name": "118漫画网(仅支持1.1.5.4+)",
+    "name": "118漫画网",
     "introduction": "可以搜索一些国漫",
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.5",
-    "versionCode": 8,
+    "versionCode": 9,
     "tab": "漫画",
     "host":"m.ccshwy.com",
-    "request": "http://m.ccshwy.com/statics/search.aspx?key=[$key]&page=[$page]@charset->UTF-8@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
+    "request": "http://m.ccshwy.com/statics/search.aspx?key={key}&page={page}@charset->UTF-8@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
     "search": {
         "list": "function Main(html){return jsoups(html,'#listbody > li');}",
         "title": "function Main(text){return jsoup(text,'a.txtA');}",

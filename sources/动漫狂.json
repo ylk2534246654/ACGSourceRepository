@@ -4,9 +4,9 @@
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.1",
-  "versionCode": 2,
+  "versionCode": 3,
   "tab":"漫画",
-  "request": "https://www.cartoonmad.com/search.html@post->keyword=[$key]&searchtype=all@charset->big5",
+  "request": "https://www.cartoonmad.com/search.html@post->keyword={key}&searchtype=all@charset->big5",
   "search": {
     "list": "function Main(html){return jsoups(html,'tr > td[align=center]');}",
     "title": "function Main(text){return jsoup(text,'a[class=a1]');}",
