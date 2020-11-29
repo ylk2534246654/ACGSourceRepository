@@ -4,7 +4,7 @@
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.6",
-  "versionCode": 19,
+  "versionCode": 20,
   "tab": "漫画",
   "request": "https://m.manhuabei.com/search/?keywords={key}&page={page}@charset->UTF-8@header->referer:https://www.manhuadai.com/",
   "search": {
@@ -52,7 +52,7 @@
       "mode": 3
   },
   "comic": {
-    "list": "loadScript('https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/js/crypto.js');function Main(html){eval(strmiddle(html,'<script>;',';var')+';');eval('var chapterPath'+strmiddle(html,'var chapterPath',';')+';');var str_decrypt = CryptoJS['AES']['decrypt'](chapterImages,CryptoJS['enc']['Utf8']['parse']('KA58ZAQ321oobbG8'), {'iv': CryptoJS['enc']['Utf8']['parse']('A1B2C3DEF1G321o8'),'mode': CryptoJS['mode']['CBC'],'padding': CryptoJS['pad']['Pkcs7']});var string1 = str_decrypt['toString'](CryptoJS['enc']['Utf8']);eval('chapterImages = '+string1['toString']()+';');var arr = [];for (var i = 0 ; i<chapterImages.length; i++){if(chapterImages[i].startsWith('http')){arr.push('https://img01.eshanyao.com/showImage.php?url='+chapterImages[i]);}else{arr.push('https://img01.eshanyao.com/'+chapterPath+chapterImages[i]);}}return arr;};",
+    "list": "loadScript('https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/js/crypto.js');function Main(html){eval('var' + strmiddle(html,'<script>;var',';var')+';');eval('var chapterPath'+strmiddle(html,'var chapterPath',';')+';');var str_decrypt = CryptoJS['AES']['decrypt'](chapterImages,CryptoJS['enc']['Utf8']['parse']('KA58ZAQ321oobbG8'), {'iv': CryptoJS['enc']['Utf8']['parse']('A1B2C3DEF1G321o8'),'mode': CryptoJS['mode']['CBC'],'padding': CryptoJS['pad']['Pkcs7']});var string1 = str_decrypt['toString'](CryptoJS['enc']['Utf8']);eval('chapterImages = '+string1['toString']()+';');var arr = [];for (var i = 0 ; i<chapterImages.length; i++){if(chapterImages[i].startsWith('http')){arr.push('https://img01.eshanyao.com/showImage.php?url='+chapterImages[i]);}else{arr.push('https://img01.eshanyao.com/'+chapterPath+chapterImages[i]);}}return arr;};",
     "url": "function Main(text){return text;}",
     "mode": 3
   },
