@@ -4,9 +4,9 @@
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.6",
-  "versionCode": 13,
+  "versionCode": 12,
   "tab": "漫画",
-  "request": "https://m.manhuabei.com/search/?keywords={key}&page={page}@charset->UTF-8@header->referer: https://www.manhuadai.com/",
+  "request": "https://m.manhuabei.com/search/?keywords={key}&page={page}@charset->UTF-8@header->referer: https://www.manhuadai.com/@header->user-agent: Mozilla/5.0 (Linux; Android 8.0; Pixel 2 Build/OPD3.170816.012) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Mobile Safari/537.36",
   "search": {
     "list": "function Main(html){return jsoups(html,'#update_list > div > div');}",
     "title": "function Main(text){return jsoup(text,'div.itemTxt > a');}",
