@@ -4,14 +4,14 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 5,
+    "versionCode": 6,
     "tab":"游戏",
     "auth":{
         "login":"https://bbs.zdfx.net/member.php?mod=logging&action=login&mobile=2",
         "verify":"https://bbs.zdfx.net/member.php?mod=logging&action=login&mobile=2",
         "logged":"function Main(html){if(html.indexOf('提示信息-终点分享')!=-1){return true;}else{return false;};}"
     },
-    "request": "https://bbs.zdfx.net/forum.php",
+    "request": "https://bbs.zdfx.net/forum.php@header->content-type:application/x-www-form-urlencoded@header->user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36",
     "search": {
         "list": "function Main(html){var formhash = jsoup(html,'[name=formhash]@attr->value');html = httpRequest('https://bbs.zdfx.net/search.php?mod=forum@post->formhash='+formhash+'&srchtxt={key}&searchsubmit=yes@charset->UTF-8@header->content-type:application/x-www-form-urlencoded@header->user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36');return jsoups(html,'#threadlist > ul > li:contains(【)');}",
         "title": "function Main(text){return jsoup(text,'h3.xs3 > a');}",
