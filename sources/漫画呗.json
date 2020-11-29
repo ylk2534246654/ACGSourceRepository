@@ -4,15 +4,28 @@
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.6",
-  "versionCode": 14,
+  "versionCode": 16,
   "tab": "漫画",
-  "request": "https://m.manhuabei.com/search/?keywords={key}&page={page}@charset->UTF-8@header->referer: https://www.manhuadai.com/",
+  "request": "https://m.manhuabei.com/search/?keywords={key}&page={page}@charset->UTF-8@header->referer:https://www.manhuadai.com/@header->User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
   "search": {
     "list": "function Main(html){return jsoups(html,'div.search_con > ul > li');}",
     "title": "function Main(text){return jsoup(text,'p:nth-child(2) > a');}",
     "introduction": "function Main(text){return jsoup(text,'p.newPage');}",
     "cover": "function Main(text){return jsoup(text,'a > img@attr->src');}",
     "url": "function Main(text){return jsoup(text,'p:nth-child(2) > a@attr->href');}"
+  },
+  "detail": {
+    "author": "function Main(html){return jsoup(html,'ul.comic_deCon_liO > li:nth-child(1) > a');}",
+    "introduction": "function Main(html){return jsoup(html,'p.comic_deCon_d');}",
+    "upDate": "function Main(html){return jsoup(html,'span.zj_list_head_dat');}",
+    "catalogs": {
+      "chapter": {
+        "list": "function Main(html){return jsoups(html,'#chapter-list-1 > li');}",
+        "name": "function Main(text){return jsoup(text,'a');}",
+        "url": "function Main(text){return jsoup(text,'a@attr->href');}",
+        "category": 2
+      }
+    }
   },
   "search-android": {
     "list": "function Main(html){return jsoups(html,'#update_list > div > div');}",
@@ -21,7 +34,7 @@
     "cover": "function Main(text){return jsoup(text,'div.itemImg > a > img@attr->src');}",
     "url": "function Main(text){return jsoup(text,'div.itemTxt > a@attr->href');}"
   },
-  "detail": {
+  "detail-android": {
     "author": "function Main(html){return jsoup(html,'div.sub_r.autoHeight > p:nth-child(1)');}",
     "introduction": "function Main(html){return jsoup(html,'#simple-des');}",
     "upDate": "function Main(html){return jsoup(html,'div.sub_r.autoHeight > p:nth-child(5)');}",
