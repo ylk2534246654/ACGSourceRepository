@@ -1,5 +1,5 @@
 {
-  "name": "漫画呗(原:漫画堆)",
+  "name": "漫画呗&漫画堆",
   "introduction": "可以搜索一些漫画,\nps:为了解密头都大了",
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
@@ -7,6 +7,7 @@
   "versionCode": 20,
   "tab": "漫画",
   "request": "https://m.manhuabei.com/search/?keywords={key}&page={page}@charset->UTF-8@header->referer:https://www.manhuadai.com/",
+  //manhuadai
   "search": {
     "list": "function Main(html){return jsoups(html,'div.search_con > ul > li');}",
     "title": "function Main(text){return jsoup(text,'p:nth-child(2) > a');}",
