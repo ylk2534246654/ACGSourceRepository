@@ -4,7 +4,7 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 4,
+    "versionCode": 5,
     "tab":"字幕",
     "auth":{
         "login":"https://bbs.vcb-s.com/member.php?mod=logging&action=login&mobile=2@header->content-type:application/x-www-form-urlencoded@header->user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36",
