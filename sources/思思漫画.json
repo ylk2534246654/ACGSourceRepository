@@ -4,7 +4,7 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 4,
+    "versionCode": 5,
     "tab":"漫画",
     "request": "https://m.sisimanhua.com/search/?keywords={key}@charset->UTF-8",
     "search": {
@@ -30,7 +30,7 @@
   },
   "comic": {
     "list": "function Main(html){var str = strmiddle(html,'<script>;','var chapterPath').replaceAll('\"','\\'');eval(str+';');return chapterImages;};",
-    "url": "function Main(text){return 'https://images.sisimanhua.com'+text;}",
+    "url": "function Main(text){return 'https://res8.sisimanhua.com'+text;}",
     "mode": 3
   }
 }
