@@ -4,7 +4,7 @@
 	"developer": "雨夏",
   	"mail":"2534246654@qq.com",
 	"versionName": "1.0",
-	"versionCode": 4,
+	"versionCode": 5,
 	"tab": "动漫",
 	"request": "http://m.dm190.com/search.asp@post->searchword={key}@charset->gb2312@header->User-Agent:Mozilla/5.0 (Linux; Android 4.4.2; Nexus 4 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Mobile Safari/537.36",
 	"search": {
@@ -28,7 +28,7 @@
 			"list": "function Main(html){return jsoups(html,'div.am-tab-panel');}",
 			"chapter": {
 				"list": "function Main(text){return jsoups(text,'ul.mvlist > li');}",
-				"name": "function Main(text){return jsoup(text,'a@attr->title');}",
+				"name": "function Main(text){return jsoup(text,'a');}",
 				"url": "function Main(text){return jsoup(text,'a@attr->href').replace('http://www.dm530.com/down.php?url=','');}",
 				"category": 3
 			}
