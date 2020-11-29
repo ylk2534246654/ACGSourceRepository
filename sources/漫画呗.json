@@ -4,10 +4,17 @@
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.6",
-  "versionCode": 13,
+  "versionCode": 14,
   "tab": "漫画",
   "request": "https://m.manhuabei.com/search/?keywords={key}&page={page}@charset->UTF-8@header->referer: https://www.manhuadai.com/",
   "search": {
+    "list": "function Main(html){return jsoups(html,'div.search_con > ul > li');}",
+    "title": "function Main(text){return jsoup(text,'p:nth-child(2) > a');}",
+    "introduction": "function Main(text){return jsoup(text,'p.newPage');}",
+    "cover": "function Main(text){return jsoup(text,'a > img@attr->src');}",
+    "url": "function Main(text){return jsoup(text,'p:nth-child(2) > a@attr->href');}"
+  },
+  "search-android": {
     "list": "function Main(html){return jsoups(html,'#update_list > div > div');}",
     "title": "function Main(text){return jsoup(text,'div.itemTxt > a');}",
     "introduction": "function Main(text){return jsoup(text,'div.itemTxt');}",
