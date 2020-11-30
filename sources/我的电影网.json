@@ -4,8 +4,8 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 4,
-    "request": "http://www.wodedy.net/search.php@post->searchword=[key]@charset->UTF-8@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
+    "versionCode": 5,
+    "request": "www.tadedy.com/search.php?searchword=[key]@charset->UTF-8@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
     "search": {
         "list": "function Main(html){return jsoups(html,'div.index-area > ul > li');}",
         "title": "function Main(text){return jsoup(text,'a@attr->title');}",
