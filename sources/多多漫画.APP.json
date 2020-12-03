@@ -1,12 +1,12 @@
 {
-  "name": "多多漫画",
+  "name": "多多漫画APP",
   "introduction": "可以搜索一些漫画",
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.0",
-  "versionCode": 15,
+  "versionCode": 14,
   "tab":"漫画",
-  "request": "https://api.duoduomh.com/comic/search?page={page}@post->keywords={key}@charset->UTF-8",
+  "request": "https://api.duoduomh.1a3.net/app2/comic/search?sort=click&page={page}&keywords={key}@charset->UTF-8",
   "search": {
     "list": "function Main(html){return jsonPaths(html,'$.items.*');}",
     "title": "function Main(text){return jsonPath(text,'$.name');}",
