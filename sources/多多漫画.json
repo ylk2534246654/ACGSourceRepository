@@ -4,7 +4,7 @@
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.0",
-  "versionCode": 15,
+  "versionCode": 16,
   "tab":"漫画",
   "request": "https://api.duoduomh.com/comic/search?page={page}@post->keywords={key}@charset->UTF-8",
   "search": {
@@ -12,17 +12,17 @@
     "title": "function Main(text){return jsonPath(text,'$.name');}",
     "introduction": "function Main(text){return jsonPath(text,'$.author')+jsonPath(text,'$.last_chapter_name');}",
     "cover": "function Main(text){return jsonPath(text,'$.coverUrl');}",
-    "url": "function Main(text){return 'https://api.duoduomh.1a3.net/app2/comic/view?id='+jsonPath(text,'$.id');}"
+    "url": "function Main(text){return 'https://m.duoduomh.com/manhua/'+jsonPath(text,'$.slug');}"
   },
   "detail": {
-    "author": "function Main(html){return jsonPath(html,'$.data.author');}",
-    "introduction": "function Main(html){return jsonPath(html,'$.data.description');}",
-    "upDate": "function Main(html){var timestamp = new Date(Number(jsonPath(html,'$.data.posted_at')) * 1000).toLocaleString().replace(/:\\d{1,2}$/,' ');return timestamp;}",
+    "author": "function Main(html){return jsoup(html,'div.sub_r > p:nth-child(1)');}",
+    "introduction": "function Main(html){return jsoup(html,'p.txtDesc#full-des');}",
+    "upDate": "function Main(html){return jsoup(html,'p.txtItme > span.date');}",
     "catalogs": {
       "chapter": {
-        "list": "function Main(html){return jsonPaths(html,'$.data.chapterGroup..chapters.*');}",
-        "name": "function Main(text){return jsonPath(text,'$.name');}",
-        "url": "function Main(text){return 'https://api.duoduomh.1a3.net/app2/chapter/view?id='+jsonPath(text,'$.id');}",
+        "list": "function Main(html){return jsoups(html,'div.chapter-warp > ul > li');}",
+        "name": "function Main(text){return jsoup(text,'a');}",
+        "url": "function Main(text){return jsoup(text,'a@attr->href');}",
         "category": 2
       }
     }
