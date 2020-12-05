@@ -5,7 +5,7 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "2.1",
-    "versionCode": 14,
+    "versionCode": 15,
     "tab": "漫画",
     "host":"www.ohmanhua.com",
     "request": "https://www.ohmanhua.com/search?searchString={key}&page={page}@charset->UTF-8",
@@ -60,8 +60,8 @@
             "url": "function Main(text){return jsoup(text,'a.fed-list-title@attr->href');}"
         },
         {
-            "tab": "日点击",
-            "request": "https://www.ohmanhua.com/show?orderBy=dailyCount",
+            "tab": "完结漫画",
+            "request": "https://www.cocomanhua.com/show?orderBy=update&status=2",
             "list": "function Main(html){return jsoups(html,'ul.fed-list-info > li');}",
             "title": "function Main(text){return jsoup(text,'a.fed-list-title');}",
             "introduction": "function Main(text){return jsoup(text,'span.fed-list-desc');}",
@@ -69,8 +69,8 @@
             "url": "function Main(text){return jsoup(text,'a.fed-list-title@attr->href');}"
         },
         {
-            "tab": "周点击",
-            "request": "https://www.ohmanhua.com/show?orderBy=weeklyCount",
+            "tab": "穿越漫画",
+            "request": "https://www.cocomanhua.com/show?orderBy=update&mainCategoryId=10129",
             "list": "function Main(html){return jsoups(html,'ul.fed-list-info > li');}",
             "title": "function Main(text){return jsoup(text,'a.fed-list-title');}",
             "introduction": "function Main(text){return jsoup(text,'span.fed-list-desc');}",
@@ -78,8 +78,62 @@
             "url": "function Main(text){return jsoup(text,'a.fed-list-title@attr->href');}"
         },
         {
-            "tab": "月点击",
-            "request": "https://www.ohmanhua.com/show?orderBy=monthlyCount",
+            "tab": "修真漫画",
+            "request": "https://www.cocomanhua.com/show?orderBy=update&mainCategoryId=10133",
+            "list": "function Main(html){return jsoups(html,'ul.fed-list-info > li');}",
+            "title": "function Main(text){return jsoup(text,'a.fed-list-title');}",
+            "introduction": "function Main(text){return jsoup(text,'span.fed-list-desc');}",
+            "cover": "function Main(text){return jsoup(text,'a.fed-list-pics@attr->data-original');}",
+            "url": "function Main(text){return jsoup(text,'a.fed-list-title@attr->href');}"
+        },
+        {
+            "tab": "都市漫画",
+            "request": "https://www.cocomanhua.com/show?orderBy=update&mainCategoryId=10124",
+            "list": "function Main(html){return jsoups(html,'ul.fed-list-info > li');}",
+            "title": "function Main(text){return jsoup(text,'a.fed-list-title');}",
+            "introduction": "function Main(text){return jsoup(text,'span.fed-list-desc');}",
+            "cover": "function Main(text){return jsoup(text,'a.fed-list-pics@attr->data-original');}",
+            "url": "function Main(text){return jsoup(text,'a.fed-list-title@attr->href');}"
+        },
+        {
+            "tab": "都市漫画",
+            "request": "https://www.cocomanhua.com/show?orderBy=update&mainCategoryId=10124",
+            "list": "function Main(html){return jsoups(html,'ul.fed-list-info > li');}",
+            "title": "function Main(text){return jsoup(text,'a.fed-list-title');}",
+            "introduction": "function Main(text){return jsoup(text,'span.fed-list-desc');}",
+            "cover": "function Main(text){return jsoup(text,'a.fed-list-pics@attr->data-original');}",
+            "url": "function Main(text){return jsoup(text,'a.fed-list-title@attr->href');}"
+        },
+        {
+            "tab": "后宫漫画",
+            "request": "https://www.cocomanhua.com/show?orderBy=update&mainCategoryId=10138",
+            "list": "function Main(html){return jsoups(html,'ul.fed-list-info > li');}",
+            "title": "function Main(text){return jsoup(text,'a.fed-list-title');}",
+            "introduction": "function Main(text){return jsoup(text,'span.fed-list-desc');}",
+            "cover": "function Main(text){return jsoup(text,'a.fed-list-pics@attr->data-original');}",
+            "url": "function Main(text){return jsoup(text,'a.fed-list-title@attr->href');}"
+        },
+        {
+            "tab": "重生漫画",
+            "request": "https://www.cocomanhua.com/show?orderBy=update&mainCategoryId=10461",
+            "list": "function Main(html){return jsoups(html,'ul.fed-list-info > li');}",
+            "title": "function Main(text){return jsoup(text,'a.fed-list-title');}",
+            "introduction": "function Main(text){return jsoup(text,'span.fed-list-desc');}",
+            "cover": "function Main(text){return jsoup(text,'a.fed-list-pics@attr->data-original');}",
+            "url": "function Main(text){return jsoup(text,'a.fed-list-title@attr->href');}"
+        },
+        {
+            "tab": "少年漫画",
+            "request": "https://www.cocomanhua.com/show?orderBy=update&mainCategoryId=10321",
+            "list": "function Main(html){return jsoups(html,'ul.fed-list-info > li');}",
+            "title": "function Main(text){return jsoup(text,'a.fed-list-title');}",
+            "introduction": "function Main(text){return jsoup(text,'span.fed-list-desc');}",
+            "cover": "function Main(text){return jsoup(text,'a.fed-list-pics@attr->data-original');}",
+            "url": "function Main(text){return jsoup(text,'a.fed-list-title@attr->href');}"
+        },
+        {
+            "tab": "少女漫画",
+            "request": "https://www.cocomanhua.com/show?orderBy=update&mainCategoryId=10301",
             "list": "function Main(html){return jsoups(html,'ul.fed-list-info > li');}",
             "title": "function Main(text){return jsoup(text,'a.fed-list-title');}",
             "introduction": "function Main(text){return jsoup(text,'span.fed-list-desc');}",
