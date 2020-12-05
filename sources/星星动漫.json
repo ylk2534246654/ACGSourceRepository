@@ -4,7 +4,7 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.3",
-    "versionCode": 5,
+    "versionCode": 6,
     "tab":"动漫",
     "request": "https://www.xinxindm.com/index.php?s=search-index-wd-{key}-sid-1-p-{page}@charset->utf-8@header->x-requested-with:XMLHttpRequest",
     "search": {
@@ -35,5 +35,25 @@
     },
   "video": {
     "url": "function Main(text){if(text.match('^((?!dm\\.1yy0\\.com).)*$')!=null){return text;};return '';}"
-  }
+  },
+  "finds": [
+        {
+            "tab": "最新更新",
+            "request": "https://www.xinxindm.com/fl/ribendongman/",
+            "list": "function Main(html){return jsoups(html,'#content > li');}",
+            "title": "function Main(text){return jsoup(text,'div.title');}",
+            "introduction": "function Main(text){return jsoup(text,'span.note');}",
+            "cover": "function Main(text){return jsoup(text,'a.video-pic@attr->data-original');}",
+            "url": "function Main(text){return jsoup(text,'a.video-pic@attr->href');}"
+        },
+        {
+            "tab": "剧场版",
+            "request": "https://www.xinxindm.com/fl/juchangban/",
+            "list": "function Main(html){return jsoups(html,'#content > li');}",
+            "title": "function Main(text){return jsoup(text,'div.title');}",
+            "introduction": "function Main(text){return jsoup(text,'span.note');}",
+            "cover": "function Main(text){return jsoup(text,'a.video-pic@attr->data-original');}",
+            "url": "function Main(text){return jsoup(text,'a.video-pic@attr->href');}"
+        }
+    ]
 }
