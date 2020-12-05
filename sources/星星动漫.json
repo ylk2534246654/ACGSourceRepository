@@ -11,7 +11,7 @@
         "list": "function Main(html){return jsoups(html,'#content > div');}",
         "title": "function Main(text){return jsoup(text,'div.details-info > ul > li:nth-child(1) > a');}",
         "introduction": "function Main(text){return jsoup(text,'div.details-info > ul > li:nth-child(13) > span.details-content-default');}",
-            "cover": "function Main(text){var url2 = jsoup(text,'a.video-pic@attr->data-original');return url2.substring(url2.lastIndexOf('https'),url2.length);}",
+        "cover": "function Main(text){var url2 = jsoup(text,'a.video-pic@attr->data-original')+'';return url2.substring(url2.lastIndexOf('https'),url2.length);}",
         "url": "function Main(text){return jsoup(text,'div.details-info-min > div > a@attr->href');}"
     },
     "detail": {
@@ -43,7 +43,7 @@
             "list": "function Main(html){return jsoups(html,'#content > li');}",
             "title": "function Main(text){return jsoup(text,'div.title');}",
             "introduction": "function Main(text){return jsoup(text,'span.note');}",
-            "cover": "function Main(text){var url2 = jsoup(text,'a.video-pic@attr->data-original');return url2.substring(url2.lastIndexOf('https'),url2.length);}",
+        "cover": "function Main(text){var url2 = jsoup(text,'a.video-pic@attr->data-original')+'';return url2.substring(url2.lastIndexOf('https'),url2.length);}",
             "url": "function Main(text){return jsoup(text,'a.video-pic@attr->href');}"
         },
         {
@@ -52,7 +52,7 @@
             "list": "function Main(html){return jsoups(html,'#content > li');}",
             "title": "function Main(text){return jsoup(text,'div.title');}",
             "introduction": "function Main(text){return jsoup(text,'span.note');}",
-            "cover": "function Main(text){var url2 = jsoup(text,'a.video-pic@attr->data-original');return url2.substring(url2.lastIndexOf('https'),url2.length);}",
+        "cover": "function Main(text){var url2 = jsoup(text,'a.video-pic@attr->data-original')+'';return url2.substring(url2.lastIndexOf('https'),url2.length);}",
             "url": "function Main(text){return jsoup(text,'a.video-pic@attr->href');}"
         }
     ]
