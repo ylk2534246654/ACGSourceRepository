@@ -4,7 +4,7 @@
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.0",
-  "versionCode": 5,
+  "versionCode": 6,
   "tab":"动漫",
   //失效 http://www.tldm.net
   "request": "http://www.kudm.net/search.asp@post->searchword={key}&submit=%CB%D1%CB%F7@charset->gb2312@header->Content-Type:application/x-www-form-urlencoded@header->User-Agent:Mozilla/5.0 (Linux; Android 8.0; Pixel 2 Build/OPD3.170816.012) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Mobile Safari/537.36",
@@ -31,6 +31,44 @@
         "url": "function Main(text){return jsoup(text,'a@attr->href');}",
         "category": 3
       }
-    }
+    },
+    "finds": [
+        {
+            "tab": "最新更新",
+            "request": "http://www.kudm.net/xinfandongman/",
+            "list": "function Main(html){return jsoups(html,'div.movie-chrList > ul > li');}",
+            "title": "function Main(text){return jsoup(text,'div.cover > a > img@attr->alt');}",
+            "introduction": "function Main(text){return jsoup(text,'div.intro > em:nth-child(3)');}",
+            "cover": "function Main(text){return jsoup(text,'div.cover > a > img@attr->src');}",
+            "url": "function Main(text){return jsoup(text,'div.cover > a@attr->href');}"
+        },
+        {
+            "tab": "校园动漫",
+            "request": "http://www.kudm.net/xiaoyuandongman/",
+            "list": "function Main(html){return jsoups(html,'div.movie-chrList > ul > li');}",
+            "title": "function Main(text){return jsoup(text,'div.cover > a > img@attr->alt');}",
+            "introduction": "function Main(text){return jsoup(text,'div.intro > em:nth-child(3)');}",
+            "cover": "function Main(text){return jsoup(text,'div.cover > a > img@attr->src');}",
+            "url": "function Main(text){return jsoup(text,'div.cover > a@attr->href');}"
+        },
+        {
+            "tab": "后宫动漫",
+            "request": "http://www.kudm.net/hougongdongman/",
+            "list": "function Main(html){return jsoups(html,'div.movie-chrList > ul > li');}",
+            "title": "function Main(text){return jsoup(text,'div.cover > a > img@attr->alt');}",
+            "introduction": "function Main(text){return jsoup(text,'div.intro > em:nth-child(3)');}",
+            "cover": "function Main(text){return jsoup(text,'div.cover > a > img@attr->src');}",
+            "url": "function Main(text){return jsoup(text,'div.cover > a@attr->href');}"
+        },
+        {
+            "tab": "治愈动漫",
+            "request": "http://www.kudm.net/zhiyudongman/",
+            "list": "function Main(html){return jsoups(html,'div.movie-chrList > ul > li');}",
+            "title": "function Main(text){return jsoup(text,'div.cover > a > img@attr->alt');}",
+            "introduction": "function Main(text){return jsoup(text,'div.intro > em:nth-child(3)');}",
+            "cover": "function Main(text){return jsoup(text,'div.cover > a > img@attr->src');}",
+            "url": "function Main(text){return jsoup(text,'div.cover > a@attr->href');}"
+        }
+    ]
   }
 }
