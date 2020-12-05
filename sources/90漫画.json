@@ -55,12 +55,66 @@
             "url": "function Main(text){return jsoup(text,'div.itemImg > a@attr->href');}"
         },
         {
+            "tab": "排行榜",
+            "request": "http://m.90mh.com/rank/",
+            "list": "function Main(html){return jsoups(html,'#topImgCon > div.UpdateList > div.itemBox');}",
+            "title": "function Main(text){return jsoup(text,'div.itemTxt > a.title');}",
+            "introduction": "function Main(text){return jsoup(text,'span.date');}",
+            "cover": "function Main(text){return jsoup(text,'div.itemImg > a > mip-img@attr->src');}",
+            "url": "function Main(text){return jsoup(text,'div.itemImg > a@attr->href');}"
+        },
+        {
             "tab": "内地漫画",
             "request": "http://m.90mh.com/list/guochanmanhua/",
             "list": "function Main(html){return jsoups(html,'#w0 > ul.col_3_1.clearfix > li:nth-child(1) > li');}",
             "title": "function Main(text){return jsoup(text,'a.txtA');}",
             "introduction": "function Main(text){return jsoup(text,'span.info');}",
             "cover": "function Main(text){return jsoup(text,'a.ImgA > mip-img@attr->src');}",
+            "url": "function Main(text){return jsoup(text,'a.ImgA@attr->href');}"
+        },
+        {
+            "tab": "完结漫画",
+            "request": "http://m.90mh.com/list/wanjie/",
+            "list": "function Main(html){return jsoups(html,'li.list-comic');}",
+            "title": "function Main(text){return jsoup(text,'a.txtA');}",
+            "introduction": "function Main(text){return jsoup(text,'span.info');}",
+            "cover": "function Main(text){return jsoup(text,'mip-img@attr->src');}",
+            "url": "function Main(text){return jsoup(text,'a.ImgA@attr->href');}"
+        },
+        {
+            "tab": "都市漫画",
+            "request": "http://m.90mh.com/list/dushi/",
+            "list": "function Main(html){return jsoups(html,'li.list-comic');}",
+            "title": "function Main(text){return jsoup(text,'a.txtA');}",
+            "introduction": "function Main(text){return jsoup(text,'span.info');}",
+            "cover": "function Main(text){return jsoup(text,'mip-img@attr->src');}",
+            "url": "function Main(text){return jsoup(text,'a.ImgA@attr->href');}"
+        },
+        {
+            "tab": "后宫漫画",
+            "request": "http://m.90mh.com/list/hougong/",
+            "list": "function Main(html){return jsoups(html,'li.list-comic');}",
+            "title": "function Main(text){return jsoup(text,'a.txtA');}",
+            "introduction": "function Main(text){return jsoup(text,'span.info');}",
+            "cover": "function Main(text){return jsoup(text,'mip-img@attr->src');}",
+            "url": "function Main(text){return jsoup(text,'a.ImgA@attr->href');}"
+        },
+        {
+            "tab": "穿越漫画",
+            "request": "http://m.90mh.com/list/chuanyue/",
+            "list": "function Main(html){return jsoups(html,'li.list-comic');}",
+            "title": "function Main(text){return jsoup(text,'a.txtA');}",
+            "introduction": "function Main(text){return jsoup(text,'span.info');}",
+            "cover": "function Main(text){return jsoup(text,'mip-img@attr->src');}",
+            "url": "function Main(text){return jsoup(text,'a.ImgA@attr->href');}"
+        },
+        {
+            "tab": "仙侠漫画",
+            "request": "http://m.90mh.com/list/xianxia/",
+            "list": "function Main(html){return jsoups(html,'li.list-comic');}",
+            "title": "function Main(text){return jsoup(text,'a.txtA');}",
+            "introduction": "function Main(text){return jsoup(text,'span.info');}",
+            "cover": "function Main(text){return jsoup(text,'mip-img@attr->src');}",
             "url": "function Main(text){return jsoup(text,'a.ImgA@attr->href');}"
         }
     ]
