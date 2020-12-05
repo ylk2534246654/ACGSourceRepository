@@ -4,13 +4,13 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 3,
+    "versionCode": 4,
     "tab":"动漫",
     "request": "http://m.qiqidongman.com/vod-search-wd-{key}.html@charset->UTF-8@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36",
     "search": {
         "list": "function Main(html){return jsoups(html,'#LIST > li');}",
         "title": "function Main(text){return jsoup(text,'i.tit');}",
-        "introduction": "",
+        "introduction": "function Main(text){return jsoup(text,'p.date');}",
         "cover": "function Main(text){return jsoup(text,'img@attr->data-src');}",
         "url": "function Main(text){return jsoup(text,'a@attr->href')+'@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36';}"
     },
