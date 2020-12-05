@@ -4,7 +4,7 @@
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.0",
-  "versionCode": 2,
+  "versionCode": 3,
   "tab":"动漫",
   "request": "http://www.nicotv.club/vod-search-wd-{key}-p-{page}.html@charset->UTF-8",
   "search": {
@@ -34,5 +34,32 @@
   },
   "video": {
     "url": "function Main(text){if(text.match('^((?!(nicotv.club|kingsnug.cn)).)*$')!=null){return text;};return '';}"
-  }
+  },
+	"finds": [
+		{
+			"tab": "最新更新",
+			"request": "http://www.nicotv.club/video/type3/------addtime.html",
+			"list": "function Main(html){return jsoups(html,'div.container > ul > li');}",
+      "title": "function Main(text){return jsoup(text,'h2 > a');}",
+      "introduction": "function Main(text){return jsoup(text,'h4');}",
+      "cover": "function Main(text){return jsoup(text,'p.image > a > img@attr->data-original');}",
+      "url": "function Main(text){return jsoup(text,'h2 > a@attr->href');}"
+		},{
+			"tab": "后宫动漫",
+			"request": "http://www.nicotv.club/video/type3/%E5%90%8E%E5%AE%AB------addtime.html",
+			"list": "function Main(html){return jsoups(html,'div.container > ul > li');}",
+      "title": "function Main(text){return jsoup(text,'h2 > a');}",
+      "introduction": "function Main(text){return jsoup(text,'h4');}",
+      "cover": "function Main(text){return jsoup(text,'p.image > a > img@attr->data-original');}",
+      "url": "function Main(text){return jsoup(text,'h2 > a@attr->href');}"
+		},{
+			"tab": "校园动漫",
+			"request": "http://www.nicotv.club/video/type3/%E6%A0%A1%E5%9B%AD------addtime.html",
+			"list": "function Main(html){return jsoups(html,'div.container > ul > li');}",
+      "title": "function Main(text){return jsoup(text,'h2 > a');}",
+      "introduction": "function Main(text){return jsoup(text,'h4');}",
+      "cover": "function Main(text){return jsoup(text,'p.image > a > img@attr->data-original');}",
+      "url": "function Main(text){return jsoup(text,'h2 > a@attr->href');}"
+		}
+	]
 }
