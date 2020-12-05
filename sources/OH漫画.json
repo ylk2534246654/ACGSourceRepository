@@ -5,7 +5,7 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "2.1",
-    "versionCode": 15,
+    "versionCode": 16,
     "tab": "漫画",
     "host":"www.ohmanhua.com",
     "request": "https://www.ohmanhua.com/search?searchString={key}&page={page}@charset->UTF-8",
@@ -46,7 +46,7 @@
             "request": "https://www.ohmanhua.com/show?orderBy=update",
             "list": "function Main(html){return jsoups(html,'ul.fed-list-info > li');}",
             "title": "function Main(text){return jsoup(text,'a.fed-list-title');}",
-            "introduction": "function Main(text){return jsoup(text,'span.fed-list-desc');}",
+            "introduction": "function Main(text){return jsoup(text,'span.fed-list-remarks');}",
             "cover": "function Main(text){return jsoup(text,'a.fed-list-pics@attr->data-original');}",
             "url": "function Main(text){return jsoup(text,'a.fed-list-title@attr->href');}"
         },
@@ -55,7 +55,7 @@
             "request": "https://www.ohmanhua.com/show?orderBy=create",
             "list": "function Main(html){return jsoups(html,'ul.fed-list-info > li');}",
             "title": "function Main(text){return jsoup(text,'a.fed-list-title');}",
-            "introduction": "function Main(text){return jsoup(text,'span.fed-list-desc');}",
+            "introduction": "function Main(text){return jsoup(text,'span.fed-list-remarks');}",
             "cover": "function Main(text){return jsoup(text,'a.fed-list-pics@attr->data-original');}",
             "url": "function Main(text){return jsoup(text,'a.fed-list-title@attr->href');}"
         },
@@ -64,7 +64,7 @@
             "request": "https://www.cocomanhua.com/show?orderBy=update&status=2",
             "list": "function Main(html){return jsoups(html,'ul.fed-list-info > li');}",
             "title": "function Main(text){return jsoup(text,'a.fed-list-title');}",
-            "introduction": "function Main(text){return jsoup(text,'span.fed-list-desc');}",
+            "introduction": "function Main(text){return jsoup(text,'span.fed-list-remarks');}",
             "cover": "function Main(text){return jsoup(text,'a.fed-list-pics@attr->data-original');}",
             "url": "function Main(text){return jsoup(text,'a.fed-list-title@attr->href');}"
         },
@@ -73,7 +73,7 @@
             "request": "https://www.cocomanhua.com/show?orderBy=update&mainCategoryId=10129",
             "list": "function Main(html){return jsoups(html,'ul.fed-list-info > li');}",
             "title": "function Main(text){return jsoup(text,'a.fed-list-title');}",
-            "introduction": "function Main(text){return jsoup(text,'span.fed-list-desc');}",
+            "introduction": "function Main(text){return jsoup(text,'span.fed-list-remarks');}",
             "cover": "function Main(text){return jsoup(text,'a.fed-list-pics@attr->data-original');}",
             "url": "function Main(text){return jsoup(text,'a.fed-list-title@attr->href');}"
         },
@@ -82,7 +82,7 @@
             "request": "https://www.cocomanhua.com/show?orderBy=update&mainCategoryId=10133",
             "list": "function Main(html){return jsoups(html,'ul.fed-list-info > li');}",
             "title": "function Main(text){return jsoup(text,'a.fed-list-title');}",
-            "introduction": "function Main(text){return jsoup(text,'span.fed-list-desc');}",
+            "introduction": "function Main(text){return jsoup(text,'span.fed-list-remarks');}",
             "cover": "function Main(text){return jsoup(text,'a.fed-list-pics@attr->data-original');}",
             "url": "function Main(text){return jsoup(text,'a.fed-list-title@attr->href');}"
         },
@@ -91,7 +91,7 @@
             "request": "https://www.cocomanhua.com/show?orderBy=update&mainCategoryId=10124",
             "list": "function Main(html){return jsoups(html,'ul.fed-list-info > li');}",
             "title": "function Main(text){return jsoup(text,'a.fed-list-title');}",
-            "introduction": "function Main(text){return jsoup(text,'span.fed-list-desc');}",
+            "introduction": "function Main(text){return jsoup(text,'span.fed-list-remarks');}",
             "cover": "function Main(text){return jsoup(text,'a.fed-list-pics@attr->data-original');}",
             "url": "function Main(text){return jsoup(text,'a.fed-list-title@attr->href');}"
         },
@@ -100,7 +100,7 @@
             "request": "https://www.cocomanhua.com/show?orderBy=update&mainCategoryId=10124",
             "list": "function Main(html){return jsoups(html,'ul.fed-list-info > li');}",
             "title": "function Main(text){return jsoup(text,'a.fed-list-title');}",
-            "introduction": "function Main(text){return jsoup(text,'span.fed-list-desc');}",
+            "introduction": "function Main(text){return jsoup(text,'span.fed-list-remarks');}",
             "cover": "function Main(text){return jsoup(text,'a.fed-list-pics@attr->data-original');}",
             "url": "function Main(text){return jsoup(text,'a.fed-list-title@attr->href');}"
         },
@@ -109,7 +109,7 @@
             "request": "https://www.cocomanhua.com/show?orderBy=update&mainCategoryId=10138",
             "list": "function Main(html){return jsoups(html,'ul.fed-list-info > li');}",
             "title": "function Main(text){return jsoup(text,'a.fed-list-title');}",
-            "introduction": "function Main(text){return jsoup(text,'span.fed-list-desc');}",
+            "introduction": "function Main(text){return jsoup(text,'span.fed-list-remarks');}",
             "cover": "function Main(text){return jsoup(text,'a.fed-list-pics@attr->data-original');}",
             "url": "function Main(text){return jsoup(text,'a.fed-list-title@attr->href');}"
         },
@@ -118,7 +118,7 @@
             "request": "https://www.cocomanhua.com/show?orderBy=update&mainCategoryId=10461",
             "list": "function Main(html){return jsoups(html,'ul.fed-list-info > li');}",
             "title": "function Main(text){return jsoup(text,'a.fed-list-title');}",
-            "introduction": "function Main(text){return jsoup(text,'span.fed-list-desc');}",
+            "introduction": "function Main(text){return jsoup(text,'span.fed-list-remarks');}",
             "cover": "function Main(text){return jsoup(text,'a.fed-list-pics@attr->data-original');}",
             "url": "function Main(text){return jsoup(text,'a.fed-list-title@attr->href');}"
         },
@@ -127,7 +127,7 @@
             "request": "https://www.cocomanhua.com/show?orderBy=update&mainCategoryId=10321",
             "list": "function Main(html){return jsoups(html,'ul.fed-list-info > li');}",
             "title": "function Main(text){return jsoup(text,'a.fed-list-title');}",
-            "introduction": "function Main(text){return jsoup(text,'span.fed-list-desc');}",
+            "introduction": "function Main(text){return jsoup(text,'span.fed-list-remarks');}",
             "cover": "function Main(text){return jsoup(text,'a.fed-list-pics@attr->data-original');}",
             "url": "function Main(text){return jsoup(text,'a.fed-list-title@attr->href');}"
         },
@@ -136,7 +136,7 @@
             "request": "https://www.cocomanhua.com/show?orderBy=update&mainCategoryId=10301",
             "list": "function Main(html){return jsoups(html,'ul.fed-list-info > li');}",
             "title": "function Main(text){return jsoup(text,'a.fed-list-title');}",
-            "introduction": "function Main(text){return jsoup(text,'span.fed-list-desc');}",
+            "introduction": "function Main(text){return jsoup(text,'span.fed-list-remarks');}",
             "cover": "function Main(text){return jsoup(text,'a.fed-list-pics@attr->data-original');}",
             "url": "function Main(text){return jsoup(text,'a.fed-list-title@attr->href');}"
         }
