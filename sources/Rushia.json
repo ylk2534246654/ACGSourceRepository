@@ -4,7 +4,7 @@
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.8",
-  "versionCode": 14,
+  "versionCode": 15,
   "tab": "动漫",
   "host":"www.rushia.me",
   "request": "https://www.rushia.me/vodsearch/page/{page}/wd/{key}/@charset->UTF-8",
@@ -33,9 +33,9 @@
       "tab": "热门动漫",
       "request": "https://www.rushia.me/vodshow/id/4/",
       "list": "function Main(html){return jsoups(html,'article.bg_cl');}",
-      "title": "function Main(text){return jsoup(text,'div.entry-title > a:matchText').replace('视频','');}",
+      "title": "function Main(text){return jsoup(text,'div.entry-title > a').replace('热门','');}",
       "introduction": "function Main(text){return jsoup(text,'div.entry-summary');}",
-      "cover": "function Main(text){return jsoup(text,'img.scrollLoading@attr->data-url');}",
+      "cover": "function Main(text){return jsoup(text,'a.vo_icon > img@attr->srcset');}",
       "url": "function Main(text){return jsoup(text,'div.entry-title > a@attr->href')}"
     }
   ]
