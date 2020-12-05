@@ -4,7 +4,7 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 6,
+    "versionCode": 7,
     "tab":"动漫",
     "request": "http://m.qiqidongman.com/vod-search-wd-{key}.html@charset->UTF-8@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36",
     "search": {
@@ -45,6 +45,22 @@
         },{
             "tab": "校园动漫",
             "request": "https://m.qiqidongman.com/vod-search-area-%E6%97%A5%E6%9C%AC-actor-%E6%A0%A1%E5%9B%AD.html@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36",
+            "list": "function Main(html){return jsoups(html,'#LIST > li');}",
+            "title": "function Main(text){return jsoup(text,'i.tit');}",
+            "introduction": "function Main(text){return jsoup(text,'p.date');}",
+            "cover": "function Main(text){return jsoup(text,'img@attr->data-src');}",
+            "url": "function Main(text){return jsoup(text,'a@attr->href')+'@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36';}"
+        },{
+            "tab": "后宫动漫",
+            "request": "https://m.qiqidongman.com/vod-search-area-%E6%97%A5%E6%9C%AC-actor-%E5%90%8E%E5%AE%AB.html@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36",
+            "list": "function Main(html){return jsoups(html,'#LIST > li');}",
+            "title": "function Main(text){return jsoup(text,'i.tit');}",
+            "introduction": "function Main(text){return jsoup(text,'p.date');}",
+            "cover": "function Main(text){return jsoup(text,'img@attr->data-src');}",
+            "url": "function Main(text){return jsoup(text,'a@attr->href')+'@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36';}"
+        },{
+            "tab": "治愈动漫",
+            "request": "https://m.qiqidongman.com/vod-search-area-%E6%97%A5%E6%9C%AC-actor-%E6%B2%BB%E6%84%88.html@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36",
             "list": "function Main(html){return jsoups(html,'#LIST > li');}",
             "title": "function Main(text){return jsoup(text,'i.tit');}",
             "introduction": "function Main(text){return jsoup(text,'p.date');}",
