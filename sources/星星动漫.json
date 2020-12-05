@@ -43,7 +43,7 @@
             "list": "function Main(html){return jsoups(html,'#content > li');}",
             "title": "function Main(text){return jsoup(text,'div.title');}",
             "introduction": "function Main(text){return jsoup(text,'span.note');}",
-        "cover": "function Main(text){var url2 = jsoup(text,'a.video-pic@attr->data-original')+'';return url2.substring(url2.lastIndexOf('https'),url2.length);}",
+            "cover": "function Main(text){var url2 = jsoup(text,'a.video-pic@attr->data-original')+'';return url2.substring(url2.lastIndexOf('https'),url2.length);}",
             "url": "function Main(text){return jsoup(text,'a.video-pic@attr->href');}"
         },
         {
@@ -52,7 +52,7 @@
             "list": "function Main(html){return jsoups(html,'#content > li');}",
             "title": "function Main(text){return jsoup(text,'div.title');}",
             "introduction": "function Main(text){return jsoup(text,'span.note');}",
-        "cover": "function Main(text){var url2 = jsoup(text,'a.video-pic@attr->data-original')+'';return url2.substring(url2.lastIndexOf('https'),url2.length);}",
+            "cover": "function Main(text){var url2 = jsoup(text,'a.video-pic@attr->data-original')+'';return url2.substring(url2.lastIndexOf('https'),url2.length);}",
             "url": "function Main(text){return jsoup(text,'a.video-pic@attr->href');}"
         }
     ]
