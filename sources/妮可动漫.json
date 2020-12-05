@@ -4,13 +4,13 @@
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.0",
-  "versionCode": 3,
+  "versionCode": 4,
   "tab":"动漫",
   "request": "http://www.nicotv.club/vod-search-wd-{key}-p-{page}.html@charset->UTF-8",
   "search": {
     "list": "function Main(html){return jsoups(html,'div.container > ul > li');}",
     "title": "function Main(text){return jsoup(text,'h2 > a');}",
-    "introduction": "function Main(text){return jsoup(text,'h4');}",
+    "introduction": "function Main(text){return jsoup(text,'p > a > span');}",
     "cover": "function Main(text){return jsoup(text,'p.image > a > img@attr->data-original');}",
     "url": "function Main(text){return jsoup(text,'h2 > a@attr->href');}"
   },
@@ -41,7 +41,7 @@
 			"request": "http://www.nicotv.club/video/type3/------addtime.html",
 			"list": "function Main(html){return jsoups(html,'div.container > ul > li');}",
       "title": "function Main(text){return jsoup(text,'h2 > a');}",
-      "introduction": "function Main(text){return jsoup(text,'h4');}",
+      "introduction": "function Main(text){return jsoup(text,'p > a > span');}",
       "cover": "function Main(text){return jsoup(text,'p.image > a > img@attr->data-original');}",
       "url": "function Main(text){return jsoup(text,'h2 > a@attr->href');}"
 		},{
@@ -49,7 +49,7 @@
 			"request": "http://www.nicotv.club/video/type3/%E5%90%8E%E5%AE%AB------addtime.html",
 			"list": "function Main(html){return jsoups(html,'div.container > ul > li');}",
       "title": "function Main(text){return jsoup(text,'h2 > a');}",
-      "introduction": "function Main(text){return jsoup(text,'h4');}",
+      "introduction": "function Main(text){return jsoup(text,'p > a > span');}",
       "cover": "function Main(text){return jsoup(text,'p.image > a > img@attr->data-original');}",
       "url": "function Main(text){return jsoup(text,'h2 > a@attr->href');}"
 		},{
@@ -57,7 +57,7 @@
 			"request": "http://www.nicotv.club/video/type3/%E6%A0%A1%E5%9B%AD------addtime.html",
 			"list": "function Main(html){return jsoups(html,'div.container > ul > li');}",
       "title": "function Main(text){return jsoup(text,'h2 > a');}",
-      "introduction": "function Main(text){return jsoup(text,'h4');}",
+      "introduction": "function Main(text){return jsoup(text,'p > a > span');}",
       "cover": "function Main(text){return jsoup(text,'p.image > a > img@attr->data-original');}",
       "url": "function Main(text){return jsoup(text,'h2 > a@attr->href');}"
 		}
