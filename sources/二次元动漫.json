@@ -4,13 +4,13 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 2,
+    "versionCode": 3,
     "tab":"漫画",
     "request": "http://www.2animx.com/search-index?&searchType=1&q={key}&page={page}@charset->UTF-8",
     "search": {
         "list": "function Main(html){return jsoups(html,'ul.liemh.htmls.indliemh > li');}",
         "title": "function Main(text){return jsoup(text,'div[class=tit]');}",
-        "introduction": "",
+        "introduction": "function Main(text){return jsou(text,'a > em');}",
         "cover": "function Main(text){return jsoup(text,'img@attr->src');}",
         "url": "function Main(text){return jsoup(text,'a@attr->href');}"
     },
@@ -32,5 +32,52 @@
         "url": "function Main(text){return text;}",
         "url2": "function Main(text){return jsoup(text,'img[id = ComicPic]@attr->src');}",
         "mode": 1
-    }
+    },
+    "finds": [
+        {
+            "tab": "最新更新",
+            "request": "https://www.2animx.com/index-update",
+            "list": "function Main(html){return jsoups(html,'ul.liemh.htmls.indliemh > li');}",
+            "title": "function Main(text){return jsoup(text,'div[class=tit]');}",
+            "introduction": "function Main(text){return jsou(text,'a > em');}",
+            "cover": "function Main(text){return jsoup(text,'img@attr->src');}",
+            "url": "function Main(text){return jsoup(text,'a@attr->href');}"
+        },
+        {
+            "tab": "完结漫画",
+            "request": "https://www.2animx.com/index-html-status-2",
+            "list": "function Main(html){return jsoups(html,'ul.liemh.htmls.indliemh > li');}",
+            "title": "function Main(text){return jsoup(text,'div[class=tit]');}",
+            "introduction": "function Main(text){return jsou(text,'a > em');}",
+            "cover": "function Main(text){return jsoup(text,'img@attr->src');}",
+            "url": "function Main(text){return jsoup(text,'a@attr->href');}"
+        },
+        {
+            "tab": "魔法漫画",
+            "request": "https://www.2animx.com/index-html-status-0-typeid-32-sort-",
+            "list": "function Main(html){return jsoups(html,'ul.liemh.htmls.indliemh > li');}",
+            "title": "function Main(text){return jsoup(text,'div[class=tit]');}",
+            "introduction": "function Main(text){return jsou(text,'a > em');}",
+            "cover": "function Main(text){return jsoup(text,'img@attr->src');}",
+            "url": "function Main(text){return jsoup(text,'a@attr->href');}"
+        },
+        {
+            "tab": "后宫漫画",
+            "request": "https://www.2animx.com/index-html-status-0-typeid-26-sort-",
+            "list": "function Main(html){return jsoups(html,'ul.liemh.htmls.indliemh > li');}",
+            "title": "function Main(text){return jsoup(text,'div[class=tit]');}",
+            "introduction": "function Main(text){return jsou(text,'a > em');}",
+            "cover": "function Main(text){return jsoup(text,'img@attr->src');}",
+            "url": "function Main(text){return jsoup(text,'a@attr->href');}"
+        },
+        {
+            "tab": "校园漫画",
+            "request": "https://www.2animx.com/index-html-status-0-typeid-19-sort-",
+            "list": "function Main(html){return jsoups(html,'ul.liemh.htmls.indliemh > li');}",
+            "title": "function Main(text){return jsoup(text,'div[class=tit]');}",
+            "introduction": "function Main(text){return jsou(text,'a > em');}",
+            "cover": "function Main(text){return jsoup(text,'img@attr->src');}",
+            "url": "function Main(text){return jsoup(text,'a@attr->href');}"
+        }
+    ]
 }
