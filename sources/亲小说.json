@@ -4,7 +4,7 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 3,
+    "versionCode": 4,
     "tab":"轻小说",
     "request": "https://www.qinxiaoshuo.com/search/{key}/{page}.html",
     "auth":{
@@ -39,5 +39,52 @@
     "novel": {
         "content": "function Main(html){return jsoup(html,'#chapter_content');}",
         "mode": 1
-    }
+    },
+    "finds": [
+        {
+            "tab": "最新更新",
+            "request": "https://www.qinxiaoshuo.com/tag/%E6%97%A5%E8%BD%BB/1.html",
+            "list": "function Main(html){return jsoups(html,'div.box_content > div.book');}",
+            "title": "function Main(text){return jsoup(text,'div.items > h3 > a');}",
+            "introduction": "function Main(text){return jsoup(text,'div.items > div:nth-child(3)');}",
+            "cover": "function Main(text){return jsoup(text,'a > img@attr->src');}",
+            "url": "function Main(text){return jsoup(text,'div.items > h3 > a@attr->href');}"
+        },
+        {
+            "tab": "异世界",
+            "request": "https://www.qinxiaoshuo.com/books/%e6%97%a5%e8%bd%bb/default/1.html?tag=%e5%bc%82%e4%b8%96%e7%95%8c",
+            "list": "function Main(html){return jsoups(html,'div.box_content > div.book');}",
+            "title": "function Main(text){return jsoup(text,'div.items > h3 > a');}",
+            "introduction": "function Main(text){return jsoup(text,'div.items > div:nth-child(3)');}",
+            "cover": "function Main(text){return jsoup(text,'a > img@attr->src');}",
+            "url": "function Main(text){return jsoup(text,'div.items > h3 > a@attr->href');}"
+        },
+        {
+            "tab": "后宫",
+            "request": "https://www.qinxiaoshuo.com/books/%e6%97%a5%e8%bd%bb/default/1.html?tag=%e5%90%8e%e5%ae%ab",
+            "list": "function Main(html){return jsoups(html,'div.box_content > div.book');}",
+            "title": "function Main(text){return jsoup(text,'div.items > h3 > a');}",
+            "introduction": "function Main(text){return jsoup(text,'div.items > div:nth-child(3)');}",
+            "cover": "function Main(text){return jsoup(text,'a > img@attr->src');}",
+            "url": "function Main(text){return jsoup(text,'div.items > h3 > a@attr->href');}"
+        },
+        {
+            "tab": "恋爱",
+            "request": "https://www.qinxiaoshuo.com/books/%e6%97%a5%e8%bd%bb/default/1.html?tag=%e6%81%8b%e7%88%b1",
+            "list": "function Main(html){return jsoups(html,'div.box_content > div.book');}",
+            "title": "function Main(text){return jsoup(text,'div.items > h3 > a');}",
+            "introduction": "function Main(text){return jsoup(text,'div.items > div:nth-child(3)');}",
+            "cover": "function Main(text){return jsoup(text,'a > img@attr->src');}",
+            "url": "function Main(text){return jsoup(text,'div.items > h3 > a@attr->href');}"
+        },
+        {
+            "tab": "校园",
+            "request": "https://www.qinxiaoshuo.com/books/%e6%97%a5%e8%bd%bb/default/1.html?tag=%e6%a0%a1%e5%9b%ad",
+            "list": "function Main(html){return jsoups(html,'div.box_content > div.book');}",
+            "title": "function Main(text){return jsoup(text,'div.items > h3 > a');}",
+            "introduction": "function Main(text){return jsoup(text,'div.items > div:nth-child(3)');}",
+            "cover": "function Main(text){return jsoup(text,'a > img@attr->src');}",
+            "url": "function Main(text){return jsoup(text,'div.items > h3 > a@attr->href');}"
+        }
+    ]
 }
