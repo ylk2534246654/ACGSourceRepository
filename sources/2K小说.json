@@ -4,7 +4,7 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.2",
-    "versionCode": 5,
+    "versionCode": 6,
     "tab":"小说",
     "host":"m.fpzw.com",
     "request": "https://m.fpzw.com/modules/article/so.php?searchtype=keywords&searchkey={key}@charset->gbk",
@@ -31,5 +31,16 @@
     "novel": {
         "content": "function Main(html){return jsoup(html,'#nr1');}",
         "mode": 1
-    }
+    },
+    "finds": [
+        {
+            "tab": "玄幻小说",
+            "request": "https://m.2kxs.com/sort1/",
+            "list": "function Main(html){return jsoups(html,'#main > div');}",
+            "title": "function Main(text){return jsoup(text,'p.title');}",
+            "introduction": "function Main(text){return jsoup(text,'p.review');}",
+            "cover": "function Main(text){return jsoup(text,'img@attr->src');}",
+            "url": "function Main(text){return jsoup(text,'a@attr->href');}"
+        }
+    ]
 }
