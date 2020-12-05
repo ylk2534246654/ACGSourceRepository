@@ -4,7 +4,7 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.3",
-    "versionCode": 7,
+    "versionCode": 5,
     "tab":"动漫",
     "request": "https://www.xinxindm.com/index.php?s=search-index-wd-{key}-sid-1-p-{page}@charset->utf-8@header->x-requested-with:XMLHttpRequest",
     "search": {
@@ -43,7 +43,7 @@
             "list": "function Main(html){return jsoups(html,'#content > li');}",
             "title": "function Main(text){return jsoup(text,'div.title');}",
             "introduction": "function Main(text){return jsoup(text,'span.note');}",
-            "cover": "function Main(text){return jsoup(text,'a.video-pic@attr->original');}",
+            "cover": "function Main(text){return jsoup(text,'a.video-pic@attr->data-original');}",
             "url": "function Main(text){return jsoup(text,'a.video-pic@attr->href');}"
         },
         {
@@ -52,7 +52,7 @@
             "list": "function Main(html){return jsoups(html,'#content > li');}",
             "title": "function Main(text){return jsoup(text,'div.title');}",
             "introduction": "function Main(text){return jsoup(text,'span.note');}",
-            "cover": "function Main(text){return jsoup(text,'a.video-pic@attr->original');}",
+            "cover": "function Main(text){return jsoup(text,'a.video-pic@attr->data-original');}",
             "url": "function Main(text){return jsoup(text,'a.video-pic@attr->href');}"
         }
     ]
