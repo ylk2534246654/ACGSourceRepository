@@ -5,7 +5,7 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode":15,
+    "versionCode":16,
     "tab": "漫画",
     "host":"m.hcs68.com",
     "request": "https://m.hcs68.com/search/?keywords={key}&page={page}@charset->UTF-8",
@@ -31,11 +31,10 @@
             }
         }
     },
-  "comic": {
-    "list": "function Main(html){return jsoups(html,'div.UnderPag > mip-img');};",
-    "url": "function Main(text){return jsoup(text,'mip-img@attr->src');}",
-    "mode": 3
-  },
+    "comic": {
+        "url": "function Main(text){var img = jsoup(text,'mip-link > img@attr->src');if((img+'').length < 1){img = jsoup(text,'mip-link > mip-img:not([style],[width])@attr->src');}if((img+'').length < 1){return jsoups(text,'div.UnderPag > mip-img');}if(img.indexOf('cover')==-1){return img;}return null};",
+        "url2": "function Main(text){return jsoup(text,'mip-img@attr->src');};",        "mode": 3
+    },
     "comic2": {
         "url": "function Main(text){var img = jsoup(text,'mip-link > img@attr->src');if((img+'').length < 1){img = jsoup(text,'mip-link > mip-img:not([style])@attr->src');}if(img.indexOf('cover')==-1){return img;}return null};",
         "mode": 3
