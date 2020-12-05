@@ -1,10 +1,10 @@
 {
-  "name": "AGE动漫-2020/11/30检测无法访问",
+  "name": "AGE动漫",
   "introduction": "可以搜索一些动漫",
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.0",
-  "versionCode": 3,
+  "versionCode": 4,
   "tab": "动漫",
   "host":"www.agefans.tv",
   "request": "https://www.agefans.net/search?&query={key}&page={page}",
