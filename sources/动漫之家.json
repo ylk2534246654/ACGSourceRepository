@@ -4,7 +4,7 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.1",
-    "versionCode": 3,
+    "versionCode": 4,
     "tab": "漫画",
     "request": "https://m.dmzj.com/search/{key}.html@charset->UTF-8",
     "search": {
@@ -42,6 +42,69 @@
             "introduction": "function Main(text){return jsoup(text,'div.itemTxt > p:nth-child(4)');}",
             "cover": "function Main(text){return jsoup(text,'div.itemImg > a > img@attr->src')+'@header->Referer:'+'https://m.dmzj.com/';}",
             "url": "function Main(text){return jsoup(text,'div.itemTxt > a@attr->href');}"
+        },
+        {
+            "tab": "完结漫画",
+            "request": "https://m.dmzj.com/classify/0-0-2-0-0-0.json",
+            "list": "function Main(html){return jsonPaths(html,'$.*');}",
+            "title": "function Main(text){return jsonPath(text,'$.name');}",
+            "introduction": "function Main(text){return jsonPath(text,'$.authors');}",
+            "cover": "function Main(text){return 'https://images.dmzj.com/'+jsonPath(text,'$.cover')+'@header->Referer:'+'https://m.dmzj.com/';}",
+            "url": "function Main(text){return 'https://m.dmzj.com/info/'+jsonPath(text,'$.comic_py')+'.html';}"
+        },
+        {
+            "tab": "魔法漫画",
+            "request": "https://m.dmzj.com/classify/7-0-0-0-0-0.json",
+            "list": "function Main(html){return jsonPaths(html,'$.*');}",
+            "title": "function Main(text){return jsonPath(text,'$.name');}",
+            "introduction": "function Main(text){return jsonPath(text,'$.authors');}",
+            "cover": "function Main(text){return 'https://images.dmzj.com/'+jsonPath(text,'$.cover')+'@header->Referer:'+'https://m.dmzj.com/';}",
+            "url": "function Main(text){return 'https://m.dmzj.com/info/'+jsonPath(text,'$.comic_py')+'.html';}"
+        },
+        {
+            "tab": "校园漫画",
+            "request": "https://m.dmzj.com/classify/8-0-0-0-0-0.json",
+            "list": "function Main(html){return jsonPaths(html,'$.*');}",
+            "title": "function Main(text){return jsonPath(text,'$.name');}",
+            "introduction": "function Main(text){return jsonPath(text,'$.authors');}",
+            "cover": "function Main(text){return 'https://images.dmzj.com/'+jsonPath(text,'$.cover')+'@header->Referer:'+'https://m.dmzj.com/';}",
+            "url": "function Main(text){return 'https://m.dmzj.com/info/'+jsonPath(text,'$.comic_py')+'.html';}"
+        },
+        {
+            "tab": "后宫漫画",
+            "request": "https://m.dmzj.com/classify/15-0-0-0-0-0.json",
+            "list": "function Main(html){return jsonPaths(html,'$.*');}",
+            "title": "function Main(text){return jsonPath(text,'$.name');}",
+            "introduction": "function Main(text){return jsonPath(text,'$.authors');}",
+            "cover": "function Main(text){return 'https://images.dmzj.com/'+jsonPath(text,'$.cover')+'@header->Referer:'+'https://m.dmzj.com/';}",
+            "url": "function Main(text){return 'https://m.dmzj.com/info/'+jsonPath(text,'$.comic_py')+'.html';}"
+        },
+        {
+            "tab": "治愈漫画",
+            "request": "https://m.dmzj.com/classify/17-0-0-0-0-0.json",
+            "list": "function Main(html){return jsonPaths(html,'$.*');}",
+            "title": "function Main(text){return jsonPath(text,'$.name');}",
+            "introduction": "function Main(text){return jsonPath(text,'$.authors');}",
+            "cover": "function Main(text){return 'https://images.dmzj.com/'+jsonPath(text,'$.cover')+'@header->Referer:'+'https://m.dmzj.com/';}",
+            "url": "function Main(text){return 'https://m.dmzj.com/info/'+jsonPath(text,'$.comic_py')+'.html';}"
+        },
+        {
+            "tab": "武侠漫画",
+            "request": "https://m.dmzj.com/classify/18-0-0-0-0-0.json",
+            "list": "function Main(html){return jsonPaths(html,'$.*');}",
+            "title": "function Main(text){return jsonPath(text,'$.name');}",
+            "introduction": "function Main(text){return jsonPath(text,'$.authors');}",
+            "cover": "function Main(text){return 'https://images.dmzj.com/'+jsonPath(text,'$.cover')+'@header->Referer:'+'https://m.dmzj.com/';}",
+            "url": "function Main(text){return 'https://m.dmzj.com/info/'+jsonPath(text,'$.comic_py')+'.html';}"
+        },
+        {
+            "tab": "轻小说改",
+            "request": "https://m.dmzj.com/classify/22-0-0-0-0-0.json",
+            "list": "function Main(html){return jsonPaths(html,'$.*');}",
+            "title": "function Main(text){return jsonPath(text,'$.name');}",
+            "introduction": "function Main(text){return jsonPath(text,'$.authors');}",
+            "cover": "function Main(text){return 'https://images.dmzj.com/'+jsonPath(text,'$.cover')+'@header->Referer:'+'https://m.dmzj.com/';}",
+            "url": "function Main(text){return 'https://m.dmzj.com/info/'+jsonPath(text,'$.comic_py')+'.html';}"
         },
         {
             "tab": "人气榜",
