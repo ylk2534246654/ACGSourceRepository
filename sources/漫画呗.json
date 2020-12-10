@@ -4,9 +4,9 @@
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.6",
-  "versionCode": 22,
+  "versionCode": 23,
   "tab": "漫画",
-  "request": "https://m.manhuabei.com/search/?keywords={key}&page={page}@charset->UTF-8@header->referer:https://www.manhuadai.com/",
+  "request": "https://m.manhuadai.com/search/?keywords={key}&page={page}@charset->UTF-8@header->referer:https://www.manhuadai.com/",
   //manhuadai
   "search": {
     "list": "function Main(html){return jsoups(html,'div.search_con > ul > li');}",
