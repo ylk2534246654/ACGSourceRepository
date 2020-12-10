@@ -4,7 +4,7 @@
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.6",
-  "versionCode": 24,
+  "versionCode": 25,
   "tab": "漫画",
   "request": "https://m.manhuadai.com/search/?keywords={key}&page={page}@charset->UTF-8@header->referer:https://www.manhuadai.com/",
   //manhuadai
@@ -16,9 +16,9 @@
     "url": "function Main(text){return jsoup(text,'div.itemTxt > a@attr->href');}"
   },
   "detail": {
-    "author": "function Main(html){return jsoup(html,'ul.comic_deCon_liO > li:nth-child(1) > a');}",
-    "introduction": "function Main(html){return jsoup(html,'p.comic_deCon_d');}",
-    "upDate": "function Main(html){return jsoup(html,'span.zj_list_head_dat');}",
+    "author": "function Main(html){return jsoup(html,'div.sub_r > p:nth-child(1)');}",
+    "introduction": "function Main(html){return jsoup(html,'#simple-des');}",
+    "upDate": "function Main(html){return jsoup(html,'span.date');}",
     "catalogs": {
       "chapter": {
         "list": "function Main(html){return jsoups(html,'#chapter-list-1 > li');}",
