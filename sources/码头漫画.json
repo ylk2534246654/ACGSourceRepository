@@ -32,7 +32,7 @@
         }
     },
     "comic": {
-        "url": "function Main(text){var img = jsoup(text,'mip-link > img@attr->src');if((img+'').length < 1){return jsoups(text,'div.UnderPag > mip-img');}if((img+'').length < 1){img = jsoup(text,'mip-link > mip-img:not([style],[width])@attr->src');}if(img.indexOf('cover')==-1){return img;}return null};",
+        "url": "function Main(text){var img = jsoup(text,'mip-link > img@attr->src');if((img+'').length < 1){var img2 = jsoups(text,'div.UnderPag > mip-img');if(img2.length>1){return img2;}};if((img+'').length < 1){img = jsoup(text,'div:not([style]) > mip-link > mip-img:not([style],[width])@attr->src');}if(img.indexOf('cover')==-1){return img;}return null};",
         "url2": "function Main(text){return jsoup(text,'mip-img@attr->src');};",        
         "mode": 3
     },
