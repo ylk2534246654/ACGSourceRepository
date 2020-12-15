@@ -1,0 +1,38 @@
+{
+    "name": "六漫画",
+    "introduction": "可以搜索一些漫画",
+    "developer": "雨夏",
+    "mail": "2534246654@qq.com",
+    "versionName": "1.0",
+    "versionCode": 1,
+    "tab": "漫画",
+    "host": "m.6mh7.com",
+    "request": "http://m.6mh7.com/search?keyword={key}",
+    "search": {
+        "list": "function Main(html){return jsoups(html,'#__layout > div > div > div.search-result > ul > a');}",
+        "title": "function Main(html){return jsoup(html,'div > h2');}",
+        "introduction": "function Main(html){return jsoup(html,'div > p:nth-child(5)');}",
+        "cover": "function Main(html){return jsoup(html,'li > img@attr->src');}",
+        "url": "function Main(html){return jsoup(html,'a@attr->href');}"
+    },
+    "detail": {
+        "author": "",
+        "introduction": "",
+        "upDate": "",
+        "reverseOrder": true,
+        "catalogs": {
+            "chapter": {
+                "list": "",
+                "name": "",
+                "url": "",
+                "category": 2
+            }
+        }
+    },
+    "comic": {
+        "list": "",
+        "url": "",
+        "url2": "",
+        "mode": 3
+    }
+}
