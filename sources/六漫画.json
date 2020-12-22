@@ -4,7 +4,7 @@
     "developer": "雨夏",
     "mail": "2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 3,
+    "versionCode": 4,
     "tab": "漫画",
     "host": "m.6mh7.com",
     "request": "http://m.6mh7.com/search?keyword={key}",
@@ -20,7 +20,7 @@
         "introduction": "function Main(html){return jsoup(html,'p.introduction');}",
         "upDate": "",
         "reverseOrder": true,
-        "catalog_url": "function Main(html){return 'http://www.6mh7.com/bookchapter/@post->id=jsoup(html,'#zhankai@attr->data-id')&id2=1';}",
+        "catalog_url": "function Main(html){return 'http://www.6mh7.com/bookchapter/@post->id=jsoup(html,'dd.gengduo_dt1@attr->data-id')&id2=1';}",
         "catalogs": {
             "chapter": {
                 "list": "function Main(html){return jsonPaths(html);}",
