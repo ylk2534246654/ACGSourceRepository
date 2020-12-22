@@ -4,7 +4,7 @@
     "developer": "雨夏",
     "mail": "2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 1,
+    "versionCode": 2,
     "tab": "漫画",
     "host": "m.6mh7.com",
     "request": "http://m.6mh7.com/search?keyword={key}",
@@ -17,22 +17,26 @@
     },
     "detail": {
         "author": "",
-        "introduction": "",
+        "introduction": "function Main(html){return jsoup(html,'p.introduction');}",
         "upDate": "",
         "reverseOrder": true,
+        "tabs": {
+            "list": "function Main(html){return jsoups(html,'div.detail_nav > ul > li');}",
+            "name": "function Main(text){return jsoup(text,'li');}"
+        },
         "catalogs": {
+            "list": "function Main(html){return jsoups(html,'dl.cartoon-directory:gt(0)');}",
             "chapter": {
-                "list": "",
-                "name": "",
-                "url": "",
+                "list": "function Main(html){return jsoups(html,'div.chapter-list > a');}",
+                "name": "function Main(html){return jsoup(html,'a');}",
+                "url": "function Main(html){return jsoup(html,'a@attr->href');}",
                 "category": 2
             }
         }
     },
     "comic": {
-        "list": "",
-        "url": "",
-        "url2": "",
+        "list": "function Main(html){eval('var imgs = \\''+strmiddle(html,'origin|','\\,'));return imgs;}",
+        "url": "function Main(html){return 'https://p.pstatp.com/origin/'+html;}",
         "mode": 3
     }
 }
