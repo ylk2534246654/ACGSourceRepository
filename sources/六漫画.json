@@ -4,7 +4,7 @@
     "developer": "雨夏",
     "mail": "2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 7,
+    "versionCode": 8,
     "tab": "漫画",
     "host": "m.6mh7.com",
     "request": "http://m.6mh7.com/search?keyword={key}",
@@ -25,7 +25,7 @@
             "chapter": {
                 "list": "function Main(html){return jsonPaths(html,'$.*');}",
                 "name": "function Main(html){return jsonPath(html,'$.chaptername');}",
-                "url": "function Main(html){return 'http://m.6mh7.com/'+id+'/'+jsonPath(html,'$.chapterid');}",
+                "url": "function Main(html){log(id);return 'http://m.6mh7.com/'+id+'/'+jsonPath(html,'$.chapterid');}",
                 "category": 2
             }
         }
