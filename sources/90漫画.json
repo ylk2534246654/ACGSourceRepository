@@ -5,7 +5,7 @@
     "developer": "雨夏&963***175",
     "mail":"2534246654@qq.com",
     "versionName": "1.2",
-    "versionCode": 5,
+    "versionCode": 6,
     "tab": "漫画",
     "host":"m.90mh.com",
     "request": "http://m.90mh.com/search/?keywords={key}&page={page}@charset->UTF-8",
@@ -30,7 +30,7 @@
         }
     },
     "comic": {
-        "list": "function Main(html){var total = strmiddle(html,'k_total\" class=\"curPage\">','<');var murl = getURL().replace('\\.html','');var obj= [];for(var i =1;i<total;i++){obj.push(murl+'-'+i+'\\.html');};return obj;}",
+        "list": "function Main(html){var total = strmiddle(html,'k_total\" class=\"curPage\">','<');var murl = getURL().replace('\\.html','');var obj= [];for(var i =1;i<total+1;i++){obj.push(murl+'-'+i+'\\.html');};return obj;}",
         "url": "function Main(text){return text}",
         "url2": "function Main(text){return jsoup(text,'mip-link > mip-img@attr->src');}",
         "mode": 3
