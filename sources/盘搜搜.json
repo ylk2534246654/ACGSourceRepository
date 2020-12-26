@@ -4,7 +4,7 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 17,
+    "versionCode": 18,
     "tab":"百度云",
     "request": "https://mso.pansoso.com/zh/{key}_{page}@charset->UTF-8@header->Content-Type:application/x-www-form-urlencoded;charset=UTF-8@header->user-agent:Mozilla/5.0 (Linux; Android 4.4.2; Nexus 4 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36",
     "search": {
@@ -12,11 +12,11 @@
         "title": "function Main(text){return jsoup(text,'div > h2');}",
         "introduction": "function Main(text){return jsoup(text,'div > div');}",
         "cover": "https://dss1.bdstatic.com/6OF1bjeh1BF3odCf/it/u=634730535,1479987612&fm=74&app=80&f=PNG",
-        "url": "function Main(text){return jsoup(text,'a@attr->href')+'@header->Content-Type:application/x-www-form-urlencoded;charset=UTF-8@header->user-agent:Mozilla/5.0 (Linux; Android 4.4.2; Nexus 4 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36';}"
+        "url": "function Main(text){return jsoup(text,'#down_button_link@attr->href')+'@header->Content-Type:application/x-www-form-urlencoded;charset=UTF-8@header->user-agent:Mozilla/5.0 (Linux; Android 4.4.2; Nexus 4 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36';}"
     },
     //链接解析
     "url": {
         //获取页面内链接
-        "url": "function Main(text){var data = httpRequest(jsoup(text,'#down_button_link@attr->href')+'@header->Content-Type:application/x-www-form-urlencoded;charset=UTF-8@header->user-agent:Mozilla/5.0 (Linux; Android 4.4.2; Nexus 4 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36@header->Referer:https://mso.pansoso.com');var key;if(data.indexOf('提取码')!=-1){key = '@js->javascript:document.querySelector(\"input[type=text]\").value = \"'+strmiddle(data,'提取码∶','<')+'\"';}return jsoup(data,'div.file > p > a@attr->href')+key;}"
+        "url": "function Main(text){var data = httpRequest(jsoup(text,'div.url > a@attr->href')+'@header->Content-Type:application/x-www-form-urlencoded;charset=UTF-8@header->user-agent:Mozilla/5.0 (Linux; Android 4.4.2; Nexus 4 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36@header->Referer:https://mso.pansoso.com');var key;if(data.indexOf('提取码')!=-1){key = '@js->javascript:document.querySelector(\"input[type=text]\").value = \"'+strmiddle(data,'提取码∶','<')+'\"';}return jsoup(data,'div.file > p > a@attr->href')+key;}"
     }
 }
