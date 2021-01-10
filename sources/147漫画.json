@@ -5,7 +5,7 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode":23,
+    "versionCode":24,
     "tab": "漫画",
     "host":"m.i2356.com",
     "request": "https://m.i2356.com/search/?keywords={key}@charset->UTF-8@header->user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
@@ -31,7 +31,7 @@
         }
     },
     "comic": {
-        "url": "function Main(text){var img = jsoup(text,'mip-link > img@attr->src');if((img+'').length < 1){img = jsoup(text,'div > mip-img@attr->src');}if((img+'').length < 1){var img2 = jsoups(text,'div.UnderPag > mip-img');if(img2.length>1){return img2;}};if((img+'').length < 1){img = jsoup(text,'div:not([style]) > mip-link > mip-img:not([style],[width])@attr->src');}if(img.indexOf('cover')==-1){return img;}return null};",
+        "url": "function Main(text){var img = jsoup(text,'mip-link > img@attr->src');if((img+'').length < 1){img = jsoup(text,'mip-link > mip-img@attr->src');}if((img+'').length < 1){var img2 = jsoups(text,'div.UnderPag > mip-img');if(img2.length>1){return img2;}};if((img+'').length < 1){img = jsoup(text,'div:not([style]) > mip-link > mip-img:not([style],[width])@attr->src');}if(img.indexOf('cover')==-1){return img;}return null};",
         "url2": "function Main(text){return jsoup(text,'mip-img@attr->src');};",
         "mode": 3
     },
