@@ -4,7 +4,7 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 5,
+    "versionCode": 6,
     "tab": "动漫",
     "request": "https://isldm.com/vodsearch/{key}----------{page}---/@charset->utf-8@header->User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
     "search": {
@@ -12,12 +12,12 @@
         "title": "function Main(text){return jsoup(text,'div > div.headline.clearfix > a');}",
         "introduction": "function Main(text){return jsoup(text,'div > div.des.hide');}",
         "cover": "function Main(text){return jsoup(text,'a > div > div.lazy-img > img@attr->data-echo');}",
-        "url": "function Main(text){return jsoup(text,'div > div.headline.clearfix > a@attr->href')+'@header->User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36';}"
+        "url": "function Main(text){return jsoup(text,'div > div.headline.clearfix > a@attr->href');}"
     },
     "detail": {
         "author": "function Main(html){return jsoup(html,'div.drama-data > div:nth-child(1) > label');}",
-        "introduction": "function Main(html){return jsoup(html,'div.drama-data > div:nth-child(5) > label');}",
-        "upDate": "function Main(html){return jsoup(html,'div.drama-data > div:nth-child(4) > label:nth-child(2)');}",
+        "introduction": "function Main(html){return jsoup(html,'div.intro-in');}",
+        "upDate": "function Main(html){return jsoup(html,'div.updata');}",
         "catalogs": {
             "chapter": {
                 "list": "function Main(text){return jsoups(text,'div.v_list > ul > li');}",
