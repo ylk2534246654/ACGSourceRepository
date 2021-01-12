@@ -4,7 +4,7 @@
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.1",
-  "versionCode": 8,
+  "versionCode": 9,
   "tab":"漫画",
   "request": "http://m.buka.cn/search/ajax_search@post->count=15&key={key}&start={page}@charset->UTF-8",
   "search": {
@@ -20,7 +20,7 @@
     "upDate": "function Main(html){return jsoup(html,'span.manga-episodes_text').replace(':','');}",
     "catalogs": {
       "chapter": {
-        "list": "function Main(html){return jsoups(html,'div.epsbox > a');}",
+        "list": "function Main(html){return jsoups(html,'div.chapter-center> a');}",
         "name": "function Main(text){return jsoup(text,'a');}",
         "url": "function Main(text){return jsoup(text,'a@attr->href');}",
         "category": 2
