@@ -1,10 +1,10 @@
 {
-  "name": "动漫狂",
+  "name": "动漫狂-2021/01/12检测无法访问",
   "introduction": "可以搜索一些漫画",
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.1",
-  "versionCode": 3,
+  "versionCode": 4,
   "tab":"漫画",
   "request": "https://www.cartoonmad.com/search.html@post->keyword={key}&searchtype=all@charset->big5",
   "search": {
