@@ -4,7 +4,7 @@
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.1",
-  "versionCode": 6,
+  "versionCode": 7,
   "tab":"漫画",
   "request": "https://www.cartoonmad.com/search.html@post->keyword={key}&searchtype=all@charset->big5@header->user-agent:null",
   "search": {
@@ -12,7 +12,7 @@
     "title": "function Main(text){return jsoup(text,'a[class=a1]');}",
     "introduction": "",
     "cover": "function Main(text){return jsoup(text,'td > a > img@attr->src');}",
-    "url": "function Main(text){return jsoup(text,'a[class=a1]@attr->href');}"
+    "url": "function Main(text){return jsoup(text,'a[class=a1]@attr->href')+'@header->user-agent:null';}"
   },
   "detail": {
     "author": "function Main(html){return jsoup(html,'table > tbody > tr:nth-child(2) > td[align = center] > table:nth-child(1) > tbody > tr:nth-child(5) > td').replace('原創作者：','');}",
@@ -22,7 +22,7 @@
       "chapter": {
         "list": "function Main(html){return jsoups(html,'fieldset[id=info] > table > tbody > tr > td');}",
         "name": "function Main(text){return jsoup(text,'a');}",
-        "url": "function Main(text){return jsoup(text,'a@attr->href')+'@header->Referer:'+getURL();}",
+        "url": "function Main(text){return jsoup(text,'a@attr->href')+'@header->user-agent:null@header->Referer:'+getURL();}",
         "category": 2
       }
     }
