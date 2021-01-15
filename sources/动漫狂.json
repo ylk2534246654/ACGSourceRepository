@@ -4,7 +4,7 @@
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.1",
-  "versionCode": 10,
+  "versionCode": 11,
   "tab":"漫画",
   "request": "https://www.cartoonmad.com/search.html@post->keyword={key}&searchtype=all@charset->big5@header->user-agent:null",
   "search": {
@@ -20,7 +20,7 @@
     "upDate": "function Main(html){return jsoup(html,'tbody > tr:nth-child(4) > td > table > tbody > tr:nth-child(1) > td:nth-child(2) > b > font');}",
     "catalogs": {
       "chapter": {
-        "list": "function Main(html){return jsoups(html,' table > tbody > tr:nth-child(2) > td:nth-child(2) > table:nth-child(3) > tbody > tr > td > fieldset > table > tbody > tr > td');}",
+        "list": "function Main(html){return jsoups(html,' table > tbody > tr:nth-child(2) > td:nth-child(2) > table:nth-child(3) > tbody > tr > td > fieldset > table > tbody > tr > td > a');}",
         "name": "function Main(text){return jsoup(text,'a');}",
         "url": "function Main(text){return jsoup(text,'a@attr->href')+'@header->user-agent:null@header->Referer:'+getURL();}",
         "category": 2
