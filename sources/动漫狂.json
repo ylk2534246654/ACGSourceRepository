@@ -4,7 +4,7 @@
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.1",
-  "versionCode": 8,
+  "versionCode": 9,
   "tab":"漫画",
   "request": "https://www.cartoonmad.com/search.html@post->keyword={key}&searchtype=all@charset->big5@header->user-agent:null",
   "search": {
@@ -28,7 +28,7 @@
     }
   },
   "comic": {
-    "list": "function Main(html){var file=strmiddle(html,'file=','001');var endid=strmiddle(jsoup(html,'select > option:last-child'),'第','頁');var obj= [];for(var i =1;i<=endid;i++){ var num = i;var n=3;var a = (Array(n).join(0) + num).slice(-n);obj.push('https://www.cartoonmad.com/comic/comicpic.asp?file='+file+a);};return obj;}",
+    "list": "function Main(html){var file=strmiddle(html,'file=','001\"');var endid=strmiddle(jsoup(html,'select > option:last-child'),'第','頁');var obj= [];for(var i =1;i<=endid;i++){ var num = i;var n=3;var a = (Array(n).join(0) + num).slice(-n);obj.push('https://www.cartoonmad.com/comic/comicpic.asp?file='+file+a);};return obj;}",
     "url": "function Main(text){return text;}",
     "mode": 3
   }
