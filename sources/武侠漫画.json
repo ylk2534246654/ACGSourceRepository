@@ -38,7 +38,7 @@
     "finds": [
         {
             "tab": "最新更新",
-            "request": "https://m.i2356.com/update/",
+            "request": "https://m.wuxiamh.com/update/",
             "list": "function Main(html){return jsoups(html,'div.UpdateList > div');}",
             "title": "function Main(text){return jsoup(text,'div.itemTxt > a');}",
             "introduction": "function Main(text){return jsoup(text,'span.date');}",
@@ -47,7 +47,7 @@
         },
         {
             "tab": "排行榜",
-            "request": "https://m.i2356.com/rank/",
+            "request": "https://m.wuxiamh.com/rank/",
             "list": "function Main(html){return jsoups(html,'#topImgCon > div > div');}",
             "title": "function Main(text){return jsoup(text,'div.itemTxt > a');}",
             "introduction": "function Main(text){return jsoup(text,'span.date');}",
@@ -56,7 +56,7 @@
         },
         {
             "tab": "完结漫画",
-            "request": "https://m.i2356.com/list/wanjie/",
+            "request": "https://m.wuxiamh.com/list/wanjie/",
             "list": "function Main(html){return jsoups(html,'li.list-comic');}",
             "title": "function Main(text){return jsoup(text,'a.txtA');}",
             "introduction": "function Main(text){return jsoup(text,'span.info');}",
@@ -65,7 +65,7 @@
         },
         {
             "tab": "都市漫画",
-            "request": "https://m.i2356.com/list/dushi/",
+            "request": "https://m.wuxiamh.com/list/dushi/",
             "list": "function Main(html){return jsoups(html,'li.list-comic');}",
             "title": "function Main(text){return jsoup(text,'a.txtA');}",
             "introduction": "function Main(text){return jsoup(text,'span.info');}",
@@ -74,7 +74,7 @@
         },
         {
             "tab": "后宫漫画",
-            "request": "https://m.i2356.com/list/hougong/",
+            "request": "https://m.wuxiamh.com/list/hougong/",
             "list": "function Main(html){return jsoups(html,'li.list-comic');}",
             "title": "function Main(text){return jsoup(text,'a.txtA');}",
             "introduction": "function Main(text){return jsoup(text,'span.info');}",
@@ -83,7 +83,7 @@
         },
         {
             "tab": "穿越漫画",
-            "request": "https://m.i2356.com/list/chuanyue/",
+            "request": "https://m.wuxiamh.com/list/chuanyue/",
             "list": "function Main(html){return jsoups(html,'li.list-comic');}",
             "title": "function Main(text){return jsoup(text,'a.txtA');}",
             "introduction": "function Main(text){return jsoup(text,'span.info');}",
@@ -92,7 +92,7 @@
         },
         {
             "tab": "仙侠漫画",
-            "request": "https://m.i2356.com/list/xianxia/",
+            "request": "https://m.wuxiamh.com/list/xianxia/",
             "list": "function Main(html){return jsoups(html,'li.list-comic');}",
             "title": "function Main(text){return jsoup(text,'a.txtA');}",
             "introduction": "function Main(text){return jsoup(text,'span.info');}",
