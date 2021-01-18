@@ -21,7 +21,7 @@
     "reverseOrder": true,
     "catalogs": {
       "chapter": {
-        "list": "function Main(html){return jsoups(html,'div.chapter-warp > ul  > li');}",
+        "list": "function Main(html){return jsoups(html,'div.comic-chapters > div > ul  > li');}",
         "name": "function Main(text){return jsoup(text,'a');}",
         "url": "function Main(text){return jsoup(text,'a@attr->href');}",
         "category": 2
