@@ -4,9 +4,9 @@
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.1",
-  "versionCode": 4,
+  "versionCode": 5,
   "tab":"漫画",
-  "request": "https://www.tuhao456.com/action/Search?keyword={key}&page={page}@charset->UTF-8",
+  "request": "https://www.tuhao456.com/sort/?key={key}&button=搜索@charset->UTF-8",
   "search": {
     "list": "function Main(html){return jsoups(html,'div > ul > li');}",
     "title": "function Main(text){return jsoup(text,'a@attr->title');}",
