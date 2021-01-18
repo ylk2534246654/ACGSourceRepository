@@ -1,16 +1,16 @@
 {
-  "name": "土豪漫画-2020/11/30检测无法访问",
+  "name": "土豪漫画-调试中",
   "introduction": "可以搜索一些漫画",
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.1",
-  "versionCode": 4,
+  "versionCode": 5,
   "tab":"漫画",
   "request": "https://m.tuhao456.com/sort/?key={key}@charset->UTF-8",
   "search": {
     "list": "function Main(html){return jsoups(html,'div > ul > li');}",
     "title": "function Main(text){return jsoup(text,'a@attr->title');}",
-    "introduction": "",
+    "introduction": "function Main(text){return jsoup(text,'span.chapter');}",
     "cover": "function Main(text){return jsoup(text,'img@attr->data-src');}",
     "url": "function Main(text){return jsoup(text,'a@attr->href');}"
   },
