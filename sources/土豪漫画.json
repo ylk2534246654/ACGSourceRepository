@@ -4,7 +4,7 @@
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.1",
-  "versionCode": 7,
+  "versionCode": 8,
   "tab":"漫画",
   "request": "https://m.tuhao456.com/sort/?key={key}@charset->UTF-8",
   "search": {
@@ -36,7 +36,7 @@
     }
   },
   "comic": {
-    "list": "function Main(html){var file=strmiddle(html,'pl = \\'','/000');var startid=parseInt(strmiddle(html,'/000','.jpg'));var endid=parseInt(strmiddle(html,'pcount=',';'));var obj= [];for(var i =startid;i<(endid+startid);i++){var num = i;var n=4;var a = (Array(n).join(0) + num).slice(-n);obj.push(file+'/'+a+'.jpg');};return obj;}",
+    "list": "function Main(html){eval('var imgs = ' + strmiddle(html,'chapter_list_all:','}'));return imgs;}",
     "url": "function Main(text){return text;}",
     "mode": 3
   }
