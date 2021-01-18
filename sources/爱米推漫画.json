@@ -30,6 +30,7 @@
             }
         }
     },
+    //和思思漫画相似
     "comic": {
         "list": "function Main(html){var str = strmiddle(html,'<script>;','var chapterPath').replaceAll('\"','\\'');eval(str+';');return chapterImages;};",
         "url": "function Main(text){return 'https://res.sisimanhua.com'+text;}",
