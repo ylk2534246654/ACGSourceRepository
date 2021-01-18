@@ -30,12 +30,14 @@
         }
         }
   },
-    //和思思漫画相似
+    //和思思漫画相似 ，但
+    //难做，方法:解压缩，获取链接
     "comic": {
         "list": "function Main(html){var str = strmiddle(html,'<script>;','var chapterPath').replaceAll('\"','\\'');eval(str+';');return chapterImages;};",
-        "url": "function Main(text){return 'https://res.sisimanhua.com'+text;}",
+        "url": "function Main(text){return 'https://resnode.rexuemh.com/'+text;}",
         "mode": 3
     },
+
     "finds": [
         {
             "tab": "最新更新",
