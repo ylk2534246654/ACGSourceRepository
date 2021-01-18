@@ -23,7 +23,7 @@
         "reverseOrder": true,
         "catalogs": {
             "chapter": {
-                "list": "function Main(html){return jsoups(html,'#chapter-list-1 > li');}",
+                "list": "function Main(html){return jsoups(html,'div.chapter-warp > ul  > li');}",
                 "name": "function Main(text){return jsoup(text,'a');}",
                 "url": "function Main(text){var url = jsoup(text,'a@attr->href');url = url.replace('.html','-{p}.html')+'@zero->1@start->1';return url;}",
                 "category": 2
