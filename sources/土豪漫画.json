@@ -4,11 +4,11 @@
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.1",
-  "versionCode": 6,
+  "versionCode": 7,
   "tab":"漫画",
   "request": "https://www.tuhao456.com/sort/?key={key}&button=搜索@charset->UTF-8",
   "search": {
-    "list": "function Main(html){return jsoups(html,'div.cy_wide_list > ul > li');}",
+    "list": "function Main(html){return jsoups(html,'div.cy_list_mh > ul');}",
     "title": "function Main(text){return jsoup(text,'a@attr->title');}",
     "introduction": "",
     "cover": "function Main(text){return jsoup(text,'img@attr->src');}",
