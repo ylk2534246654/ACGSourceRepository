@@ -5,7 +5,7 @@
     "developer": "雨夏&963***175",
     "mail":"2534246654@qq.com",
     "versionName": "1.2",
-    "versionCode": 8,
+    "versionCode": 9,
     "tab": "漫画",
     "host":"m.90mh.com",
     "request": "http://m.90mh.com/search/?keywords={key}&page={page}@charset->UTF-8",
@@ -22,7 +22,7 @@
         "upDate": "function Main(html){return jsoup(html,'div.pic > dl:nth-child(8) > dd');}",
         "catalogs": {
             "chapter": {
-                "list": "function Main(html){return jsoups(html,'div#list_block > div.comic-chapters > div.list > ul > li');}",
+                "list": "function Main(html){return jsoups(html,'div.comic-chapters > div > ul > li');}",
                 "name": "function Main(text){return jsoup(text,'a > span');}",
                 "url": "function Main(text){return jsoup(text,'a@attr->href');}",
                 "category": 2
