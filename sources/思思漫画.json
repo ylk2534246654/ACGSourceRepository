@@ -1,12 +1,12 @@
 {
     "name": "思思漫画",
-    "introduction": "可以搜索一些漫画\n依依漫画，码头漫画，168漫画，独漫画，39漫画，147漫画，武侠漫画，爱米推漫画，蒂亚漫画和最漫画这些网站都是与这个相同的，也就不加了，太多余。",
+    "introduction": "可以搜索一些漫画",
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
     "versionCode": 6,
     "tab":"漫画",
-    "request": "https://m.sisimanhua.com/search/?keywords={key}@charset->UTF-8",
+    "request": "https://m.sisimanhua.com/search/?keywords={key}@charset->UTF-8",//58.211.137.29
     "search": {
         "list": "function Main(html){return jsoups(html,'#update_list > div > div');}",
         "title": "function Main(text){return jsoup(text,'div.itemTxt > a');}",
