@@ -6,7 +6,7 @@
   "versionName": "1.2",
   "versionCode": 8,
   "tab":"漫画",
-  "request": "https://so.77mh.cc/k.php?k={key}&p={page}@charset->UTF-8",
+  "request": "https://so.77mh.cc/k.php?k={key}&p={page}@charset->UTF-8",//150.109.107.114
   "search": {
     "list": "function Main(html){return jsoups(html,'div.ar_list_co > ul > dl');}",
     "title": "function Main(text){return jsoup(text,'dd > h1 > a');}",
