@@ -8,7 +8,7 @@
     "versionCode":9,
     "tab": "漫画",
     "host":"m.168manhua.com",
-    "request": "https://m.168manhua.com/search/?keywords={key}&page={page}@ip->58.211.137.49@charset->UTF-8",
+    "request": "https://m.168manhua.com/search/?keywords={key}&page={page}@ip->58.211.137.49@charset->UTF-8",//和168搞混了
     "search": {
         "list": "function Main(html){return jsoups(html,'#update_list > div > div');}",
         "title": "function Main(text){return jsoup(text,'div.itemTxt > a');}",
