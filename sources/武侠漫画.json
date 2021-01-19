@@ -5,7 +5,7 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode":1,
+    "versionCode":2,
     "tab": "漫画",
     "host":"m.wuxiamh.com",
     "request": "https://m.wuxiamh.com/search/?keywords={key}@charset->UTF-8@header->user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
@@ -23,9 +23,9 @@
         "reverseOrder": true,
         "catalogs": {
             "chapter": {
-                "list": "function Main(html){return jsoups(html,'div.chapter-warp > ul  > li');}",
+                "list": "function Main(html){return jsoups(html,'div.comic-chapters > div  > ul  > li');}",
                 "name": "function Main(text){return jsoup(text,'a');}",
-                "url": "function Main(text){var url = jsoup(text,'a@attr->href');url = url.replace('.html','-{p}.html')+'@zero->1@start->1';return url;}",
+                "url": "function Main(text){var url = jsoup(text,'a@attr->href');url = url.replace('.html','-{p}.html')+'@zero->1@start->1';if((url+'').indexOf('.apk')>0){return null}return url;}",
                 "category": 2
             }
         }
