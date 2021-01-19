@@ -4,7 +4,7 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 8,
+    "versionCode": 9,
     "tab":"轻小说",
     "host":"m.linovelib.com",
     "request": "https://m.linovelib.com/s/?searchkey={key}&searchtype=all@charset->UTF-8",
@@ -34,7 +34,7 @@
         }
     },
     "novel": {
-        "content": "function Main(html){var data = jsoup(html,'#acontent');if(data.length>1){return data;}return null;}",
+        "content": "function Main(html){return jsoup(html,'#acontent');}",
         "mode": 1
     }
 }
