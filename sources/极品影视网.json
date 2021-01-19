@@ -4,7 +4,7 @@
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.0",
-  "versionCode": 2,
+  "versionCode": 1,
   "tab":"影视",
   "request": "https://www.jpysvip.net/vodsearch/-------------.html?wd={key}&submit=",
   "search": {
@@ -20,11 +20,11 @@
     "introduction": "function Main(html){return jsoup(html,'span.data');}",
     "upDate": "function Main(html){return jsoup(html,'span.text-red');}",
     "tabs": {
-      "list": "function Main(html){return jsoups(html,'ul.nav-tabs > li');}",
+      "list": "function Main(html){return jsoups(html,'div:nth-child(4) > div  > div  > div > ul.nav-tabs > li');}",
       "name": "function Main(text){return jsoup(text,'a');}"
     },
     "catalogs": {
-      "list": "function Main(html){return jsoups(html,'ddiv.tab-content > div');}",
+      "list": "function Main(html){return jsoups(html,'div.tab-content > div');}",
       "chapter": {
         "list": "function Main(html){return jsoups(html,'ul > li');}",
         "name": "function Main(text){return jsoup(text,'a');}",
