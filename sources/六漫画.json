@@ -4,7 +4,7 @@
     "developer": "雨夏",
     "mail": "2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 1,
+    "versionCode": 2,
     "tab": "漫画",
     "host": "m.sixmh6.com",
     "request": "http://m.sixmh6.com/search?keyword={key}",//m.6mh7.com
@@ -20,12 +20,12 @@
         "introduction": "function Main(html){return jsoup(html,'p.introduction');}",
         "upDate": "",
         "reverseOrder": true,
-        "catalog_url": "function Main(html){return 'http://www.6mh7.com/bookchapter/@post->id='+jsoup(html,'dd.gengduo_dt1@attr->data-id')+'&id2=1';}",
+        "catalog_url": "function Main(html){return 'http://www.sixmh6.com/bookchapter/@post->id='+jsoup(html,'dd.gengduo_dt1@attr->data-id')+'&id2=1';}",
         "catalogs": {
             "chapter": {
                 "list": "function Main(html){return jsonPaths(html,'$.*');}",
                 "name": "function Main(html){return jsonPath(html,'$.chaptername');}",
-                "url": "function Main(html){return 'http://m.6mh7.com/'+strmiddle(getURL(),'id=','&')+'/'+jsonPath(html,'$.chapterid')+'.html';}",
+                "url": "function Main(html){return 'http://m.sixmh6.com/'+strmiddle(getURL(),'id=','&')+'/'+jsonPath(html,'$.chapterid')+'.html';}",
                 "category": 2
             }
         }
