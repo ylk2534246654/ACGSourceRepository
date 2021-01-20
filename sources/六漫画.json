@@ -7,7 +7,7 @@
     "versionCode": 2,
     "tab": "漫画",
     "host": "m.sixmh6.com",
-    "request": "http://m.6mh7.com/search?keyword={key}",
+    "request": "http://m.sixmh6.com/search?keyword={key}",//m.6mh7.com
     "search": {
         "list": "function Main(html){return jsoups(html,'#__layout > div > div > div.search-result > ul > a');}",
         "title": "function Main(html){return jsoup(html,'div > h2');}",
