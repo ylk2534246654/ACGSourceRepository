@@ -4,7 +4,7 @@
     "developer": "雨夏",
     "mail": "2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 2,
+    "versionCode": 1,
     "tab": "漫画",
     "host": "m.sixmh6.com",
     "request": "http://m.sixmh6.com/search?keyword={key}",//m.6mh7.com
@@ -16,6 +16,25 @@
         "url": "function Main(html){return jsoup(html,'a@attr->href');}"
     },
     "detail": {
+        "author": "",
+        "introduction": "function Main(html){return jsoup(html,'p.introduction');}",
+        "upDate": "",
+        "reverseOrder": true,
+        "tabs": {
+          "list": "function Main(html){return jsoups(html,'div.detail_nav > ul > li:lt(1)');}",
+          "name": "function Main(text){return jsoup(text,'li');}"
+        },
+        "catalogs": {
+            "list": "function Main(html){return jsoups(html,'dl.cartoon-directory:lt(1)');}",
+            "chapter": {
+                "list": "function Main(html){return jsoups(html,'#chapter-list1 > a');}",
+                "name": "function Main(html){return jsoup(html,'a');}",
+                "url": "function Main(html){return jsoup(html,'a@attr->href');}",
+                "category": 2
+            }
+        }
+    },
+    "detail2": {
         "author": "",
         "introduction": "function Main(html){return jsoup(html,'p.introduction');}",
         "upDate": "",
