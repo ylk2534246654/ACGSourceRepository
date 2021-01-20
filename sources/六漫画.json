@@ -16,9 +16,9 @@
         "url": "function Main(html){return jsoup(html,'a@attr->href');}"
     },
     "detail": {
-        "author": "function Main(html){return jsoup(html,'head > meta:nth-child(10)@attr->content')",
+        "author": "function Main(html){return jsoup(html,'[itemprop=actor]@attr->content')}",
         "introduction": "function Main(html){return jsoup(html,'p.introduction');}",
-        "upDate": "function Main(html){return jsoup(html,'[itemprop=uploadDate]@attr->content')",
+        "upDate": "function Main(html){return jsoup(html,'[itemprop=uploadDate]@attr->content')}",
         "reverseOrder": true,
         "tabs": {
           "list": "function Main(html){return jsoups(html,'div.detail_nav > ul > li:not([data-nums])');}",
