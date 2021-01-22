@@ -1,10 +1,10 @@
 {
-    "name": "亲小说",
+    "name": "亲小说-调试中",
     "introduction": "可以搜索一些轻小说\n*目录不全，待修改，暂时不推荐使用*",
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 5,
+    "versionCode": 6,
     "tab":"轻小说",
     "request": "https://www.qinxiaoshuo.com/search/{key}/{page}.html",
     "auth":{
@@ -23,8 +23,17 @@
         "author": "function Main(html){return jsoup(html,'div.info_item > div:nth-child(1) > a');}",
         "introduction": "function Main(html){return jsoup(html,'textarea.intro');}",
         "upDate": "function Main(html){return jsoup(html,'div.show_info > div > div:nth-child(4) > div:nth-child(1)');}",
+        "catalog_url": "function Main(html){return 'https://www.qinxiaoshuo.com/api/user/book/get/'+strmiddle(html,'bookimg/','.');}",
+        
+        
         "catalogs": {
             "chapter": {
+                "list": "var Book_id;function Main(html){Book_id = jsonPath(text,'$.[0].Book_id');return jsonPaths(html,'$..Chapters.*');}",
+                "name": "function Main(text){return jsonPath(text,'$..Chapter_name');}",
+                "url": "function Main(text){return 'https://www.qinxiaoshuo.com/read/0/'+Book_id+'/'+jsonPath(text,'$..Chapter_id')+'.html';}",
+                "category": 4
+            },
+            "chapter1": {
                 "list": "function Main(html){return jsoups(html,'#volume_list > div.volumes > div > div.volume_title > span,div.chapters > div');}",
                 "group":{
                     "isGroup": "function Main(text){if(text.indexOf('href')!=-1){return false;};return true;}",
