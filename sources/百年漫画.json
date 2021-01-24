@@ -4,7 +4,7 @@
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.1",
-  "versionCode": 3,
+  "versionCode": 4,
   "tab":"漫画",
   "request": "https://m.bnmanhua.com/search/{key}/{page}.html@charset->UTF-8",
   "search": {
@@ -34,7 +34,7 @@
     }
   },
   "comic": {
-    "list": "function Main(html){var z_yurl = strmiddle(html,'z_yurl=\\'','\\'');if(z_yurl==null){z_yurl = 'https://img.yaoyaoliao.com/';}var z_img = jsonPaths(strmiddle(html,'z_img=\\'','\\''),'$.*');var arr = [];for (var i = 0 ; i<z_img.length; i++){arr.push(pathURL2(z_img[i],z_yurl));}return arr;};",
+    "list": "function Main(html){var z_img = jsonPaths(strmiddle(html,'z_img=\\'','\\''),'$.*');var arr = [];for (var i = 0 ; i<z_img.length; i++){arr.push(pathURL2(z_img[i],'https://img.weitianhou.com'));}return arr;};",
     "url": "function Main(text){return text;}",
     "mode": 3
   }
