@@ -1,10 +1,10 @@
 {
-    "name": "忆漫影视-2021/01/26检测无法访问",
+    "name": "忆漫影视",
     "introduction": "可以搜一些电视电影",
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 3,
+    "versionCode": 2,
     "request": "https://kan.yimmh.com/vodsearchy/{key}----------{page}---.html",
     "search": {
         "list": "function Main(html){return jsoups(html,'li.searchlist_item');}",
