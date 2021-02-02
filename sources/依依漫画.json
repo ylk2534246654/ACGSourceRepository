@@ -4,7 +4,7 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 2,
+    "versionCode": 3,
     "tab":"漫画",
     "request": "https://m.yiyimanhua.com/search/?keywords={key}@charset->UTF-8",//150.138.151.78
     "search": {
@@ -29,7 +29,7 @@
     }
   },
   "comic": {
-    "list": "function Main(html){var str = strmiddle(html,'<script>;','var chapterPath').replaceAll('\"','\\'');eval(str+';');return chapterImages;};",
+    "list": "function Main(html){var str = strmiddle(html,'<script>;','var chapterPath');eval(str+';');return chapterImages;};",
     "url": "function Main(text){return 'https://res.yiyimanhua.com'+text;}",
     "mode": 3
   }
