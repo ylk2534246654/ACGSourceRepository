@@ -4,7 +4,7 @@
 	"developer": "雨夏",
     "mail":"2534246654@qq.com",
 	"versionName": "1.2",
-	"versionCode": 9,
+	"versionCode": 10,
     "tab":"轻小说",
     "request": "https://www.x23qb.com/search2.php@post->searchkey={key}&searchtype=all&page={page}@charset->gbk",
     "search": {
@@ -22,13 +22,13 @@
             "chapter": {
                 "list": "function Main(html){return jsoups(html,'#chapterList > li');}",
                 "name": "function Main(text){return jsoup(text,'a');}",
-                "url": "function Main(text){return jsoup(text,'a@attr->href').replace('.html','_{p}.html').html')+'@zero->1@start->1';;}",
+                "url": "function Main(text){return jsoup(text,'a@attr->href').replace('.html','_{p}.html')+'@zero->1@start->1';}",
                 "category": 4
             }
         }
     },
     "novel": {
-        "content": "function Main(html){return jsoup(html,'#TextContent').replace('（继续下一页）','');}",
+        "content": "function Main(html){return jsoup(html,'#TextContent').replace('铅笔小说','').replace('！！禁止转码、禁止阅读模式，下面内容隐藏，请退出浏览器阅读模式！','').replace('（继续下一页）','');}",
         "mode": 1
     },
     "oldnovel": {
