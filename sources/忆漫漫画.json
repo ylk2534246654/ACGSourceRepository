@@ -1,10 +1,10 @@
 {
-  "name": "忆漫漫画-2021/01/26检测无法访问",
+  "name": "忆漫漫画",
   "introduction": "可以搜索一些漫画",
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.0",
-  "versionCode": 5,
+  "versionCode": 6,
   "tab":"漫画",
   "request": "https://m.yimmh.com/search?keyword={key}",
   "search": {
