@@ -20,7 +20,7 @@
         "author": "function Main(html){return jsoup(html,'div.comic-view.clearfix > div.view-sub.autoHeight > div > dl:nth-child(3) > dd');}",
         "introduction": "function Main(html){return jsoup(html,'div.comic-view.clearfix > p');}",
         "upDate": "function Main(html){return jsoup(html,'div.comic-view.clearfix > div.view-sub.autoHeight > div > dl:nth-child(5) > dd');}",
-        "reverseOrder": true,
+        "reverseOrder": false,
         "catalogs": {
             "chapter": {
                 "list": "function Main(html){return jsoups(html,'div.comic-chapters > div  > ul  > li');}",
