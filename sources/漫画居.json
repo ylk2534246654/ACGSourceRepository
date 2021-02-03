@@ -5,16 +5,16 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode":1,
+    "versionCode":2,
     "tab": "漫画",
     "host":"m.manhuaju.com",
-    "request": "http://m.manhuaju.com/search/?keywords={key}@charset->UTF-8@ip->193.227.121.20@header->user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
+    "request": "http://m.manhuaju.com/statics/search.aspx?key={key}@charset->UTF-8@header->user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
     "search": {
-        "list": "function Main(html){return jsoups(html,'#update_list > div > div');}",
-        "title": "function Main(text){return jsoup(text,'div.itemTxt > a');}",
-        "introduction": "function Main(text){return jsoup(text,'span.date');}",
-        "cover": "function Main(text){return jsoup(text,'div.itemImg > a > mip-img@attr->src');}",
-        "url": "function Main(text){return jsoup(text,'div.itemTxt > a@attr->href')+'@header->user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36';}"
+        "list": "function Main(html){return jsoups(html,'#listbody > li');}",
+        "title": "function Main(text){return jsoup(text,'a.txtA');}",
+        "introduction": "function Main(text){return jsoup(text,'span.info');}",
+        "cover": "function Main(text){return jsoup(text,'a.ImgA > img@attr->src');}",
+        "url": "function Main(text){return jsoup(text,'a.ImgA@attr->href')+'@header->user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36';}"
     },
     "detail": {
         "author": "function Main(html){return jsoup(html,'div.comic-view.clearfix > div.view-sub.autoHeight > div > dl:nth-child(3) > dd');}",
@@ -34,70 +34,5 @@
         "url": "function Main(text){var img = jsoup(text,'mip-link > img@attr->src');if((img+'').length < 1){img = jsoup(text,'mip-link > mip-img:not([style])@attr->src');}if((img+'').length < 1){var img2 = jsoups(text,'div.UnderPag > mip-img');if(img2.length>1){return img2;}};if((img+'').length < 1){img = jsoup(text,'div:not([style]) > mip-link > mip-img:not([style],[width])@attr->src');}if(img.indexOf('cover')==-1){return img;}return null};",
         "url2": "function Main(text){return jsoup(text,'mip-img@attr->src');};",
         "mode": 3
-    },
-    "finds": [
-        {
-            "tab": "最新更新",
-            "request": "https://m.manhuaju.com/update/",
-            "list": "function Main(html){return jsoups(html,'div.UpdateList > div');}",
-            "title": "function Main(text){return jsoup(text,'div.itemTxt > a');}",
-            "introduction": "function Main(text){return jsoup(text,'span.date');}",
-            "cover": "function Main(text){return jsoup(text,'mip-img@attr->src');}",
-            "url": "function Main(text){return jsoup(text,'div.itemTxt > a@attr->href');}"
-        },
-        {
-            "tab": "排行榜",
-            "request": "https://m.manhuaju.com/rank/",
-            "list": "function Main(html){return jsoups(html,'#topImgCon > div > div');}",
-            "title": "function Main(text){return jsoup(text,'div.itemTxt > a');}",
-            "introduction": "function Main(text){return jsoup(text,'span.date');}",
-            "cover": "function Main(text){return jsoup(text,'mip-img@attr->src');}",
-            "url": "function Main(text){return jsoup(text,'div.itemTxt > a@attr->href');}"
-        },
-        {
-            "tab": "完结漫画",
-            "request": "https://m.manhuaju.com/list/wanjie/",
-            "list": "function Main(html){return jsoups(html,'li.list-comic');}",
-            "title": "function Main(text){return jsoup(text,'a.txtA');}",
-            "introduction": "function Main(text){return jsoup(text,'span.info');}",
-            "cover": "function Main(text){return jsoup(text,'mip-img@attr->src');}",
-            "url": "function Main(text){return jsoup(text,'a.ImgA@attr->href');}"
-        },
-        {
-            "tab": "都市漫画",
-            "request": "https://m.manhuaju.com/list/dushi/",
-            "list": "function Main(html){return jsoups(html,'li.list-comic');}",
-            "title": "function Main(text){return jsoup(text,'a.txtA');}",
-            "introduction": "function Main(text){return jsoup(text,'span.info');}",
-            "cover": "function Main(text){return jsoup(text,'mip-img@attr->src');}",
-            "url": "function Main(text){return jsoup(text,'a.ImgA@attr->href');}"
-        },
-        {
-            "tab": "后宫漫画",
-            "request": "https://m.manhuaju.com/list/hougong/",
-            "list": "function Main(html){return jsoups(html,'li.list-comic');}",
-            "title": "function Main(text){return jsoup(text,'a.txtA');}",
-            "introduction": "function Main(text){return jsoup(text,'span.info');}",
-            "cover": "function Main(text){return jsoup(text,'mip-img@attr->src');}",
-            "url": "function Main(text){return jsoup(text,'a.ImgA@attr->href');}"
-        },
-        {
-            "tab": "穿越漫画",
-            "request": "https://m.manhuaju.com/list/chuanyue/",
-            "list": "function Main(html){return jsoups(html,'li.list-comic');}",
-            "title": "function Main(text){return jsoup(text,'a.txtA');}",
-            "introduction": "function Main(text){return jsoup(text,'span.info');}",
-            "cover": "function Main(text){return jsoup(text,'mip-img@attr->src');}",
-            "url": "function Main(text){return jsoup(text,'a.ImgA@attr->href');}"
-        },
-        {
-            "tab": "仙侠漫画",
-            "request": "https://m.manhuaju.com/list/xianxia/",
-            "list": "function Main(html){return jsoups(html,'li.list-comic');}",
-            "title": "function Main(text){return jsoup(text,'a.txtA');}",
-            "introduction": "function Main(text){return jsoup(text,'span.info');}",
-            "cover": "function Main(text){return jsoup(text,'mip-img@attr->src');}",
-            "url": "function Main(text){return jsoup(text,'a.ImgA@attr->href');}"
-        }
-    ]
+    }
 }
