@@ -10,11 +10,11 @@
     "host":"m.leyuman.com",
     "request": "https://m.leyuman.com/search.html@post->keyword={key}@ip->140.249.61.196@charset->UTF-8",
     "search": {
-        "list": "function Main(html){return jsoups(html,'#listbody > li');}",
-        "title": "function Main(text){return jsoup(text,'a.txtA');}",
-        "introduction": "function Main(text){return jsoup(text,'span.info');}",
-        "cover": "function Main(text){return jsoup(text,'a.ImgA > img@attr->src');}",
-        "url": "function Main(text){return jsoup(text,'a.ImgA@attr->href')+'@header->user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36';}"
+        "list": "function Main(html){return jsoups(html,'div.tbox > ul > li');}",
+        "title": "function Main(text){return jsoup(text,'a.vbox_t');}",
+        "introduction": "function Main(text){return jsoup(text,'a > span');}",
+        "cover": "function Main(text){return jsoup(text,'a > mip-img@attr->src');}",
+        "url": "function Main(text){return jsoup(text,'a.vbox_tA@attr->href');}"
     },
     "detail": {
         "author": "function Main(html){return jsoup(html,'div.sub_r > p:nth-child(2)');}",
