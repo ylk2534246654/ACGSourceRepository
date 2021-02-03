@@ -31,7 +31,7 @@
         }
     },
     "comic": {
-        "list": "loadScript('https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/js/base64.js');function Main(text){eval(strmiddle(text,'<script>','</script>'));var arr = Base64.decode(qTcms_S_m_murl_e);log(arr);return arr.split('$qingtiandy$');};",
+        "list": "loadScript('https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/js/base64.js');function Main(text){eval(strmiddle(text,'<script>','</script>'));var arr = Base64.decode(qTcms_S_m_murl_e);return arr.split('$qingtiandy$');};",
         "url": "function Main(text){return text;}",
         "mode": 3
     }
