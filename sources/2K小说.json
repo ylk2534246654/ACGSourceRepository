@@ -1,13 +1,13 @@
 {
-    "name": "2K小说-2021/1/19检测无法访问",
+    "name": "2K小说",
     "introduction": "可以搜索一些国漫",
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.2",
-    "versionCode": 8,
+    "versionCode": 9,
     "tab":"小说",
-    "host":"m.fpzw.com",
-    "request": "https://m.fpzw.com/modules/article/so.php?searchtype=keywords&searchkey={key}@charset->gbk",
+    "host":"m.2kxs.com",
+    "request": "https://m.2kxs.com/modules/article/so.php?searchtype=keywords&searchkey={key}@charset->gbk",
     "search": {
         "list": "function Main(html){return jsoups(html,'div.hot_sale');}",
         "title": "function Main(text){return jsoup(text,'a>p.title');}",
