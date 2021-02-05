@@ -4,7 +4,7 @@
 	"developer": "雨夏",
     "mail":"2534246654@qq.com",
 	"versionName": "1.0",
-	"versionCode": 4,
+	"versionCode": 5,
     "tab":"小说",
     "request": "https://www.biquge.com.cn/search.php?q={key}",
     "search": {
@@ -28,8 +28,6 @@
         }
     },
     "novel": {
-        "list": [],
-        "url": [],
         "content": "function Main(html){return jsoup(html,'#content');}",
         "mode": 1
     }
