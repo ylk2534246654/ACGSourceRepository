@@ -4,20 +4,20 @@
 	"developer": "雨夏",
     "mail":"2534246654@qq.com",
 	"versionName": "1.0",
-	"versionCode": 1,
+	"versionCode": 2,
     "tab":"小说",
-    "request": "https://m.biquge.com.cn/search.php?q={key}",
+    "request": "https://www.biquge.com.cn/search.php?q={key}",
     "search": {
         "list": "function Main(html){return jsoups(html,'div.result-list > div');}",
         "title": "function Main(text){return jsoup(text,'a[cpos=title]');}",
-        "introduction": "function Main(text){return jsoup(text,'p.result-game-item-desc');}",
+        "introduction": "function Main(text){return jsoup(text,'a[cpos=newchapter]');}",
         "cover": "function Main(text){return jsoup(text,'a[cpos=img] > img@attr->src');}",
         "url": "function Main(text){return jsoup(text,'a[cpos=title]@attr->href');}"
     },
     "detail": {
-        "author": "function Main(html){return jsoup(html,'tbody > tr:nth-child(2) > td:nth-child(2)');}",
-        "introduction": "",
-        "upDate": "function Main(html){return jsoup(html,'tbody > tr:nth-child(3) > td:nth-child(1)');}",
+        "author": "function Main(html){return jsoup(html,'div.block_txt2 > p:nth-child(4)');}",
+        "introduction": "function Main(html){return jsoup(html,'div.intro_info');}",
+        "upDate": "function Main(html){return jsoup(html,'div.block_txt2 > p:nth-child(7)');}",
         "catalogs": {
             "chapter": {
                 "list": "var catalog;function Main(html){catalog = jsoup(html,'td:nth-child(1) > ul > li:nth-child(1) > a@attr->href');html = httpRequest(catalog);setURL(catalog);return jsoups(html,'div.zjbox > div > ol > li,div.tt.gtt > div > h2');}",
