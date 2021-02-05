@@ -4,7 +4,7 @@
 	"developer": "雨夏",
     "mail":"2534246654@qq.com",
 	"versionName": "1.0",
-	"versionCode": 2,
+	"versionCode": 3,
     "tab":"小说",
     "request": "https://www.biquge.com.cn/search.php?q={key}",
     "search": {
@@ -20,13 +20,9 @@
         "upDate": "function Main(html){return jsoup(html,'div.block_txt2 > p:nth-child(7)');}",
         "catalogs": {
             "chapter": {
-                "list": "var catalog;function Main(html){catalog = jsoup(html,'td:nth-child(1) > ul > li:nth-child(1) > a@attr->href');html = httpRequest(catalog);setURL(catalog);return jsoups(html,'div.zjbox > div > ol > li,div.tt.gtt > div > h2');}",
-                "group":{
-                    "isGroup": "function Main(text){if(text.indexOf('href')!=-1){return false;};return true;}",
-                    "name": "function Main(text){return jsoup(text,':matchText');}"
-                },
+                "list": "var catalog;function Main(html){return jsoups(html,'#list > dl > dd');}",
                 "name": "function Main(text){return jsoup(text,'a');}",
-                "url": "function Main(text){return 'http://m.shencou.com/wapreader.php?aid='+strmiddle(pathURL(jsoup(text,'a@attr->href')),'/0/','.').replace('/','&cid=');}",
+                "url": "function Main(text){return jsoup(text,'a@attr->href');}",
                 "category": 4
             }
         }
@@ -34,18 +30,7 @@
     "novel": {
         "list": [],
         "url": [],
-        "content": "function Main(html){return jsoup(html,'#nr1');}",
+        "content": "function Main(html){return jsoup(html,'#content');}",
         "mode": 1
-    },
-    "finds": [
-        {
-            "tab": "排行榜",
-            "request": "http://www.shencou.com/top/",
-            "list": "function Main(html){return jsoups(html,'#content > table > tbody > tr > td > div');}",
-            "title": "function Main(text){return jsoup(text,'div > b > a');}",
-            "introduction": "function Main(text){return jsoup(text,'div:nth-child(2) > p:nth-child(5)');}",
-            "cover": "function Main(text){return jsoup(text,'div:nth-child(1) > a > img@attr->src');}",
-            "url": "function Main(text){return jsoup(text,'div > b > a@attr->href');}"
-        }
-    ]
+    }
 }
