@@ -1,0 +1,59 @@
+{
+    "name": "EDD动漫",
+    "introduction": "可以搜索一些动漫",
+    "developer": "雨夏",
+    "mail":"2534246654@qq.com",
+    "versionName": "1.0",
+    "versionCode": 1,
+    "tab": "动漫",
+    "request": "http://www.edddh.com/index.php?s=home-search-index.html@post->wd={key}@charset->utf-8",
+    "search": {
+        "list": "function Main(html){return jsoups(html,'#content > div');}",
+        "title": "function Main(text){return jsoup(text,'ul.info > li:nth-child(1) > a');}",
+        "introduction": "function Main(text){return jsoup(text,'ul.info > li:nth-child(12)');}",
+        "cover": "function Main(text){return jsoup(text,'a.video-pic@attr->data-original');}",
+        "url": "function Main(text){return jsoup(text,'ul.info > li:nth-child(1) > a@attr->href');}"
+    },
+    "detail": {
+        "author": "function Main(html){return jsoup(html,'div.drama-data > div:nth-child(1) > label');}",
+        "introduction": "function Main(html){return jsoup(html,'div.intro-in');}",
+        "upDate": "function Main(html){return jsoup(html,'div.updata');}",
+        "catalogs": {
+            "chapter": {
+                "list": "function Main(text){return jsoups(text,'div.v_list > ul > li');}",
+                "name": "function Main(text){return jsoup(text,'a');}",
+                "url": "function Main(text){return jsoup(text,'a@attr->href');}",
+                "category": 3
+            }
+        }
+    },
+    "finds": [
+        {
+            "tab": "新番放送",
+            "request": "https://isldm.com/vodshow/4--time---------/",
+            "list": "function Main(html){return jsoups(html,'div.listbox > ul > li');}",
+            "title": "function Main(text){return jsoup(text,'figcaption.list-title > h3 >a');}",
+            "introduction": "function Main(text){return jsoup(text,'a > span.listbox-remarks');}",
+            "cover": "function Main(text){return jsoup(text,'a > ul > img@attr->data-echo');}",
+            "url": "function Main(text){return jsoup(text,'figcaption.list-title > h3 >a@attr->href');}"
+        },
+        {
+            "tab": "排行榜",
+            "request": "https://isldm.com/vodshow/4--hits---------/",
+            "list": "function Main(html){return jsoups(html,'div.listbox > ul > li');}",
+            "title": "function Main(text){return jsoup(text,'figcaption.list-title > h3 >a');}",
+            "introduction": "function Main(text){return jsoup(text,'a > span.listbox-remarks');}",
+            "cover": "function Main(text){return jsoup(text,'a > ul > img@attr->data-echo');}",
+            "url": "function Main(text){return jsoup(text,'figcaption.list-title > h3 >a@attr->href');}"
+        },
+        {
+            "tab": "新番放送",
+            "request": "https://isldm.com/index.php/vodshow/3--time---------/",
+            "list": "function Main(html){return jsoups(html,'div.listbox > ul > li');}",
+            "title": "function Main(text){return jsoup(text,'figcaption.list-title > h3 >a');}",
+            "introduction": "function Main(text){return jsoup(text,'a > span.listbox-remarks');}",
+            "cover": "function Main(text){return jsoup(text,'a > ul > img@attr->data-echo');}",
+            "url": "function Main(text){return jsoup(text,'figcaption.list-title > h3 >a@attr->href');}"
+        }
+    ]
+}
