@@ -4,13 +4,13 @@
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.5",
-  "versionCode": 6,
+  "versionCode": 7,
   "tab":"漫画",
   "request": "http://m.pufei8.com/e/search/?searchget=1&tbname=mh&show=title,player,playadmin,bieming,pinyin,playadmin&tempid=4&keyboard={key}@charset->gb2312",
   "search": {
     "list": "function Main(html){return jsoups(html,'#detail > li');}",
     "title": "function Main(text){return jsoup(text,'a > h3');}",
-    "introduction": "function Main(text){return jsoup(text,'a > dl')+jsoup(text,'dl:nth-child(5)');}",
+    "introduction": "function Main(text){return jsoup(text,'dl:nth-child(4) > dd');}",
     "cover": "function Main(text){return jsoup(text,'div.thumb > img@attr->data-src');}",
     "url": "function Main(text){return jsoup(text,'li > a@attr->href');}"
   },
@@ -39,7 +39,7 @@
             "request": "http://m.pufei8.com/manhua/update.html",
             "list": "function Main(html){return jsoups(html,'#detail > li');}",
             "title": "function Main(text){return jsoup(text,'a > h3');}",
-            "introduction": "function Main(text){return jsoup(text,'a > dl')+jsoup(text,'dl:nth-child(5)');}",
+            "introduction": "function Main(text){return jsoup(text,'dl:nth-child(4) > dd');}",
             "cover": "function Main(text){return jsoup(text,'div.thumb > img@attr->data-src');}",
             "url": "function Main(text){return jsoup(text,'li > a@attr->href');}"
         },
@@ -48,7 +48,7 @@
             "request": "http://m.pufei8.com/manhua/paihang.html",
             "list": "function Main(html){return jsoups(html,'#detail > li');}",
             "title": "function Main(text){return jsoup(text,'a > h3');}",
-            "introduction": "function Main(text){return jsoup(text,'a > dl')+jsoup(text,'dl:nth-child(5)');}",
+            "introduction": "function Main(text){return jsoup(text,'dl:nth-child(4) > dd');}",
             "cover": "function Main(text){return jsoup(text,'div.thumb > img@attr->data-src');}",
             "url": "function Main(text){return jsoup(text,'li > a@attr->href');}"
         },
@@ -57,7 +57,7 @@
             "request": "http://m.pufei8.com/shaonianrexue/",
             "list": "function Main(html){return jsoups(html,'#detail > li');}",
             "title": "function Main(text){return jsoup(text,'a > h3');}",
-            "introduction": "function Main(text){return jsoup(text,'a > dl')+jsoup(text,'dl:nth-child(5)');}",
+            "introduction": "function Main(text){return jsoup(text,'dl:nth-child(4) > dd');}",
             "cover": "function Main(text){return jsoup(text,'div.thumb > img@attr->data-src');}",
             "url": "function Main(text){return jsoup(text,'li > a@attr->href');}"
         },
@@ -66,7 +66,7 @@
             "request": "http://m.pufei8.com/shaonvaiqing/",
             "list": "function Main(html){return jsoups(html,'#detail > li');}",
             "title": "function Main(text){return jsoup(text,'a > h3');}",
-            "introduction": "function Main(text){return jsoup(text,'a > dl')+jsoup(text,'dl:nth-child(5)');}",
+            "introduction": "function Main(text){return jsoup(text,'dl:nth-child(4) > dd');}",
             "cover": "function Main(text){return jsoup(text,'div.thumb > img@attr->data-src');}",
             "url": "function Main(text){return jsoup(text,'li > a@attr->href');}"
         }
