@@ -5,14 +5,14 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.5",
-    "versionCode": 14,
+    "versionCode": 15,
     "tab": "漫画",
     "host":"m.ccshwy.com",
     "request": "http://m.ccshwy.com/statics/search.aspx?key={key}&page={page}@charset->UTF-8@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
     "search": {
         "list": "function Main(html){return jsoups(html,'#listbody > li');}",
         "title": "function Main(text){return jsoup(text,'a.txtA');}",
-        "introduction": "function Main(text){return jsoup(text,'a.coll');}",
+        "introduction": "function Main(text){return jsoup(text,'span.info');}",
         "cover": "function Main(text){return jsoup(text,'a.ImgA > img@attr->src');}",
         "url": "function Main(text){return jsoup(text,'a.ImgA@attr->href')+'@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36';}"
     },
@@ -50,7 +50,7 @@
             "request": "http://m.ccshwy.com/new/",
             "list": "function Main(html){return jsoups(html,'div.UpdateList > div');}",
             "title": "function Main(text){return jsoup(text,'div.itemTxt > a');}",
-            "introduction": "function Main(text){return jsoup(text,'a.coll');}",
+            "introduction": "function Main(text){return jsoup(text,'div.itemTxt > p:nth-child(2)');}",
             "cover": "function Main(text){return jsoup(text,'img@attr->src');}",
             "url": "function Main(text){return jsoup(text,'div.itemTxt > a@attr->href');}"
         },
@@ -59,7 +59,7 @@
             "request": "http://m.ccshwy.com/paihang/",
             "list": "function Main(html){return jsoups(html,'#topImgCon > div > div');}",
             "title": "function Main(text){return jsoup(text,'div.itemTxt > a');}",
-            "introduction": "function Main(text){return jsoup(text,'a.coll');}",
+            "introduction": "function Main(text){return jsoup(text,'div.itemTxt > p:nth-child(2)');}",
             "cover": "function Main(text){return jsoup(text,'img@attr->src');}",
             "url": "function Main(text){return jsoup(text,'div.itemTxt > a@attr->href');}"
         },
