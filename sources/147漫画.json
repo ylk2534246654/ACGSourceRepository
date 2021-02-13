@@ -5,7 +5,7 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode":35,
+    "versionCode":36,
     "tab": "漫画",
     "host":"m.i2356.com",
     "request": "https://m.i2356.com/search/?keywords={key}@charset->UTF-8@ip->58.211.137.43@header->user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
@@ -21,7 +21,12 @@
         "introduction": "function Main(html){return jsoup(html,'div.comic-view.clearfix > p');}",
         "upDate": "function Main(html){return jsoup(html,'div.comic-view.clearfix > div.view-sub.autoHeight > div > dl:nth-child(5) > dd');}",
         "reverseOrder": true,
+        "tabs": {
+            "list": "function Main(html){return jsoups(html,'#list_block > div > div.title1');}",
+            "name": "function Main(text){return jsoup(text,'div');}"
+        },
         "catalogs": {
+            "list": "function Main(html){return jsoups(html,'div.comic-chapters');}",
             "chapter": {
                 "list": "function Main(html){return jsoups(html,'div.comic-chapters > div  > ul  > li');}",
                 "name": "function Main(text){return jsoup(text,'a');}",
