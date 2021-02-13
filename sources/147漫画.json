@@ -5,14 +5,14 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode":32,
+    "versionCode":33,
     "tab": "漫画",
     "host":"m.i2356.com",
     "request": "https://m.i2356.com/search/?keywords={key}@charset->UTF-8@ip->58.211.137.43@header->user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
     "search": {
         "list": "function Main(html){return jsoups(html,'#update_list > div > div');}",
         "title": "function Main(text){return jsoup(text,'div.itemTxt > a');}",
-        "introduction": "function Main(text){return jsoup(text,'span.date');}",
+        "introduction": "function Main(text){return jsoup(text,'a.coll');}",
         "cover": "function Main(text){return jsoup(text,'div.itemImg > a > mip-img@attr->src');}",
         "url": "function Main(text){return jsoup(text,'div.itemTxt > a@attr->href')+'@ip->58.211.137.43@header->user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36';}"
     },
@@ -41,7 +41,7 @@
             "request": "https://m.i2356.com/update/",
             "list": "function Main(html){return jsoups(html,'div.UpdateList > div');}",
             "title": "function Main(text){return jsoup(text,'div.itemTxt > a');}",
-            "introduction": "function Main(text){return jsoup(text,'span.date');}",
+            "introduction": "function Main(text){return jsoup(text,'a.coll');}",
             "cover": "function Main(text){return jsoup(text,'mip-img@attr->src');}",
             "url": "function Main(text){return jsoup(text,'div.itemTxt > a@attr->href');}"
         },
@@ -50,7 +50,7 @@
             "request": "https://m.i2356.com/rank/",
             "list": "function Main(html){return jsoups(html,'#topImgCon > div > div');}",
             "title": "function Main(text){return jsoup(text,'div.itemTxt > a');}",
-            "introduction": "function Main(text){return jsoup(text,'span.date');}",
+            "introduction": "function Main(text){return jsoup(text,'a.coll');}",
             "cover": "function Main(text){return jsoup(text,'mip-img@attr->src');}",
             "url": "function Main(text){return jsoup(text,'div.itemTxt > a@attr->href');}"
         },
@@ -59,7 +59,7 @@
             "request": "https://m.i2356.com/list/wanjie/",
             "list": "function Main(html){return jsoups(html,'li.list-comic');}",
             "title": "function Main(text){return jsoup(text,'a.txtA');}",
-            "introduction": "function Main(text){return jsoup(text,'span.info');}",
+            "introduction": "function Main(text){return jsoup(text,'a.coll');}",
             "cover": "function Main(text){return jsoup(text,'mip-img@attr->src');}",
             "url": "function Main(text){return jsoup(text,'a.ImgA@attr->href');}"
         },
@@ -68,7 +68,7 @@
             "request": "https://m.i2356.com/list/dushi/",
             "list": "function Main(html){return jsoups(html,'li.list-comic');}",
             "title": "function Main(text){return jsoup(text,'a.txtA');}",
-            "introduction": "function Main(text){return jsoup(text,'span.info');}",
+            "introduction": "function Main(text){return jsoup(text,'a.coll');}",
             "cover": "function Main(text){return jsoup(text,'mip-img@attr->src');}",
             "url": "function Main(text){return jsoup(text,'a.ImgA@attr->href');}"
         },
@@ -77,7 +77,7 @@
             "request": "https://m.i2356.com/list/hougong/",
             "list": "function Main(html){return jsoups(html,'li.list-comic');}",
             "title": "function Main(text){return jsoup(text,'a.txtA');}",
-            "introduction": "function Main(text){return jsoup(text,'span.info');}",
+            "introduction": "function Main(text){return jsoup(text,'a.coll');}",
             "cover": "function Main(text){return jsoup(text,'mip-img@attr->src');}",
             "url": "function Main(text){return jsoup(text,'a.ImgA@attr->href');}"
         },
@@ -86,7 +86,7 @@
             "request": "https://m.i2356.com/list/chuanyue/",
             "list": "function Main(html){return jsoups(html,'li.list-comic');}",
             "title": "function Main(text){return jsoup(text,'a.txtA');}",
-            "introduction": "function Main(text){return jsoup(text,'span.info');}",
+            "introduction": "function Main(text){return jsoup(text,'a.coll');}",
             "cover": "function Main(text){return jsoup(text,'mip-img@attr->src');}",
             "url": "function Main(text){return jsoup(text,'a.ImgA@attr->href');}"
         },
@@ -95,7 +95,7 @@
             "request": "https://m.i2356.com/list/xianxia/",
             "list": "function Main(html){return jsoups(html,'li.list-comic');}",
             "title": "function Main(text){return jsoup(text,'a.txtA');}",
-            "introduction": "function Main(text){return jsoup(text,'span.info');}",
+            "introduction": "function Main(text){return jsoup(text,'a.coll');}",
             "cover": "function Main(text){return jsoup(text,'mip-img@attr->src');}",
             "url": "function Main(text){return jsoup(text,'a.ImgA@attr->href');}"
         }
