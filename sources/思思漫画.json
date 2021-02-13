@@ -4,7 +4,7 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 6,
+    "versionCode": 7,
     "tab":"漫画",
     "request": "https://m.sisimanhua.com/search/?keywords={key}@charset->UTF-8",//58.211.137.29
     "search": {
@@ -21,7 +21,7 @@
     "reverseOrder": true,
     "catalogs": {
       "chapter": {
-        "list": "function Main(html){return jsoups(html,'div.chapter-warp > ul  > li');}",
+        "list": "function Main(html){return jsoups(html,'div.comic-chapters > div > ul  > li');}",
         "name": "function Main(text){return jsoup(text,'a');}",
         "url": "function Main(text){return jsoup(text,'a@attr->href');}",
         "category": 2
