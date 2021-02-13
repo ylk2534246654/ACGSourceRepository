@@ -4,7 +4,7 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode": 3,
+    "versionCode": 4,
     "tab":"漫画",
     "request": "https://m.yiyimanhua.com/search/?keywords={key}@charset->UTF-8",//150.138.151.78
     "search": {
