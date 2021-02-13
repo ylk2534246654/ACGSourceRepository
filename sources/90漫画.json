@@ -5,7 +5,7 @@
     "developer": "雨夏&963***175",
     "mail":"2534246654@qq.com",
     "versionName": "1.2",
-    "versionCode": 10,
+    "versionCode": 11,
     "tab": "漫画",
     "host":"m.90mh.com",
     "request": "http://m.90mh.com/search/?keywords={key}&page={page}@charset->UTF-8",
@@ -68,7 +68,7 @@
             "request": "http://m.90mh.com/list/guochanmanhua/",
             "list": "function Main(html){return jsoups(html,'#w0 > ul.col_3_1.clearfix > li:nth-child(1) > li');}",
             "title": "function Main(text){return jsoup(text,'a.txtA');}",
-            "introduction": "function Main(text){return jsoup(text,'a.coll');}",
+            "introduction": "function Main(text){return jsoup(text,'span.info');}",
             "cover": "function Main(text){return jsoup(text,'a.ImgA > mip-img@attr->src');}",
             "url": "function Main(text){return jsoup(text,'a.ImgA@attr->href');}"
         },
@@ -77,7 +77,7 @@
             "request": "http://m.90mh.com/list/wanjie/",
             "list": "function Main(html){return jsoups(html,'li.list-comic');}",
             "title": "function Main(text){return jsoup(text,'a.txtA');}",
-            "introduction": "function Main(text){return jsoup(text,'a.coll');}",
+            "introduction": "function Main(text){return jsoup(text,'span.info');}",
             "cover": "function Main(text){return jsoup(text,'mip-img@attr->src');}",
             "url": "function Main(text){return jsoup(text,'a.ImgA@attr->href');}"
         },
