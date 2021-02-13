@@ -29,6 +29,11 @@
     }
   },
   "comic": {
+    "list": "function Main(html){var str = strmiddle(html,'<script>;','var chapterPath').replaceAll('\"','\\'');eval(str+';');return chapterImages;};",
+    "url": "function Main(text){return 'https://res.yiyimanhua.com'+text;}",
+    "mode": 3
+  },
+  "comic2": {
     "list": "function Main(html){var str = strmiddle(html,'<script>;','var chapterPath');eval(str+';');return chapterImages;};",
     "url": "function Main(text){return 'https://res.yiyimanhua.com'+text;}",
     "mode": 3
