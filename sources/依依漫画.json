@@ -25,7 +25,7 @@
         },
         "catalogs": {
             "list": "function Main(html){return jsoups(html,'div.comic-chapters');}",
-      "chapter": {
+    "chapter": {
         "list": "function Main(html){return jsoups(html,'div.comic-chapters > div > ul  > li');}",
         "name": "function Main(text){return jsoup(text,'a');}",
         "url": "function Main(text){var url = jsoup(text,'a@attr->href');url = url.replace('.html','-{p}.html')+'@zero->1@start->1';if((url+'').indexOf('.apk')>0){return null}return url;}",
