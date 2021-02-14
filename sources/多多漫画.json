@@ -4,7 +4,7 @@
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.0",
-  "versionCode": 17,
+  "versionCode": 16,
   "tab":"漫画",
   "request": "https://api.duoduomh.1a3.net/app2/comic/search?sort=click&page={page}&keywords={key}@charset->UTF-8",
   "search": {
