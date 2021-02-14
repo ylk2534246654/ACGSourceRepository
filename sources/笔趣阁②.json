@@ -4,7 +4,7 @@
 	"developer": "雨夏",
     "mail":"2534246654@qq.com",
 	"versionName": "1.0",
-	"versionCode": 1,
+	"versionCode": 3,
     "tab":"小说",
     "request": "http://www.bswtan.com/modules/article/search.php@post->searchkey={key}",
     "search": {
@@ -22,7 +22,7 @@
             "chapter": {
                 "list": "function Main(html){return jsoups(html,'#list > dl > dd:gt(9)');}",
                 "name": "function Main(text){return jsoup(text,'a');}",
-                "url": "function Main(text){return jsoup(text,'a@attr->href')+'@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36';}",
+                "url": "function Main(text){return jsoup(text,'a@attr->href');}",
                 "category": 4
             }
         }
