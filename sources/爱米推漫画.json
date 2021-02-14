@@ -29,7 +29,7 @@
             "list": "function Main(html){return jsoups(html,'div.comic-chapters');}",
             "chapter": {
                 "list": "function Main(html){return jsoups(html,'div.chapter-warp > ul  > li');}",
-                "name": "function Main(text){var name = jsoup(text,'a');if(name.indexOf('下拉式阅读')!=-1){name = null;}return name;}",
+                "name": "var name;function Main(text){name = jsoup(text,'a');if(name.indexOf('下拉式阅读')!=-1){name = null;}return name;}",
                 "url": "function Main(text){if(name == null){return null;}var url = jsoup(text,'a@attr->href');url = url.replace('.html','-{p}.html')+'@zero->1@start->1';if((url+'').indexOf('.apk')>0){return null}return url;}",
                 "category": 2
             }
