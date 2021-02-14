@@ -4,7 +4,7 @@
 	"developer": "雨夏",
     "mail":"2534246654@qq.com",
 	"versionName": "1.0",
-	"versionCode": 2,
+	"versionCode": 1,
     "tab":"小说",
     "request": "http://www.bswtan.com/modules/article/search.php@post->searchkey={key}",
     "search": {
@@ -28,8 +28,6 @@
         }
     },
     "novel": {
-        "list": "function Main(text){var obj= [];obj.push(getURL());return obj;}",
-        "url": "function Main(text){return text+'@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36';}",
         "content": "function Main(html){return jsoup(html,'#content');}",
         "mode": 1
     }
