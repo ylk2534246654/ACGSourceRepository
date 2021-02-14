@@ -8,11 +8,11 @@
     "tab":"小说",
     "request": "https://www.biquge.com.cn/search.php?q={key}",
     "search": {
-        "list": "function Main(html){return jsoups(html,'div.result-list > div');}",
-        "title": "function Main(text){return jsoup(text,'a[cpos=title]');}",
-        "introduction": "function Main(text){return jsoup(text,'a[cpos=newchapter]');}",
-        "cover": "function Main(text){return jsoup(text,'a[cpos=img] > img@attr->src');}",
-        "url": "function Main(text){return jsoup(text,'a[cpos=title]@attr->href');}"
+        "list": "function Main(html){return jsoups(html,'tbody > tr');}",
+        "title": "function Main(text){return jsoup(text,'a:nth-child(1)');}",
+        "introduction": "function Main(text){return jsoup(text,'a:nth-child(2)');}",
+        "cover": "function Main(text){return 'http://r.m.97ub.cc/cover/aHR0cDovL2ltZzEuY2h1YW5nc2hpLnFxLmNvbS9jaHVhbmdzaGkvcDEvZGVmYXVsdC1jb3Zlci1sYXJnZS5wbmc=';}",
+        "url": "function Main(text){return jsoup(text,'a:nth-child(1)@attr->href')+'@header->Referer:https://www.97ub.cc/modules/article/search.php@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36';}"
     },
     "detail": {
         "author": "function Main(html){return jsoup(html,'#info > p:nth-child(2)');}",
@@ -20,14 +20,16 @@
         "upDate": "function Main(html){return jsoup(html,'#info > p:nth-child(4)');}",
         "catalogs": {
             "chapter": {
-                "list": "var catalog;function Main(html){return jsoups(html,'#list > dl > dd');}",
+                "list": "function Main(html){return jsoups(html,'#list > dl > dd:gt(9)');}",
                 "name": "function Main(text){return jsoup(text,'a');}",
-                "url": "function Main(text){return jsoup(text,'a@attr->href');}",
+                "url": "function Main(text){return jsoup(text,'a@attr->href')+'@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36';}",
                 "category": 4
             }
         }
     },
     "novel": {
+        "list": "function Main(text){var obj= [];obj.push(getURL());return obj;}",
+        "url": "function Main(text){return text+'@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36';}",
         "content": "function Main(html){return jsoup(html,'#content');}",
         "mode": 1
     }

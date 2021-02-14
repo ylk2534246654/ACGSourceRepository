@@ -1,0 +1,34 @@
+{
+    "name": "笔趣阁",
+    "introduction": "可以搜索一些小说",
+	"developer": "雨夏",
+    "mail":"2534246654@qq.com",
+	"versionName": "1.0",
+	"versionCode": 1,
+    "tab":"小说",
+    "request": "http://www.bswtan.com/modules/article/search.php@post->searchkey={key}",
+    "search": {
+        "list": "function Main(html){return jsoups(html,'div.result-list > div');}",
+        "title": "function Main(text){return jsoup(text,'a[cpos=title]');}",
+        "introduction": "function Main(text){return jsoup(text,'a[cpos=newchapter]');}",
+        "cover": "function Main(text){return jsoup(text,'a[cpos=img] > img@attr->src');}",
+        "url": "function Main(text){return jsoup(text,'a[cpos=title]@attr->href');}"
+    },
+    "detail": {
+        "author": "function Main(html){return jsoup(html,'#info > p:nth-child(2)');}",
+        "introduction": "function Main(html){return jsoup(html,'#intro');}",
+        "upDate": "function Main(html){return jsoup(html,'#info > p:nth-child(4)');}",
+        "catalogs": {
+            "chapter": {
+                "list": "var catalog;function Main(html){return jsoups(html,'#list > dl > dd');}",
+                "name": "function Main(text){return jsoup(text,'a');}",
+                "url": "function Main(text){return jsoup(text,'a@attr->href');}",
+                "category": 4
+            }
+        }
+    },
+    "novel": {
+        "content": "function Main(html){return jsoup(html,'#content');}",
+        "mode": 1
+    }
+}
