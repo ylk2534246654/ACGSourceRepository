@@ -4,17 +4,18 @@
 	"developer": "雨夏",
     "mail":"2534246654@qq.com",
 	"versionName": "1.0",
-	"versionCode": 1,
+	"versionCode": 2,
     "tab":"小说",
     "request": "http://www.bswtan.com/modules/article/search.php@post->searchkey={key}",
     "search": {
         "list": "function Main(html){return jsoups(html,'tbody > tr');}",
-        "title": "function Main(text){return jsoup(text,'a:nth-child(1)');}",
+        "title": "function Main(text){return jsoup(text,'a:not([href~=html])');}",
         "introduction": "function Main(text){return jsoup(text,'a:nth-child(2)');}",
         "cover": "function Main(text){return 'http://r.m.97ub.cc/cover/aHR0cDovL2ltZzEuY2h1YW5nc2hpLnFxLmNvbS9jaHVhbmdzaGkvcDEvZGVmYXVsdC1jb3Zlci1sYXJnZS5wbmc=';}",
         "url": "function Main(text){return jsoup(text,'a:nth-child(1)@attr->href')+'@header->Referer:https://www.97ub.cc/modules/article/search.php@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36';}"
     },
     "detail": {
+        "cover": "function Main(text){return jsoup(html,'#fmimg > img@attr->src');;}",
         "author": "function Main(html){return jsoup(html,'#info > p:nth-child(2)');}",
         "introduction": "function Main(html){return jsoup(html,'#intro');}",
         "upDate": "function Main(html){return jsoup(html,'#info > p:nth-child(4)');}",
