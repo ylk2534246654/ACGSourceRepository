@@ -5,7 +5,7 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode":6,
+    "versionCode":7,
     "tab": "漫画",
     "host":"m.manhuaju.com",
     "request": "http://m.manhuaju.com/statics/search.aspx?key={key}@ip->180.215.215.112@charset->UTF-8@header->user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
@@ -32,7 +32,7 @@
     },
     "comic": {
         "list": "loadScript('https://gitee.com/yx_myacg/ACGSourceRepository/raw/master/js/base64.js');function Main(text){eval(strmiddle(text,'<script>','</script>'));var arr = Base64.decode(qTcms_S_m_murl_e);return arr.split('$qingtiandy$');};",
-        "url": "function Main(text){if(text.indexOf('ac.tc.qq.com')!=-1){text = 'http://imgcache.baidu-com-img.com/statics/pic/?p='+text+'&wapif=1&picid=980&pinyin=yaoguaimingdan&m_httpurl=';}return text+'@header->Referer:http://m.manhuaju.com/';}",
+        "url": "function Main(text){return text.replace('.ori','.jpg');+'@header->Referer:http://m.manhuaju.com/';}",
         "mode": 3
     }
 }
