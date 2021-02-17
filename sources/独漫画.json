@@ -5,7 +5,7 @@
     "developer": "雨夏",
     "mail":"2534246654@qq.com",
     "versionName": "1.0",
-    "versionCode":7,
+    "versionCode":8,
     "tab": "漫画",
     "host":"m.dumanhhua.com",
     "request": "https://m.dumanhhua.com/search/?keywords={key}&page={page}@charset->UTF-8",
@@ -29,9 +29,8 @@
             "list": "function Main(html){return jsoups(html,'div.comic-chapters');}",
             "chapter": {
                 "list": "function Main(html){return jsoups(html,'div.comic-chapters > div > ul  > li');}",
-                "name": "function Main(text){return jsoup(text,'a');}",
-                "url": "function Main(text){var url = jsoup(text,'a@attr->href');url = url.replace('.html','-{p}.html')+'@zero->2@start->1';return url;}",
-                "category": 2
+                "name": "var name;function Main(text){name = jsoup(text,'a');if(name.indexOf('下拉式阅读')!=-1){name = null;}return name;}",
+                "url": "function Main(text){if(name == null){return null;}var url = jsoup(text,'a@attr->href');url = url.replace('.html','-{p}.html')+'@zero->1@start->1';if((url+'').indexOf('.apk')>0){return null}return url;}",                "category": 2
             }
         }
     },
