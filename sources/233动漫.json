@@ -15,36 +15,21 @@
     "url": "function Main(text){return jsoup(text,'p:nth-child(2) > a@attr->href');}"
   },
   "detail": {
-    "cover": "function Main(html){return jsoup(html,'div.tpic > img@attr->src');}",
-    "author": "",
-    "introduction": "function Main(html){return jsoup(html,'div.alex > p:nth-child(1)');}",
-    "upDate": "function Main(html){return jsoup(html,'div.alex > span:nth-child(4)');}",
+    "author": "function Main(html){return jsoup(html,'#page-back > div > div > div.sidebar-left > div.normal-wai1 > div > div.normal-nei1.dhxx.anime_info > p:nth-child(7)');}",
+    "introduction": "function Main(html){return jsoup(html,'#showall');}",
+    "upDate": "function Main(html){return jsoup(html,'#page-back > div > div > div.main-right > section:nth-child(1) > div > div > div.info > div.info1 > ul.info1-left > li:nth-child(3) > p');}",
     "tabs": {
-      "list": "function Main(html){return jsoups(html,'div.tabs');}",
-      "name": "function Main(text){return jsoup(text,'ul > li:nth-child(1)');}"
+      "list": "function Main(html){return jsoups(html,'div.ol-select > ul > li');}",
+      "name": "function Main(text){return jsoup(text,'li');}"
     },
     "catalogs": {
-      "list": "function Main(html){return jsoups(html,'div.movurl');}",
+      "list": "function Main(html){return jsoups(html,'ul.eplist-eppic');}",
       "chapter": {
-        "list": "function Main(html){return jsoups(html,'ul > li');}",
+        "list": "function Main(html){return jsoups(html,'li');}",
         "name": "function Main(text){return jsoup(text,'a');}",
         "url": "function Main(text){return jsoup(text,'a@attr->href');}",
         "category": 3
       }
     }
-  },
-  "video": {
-    "url": "function Main(text){if(text.match('^((?!(data.video.iqiyi.com/v.mp4|z13.cnzz.com)).)*$')!=null){return text;};return '';}"
-  },
-	"finds": [
-		{
-			"tab": "新番放送",
-			"request": "http://www.imomoe.ai/top/new.html",
-			"list": "function Main(html){return jsoups(html,'ul.am-list > li');}",
-			"title": "function Main(text){return jsoup(text,'li > a');}",
-			"introduction": "function Main(text){return jsoup(text,'span.am-list-date')+'('+jsoup(text,'li > b > a')+')';}",
-			"cover": "",
-			"url": "function Main(text){return jsoup(text,'li > a@attr->href').replace('m.','www.');}"
-		}
-	]
+  }
 }
