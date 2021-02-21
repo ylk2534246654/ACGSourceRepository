@@ -4,7 +4,7 @@
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.0",
-  "versionCode": 2,
+  "versionCode": 3,
   "tab":"动漫",
   "request": "http://www.dm233.tv/search?keyword={key}&seaex=1@charset->utf-8@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36",
   "search": {
@@ -23,7 +23,7 @@
       "name": "function Main(text){return jsoup(text,'li');}"
     },
     "catalogs": {
-      "list": "function Main(html){return jsoups(html,'ul.eplist-eppic');}",
+      "list": "function Main(html){return jsoups(html,'ul.eplist-eppic,ul.eplist-normal');}",
       "chapter": {
         "list": "function Main(html){return jsoups(html,'li');}",
         "name": "function Main(text){return jsoup(text,'a');}",
