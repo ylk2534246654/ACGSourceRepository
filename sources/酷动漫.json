@@ -4,7 +4,7 @@
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.0",
-  "versionCode": 2,
+  "versionCode": 3,
   "tab":"动漫",
   "request": "http://www.kudm.net/search.asp@post->searchword={key}&submit=%CB%D1%CB%F7@charset->gb2312@header->Content-Type:application/x-www-form-urlencoded@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
   "search": {
@@ -33,6 +33,6 @@
     }
   },
   "video": {
-    "url": "function Main(text){if(text.match('^((?!(www.kudm.net)).)*$')!=null){return text;};return '';}"
+    "url": "function Main(text){if(text.match('^((?!www.kudm.net).)*$')!=null){return text;};return '';}"
   }
 }
