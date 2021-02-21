@@ -4,7 +4,7 @@
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.0",
-  "versionCode": 8,
+  "versionCode": 9,
   "tab":"动漫",
   //失效 http://www.tldm.net
   "request": "http://www.kudm.net/search.asp@post->searchword={key}&submit=%CB%D1%CB%F7@charset->gb2312@header->Content-Type:application/x-www-form-urlencoded@header->User-Agent:Mozilla/5.0 (Linux; Android 8.0; Pixel 2 Build/OPD3.170816.012) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Mobile Safari/537.36",
