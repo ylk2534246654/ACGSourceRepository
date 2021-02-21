@@ -9,10 +9,10 @@
   "request": "http://www.dm233.tv/search?keyword={key}&seaex=1@charset->utf-8@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36",
   "search": {
     "list": "function Main(html){return jsoups(html,'#page-back > div > div > div.main > section > div.dhnew.adj1 > ul > li');}",
-    "title": "function Main(text){return jsoup(text,'a > img@attr->alt');}",
-    "introduction": "function Main(text){return jsoup(text,'span:nth-child(4)');}",
-    "cover": "function Main(text){return jsoup(text,'a > img@attr->src');}",
-    "url": "function Main(text){return jsoup(text,'a@attr->href');}"
+    "title": "function Main(text){return jsoup(text,'p:nth-child(2) > a');}",
+    "introduction": "function Main(text){return jsoup(text,'p:nth-child(3) > a');}",
+    "cover": "function Main(text){return jsoup(text,'p:nth-child(1) > a > img@attr->src');}",
+    "url": "function Main(text){return jsoup(text,'p:nth-child(2) > a@attr->href');}"
   },
   "detail": {
     "cover": "function Main(html){return jsoup(html,'div.tpic > img@attr->src');}",
