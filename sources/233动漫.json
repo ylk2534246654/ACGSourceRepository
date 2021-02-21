@@ -4,7 +4,7 @@
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.0",
-  "versionCode": 3,
+  "versionCode": 4,
   "tab":"动漫",
   "request": "http://www.dm233.tv/search?keyword={key}&seaex=1@charset->utf-8@header->User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36",
   "search": {
@@ -16,7 +16,7 @@
   },
   "detail": {
     "author": "function Main(html){return jsoup(html,'#page-back > div > div > div.sidebar-left > div.normal-wai1 > div > div.normal-nei1.dhxx.anime_info > p:nth-child(7)');}",
-    "introduction": "function Main(html){return jsoup(html,'#showall');}",
+    "introduction": "function Main(html){return jsoup(html,'div.info2');}",
     "upDate": "function Main(html){return jsoup(html,'#page-back > div > div > div.main-right > section:nth-child(1) > div > div > div.info > div.info1 > ul.info1-left > li:nth-child(3) > p');}",
     "tabs": {
       "list": "function Main(html){return jsoups(html,'div.ol-select > ul > li');}",
