@@ -33,6 +33,9 @@
       }
     }
   },
+  "video": {
+    "url": "function Main(text){if(text.match('^((?!www.kudm.net).)*$')!=null){return text;};return '';}"
+  },
     "finds": [
         {
             "tab": "最新更新",
