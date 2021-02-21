@@ -4,7 +4,7 @@
   "developer": "雨夏",
   "mail":"2534246654@qq.com",
   "versionName": "1.0",
-  "versionCode": 9,
+  "versionCode": 10,
   "tab":"动漫",
   //失效 http://www.tldm.net
   "request": "http://www.kudm.net/search.asp@post->searchword={key}&submit=%CB%D1%CB%F7@charset->gb2312@header->Content-Type:application/x-www-form-urlencoded@header->User-Agent:Mozilla/5.0 (Linux; Android 8.0; Pixel 2 Build/OPD3.170816.012) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Mobile Safari/537.36",
@@ -21,7 +21,7 @@
     "introduction": "function Main(html){return jsoup(html,'div.m-intro');}",
     "tabs": {
       "list": "function Main(html){return jsoups(html,'div.playurl');}",
-      "name": "function Main(text){return jsoup(text,'div.title > span:nth-child(2)').replace('选自已喜欢的播放线路 进行播放 24小时更新 新番动漫 BD版资原 日 美剧','');}"
+      "name": "function Main(text){return jsoup(text,'div.title > span:nth-child(2)@attr->class').replace('选自已喜欢的播放线路 进行播放 24小时更新 新番动漫 BD版资原 日 美剧','');}"
     },
     "catalogs": {
       "list": "function Main(html){return jsoups(html,'div.playurl > div.bfdz');}",
